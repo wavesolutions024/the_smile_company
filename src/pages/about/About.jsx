@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import PageTop from "../../comp/page_top/PageTop";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <>
+      <PageTop title="About Us" />
+    </>
+  );
+};
 
-export default About
+export default About;
