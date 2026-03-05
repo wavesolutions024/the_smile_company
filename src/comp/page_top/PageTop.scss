@@ -1,15 +1,18 @@
 .pagetop_parent {
   height: 350px;
   width: 100%;
-  background-color: #fcf2de;
-  padding: var(--unit);
+  background: linear-gradient(to bottom, #ffe2a7, #fcf2de);
   display: flex;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
 
   .pagetop_cont {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: var(--unit);
+    height: 100%;
     width: 100%;
 
     .left_pagetop {
@@ -23,20 +26,35 @@
 
       .small_img_top {
         position: absolute;
-        left: -100px;
-        top: -50px;
+        left: 10%;
+        top: -70%;
+        animation: float 5s ease-in-out infinite;
+
+        @keyframes float {
+          0% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
 
         img {
-          width: 70%;
+          width: 60%;
           height: auto;
         }
       }
 
       .small_img_bottom {
         position: absolute;
+        left: 0%;
+        bottom: -100%;
 
         img {
-          width: 70%;
+          width: 60%;
           height: auto;
         }
       }
@@ -67,13 +85,27 @@
 
     .right_pagetop {
       width: 50%;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
+
+      .background_circle {
+        background: #fad99679;
+        width: 70%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -2;
+        bottom: -40%;
+      }
 
       img {
-        width: 72%;
-        height: auto;
+        width: 75%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
       }
     }
   }
