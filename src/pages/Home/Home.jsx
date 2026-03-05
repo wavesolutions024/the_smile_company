@@ -1,14 +1,10 @@
 import React from 'react'
 import "./Home.scss"
+import HeroSection from '../../comp/Hero_section/HeroSection'
 const Home = () => {
   return (
     < >
-      <div class="home_parent parent">
-        <div class="home_cont cont">
-          
-
-        </div>
-      </div>
+     <HeroSection/>
     </>
   )
 }
