@@ -1,15 +1,19 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import './App.scss'
+import "./App.scss";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
 
 function App() {
-  
-
   return (
-    <>
-     The Smile Company
-    </>
-  ) 
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Home />} path="/" />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
-export default App
+export default App;
