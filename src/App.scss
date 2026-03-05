@@ -3,8 +3,8 @@
   --unit: 16px;
   --black: #000000;
   --white: #ffffff;
-  --accent: #ffbb00;
-  --accent2 : #008080;
+  --accent: #e0aa3e;
+  --accent2 : #faf398;
   --background : #f3f9f9;
   --text:#626262;
   --trans: all 0.34s ease-in-out;
@@ -34,6 +34,10 @@ body{
   }
 }
 
+h1,h2,h3,h4,h5{
+   font-family: "Poppins", sans-serif;
+   line-height: 110%;
+}
 
 
 

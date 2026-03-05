@@ -23,7 +23,7 @@
         height: 100%;
         width: 100%;
         // background: radial-gradient(transparent,var(--accent));
-        background: radial-gradient(#faf3986b,var(--accent));
+        background: radial-gradient(#faf3986b,var(--accent2));
     }
 
     .hero_cont{
@@ -41,8 +41,11 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-
-            font-size: 40px;
+  
+            
+            h1{
+                font-size: 70px;
+            }
         }
 
         .hero_right{
