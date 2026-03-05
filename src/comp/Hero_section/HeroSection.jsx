@@ -1,7 +1,11 @@
 import React from "react";
 import "./HeroSection.scss";
-import image1 from "../../assets/hero_section/img2.webp"
-import image2 from "../../assets/hero_section/img4.webp"
+import image1 from "../../assets/hero_section/img2.webp";
+import image2 from "../../assets/hero_section/img4.webp";
+import image3 from "../../assets/hero_section/img1.webp";
+import image4 from "../../assets/hero_section/img3.webp";
+import image5 from "../../assets/hero_section/img5.webp";
+import image6 from "../../assets/hero_section/img6.webp"
 const HeroSection = () => {
   return (
     <>
@@ -55,7 +59,21 @@ const HeroSection = () => {
               <img src={image2} alt=""/>
             </div>
           </div>
-          <div class="hero_right"></div>
+          <div class="hero_right">
+            <div class="circle_overlay"></div>
+            <div class="center_image">
+              <img src={image3} alt=""/>
+            </div>
+            <div class="image4">
+              <img src={image4} alt=""/>
+            </div>
+            <div class="image5">
+              <img src={image5} alt=""/>
+            </div>
+            <div class="image5 image6">
+              <img src={image6} alt=""/>
+            </div>
+          </div>
         </div>
       </div>
     </>
