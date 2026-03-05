@@ -22,8 +22,8 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        // background: radial-gradient(transparent,var(--accent));
-        background: radial-gradient(#faf3986b,var(--accent2));
+        background: radial-gradient(transparent,var(--accent2));
+        // background: radial-gradient(#faf3986b,var(--accent2));
     }
 
     .hero_cont{
@@ -45,6 +45,7 @@
             
             h1{
                 font-size: 70px;
+                color: var(--accent);
             }
         }
 
