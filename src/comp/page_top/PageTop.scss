@@ -1,0 +1,28 @@
+.pagetop_parent {
+  height: 350px;
+  width: 100%;
+  background-color: #faeac9;
+  padding: var(--unit);
+
+  .pagetop_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--unit);
+
+    .left_pagetop {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid;
+    }
+
+    .right_pagetop {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
