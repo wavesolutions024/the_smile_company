@@ -5,8 +5,8 @@ import PageTop from '../../comp/page_top/PageTop'
 const Home = () => {
   return (
     < >
-     {/* <HeroSection/> */}
-     <PageTop />
+     <HeroSection/>
+     {/* <PageTop /> */}
     </>
   )
 }
