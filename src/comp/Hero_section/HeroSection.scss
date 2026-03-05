@@ -22,7 +22,7 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        background: radial-gradient(transparent,var(--accent2));
+        background: radial-gradient(transparent,#ffdc68a4);
         // background: radial-gradient(#faf3986b,var(--accent2));
     }
 
@@ -39,13 +39,68 @@
             height: 100%;
             // background-color: red;
             display: flex;
-            justify-content: flex-start;
-            align-items: center;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
   
             
             h1{
                 font-size: 70px;
                 color: var(--accent);
+                line-height: 120%;
+                font-weight: 900;
+                position: relative;
+                margin-bottom: 100px;
+
+                span{
+                    position: absolute;
+
+                    
+                }
+
+                .span1{
+                    // right: 0;
+                    transform: translateX(20px);
+                    bottom: 0;
+
+                    .smile_svg{
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 100%;
+                    }
+
+                }
+
+                .span2{
+                    left: 0;
+                    top: 100%;
+                }
+            }
+
+            .hero_para{
+                width: 100%;
+                background: linear-gradient(to left, transparent, #d4af3786);
+                padding: var(--unit);
+                border-left: 5px solid var(--accent);
+                p{
+                    color: var(--accent);
+                }
+            }
+
+            .image1{
+                position: absolute;
+                right: 100%;
+                bottom: 10%;
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+
+            .image2{
+                
             }
         }
 
