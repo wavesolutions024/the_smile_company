@@ -13,9 +13,9 @@ const Header = () => {
     <>
       <div class="header_parent parent">
         <div class="header_cont cont">
-          <div class="header_left">
+          <Link onClick={() => setHeader(false)} to="/" class="header_left">
             <img src={logo} alt="" />
-          </div>
+          </Link>
           <div class="header_right">
             <div class="header_btn">
               <Button />
@@ -38,26 +38,26 @@ const Header = () => {
             }
           >
             <div class="top_section">
-              <div class="logo">
+              <Link onClick={() => setHeader(false)} to="/" class="logo">
                 <img src={logo} alt="" />
-              </div>
+              </Link>
 
-              <div class="cross_button" onClick={()=>setHeader(false)}>
+              <div class="cross_button" onClick={() => setHeader(false)}>
                 <RxCross2 />
               </div>
             </div>
 
             <div class="bottom_hed_section">
-              <Link to="/">
+              <Link to="/" onClick={() => setHeader(false)}>
                 Home
               </Link>
-              <Link to="/about">
+              <Link to="/about" onClick={() => setHeader(false)}>
                 About Us
               </Link>
-              <Link to="/">
+              <Link to="/" onClick={() => setHeader(false)}>
                 Services
               </Link>
-              <Link to="/">
+              <Link to="/" onClick={() => setHeader(false)}>
                 Contact
               </Link>
 
@@ -66,10 +66,10 @@ const Header = () => {
                   <FaWhatsapp />
                 </a>
                 <a href="#">
-                 <FaFacebook />
+                  <FaFacebook />
                 </a>
                 <a href="#">
-                 <FaInstagram />
+                  <FaInstagram />
                 </a>
               </div>
             </div>
