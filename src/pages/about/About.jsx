@@ -30,10 +30,10 @@ const About = () => {
             onMouseMove={(e) => e.buttons === 1 && handleMove(e)}
             onMouseDown={handleMove}
           >
-            <img src={beforeImg} className="beforeImage" />
+            <img src={afterImg} />
 
             <div className="afterWrapper" style={{ width: `${position}%` }}>
-              <img src={afterImg} />
+              <img src={beforeImg} className="beforeImage" />
             </div>
 
             <div className="sliderLine" style={{ left: `${position}%` }}>
@@ -43,8 +43,8 @@ const About = () => {
               </div>
             </div>
 
-            <div className="label before">AFTER</div>
-            <div className="label after">BEFORE</div>
+            <div className="label after">AFTER</div>
+            <div className="label before">BEFORE</div>
           </div>
         </div>
       </div>
