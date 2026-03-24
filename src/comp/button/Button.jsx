@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Button = () => {
   return (
     <>
-      <Link to="/" class="btn">
+      <Link to="/contact" class="btn">
         <span>
             <img src={teeth} alt=""/>
         </span>
