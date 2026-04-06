@@ -7,7 +7,7 @@ import "./About.scss";
 const About = () => {
   const containerRef = useRef(null);
   const [position, setPosition] = useState(50);
-//   const [openCard, setOpenCard] = useState(1);
+  //   const [openCard, setOpenCard] = useState(1);
 
   const handleMove = (e) => {
     const rect = containerRef.current.getBoundingClientRect();
@@ -19,36 +19,36 @@ const About = () => {
     }
   };
 
-//   const whyChooseCards = [
-//     {
-//       id: 1,
-//       title: "Expertise in Dental Industry",
-//       description:
-//         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.",
-//       image: afterImg,
-//     },
-//     {
-//       id: 2,
-//       title: "Patient-Centered Care",
-//       description:
-//         "We prioritize your comfort and wellbeing above all else, ensuring every visit is tailored to your unique needs.",
-//       image: afterImg,
-//     },
-//     {
-//       id: 3,
-//       title: "Flexible Appointment Scheduling",
-//       description:
-//         "We understand your busy schedule and offer flexible appointment times to fit your lifestyle.",
-//       image: afterImg,
-//     },
-//     {
-//       id: 4,
-//       title: "Flexible Appointment Scheduling",
-//       description:
-//         "We understand your busy schedule and offer flexible appointment times to fit your lifestyle.",
-//       image: afterImg,
-//     },
-//   ];
+  //   const whyChooseCards = [
+  //     {
+  //       id: 1,
+  //       title: "Expertise in Dental Industry",
+  //       description:
+  //         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.",
+  //       image: afterImg,
+  //     },
+  //     {
+  //       id: 2,
+  //       title: "Patient-Centered Care",
+  //       description:
+  //         "We prioritize your comfort and wellbeing above all else, ensuring every visit is tailored to your unique needs.",
+  //       image: afterImg,
+  //     },
+  //     {
+  //       id: 3,
+  //       title: "Flexible Appointment Scheduling",
+  //       description:
+  //         "We understand your busy schedule and offer flexible appointment times to fit your lifestyle.",
+  //       image: afterImg,
+  //     },
+  //     {
+  //       id: 4,
+  //       title: "Flexible Appointment Scheduling",
+  //       description:
+  //         "We understand your busy schedule and offer flexible appointment times to fit your lifestyle.",
+  //       image: afterImg,
+  //     },
+  //   ];
 
   return (
     <>
@@ -161,6 +161,47 @@ const About = () => {
           </div>
         </div>
       </div> */}
+
+      {/* vission mission */}
+
+      <div className="vision_parent parent">
+        <div className="vission_cont cont">
+          <h2>Our Vision & Mission</h2>
+          <p className="subtitle">
+            It is a long established fact that a reader will be distraacted by
+            the readable content of a page when looking at its layout. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Rem itaque optio
+            consequatur unde tempore! Doloribus!
+          </p>
+
+          <div class="vission_mission_card">
+            <div className="v_m_left">
+              <h3>Our Vision</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+                doloribus iusto expedita, omnis qui architecto illo quasi
+                facilis? Aliquam, laudantium cumque! Reprehenderit beatae ipsa
+                adipisci possimus explicabo. In iure recusandae provident rem at
+                debitis eligendi corporis incidunt alias temporibus enim
+                veritatis eius consequatur blanditiis, non voluptate dicta amet
+                laboriosam rerum?
+              </p>
+            </div>
+            <div className="v_m_right">
+              <h3>Our Mission</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+                doloribus iusto expedita, omnis qui architecto illo quasi
+                facilis? Aliquam, laudantium cumque! Reprehenderit beatae ipsa
+                adipisci possimus explicabo. In iure recusandae provident rem at
+                debitis eligendi corporis incidunt alias temporibus enim
+                veritatis eius consequatur blanditiis, non voluptate dicta amet
+                laboriosam rerum?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
