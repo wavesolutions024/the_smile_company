@@ -57,7 +57,7 @@ const About = () => {
       <div className="parent about_dr_parent">
         <div className="cont about_dr_cont">
           <div className="left-section">
-            <h1>About Dr. Hemant Sir</h1>
+            <h1>About Denza Dental</h1>
             <p>
               Dr. Nashid Martines has many years of dental care experience. She
               blends clinical precision with compassionate patient care and
@@ -93,6 +93,86 @@ const About = () => {
         </div>
       </div>
 
+      {/* vission mission */}
+
+      <div className="vision_parent parent">
+        <div className="vission_cont cont">
+          <h2>Our Vision & Mission</h2>
+          <p className="subtitle">
+            It is a long established fact that a reader will be distraacted by
+            the readable content of a page when looking at its layout. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Rem itaque optio
+            consequatur unde tempore! Doloribus!
+          </p>
+
+          <div class="vission_mission_card">
+            <div className="v_m_left">
+              <h3> Our Vision </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+                doloribus iusto expedita, omnis qui architecto illo quasi
+                facilis? Aliquam, laudantium cumque! Reprehenderit beatae ipsa
+                adipisci possimus explicabo. In iure recusandae provident rem at
+                debitis eligendi corporis incidunt alias temporibus enim
+                veritatis eius consequatur blanditiis, non voluptate dicta amet
+                laboriosam rerum?
+              </p>
+            </div>
+            <div className="v_m_right">
+              <h3>Our Mission</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+                doloribus iusto expedita, omnis qui architecto illo quasi
+                facilis? Aliquam, laudantium cumque! Reprehenderit beatae ipsa
+                adipisci possimus explicabo. In iure recusandae provident rem at
+                debitis eligendi corporis incidunt alias temporibus enim
+                veritatis eius consequatur blanditiis, non voluptate dicta amet
+                laboriosam rerum?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* doctors */}
+
+      <div className="parent doctors_list_parent">
+        <div className="cont doctors_list_cont">
+          <h2>Meet Our Doctors</h2>
+          <p>
+            It is a long established fact that a reader will be distraacted by
+            the readable content of a page when looking at its layout. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Rem itaque optio
+            consequatur unde tempore! Doloribus!
+          </p>
+
+          <div className="doctors_main">
+            <div className="doctors_card">
+              <div className="dr_img bg-img-cover">
+                <div className="bottom">
+                  <div className="name">
+                    <h3>Dr. John Doe</h3>
+                    <p>General Dentist</p>
+                  </div>
+                  <div className="social_media">
+                    <span>Fac</span>
+                    <span>T</span>
+                    <span>I</span>
+                    <span>L</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="doctors_card">
+              <div className="dr_img">1</div>
+            </div>
+            <div className="doctors_card">
+              <div className="dr_img">1</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="parent before_after_parent">
         <div className="cont before_after_cont">
           <h2>Real People. Real Results.</h2>
@@ -117,88 +197,6 @@ const About = () => {
 
             <div className="label after">AFTER</div>
             <div className="label before">BEFORE</div>
-          </div>
-        </div>
-      </div>
-
-      {/* <div className="parent why_choose_parent">
-        <div className="cont why_choose_cont">
-          <h2>Why Choose Dental Care</h2>
-          <p className="subtitle">
-            It is a long established fact that a reader will be distraacted by
-            the readable content of a page when looking at its layout. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Rem itaque optio
-            consequatur unde tempore! Doloribus!
-          </p>
-
-          <div className="cards-container">
-            {whyChooseCards.map((card) => (
-              <div
-                key={card.id}
-                className={`card ${openCard === card.id ? "primary open" : ""}`}
-                onClick={() => setOpenCard(card.id)}
-              >
-                <div className="card-content">
-                  <div className="card-text">
-                    <h3>{card.title}</h3>
-                    <p className="card-desc">{card.description}</p>
-                  </div>
-
-                  {card.image && (
-                    <img
-                      src={card.image}
-                      alt={card.title}
-                      className="card-image"
-                    />
-                  )}
-                </div>
-
-                {openCard !== card.id && (
-                  <span className="card-number">0{card.id}</span>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
-
-      {/* vission mission */}
-
-      <div className="vision_parent parent">
-        <div className="vission_cont cont">
-          <h2>Our Vision & Mission</h2>
-          <p className="subtitle">
-            It is a long established fact that a reader will be distraacted by
-            the readable content of a page when looking at its layout. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Rem itaque optio
-            consequatur unde tempore! Doloribus!
-          </p>
-
-          <div class="vission_mission_card">
-            <div className="v_m_left">
-              <h3>Our Vision</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
-                doloribus iusto expedita, omnis qui architecto illo quasi
-                facilis? Aliquam, laudantium cumque! Reprehenderit beatae ipsa
-                adipisci possimus explicabo. In iure recusandae provident rem at
-                debitis eligendi corporis incidunt alias temporibus enim
-                veritatis eius consequatur blanditiis, non voluptate dicta amet
-                laboriosam rerum?
-              </p>
-            </div>
-            <div className="v_m_right">
-              <h3>Our Mission</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
-                doloribus iusto expedita, omnis qui architecto illo quasi
-                facilis? Aliquam, laudantium cumque! Reprehenderit beatae ipsa
-                adipisci possimus explicabo. In iure recusandae provident rem at
-                debitis eligendi corporis incidunt alias temporibus enim
-                veritatis eius consequatur blanditiis, non voluptate dicta amet
-                laboriosam rerum?
-              </p>
-            </div>
           </div>
         </div>
       </div>

@@ -3,7 +3,11 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer className="footer parent">
+    <footer className="footer parent bg-img-cover">
+<div className="footer_overlay">
+
+</div>
+
       <div className="footer__inner cont">
         <div className="footer__brand">
           <h2>ClinicMaster</h2>
