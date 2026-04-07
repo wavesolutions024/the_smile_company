@@ -148,249 +148,31 @@
   }
 }
 
-.before_after_parent {
-  padding: 150px 0px;
-  background: var(--background);
-  .before_after_cont {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--unit) * 2);
-    align-items: center;
-    justify-content: center;
+@media (max-width: 900px) {
+  .about_dr_parent {
+    padding: 50px 0px;
 
-    h2 {
-      font-size: 32px;
-      font-weight: 800;
-      color: var(--accent);
-      padding-bottom: 32px;
-    }
-    .beforeAfter {
-      position: relative;
-      width: 900px;
-      height: 450px;
-      overflow: hidden;
-      border-radius: 20px;
-      margin: auto;
-      cursor: ew-resize;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .beforeImage {
-        position: absolute;
-      }
-
-      .afterWrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        overflow: hidden;
-
-        img {
-          position: absolute;
-          left: 0;
-        }
-      }
-
-      .sliderLine {
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 2px;
-        background: white;
-        transform: translateX(-50%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .sliderButton {
-          background: white;
-          border-radius: 50px;
-          padding: 8px 12px;
-          display: flex;
-          gap: 4px;
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-          font-size: 14px;
-        }
-      }
-
-      .label {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%) rotate(-90deg);
-        background: rgba(255, 255, 255, 0.3);
-        padding: 8px 12px;
-        border-radius: 8px;
-        font-size: 12px;
-
-        &.before {
-          left: 10px;
-        }
-
-        &.after {
-          right: 10px;
-          transform: translateY(-50%) rotate(90deg);
-        }
-      }
-
-      .viewBtn {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        border: none;
-        background: white;
-        padding: 10px 18px;
-        border-radius: 30px;
-        cursor: pointer;
-      }
+    .about_dr_cont {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
     }
   }
 }
 
-// .why_choose_parent {
-//   padding: 60px 0;
-//   background: #fff;
-
-//   .why_choose_cont {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-
-//     h2 {
-//       font-size: clamp(2rem, 4vw, 3rem);
-//       color: var(--accent);
-//       font-weight: 800;
-//       margin-bottom: 16px;
-//     }
-
-//     .subtitle {
-//       text-align: center;
-//       max-width: 700px;
-//     }
-
-//     .cards-container {
-//       display: flex;
-//       flex-direction: column;
-//       gap: 18px;
-//       width: 100%;
-
-//       .card {
-//         width: 100%;
-//         padding: 24px;
-//         border-radius: 16px;
-//         cursor: pointer;
-//         transition: all 0.4s ease;
-//         position: relative;
-
-//         /* 🔥 SAME LAYOUT FOR ALL */
-//         .card-content {
-//           display: grid;
-//           grid-template-columns: 1fr auto;
-//           gap: 20px;
-//           align-items: center;
-//         }
-
-//         .card-text {
-//           h3 {
-//             margin: 0;
-//             font-size: 1.3rem;
-//           }
-
-//           .card-desc {
-//             margin-top: 10px;
-//             line-height: 1.6;
-
-//             /* 🔥 smooth hide/show */
-//             max-height: 0;
-//             overflow: hidden;
-//             opacity: 0;
-//             transition: all 0.4s ease;
-//           }
-//         }
-
-//         .card-image {
-//           width: 300px;
-//           height: 200px;
-//           object-fit: cover;
-//           border-radius: 12px;
-//           opacity: 0;
-//           transform: scale(0.9);
-//           transition: all 0.4s ease;
-//         }
-
-//         /* 🔵 CLOSED STATE */
-//         &:not(.primary) {
-//           background: linear-gradient(135deg, #1a2f5d, #263552);
-//           color: #fff;
-//           height: 80px;
-
-//           .card-number {
-//             position: absolute;
-//             right: 24px;
-//             top: 50%;
-//             transform: translateY(-50%);
-//             font-size: 3.5rem;
-//             font-weight: 900;
-//             color: rgba(255, 255, 255, 0.08);
-//           }
-//         }
-
-//         /* 🟢 OPEN STATE */
-//         &.primary {
-//           background: #fff;
-//           border: 2px solid var(--accent2);
-//           height: auto;
-
-//           h3 {
-//             color: var(--accent);
-//           }
-
-//           .card-desc {
-//             max-height: 200px;
-//             opacity: 1;
-//             color: #5a7a9e;
-//           }
-
-//           .card-image {
-//             opacity: 1;
-//             transform: scale(1);
-//           }
-//         }
-
-//         &:hover {
-//           transform: translateY(-3px);
-//           box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media (max-width: 768px) {
-//   .why_choose_parent .why_choose_cont .cards-container .card {
-//     padding: 20px;
-
-//     &.primary {
-//       .card-content {
-//         grid-template-columns: 1fr;
-//       }
-
-//       .card-image {
-//         height: 250px;
-//         order: -1;
-//       }
-//     }
-
-//     .card-number {
-//       font-size: 2.5rem;
-//       right: 16px;
-//     }
-//   }
-// }
+@media (max-width: 500px) {
+  .about_dr_parent {
+    .about_dr_cont {
+      .left-section {
+        h1 {
+          font-size: 25px;
+          font-weight: 800;
+          color: var(--accent);
+        }
+      }
+    }
+  }
+}
 
 .vision_parent {
   background:
@@ -482,6 +264,64 @@
   }
 }
 
+@media (max-width: 750px) {
+  .vision_parent {
+    padding: 150px 0px;
+
+    .vission_cont {
+      h2 {
+        font-size: 32px;
+        font-weight: 800;
+        color: var(--white);
+      }
+
+      .vission_mission_card {
+        flex-direction: column;
+
+        h3 {
+          color: var(--accent2);
+          font-weight: 700;
+          font-size: 24px;
+          position: relative;
+          width: fit-content;
+          line-height: 100%;
+          margin-left: 40px;
+        }
+
+        .v_m_left {
+          width: 100%;
+        }
+        .v_m_right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .vision_parent {
+    padding: 50px 0px;
+    .vission_cont {
+      h2 {
+        font-size: 25px;
+      }
+      .vission_mission_card {
+        flex-direction: column;
+        h3 {
+          font-size: 20px;
+        }
+        .v_m_left {
+          width: 100%;
+        }
+        .v_m_right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 //doctors list
 .doctors_list_parent {
   padding: 150px 0px;
@@ -496,7 +336,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: calc(var(--unit));
+    gap: calc(var(--unit) * 2);
 
     .doctors_main {
       width: calc(100% - 33.33%) / 3;
@@ -509,7 +349,7 @@
         display: flex;
         align-items: center;
         border-radius: 12px;
-        box-shadow: 0 8px 22px rgba(12, 41, 89, 0.12);
+        box-shadow: 0 8px 22px rgba(12, 42, 89, 0.342);
         height: 350px;
         width: 300px;
         padding: 10px;
@@ -517,13 +357,12 @@
         .dr_img {
           width: 100%;
           height: 100%;
-
           display: flex;
           align-items: flex-end;
           justify-content: flex-end;
           border-radius: 12px;
           padding: 10px;
-          background: url("../../assets/hero_section/img1.webp");
+          background: url("../../assets/about_page/woman_dr.jpg");
 
           .bottom {
             width: 100%;
@@ -533,26 +372,193 @@
             justify-content: center;
             gap: var(--unit);
             flex-direction: column;
-            border-radius: var(--unit);
+            border-radius: calc(var(--unit) / 1.5);
             backdrop-filter: blur(6px);
-            background: rgba(196, 196, 196, 0.6);
+            background: rgba(240, 240, 240, 0.6);
 
             .name {
               width: 100%;
+              color: #fff;
+              font-weight: 600;
+              padding: 0px 10px;
 
-              color: #fff;
-              font-weight: 600;
-              text-align: center;
+              h3 {
+                color: var(--accent);
+              }
+              .profession {
+                font-size: 14px;
+                font-weight: 300;
+                color: var(--accent);
+              }
             }
-            .social_media {
+
+            .main_bottom {
               display: flex;
-              gap: 10px;
-              color: #fff;
-              font-weight: 600;
-              text-align: center;
+              align-items: center;
+              justify-content: space-between;
+              width: 100%;
+              padding: 0px 10px;
+              .social_media {
+                display: flex;
+                gap: 10px;
+                color: #fff;
+                font-weight: 600;
+                text-align: center;
+
+                .facebook_bg {
+                  padding: 5px;
+                  background: var(--accent);
+                  border-radius: 50%;
+                  display: flex;
+                  transition: var(--trans);
+                  &:hover {
+                    background: var(--accent2);
+                    cursor: pointer;
+                  }
+                }
+              }
+
+              .arrow {
+                transition: var(--trans);
+
+                &:hover {
+                  transform: rotate(-45deg);
+                  cursor: pointer;
+                }
+              }
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .doctors_list_parent {
+    padding: 50px 0px;
+    h2 {
+      font-size: 25px;
+    }
+    .doctors_list_cont {
+      .doctors_main {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+//before-after
+.before_after_parent {
+  padding: 150px 0px;
+  background: var(--background);
+  .before_after_cont {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--unit) * 2);
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--accent);
+      padding-bottom: 32px;
+    }
+    .beforeAfter {
+      position: relative;
+      width: 100%;
+      height: 450px;
+      overflow: hidden;
+      border-radius: 20px;
+      margin: auto;
+      cursor: ew-resize;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .beforeImage {
+        position: absolute;
+      }
+
+      .afterWrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          left: 0;
+        }
+      }
+
+      .sliderLine {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 2px;
+        background: white;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .sliderButton {
+          background: white;
+          border-radius: 50px;
+          padding: 8px 12px;
+          display: flex;
+          gap: 4px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          font-size: 14px;
+        }
+      }
+
+      .label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        background: rgba(255, 255, 255, 0.3);
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-size: 12px;
+
+        &.before {
+          left: 10px;
+        }
+
+        &.after {
+          right: 10px;
+          transform: translateY(-50%) rotate(90deg);
+        }
+      }
+
+      .viewBtn {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        border: none;
+        background: white;
+        padding: 10px 18px;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .before_after_parent {
+    padding: 50px 0px;
+    .before_after_cont {
+      h2 {
+        font-size: 25px;
+        padding-bottom: 0px;
       }
     }
   }

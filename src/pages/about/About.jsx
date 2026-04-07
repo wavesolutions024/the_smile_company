@@ -3,6 +3,10 @@ import PageTop from "../../comp/page_top/PageTop";
 import beforeImg from "../../assets/about_page/before1.webp";
 import afterImg from "../../assets/about_page/after1.webp";
 import "./About.scss";
+import { FaArrowRight } from "react-icons/fa6";
+import { BiLogoFacebook } from "react-icons/bi";
+import { BiLogoLinkedin } from "react-icons/bi";
+import { RiTwitterXLine } from "react-icons/ri";
 
 const About = () => {
   const containerRef = useRef(null);
@@ -19,36 +23,23 @@ const About = () => {
     }
   };
 
-  //   const whyChooseCards = [
-  //     {
-  //       id: 1,
-  //       title: "Expertise in Dental Industry",
-  //       description:
-  //         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.",
-  //       image: afterImg,
-  //     },
-  //     {
-  //       id: 2,
-  //       title: "Patient-Centered Care",
-  //       description:
-  //         "We prioritize your comfort and wellbeing above all else, ensuring every visit is tailored to your unique needs.",
-  //       image: afterImg,
-  //     },
-  //     {
-  //       id: 3,
-  //       title: "Flexible Appointment Scheduling",
-  //       description:
-  //         "We understand your busy schedule and offer flexible appointment times to fit your lifestyle.",
-  //       image: afterImg,
-  //     },
-  //     {
-  //       id: 4,
-  //       title: "Flexible Appointment Scheduling",
-  //       description:
-  //         "We understand your busy schedule and offer flexible appointment times to fit your lifestyle.",
-  //       image: afterImg,
-  //     },
-  //   ];
+  const data = [
+    {
+      name: "Dr. John Doe",
+      profession: "General Dentist",
+      img: afterImg,
+    },
+    {
+      name: "Dr. John Doe",
+      profession: "General Dentist",
+      img: afterImg,
+    },
+    {
+      name: "Dr. John Doe",
+      profession: "General Dentist",
+      img: afterImg,
+    },
+  ];
 
   return (
     <>
@@ -56,6 +47,12 @@ const About = () => {
 
       <div className="parent about_dr_parent">
         <div className="cont about_dr_cont">
+          <div className="right-section">
+            <div className="image-frame">
+              <img src={afterImg} alt="Dr. Nashid" className="doctor-img" />
+            </div>
+          </div>
+
           <div className="left-section">
             <h1>About Denza Dental</h1>
             <p>
@@ -82,12 +79,6 @@ const About = () => {
             </div>
             <div className="bottom-row">
               <div className="btn">Appointment</div>
-            </div>
-          </div>
-
-          <div className="right-section">
-            <div className="image-frame">
-              <img src={afterImg} alt="Dr. Nashid" className="doctor-img" />
             </div>
           </div>
         </div>
@@ -135,11 +126,11 @@ const About = () => {
       </div>
 
       {/* doctors */}
-
+ 
       <div className="parent doctors_list_parent">
         <div className="cont doctors_list_cont">
           <h2>Meet Our Doctors</h2>
-          <p>
+          <p style={{ textAlign: "center" }}>
             It is a long established fact that a reader will be distraacted by
             the readable content of a page when looking at its layout. Lorem
             ipsum dolor sit amet consectetur adipisicing elit. Rem itaque optio
@@ -147,31 +138,41 @@ const About = () => {
           </p>
 
           <div className="doctors_main">
-            <div className="doctors_card">
-              <div className="dr_img bg-img-cover">
-                <div className="bottom">
-                  <div className="name">
-                    <h3>Dr. John Doe</h3>
-                    <p>General Dentist</p>
-                  </div>
-                  <div className="social_media">
-                    <span>Fac</span>
-                    <span>T</span>
-                    <span>I</span>
-                    <span>L</span>
+            {data.map((item) => (
+              <div className="doctors_card">
+                <div className="dr_img bg-img-cover">
+                  <div className="bottom">
+                    <div className="name">
+                      <h3>{item.name}</h3>
+                      <span className="profession">{item.profession}</span>
+                    </div>
+                    <div class="main_bottom">
+                      <div className="social_media">
+                        <span className="facebook_bg">
+                          <BiLogoFacebook />
+                        </span>
+                        <span className="facebook_bg">
+                          <BiLogoLinkedin />
+                        </span>
+                        <span className="facebook_bg">
+                          <RiTwitterXLine />
+                        </span>
+                      </div>
+                      <div className="arrow">
+                        <span>
+                          <FaArrowRight />
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="doctors_card">
-              <div className="dr_img">1</div>
-            </div>
-            <div className="doctors_card">
-              <div className="dr_img">1</div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
+
+      {/* before-after */}
 
       <div className="parent before_after_parent">
         <div className="cont before_after_cont">
