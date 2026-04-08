@@ -411,6 +411,7 @@
                   border-radius: 50%;
                   display: flex;
                   transition: var(--trans);
+                  color: var(--white);
                   &:hover {
                     background: var(--accent2);
                     cursor: pointer;
@@ -420,6 +421,7 @@
 
               .arrow {
                 transition: var(--trans);
+                 color: var(--accent);
 
                 &:hover {
                   transform: rotate(-45deg);

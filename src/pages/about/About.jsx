@@ -7,6 +7,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { BiLogoFacebook } from "react-icons/bi";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { RiTwitterXLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const containerRef = useRef(null);
@@ -28,16 +29,26 @@ const About = () => {
       name: "Dr. John Doe",
       profession: "General Dentist",
       img: afterImg,
+      link: "/female-dr",
+      facebook: "https://www.facebook.com/",
+      linkedIn: "https://www.facebook.com/",
+      twitter: "https://www.facebook.com/",
     },
     {
       name: "Dr. John Doe",
       profession: "General Dentist",
-      img: afterImg,
+      link: "/male-dr",
+      facebook: "https://www.facebook.com/",
+      linkedIn: "https://www.facebook.com/",
+      twitter: "https://www.facebook.com/",
     },
     {
       name: "Dr. John Doe",
       profession: "General Dentist",
-      img: afterImg,
+      link: "/female-dr",
+      facebook: "https://www.facebook.com/",
+      linkedIn: "https://www.facebook.com/",
+      twitter: "https://www.facebook.com/",
     },
   ];
 
@@ -126,7 +137,7 @@ const About = () => {
       </div>
 
       {/* doctors */}
- 
+
       <div className="parent doctors_list_parent">
         <div className="cont doctors_list_cont">
           <h2>Meet Our Doctors</h2>
@@ -148,21 +159,21 @@ const About = () => {
                     </div>
                     <div class="main_bottom">
                       <div className="social_media">
-                        <span className="facebook_bg">
+                        <a href={item.facebook} target="_blank" className="facebook_bg">
                           <BiLogoFacebook />
-                        </span>
-                        <span className="facebook_bg">
+                        </a>
+                        <a href={item.linkedIn} target="_blank" className="facebook_bg">
                           <BiLogoLinkedin />
-                        </span>
-                        <span className="facebook_bg">
+                        </a>
+                        <a href={item.twitter} target="_blank" className="facebook_bg">
                           <RiTwitterXLine />
-                        </span>
+                        </a>
                       </div>
-                      <div className="arrow">
+                      <Link to={item.link} className="arrow">
                         <span>
                           <FaArrowRight />
                         </span>
-                      </div>
+                      </Link>
                     </div>
                   </div>
                 </div>
