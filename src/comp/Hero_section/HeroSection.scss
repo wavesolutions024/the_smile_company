@@ -170,9 +170,11 @@
           0% {
             transform: translateY(10px);
           }
+
           50% {
             transform: translateY(0px);
           }
+
           100% {
             transform: translateY(10px);
           }
@@ -182,6 +184,7 @@
           height: 100%;
         }
       }
+
       .image6 {
         left: 75%;
         top: 40%;
@@ -209,6 +212,7 @@
     .hero_cont {
       .hero_left {
         padding: 0;
+
         .image1,
         .image2 {
           display: none;
@@ -216,6 +220,7 @@
       }
 
       .hero_right {
+
         .image5,
         .image6 {
           width: 100px;
@@ -258,6 +263,7 @@
 
           .span1 {
             transform: translateX(12px);
+
             svg {
               width: 100%;
             }
@@ -269,11 +275,27 @@
         .image5 {
           top: 10%;
         }
+
         .image6 {
           top: 20%;
           left: 70%;
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero_parent {
+
+    .hero_cont {
+      .hero_left {
+        h1 {
+          font-size: 45px;
+        }
+      }
+
+    }
+
   }
 }

@@ -8,6 +8,19 @@ import img4 from "../../assets/about_section/img5.webp";
 import icon1 from "../../assets/about_section/medical-symbol.png";
 import icon2 from "../../assets/about_section/medicine.png";
 import icon3 from "../../assets/about_section/doctor.png";
+import { Link } from "react-router-dom";
+import { IoArrowForwardOutline } from "react-icons/io5";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+
 
 const Home = () => {
   const [accordian, setAccordian] = useState(0);
@@ -144,11 +157,11 @@ const Home = () => {
             </div>
           </div>
           <div class="wc_right">
-           
+
             <div class="top_rg">
               <div class="rg_tp_lg">
                 <div class="lg1 bg-img-contain">
-                  <img src={img5} alt=""/>
+                  <img src={img5} alt="" />
                 </div>
                 <div class="lg2 bg-img-cover"></div>
               </div>
@@ -162,6 +175,140 @@ const Home = () => {
                 <div class="inner bg-img-cover"></div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* blog and news */}
+
+      <div className="blog_parent parent">
+        <div className="overlay bg-img-cover"></div>
+        <div className="blog_cont cont">
+          <div className="top_bar">
+            <div className="blog_heading">Blog And News</div>
+            <Button
+              text="Read More"
+              path="/blog"
+            />
+          </div>
+
+          <div className="blog_cards">
+            <div className="card">
+              <div className="image bg-img-cover">
+                <p className="date">
+                  17 may 2025
+                </p> ̰
+              </div>
+              <h1 className="blog_heading">
+                The Art of Managing Business and Patient Care
+              </h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content. ̰</p>
+              <Link className="arrow">
+                <IoArrowForwardOutline />
+              </Link>
+            </div>
+            <div className="card">
+              <div className="image bg-img-cover">
+                <p className="date">
+                  17 may 2025
+                </p> ̰
+              </div>
+              <h1 className="blog_heading">
+                The Art of Managing Business and Patient Care
+              </h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content. ̰</p>
+              <Link className="arrow">
+                <IoArrowForwardOutline />
+              </Link>
+            </div>
+            <div className="card">
+              <div className="image bg-img-cover">
+                <p className="date">
+                  17 may 2025
+                </p> ̰
+              </div>
+              <h1 className="blog_heading">
+                The Art of Managing Business and Patient Care
+              </h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content. ̰</p>
+              <Link className="arrow">
+                <IoArrowForwardOutline />
+              </Link>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div className="testimoneals_parent parent">
+        <div className="testimoneal_cont cont">
+          <div className="top_bar">
+            <div className="testimoneal_heading"  >
+              What our patient say about us
+            </div>
+          </div>
+          <div className="testimoneal_listing">
+            <Swiper
+              slidesPerView={2}
+              spaceBetween={30}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                980: {
+                  slidesPerView: 2,
+                  spaceBetween: 30
+                },
+                350:{
+                  slidesPerView: 1,
+                  spaceBetween: 30
+                }
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              <SwiperSlide className="swiper-slide">
+                <div className="left bg-img-cover">
+
+                </div>
+                <div className="right_content">
+                  <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.
+                  </p>
+                  <h3>
+                    Lorem lipsum
+                  </h3>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <div className="left bg-img-cover">
+
+                </div>
+                <div className="right_content">
+                  <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.
+                  </p>
+                  <h3>
+                    Lorem lipsum
+                  </h3>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <div className="left bg-img-cover">
+
+                </div>
+                <div className="right_content">
+                  <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.
+                  </p>
+                  <h3>
+                    Lorem lipsum
+                  </h3>
+                </div>
+              </SwiperSlide>
+
+
+            </Swiper>
           </div>
         </div>
       </div>
