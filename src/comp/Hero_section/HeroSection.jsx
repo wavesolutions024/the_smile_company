@@ -5,11 +5,13 @@ import image2 from "../../assets/hero_section/img4.webp";
 import image3 from "../../assets/hero_section/img1.webp";
 import image4 from "../../assets/hero_section/img3.webp";
 import image5 from "../../assets/hero_section/img5.webp";
-import image6 from "../../assets/hero_section/img6.webp"
+import image6 from "../../assets/hero_section/img6.webp";
+import dental_video from "../../assets/dental_video.mp4";
+
 const HeroSection = () => {
   return (
     <>
-      <div class="hero_parent parent bg-img-cover">
+      {/* <div class="hero_parent parent bg-img-cover">
         <div class="grid_parent "></div>
         <div class="overlay"></div>
         <div class="hero_cont cont">
@@ -75,6 +77,16 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+      </div> */}
+
+      <div className="parent">
+        <div className="video-content cont">
+          <p className="video-label">Denza Dentistry</p>
+          <h1 className="video-heading">Experience The Advanced Dentistry</h1>
+        </div>
+        <video width="100%" autoPlay loop muted playsInline>
+          <source src={dental_video} type="video/mp4" />
+        </video>
       </div>
     </>
   );

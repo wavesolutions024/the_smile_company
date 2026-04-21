@@ -10,17 +10,22 @@ import icon2 from "../../assets/about_section/medicine.png";
 import icon3 from "../../assets/about_section/doctor.png";
 import { Link } from "react-router-dom";
 import { IoArrowForwardOutline } from "react-icons/io5";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import img1 from "../../assets/before_after/img1.jpg";
+import img2 from "../../assets/before_after/img2.jpg";
+import img3 from "../../assets/before_after/img3.jpg";
+
+import { Navigation, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-
+import "swiper/css";
+import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from 'swiper/modules';
-
+import { Pagination } from "swiper/modules";
 
 const Home = () => {
   const [accordian, setAccordian] = useState(0);
@@ -41,6 +46,9 @@ const Home = () => {
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.",
     },
   ];
+
+  const data = [img1, img2, img3, img1, img2, img3, img1, img2, img3];
+
   return (
     <>
       <HeroSection />
@@ -157,7 +165,6 @@ const Home = () => {
             </div>
           </div>
           <div class="wc_right">
-
             <div class="top_rg">
               <div class="rg_tp_lg">
                 <div class="lg1 bg-img-contain">
@@ -168,9 +175,7 @@ const Home = () => {
               <div class="rp_tp_rg bg-img-cover"></div>
             </div>
             <div class="bottom_rg">
-              <div class="bt_lg bg-img-cover">
-
-              </div>
+              <div class="bt_lg bg-img-cover"></div>
               <div class="bt_rg">
                 <div class="inner bg-img-cover"></div>
               </div>
@@ -186,56 +191,55 @@ const Home = () => {
         <div className="blog_cont cont">
           <div className="top_bar">
             <div className="blog_heading">Blog And News</div>
-            <Button
-              text="Read More"
-              path="/blog"
-            />
+            <Button text="Read More" path="/blog" />
           </div>
 
           <div className="blog_cards">
             <div className="card">
               <div className="image bg-img-cover">
-                <p className="date">
-                  17 may 2025
-                </p> ̰
+                <p className="date">17 may 2025</p> ̰
               </div>
               <h1 className="blog_heading">
                 The Art of Managing Business and Patient Care
               </h1>
-              <p>It is a long established fact that a reader will be distracted by the readable content. ̰</p>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content. ̰
+              </p>
               <Link className="arrow">
                 <IoArrowForwardOutline />
               </Link>
             </div>
             <div className="card">
               <div className="image bg-img-cover">
-                <p className="date">
-                  17 may 2025
-                </p> ̰
+                <p className="date">17 may 2025</p> ̰
               </div>
               <h1 className="blog_heading">
                 The Art of Managing Business and Patient Care
               </h1>
-              <p>It is a long established fact that a reader will be distracted by the readable content. ̰</p>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content. ̰
+              </p>
               <Link className="arrow">
                 <IoArrowForwardOutline />
               </Link>
             </div>
             <div className="card">
               <div className="image bg-img-cover">
-                <p className="date">
-                  17 may 2025
-                </p> ̰
+                <p className="date">17 may 2025</p> ̰
               </div>
               <h1 className="blog_heading">
                 The Art of Managing Business and Patient Care
               </h1>
-              <p>It is a long established fact that a reader will be distracted by the readable content. ̰</p>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content. ̰
+              </p>
               <Link className="arrow">
                 <IoArrowForwardOutline />
               </Link>
             </div>
-
           </div>
         </div>
       </div>
@@ -243,7 +247,7 @@ const Home = () => {
       <div className="testimoneals_parent parent">
         <div className="testimoneal_cont cont">
           <div className="top_bar">
-            <div className="testimoneal_heading"  >
+            <div className="testimoneal_heading">
               What our patient say about us
             </div>
           </div>
@@ -257,57 +261,97 @@ const Home = () => {
               breakpoints={{
                 980: {
                   slidesPerView: 2,
-                  spaceBetween: 30
+                  spaceBetween: 30,
                 },
-                350:{
+                350: {
                   slidesPerView: 1,
-                  spaceBetween: 30
-                }
+                  spaceBetween: 30,
+                },
               }}
               modules={[Pagination]}
               className="mySwiper"
             >
               <SwiperSlide className="swiper-slide">
-                <div className="left bg-img-cover">
-
-                </div>
+                <div className="left bg-img-cover"></div>
                 <div className="right_content">
                   <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has a
+                    making it look like readable English.
                   </p>
-                  <h3>
-                    Lorem lipsum
-                  </h3>
+                  <h3>Lorem lipsum</h3>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
-                <div className="left bg-img-cover">
-
-                </div>
+                <div className="left bg-img-cover"></div>
                 <div className="right_content">
                   <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has a
+                    making it look like readable English.
                   </p>
-                  <h3>
-                    Lorem lipsum
-                  </h3>
+                  <h3>Lorem lipsum</h3>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
-                <div className="left bg-img-cover">
-
-                </div>
+                <div className="left bg-img-cover"></div>
                 <div className="right_content">
                   <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has a
+                    making it look like readable English.
                   </p>
-                  <h3>
-                    Lorem lipsum
-                  </h3>
+                  <h3>Lorem lipsum</h3>
                 </div>
               </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </div>
 
+      <div class="parent before_after_gallery_parent">
+        <div class="cont before_after_gallery_cont">
+          <div className="results-section">
+            <div className="header">
+              <h1>Real People. Real Results.</h1>
+              <div className="nav-buttons">
+                <button className="prev">←</button>
+                <button className="next">→</button>
+              </div>
+            </div>
 
+            <Swiper
+              modules={[Navigation]}
+              spaceBetween={20}
+              slidesPerView={4}
+              navigation={{
+                nextEl: ".next",
+                prevEl: ".prev",
+              }}
+              autoplay={{
+                delay: 2000, // time between slides (2 sec)
+                disableOnInteraction: false, // keeps autoplay after click/swipe
+              }}
+              breakpoints={{
+                0: { slidesPerView: 1.2 },
+                600: { slidesPerView: 2 },
+                900: { slidesPerView: 3 },
+                1200: { slidesPerView: 4 },
+              }}
+            >
+              {data.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <div className="card">
+                    <div className="image-wrapper">
+                      <img src={item} alt="before" />
+                      <div className="divider"></div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
