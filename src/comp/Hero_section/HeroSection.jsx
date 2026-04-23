@@ -6,7 +6,7 @@ import image3 from "../../assets/hero_section/img1.webp";
 import image4 from "../../assets/hero_section/img3.webp";
 import image5 from "../../assets/hero_section/img5.webp";
 import image6 from "../../assets/hero_section/img6.webp";
-import dental_video from "../../assets/dental_video.mp4";
+import dental_video from "../../assets/dental_video.webm";
 
 const HeroSection = () => {
   return (
