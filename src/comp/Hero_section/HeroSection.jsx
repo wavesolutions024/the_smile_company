@@ -1,89 +1,21 @@
 import React from "react";
 import "./HeroSection.scss";
-import image1 from "../../assets/hero_section/img2.webp";
-import image2 from "../../assets/hero_section/img4.webp";
-import image3 from "../../assets/hero_section/img1.webp";
-import image4 from "../../assets/hero_section/img3.webp";
-import image5 from "../../assets/hero_section/img5.webp";
-import image6 from "../../assets/hero_section/img6.webp";
+
 import dental_video from "../../assets/dental_video.webm";
 
 const HeroSection = () => {
   return (
     <>
-      {/* <div class="hero_parent parent bg-img-cover">
-        <div class="grid_parent "></div>
-        <div class="overlay"></div>
-        <div class="hero_cont cont">
-          <div class="hero_left">
-            <h1>
-              Get Beautiful Straight{" "}
-              <span class="span1">
-                Smile
-                <svg
-                  class="smile_svg"
-                  width="207"
-                  height="44"
-                  viewBox="0 0 207 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9 12C83 50 121.2 54.4 198 12"
-                    stroke="var(--accent2)"
-                    stroke-width="3"
-                  ></path>
-                  <path
-                    d="M14 1L2 23"
-                    stroke="var(--accent2)"
-                    stroke-width="3"
-                  ></path>
-                  <path
-                    d="M193 1L205 23"
-                    stroke="var(--accent2)"
-                    stroke-width="3"
-                  ></path>
-                </svg>
-              </span>{" "}
-              <span class="span2">Quickly</span>
-            </h1>
-            <div class="hero_para">
-              <p>
-                Experienced staff is dedicated to improving our patientsâ€™
-                dental health and enhancing
-              </p>
-            </div>
-
-            <div class="image1">
-              <img src={image1} alt=""/>
-            </div>
-            <div class="image2">
-              <img src={image2} alt=""/>
-            </div>
-          </div>
-          <div class="hero_right">
-            <div class="circle_overlay"></div>
-            <div class="center_image">
-              <img src={image3} alt=""/>
-            </div>
-            <div class="image4">
-              <img src={image4} alt=""/>
-            </div>
-            <div class="image5">
-              <img src={image5} alt=""/>
-            </div>
-            <div class="image5 image6">
-              <img src={image6} alt=""/>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      <div className="parent">
-        <div className="video-content cont">
-
+      <div className="parent video_parent">
+        <div class="video_overlay"></div>
+        <div className="video_cont cont">
           <p className="video-label">Denza Dentistry</p>
           <h1 className="video-heading">Experience The Advanced Dentistry</h1>
+          <p style={{color:"#c5c5c5"}}>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+            nesciunt, a eaque asperiores cupiditate vero iste, magnam ipsum
+            repellendus nemo unde placeat similique! Earum, qui?
+          </p>
         </div>
         <video width="100%" autoPlay loop muted playsInline>
           <source src={dental_video} type="video/mp4" />
