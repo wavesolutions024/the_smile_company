@@ -6,7 +6,7 @@ import image3 from "../../assets/hero_section/img1.webp";
 import image4 from "../../assets/hero_section/img3.webp";
 import image5 from "../../assets/hero_section/img5.webp";
 import image6 from "../../assets/hero_section/img6.webp";
-// import dental_video from "../../assets/dental_video.mp4";
+import dental_video from "../../assets/dental_video.webm";
 
 const HeroSection = () => {
   return (
@@ -85,9 +85,9 @@ const HeroSection = () => {
           <p className="video-label">Denza Dentistry</p>
           <h1 className="video-heading">Experience The Advanced Dentistry</h1>
         </div>
-        {/* <video width="100%" autoPlay loop muted playsInline>
+        <video width="100%" autoPlay loop muted playsInline>
           <source src={dental_video} type="video/mp4" />
-        </video> */}
+        </video>
       </div>
     </>
   );
