@@ -30,7 +30,23 @@
   color: #fff;
   margin-bottom: 10px;
 }
-
+.social_media_main {
+  display: flex;
+  gap: calc(var(--unit) / 2);
+  .social_media_icon {
+    font-size: 20px;
+    display: flex;
+    background: #42546d;
+    padding: 8px;
+    border-radius: 20px;
+    transition: var(--trans);
+    &:hover {
+      cursor: pointer;
+      background: #fff;
+      color: var(--accent);
+    }
+  }
+}
 .footer__brand p {
   max-width: 320px;
   margin-bottom: 24px;

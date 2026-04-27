@@ -14,6 +14,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import img1 from "../../assets/before_after/img1.jpg";
 import img2 from "../../assets/before_after/img2.jpg";
 import img3 from "../../assets/before_after/img3.jpg";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 import { Navigation, Autoplay } from "swiper/modules";
 
@@ -49,6 +51,31 @@ const Home = () => {
 
   const data = [img1, img2, img3, img1, img2, img3, img1, img2, img3];
 
+  const counter = [
+    {
+      title: "Happy Patients",
+      count: 450,
+      suffix: "K",
+      icon: icon1,
+    },
+    {
+      title: "Specialists",
+      count: 200,
+      suffix: "K",
+      icon: icon2,
+    },
+    {
+      title: "Winning Awards",
+      count: 150,
+      icon: icon3,
+    },
+  ];
+
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.3,
+  });
+
   return (
     <>
       <HeroSection />
@@ -78,50 +105,27 @@ const Home = () => {
           </div>
 
           <div class="abt_bottom_sec">
-            <div class="abt_sec sec1">
-              <div class="left">
-                <h1>Medical Service</h1>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page.
-                </p>
-              </div>
-              <div class="right">
-                <h1>01</h1>
-                <div class="icon">
-                  <img src={icon1} alt="" />
+            <div className="count_main" ref={ref}>
+              {counter.map((item, index) => (
+                <div className="abt_sec sec1" key={index}>
+                  <div className="left">
+                    <div className="icon">
+                      <img src={item.icon} alt="" />
+                    </div>
+                  </div>
+
+                  <div className="right">
+                    <h1>
+                      {inView && (
+                        <CountUp start={0} end={item.count} duration={2} />
+                      )}
+                      {item.suffix || ""}+
+                    </h1>
+
+                    <span className="service_name">{item.title}</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="abt_sec sec2">
-              <div class="left">
-                <h1>24/7 Medicines</h1>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page.
-                </p>
-              </div>
-              <div class="right">
-                <h1>02</h1>
-                <div class="icon">
-                  <img src={icon2} alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="abt_sec sec3">
-              <div class="left">
-                <h1>Best Doctor</h1>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page.
-                </p>
-              </div>
-              <div class="right">
-                <h1>03</h1>
-                <div class="icon">
-                  <img src={icon3} alt="" />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

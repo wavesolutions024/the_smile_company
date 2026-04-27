@@ -1,12 +1,11 @@
 import React from "react";
 import "./Footer.scss";
+import { BsFacebook } from "react-icons/bs";
 
 const Footer = () => {
   return (
     <footer className="footer parent bg-img-cover">
-<div className="footer_overlay">
-
-</div>
+      <div className="footer_overlay"></div>
 
       <div className="footer__inner cont">
         <div className="footer__brand">
@@ -15,6 +14,20 @@ const Footer = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam
             nonummy nibh.
           </p>
+          <div className="social_media_main">
+            <span className="social_media_icon">
+              <BsFacebook />
+            </span>
+            <span className="social_media_icon">
+              <BsFacebook />
+            </span>
+            <span className="social_media_icon">
+              <BsFacebook />
+            </span>
+            <span className="social_media_icon">
+              <BsFacebook />
+            </span>
+          </div>
         </div>
 
         <div className="footer__links">
