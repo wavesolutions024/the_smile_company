@@ -57,6 +57,9 @@ const Header = () => {
               <Link to="/" onClick={() => setHeader(false)}>
                 Services
               </Link>
+               <Link to="/technology" onClick={() => setHeader(false)}>
+                Technology
+              </Link>
               <Link to="/contact" onClick={() => setHeader(false)}>
                 Contact
               </Link>
