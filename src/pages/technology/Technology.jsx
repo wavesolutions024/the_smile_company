@@ -104,15 +104,7 @@ const Technology = () => {
                     Appointment
                   </div>
 
-                  <div className="contact_us_main">
-                    <div className="icon">
-                      <img src={phone} alt="Phone" />
-                    </div>
-                    <div className="text_contact">
-                      <span>Contact us?</span>
-                      <span className="no">+91 9568412003</span>
-                    </div>
-                  </div>
+                 
                 </div>
               </div>
 

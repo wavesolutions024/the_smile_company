@@ -5,6 +5,13 @@
     linear-gradient(to top, #ffe387a4, transparent),
     url("../../assets/about_section/bg4.webp");
 
+  h1 {
+    font-size: 50px;
+    max-width: 20ch;
+    font-weight: 900;
+    color: var(--accent);
+  }
+
   .about_section_cont {
     height: auto;
     display: flex;
@@ -389,8 +396,10 @@
       justify-content: space-between;
       align-items: center;
 
-      .blog_heading {
-        font-size: 44px;
+      h1 {
+        font-size: 40px;
+        font-weight: 800;
+        color: var(--accent);
       }
     }
 
@@ -474,12 +483,11 @@
       justify-content: space-between;
       align-items: center;
 
-      .testimoneal_heading {
-        font-size: 55px;
+      h1 {
+        font-size: 50px;
         max-width: 20ch;
-        font-weight: bolder;
+        font-weight: 900;
         color: var(--accent);
-        text-transform: capitalize;
       }
     }
 
@@ -541,8 +549,9 @@
         margin-bottom: 20px;
 
         h1 {
-          font-size: 40px;
-          font-weight: 800;
+          font-size: 50px;
+          max-width: 20ch;
+          font-weight: 900;
           color: var(--accent);
         }
 

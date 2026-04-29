@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Home.scss";
 import HeroSection from "../../comp/Hero_section/HeroSection";
 import Button from "../../comp/button/Button";
+import Appointment from "../../comp/appointment/Appointment";
 import abt_img from "../../assets/about_section/img5.webp";
 import img5 from "../../assets/about_section/img4.webp";
 import img4 from "../../assets/about_section/img5.webp";
@@ -80,19 +81,19 @@ const Home = () => {
     <>
       <HeroSection />
 
-      <div class="about_section_parent bg-img-cover parent">
-        <div class="about_section_cont cont">
-          <div class="abt_top_sec">
-            <div class="ab_left">
-              <div class="image">
+      <div className="about_section_parent bg-img-cover parent">
+        <div className="about_section_cont cont">
+          <div className="abt_top_sec">
+            <div className="ab_left">
+              <div className="image">
                 <img src={abt_img} alt="" />
 
-                <div class="round_image">
+                <div className="round_image">
                   <img src={img5} alt="" />
                 </div>
               </div>
             </div>
-            <div class="ab_right">
+            <div className="ab_right">
               <h1>We Care About Your Dental Health</h1>
               <p>
                 It is a long established fact that a reader will be distracted
@@ -104,7 +105,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div class="abt_bottom_sec">
+          <div className="abt_bottom_sec">
             <div className="count_main" ref={ref}>
               {counter.map((item, index) => (
                 <div className="abt_sec sec1" key={index}>
@@ -194,7 +195,7 @@ const Home = () => {
         <div className="overlay bg-img-cover"></div>
         <div className="blog_cont cont">
           <div className="top_bar">
-            <div className="blog_heading">Blog And News</div>
+            <h1>Blog And News</h1>
             <Button text="Read More" path="/blog" />
           </div>
 
@@ -210,7 +211,7 @@ const Home = () => {
                 It is a long established fact that a reader will be distracted
                 by the readable content. ̰
               </p>
-              <Link className="arrow">
+              <Link to="/blog-details" className="arrow">
                 <IoArrowForwardOutline />
               </Link>
             </div>
@@ -225,7 +226,7 @@ const Home = () => {
                 It is a long established fact that a reader will be distracted
                 by the readable content. ̰
               </p>
-              <Link className="arrow">
+              <Link to="/blog-details" className="arrow">
                 <IoArrowForwardOutline />
               </Link>
             </div>
@@ -240,7 +241,7 @@ const Home = () => {
                 It is a long established fact that a reader will be distracted
                 by the readable content. ̰
               </p>
-              <Link className="arrow">
+              <Link to="/blog-details" className="arrow">
                 <IoArrowForwardOutline />
               </Link>
             </div>
@@ -251,9 +252,7 @@ const Home = () => {
       <div className="testimoneals_parent parent">
         <div className="testimoneal_cont cont">
           <div className="top_bar">
-            <div className="testimoneal_heading">
-              What our patient say about us
-            </div>
+            <h1 className="testimoneal_heading">What our patient say</h1>
           </div>
           <div className="testimoneal_listing">
             <Swiper
@@ -316,11 +315,14 @@ const Home = () => {
         </div>
       </div>
 
+      {/* appointment page */}
+      <Appointment />
+
       <div class="parent before_after_gallery_parent">
         <div class="cont before_after_gallery_cont">
           <div className="results-section">
             <div className="header">
-              <h1>Real People. Real Results.</h1>
+              <h1>Real People Real Results.</h1>
               <div className="nav-buttons">
                 <button className="prev">←</button>
                 <button className="next">→</button>
