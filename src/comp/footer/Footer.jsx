@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer__inner cont">
         <div className="footer__brand">
           <h2>ClinicMaster</h2>
-          <p>
+          <p style={{color:"white"}}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam
             nonummy nibh.
           </p>

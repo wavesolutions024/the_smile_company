@@ -99,7 +99,7 @@ const Appointment = () => {
                 >
                   <option value="">Department</option>
                   {departments.map((dept, index) => (
-                    <option key={index} value={dept}>
+                    <option className="opt" key={index} value={dept}>
                       {dept}
                     </option>
                   ))}

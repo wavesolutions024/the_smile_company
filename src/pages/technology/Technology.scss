@@ -55,7 +55,7 @@
               img {
                 width: 50px;
                 height: 50px;
-                color: red;
+              
               }
             }
 
@@ -114,7 +114,7 @@
               align-items: center;
               padding: calc(var(--unit) * 1.5) calc(var(--unit) * 2);
               cursor: pointer;
-              background-color: #f9f9f9;
+              background-color: var(--white);
               transition: background-color 0.3s ease;
               user-select: none;
 

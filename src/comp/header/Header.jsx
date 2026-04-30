@@ -38,7 +38,7 @@ const Header = () => {
             }
           >
             <div class="top_section">
-              <Link onClick={() => setHeader(false)} to="/" class="logo">
+              <Link onClick={() => setHeader(false)} to="/" className="logo">
                 <img src={logo} alt="" />
               </Link>
 
@@ -54,7 +54,7 @@ const Header = () => {
               <Link to="/about" onClick={() => setHeader(false)}>
                 About Us
               </Link>
-              <Link to="/" onClick={() => setHeader(false)}>
+              <Link to="/services" onClick={() => setHeader(false)}>
                 Services
               </Link>
                <Link to="/technology" onClick={() => setHeader(false)}>

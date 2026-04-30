@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   background:
-    linear-gradient(to top, #ffe387a4, transparent),
+    linear-gradient(to top, var(--background), transparent),
     url("../../assets/about_section/bg4.webp");
 
   h1 {
@@ -367,7 +367,7 @@
 .blog_parent {
   width: 100%;
   height: auto;
-  background-color: #c8defe88;
+  background-color: var(--background);
   position: relative;
 
   .overlay {
@@ -430,7 +430,7 @@
 
           .date {
             padding: 4px 8px;
-            background-color: var(--accent2);
+            background-color: var(--background);
             color: var(--accent);
             width: fit-content;
             border-radius: var(--unit);

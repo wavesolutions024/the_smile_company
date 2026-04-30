@@ -176,7 +176,7 @@
 
 .vision_parent {
   background:
-    linear-gradient(#0b1f3bd0, #0b1f3bd0),
+    linear-gradient(#1e1e1ed2, #1e1e1ed2),
     url("../../assets/about_page/v_m_bg_img.webp");
   padding: 150px 0px;
 
@@ -207,7 +207,7 @@
       }
 
       h3 {
-        color: var(--accent2);
+        color: var(--accent);
         font-weight: 700;
         font-size: 24px;
         position: relative;
@@ -220,7 +220,7 @@
           display: block;
           width: 40px;
           height: 2px;
-          background: var(--accent);
+          background: var(--background);
           position: absolute;
           right: 105%;
           top: 50%;
@@ -233,7 +233,7 @@
           display: block;
           width: 40px;
           height: 2px;
-          background: var(--accent);
+          background: var(--background);
           position: absolute;
           left: 105%;
           top: 50%;

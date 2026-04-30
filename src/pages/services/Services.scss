@@ -1,0 +1,123 @@
+.services_parent {
+  padding: 150px 0px;
+
+  .services_cont {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--unit) * 5);
+
+    .right_left_main {
+      display: flex;
+      gap: calc(var(--unit) * 5);
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+
+        .service_right {
+          .num {
+            left: 5%;
+          }
+        }
+      }
+
+      .service_left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: calc(var(--unit) / 2);
+        }
+      }
+
+      .service_right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--unit));
+        position: relative;
+
+        .num {
+          font-size: 250px;
+          font-weight: 700;
+          color: var(--accent);
+          position: absolute;
+          top: -20%;
+          right: 7%;
+          z-index: -1;
+          opacity: 0.1;
+        }
+
+        h1 {
+          font-size: 40px;
+          font-weight: 700;
+          color: var(--accent);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .services_parent {
+    .services_cont {
+      .right_left_main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+          display: flex;
+          flex-direction: column;
+        }
+        .service_left {
+          width: 70%;
+          align-items: center;
+          justify-content: center;
+        }
+        .service_right {
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+
+          .num {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .services_parent {
+    .services_cont {
+      .right_left_main {
+        gap: calc(var(--unit));
+        .service_left {
+          width: 100%;
+        }
+        .service_right {
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+
+          .num {
+            display: none;
+          }
+
+          h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--accent);
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

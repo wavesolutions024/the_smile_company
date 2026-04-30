@@ -36,7 +36,7 @@
   .social_media_icon {
     font-size: 20px;
     display: flex;
-    background: #42546d;
+    background: #fbede242;
     padding: 8px;
     border-radius: 20px;
     transition: var(--trans);
@@ -60,7 +60,7 @@
 }
 
 .footer__col h3 {
-  color: #f5f6ff;
+  color: white;
   font-size: 18px;
   margin-bottom: 14px;
 }
@@ -71,7 +71,7 @@
 
 .footer__col li {
   margin-bottom: 10px;
-  color: #b8c0ed;
+  color: rgba(255, 255, 255, 0.527);
   font-size: 15px;
   cursor: pointer;
   transition: color 0.2s ease;
