@@ -20,6 +20,10 @@ import { useInView } from "react-intersection-observer";
 
 import { Navigation, Autoplay } from "swiper/modules";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -77,11 +81,25 @@ const Home = () => {
     threshold: 0.3,
   });
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
+      offset: 120,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <>
       <HeroSection />
 
-      <div className="about_section_parent bg-img-cover parent">
+      <div
+        className="about_section_parent bg-img-cover parent"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <div className="about_section_cont cont">
           <div className="abt_top_sec">
             <div className="ab_left">
@@ -131,7 +149,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div class="why_choose_parent bg-img-cover parent">
+      <div
+        class="why_choose_parent bg-img-cover parent"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <div class="why_choose_cont cont">
           <div class="wc_left">
             <h1>Why Choose Dental Care</h1>
@@ -191,7 +213,11 @@ const Home = () => {
 
       {/* blog and news */}
 
-      <div className="blog_parent parent">
+      <div
+        className="blog_parent parent"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <div className="overlay bg-img-cover"></div>
         <div className="blog_cont cont">
           <div className="top_bar">
@@ -249,7 +275,11 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="testimoneals_parent parent">
+      <div
+        className="testimoneals_parent parent"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
         <div className="testimoneal_cont cont">
           <div className="top_bar">
             <h1 className="testimoneal_heading">What our patient say</h1>
@@ -316,9 +346,14 @@ const Home = () => {
       </div>
 
       {/* appointment page */}
-      <Appointment />
+      <Appointment  data-aos="fade-up"
+        data-aos-delay="500" />
 
-      <div class="parent before_after_gallery_parent">
+      <div
+        class="parent before_after_gallery_parent"
+        data-aos="fade-up"
+        data-aos-delay="600 "
+      >
         <div class="cont before_after_gallery_cont">
           <div className="results-section">
             <div className="header">

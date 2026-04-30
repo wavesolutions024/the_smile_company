@@ -1,6 +1,9 @@
 import React from "react";
 import "./Footer.scss";
 import { BsFacebook } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
+import { FiYoutube } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -19,13 +22,13 @@ const Footer = () => {
               <BsFacebook />
             </span>
             <span className="social_media_icon">
-              <BsFacebook />
+              <FaInstagram />
             </span>
             <span className="social_media_icon">
-              <BsFacebook />
+              <CiLinkedin />
             </span>
             <span className="social_media_icon">
-              <BsFacebook />
+              <FiYoutube />
             </span>
           </div>
         </div>

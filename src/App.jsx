@@ -10,11 +10,14 @@ import Female from "./pages/dr-page/Female";
 import Technology from "./pages/technology/Technology";
 import BlogDetails from "./pages/blog-details/BlogDetails";
 import Services from "./pages/services/Services";
+import ScrollToTop from "./pages/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+
+      <ScrollToTop />
       <Header/>
         <Routes>
           <Route element={<Home />} path="/" />
