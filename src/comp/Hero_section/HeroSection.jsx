@@ -1,7 +1,7 @@
 import React from "react";
 import "./HeroSection.scss";
 
-import dental_video from "../../assets/dental_video.webm";
+import dental_video from "../../assets/dental_video.mp4";
 
 const HeroSection = () => {
   return (

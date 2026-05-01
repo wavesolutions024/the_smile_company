@@ -2,6 +2,7 @@
   background: url("../../assets/appointment/bg.webp");
   position: relative;
   overflow: hidden;
+  padding: 150px 0px;
 
   &::before {
     content: "";
@@ -207,7 +208,7 @@
     }
 
     @media (max-width: 600px) {
-      height: 250px;
+      height: 300px;
     }
   }
 }
@@ -243,5 +244,28 @@
   .appointment_btn,
   .appointment_image_box {
     transition: none;
+  }
+}
+
+
+@media(max-width:550px){
+  .appointment_section{
+    padding: 50px 0px;
+    
+    .appointment_container{
+      
+      .appointment_form_wrapper{
+
+        .appointment_title{
+          font-size: 30px;
+          max-width: 100%;
+        }
+      }
+
+      .appointment_image_box{
+
+
+      }
+    }
   }
 }

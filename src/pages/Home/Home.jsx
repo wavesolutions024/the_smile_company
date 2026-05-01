@@ -377,7 +377,7 @@ const Home = () => {
                 disableOnInteraction: false, // keeps autoplay after click/swipe
               }}
               breakpoints={{
-                0: { slidesPerView: 1.2 },
+                0: { slidesPerView: 1 },
                 600: { slidesPerView: 2 },
                 900: { slidesPerView: 3 },
                 1200: { slidesPerView: 4 },
