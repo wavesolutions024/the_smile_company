@@ -11,10 +11,11 @@ import Technology from "./pages/technology/Technology";
 import BlogDetails from "./pages/blog-details/BlogDetails";
 import ScrollToTop from "./pages/ScrollToTop";
 import GeneralDental from "./pages/services/general dental/GeneralDental";
+import RestorativeDentistry from "./pages/services/restorative dentistry/RestorativeDentistry";
 
 function AppLayout() {
   const location = useLocation();
-  const hideHeaderFooter = location.pathname === "/general-dental";
+  const hideHeaderFooter = location.pathname === "/header";
 
   return (
     <>
@@ -26,6 +27,7 @@ function AppLayout() {
         <Route element={<Contact />} path="/contact" />
         <Route element={<Technology />} path="/technology" />
         <Route element={<GeneralDental />} path="/general-dental" />
+        <Route element={<RestorativeDentistry />} path="/restorative-dentistry" />
         <Route element={<Male />} path="/male-dr" />
         <Route element={<Female />} path="/female-dr" />
         <Route element={<BlogDetails />} path="/blog-details" />
