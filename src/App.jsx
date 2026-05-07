@@ -12,6 +12,8 @@ import BlogDetails from "./pages/blog-details/BlogDetails";
 import ScrollToTop from "./pages/ScrollToTop";
 import GeneralDental from "./pages/services/general dental/GeneralDental";
 import RestorativeDentistry from "./pages/services/restorative dentistry/RestorativeDentistry";
+import CosmeticDentistry from "./pages/services/cosmetic dentistry/CosmeticDentistry";
+import OrthodonticTreatments from "./pages/services/orthodontic treatments/OrthodonticTreatments";
 
 function AppLayout() {
   const location = useLocation();
@@ -28,6 +30,8 @@ function AppLayout() {
         <Route element={<Technology />} path="/technology" />
         <Route element={<GeneralDental />} path="/general-dental" />
         <Route element={<RestorativeDentistry />} path="/restorative-dentistry" />
+        <Route element={<CosmeticDentistry />} path="/cosmetic-dentistry" />
+        <Route element={<OrthodonticTreatments />} path="/orthodontic-treatments" />
         <Route element={<Male />} path="/male-dr" />
         <Route element={<Female />} path="/female-dr" />
         <Route element={<BlogDetails />} path="/blog-details" />
