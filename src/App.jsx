@@ -1,7 +1,7 @@
 import "./App.scss";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Header from "./comp/header/Header";
+import HeaderNew from "./comp/header new/HeaderNew";
 import About from "./pages/about/About";
 import Footer from "./comp/footer/Footer";
 import Contact from "./pages/contact/Contact";
@@ -14,6 +14,30 @@ import GeneralDental from "./pages/services/general dental/GeneralDental";
 import RestorativeDentistry from "./pages/services/restorative dentistry/RestorativeDentistry";
 import CosmeticDentistry from "./pages/services/cosmetic dentistry/CosmeticDentistry";
 import OrthodonticTreatments from "./pages/services/orthodontic treatments/OrthodonticTreatments";
+import FullMouthRihabilitation from "./pages/services/full mouth rihabilitation/FullMouthRihabilitation";
+import PediatricDentistry from "./pages/services/pediatric dentistry/PediatricDentistry";
+import DentalCheckUps from "./pages/sub services/dental check ups/DentalCheckUps";
+import DentalXRay from "./pages/sub services/dental x-ray/DentalXRay";
+import TeethCleaning from "./pages/sub services/teeth cleaning/TeethCleaning";
+import RootCanalTreatment from "./pages/sub services/root canal treatment/RootCanalTreatment";
+import ToothExtraction from "./pages/sub services/tooth extraction/ToothExtraction";
+import WisdomToothExtraction from "./pages/sub services/wisdom tooth extraction/WisdomToothExtraction";
+import MinorOralSurgeries from "./pages/sub services/minor oral surgeries/MinorOralSurgeries";
+import ToothColouredFeeling from "./pages/sub services/tooth coloured filling/ToothColouredFeeling";
+import DentalCrowns from "./pages/sub services/dental crowns/DentalCrowns";
+import CrownsBridges from "./pages/sub services/crowns bridges/CrownsBridges";
+import InlaysOnlays from "./pages/sub services/inlays and onlays/InlaysOnlays";
+import SmileAnalysisConsultation from "./pages/sub services/smile analysis consul/SmileAnalysisConsultation";
+import SmileDesigning from "./pages/sub services/smile designing/SmileDesigning";
+import TeethWhiteningTreatment from "./pages/sub services/teeth whiteing treatment/TeethWhiteningTreatment";
+import PorcelainVennersTreatment from "./pages/sub services/porcelain veneers treatment/PorcelainVennersTreatment";
+import CompositeVeeners from "./pages/sub services/composite veener/CompositeVeeners";
+import CompositeBonding from "./pages/sub services/commposite bonding/CompositeBonding";
+import GumDepizmentation from "./pages/sub services/gum depezmentation/GumDepizmentation";
+import ClearAligners from "./pages/sub services/clear aligner/ClearAligners";
+import CeramicBraces from "./pages/sub services/ceramic braces/CeramicBraces";
+import AllOnFour from "./pages/sub services/all on four/AllOnFour";
+import ImplantSupported from "./pages/sub services/implant supported/ImplantSupported";
 
 function AppLayout() {
   const location = useLocation();
@@ -22,7 +46,7 @@ function AppLayout() {
   return (
     <>
       <ScrollToTop />
-      {!hideHeaderFooter && <Header />}
+      {!hideHeaderFooter && <HeaderNew />}
       <Routes>
         <Route element={<Home />} path="/" />
         <Route element={<About />} path="/about" />
@@ -32,7 +56,31 @@ function AppLayout() {
         <Route element={<RestorativeDentistry />} path="/restorative-dentistry" />
         <Route element={<CosmeticDentistry />} path="/cosmetic-dentistry" />
         <Route element={<OrthodonticTreatments />} path="/orthodontic-treatments" />
-        <Route element={<Male />} path="/male-dr" />
+        <Route element={<FullMouthRihabilitation />} path="/full-mouth-rehabilitation" />
+        <Route element={<PediatricDentistry />} path="/pediatric-dentistry" />
+        <Route element={<DentalCheckUps />} path="/dental-check-ups" />
+        <Route element={<DentalXRay />} path="/dental-x-ray" />
+        <Route element={<DentalXRay />} path="/dental-x-ray" />
+        <Route element={<TeethCleaning />} path="/teeth-cleaning" />
+        <Route element={<RootCanalTreatment />} path="/root-canal-treatment" />
+        <Route element={<ToothExtraction />} path="/tooth-extraction" />
+        <Route element={<WisdomToothExtraction />} path="/wisdom-tooth-extraction" />
+        <Route element={<MinorOralSurgeries />} path="/minor-oral-surgeries" />
+        <Route element={<ToothColouredFeeling />} path="/tooth-coloured-feeling" />
+        <Route element={<DentalCrowns />} path="/dental-crowns" />
+        <Route element={<CrownsBridges />} path="/crowns-bridges" />
+        <Route element={<InlaysOnlays />} path="/inlays-onlays" />
+        <Route element={<SmileAnalysisConsultation />} path="/smile-analysis-consultation" />
+        <Route element={<SmileDesigning />} path="/smile-designing" />
+        <Route element={<TeethWhiteningTreatment />} path="/teeth-whitening-treatment" />
+        <Route element={<PorcelainVennersTreatment />} path="/porcelain-veneers-treatment" />
+        <Route element={<CompositeVeeners />} path="/composite-veneers" />
+        <Route element={<CompositeBonding />} path="/composite-bonding" />
+        <Route element={<GumDepizmentation />} path="/gum-depizmentation" />
+        <Route element={<ClearAligners />} path="/clear-aligners" />
+        <Route element={<CeramicBraces />} path="/ceramic-braces" />
+        <Route element={<AllOnFour />} path="/all-on-four" />
+        <Route element={<ImplantSupported />} path="/implant-supported" />
         <Route element={<Female />} path="/female-dr" />
         <Route element={<BlogDetails />} path="/blog-details" />
       </Routes>

@@ -16,8 +16,6 @@
     position: absolute;
     bottom: 6%;
     width: 100%;
-    left: -50%;
-    right: -50%;
     .bts_grp {
       display: flex;
       gap: calc(var(--unit));
@@ -145,7 +143,7 @@
 @media (max-width: 900px) {
   .second_parent {
     .second_cont {
-     flex-direction: column;
+      flex-direction: column;
       .general_left {
         width: 100%;
       }
@@ -163,7 +161,7 @@
 
 .third_section {
   padding: 4rem 0 2rem;
-  background: var(--accent2);
+  background: var(--accent);
   color: rgba(255, 255, 255, 0.821);
 }
 
@@ -177,6 +175,12 @@
   font-size: 2.8rem;
   margin-bottom: 1rem;
   color: #ffffff;
+}
+
+@media (max-width: 550px) {
+  .third_header h2 {
+    font-size: 2rem;
+  }
 }
 
 .third_header p {
@@ -228,7 +232,6 @@
 
 .gallery_parent {
   padding: 3rem 0;
- 
 }
 
 .gallery_cont {
@@ -278,6 +281,12 @@
   font-size: 1.25rem;
 }
 
+@media (max-width: 550px) {
+  .gallery_header h2 {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 1100px) {
   .service_cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -297,7 +306,7 @@
 }
 
 .faq_header h2 {
-  color:var(--accent);
+  color: var(--accent);
   font-size: 3rem;
   margin-bottom: 0.75rem;
 }
@@ -314,7 +323,6 @@
   margin: 0 auto;
   display: grid;
   gap: 1rem;
-  padding: 0 10px;
 }
 
 .faq_item {
@@ -322,7 +330,9 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 26px;
   overflow: hidden;
-  transition: border-color 0.2s ease, background 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
 }
 
 .faq_item:hover {
@@ -352,7 +362,9 @@
 .faq_answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease;
   padding: 0 1.75rem;
 }
 
@@ -377,7 +389,7 @@
   }
 
   .faq_header h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .faq_question {
@@ -387,5 +399,11 @@
 
   .faq_answer {
     padding: 0 1.25rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .faq_header h2 {
+    font-size: 2rem;
   }
 }

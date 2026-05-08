@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./DentalCheckUps.scss";
+import "./ToothColouredFeeling.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
@@ -98,7 +98,7 @@ const faqs = [
   },
 ];
 
-const DentalCheckUps = () => {
+const  ToothColouredFeeling  = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
  useEffect(() => {
@@ -292,4 +292,4 @@ const DentalCheckUps = () => {
   );
 };
 
-export default DentalCheckUps;
+export default  ToothColouredFeeling ;

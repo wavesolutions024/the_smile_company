@@ -16,8 +16,6 @@
     position: absolute;
     bottom: 6%;
     width: 100%;
-    left: -50%;
-    right: -50%;
     .bts_grp {
       display: flex;
       gap: calc(var(--unit));
@@ -163,7 +161,7 @@
 
 .third_section {
   padding: 4rem 0 2rem;
-  background: var(--accent2);
+  background: var(--accent);
   color: rgba(255, 255, 255, 0.821);
 }
 
@@ -314,7 +312,6 @@
   margin: 0 auto;
   display: grid;
   gap: 1rem;
-  padding: 0 10px;
 }
 
 .faq_item {
@@ -377,7 +374,7 @@
   }
 
   .faq_header h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .faq_question {
