@@ -20,7 +20,6 @@
 
 .contact_left .title_block p {
   font-size: 1.03rem;
-
   max-width: 520px;
   margin-bottom: 30px;
   line-height: 1.6;
@@ -49,13 +48,14 @@
 }
 
 .card_icon {
-  width: 60px;
-  height: 60px;
+  width: 60px !important;
+  height: 60px !important;
   border-radius: 50%;
   display: grid;
   place-items: center;
   color: #fff;
   font-size: 1.5rem;
+  padding: 5px !important;
 }
 
 .card_icon--pink {
