@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./HeaderNew.scss";
 import logo from "../../assets/header/denza_logo.jpeg";
-
+import { RxCross2 } from "react-icons/rx";
 const HeaderNew = () => {
   const location = useLocation();
   const [visible, setVisible] = useState(false);
@@ -41,21 +41,21 @@ const HeaderNew = () => {
 
   return (
     <header
-      className={`header_new ${visible ? "visible" : "hidden"} ${mobileOpen ? "mobile-open" : ""}`}
+      className={visible ? "header_new parent active" : "header_new parent"}
     >
       <div className="header_inner cont">
         <Link to="/" onClick={closeAll} className="logo_link">
           <img src={logo} alt="AO Dentistry" />
         </Link>
 
-        <nav className="main_nav">
+        <div className="main_nav">
           <div
             className={`nav_item dropdown ${activeDropdown === "dental" ? "open" : ""}`}
           >
-            <button type="button" onClick={() => toggleDropdown("dental")}>
+            <Link type="button" onMouseEnter={() => toggleDropdown("dental")}>
               DENTAL SERVICES <span className="caret">▾</span>
-            </button>
-            <div className="dropdown_panel">
+            </Link>
+            <div className="dropdown_panel" onMouseLeave={closeAll}>
               <div className="dropdown_column">
                 <Link to="/general-dental" onClick={closeAll}>
                   GENERAL DENTAL SERVICES
@@ -79,13 +79,13 @@ const HeaderNew = () => {
                 <Link to="/pediatric-dentistry" onClick={closeAll}>
                   PEDIATRIC DENTISTRY
                 </Link>
-                <button
+                <Link
                   type="button"
                   className="submenu_toggle"
                   onClick={() => toggleSubmenu("tooth")}
                 >
                   TOOTH FILLING <span className="caret">▸</span>
-                </button>
+                </Link>
               </div>
 
               <div
@@ -109,10 +109,13 @@ const HeaderNew = () => {
           <div
             className={`nav_item dropdown ${activeDropdown === "technology" ? "open" : ""}`}
           >
-            <button type="button" onClick={() => toggleDropdown("technology")}>
+            <Link
+              type="button"
+              onMouseEnter={() => toggleDropdown("technology")}
+            >
               TECHNOLOGY <span className="caret">▾</span>
-            </button>
-            <div className="dropdown_panel small">
+            </Link>
+            <div className="dropdown_panel small" onMouseLeave={closeAll}>
               <Link to="/technology" onClick={closeAll}>
                 OUR TECHNOLOGY
               </Link>
@@ -131,25 +134,96 @@ const HeaderNew = () => {
           <Link to="/awards" className="nav_link" onClick={closeAll}>
             AWARDS
           </Link>
-        </nav>
+        </div>
 
         <div className="header_actions">
+          <div class="hamburger" onClick={() => setMobileOpen(!mobileOpen)}>
+            {!mobileOpen ? (
+              <>
+                <span></span>
+                <span></span>
+                <span></span>
+              </>
+            ) : (
+              <>
+                <div className="cross"><RxCross2 /></div>
+                
+              </>
+            )}
+          </div>
           <a href="tel:+919175210123" className="phone_link">
             +91 91752 10123
           </a>
           <Link to="/contact" className="book_btn" onClick={closeAll}>
             Book Appointment
           </Link>
-          <button
-            className="mobile_toggle"
-            onClick={() => setMobileOpen(!mobileOpen)}
-          >
-            <span />
-            <span />
-            <span />
-          </button>
         </div>
       </div>
+
+      {mobileOpen && (
+        <div class="mobile_header">
+          <Link onClick={() => toggleDropdown("dental")}>
+            DENTAL SERVICES <span className="caret">▾</span>
+          </Link>
+          {activeDropdown === "dental" && (
+            <div className="dropdown_panel">
+              <div className="dropdown_column">
+                <Link to="/general-dental">GENERAL DENTAL SERVICES</Link>
+                <Link to="/restorative-dentistry">RESTORATIVE DENTISTRY</Link>
+                <Link to="/cosmetic-dentistry">COSMETIC DENTISTRY</Link>
+                <Link to="/orthodontic-treatments">ORTHODONTIC TREATMENTS</Link>
+                <Link to="/dental-check-ups">DENTAL CHECK-UPS</Link>
+                <Link to="/full-mouth-rehabilitation">
+                  FULL MOUTH REHABILITATION
+                </Link>
+
+                <Link to="/pediatric-dentistry">PEDIATRIC DENTISTRY</Link>
+                <Link
+                  type="button"
+                  className="submenu_toggle"
+                  onClick={() => toggleSubmenu("tooth")}
+                >
+                  TOOTH FILLING <span className="caret">▾</span>
+                </Link>
+              </div>
+              {activeSubmenu === "tooth" && (
+                <div className={`submenu `}>
+                  <div className="submenu_panel">
+                    <Link to="/dental-crowns">DENTAL CROWNS</Link>
+                    <Link to="/crowns-bridges">CROWNS AND BRIDGES</Link>
+                    <Link to="/inlays-onlays">INLAYS AND ONLAYS</Link>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+          <div className={`nav_item dropdown`}>
+            <Link type="button" onClick={() => toggleDropdown("technology")}>
+              TECHNOLOGY <span className="caret">▾</span>
+            </Link>
+            {activeDropdown === "technology" && (
+              <div className="dropdown_panel small" onMouseLeave={closeAll}>
+                <Link to="/technology" onClick={closeAll}>
+                  OUR TECHNOLOGY
+                </Link>
+                <Link to="/smile-analysis-consultation" onClick={closeAll}>
+                  SMILE ANALYSIS
+                </Link>
+                <Link to="/smile-designing" onClick={closeAll}>
+                  SMILE DESIGNING
+                </Link>
+              </div>
+            )}
+          </div>
+
+          <Link to="/about" className="nav_link" onClick={closeAll}>
+            ABOUT US
+          </Link>
+          <Link to="/awards" className="nav_link" onClick={closeAll}>
+            AWARDS
+          </Link>
+        </div>
+      )}
     </header>
   );
 };

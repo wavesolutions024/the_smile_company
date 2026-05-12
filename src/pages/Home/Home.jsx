@@ -228,14 +228,14 @@ const Home = () => {
           <div className="blog_cards">
             <div className="card">
               <div className="image bg-img-cover">
-                <p className="date">17 may 2025</p> ̰
+                <p className="date">17 may 2025</p>
               </div>
               <h1 className="blog_heading">
                 The Art of Managing Business and Patient Care
               </h1>
               <p>
                 It is a long established fact that a reader will be distracted
-                by the readable content. ̰
+                by the readable content.
               </p>
               <Link to="/blog-details" className="arrow">
                 <IoArrowForwardOutline />
@@ -243,14 +243,14 @@ const Home = () => {
             </div>
             <div className="card">
               <div className="image bg-img-cover">
-                <p className="date">17 may 2025</p> ̰
+                <p className="date">17 may 2025</p>
               </div>
               <h1 className="blog_heading">
                 The Art of Managing Business and Patient Care
               </h1>
               <p>
                 It is a long established fact that a reader will be distracted
-                by the readable content. ̰
+                by the readable content.
               </p>
               <Link to="/blog-details" className="arrow">
                 <IoArrowForwardOutline />
@@ -258,15 +258,14 @@ const Home = () => {
             </div>
             <div className="card">
               <div className="image bg-img-cover">
-                <p className="date">17 may 2025</p> ̰
+                <p className="date">17 may 2025</p>
               </div>
               <h1 className="blog_heading">
                 The Art of Managing Business and Patient Care
               </h1>
               <p>
                 It is a long established fact that a reader will be distracted
-                by the readable content. ̰
-              </p>
+                by the readable content. </p>
               <Link to="/blog-details" className="arrow">
                 <IoArrowForwardOutline />
               </Link>
