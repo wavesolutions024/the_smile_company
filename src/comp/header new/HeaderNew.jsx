@@ -128,11 +128,17 @@ const HeaderNew = () => {
             </div>
           </div>
 
-          <Link to="/about" className="nav_link" onClick={closeAll}>
+           <Link to="/about" className="nav_link" onClick={closeAll}>
             ABOUT US
           </Link>
           <Link to="/awards" className="nav_link" onClick={closeAll}>
-            AWARDS
+            OUR WORK
+          </Link>
+          <Link to="/awards" className="nav_link" onClick={closeAll}>
+            DENTAL TOURISM
+          </Link>
+          <Link to="/awards" className="nav_link" onClick={closeAll}>
+            BLOGS
           </Link>
         </div>
 
@@ -220,7 +226,13 @@ const HeaderNew = () => {
             ABOUT US
           </Link>
           <Link to="/awards" className="nav_link" onClick={closeAll}>
-            AWARDS
+            OUR WORK
+          </Link>
+          <Link to="/awards" className="nav_link" onClick={closeAll}>
+            DENTAL TOURISM
+          </Link>
+          <Link to="/awards" className="nav_link" onClick={closeAll}>
+            BLOGS
           </Link>
         </div>
       )}
