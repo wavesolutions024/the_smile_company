@@ -168,12 +168,12 @@ const HeaderNew = () => {
           {activeDropdown === "dental" && (
             <div className="dropdown_panel">
               <div className="dropdown_column">
-                <Link to="/general-dental">GENERAL DENTAL SERVICES</Link>
-                <Link to="/restorative-dentistry">RESTORATIVE DENTISTRY</Link>
-                <Link to="/cosmetic-dentistry">COSMETIC DENTISTRY</Link>
-                <Link to="/orthodontic-treatments">ORTHODONTIC TREATMENTS</Link>
-                <Link to="/dental-check-ups">DENTAL CHECK-UPS</Link>
-                <Link to="/full-mouth-rehabilitation">
+                <Link to="/general-dental" onClick={closeAll}>GENERAL DENTAL SERVICES</Link>
+                <Link to="/restorative-dentistry" onClick={closeAll}>RESTORATIVE DENTISTRY</Link>
+                <Link to="/cosmetic-dentistry" onClick={closeAll}>COSMETIC DENTISTRY</Link>
+                <Link to="/orthodontic-treatments" onClick={closeAll}>ORTHODONTIC TREATMENTS</Link>
+                <Link to="/dental-check-ups" onClick={closeAll}>DENTAL CHECK-UPS</Link>
+                <Link to="/full-mouth-rehabilitation" onClick={closeAll}>
                   FULL MOUTH REHABILITATION
                 </Link>
 
@@ -189,9 +189,9 @@ const HeaderNew = () => {
               {activeSubmenu === "tooth" && (
                 <div className={`submenu `}>
                   <div className="submenu_panel">
-                    <Link to="/dental-crowns">DENTAL CROWNS</Link>
-                    <Link to="/crowns-bridges">CROWNS AND BRIDGES</Link>
-                    <Link to="/inlays-onlays">INLAYS AND ONLAYS</Link>
+                    <Link to="/dental-crowns" onClick={closeAll}>DENTAL CROWNS</Link>
+                    <Link to="/crowns-bridges" onClick={closeAll}>CROWNS AND BRIDGES</Link>
+                    <Link to="/inlays-onlays" onClick={closeAll}>INLAYS AND ONLAYS</Link>
                   </div>
                 </div>
               )}
