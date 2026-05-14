@@ -38,6 +38,7 @@ import ClearAligners from "./pages/sub services/clear aligner/ClearAligners";
 import CeramicBraces from "./pages/sub services/ceramic braces/CeramicBraces";
 import AllOnFour from "./pages/sub services/all on four/AllOnFour";
 import ImplantSupported from "./pages/sub services/implant supported/ImplantSupported";
+import Blogs from "./pages/blogs/Blogs";
 
 function AppLayout() {
   const location = useLocation();
@@ -83,6 +84,7 @@ function AppLayout() {
         <Route element={<ImplantSupported />} path="/implant-supported" />
         <Route element={<Female />} path="/female-dr" />
         <Route element={<BlogDetails />} path="/blog-details" />
+        <Route element={<Blogs />} path="/blogs" />
       </Routes>
       {!hideHeaderFooter && <Footer />}
     </>

@@ -4,6 +4,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import smile_img from "../../assets/page-top/page_top.webp";
 import teeth1 from "../../assets/page-top/teeth.webp";
 import teeth2 from "../../assets/page-top/teeth1.webp";
+import { Link } from "react-router-dom";
 
 const PageTop = ({ title, parent = "Home" }) => {
   return (
@@ -17,7 +18,7 @@ const PageTop = ({ title, parent = "Home" }) => {
 
             <h1>{title}</h1>
             <div class="bread_crum">
-              <p style={{ color: "var(--accent)" }}>{parent}</p>
+              <Link to="/" style={{ color: "var(--accent)" }}>{parent}</Link>
               <span className="icon">
                 <MdKeyboardDoubleArrowRight />
               </span>

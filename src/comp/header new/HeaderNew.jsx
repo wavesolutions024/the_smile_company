@@ -137,7 +137,7 @@ const HeaderNew = () => {
           <Link to="/awards" className="nav_link" onClick={closeAll}>
             DENTAL TOURISM
           </Link>
-          <Link to="/awards" className="nav_link" onClick={closeAll}>
+          <Link to="/blogs" className="nav_link" onClick={closeAll}>
             BLOGS
           </Link>
         </div>
@@ -231,7 +231,7 @@ const HeaderNew = () => {
           <Link to="/awards" className="nav_link" onClick={closeAll}>
             DENTAL TOURISM
           </Link>
-          <Link to="/awards" className="nav_link" onClick={closeAll}>
+          <Link to="/blogs" className="nav_link" onClick={closeAll}>
             BLOGS
           </Link>
         </div>
