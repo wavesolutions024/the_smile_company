@@ -10,7 +10,7 @@ const HeroSection = () => {
         <div class="video_overlay"></div>
         <div className="video_cont cont">
           <p className="video-label">Denza Dentistry</p>
-          <h1 className="video-heading">Experience The Advanced Dentistry</h1>
+          <h1 className="video-heading">Redefining Excellence in Dentistry</h1>
           <p style={{color:"#c5c5c5"}}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
             nesciunt, a eaque asperiores cupiditate vero iste, magnam ipsum

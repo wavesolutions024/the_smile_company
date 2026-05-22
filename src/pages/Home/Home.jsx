@@ -9,6 +9,7 @@ import img4 from "../../assets/about_section/img5.webp";
 import icon1 from "../../assets/about_section/medical-symbol.png";
 import icon2 from "../../assets/about_section/medicine.png";
 import icon3 from "../../assets/about_section/doctor.png";
+import doctorImg from "../../assets/about_page/woman_dr.jpg";
 import { Link } from "react-router-dom";
 import { IoArrowForwardOutline } from "react-icons/io5";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -33,6 +34,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper/modules";
+import Testimonials from "../../comp/testimonials/Testimonials";
 
 const Home = () => {
   const [accordian, setAccordian] = useState(0);
@@ -75,6 +77,32 @@ const Home = () => {
       icon: icon3,
     },
   ];
+
+  const doctors = [
+    {
+      name: "Dr. Aneesha Sharma",
+      title: "Cosmetic Dentist",
+      image: doctorImg,
+      description:
+        "Expert in smile design and minimal invasive cosmetic dental care.",
+    },
+    {
+      name: "Dr. Onkar Patel",
+      title: "Implant Specialist",
+      image: doctorImg,
+      description:
+        "Experienced implant surgeon focused on comfortable patient outcomes.",
+    },
+    {
+      name: "Dr. Riya Mehra",
+      title: "Laser Dentistry",
+      image: doctorImg,
+      description:
+        "Provides advanced laser dentistry and pain-free treatments.",
+    },
+  ];
+
+  const clinicImages = [img4, img4, img4, img4, img4, img4, img4, img4];
 
   const { ref, inView } = useInView({
     triggerOnce: false,
@@ -149,6 +177,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div
         class="why_choose_parent bg-img-cover parent"
         data-aos="fade-up"
@@ -211,6 +240,51 @@ const Home = () => {
         </div>
       </div>
 
+      {/* meet our doctors */}
+      <section className="top_dentists">
+        <div className="container">
+          <div className="top_dentists_wrapper">
+            {/* Left Images */}
+            <div className="dentists_images">
+              <div className="img_box">
+                <img src={img4} alt="Doctor" />
+              </div>
+
+              <div className="img_box">
+                <img src={img4} alt="Doctor" />
+              </div>
+            </div>
+
+            {/* Right Content */}
+            <div className="dentists_content">
+              <h2>
+                Top rated dentists <br /> in India
+              </h2>
+
+              <p>
+                Dr. Onkar and Dr. Aneesha live by the motto “educate to treat”!
+              </p>
+
+              <p>
+                Dr. Onkar is an expert in Laser Dentistry and Micro Dentistry
+                Implants along with his better half Dr. Aneesha, who is a
+                Cosmetic Dentist herself.
+              </p>
+
+              <p>
+                They both believe that quality creates long-lasting
+                relationships, which is the core value at AO Dentistry.
+              </p>
+
+              <button>
+                About Us
+                <span>›</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* blog and news */}
 
       <div
@@ -265,7 +339,8 @@ const Home = () => {
               </h1>
               <p>
                 It is a long established fact that a reader will be distracted
-                by the readable content. </p>
+                by the readable content.{" "}
+              </p>
               <Link to="/blog-details" className="arrow">
                 <IoArrowForwardOutline />
               </Link>
@@ -274,79 +349,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div
-        className="testimoneals_parent parent"
-        data-aos="fade-up"
-        data-aos-delay="400"
-      >
-        <div className="testimoneal_cont cont">
-          <div className="top_bar">
-            <h1 className="testimoneal_heading">What our patient say</h1>
-          </div>
-          <div className="testimoneal_listing">
-            <Swiper
-              slidesPerView={2}
-              spaceBetween={30}
-              pagination={{
-                clickable: true,
-              }}
-              breakpoints={{
-                980: {
-                  slidesPerView: 2,
-                  spaceBetween: 30,
-                },
-                350: {
-                  slidesPerView: 1,
-                  spaceBetween: 30,
-                },
-              }}
-              modules={[Pagination]}
-              className="mySwiper"
-            >
-              <SwiperSlide className="swiper-slide">
-                <div className="left bg-img-cover"></div>
-                <div className="right_content">
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsum is that it has a
-                    making it look like readable English.
-                  </p>
-                  <h3>Lorem lipsum</h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div className="left bg-img-cover"></div>
-                <div className="right_content">
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsum is that it has a
-                    making it look like readable English.
-                  </p>
-                  <h3>Lorem lipsum</h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div className="left bg-img-cover"></div>
-                <div className="right_content">
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsum is that it has a
-                    making it look like readable English.
-                  </p>
-                  <h3>Lorem lipsum</h3>
-                </div>
-              </SwiperSlide>
-            </Swiper>
-          </div>
-        </div>
+      {/* testimonials */}
+      <div data-aos="fade-up" data-aos-delay="400">
+        <Testimonials />
       </div>
 
       {/* appointment page */}
-      <Appointment  data-aos="fade-up"
-        data-aos-delay="500" />
+      <Appointment data-aos="fade-up" data-aos-delay="500" />
 
       <div
         class="parent before_after_gallery_parent"
@@ -395,6 +404,52 @@ const Home = () => {
             </Swiper>
           </div>
         </div>
+      </div>
+
+      {/* clinic images */}
+
+      <div className="parent clinic_images_parent">
+        <Swiper
+          modules={[Autoplay]}
+          slidesPerView={4.5}
+          spaceBetween={30}
+          loop={true}
+          speed={10000}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1.2,
+              spaceBetween: 16,
+            },
+
+            576: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+
+            768: {
+              slidesPerView: 2.5,
+              spaceBetween: 24,
+            },
+
+            1200: {
+              slidesPerView: 4.5,
+              spaceBetween: 30,
+            },
+          }}
+          className="gallery_swiper"
+        >
+          {clinicImages.map((img, index) => (
+            <SwiperSlide key={index}>
+              <div className="gallery_card">
+                <img src={img} alt="" />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </>
   );
