@@ -7,7 +7,6 @@ import Footer from "./comp/footer/Footer";
 import Contact from "./pages/contact/Contact";
 import Male from "./pages/dr-page/Male";
 import Female from "./pages/dr-page/Female";
-import Technology from "./pages/technology/Technology";
 import BlogDetails from "./pages/blog-details/BlogDetails";
 import ScrollToTop from "./pages/ScrollToTop";
 import GeneralDental from "./pages/services/general dental/GeneralDental";
@@ -39,6 +38,10 @@ import CeramicBraces from "./pages/sub services/ceramic braces/CeramicBraces";
 import AllOnFour from "./pages/sub services/all on four/AllOnFour";
 import ImplantSupported from "./pages/sub services/implant supported/ImplantSupported";
 import Blogs from "./pages/blogs/Blogs";
+import Cbct from "./pages/technology/cbct/Cbct";
+import IntraOralScanning from "./pages/technology/intra oral scanning/IntraOralScanning";
+import DentalLasers from "./pages/technology/dental lasers/DentalLasers";
+import GbtCleaning from "./pages/technology/gbt cleaning/GbtCleaning";
 
 function AppLayout() {
   const location = useLocation();
@@ -52,7 +55,6 @@ function AppLayout() {
         <Route element={<Home />} path="/" />
         <Route element={<About />} path="/about" />
         <Route element={<Contact />} path="/contact" />
-        <Route element={<Technology />} path="/technology" />
         <Route element={<GeneralDental />} path="/general-dental" />
         <Route element={<RestorativeDentistry />} path="/restorative-dentistry" />
         <Route element={<CosmeticDentistry />} path="/cosmetic-dentistry" />
@@ -85,6 +87,11 @@ function AppLayout() {
         <Route element={<Female />} path="/female-dr" />
         <Route element={<BlogDetails />} path="/blog-details" />
         <Route element={<Blogs />} path="/blogs" />
+        {/* technology  */}
+        <Route element={<Cbct />} path="/cbct" />
+        <Route element={<IntraOralScanning />} path="/intra-oral-scanning" />
+        <Route element={<DentalLasers />} path="/dental-lasers" />
+        <Route element={<GbtCleaning />} path="/gbt-cleaning" />
       </Routes>
       {!hideHeaderFooter && <Footer />}
     </>

@@ -1,0 +1,25 @@
+.second_parent_gbt {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+
+  .second_cont_gbt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+
+    h2 {
+      font-size: 40px;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    .text_gbt {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}

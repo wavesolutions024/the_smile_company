@@ -116,14 +116,26 @@ const HeaderNew = () => {
               TECHNOLOGY <span className="caret">▾</span>
             </Link>
             <div className="dropdown_panel small" onMouseLeave={closeAll}>
-              <Link to="/technology" onClick={closeAll}>
-                OUR TECHNOLOGY
+              <Link to="/cbct" onClick={closeAll}>
+                CBCT 3D IMAGING
               </Link>
-              <Link to="/smile-analysis-consultation" onClick={closeAll}>
-                SMILE ANALYSIS
+              <Link to="/intra-oral-scanning" onClick={closeAll}>
+                3D Intra Oral Scanning
+              </Link>
+              <Link to="/dental-lasers" onClick={closeAll}>
+                Dental Lasers
+              </Link>
+              <Link to="/gbt-cleaning" onClick={closeAll}>
+                GBT Cleaning
               </Link>
               <Link to="/smile-designing" onClick={closeAll}>
-                SMILE DESIGNING
+                GBT Machine
+              </Link>
+              <Link to="/smile-designing" onClick={closeAll}>
+                Dental Loupes
+              </Link>
+              <Link to="/smile-designing" onClick={closeAll}>
+                Conscious Sedation (Laughing Gas)
               </Link>
             </div>
           </div>
