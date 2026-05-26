@@ -128,13 +128,13 @@ const HeaderNew = () => {
               <Link to="/gbt-cleaning" onClick={closeAll}>
                 GBT Cleaning
               </Link>
-              <Link to="/smile-designing" onClick={closeAll}>
+              <Link to="/gbt-machine" onClick={closeAll}>
                 GBT Machine
               </Link>
-              <Link to="/smile-designing" onClick={closeAll}>
+              <Link to="/dental-loupes" onClick={closeAll}>
                 Dental Loupes
               </Link>
-              <Link to="/smile-designing" onClick={closeAll}>
+              <Link to="/laughing-gas" onClick={closeAll}>
                 Conscious Sedation (Laughing Gas)
               </Link>
             </div>
@@ -146,7 +146,7 @@ const HeaderNew = () => {
           <Link to="/awards" className="nav_link" onClick={closeAll}>
             OUR WORK
           </Link>
-          <Link to="/awards" className="nav_link" onClick={closeAll}>
+          <Link to="/dental-tourism" className="nav_link" onClick={closeAll}>
             DENTAL TOURISM
           </Link>
           <Link to="/blogs" className="nav_link" onClick={closeAll}>

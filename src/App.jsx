@@ -42,6 +42,10 @@ import Cbct from "./pages/technology/cbct/Cbct";
 import IntraOralScanning from "./pages/technology/intra oral scanning/IntraOralScanning";
 import DentalLasers from "./pages/technology/dental lasers/DentalLasers";
 import GbtCleaning from "./pages/technology/gbt cleaning/GbtCleaning";
+import GbtMachine from "./pages/technology/gbt machine/GbtMachine";
+import DentalLoupes from "./pages/technology/dental loupes/DentalLoupes";
+import LaughingGas from "./pages/technology/laughing gas/LaughingGas";
+import DentalTourism from "./pages/dental tourism/DentalTourism";
 
 function AppLayout() {
   const location = useLocation();
@@ -87,11 +91,15 @@ function AppLayout() {
         <Route element={<Female />} path="/female-dr" />
         <Route element={<BlogDetails />} path="/blog-details" />
         <Route element={<Blogs />} path="/blogs" />
+        <Route element={<DentalTourism />} path="/dental-tourism" />
         {/* technology  */}
         <Route element={<Cbct />} path="/cbct" />
         <Route element={<IntraOralScanning />} path="/intra-oral-scanning" />
         <Route element={<DentalLasers />} path="/dental-lasers" />
         <Route element={<GbtCleaning />} path="/gbt-cleaning" />
+        <Route element={<GbtMachine />} path="/gbt-machine" />
+        <Route element={<DentalLoupes />} path="/dental-loupes" />
+        <Route element={<LaughingGas />} path="/laughing-gas" />
       </Routes>
       {!hideHeaderFooter && <Footer />}
     </>
