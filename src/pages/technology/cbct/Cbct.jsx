@@ -8,11 +8,8 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import img4 from "../../../assets/about_section/img5.webp";
 
-
 const Cbct = () => {
   const [openFaq, setOpenFaq] = useState(null);
-
-
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
@@ -25,7 +22,7 @@ const Cbct = () => {
         "Get a complete 3D view of your teeth, jaw, and surrounding structures—far beyond what traditional X-rays can show. ",
     },
     {
-      title:"Accurate Detection ",
+      title: "Accurate Detection ",
       description:
         "Identify dental concerns early and precisely, helping avoid guesswork and improving treatment outcomes. ",
     },
@@ -44,11 +41,9 @@ const Cbct = () => {
       description:
         "Advanced imaging with minimal radiation exposure, ensuring both safety and comfort during the process.",
     },
-    
   ];
 
-    const clinicImages = [img4, img4, img4, img4, img4, img4, img4, img4];
-  
+  const clinicImages = [img4, img4, img4, img4, img4, img4, img4, img4];
 
   return (
     <>
@@ -132,55 +127,51 @@ const Cbct = () => {
             </div>
           </div>
         </div> */}
-
-
-        
       </div>
 
+      <div className="parent clinic_images_parent">
+        <Swiper
+          modules={[Autoplay]}
+          slidesPerView={4.5}
+          spaceBetween={30}
+          loop={true}
+          speed={10000}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1.2,
+              spaceBetween: 16,
+            },
 
-       <div className="parent clinic_images_parent">
-                <Swiper
-                  modules={[Autoplay]}
-                  slidesPerView={4.5}
-                  spaceBetween={30}
-                  loop={true}
-                  speed={10000}
-                  autoplay={{
-                    delay: 0,
-                    disableOnInteraction: false,
-                  }}
-                  breakpoints={{
-                    320: {
-                      slidesPerView: 1.2,
-                      spaceBetween: 16,
-                    },
-        
-                    576: {
-                      slidesPerView: 2,
-                      spaceBetween: 20,
-                    },
-        
-                    768: {
-                      slidesPerView: 2.5,
-                      spaceBetween: 24,
-                    },
-        
-                    1200: {
-                      slidesPerView: 4.5,
-                      spaceBetween: 30,
-                    },
-                  }}
-                  className="gallery_swiper"
-                >
-                  {clinicImages.map((img, index) => (
-                    <SwiperSlide key={index}>
-                      <div className="gallery_card">
-                        <img src={img} alt="" />
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+            576: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+
+            768: {
+              slidesPerView: 2.5,
+              spaceBetween: 24,
+            },
+
+            1200: {
+              slidesPerView: 4.5,
+              spaceBetween: 30,
+            },
+          }}
+          className="gallery_swiper"
+        >
+          {clinicImages.map((img, index) => (
+            <SwiperSlide key={index}>
+              <div className="gallery_card">
+                <img src={img} alt="" />
               </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </>
   );
 };

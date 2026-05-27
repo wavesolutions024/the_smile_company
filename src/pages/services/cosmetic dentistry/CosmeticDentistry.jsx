@@ -137,72 +137,71 @@ const CosmeticDentistry = () => {
             </div>
           ))}
         </div>
+      </div>
 
-        <div className="faq_section">
-          <div className="faq_header">
-            <h2>FAQs</h2>
-            <p>
-              Answers to the most common questions about our general dental
-              care.
-            </p>
-          </div>
-
-          <div className="faq_list">
-            {faqs.map((item, index) => {
-              const isOpen = openFaq === index;
-              return (
-                <div
-                  key={index}
-                  className={`faq_item ${isOpen ? "open" : ""}`}
-                  onClick={() => toggleFaq(index)}
-                >
-                  <button className="faq_question" type="button">
-                    <span>{item.question}</span>
-                    <span className="faq_toggle">{isOpen ? "▲" : "▼"}</span>
-                  </button>
-                  <div className="faq_answer">
-                    <p>{item.answer}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+      <div className="faq_section" style={{ background: "white" }}>
+        <div className="faq_header">
+          <h2>FAQs</h2>
+          <p>
+            Answers to the most common questions about our general dental care.
+          </p>
         </div>
 
-        <div className="parent gallery_parent">
-          <div className="cont gallery_cont">
-            <div className="gallery_header">
-              <h2>Clinic Gallery</h2>
-              <p>
-                Explore our clinic spaces and patient-friendly treatment rooms.
-              </p>
-            </div>
-            <div className="gallery_slider">
-              <Swiper
-                modules={[Navigation, Autoplay]}
-                spaceBetween={24}
-                slidesPerView={4}
-                navigation={true}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
-                breakpoints={{
-                  0: { slidesPerView: 1, spaceBetween: 16 },
-                  600: { slidesPerView: 2, spaceBetween: 18 },
-                  900: { slidesPerView: 3, spaceBetween: 20 },
-                  1200: { slidesPerView: 4, spaceBetween: 24 },
-                }}
+        <div className="faq_list">
+          {faqs.map((item, index) => {
+            const isOpen = openFaq === index;
+            return (
+              <div
+                key={index}
+                className={`faq_item ${isOpen ? "open" : ""}`}
+                onClick={() => toggleFaq(index)}
               >
-                {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="gallery_card">
-                      <img src={src} alt={`Clinic slide ${index + 1}`} />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+                <button className="faq_question" type="button">
+                  <span>{item.question}</span>
+                  <span className="faq_toggle">{isOpen ? "▲" : "▼"}</span>
+                </button>
+                <div className="faq_answer">
+                  <p>{item.answer}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="parent gallery_parent">
+        <div className="cont gallery_cont">
+          <div className="gallery_header">
+            <h2>Clinic Gallery</h2>
+            <p>
+              Explore our clinic spaces and patient-friendly treatment rooms.
+            </p>
+          </div>
+          <div className="gallery_slider">
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              spaceBetween={24}
+              slidesPerView={4}
+              navigation={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              breakpoints={{
+                0: { slidesPerView: 1, spaceBetween: 16 },
+                600: { slidesPerView: 2, spaceBetween: 18 },
+                900: { slidesPerView: 3, spaceBetween: 20 },
+                1200: { slidesPerView: 4, spaceBetween: 24 },
+              }}
+            >
+              {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
+                <SwiperSlide key={index}>
+                  <div className="gallery_card">
+                    <img src={src} alt={`Clinic slide ${index + 1}`} />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>

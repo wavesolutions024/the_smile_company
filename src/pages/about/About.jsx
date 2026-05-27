@@ -8,6 +8,12 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { RiTwitterXLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import Button from "../../comp/button/Button";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import img from "../../assets/about_page/woman_dr.jpg";
 
 const About = () => {
   const containerRef = useRef(null);
@@ -24,37 +30,67 @@ const About = () => {
     }
   };
 
-  const data = [
+  const doctors = [
     {
-      name: "Dr. John Doe",
-      profession: "General Dentist",
-      img: afterImg,
-      link: "/female-dr",
-      facebook: "https://www.facebook.com/",
-      linkedIn: "https://www.facebook.com/",
-      twitter: "https://www.facebook.com/",
+      id: 1,
+      name: " Dr. Hemant Suresh Thodsare ",
+      title: "Co-founder | Prosthodontist & Implantologist",
+      description: (
+        <>
+          "Dr. Hemant is an internationally experienced Prosthodontist and
+          Cosmetic specialist, specializing in minimally invasive cosmetic
+          dentistry, smile makeovers, dental implants, and complex full mouth
+          rehabilitation. With over{" "}
+          <strong>15 years of clinical expertise</strong>, he is known for
+          delivering precise, functionally sound, and aesthetically refined
+          outcomes. \n\nHe holds an MDS in Prosthodontics and Implantology and
+          brings advanced expertise in Crown & Bridge and comprehensive
+          restorative dentistry. He also has valuable international clinical
+          experience as a licensed dentist under the Ministry of Health, Kuwait.
+          "
+        </>
+      ),
+      image: img,
+      expertise: [
+        { icon: "🦷", label: "Cosmetic Dentistry" },
+        { icon: "😁", label: "Full Mouth Reconstruction" },
+        { icon: "✨", label: "Smile Design" },
+        { icon: "🎨", label: "Veneers" },
+      ],
     },
     {
-      name: "Dr. John Doe",
-      profession: "General Dentist",
-      link: "/male-dr",
-      facebook: "https://www.facebook.com/",
-      linkedIn: "https://www.facebook.com/",
-      twitter: "https://www.facebook.com/",
-    },
-    {
-      name: "Dr. John Doe",
-      profession: "General Dentist",
-      link: "/female-dr",
-      facebook: "https://www.facebook.com/",
-      linkedIn: "https://www.facebook.com/",
-      twitter: "https://www.facebook.com/",
+      id: 2,
+      name: "Dr. Devika M. Kalaskar",
+      title: "Co-founder | Endodontist & Esthetic Dentist",
+      description:
+        "Dr. Devika is a skilled and patient-focused endodontist and esthetic dentist, known for her precision and calm, reassuring approach to care. She specializes in minimally invasive dentistry, root canal treatments, and aesthetic smile enhancement procedures.\nShe completed her BDS from Sinhgad Dental College, Pune, and her MDS in Conservative Dentistry & Endodontics from Government Dental College, one of India’s premier institutions.\nA former Assistant Professor, she combines academic excellence with strong clinical expertise.\nShe also brings valuable international clinical experience from Kuwait, along with active participation in conferences, workshops, and research, with multiple publications in national and international journals.\She is a member of the Indian Association of Conservative Dentistry and Endodontics (IACDE) and has received several academic recognitions. ",
+      image: img,
+      expertise: [
+        { icon: "🔧", label: "Same Day Crowns" },
+        { icon: "🪥", label: "Dental Implants" },
+        { icon: "⚡", label: "Laser Treatment" },
+        { icon: "🧬", label: "Root Canal Therapy" },
+      ],
     },
   ];
 
   return (
     <>
-      <PageTop title="About Us" />
+      {/* <PageTop title="About Us" /> */}
+
+      <div className="parent dental_tourish_parent">
+        <div className="overlay"></div>
+
+        <div className="cont dental_tourish_cont">
+          <div className="hero_content">
+            <h1>Precision. Ethics. Comfort. Dentistry designed around you.</h1>
+            <p>Specialist-led dental care in Kharadi, Pune </p>
+            <Link to="/contact" className="cta_button">
+              Book Appointment
+            </Link>
+          </div>
+        </div>
+      </div>
 
       <div className="parent about_dr_parent">
         <div className="cont about_dr_cont">
@@ -67,13 +103,18 @@ const About = () => {
           <div className="left-section">
             <h1>About Denza Dental</h1>
             <p>
-              Dr. Nashid Martines has many years of dental care experience. She
-              blends clinical precision with compassionate patient care and
-              modern treatment techniques. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Ab rem odio itaque nemo quaerat
-              voluptates laudantium veritatis corrupti accusantium vitae.
+              Denza Dental is a premium dental clinic located in Kharadi, Pune,
+              offering a refined approach to modern dentistry. Built on the
+              principles of precision, ethics, and patient comfort, our clinic
+              is designed to deliver a seamless and stress-free dental
+              experience.
             </p>
-            <h3>About Skills</h3>
+            <p>
+              We combine clinical expertise with a calm and thoughtfully
+              designed environment, ensuring that every patient feels at ease
+              from the moment they walk in.{" "}
+            </p>
+            {/* <h3>About Skills</h3>
             <div className="skills-grid">
               {[
                 "Root Canal Therapy",
@@ -87,9 +128,9 @@ const About = () => {
                   <span>✔</span> {skill}
                 </div>
               ))}
-            </div>
+            </div> */}
             <div className="bottom-row">
-              <div className="btn">Appointment</div>
+              <Button />
             </div>
           </div>
         </div>
@@ -97,7 +138,7 @@ const About = () => {
 
       {/* vission mission */}
 
-      <div className="vision_parent parent">
+      {/* <div className="vision_parent parent">
         <div className="vission_cont cont">
           <h2>Our Vision & Mission</h2>
           <p className="subtitle">
@@ -134,54 +175,63 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* doctors */}
+      <section className="doctors_section1">
+        <div className="cont doctors_cont">
+          <h2
+            style={{
+              textAlign: "center",
+              color: "white",
+              marginBottom: "50px",
+              fontSize: "40px",
+              fontWeight: "700",
+            }}
+          >
+            Meet Our Specialists
+          </h2>
+          {doctors.map((doctor, index) => (
+            <div
+              key={doctor.id}
+              className={`doctor_profile ${index % 2 === 0 ? "even" : "odd"}`}
+            >
+              <div className="doctor_image_wrapper">
+                <img
+                  src={doctor.image}
+                  alt={doctor.name}
+                  className="doctor_image"
+                />
+              </div>
+              <div className="doctor_content">
+                <h3 className="doctor_name">{doctor.name}</h3>
+                <p className="doctor_title">{doctor.title}</p>
+                <p className="doctor_description">{doctor.description}</p>
 
-      <div className="parent doctors_list_parent">
-        <div className="cont doctors_list_cont">
-          <h2>Meet Our Doctors</h2>
-          <p style={{ textAlign: "center" }}>
-            It is a long established fact that a reader will be distraacted by
-            the readable content of a page when looking at its layout. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Rem itaque optio
-            consequatur unde tempore! Doloribus!
-          </p>
-
-          <div className="doctors_main">
-            {data.map((item) => (
-              <div className="doctors_card">
-                <div className="dr_img bg-img-cover">
-                  <div className="bottom">
-                    <div className="name">
-                      <h3>{item.name}</h3>
-                      <span className="profession">{item.profession}</span>
-                    </div>
-                    <div class="main_bottom">
-                      <div className="social_media">
-                        <a href={item.facebook} target="_blank" className="facebook_bg">
-                          <BiLogoFacebook />
-                        </a>
-                        <a href={item.linkedIn} target="_blank" className="facebook_bg">
-                          <BiLogoLinkedin />
-                        </a>
-                        <a href={item.twitter} target="_blank" className="facebook_bg">
-                          <RiTwitterXLine />
-                        </a>
-                      </div>
-                      <Link to={item.link} className="arrow">
-                        <span>
-                          <FaArrowRight />
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
+                <div className="doctor_expertise_section">
+                  <h4>Areas of Expertise:</h4>
+                  <Swiper
+                    modules={[Navigation]}
+                    spaceBetween={12}
+                    slidesPerView="auto"
+                    navigation
+                    className="expertise_swiper"
+                  >
+                    {doctor.expertise.map((exp, idx) => (
+                      <SwiperSlide key={idx} className="expertise_slide">
+                        <div className="expertise_badge">
+                          <span className="expertise_icon">{exp.icon}</span>
+                          <span className="expertise_label">{exp.label}</span>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </div>
+      </section>
 
       {/* before-after */}
 
