@@ -46,6 +46,7 @@ import GbtMachine from "./pages/technology/gbt machine/GbtMachine";
 import DentalLoupes from "./pages/technology/dental loupes/DentalLoupes";
 import LaughingGas from "./pages/technology/laughing gas/LaughingGas";
 import DentalTourism from "./pages/dental tourism/DentalTourism";
+import OurWork from "./pages/our work/OurWork";
 
 function AppLayout() {
   const location = useLocation();
@@ -92,6 +93,7 @@ function AppLayout() {
         <Route element={<BlogDetails />} path="/blog-details" />
         <Route element={<Blogs />} path="/blogs" />
         <Route element={<DentalTourism />} path="/dental-tourism" />
+        <Route element={<OurWork />} path="/our-work" />
         {/* technology  */}
         <Route element={<Cbct />} path="/cbct" />
         <Route element={<IntraOralScanning />} path="/intra-oral-scanning" />

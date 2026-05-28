@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import clnic_img from "../../assets/dental_tourism_img.jpeg";
 
 const DentalTourism = () => {
   const services = [
@@ -73,33 +74,6 @@ const DentalTourism = () => {
     { label: "Smile Makeover", image: img4 },
     { label: "Veneers", image: img4 },
     { label: "Laser Dentistry", image: img4 },
-  ];
-
-  const doctors = [
-    {
-      id: 1,
-      name: "Dr. Aneesha Rohra Anantrao",
-      title: "Co-Founder",
-      description: "With a Post Graduate degree in Aesthetic Dentistry from University of Columbia (NY, USA), Dr. Aneesha has the warmest smile on our team. Her specialty is in Aesthetic dentistry, and her eye for detail is unparalleled.\n\nIn the chair, Dr. Aneesha is an accomplished professional, combining her technical prowess with a compassionate touch. Whether it's a filling, or a full mouth of veneers, you can rest assured knowing you're in capable and caring hands, and are about to have the most beautiful transformation.\n\nAs the clinic head, Dr. Aneesha dedicates her time to making sure you have to most comfortable and pampered experience at AO Dentistry.",
-      image: img,
-      expertise: [
-        { icon: "🦷", label: "Cosmetic Dentistry" },
-        { icon: "😁", label: "Full Mouth Reconstruction" },
-        { icon: "✨", label: "Smile Design" },
-      ],
-    },
-    {
-      id: 2,
-      name: "Dr. Onkar Anantrao",
-      title: "Co-Founder",
-      description: "Introducing our second clinic head Dr. Onkar Anantrao. With a Post-Graduate degree in IMPLANT AND LASER DENTISTRY Dr. Onkar always brings vibrant blend of fun, humor and homeliness to his practice. His outgoing and friendly nature instantly puts you at ease, turning apprehension into anticipation, and building strong bonds that extend way past the confines of his dental clinic.\n\nDr. Onkar has a knack for surgical precision and thrives on the challenges and intricacies of implants and root canals. His steady hands and keen attention to detail ensure optimal outcomes for his patients, with years of successful work to show for it.",
-      image: img,
-      expertise: [
-        { icon: "🔧", label: "Same Day Crowns" },
-        { icon: "🪥", label: "Dental Implants" },
-        { icon: "⚡", label: "Laser Treatment" },
-      ],
-    },
   ];
 
   return (
@@ -390,45 +364,11 @@ const DentalTourism = () => {
         </div>
       </section>
 
-      <section className="doctors_section">
-        <div className="cont doctors_cont">
-          {doctors.map((doctor, index) => (
-            <div
-              key={doctor.id}
-              className={`doctor_profile ${index % 2 === 0 ? "even" : "odd"}`}
-            >
-              <div className="doctor_image_wrapper">
-                <img src={doctor.image} alt={doctor.name} className="doctor_image" />
-              </div>
-              <div className="doctor_content">
-                <h3 className="doctor_name">{doctor.name}</h3>
-                <p className="doctor_title">{doctor.title}</p>
-                <p className="doctor_description">{doctor.description}</p>
+      {/* img section */}
 
-                <div className="doctor_expertise_section">
-                  <h4>Areas of Expertise:</h4>
-                  <Swiper
-                    modules={[Navigation]}
-                    spaceBetween={12}
-                    slidesPerView="auto"
-                    navigation
-                    className="expertise_swiper"
-                  >
-                    {doctor.expertise.map((exp, idx) => (
-                      <SwiperSlide key={idx} className="expertise_slide">
-                        <div className="expertise_badge">
-                          <span className="expertise_icon">{exp.icon}</span>
-                          <span className="expertise_label">{exp.label}</span>
-                        </div>
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <div className="parent clinic_img_parent">
+        <img src={clnic_img} alt="Clinic Image" className="clinic_img" />
+      </div>
 
       <div className="faq_section" style={{ background: "white" }}>
         <div className="faq_header">
