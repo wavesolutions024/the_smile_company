@@ -42,10 +42,10 @@
       display: none;
       justify-content: center;
       align-items: center;
-      gap: var(--unit);
+      gap: calc(var(--unit) * 1.5);
       height: 100%;
 
-      a{
+      a {
         color: white;
         text-decoration: none;
       }
@@ -85,8 +85,7 @@
           align-items: flex-start;
           // gap: var(--unit);
 
-          &.small{
-            
+          &.small {
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
@@ -114,7 +113,7 @@
 
             width: 300px;
 
-            &.open{
+            &.open {
               display: flex;
             }
 
@@ -136,7 +135,7 @@
       align-items: center;
       gap: var(--unit);
 
-      .hamburger{
+      .hamburger {
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -147,15 +146,13 @@
         cursor: pointer;
         border-radius: 5px;
 
-       
-
-        span{
+        span {
           height: 4px;
           width: 30px;
           background-color: var(--accent);
         }
 
-        .cross{
+        .cross {
           font-size: 24px;
           display: flex;
           justify-content: center;
@@ -184,96 +181,90 @@
     }
   }
 
-  .mobile_header{
+  .mobile_header {
     width: 100%;
-   display: none;
-   position: absolute;
-   top: 100%;
-   left: 0;
-   background-color: var(--accent);
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: flex-start;
-   padding: 10px;
-   gap: var(--unit);
-
-   a{
-    color: var(--white);
-    text-decoration: none;
-   }
-
-   .nav_item{
-    width: 100%;
-    display: flex;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--accent);
     flex-direction: column;
-    gap: var(--unit);
-      
-   }
-
-.dropdown_panel{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: var(--unit);
-  padding-bottom: 10px;
-  border-bottom: 1px solid gray;
-
-  .submenu{
-    display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
     gap: var(--unit);
 
-    .submenu_panel{
+    a {
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .nav_item {
+      width: 100%;
       display: flex;
       flex-direction: column;
       gap: var(--unit);
     }
-  }
 
-  .dropdown_column{
-    display: flex;
-    flex-direction: column;
-    gap: var(--unit);
-  }
-}
+    .dropdown_panel {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: var(--unit);
+      padding-bottom: 10px;
+      border-bottom: 1px solid gray;
 
-  }
-}
-
-
-@media only screen and (max-width: 1150px){
-.header_new{
-  .mobile_header{
-    display: flex;
-  }
-  .header_inner{
-    .main_nav{
-      display: none !important;
-    }
-
-    .header_actions{
-
-      .hamburger{
+      .submenu {
         display: flex;
+        flex-direction: column;
+        gap: var(--unit);
+
+        .submenu_panel {
+          display: flex;
+          flex-direction: column;
+          gap: var(--unit);
+        }
       }
-      .phone_link{
-        display: none;
+
+      .dropdown_column {
+        display: flex;
+        flex-direction: column;
+        gap: var(--unit);
       }
     }
   }
 }
-}
 
-@media only screen and (max-width: 480px){
-.header_new{
-  .header_inner{
-   
-    .header_actions{
+@media only screen and (max-width: 1150px) {
+  .header_new {
+    .mobile_header {
+      display: flex;
+    }
+    .header_inner {
+      .main_nav {
+        display: none !important;
+      }
 
-      .book_btn{
-        display: none;
+      .header_actions {
+        .hamburger {
+          display: flex;
+        }
+        .phone_link {
+          display: none;
+        }
       }
     }
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .header_new {
+    .header_inner {
+      .header_actions {
+        .book_btn {
+          display: none;
+        }
+      }
+    }
+  }
 }
