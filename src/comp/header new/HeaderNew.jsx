@@ -240,7 +240,7 @@ const HeaderNew = () => {
           <Link to="/awards" className="nav_link" onClick={closeAll}>
             OUR WORK
           </Link>
-          <Link to="/awards" className="nav_link" onClick={closeAll}>
+          <Link to="/dental-tourism" className="nav_link" onClick={closeAll}>
             DENTAL TOURISM
           </Link>
           <Link to="/blogs" className="nav_link" onClick={closeAll}>
