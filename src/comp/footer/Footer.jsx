@@ -5,6 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { FiYoutube } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
+import { IoIosCall } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -17,6 +18,18 @@ const Footer = () => {
         >
           <div className="box">
             <FaWhatsapp />
+          </div>
+        </a>
+      </div>
+
+      <div className="call_icon">
+        <a
+          href="https://wa.me/1234567890"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="call_box">
+            <IoIosCall />
           </div>
         </a>
       </div>

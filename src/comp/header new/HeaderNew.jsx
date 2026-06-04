@@ -179,7 +179,10 @@ const HeaderNew = () => {
       </div>
 
       {mobileOpen && (
-        <div class="mobile_header">
+        <>
+        
+         <div class="mobile_header">
+         
           <Link onClick={() => toggleDropdown("dental")}>
             DENTAL SERVICES <span className="caret">▾</span>
           </Link>
@@ -247,6 +250,8 @@ const HeaderNew = () => {
             BLOGS
           </Link>
         </div>
+        </>
+       
       )}
     </header>
   );

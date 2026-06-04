@@ -16,6 +16,24 @@
   }
 }
 
+.call_icon {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 1000;
+
+  .call_box {
+    background: var(--accent2);
+    color: #fff;
+    padding: 14px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    font-size: 30px;
+  }
+}
+
 .footer {
   background: var(--accent);
   color: #e5edff;
