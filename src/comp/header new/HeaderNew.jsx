@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./HeaderNew.scss";
-import logo from "../../assets/header/denza_logo.jpeg";
+import logo from "../../assets/header/denza_logo-removebg-preview.png";
 import { RxCross2 } from "react-icons/rx";
 const HeaderNew = () => {
   const location = useLocation();
