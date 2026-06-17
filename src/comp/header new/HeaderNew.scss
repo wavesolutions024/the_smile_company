@@ -20,6 +20,7 @@
     }
 
     .header_inner {
+  
       .main_nav {
         display: flex;
       }
@@ -31,15 +32,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 
     .logo_link {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
       img {
-        width: 100px;
+        width: 120px;
       }
     }
 
     .main_nav {
-      display: none;
+      display: flex;
       justify-content: center;
       align-items: center;
       gap: calc(var(--unit) * 1.5);
@@ -48,6 +53,7 @@
       a {
         color: white;
         text-decoration: none;
+        font-size: 14px;
       }
 
       .nav_item {
@@ -141,7 +147,7 @@
         justify-content: center;
         align-items: center;
         gap: 5px;
-        background-color: var(--accent2);
+        background-color: #ffd4d1;
         padding: 5px;
         cursor: pointer;
         border-radius: 5px;
@@ -214,15 +220,25 @@
       padding-bottom: 10px;
       border-bottom: 1px solid gray;
 
+      a{
+        font-size: 12px;
+      }
+
       .submenu {
         display: flex;
         flex-direction: column;
         gap: var(--unit);
 
+      
+
         .submenu_panel {
           display: flex;
           flex-direction: column;
-          gap: var(--unit);
+          gap: calc(var(--unit) / 2);
+
+            a{
+          font-size: 10px;
+        }
         }
       }
 
@@ -260,6 +276,12 @@
 @media only screen and (max-width: 480px) {
   .header_new {
     .header_inner {
+          .logo_link{
+
+        img{
+          width: 80px;
+        }
+      }
       .header_actions {
         .book_btn {
           display: none;
