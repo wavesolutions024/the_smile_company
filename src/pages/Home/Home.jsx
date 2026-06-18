@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Home.scss";
 import HeroSection from "../../comp/Hero_section/HeroSection";
 import Button from "../../comp/button/Button";
@@ -38,6 +38,35 @@ import Testimonials from "../../comp/testimonials/Testimonials";
 
 const Home = () => {
   const [accordian, setAccordian] = useState(0);
+  const [sliderPositions, setSliderPositions] = useState({});
+  const sliderRefs = useRef({});
+
+  const handleSliderMove = (e, index) => {
+    e.stopPropagation();
+    if (!sliderRefs.current[index]) return;
+    
+    const rect = sliderRefs.current[index].getBoundingClientRect();
+    let x;
+    
+    // Handle both mouse and touch events
+    if (e.clientX !== undefined) {
+      x = e.clientX - rect.left;
+    } else if (e.touches && e.touches[0]) {
+      x = e.touches[0].clientX - rect.left;
+    } else {
+      return;
+    }
+    
+    const percent = (x / rect.width) * 100;
+
+    if (percent >= 0 && percent <= 100) {
+      setSliderPositions(prev => ({
+        ...prev,
+        [index]: percent
+      }));
+    }
+  };
+
   const accordianContent = [
     {
       title: "Expertise in Dental Industry",
@@ -178,7 +207,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div
+      {/* <div
         class="why_choose_parent bg-img-cover parent"
         data-aos="fade-up"
         data-aos-delay="200"
@@ -238,7 +267,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* meet our doctors */}
       <section className="top_dentists">
@@ -276,10 +305,11 @@ const Home = () => {
                 relationships, which is the core value at AO Dentistry.
               </p>
 
-              <button>
-                About Us
-                <span>›</span>
-              </button>
+              <Button
+                text="About Us"
+                path="/about"
+                style={{ width: "100%" }}
+              />
             </div>
           </div>
         </div>
@@ -381,8 +411,8 @@ const Home = () => {
                 prevEl: ".prev",
               }}
               autoplay={{
-                delay: 2000, // time between slides (2 sec)
-                disableOnInteraction: false, // keeps autoplay after click/swipe
+                delay: 2000,
+                disableOnInteraction: false,
               }}
               breakpoints={{
                 0: { slidesPerView: 1 },
@@ -391,16 +421,36 @@ const Home = () => {
                 1200: { slidesPerView: 4 },
               }}
             >
-              {data.map((item, index) => (
-                <SwiperSlide key={index}>
-                  <div className="card">
-                    <div className="image-wrapper">
-                      <img src={item} alt="before" />
-                      <div className="divider"></div>
+              {data.map((item, index) => {
+                const position = sliderPositions[index] !== undefined ? sliderPositions[index] : 50;
+                return (
+                  <SwiperSlide key={index}>
+                    <div className="card">
+                      <div 
+                        className="image-wrapper"
+                        ref={(el) => sliderRefs.current[index] = el}
+                        onMouseMove={(e) => e.buttons === 1 && handleSliderMove(e, index)}
+                        onMouseDown={(e) => handleSliderMove(e, index)}
+                        onTouchMove={(e) => handleSliderMove(e, index)}
+                        onTouchStart={(e) => handleSliderMove(e, index)}
+                      >
+                        <img src={item} alt="after" className="after-image" />
+                        
+                        <div className="before-wrapper" style={{ width: `${100 - position}%` }}>
+                          <img src={item} alt="before" className="before-image" />
+                        </div>
+                        
+                        <div className="slider-line" style={{ left: `${position}%` }}>
+                          <div className="slider-icon">
+                            <span>◀</span>
+                            <span>▶</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              ))}
+                  </SwiperSlide>
+                );
+              })}
             </Swiper>
           </div>
         </div>

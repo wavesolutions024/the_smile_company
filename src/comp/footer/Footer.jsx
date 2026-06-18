@@ -6,6 +6,8 @@ import { CiLinkedin } from "react-icons/ci";
 import { FiYoutube } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoIosCall } from "react-icons/io";
+import logo from "../../assets/header/denza_logo-removebg-preview.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -39,10 +41,9 @@ const Footer = () => {
 
         <div className="footer__inner cont">
           <div className="footer__brand">
-            <h2>ClinicMaster</h2>
+            <img src={logo} alt="Logo" />
             <p style={{ color: "white" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam
-              nonummy nibh.
+            Denza Dental Center, creating beutiful smiles through excellence, innovation, and care.
             </p>
             <div className="social_media_main">
               <span className="social_media_icon">
@@ -64,33 +65,34 @@ const Footer = () => {
             <div className="footer__col">
               <h3>Our Services</h3>
               <ul>
-                <li>Emergency Care</li>
-                <li>Operation Theater</li>
-                <li>Medical Checkup</li>
-                <li>Diagnostic Center</li>
-                <li>Outdoor Checkup</li>
+                <li><Link to="/general-dental">General Dental Services</Link></li>
+                <li><Link to="/restorative-dentistry">Restorative Dentistry</Link></li>
+                <li><Link to="/cosmetic-dentistry">Cosmetic Dentistry</Link></li>
+                <li><Link to="/orthodontic-treatments">Orthodontic Treatment</Link></li>
+                <li><Link to="/dental-check-ups">Dental Checkups</Link></li>
+                <li><Link to="/full-mouth-rehabilitation">Full mouth rehabilitation</Link></li>
+                <li><Link to="/pediatric-dentistry">Pediatric Dentistry</Link></li>
               </ul>
             </div>
 
             <div className="footer__col">
               <h3>Useful Links</h3>
               <ul>
-                <li>Privacy Policy</li>
-                <li>Terms & Conditions</li>
-                <li>Contact Us</li>
-                <li>Latest News</li>
-                <li>Our Sitemap</li>
+                <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                <li><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
               </ul>
             </div>
 
             <div className="footer__col">
               <h3>Quick Links</h3>
               <ul>
-                <li>About Us</li>
-                <li>Our Services</li>
-                <li>Our Team</li>
-                <li>Appointments</li>
-                <li>Contact Us</li>
+                <li><Link to="/about">About Us</Link></li>
+               
+                <li><Link to="/our-work">Our Work</Link></li>
+                <li><Link to="/dental-tourism">Dental Tourism</Link></li>
+                <li><Link to="/blogs">Blogs</Link></li>
+               
+                <li><Link to="/contact-us">Contact Us</Link></li>
               </ul>
             </div>
 

@@ -85,9 +85,6 @@ const About = () => {
           <div className="hero_content">
             <h1>Precision. Ethics. Comfort. Dentistry designed around you.</h1>
             <p>Specialist-led dental care in Kharadi, Pune </p>
-            <Link to="/contact" className="cta_button">
-              Book Appointment
-            </Link>
           </div>
         </div>
       </div>
@@ -131,6 +128,60 @@ const About = () => {
             </div> */}
             <div className="bottom-row">
               <Button />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="parent founder_note_parent">
+        <div className="cont founder_note_cont">
+          <div className="founder_left_section">
+            <h1>A Note from Our Specialists</h1>
+            <p>
+              Denza Dental is a premium dental clinic located in Kharadi, Pune,
+              dedicated to delivering precise, ethical, and patient-centered
+              dental care in a calm and refined environment.
+            </p>
+
+            <p>
+              We are a specialist-led dental practice, led by MDS specialists
+              with global clinical exposure, focused on delivering high-quality,
+              evidence-based care in a calm and refined environment. This global
+              perspective allows us to integrate contemporary techniques, modern
+              protocols, and a higher standard of clinical precision into
+              everyday dentistry.{" "}
+            </p>
+
+            <p>
+              Every treatment is approached with careful diagnosis, detailed
+              planning, and a commitment to long-term results. From routine care
+              to complex procedures, our goal is to ensure that each patient
+              receives dentistry that is transparent, comfortable, and tailored
+              to their individual needs.
+            </p>
+
+            <p>
+              We offer comprehensive dental treatments including root canal
+              therapy, cosmetic dentistry, smile designing, restorative
+              procedures, and preventive dental care. Each treatment is carried
+              out using modern technology and high standards of sterilization,
+              ensuring safety, accuracy, and comfort.{" "}
+            </p>
+
+            <p>
+              At Denza Dental, it’s not just about treating teeth—it’s about
+              delivering care that feels considered, confident, and truly
+              patient-focused in a stress-free environment.{" "}
+            </p>
+
+            <div className="bottom-row">
+              <Button style={{ width: "fit-content" }} />
+            </div>
+          </div>
+
+          <div className="founder_right_section">
+            <div className="image-frame">
+              <img src={afterImg} alt="Dr. Nashid" className="doctor-img" />
             </div>
           </div>
         </div>

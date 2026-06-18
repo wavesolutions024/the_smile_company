@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   background:
-    linear-gradient(to top, var(--background), transparent),
+    linear-gradient(to top, var(--white), transparent),
     url("../../assets/about_section/bg4.webp");
 
   h1 {
@@ -104,7 +104,7 @@
           width: 300px;
           padding: 20px;
           height: auto;
-          background-color: white;
+          background-color: var(--accent);
           box-shadow: var(--shadow);
           border-radius: 14px;
           display: flex;
@@ -142,10 +142,13 @@
 
             h1 {
               font-size: 45px;
+              color: var(--white);
+
             }
             .service_name {
               font-size: 20px;
               font-weight: 400;
+              color: var(--white);
             }
           }
         }
@@ -582,8 +585,12 @@
           position: relative;
           width: 100%;
           height: 300px;
+          overflow: hidden;
+          border-radius: 20px;
+          cursor: ew-resize;
+          touch-action: none;
 
-          img {
+          .after-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -591,10 +598,51 @@
             top: 0;
             left: 0;
             border-radius: 20px;
+            display: block;
           }
 
-          .after {
-            clip-path: inset(0 0 0 50%);
+          .before-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 20px;
+            transition: none;
+
+            .before-image {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              position: absolute;
+              left: 0;
+              border-radius: 20px;
+            }
+          }
+
+          .slider-line {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: white;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+
+            .slider-icon {
+              background: white;
+              border-radius: 50px;
+              padding: 8px 12px;
+              display: flex;
+              gap: 4px;
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+              font-size: 14px;
+              color: #1f2f61;
+              font-weight: bold;
+            }
           }
 
           .divider {
@@ -808,6 +856,8 @@
     padding: 40px 0px;
     .before_after_gallery_cont {
       .results-section {
+        padding: 20px;
+        
         .header {
           h1 {
             font-size: 30px;
@@ -818,12 +868,34 @@
           width: 100%;
 
           .image-wrapper {
-            .after {
-              clip-path: inset(0 0 0 50%);
-            }
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}
 
-            .divider {
-            }
+@media (max-width: 600px) {
+  .before_after_gallery_parent {
+    padding: 30px 0px;
+    .before_after_gallery_cont {
+      .results-section {
+        padding: 15px;
+
+        .header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 15px;
+
+          h1 {
+            font-size: 24px;
+          }
+        }
+
+        .card {
+          .image-wrapper {
+            height: 200px;
           }
         }
       }
@@ -879,6 +951,9 @@
 .dentists_content {
   width: 40%;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: var(--unit);
 
   h2 {
     font-size: 40px;

@@ -91,9 +91,7 @@ const DentalTourism = () => {
               Affordable, advanced, and globally trusted dental treatments in
               India for international patients
             </p>
-            <Link to="/contact" className="cta_button">
-              Get Free Consultation
-            </Link>
+         
           </div>
         </div>
       </div>

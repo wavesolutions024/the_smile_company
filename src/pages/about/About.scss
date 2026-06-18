@@ -148,6 +148,49 @@
   }
 }
 
+.founder_note_parent {
+  background: var(--background);
+  padding: 150px 0px;
+  .founder_note_cont {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: calc(var(--unit) * 2);
+
+    .founder_left_section {
+      width: 50%;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      flex-direction: column;
+      gap: var(--unit);
+      h1 {
+        color: var(--accent);
+        font-size: 32px;
+        font-weight: 800;
+      }
+    }
+    .founder_right_section {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .image-frame {
+        img {
+          width: 100%;
+          height: auto;
+          min-height: 420px;
+          object-fit: cover;
+          display: block;
+          border-radius: 24px;
+          box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 900px) {
   .about_dr_parent {
     padding: 50px 0px;
@@ -491,7 +534,7 @@
         color: var(--accent2);
         margin: 0;
       }
-      
+
       .doctor_title {
         font-size: 18px;
         color: var(--white);
@@ -593,6 +636,180 @@
 
       .doctor_image_wrapper {
         order: -1;
+      }
+    }
+  }
+}
+
+// Responsive styles for doctors_section1
+@media (max-width: 1024px) {
+  .doctors_section1 {
+    padding: 60px 0;
+
+    .doctor_profile {
+      grid-template-columns: 1fr;
+      gap: 40px;
+
+      &.odd {
+        direction: ltr;
+      }
+
+      .doctor_image_wrapper {
+        .doctor_image {
+          max-width: 350px;
+        }
+      }
+
+      .doctor_content {
+        .doctor_name {
+          font-size: 28px;
+        }
+
+        .doctor_title {
+          font-size: 16px;
+        }
+
+        .doctor_description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .doctors_section1 {
+    padding: 50px 0;
+
+    .doctors_cont {
+      gap: 40px;
+
+      h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .doctor_profile {
+      gap: 30px;
+
+      .doctor_image_wrapper {
+        .doctor_image {
+          max-width: 300px;
+        }
+      }
+
+      .doctor_content {
+        .doctor_name {
+          font-size: 24px;
+        }
+
+        .doctor_title {
+          font-size: 15px;
+        }
+
+        .doctor_description {
+          font-size: 13px;
+          line-height: 1.6;
+        }
+
+        .doctor_expertise_section {
+          h4 {
+            font-size: 14px;
+            margin-bottom: 12px;
+          }
+
+          .expertise_badge {
+            padding: 8px 12px;
+
+            .expertise_icon {
+              font-size: 16px;
+            }
+
+            .expertise_label {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .doctors_section1 {
+    padding: 40px 0;
+
+    .doctors_cont {
+      gap: 30px;
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .doctor_profile {
+      gap: 20px;
+
+      .doctor_image_wrapper {
+        .doctor_image {
+          max-width: 100%;
+          width: 100%;
+          aspect-ratio: 1;
+        }
+      }
+
+      .doctor_content {
+        .doctor_name {
+          font-size: 20px;
+          margin-bottom: 8px;
+        }
+
+        .doctor_title {
+          font-size: 13px;
+          margin-bottom: 12px;
+        }
+
+        .doctor_description {
+          font-size: 12px;
+          line-height: 1.5;
+          margin-bottom: 12px;
+        }
+
+        .doctor_expertise_section {
+          margin-top: 15px;
+
+          h4 {
+            font-size: 13px;
+            margin-bottom: 10px;
+          }
+
+          .expertise_swiper {
+            .expertise_badge {
+              padding: 6px 10px;
+              font-size: 11px;
+
+              .expertise_icon {
+                font-size: 14px;
+              }
+
+              .expertise_label {
+                font-size: 11px;
+              }
+            }
+          }
+
+          :global(.swiper-button-prev),
+          :global(.swiper-button-next) {
+            width: 30px;
+            height: 30px;
+
+            &:after {
+              font-size: 12px;
+            }
+          }
+        }
       }
     }
   }

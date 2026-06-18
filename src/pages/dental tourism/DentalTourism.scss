@@ -39,6 +39,10 @@
   margin: 0 auto;
   padding: 36px;
   border-radius: 14px;
+  position: absolute;
+  top:80px;
+  left: 50%;
+  transform: translate(-50%);
 
   text-align: center;
 }

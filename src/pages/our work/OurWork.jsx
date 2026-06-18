@@ -164,9 +164,7 @@ const OurWork = () => {
               from smile makeovers to full mouth rehabilitation. Drag the slider
               on any case to reveal the before & after.
             </p>
-            <Link to="/contact" className="cta_button">
-              Book Appointment
-            </Link>
+         
           </div>
         </div>
       </div>
