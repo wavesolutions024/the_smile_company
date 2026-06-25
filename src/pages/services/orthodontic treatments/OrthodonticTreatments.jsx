@@ -9,39 +9,34 @@ import gallery1 from "../../../assets/about_page/after1.webp";
 
 const services = [
   {
-    title: "Dental Checkups and Consultations",
+    title: "Initial Consultation",
     description:
-      "A dental checkup includes an in-depth analysis of your overall dental health, helping you stay ahead of decay and gum issues.",
+      "We evaluate your teeth, discuss your concerns, and recommend the best braces option for your needs. ",
   },
   {
-    title: "Dental X-ray",
+    title: " Customized Treatment Plan ",
     description:
-      "Modern digital X-rays reveal what’s happening under the surface so we can catch cavities, bone loss, and impacted teeth early.",
+      "Digital X-rays and 3D scans are used to design a precise plan for aligning your teeth.",
   },
   {
-    title: "Teeth Cleaning",
+    title: "Braces Placement ",
     description:
-      "Professional teeth cleaning removes plaque and tartar from hard-to-reach areas, protecting teeth and gums from disease.",
+      "Brackets and wires are carefully placed on your teeth, or custom clear aligners are provided. ",
   },
   {
-    title: "Cavity Detection and Fillings",
+    title: " Regular Adjustments ",
     description:
-      "Using modern diagnostics, we locate early cavities and restore damaged teeth with tooth-colored fillings.",
+      "Periodic visits ensure your teeth are moving correctly and adjustments are made as needed. ",
   },
   {
-    title: "Root Canal Treatment",
+    title: "Braces Removal",
     description:
-      "Gentle root canal therapy relieves pain and saves a damaged tooth while preserving your natural smile.",
+      "Once alignment is achieved, the braces are safely removed, revealing your new smile.",
   },
   {
-    title: "Tooth Extractions",
+    title: "Retainer Support",
     description:
-      "When a tooth cannot be saved, our team performs safe extractions with comfort and careful aftercare.",
-  },
-  {
-    title: "Wisdom Tooth Extraction",
-    description:
-      "We remove impacted wisdom teeth cleanly and gently, minimizing discomfort and accelerating recovery.",
+      "A retainer is provided to maintain your results and prevent teeth from shifting back. ",
   },
 ];
 
@@ -89,7 +84,7 @@ const OrthodonticTreatments = () => {
     <>
       <div className="parent general_dental_parent bg-img-cover">
         <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
+          Welcome to our Orthodontic Treatment Services!
         </marquee>
         <div className="cont general_dental_cont">
           <div className="bts_grp">
@@ -100,32 +95,204 @@ const OrthodonticTreatments = () => {
         </div>
       </div>
 
+      <div className="brace_treat_parent parent">
+        <div className="brace_treat_cont cont">
+          <h2>Braces Treatment in Kharadi, Pune | Denza Dental </h2>
+          <div>
+            <p>
+              At Denza Dental, we believe a confident smile begins with
+              well-aligned teeth. If you’re searching for the best orthodontic
+              treatment in Kharadi, Pune or looking for braces near you, our
+              expert team is here to help.
+            </p>
+
+            <p>
+              Many people experience dental concerns like crooked teeth,
+              crowding, gaps, or bite issues. Our braces treatment is designed
+              to gradually straighten and align your teeth, improving both the
+              appearance and function of your smile.
+            </p>
+
+            <p>
+              With personalized orthodontic care, we ensure your treatment
+              journey is comfortable, effective, and tailored to your needs,
+              helping you achieve a healthy, confident smile.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="parent second_parent">
         <div className="cont second_cont">
           <div className="general_left">
             <img src={img1} alt="General Dental Service" />
           </div>
           <div className="general_right">
-            <h2>General Dental Services</h2>
+            <h2>Why You May Need Braces Treatment </h2>
             <p>
-              Just like you visit your family doctor for check-ups to stay
-              healthy, similarly, general dental services are for regular care
-              of your teeth. These general dental services help you catch
-              problems when they are small. They also allow problems to be
-              treated before they become more severe.
+              Braces are not just for improving appearance—they also correct
+              important dental issues that affect oral health and function.
             </p>
+
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Common Reasons for Braces{" "}
+            </p>
+
+            <ul style={{ paddingLeft: "20px" }}>
+              <li>
+                <b>Crowded Teeth </b> : Lack of space causes teeth to
+                overlap{" "}
+              </li>
+              <li>
+                <b>Gaps Between Teeth </b> : Can impact appearance and oral
+                hygiene
+              </li>
+              <li>
+                <b>Overbite / Underbite </b> : Affects jaw alignment and
+                function
+              </li>
+              <li>
+                <b>Crossbite </b> : Misaligned bite that impacts chewing
+              </li>
+              <li>
+                <b>Open Bite </b> : Front teeth don’t meet properly, affecting
+                speech and eating
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="parent second_parent_gbt"
+        style={{ background: "var(--background)" }}
+      >
+        <div className="cont second_cont_gbt why_choose_denza">
+          <div className="why_header">
+            <h2>
+              Why Choose Denza Dental for Braces Treatment in Kharadi,
+              Pune?{" "}
+            </h2>
+          </div>
+
+          <div className="why_cards">
+            {[
+              {
+                title: " Experienced Orthodontic Experts  ",
+                description:
+                  "Our skilled orthodontists provide precise and effective braces treatment tailored to your dental needs. ",
+              },
+              {
+                title: "Personalized Treatment Plans ",
+                description:
+                  "We begin with a detailed evaluation using advanced technology to create a customized plan that aligns with your smile goals. ",
+              },
+              {
+                title: "Multiple Braces Options ",
+                description:
+                  "Choose from metal braces, ceramic braces, lingual braces, and clear aligners (Invisalign)—we help you pick what suits you best.  ",
+              },
+              {
+                title: "Advanced Technology ",
+                description:
+                  "We use modern tools like digital X-rays and 3D scanning for accurate diagnosis and efficient treatment. ",
+              },
+              {
+                title: " Comfort-Focused Care ",
+                description:
+                  "Our friendly team ensures a smooth, comfortable, and stress-free orthodontic experience. ",
+              },
+              {
+                title: "Affordable & Flexible Plans ",
+                description:
+                  "We offer transparent pricing and flexible payment options to make braces treatment accessible. ",
+              },
+              {
+                title: "Patient Guidance ",
+                description:
+                  "You’ll be guided at every step—from treatment planning to maintaining oral hygiene during braces. ",
+              },
+              {
+                title: "Post-Treatment Support  ",
+                description:
+                  "We provide retainers and follow-up care to maintain your results long-term. ",
+              },
+              {
+                title: "Proven Results ",
+                description:
+                  "Our successful cases reflect our commitment to delivering well-aligned, confident smiles. ",
+              },
+              {
+                title:
+                  "Convenient Location & Flexible Timings at Denza Dental  ",
+                description:
+                  "Denza Dental is conveniently located in Kharadi, Pune, making it easily accessible for patients from nearby areas. We offer flexible appointment slots to fit your busy schedule, ensuring you receive quality dental care at your convenience.  ",
+              },
+            ].map((item, index) => (
+              <div key={index} className="why_card">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="parent braces_treat_parent">
+        <div className="cont braces_treat_cont">
+          <div className="braces_treat_right">
+            <h2>Duration of Braces Treatment: What to Expect </h2>
+            <p>
+              The time required for orthodontic treatment varies depending on
+              individual dental needs.
+            </p>
+
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Typical Duration
+            </p>
+
+            <p>
+              Most braces treatments take around 18 to 24 months, though this
+              can differ based on the case.{" "}
+            </p>
+
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Factors That Affect Treatment Time
+            </p>
+
+            <ul>
+              <li>
+                <b>Severity of the Issue </b> : Complex alignment problems may
+                take longer
+              </li>
+              <li>
+                <b>Type of Braces </b> :– Metal, ceramic, or clear aligners can
+                influence duration
+              </li>
+              <li>
+                <b>Patient Cooperation </b> : Regular visits and following
+                instructions help speed up results
+              </li>
+            </ul>
+          </div>
+
+          <div className="braces_treat_left">
+            <img src={img1} alt="General Dental Service" />
           </div>
         </div>
       </div>
 
       <div className="third_section">
         <div className="third_header">
-          <h2>General Dental Services that AO Dentistry Offers in Pune</h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
+          <h2
+            style={{
+              fontSize: "36px",
+              fontWeight: "600",
+              color: "var(--accent)",
+            }}
+          >
+            Braces Treatment Procedure at Denza Dental: Step-by-Step{" "}
+          </h2>
         </div>
 
         <div className="service_cards">
@@ -137,72 +304,143 @@ const OrthodonticTreatments = () => {
             </div>
           ))}
         </div>
+      </div>
 
-        <div className="faq_section">
-          <div className="faq_header">
-            <h2>FAQs</h2>
-            <p>
-              Answers to the most common questions about our general dental
-              care.
-            </p>
-          </div>
-
-          <div className="faq_list">
-            {faqs.map((item, index) => {
-              const isOpen = openFaq === index;
-              return (
-                <div
-                  key={index}
-                  className={`faq_item ${isOpen ? "open" : ""}`}
-                  onClick={() => toggleFaq(index)}
-                >
-                  <button className="faq_question" type="button">
-                    <span>{item.question}</span>
-                    <span className="faq_toggle">{isOpen ? "▲" : "▼"}</span>
-                  </button>
-                  <div className="faq_answer">
-                    <p>{item.answer}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+      <div className="faq_section">
+        <div className="faq_header">
+          <h2>FAQs</h2>
+          <p>
+            Answers to the most common questions about our general dental care.
+          </p>
         </div>
 
-        <div className="parent gallery_parent">
-          <div className="cont gallery_cont">
-            <div className="gallery_header">
-              <h2>Clinic Gallery</h2>
-              <p>
-                Explore our clinic spaces and patient-friendly treatment rooms.
-              </p>
-            </div>
-            <div className="gallery_slider">
-              <Swiper
-                modules={[Navigation, Autoplay]}
-                spaceBetween={24}
-                slidesPerView={4}
-                navigation={true}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
-                breakpoints={{
-                  0: { slidesPerView: 1, spaceBetween: 16 },
-                  600: { slidesPerView: 2, spaceBetween: 18 },
-                  900: { slidesPerView: 3, spaceBetween: 20 },
-                  1200: { slidesPerView: 4, spaceBetween: 24 },
-                }}
+        <div className="faq_list">
+          {faqs.map((item, index) => {
+            const isOpen = openFaq === index;
+            return (
+              <div
+                key={index}
+                className={`faq_item ${isOpen ? "open" : ""}`}
+                onClick={() => toggleFaq(index)}
               >
-                {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="gallery_card">
-                      <img src={src} alt={`Clinic slide ${index + 1}`} />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+                <button className="faq_question" type="button">
+                  <span>{item.question}</span>
+                  <span className="faq_toggle">{isOpen ? "▲" : "▼"}</span>
+                </button>
+                <div className="faq_answer">
+                  <p>{item.answer}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="side_side_parent parent">
+        <div className="side_side_cont cont">
+          <div className="left_side_side">
+            <h3>Benefits of Orthodontic Treatment </h3>
+            <ul>
+              <li>
+                <b> Improved Oral Health</b> – Straight teeth are easier to
+                clean and maintain
+              </li>
+              <li>
+                <b> Enhanced Smile Aesthetics</b> – Boosts confidence and
+                overall appearance
+              </li>
+
+              <li>
+                <b>Better Function</b> – Improves chewing, speaking, and bite
+                alignment
+              </li>
+              <li>
+                <b> Prevents Future Issues</b> – Reduces risk of cavities, gum
+                problems, and wear
+              </li>
+            </ul>
+          </div>
+
+          <div className="right_side_side">
+            <h3>Precautions During Braces Treatment</h3>
+            <ul>
+              <li>
+                <b>Maintain Oral Hygiene </b> – Brush and floss regularly to
+                keep teeth and braces clean
+              </li>
+              <li>
+                <b>Avoid Hard & Sticky Foods</b> – Prevent damage to brackets
+                and wires
+              </li>
+
+              <li>
+                <b>Attend Regular Check-ups </b> – Ensure smooth progress and
+                timely adjustments
+              </li>
+              <li>
+                <b>Use a Mouthguard</b> – Protect your braces during sports or
+                physical activities
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>After Care of Braces Treatment </h2>
+
+          <ul>
+            <li>
+              <b> Retainer Use</b> – Wear as prescribed to prevent teeth
+              shifting
+            </li>
+            <li>
+              <b> Continued Oral Hygiene</b> – Maintain excellent brushing and
+              flossing.
+            </li>
+
+            <li>
+              <b>Regular Check-ups</b> – Follow-up visits to ensure teeth stay
+              in place.
+            </li>
+            <li>
+              <b>Monitor Changes</b> – Contact us if issues arise.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="parent gallery_parent">
+        <div className="cont gallery_cont">
+          <div className="gallery_header">
+            <h2>Clinic Gallery</h2>
+          </div>
+          <div className="gallery_slider">
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              spaceBetween={24}
+              slidesPerView={4}
+              navigation={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              breakpoints={{
+                0: { slidesPerView: 1, spaceBetween: 16 },
+                600: { slidesPerView: 2, spaceBetween: 18 },
+                900: { slidesPerView: 3, spaceBetween: 20 },
+                1200: { slidesPerView: 4, spaceBetween: 24 },
+              }}
+            >
+              {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
+                <SwiperSlide key={index}>
+                  <div className="gallery_card">
+                    <img src={src} alt={`Clinic slide ${index + 1}`} />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>

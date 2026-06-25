@@ -38,19 +38,41 @@
         text-decoration: none;
         transition: var(--trans);
         &:hover {
-          background: var(--accent2);
+          background: var(--accent);
           transform: translateY(-5px);
         }
       }
 
-      .call_btn {
-        background: var(--accent2);
+      .call_btnn {
+        background: var(--bg_color);
 
         &:hover {
           background: var(--accent);
           transform: translateY(-5px);
         }
       }
+    }
+  }
+}
+
+.center_alignment_parent {
+  background: var(--background);
+  width: 100%;
+  padding: 80px 0px;
+
+  .center_alignment_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--unit);
+
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      max-width: 800px;
+      color: var(--accent);
+      text-align: center;
     }
   }
 }
@@ -74,7 +96,7 @@
           font-weight: 300;
         }
 
-        .call_btn {
+        .call_btnn {
           background: var(--accent2);
 
           &:hover {
@@ -145,7 +167,7 @@
 @media (max-width: 900px) {
   .second_parent {
     .second_cont {
-     flex-direction: column;
+      flex-direction: column;
       .general_left {
         width: 100%;
       }
@@ -176,7 +198,7 @@
 .third_header h2 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: var (--accent) !important;
 }
 
 .third_header p {
@@ -186,9 +208,9 @@
   line-height: 1.9;
 }
 
-.service_cards {
+.service_cardss {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   max-width: 1240px;
   margin: 0 auto;
@@ -228,7 +250,6 @@
 
 .gallery_parent {
   padding: 3rem 0;
- 
 }
 
 .gallery_cont {
@@ -279,15 +300,14 @@
 }
 
 @media (max-width: 1100px) {
-  .service_cards {
+  .service_cardss {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-.faq_section {
-  margin-top: 3rem;
-  padding: 3rem 0 1rem;
-  background: var(--background);
+.faq_section_general {
+  padding: 80px 0px;
+  // background: var(--background);
 }
 
 .faq_header {
@@ -297,9 +317,9 @@
 }
 
 .faq_header h2 {
-  color:var(--accent);
-  font-size: 3rem;
-  margin-bottom: 0.75rem;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--accent);
 }
 
 .faq_header p {
@@ -322,7 +342,9 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 26px;
   overflow: hidden;
-  transition: border-color 0.2s ease, background 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
 }
 
 .faq_item:hover {
@@ -352,7 +374,9 @@
 .faq_answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease;
   padding: 0 1.75rem;
 }
 
@@ -372,7 +396,7 @@
     padding: 3rem 1rem 2rem;
   }
 
-  .service_cards {
+  .service_cardss {
     grid-template-columns: 1fr;
   }
 

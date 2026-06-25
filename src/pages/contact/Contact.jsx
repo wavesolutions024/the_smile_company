@@ -2,11 +2,24 @@ import React from "react";
 import { FiClock, FiMail, FiPhone } from "react-icons/fi";
 import PageTop from "../../comp/page_top/PageTop";
 import "./Contact.scss";
+import Button from "../../comp/button/Button";
 
 const Contact = () => {
   return (
     <>
-      <PageTop title="Contact Us" />
+      <div className="parent dental_tourish_parent">
+        <div className="overlay"></div>
+
+        <div className="cont dental_tourish_cont">
+          <div className="hero_content">
+            <h1>Connect with Denza Dental </h1>
+            <p>
+              Experience expert care and personalized support from our dedicated
+              dental team.{" "}
+            </p>
+          </div>
+        </div>
+      </div>
 
       <div className="contact_page_parent parent">
         <div className="contact_page_cont cont">
@@ -14,8 +27,10 @@ const Contact = () => {
             <div className="title_block">
               <h1>Contact Information</h1>
               <p>
-                Thank you for visiting our website. We are here to assist you
-                with any inquiries you may have.
+                Book your consultation at Denza Dental for advanced,
+                personalized dental treatments. From smile makeovers to full
+                mouth rehabilitation, our specialists provide complete care
+                tailored to your needs.
               </p>
             </div>
 
@@ -76,7 +91,7 @@ const Contact = () => {
                 <textarea placeholder="Message" rows="4" required />
 
                 <div className="form_footer">
-                  <button className="btn" type="submit">Submit Now →</button>
+                  <Button text="Submit Now" />
                 </div>
               </form>
             </div>

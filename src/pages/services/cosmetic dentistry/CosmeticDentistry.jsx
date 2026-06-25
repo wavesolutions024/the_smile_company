@@ -89,7 +89,7 @@ const CosmeticDentistry = () => {
     <>
       <div className="parent general_dental_parent bg-img-cover">
         <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
+          Welcome to our Cosmetic Dentistry Services!
         </marquee>
         <div className="cont general_dental_cont">
           <div className="bts_grp">
@@ -106,76 +106,54 @@ const CosmeticDentistry = () => {
             <img src={img1} alt="General Dental Service" />
           </div>
           <div className="general_right">
-            <h2>General Dental Services</h2>
+            <h2>Cosmetic Dentistry</h2>
             <p>
-              Just like you visit your family doctor for check-ups to stay
-              healthy, similarly, general dental services are for regular care
-              of your teeth. These general dental services help you catch
-              problems when they are small. They also allow problems to be
-              treated before they become more severe.
+              Cosmetic dentistry focuses on improving the appearance of your
+              teeth based on your facial features and dental structure for
+              balanced, natural results.
+            </p>
+            <p>
+              <b>Customized Smile Makeovers</b> : We design personalized smile
+              makeovers by combining treatments to suit your unique needs and
+              aesthetic goals.
+            </p>
+
+            <p>
+              <b>Treatments Offered </b> : Our services include veneers,
+              bonding, crowns, tooth-colored fillings, gum contouring, and full
+              mouth rehabilitation.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="third_section">
-        <div className="third_header">
-          <h2>General Dental Services that AO Dentistry Offers in Pune</h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
-        </div>
+      <div className="parent thir_parent">
+        <div className="cont thir_cont">
+          <div className="thir_right">
+            <h2>Our Cosmetic Dental Treatments </h2>
+            <p>
+              At Denza Dental, we offer a wide range of cosmetic dentistry
+              treatments designed to enhance your smile and improve overall oral
+              health. Professional cleaning and teeth whitening help remove
+              plaque and stains for a brighter smile. Dental bonding is used to
+              repair minor chips, close gaps, and protect exposed areas.
+              Porcelain veneers provide a natural-looking cover for front teeth,
+              improving shape and color. Cosmetic recontouring helps reshape
+              uneven or slightly damaged teeth, creating a more balanced and
+              harmonious smile.
+            </p>
+          </div>
 
-        <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card">
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="faq_section" style={{ background: "white" }}>
-        <div className="faq_header">
-          <h2>FAQs</h2>
-          <p>
-            Answers to the most common questions about our general dental care.
-          </p>
-        </div>
-
-        <div className="faq_list">
-          {faqs.map((item, index) => {
-            const isOpen = openFaq === index;
-            return (
-              <div
-                key={index}
-                className={`faq_item ${isOpen ? "open" : ""}`}
-                onClick={() => toggleFaq(index)}
-              >
-                <button className="faq_question" type="button">
-                  <span>{item.question}</span>
-                  <span className="faq_toggle">{isOpen ? "▲" : "▼"}</span>
-                </button>
-                <div className="faq_answer">
-                  <p>{item.answer}</p>
-                </div>
-              </div>
-            );
-          })}
+          <div className="thir_left">
+            <img src={img1} alt="Cosmetic Dental Service" />
+          </div>
         </div>
       </div>
 
-      <div className="parent gallery_parent">
+      <div className="parent gallery_parent" style={{ backgroundColor: "white" }} >
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            <p>
-              Explore our clinic spaces and patient-friendly treatment rooms.
-            </p>
           </div>
           <div className="gallery_slider">
             <Swiper

@@ -53,6 +53,24 @@
   }
 }
 
+.brace_treat_parent {
+  padding: 50px 0px;
+  .brace_treat_cont {
+    display: flex;
+    gap: calc(var(--unit) * 2);
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .general_dental_parent {
     height: 60vh;
@@ -143,7 +161,7 @@
 @media (max-width: 900px) {
   .second_parent {
     .second_cont {
-     flex-direction: column;
+      flex-direction: column;
       .general_left {
         width: 100%;
       }
@@ -154,6 +172,58 @@
           font-size: 30px;
           font-weight: 600;
         }
+      }
+    }
+  }
+}
+
+.braces_treat_parent {
+  padding: 50px 0px;
+  .braces_treat_cont {
+    display: flex;
+    gap: calc(var(--unit) * 2);
+
+    .braces_treat_right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: var(--unit);
+      justify-content: center;
+
+      h2 {
+        font-size: 36px;
+        font-weight: 600;
+        color: var(--accent);
+      }
+    }
+
+    .braces_treat_left {
+      width: 50%;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: var(--unit);
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .braces_treat_parent {
+    .braces_treat_cont {
+      flex-direction: column;
+
+      .braces_treat_right {
+        width: 100%;
+
+        ul {
+          padding-left: 20px;
+        }
+      }
+
+      .braces_treat_left {
+        width: 100%;
       }
     }
   }
@@ -224,9 +294,80 @@
   line-height: 1.9;
 }
 
+.side_side_parent {
+  padding: 100px 0px;
+  .side_side_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--unit);
+
+    h3 {
+      font-size: 30px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    ul {
+      display: flex;
+      gap: var(--unit);
+      flex-direction: column;
+      font-size: 18px;
+      padding-left: 20px;
+    }
+
+    .left_side_side {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: var(--unit);
+    }
+
+    .right_side_side {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: var(--unit);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .side_side_parent {
+    padding: 50px 0px;
+    .side_side_cont {
+      flex-direction: column;
+      .left_side_side {
+        width: 100%;
+      }
+
+      .right_side_side {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.after_care_parent{
+  padding: 100px 0px;
+  background: var(--accent);
+
+  .after_care_cont{
+    display: flex;
+    gap: var(--unit);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
 .gallery_parent {
   padding: 3rem 0;
- 
 }
 
 .gallery_cont {
@@ -295,7 +436,7 @@
 }
 
 .faq_header h2 {
-  color:var(--accent);
+  color: var(--accent);
   font-size: 3rem;
   margin-bottom: 0.75rem;
 }
@@ -319,7 +460,9 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 26px;
   overflow: hidden;
-  transition: border-color 0.2s ease, background 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
 }
 
 .faq_item:hover {
@@ -349,7 +492,9 @@
 .faq_answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease;
   padding: 0 1.75rem;
 }
 
