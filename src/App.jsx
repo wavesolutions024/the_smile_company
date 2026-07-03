@@ -47,6 +47,7 @@ import DentalLoupes from "./pages/technology/dental loupes/DentalLoupes";
 import LaughingGas from "./pages/technology/laughing gas/LaughingGas";
 import DentalTourism from "./pages/dental tourism/DentalTourism";
 import OurWork from "./pages/our work/OurWork";
+import DentalImplantsTreatment from "./pages/services/dental implants treatment/DentalImplantsTreatment";
 
 function AppLayout() {
   const location = useLocation();
@@ -64,6 +65,7 @@ function AppLayout() {
         <Route element={<RestorativeDentistry />} path="/restorative-dentistry" />
         <Route element={<CosmeticDentistry />} path="/cosmetic-dentistry" />
         <Route element={<OrthodonticTreatments />} path="/orthodontic-treatments" />
+        <Route element={<DentalImplantsTreatment />} path="/dental-implants-treatment" />
         <Route element={<FullMouthRihabilitation />} path="/full-mouth-rehabilitation" />
         <Route element={<PediatricDentistry />} path="/pediatric-dentistry" />
         <Route element={<DentalCheckUps />} path="/dental-check-ups" />

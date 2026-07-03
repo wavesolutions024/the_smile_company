@@ -69,8 +69,8 @@ const HeaderNew = () => {
                 <Link to="/orthodontic-treatments" onClick={closeAll}>
                   ORTHODONTIC TREATMENTS
                 </Link>
-                <Link to="/dental-check-ups" onClick={closeAll}>
-                  DENTAL CHECK-UPS
+                <Link to="/dental-implants-treatment" onClick={closeAll}>
+                  DENTAL IMPLANTS TREATMENT
                 </Link>
                 <Link to="/full-mouth-rehabilitation" onClick={closeAll}>
                   FULL MOUTH REHABILITATION

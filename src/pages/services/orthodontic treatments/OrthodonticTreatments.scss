@@ -352,18 +352,140 @@
   }
 }
 
-.after_care_parent{
+.after_care_parent {
   padding: 100px 0px;
-  background: var(--accent);
+  background: var(--background);
 
-  .after_care_cont{
+  .after_care_cont {
     display: flex;
     gap: var(--unit);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
 
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    ul {
+      display: flex;
+      gap: var(--unit);
+      flex-direction: column;
+      font-size: 18px;
+      padding-left: 20px;
+    }
+  }
+}
+
+.braces_type_parent {
+  padding: 100px 0;
+
+  .braces_type_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--unit);
+
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--accent);
+      text-align: center;
+    }
+
+  
+
+    .braces_cards {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+
+      .braces_card {
+        background: var(--background);
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 18px;
+        transition: 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(-8px);
+        }
+
+        img {
+          width: 100%;
+          height: 170px;
+          object-fit: cover;
+          border-radius: 16px;
+          margin-bottom: 18px;
+        }
+
+        h3 {
+          font-size: 20px;
+          font-weight: 600;
+          
+          margin-bottom: 10px;
+        }
+
+      
+      }
+    }
+  }
+}
+
+.dental_implannts_parents{
+  padding: 100px 0px;
+
+  .dental_implannts_cont{
+    display: flex;
+    flex-direction: column;
+    gap: var(--unit);
+    align-items: center;
+    justify-content: center;
+
+    h2{
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .braces_type_parent {
+    padding: 70px 0;
+
+    .braces_type_cont {
+      .braces_cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .braces_type_parent {
+    .braces_type_cont {
+      h2 {
+        font-size: 28px;
+      }
+
+      .braces_cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        .braces_card {
+          img {
+            height: 220px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .gallery_parent {

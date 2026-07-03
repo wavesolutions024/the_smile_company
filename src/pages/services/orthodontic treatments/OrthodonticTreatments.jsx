@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "./OrthodonticTreatments.scss";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
-
+import metalBrace from "../../../assets/about_page/woman_dr.jpg";
 const services = [
   {
     title: "Initial Consultation",
@@ -42,19 +42,19 @@ const services = [
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "Is orthodontic treatment only for children? ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "No, braces and aligners work effectively for both teens and adults. Many adult patients choose treatment for improved smile and bite correction.",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "How do I know if I need braces?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "If you have crooked teeth, gaps, bite issues, or difficulty cleaning teeth properly, an orthodontic consultation is recommended.  ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "How long does braces treatment usually take?",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "Most orthodontic treatments take 12 to 24 months, depending on the complexity of tooth movement required. ",
   },
   {
     question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
@@ -62,14 +62,9 @@ const faqs = [
       "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "Do braces change facial appearance?",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
-  },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "Yes, es, in a positive way. Proper alignment can improve smile symmetry and overall facial balance.",
   },
 ];
 
@@ -122,47 +117,6 @@ const OrthodonticTreatments = () => {
         </div>
       </div>
 
-      <div className="parent second_parent">
-        <div className="cont second_cont">
-          <div className="general_left">
-            <img src={img1} alt="General Dental Service" />
-          </div>
-          <div className="general_right">
-            <h2>Why You May Need Braces Treatment </h2>
-            <p>
-              Braces are not just for improving appearance—they also correct
-              important dental issues that affect oral health and function.
-            </p>
-
-            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
-              Common Reasons for Braces{" "}
-            </p>
-
-            <ul style={{ paddingLeft: "20px" }}>
-              <li>
-                <b>Crowded Teeth </b> : Lack of space causes teeth to
-                overlap{" "}
-              </li>
-              <li>
-                <b>Gaps Between Teeth </b> : Can impact appearance and oral
-                hygiene
-              </li>
-              <li>
-                <b>Overbite / Underbite </b> : Affects jaw alignment and
-                function
-              </li>
-              <li>
-                <b>Crossbite </b> : Misaligned bite that impacts chewing
-              </li>
-              <li>
-                <b>Open Bite </b> : Front teeth don’t meet properly, affecting
-                speech and eating
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
       <div
         className="parent second_parent_gbt"
         style={{ background: "var(--background)" }}
@@ -170,8 +124,7 @@ const OrthodonticTreatments = () => {
         <div className="cont second_cont_gbt why_choose_denza">
           <div className="why_header">
             <h2>
-              Why Choose Denza Dental for Braces Treatment in Kharadi,
-              Pune?{" "}
+              Why Choose Denza Dental for Braces Treatment in Kharadi, Pune?
             </h2>
           </div>
 
@@ -234,6 +187,49 @@ const OrthodonticTreatments = () => {
                 <p>{item.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+
+
+
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2>Why You May Need Braces Treatment </h2>
+            <p>
+              Braces are not just for improving appearance—they also correct
+              important dental issues that affect oral health and function.
+            </p>
+
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Common Reasons for Braces{" "}
+            </p>
+
+            <ul style={{ paddingLeft: "20px" }}>
+              <li>
+                <b>Crowded Teeth </b> : Lack of space causes teeth to
+                overlap{" "}
+              </li>
+              <li>
+                <b>Gaps Between Teeth </b> : Can impact appearance and oral
+                hygiene
+              </li>
+              <li>
+                <b>Overbite / Underbite </b> : Affects jaw alignment and
+                function
+              </li>
+              <li>
+                <b>Crossbite </b> : Misaligned bite that impacts chewing
+              </li>
+              <li>
+                <b>Open Bite </b> : Front teeth don’t meet properly, affecting
+                speech and eating
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -306,35 +302,6 @@ const OrthodonticTreatments = () => {
         </div>
       </div>
 
-      <div className="faq_section">
-        <div className="faq_header">
-          <h2>FAQs</h2>
-          <p>
-            Answers to the most common questions about our general dental care.
-          </p>
-        </div>
-
-        <div className="faq_list">
-          {faqs.map((item, index) => {
-            const isOpen = openFaq === index;
-            return (
-              <div
-                key={index}
-                className={`faq_item ${isOpen ? "open" : ""}`}
-                onClick={() => toggleFaq(index)}
-              >
-                <button className="faq_question" type="button">
-                  <span>{item.question}</span>
-                  <span className="faq_toggle">{isOpen ? "▲" : "▼"}</span>
-                </button>
-                <div className="faq_answer">
-                  <p>{item.answer}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
 
       <div className="side_side_parent parent">
         <div className="side_side_cont cont">
@@ -386,7 +353,7 @@ const OrthodonticTreatments = () => {
         </div>
       </div>
 
-      <div className="after_care_parent parent">
+        <div className="after_care_parent parent">
         <div className="after_care_cont cont">
           <h2>After Care of Braces Treatment </h2>
 
@@ -411,7 +378,122 @@ const OrthodonticTreatments = () => {
         </div>
       </div>
 
-      <div className="parent gallery_parent">
+
+ <div className="braces_type_parent parent">
+        <div className="braces_type_cont cont">
+          <h2>Types of Braces Available at Denza Dental</h2>
+          <p>
+            We offer a range of orthodontic options to suit different needs and
+            preferences:
+          </p>
+
+          <div className="braces_cards">
+            <div className="braces_card">
+              <img src={metalBrace} alt="Metal Braces" />
+              <h3>Metal Braces</h3>
+              <p>
+                Strong and reliable, these are the most traditional braces and
+                work effectively for all types of alignment issues.
+              </p>
+            </div>
+
+            <div className="braces_card">
+              <img src={metalBrace} alt="Ceramic Braces" />
+              <h3>Ceramic Braces</h3>
+              <p>
+                Tooth-colored braces that blend with your teeth, offering a less
+                noticeable yet effective solution.
+              </p>
+            </div>
+
+            <div className="braces_card">
+              <img src={metalBrace} alt="Lingual Braces" />
+              <h3>Lingual Braces</h3>
+              <p>
+                Placed behind the teeth, these braces are completely hidden and
+                ideal for those seeking a discreet option.
+              </p>
+            </div>
+
+            <div className="braces_card">
+              <img src={metalBrace} alt="Clear Aligners" />
+              <h3>Clear Aligners</h3>
+              <p>
+                Removable and nearly invisible, aligners are comfortable and
+                best suited for mild to moderate alignment issues.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+ <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2>Role of X-rays & Scans in Orthodontic Treatment </h2>
+            <ul style={{ paddingLeft: "20px" }}>
+              <li>
+                <b>Accurate Diagnosis</b> : Detects hidden issues like impacted
+                teeth or jaw problems
+              </li>
+              <li>
+                <b>Treatment Planning </b> : Helps create a precise,
+                personalized braces plan
+              </li>
+              <li>
+                <b>Progress Monitoring </b> : Tracks tooth movement and guides
+                adjustments
+              </li>
+              <li>
+                <b>Better Precision </b> : Ensures proper alignment for optimal
+                results
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="faq_section">
+        <div className="faq_header">
+          <h2>FAQs</h2>
+          <p>
+            Answers to the most common questions about our general dental care.
+          </p>
+        </div>
+
+        <div className="faq_list">
+          {faqs.map((item, index) => {
+            const isOpen = openFaq === index;
+            return (
+              <div
+                key={index}
+                className={`faq_item ${isOpen ? "open" : ""}`}
+                onClick={() => toggleFaq(index)}
+              >
+                <button className="faq_question" type="button">
+                  <span>{item.question}</span>
+                  <span className="faq_toggle">{isOpen ? "▲" : "▼"}</span>
+                </button>
+                <div className="faq_answer">
+                  <p>{item.answer}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    
+
+     
+
+     
+
+      <div className="parent gallery_parent" style={{ background: "var(--white)" }}>
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
