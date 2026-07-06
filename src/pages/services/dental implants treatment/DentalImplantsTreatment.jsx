@@ -165,8 +165,6 @@ const DentalImplantsTreatment = () => {
       </div>
 
       <div className="third_section">
-        <div className="third_header"></div>
-
         <div className="service_cards">
           {services.map((service, index) => (
             <div key={index} className="service_card">
@@ -178,7 +176,7 @@ const DentalImplantsTreatment = () => {
         </div>
       </div>
 
-      <div className="dental_implannts_parents parents">
+      <div className="dental_implannts_parents parent">
         <div className="dental_implannts_cont cont">
           <h2>What Are Dental Implants?</h2>
 
@@ -186,6 +184,8 @@ const DentalImplantsTreatment = () => {
             Dental implants are a modern and long-lasting solution for replacing
             missing teeth and restoring natural function and aesthetics.
           </p>
+
+          <p>A dental implant consists of three main components: </p>
 
           <div className="service_cards">
             {services1.map((service, index) => (
@@ -196,6 +196,57 @@ const DentalImplantsTreatment = () => {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+
+      <div className="need_dental_implants_parent parent ">
+        <div className="need_dental_implants_cont cont">
+          <div className="need_dental_implants_header">
+            <h2>Why Does One Need Dental Implants?</h2>
+            <p>
+              Dental implants offer a long-term solution for missing teeth,
+              improving both oral health and smile aesthetics.
+            </p>
+          </div>
+
+          <div className="dental_implants_cards_main">
+            <div className="dental_implants_cards_wrap">
+              <h3>Restoring Missing Teeth</h3>
+              <ul>
+                <li>Restores full chewing ability for a normal diet</li>
+                <li>Helps improve speech clarity affected by tooth loss</li>
+              </ul>
+            </div>
+
+            <div className="dental_implants_cards_wrap">
+              <h3>Improving Oral Health</h3>
+              <ul>
+                <li>Preserves jawbone and prevents bone loss </li>
+                <li>Prevents shifting of nearby teeth </li>
+                <li>Does not affect or damage adjacent teeth</li>
+              </ul>
+            </div>
+
+            <div className="dental_implants_cards_wrap">
+              <h3>Enhancing Aesthetics & Confidence </h3>
+              <ul>
+                <li>Designed to match natural teeth seamlessly </li>
+                <li>Improves smile appearance and boosts self-confidence</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="parent dental_implants_procedures_parent">
+        <div className="cont dental_implants_procedures_cont">
+          <h2>Types of Dental Implant Procedures at Denza Dental, Kharadi </h2>
+          <p>
+            We offer a wide range of dental implant solutions tailored to
+            individual needs:
+          </p>
+
+          
         </div>
       </div>
 

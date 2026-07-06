@@ -143,7 +143,7 @@
 @media (max-width: 900px) {
   .second_parent {
     .second_cont {
-     flex-direction: column;
+      flex-direction: column;
       .general_left {
         width: 100%;
       }
@@ -226,7 +226,6 @@
 
 .gallery_parent {
   padding: 3rem 0;
- 
 }
 
 .gallery_cont {
@@ -295,7 +294,7 @@
 }
 
 .faq_header h2 {
-  color:var(--accent);
+  color: var(--accent);
   font-size: 3rem;
   margin-bottom: 0.75rem;
 }
@@ -319,7 +318,9 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 26px;
   overflow: hidden;
-  transition: border-color 0.2s ease, background 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
 }
 
 .faq_item:hover {
@@ -349,7 +350,9 @@
 .faq_answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease;
   padding: 0 1.75rem;
 }
 
@@ -384,5 +387,69 @@
 
   .faq_answer {
     padding: 0 1.25rem;
+  }
+}
+
+.need_dental_implants_parent {
+  padding: 100px 0px;
+  .need_dental_implants_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: calc(var(--unit) * 3);
+
+    .need_dental_implants_header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--unit);
+
+      h2 {
+        font-size: 36px;
+        font-weight: 600;
+        color: var(--accent);
+      }
+    }
+
+    .dental_implants_cards_main {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: calc(var(--unit));
+
+      h3 {
+        font-size: 22px;
+        font-weight: 400;
+        color: var(--accent);
+      }
+
+      .dental_implants_cards_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: var(--unit);
+        width: 100%;
+        max-width: 300px;
+        background: var(--background);
+        padding: 30px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .need_dental_implants_parent {
+    .need_dental_implants_cont {
+      .dental_implants_cards_main {
+        .dental_implants_cards_wrap {
+          flex-wrap: wrap;
+        }
+      }
+    }
   }
 }
