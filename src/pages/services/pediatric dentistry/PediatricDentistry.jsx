@@ -9,72 +9,73 @@ import gallery1 from "../../../assets/about_page/after1.webp";
 
 const services = [
   {
-    title: "Dental Checkups and Consultations",
+    title: "Specialized Pediatric Care ",
     description:
-      "A dental checkup includes an in-depth analysis of your overall dental health, helping you stay ahead of decay and gum issues.",
+      "We provide gentle and customized dental treatments designed specifically for children’s oral health needs.",
   },
   {
-    title: "Dental X-ray",
+    title: "Child-Friendly Environment ",
     description:
-      "Modern digital X-rays reveal what’s happening under the surface so we can catch cavities, bone loss, and impacted teeth early.",
+      "Our clinic is designed to make children feel comfortable and relaxed, reducing dental anxiety during visits. ",
   },
   {
-    title: "Teeth Cleaning",
+    title: "Experienced Dentists ",
     description:
-      "Professional teeth cleaning removes plaque and tartar from hard-to-reach areas, protecting teeth and gums from disease.",
+      "Our team is skilled in handling kids with a soft, patient, and friendly approach to ensure a positive dental experience. ",
   },
   {
-    title: "Cavity Detection and Fillings",
+    title: "Advanced Technology",
     description:
-      "Using modern diagnostics, we locate early cavities and restore damaged teeth with tooth-colored fillings.",
+      "We use modern dental equipment to provide safe, precise, and effective pediatric treatments. ",
   },
   {
-    title: "Root Canal Treatment",
+    title: "Preventive Focus ",
     description:
-      "Gentle root canal therapy relieves pain and saves a damaged tooth while preserving your natural smile.",
+      "We strongly emphasize prevention, helping children develop healthy oral habits early in life. ",
   },
   {
-    title: "Tooth Extractions",
+    title: "Personalized Treatment Plans ",
     description:
-      "When a tooth cannot be saved, our team performs safe extractions with comfort and careful aftercare.",
+      "Every child receives a tailored treatment plan based on their dental condition and individual needs.",
   },
   {
-    title: "Wisdom Tooth Extraction",
+    title: "Patient & Parent Education ",
     description:
-      "We remove impacted wisdom teeth cleanly and gently, minimizing discomfort and accelerating recovery.",
+      "We guide parents and children on proper oral hygiene practices for long-term dental health. ",
+  },
+  {
+    title: "Compassionate Care ",
+    description:
+      "Our team ensures a supportive, caring, and stress-free environment for every child visit.  ",
   },
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "How do I choose a dentist for my child?  ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "Choose a pediatric dentist who is experienced in treating children, offers a child-friendly environment, and communicates well with both parent and child. Reviews, recommendations, and clinic atmosphere also matter. ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "Should a 5-year-old go to the dentist? ",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "Yes. Children should have regular dental visits by age 5, or earlier if any issues appear, to ensure proper oral health development. ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "How often should my child visit the dentist?  ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "Every 6 months is recommended for routine check-ups, cleaning, and preventive care.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question:
+      "Are pediatric dentists trained to handle children with special needs?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "Yes. Pediatric dentists are specially trained to manage children with physical, developmental, or behavioral needs using gentle and customized approaches. ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "What age should my child first see a pediatric dentist?",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
-  },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "A  child should visit the dentist by age 1 or within 6 months of the first tooth erupting, whichever comes first. ",
   },
 ];
 
@@ -89,7 +90,7 @@ const PediatricDentistry = () => {
     <>
       <div className="parent general_dental_parent bg-img-cover">
         <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
+          Welcome to our Pediatric Services!
         </marquee>
         <div className="cont general_dental_cont">
           <div className="bts_grp">
@@ -103,107 +104,284 @@ const PediatricDentistry = () => {
       <div className="parent second_parent">
         <div className="cont second_cont">
           <div className="general_left">
-            <img src={img1} alt="General Dental Service" />
+            <img src={img1} alt="Full Mouth Rehabilitation" />
           </div>
           <div className="general_right">
-            <h2>Pediatric Dentistry Services</h2>
-            <p>
-              Just like you visit your family doctor for check-ups to stay
-              healthy, similarly, general dental services are for regular care
-              of your teeth. These general dental services help you catch
-              problems when they are small. They also allow problems to be
-              treated before they become more severe.
-            </p>
+            <h2>
+              Common Pediatric Dental Issues & Prevention – Denza Dental,
+              Kharadi (Pune)
+            </h2>
+            <ul>
+              Neonatal Teeth
+              <li>
+                Teeth present at birth may irritate the tongue or affect
+                feeding.
+              </li>
+              <li>
+                Prevention: Infant dental check-ups and gentle gum cleaning
+                after feeding.{" "}
+              </li>
+            </ul>
+
+            <ul>
+              Nursing Bottle Caries
+              <li>Decay caused by prolonged exposure to sugary bottles.</li>
+              <li>
+                Prevention: Avoid sleeping with bottles and stop bottle use by
+                12–18 months.
+              </li>
+            </ul>
+
+            <ul>
+              Decayed Teeth (Cavities)
+              <li>Caused by plaque and sugar buildup. </li>
+              <li>
+                Prevention: Regular brushing, flossing, fluoride use, and dental
+                visits.
+              </li>
+            </ul>
+
+            <ul>
+              Pain & Sensitivity
+              <li>Due to cavities, enamel wear, or gum issues. </li>
+              <li>
+                Prevention: Good oral hygiene and early treatment of discomfort.
+              </li>
+            </ul>
+
+            <ul>
+              Gum Boils (Abscesses)
+              <li>Infection-related pus formation from untreated decay. </li>
+              <li>Prevention: Maintain hygiene and seek prompt dental care.</li>
+            </ul>
+
+            <ul>
+              Tooth Extraction
+              <li>Required in severe decay or damage cases. </li>
+              <li>
+                Prevention: Regular check-ups and early treatment reduce the
+                need for extraction.
+              </li>
+            </ul>
+
+            <ul>
+              Space Issues (Space Maintainers Needed)
+              <li>
+                Occurs when baby teeth fall out early, affecting alignment.{" "}
+              </li>
+              <li>
+                Prevention: Timely cavity treatment and dental monitoring after
+                tooth loss.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <div className="third_section">
+      {/* <div
+        className="parent second_parent"
+        style={{ background: "var(--background)" }}
+      >
+        <div className="cont second_cont">
+          <div className="general_right">
+            <h2>
+              Benefits of Dentures for Missing Teeth at Denza Dental, Kharadi
+              (Pune)
+            </h2>
+            <ul>
+              <li>
+                <b>Restored Function:</b> Improves chewing ability and speech
+                clarity
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <b>Natural Appearance :</b>
+                Restores a confident and aesthetic smile
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <b>Facial Support:</b> Maintains facial structure and prevents a
+                sunken look
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <b>Better Oral Health:</b> Helps prevent shifting of remaining
+                teeth and supports gum health
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <b>Cost-Effective Solution:</b> More affordable compared to
+                dental implants
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <b>Custom Fit Options:</b> Designed to suit individual comfort
+                and needs
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <b>Easy Maintenance :</b> Removable and simple to clean for
+                better hygiene
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <b>Improved Oral Hygiene :</b> Helps reduce risk of infection
+                and supports overall oral health
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <b>Quick Results :</b>Immediate improvement with options like
+                temporary dentures
+              </li>
+            </ul>
+          </div>
+          <div className="general_left">
+            <img src={img1} alt="Full Mouth Rehabilitation" />
+          </div>
+        </div>
+      </div> */}
+
+      <div className="third_section" style={{ background: "var(--white)" }}>
         <div className="third_header">
-          <h2>General Dental Services that AO Dentistry Offers in Pune</h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
+          <h2 style={{ textAlign: "center", color: "var(--accent)" }}>
+            Why Choose Denza Dental for Pediatric Dentistry in Pune?
+          </h2>
         </div>
 
         <div className="service_cards">
           {services.map((service, index) => (
-            <div key={index} className="service_card">
+            <div
+              key={index}
+              className="service_card"
+              style={{ background: "var(--background)" }}
+            >
               <p className="service_card_index">{index + 1}.</p>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
             </div>
           ))}
         </div>
+      </div>
 
-        <div className="faq_section">
-          <div className="faq_header">
-            <h2>FAQs</h2>
-            <p>
-              Answers to the most common questions about our general dental
-              care.
-            </p>
-          </div>
+      <div className="equipment_parent parent">
+        <div className="equipment_cont cont">
+          <h2>Pediatric Services Offered at Denza Dental, Kharadi (Pune)</h2>
+          <div className="equipment_list">
+            <ul>
+              <li>
+                <b>General Pediatric Dentistry :</b> We provide routine dental
+                exams, professional cleaning, and cavity management to support
+                overall oral health in children.
+              </li>
+            </ul>
 
-          <div className="faq_list">
-            {faqs.map((item, index) => {
-              const isOpen = openFaq === index;
-              return (
-                <div
-                  key={index}
-                  className={`faq_item ${isOpen ? "open" : ""}`}
-                  onClick={() => toggleFaq(index)}
-                >
-                  <button className="faq_question" type="button">
-                    <span>{item.question}</span>
-                    <span className="faq_toggle">{isOpen ? "▲" : "▼"}</span>
-                  </button>
-                  <div className="faq_answer">
-                    <p>{item.answer}</p>
-                  </div>
-                </div>
-              );
-            })}
+            <ul>
+              <li>
+                <b>Pediatric Orthodontics:</b> Early evaluation and treatment
+                for alignment issues such as crooked teeth, crowding, and bite
+                problems using braces or aligners when needed.
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <b>Dental Emergencies :</b> Immediate care for urgent dental
+                issues like tooth pain, broken teeth, knocked-out teeth, and
+                oral injuries.
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <b>Sports Dentistry & Mouthguards :</b>Custom-fitted mouthguards
+                to protect children’s teeth during sports and manage
+                sports-related dental injuries.
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <b>Dentistry for Children with Special Needs :</b>Specialized
+                care for children with physical, developmental, or behavioral
+                challenges in a calm and supportive environment, ensuring
+                stress-free treatment.
+              </li>
+            </ul>
           </div>
         </div>
+      </div>
 
-        <div className="parent gallery_parent">
-          <div className="cont gallery_cont">
-            <div className="gallery_header">
-              <h2>Clinic Gallery</h2>
-              <p>
-                Explore our clinic spaces and patient-friendly treatment rooms.
-              </p>
-            </div>
-            <div className="gallery_slider">
-              <Swiper
-                modules={[Navigation, Autoplay]}
-                spaceBetween={24}
-                slidesPerView={4}
-                navigation={true}
-                pauseOnMouseEnter={true}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
-                breakpoints={{
-                  0: { slidesPerView: 1, spaceBetween: 16 },
-                  600: { slidesPerView: 2, spaceBetween: 18 },
-                  900: { slidesPerView: 3, spaceBetween: 20 },
-                  1200: { slidesPerView: 4, spaceBetween: 24 },
-                }}
+      <div className="faq_section" style={{ background: "var(--white)" }}>
+        <div className="faq_header">
+          <h2>FAQs</h2>
+          <p>
+            Answers to the most common questions about our general dental care.
+          </p>
+        </div>
+
+        <div className="faq_list">
+          {faqs.map((item, index) => {
+            const isOpen = openFaq === index;
+            return (
+              <div
+                key={index}
+                className={`faq_item ${isOpen ? "open" : ""}`}
+                onClick={() => toggleFaq(index)}
               >
-                {[gallery1, gallery1, gallery1, gallery1, gallery1, gallery1].map((src, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="gallery_card">
-                      <img src={src} alt={`Clinic slide ${index + 1}`} />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+                <button className="faq_question" type="button">
+                  <span>{item.question}</span>
+                  <span className="faq_toggle">{isOpen ? "▲" : "▼"}</span>
+                </button>
+                <div className="faq_answer">
+                  <p>{item.answer}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="parent gallery_parent">
+        <div className="cont gallery_cont">
+          <div className="gallery_header">
+            <h2>Clinic Gallery</h2>
+          </div>
+          <div className="gallery_slider">
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              spaceBetween={24}
+              slidesPerView={4}
+              navigation={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              breakpoints={{
+                0: { slidesPerView: 1, spaceBetween: 16 },
+                600: { slidesPerView: 2, spaceBetween: 18 },
+                900: { slidesPerView: 3, spaceBetween: 20 },
+                1200: { slidesPerView: 4, spaceBetween: 24 },
+              }}
+            >
+              {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
+                <SwiperSlide key={index}>
+                  <div className="gallery_card">
+                    <img src={src} alt={`Clinic slide ${index + 1}`} />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>

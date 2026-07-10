@@ -47,34 +47,34 @@ const services = [
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "Is laser treatment good for teeth?  ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "Yes, laser dentistry is safe, precise, and minimally invasive. It reduces pain, bleeding, and recovery time compared to traditional methods. ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "What is the disadvantage of dental laser?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "Laser treatment may not be suitable for all dental cases, especially very complex or deep structural issues that still require conventional methods. ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "How long does laser dental treatment last? ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "Results are long-lasting, especially when proper oral hygiene and regular dental check-ups are maintained. ",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "What conditions can laser dentistry treat? ",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "Laser dentistry can treat gum disease, cavity removal, gum reshaping, infection control, teeth whitening, and minor surgical procedures.  ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "How long is the recovery time after laser dental procedure?",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "Recovery is usually quick—most patients resume normal activities within 24–48 hours. ",
   },
   {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
+    question: "What types of laser treatments do you offer at Denza Dental?",
     answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "We offer laser gum treatments, periodontal therapy, soft tissue surgeries, cavity management, teeth whitening, and minor oral procedures using advanced dental lasers. ",
   },
 ];
 
@@ -89,7 +89,7 @@ const RestorativeDentistry = () => {
     <>
       <div className="parent general_dental_parent bg-img-cover">
         <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
+          Welcome to our Dental Laser Services!
         </marquee>
         <div className="cont general_dental_cont">
           <div className="bts_grp">

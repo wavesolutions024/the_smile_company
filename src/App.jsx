@@ -14,6 +14,7 @@ import RestorativeDentistry from "./pages/services/restorative dentistry/Restora
 import CosmeticDentistry from "./pages/services/cosmetic dentistry/CosmeticDentistry";
 import OrthodonticTreatments from "./pages/services/orthodontic treatments/OrthodonticTreatments";
 import FullMouthRihabilitation from "./pages/services/full mouth rihabilitation/FullMouthRihabilitation";
+import DentureTreatment from "./pages/services/denture treatment/DentureTreatment";
 import PediatricDentistry from "./pages/services/pediatric dentistry/PediatricDentistry";
 import DentalCheckUps from "./pages/sub services/dental check ups/DentalCheckUps";
 import DentalXRay from "./pages/sub services/dental x-ray/DentalXRay";
@@ -67,6 +68,7 @@ function AppLayout() {
         <Route element={<OrthodonticTreatments />} path="/orthodontic-treatments" />
         <Route element={<DentalImplantsTreatment />} path="/dental-implants-treatment" />
         <Route element={<FullMouthRihabilitation />} path="/full-mouth-rehabilitation" />
+        <Route element={<DentureTreatment />} path="/denture-treatment" />
         <Route element={<PediatricDentistry />} path="/pediatric-dentistry" />
         <Route element={<DentalCheckUps />} path="/dental-check-ups" />
         <Route element={<DentalXRay />} path="/dental-x-ray" />

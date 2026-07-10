@@ -20,17 +20,26 @@ const HeaderNew = () => {
         { label: "RESTORATIVE DENTISTRY", to: "/restorative-dentistry" },
         { label: "COSMETIC DENTISTRY", to: "/cosmetic-dentistry" },
         { label: "ORTHODONTIC TREATMENTS", to: "/orthodontic-treatments" },
-        { label: "DENTAL IMPLANTS TREATMENT", to: "/dental-implants-treatment" },
-        { label: "FULL MOUTH REHABILITATION", to: "/full-mouth-rehabilitation" },
+        {
+          label: "DENTAL IMPLANTS TREATMENT",
+          to: "/dental-implants-treatment",
+          children: [
+            {
+              label: "ALL-ON-4 AND ALL-ON-6 DENTAL IMPLANTS  ",
+              to: "/dental-crowns",
+            },
+            { label: " IMPLANT SUPPORTED OVERDENTURE ", to: "/crowns-bridges" },
+          ],
+        },
+        {
+          label: "FULL MOUTH REHABILITATION",
+          to: "/full-mouth-rehabilitation",
+        },
+        { label: "DENTURE TREATMENT", to: "/denture-treatment" },
         { label: "PEDIATRIC DENTISTRY", to: "/pediatric-dentistry" },
         {
-          id: "tooth",
-          label: "TOOTH FILLING",
-          children: [
-            { label: "DENTAL CROWNS", to: "/dental-crowns" },
-            { label: "CROWNS AND BRIDGES", to: "/crowns-bridges" },
-            { label: "INLAYS AND ONLAYS", to: "/inlays-onlays" },
-          ],
+          label: " DENTAL LASERS",
+          to: "/dental-lasers",
         },
       ],
     },
@@ -38,21 +47,24 @@ const HeaderNew = () => {
       id: "technology",
       label: "TECHNOLOGY",
       children: [
-        { label: "CBCT 3D IMAGING", to: "/cbct",
- children: [
+        {
+          label: "CBCT 3D IMAGING",
+          to: "/cbct",
+          children: [
             { label: "DENTAL CROWNS", to: "/dental-crowns" },
             { label: "CROWNS AND BRIDGES", to: "/crowns-bridges" },
             { label: "INLAYS AND ONLAYS", to: "/inlays-onlays" },
           ],
-
-         },
-        { label: "3D Intra Oral Scanning", to: "/intra-oral-scanning",
-           children: [
+        },
+        {
+          label: "3D Intra Oral Scanning",
+          to: "/intra-oral-scanning",
+          children: [
             { label: "DENTAL CROWNS", to: "/dental-crowns" },
             { label: "CROWNS AND BRIDGES", to: "/crowns-bridges" },
             { label: "INLAYS AND ONLAYS", to: "/inlays-onlays" },
           ],
-         },
+        },
         { label: "Dental Lasers", to: "/dental-lasers" },
         { label: "GBT Cleaning", to: "/gbt-cleaning" },
         { label: "GBT Machine", to: "/gbt-machine" },
@@ -97,7 +109,8 @@ const HeaderNew = () => {
 
   const renderChildren = (children) =>
     children.map((child) => {
-      const hasChildren = Array.isArray(child.children) && child.children.length > 0;
+      const hasChildren =
+        Array.isArray(child.children) && child.children.length > 0;
       const submenuKey = child.id || child.label;
 
       if (hasChildren) {
@@ -141,12 +154,18 @@ const HeaderNew = () => {
     });
 
   const renderNavItem = (item, isMobile = false) => {
-    const hasChildren = Array.isArray(item.children) && item.children.length > 0;
+    const hasChildren =
+      Array.isArray(item.children) && item.children.length > 0;
     const isOpen = activeDropdown === item.id;
 
     if (!hasChildren) {
       return (
-        <Link key={item.label} to={item.to} className="nav_link" onClick={closeAll}>
+        <Link
+          key={item.label}
+          to={item.to}
+          className="nav_link"
+          onClick={closeAll}
+        >
           {item.label}
         </Link>
       );
@@ -159,8 +178,16 @@ const HeaderNew = () => {
             {item.label} <span className="caret">▾</span>
           </Link>
           {isOpen && (
-            <div className={item.id === "technology" ? "dropdown_panel small" : "dropdown_panel"}>
-              <div className="dropdown_column">{renderChildren(item.children)}</div>
+            <div
+              className={
+                item.id === "technology"
+                  ? "dropdown_panel small"
+                  : "dropdown_panel"
+              }
+            >
+              <div className="dropdown_column">
+                {renderChildren(item.children)}
+              </div>
             </div>
           )}
         </div>
@@ -168,7 +195,10 @@ const HeaderNew = () => {
     }
 
     return (
-      <div key={item.id} className={`nav_item dropdown ${isOpen ? "open" : ""}`}>
+      <div
+        key={item.id}
+        className={`nav_item dropdown ${isOpen ? "open" : ""}`}
+      >
         <Link
           type="button"
           onMouseEnter={() => toggleDropdown(item.id)}
@@ -184,16 +214,23 @@ const HeaderNew = () => {
   };
 
   return (
-    <header className={visible ? "header_new parent active" : "header_new parent"}>
+    <header
+      className={visible ? "header_new parent active" : "header_new parent"}
+    >
       <div className="header_inner cont">
         <Link to="/" onClick={closeAll} className="logo_link">
           <img src={logo} alt="AO Dentistry" />
         </Link>
 
-        <div className="main_nav">{navItems.map((item) => renderNavItem(item))}</div>
+        <div className="main_nav">
+          {navItems.map((item) => renderNavItem(item))}
+        </div>
 
         <div className="header_actions">
-          <div className="hamburger" onClick={() => setMobileOpen((prev) => !prev)}>
+          <div
+            className="hamburger"
+            onClick={() => setMobileOpen((prev) => !prev)}
+          >
             {!mobileOpen ? (
               <>
                 <span></span>

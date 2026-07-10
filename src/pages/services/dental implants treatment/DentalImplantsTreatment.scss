@@ -111,7 +111,7 @@
 }
 
 .second_parent {
-  padding: 50px 0px;
+  padding: 100px 0px;
   .second_cont {
     display: flex;
     gap: calc(var(--unit) * 2);
@@ -161,7 +161,7 @@
 
 .third_section {
   padding: 4rem 0 2rem;
-  background: var(--accent);
+  background: var(--background);
   color: rgba(255, 255, 255, 0.821);
 }
 
@@ -195,7 +195,7 @@
 .service_card {
   padding: 2rem;
   border-radius: 28px;
-  background: var(--background);
+  background: var(--white);
   min-height: 300px;
   display: flex;
   flex-direction: column;
@@ -451,5 +451,104 @@
         }
       }
     }
+  }
+}
+
+.dental_implants_procedures_parent {
+  padding: 100px 0px;
+  background: var(--background);
+
+  .dental_implants_procedures_cont {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--unit));
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--accent);
+      text-align: center;
+    }
+    .dental_implants_cards_main1 {
+      display: flex;
+      gap: calc(var(--unit));
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .dental_implants_cards_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: var(--unit);
+        width: 100%;
+        max-width: 300px;
+        background: var(--white);
+        padding: 30px;
+        border-radius: 8px;
+
+        h3 {
+          font-size: 22px;
+          font-weight: 400;
+          color: var(--accent);
+        }
+      }
+    }
+  }
+}
+
+.dental_implants_benefits {
+  padding: 100px 0px;
+
+  .dental_implants_benefits_cont {
+    display: flex;
+    gap: calc(var(--unit) * 2);
+
+    .dental_implants_benefits_left {
+      width: 50%;
+      height: 350px;
+      background: var(--background);
+      border-radius: var(--unit);
+    }
+
+    .dental_implants_benefits_right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: var(--unit);
+      justify-content: center;
+      h2 {
+        font-size: 36px;
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      ul {
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .dental_implants_benefits {
+    padding: 50px 0px;
+    .dental_implants_benefits_cont {
+      flex-direction: column;
+
+      .dental_implants_benefits_left {
+        width: 100%;
+      }
+
+      .dental_implants_benefits_right {
+        width: 100%;
+        padding: 0px 20px;
+      }
+    }
+    
   }
 }

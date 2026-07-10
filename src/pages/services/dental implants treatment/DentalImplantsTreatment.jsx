@@ -82,34 +82,39 @@ const services1 = [
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "How much time does a dental implant take?  ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "It usually takes 3 to 6 months, including healing and final crown placement.",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "How many dental implants do I need? ",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "It depends on the number of missing teeth and bone condition; your dentist will recommend a personalized plan. ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "Can 4 teeth be replaced with 2 implants? ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "Yes, in some cases a bridge supported by 2 implants can replace multiple teeth.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "Is getting a dental implant painful?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "The procedure is done under anesthesia, so it is not painful. Mild discomfort may occur afterward. ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "Is a dental implant cost per tooth or overall? ",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "Cost is usually calculated per implant/tooth, depending on treatment needs. ",
   },
   {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
+    question: "Are implants better than bridges?",
     answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "Yes, implants are more durable and do not require support from nearby teeth like bridges.",
+  },
+  {
+    question: "Are dental implants safe for kids? ",
+    answer:
+      "No, implants are generally recommended only after jaw growth is complete (usually adults). ",
   },
 ];
 
@@ -246,16 +251,132 @@ const DentalImplantsTreatment = () => {
             individual needs:
           </p>
 
-          
+          <div className="dental_implants_cards_main1">
+            <div className="dental_implants_cards_wrap">
+              <h3>Single Tooth Implants </h3>
+              <ul>
+                <li>Replaces one missing tooth with an implant and crown </li>
+                <li>
+                  Maintains natural appearance and protects surrounding
+                  teeth{" "}
+                </li>
+                <li>Supports long-term jawbone health</li>
+              </ul>
+            </div>
+
+            <div className="dental_implants_cards_wrap">
+              <h3>Multiple Tooth Implants </h3>
+              <ul>
+                <li>
+                  Replaces several missing teeth using implant-supported crowns
+                  or bridges
+                </li>
+                <li>Strong, stable, and long-lasting solution </li>
+                <li>Minimizes impact on adjacent teeth </li>
+              </ul>
+            </div>
+
+            <div className="dental_implants_cards_wrap">
+              <h3>Implant-Supported Bridges</h3>
+              <ul>
+                <li>
+                  Restores multiple adjacent missing teeth using fewer implants
+                </li>
+                <li>Provides better stability than traditional bridges </li>
+                <li>Improves chewing comfort and function </li>
+              </ul>
+            </div>
+
+            <div className="dental_implants_cards_wrap">
+              <h3>All-on-4 / All-on-6 Implants </h3>
+              <ul>
+                <li>Full-arch restoration using 4 or 6 implants</li>
+                <li>Ideal for complete tooth loss cases</li>
+                <li>Faster and more efficient full-mouth rehabilitation </li>
+              </ul>
+            </div>
+
+            <div className="dental_implants_cards_wrap">
+              <h3>Immediate Load Implants </h3>
+              <ul>
+                <li>
+                  Temporary tooth placed on the same day as implant surgery
+                </li>
+                <li>Quick restoration of function and appearance </li>
+                <li>Immediate improvement in smile aesthetics </li>
+              </ul>
+            </div>
+
+            <div className="dental_implants_cards_wrap">
+              <h3>Mini Implants</h3>
+              <ul>
+                <li>
+                  Smaller implants used in limited bone areas or for denture
+                  support
+                </li>
+                <li>Minimally invasive with faster healing </li>
+                <li>Suitable for patients with low bone density </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="parent dental_implants_benefits">
+        <div className="cont dental_implants_benefits_cont">
+          <div className="dental_implants_benefits_left">
+            <div className="image"></div>
+          </div>
+          <div className="dental_implants_benefits_right">
+            <h2>
+              Benefits of Dental Implant Treatment at Denza Dental, Kharadi
+              (Pune)
+            </h2>
+            <ul>
+              <li>
+                <strong>Natural Appearance </strong> - Looks and feels like real
+                teeth
+              </li>
+              <li>
+                <strong>High Durability </strong> - Long-lasting solution with
+                proper care
+              </li>
+              <li>
+                <strong>Restored Functionality </strong> - Full chewing ability
+                and normal bite function
+              </li>
+              <li>
+                <strong>Bone Health Protection </strong> - Prevents jawbone loss
+                and maintains facial structure
+              </li>
+              <li>
+                <strong>Protects Adjacent Teeth</strong> - No damage to nearby
+                natural teeth
+              </li>
+              <li>
+                <strong>Stable & Comfortable </strong> - Fixed solution with no
+                slipping like dentures
+              </li>
+              <li>
+                <strong>Easy Maintenance</strong> - Clean like natural teeth
+                with brushing and flossing
+              </li>
+              <li>
+                <strong>Boosts Confidence</strong> - Restores a natural,
+                confident smile
+              </li>
+              <li>
+                <strong>Cost-Effective Long-Term</strong> - Durable solution
+                with minimal maintenance needs
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div className="faq_section">
         <div className="faq_header">
           <h2>FAQs</h2>
-          <p>
-            Answers to the most common questions about our general dental care.
-          </p>
         </div>
 
         <div className="faq_list">
@@ -280,13 +401,13 @@ const DentalImplantsTreatment = () => {
         </div>
       </div>
 
-      <div className="parent gallery_parent">
+      <div
+        className="parent gallery_parent"
+        style={{ background: "var(--white)" }}
+      >
         <div className="cont gallery_cont">
           <div className="gallery_header">
-            <h2>Clinic Gallery</h2>
-            <p>
-              Explore our clinic spaces and patient-friendly treatment rooms.
-            </p>
+            <h2 style={{ color: "var(--accent)" }}>Clinic Gallery</h2>
           </div>
           <div className="gallery_slider">
             <Swiper

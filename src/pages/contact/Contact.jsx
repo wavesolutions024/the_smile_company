@@ -40,9 +40,9 @@ const Contact = () => {
                   <FiClock />
                 </div>
                 <div className="card_content">
-                  <h4>Opening Time</h4>
-                  <p>Mon-Thu: 8:00am - 5:00pm</p>
-                  <p>Fri: 8:00am - 1:00pm</p>
+                  <h4>Timing</h4>
+                  <p>9:00 AM - 9:00 PM (All Days)</p>
+                
                 </div>
               </div>
 
@@ -52,8 +52,8 @@ const Contact = () => {
                 </div>
                 <div className="card_content">
                   <h4>Office Address:</h4>
-                  <p>764 15768 Delmer Shoals,</p>
-                  <p>Eliasport, FL 04331-6195</p>
+                  <p>Denza Dental, Kharadi, Pune </p>
+                  
                 </div>
               </div>
             </div>
@@ -62,7 +62,7 @@ const Contact = () => {
               <div className="phone_icon">
                 <FiPhone />
               </div>
-              <strong>+1 123 456 7890</strong>
+              <strong>7028131132 / 7028143959</strong>
             </div>
           </div>
 
