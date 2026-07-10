@@ -270,11 +270,11 @@ const Home = () => {
       </div> */}
 
       {/* meet our doctors */}
-      <section className="top_dentists">
+      {/* <section className="top_dentists">
         <div className="container">
-          <div className="top_dentists_wrapper">
+          <div className="top_dentists_wrapper"> */}
             {/* Left Images */}
-            <div className="dentists_images">
+            {/* <div className="dentists_images">
               <div className="img_box">
                 <img src={img4} alt="Doctor" />
               </div>
@@ -282,10 +282,10 @@ const Home = () => {
               <div className="img_box">
                 <img src={img4} alt="Doctor" />
               </div>
-            </div>
+            </div> */}
 
             {/* Right Content */}
-            <div className="dentists_content">
+            {/* <div className="dentists_content">
               <h2>
                 Top rated dentists <br /> in India
               </h2>
@@ -310,10 +310,10 @@ const Home = () => {
                 path="/about"
                 style={{ width: "100%" }}
               />
-            </div>
-          </div>
+            </div> */}
+          {/* </div>
         </div>
-      </section>
+      </section> */}
 
       {/* blog and news */}
 
