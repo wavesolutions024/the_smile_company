@@ -16,7 +16,25 @@ const HeaderNew = () => {
       id: "dental",
       label: "DENTAL SERVICES",
       children: [
-        { label: "GENERAL DENTAL SERVICES", to: "/general-dental" },
+        {
+          label: "GENERAL DENTAL SERVICES",
+          to: "/general-dental",
+
+          children: [
+            {
+              label: "DENTAL CHECK-UPS  ",
+              to: "/dental-check-ups",
+            },
+            {
+              label: "DENTAL X-RAY   ",
+              to: "/dental-x-ray",
+            },
+            {
+              label: "TEETH CLEANING    ",
+              to: "/teeth-cleaning",
+            },
+          ],
+        },
         { label: "RESTORATIVE DENTISTRY", to: "/restorative-dentistry" },
         { label: "COSMETIC DENTISTRY", to: "/cosmetic-dentistry" },
         { label: "ORTHODONTIC TREATMENTS", to: "/orthodontic-treatments" },
@@ -243,8 +261,8 @@ const HeaderNew = () => {
               </div>
             )}
           </div>
-          <a href="tel:+919175210123" className="phone_link">
-            +91 91752 10123
+          <a href="tel:+917028131132 " className="phone_link">
+            +91 7028131132
           </a>
           <Link to="/contact" className="book_btn" onClick={closeAll}>
             Book Appointment

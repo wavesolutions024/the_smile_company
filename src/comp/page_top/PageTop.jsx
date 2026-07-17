@@ -6,37 +6,39 @@ import teeth1 from "../../assets/page-top/teeth.webp";
 import teeth2 from "../../assets/page-top/teeth1.webp";
 import { Link } from "react-router-dom";
 
-const PageTop = ({ title, parent = "Home" }) => {
+const PageTop = ({
+  title = "Dental Check Up Services",
+  phone = "+91 7028131132",
+  contactPath = "/contact",
+  mapUrl = "https://maps.app.goo.gl/L2FxZP5U5wL3WA9t9",
+  consultantLabel = "Book Consultant",
+  callLabel = "Call",
+  directionLabel = "Get Directions",
+}) => {
   return (
-    <>
-      <div className="parent pagetop_parent">
-        <div className="cont pagetop_cont">
-          <div className="left_pagetop">
-            <div className="small_img_top">
-              <img src={teeth1} alt="" />
-            </div>
-
-            <h1>{title}</h1>
-            <div class="bread_crum">
-              <Link to="/" style={{ color: "var(--accent)" }}>{parent}</Link>
-              <span className="icon">
-                <MdKeyboardDoubleArrowRight />
-              </span>
-              <p>{title}</p>
-            </div>
-
-            <div className="small_img_bottom">
-              <img src={teeth2} alt="" />
-            </div>
-          </div>
-
-          <div className="right_pagetop">
-            <div class="background_circle"></div>
-            <img src={smile_img} alt="" />
-          </div>
+    <div className="parent general_dental_parent bg-img-cover">
+      <marquee behavior="scroll" direction="left" scrollamount="20">
+        Welcome to our {title} Service!
+      </marquee>
+      <div className="cont general_dental_cont">
+        <div className="bts_grp">
+          <Link to={contactPath} className="service1_btn">
+            {consultantLabel}
+          </Link>
+          <a href={`tel:${phone}`} className="service1_btn call_btn">
+            {callLabel} {phone}
+          </a>
+          <a
+            href={mapUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="service1_btn"
+          >
+            {directionLabel}
+          </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

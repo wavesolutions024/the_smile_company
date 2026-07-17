@@ -9,99 +9,63 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const whyChooseData = [
   {
-    icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "Expert Dental Team",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "At Denza Dental, our skilled and experienced dental professionals are dedicated to delivering high-quality care.You can trust our team to provide safe, effective, and thorough teeth cleaning treatments.",
   },
   {
-    icon: "🦷",
-    title: "Advanced Technology",
+    title: "Advanced Dental Technology",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "We use modern equipment and the latest dental techniques to ensure precise and efficient cleaning. Our advanced tools help make the procedure more comfortable and less time-consuming. ",
   },
   {
-    icon: "💰",
-    title: "Affordable Packages",
+    title: "Personalized Treatment Approach ",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "Every patient is unique, and so is our care. We customize each teeth cleaning procedure based on your oral health needs, ensuring the best possible results",
   },
   {
-    icon: "😊",
-    title: "Patient-Centric Approach",
+    title: "Comprehensive Dental Care ",
     description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
-  },
-];
-
-const services = [
-  {
-    title: "Quick Discussion",
-    description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+      "From routine teeth cleaning to advanced dental treatments, Denza Dental offers a complete range of services. We focus on maintaining your long-term oral hygiene and overall dental wellness. ",
   },
   {
-    title: "Mouth Check ",
+    title: "Comfortable and Relaxing Environment",
     description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+      "Our clinic is designed to make you feel at ease from the moment you walk in.We prioritize a stress-free and pleasant dental experience for every patient. ",
   },
   {
-    title: "X-rays (Only if Needed)",
+    title: "Affordable and Transparent Pricing",
     description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
-  },
-  {
-    title: " Deep Cleaning ",
-    description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
-  },
-  {
-    title: "Next Steps & Advice ",
-    description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
+      "We offer competitive teeth cleaning prices in Pune without compromising on quality. Our pricing is clear, ensuring you receive excellent care within your budget. ",
   },
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "Can I eat after teeth cleaning? ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "Yes, you can eat after teeth cleaning. However, it is recommended to wait at least 30 minutes and avoid very hot, cold, or staining foods for a few hours.",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "Does teeth cleaning remove yellow stains? ",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "Professional teeth cleaning helps remove surface stains caused by food, beverages, and smoking. However, deeper stains may require additional treatments like teeth whitening. ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "How often should I get my teeth cleaned?  ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
-  },
-  {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
-    answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
-  },
-  {
-    question: "Are X-rays at Denza Dental Safe?",
-    answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
-  },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "It is generally recommended to get your teeth cleaned every six months. Regular cleaning helps maintain oral hygiene and prevents dental problems. ",
   },
 ];
 
-const  TeethCleaning  = () => {
+const TeethCleaning = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -111,41 +75,28 @@ const  TeethCleaning  = () => {
     AOS.refresh();
   }, []);
 
-
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="Teeth Cleaning" />
 
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
-            <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
-            </p>
+            <h2> Why Choose Denza Dental for Teeth Cleaning in Pune? </h2>
           </div>
 
           <div className="why_choose_cards">
             {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
+              <div
+                key={index}
+                className="why_choose_card"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>
@@ -154,70 +105,88 @@ const  TeethCleaning  = () => {
         </div>
       </div>
 
-      <div className="third_section">
-        <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
-        </div>
+      <div className="teeth_cleaning_parent parent">
+        <div className="teeth_cleaning_cont cont">
+          <h2> Advanced Teeth Cleaning with GBT</h2>
 
-        <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
+          <p>
+            At Denza Dental, we enhance regular teeth cleaning with GBT (Guided
+            Biofilm Therapy), a modern and more precise approach to oral
+            hygiene. This technique targets harmful biofilm using gentle,
+            minimally invasive methods, making the cleaning process more
+            comfortable and effective. GBT not only removes plaque and stains
+            but also helps in better prevention of cavities and gum problems,
+            ensuring a healthier and brighter smile.
+          </p>
         </div>
       </div>
 
       <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
+        <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
+            <h2>Why Teeth Cleaning is Essential for Your Oral Health </h2>
             <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
+              Teeth cleaning, also known as dental cleaning, is important for
+              maintaining good oral hygiene.
+            </p>
+            <p>
+              Regular teeth cleaning helps remove plaque and tartar that can
+              cause cavities and gum disease. The benefits include:
             </p>
 
             <ol>
               <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
+                <strong>Preventing Cavities:</strong>
+                Teeth cleaning removes plaque and helps prevent tooth decay.
               </li>
               <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
+                <strong>Avoiding Gum Disease :</strong>
+                Regular cleaning reduces the risk of gum infections and tooth
+                loss.
               </li>
               <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
+                <strong>Fresh Breath :</strong> It helps eliminate bad breath
+                caused by bacteria build-up.
               </li>
               <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
-
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
+                <strong>Maintaining Bright Teeth :</strong>
+                Professional cleaning removes stains and keeps your teeth
+                naturally white.
               </li>
             </ol>
           </div>
 
           <div className="book_appoint_side red_background">
             <img src={apointment} alt="Dental Appointment " />
+          </div>
+        </div>
+      </div>
+
+      <div className="book_appoint parent" style={{ background: "white" }}>
+        <div className="book_appoint_container" data-aos="fade-up">
+          <div className="book_appoint_side red_background">
+            <img src={apointment} alt="Dental Appointment " />
+          </div>
+
+          <div className="book_appoint_text">
+            <h2>How Often Should You Schedule Teeth Cleaning? </h2>
+            <p>
+              For optimal oral health, Denza Dental recommends scheduling teeth
+              cleaning and polishing every six months. This routine helps
+              maintain healthy teeth and gums while preventing common dental
+              problems.
+            </p>
+            <p>
+              Regular teeth cleaning removes plaque and tartar build-up that
+              cannot be eliminated by brushing alone. It also helps reduce the
+              risk of gum disease, cavities, and bad breath.
+            </p>
+
+            <p>
+              By visiting Denza Dental consistently, any early signs of dental
+              issues can be detected and treated on time, ensuring long-term
+              oral health and a confident smile.
+            </p>
           </div>
         </div>
       </div>
@@ -258,7 +227,6 @@ const  TeethCleaning  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -279,7 +247,11 @@ const  TeethCleaning  = () => {
             >
               {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
                 <SwiperSlide key={index}>
-                  <div className="gallery_card" data-aos="fade-up" data-aos-delay={index * 100}>
+                  <div
+                    className="gallery_card"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
                     <img src={src} alt={`Clinic slide ${index + 1}`} />
                   </div>
                 </SwiperSlide>
@@ -292,4 +264,4 @@ const  TeethCleaning  = () => {
   );
 };
 
-export default  TeethCleaning ;
+export default TeethCleaning;

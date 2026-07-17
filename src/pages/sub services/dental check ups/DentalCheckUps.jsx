@@ -9,31 +9,28 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const whyChooseData = [
   {
-    icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "Skilled & Experienced Dentists",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "Denza Dental is backed by a team of highly qualified and experienced dentists who specialize in multiple areas of dentistry. Whether it’s a routine dental check-up or a complex procedure, you can feel confident knowing you’re in expert hands.",
   },
   {
-    icon: "🦷",
-    title: "Advanced Technology",
+    title: "Modern Technology & Equipment",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "We use advanced dental technology to ensure accurate diagnosis and effectivetreatment. From digital X-rays to modern diagnostic tools, our clinic is equipped to detect even the smallest dental concerns early. ",
   },
   {
-    icon: "💰",
-    title: "Affordable Packages",
+    title: " Budget-Friendly Dental Plans",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "Quality dental care should be accessible to everyone. Denza Dental offers a variety of affordable packages along with flexible payment options, making it easier for patients to prioritize their oral health.",
   },
   {
-    icon: "😊",
-    title: "Patient-Centric Approach",
+    title: "Personalized Patient Care ",
     description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
+      "Our patient-first approach ensures that every individual receives customized treatment. We take the time to understand your concerns, explain procedures clearly, and make sure you feel comfortable throughout your visit. ",
   },
 ];
 
@@ -101,7 +98,7 @@ const faqs = [
 const DentalCheckUps = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -111,16 +108,15 @@ const DentalCheckUps = () => {
     AOS.refresh();
   }, []);
 
-
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
+      {/* <div className="parent general_dental_parent bg-img-cover">
         <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
+          Welcome to our Dental Check Up Services!
         </marquee>
         <div className="cont general_dental_cont">
           <div className="bts_grp">
@@ -129,23 +125,24 @@ const DentalCheckUps = () => {
             <div className="service1_btn">Get Directions</div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <PageTop title="Dental Check Up" />
 
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
-            <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
-            </p>
+            <h2>Why Choose Denza Dental for Your Dental Check-Ups in Pune?</h2>
           </div>
 
           <div className="why_choose_cards">
             {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
+              <div
+                key={index}
+                className="why_choose_card"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>
@@ -157,16 +154,16 @@ const DentalCheckUps = () => {
       <div className="third_section">
         <div className="third_header">
           <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
         </div>
 
         <div className="service_cards">
           {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
+            <div
+              key={index}
+              className="service_card"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <p className="service_card_index">{index + 1}.</p>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
@@ -176,7 +173,7 @@ const DentalCheckUps = () => {
       </div>
 
       <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
+        <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
             <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
             <p>
@@ -238,8 +235,6 @@ const DentalCheckUps = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>
@@ -258,7 +253,6 @@ const DentalCheckUps = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -279,7 +273,11 @@ const DentalCheckUps = () => {
             >
               {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
                 <SwiperSlide key={index}>
-                  <div className="gallery_card" data-aos="fade-up" data-aos-delay={index * 100}>
+                  <div
+                    className="gallery_card"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
                     <img src={src} alt={`Clinic slide ${index + 1}`} />
                   </div>
                 </SwiperSlide>

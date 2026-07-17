@@ -9,99 +9,99 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const whyChooseData = [
   {
-    icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "State-of-the-Art Digital Technology",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "We use the latest digital dental X-ray technology that delivers high-resolution images with minimal radiation for a safer experience",
   },
   {
-    icon: "🦷",
-    title: "Advanced Technology",
+    title: "Advanced CBCT & OPG Imaging",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "Our clinic is equipped with Cone Beam Computed Tomography (CBCT) and Orthopantomogram (OPG) machines for comprehensive and precise dental imaging.",
   },
   {
-    icon: "💰",
-    title: "Affordable Packages",
+    title: "Highly Accurate Results",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "Our advanced imaging ensures detailed views of your teeth, bones, and soft tissues, enabling accurate diagnosis and effective treatment planning.",
   },
   {
-    icon: "😊",
-    title: "Patient-Centric Approach",
+    title: "Comfort Comes First",
     description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
+      "We prioritize your comfort with fast, non-invasive, and painless imaging procedures in a calm and hygienic environment.",
+  },
+  {
+    title: "Personalized Patient Care",
+    description:
+      "At Denza Dental, every patient receives individual attention and care. We take the time to understand your needs and guide you with the best solutions.",
+  },
+  {
+    title: "Conveniently Located in Kharadi",
+    description:
+      "Visit us at our easily accessible clinic in the heart of Kharadi. We're here to make your dental care journey smooth and hassle-free.",
   },
 ];
 
 const services = [
   {
-    title: "Quick Discussion",
+    title: "Bitewing X-Rays – Detect Hidden Cavities Early ",
     description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+      "Bitewing X-rays are commonly used during routine check-ups. They capture both upper and lower teeth in a specific area, making it easier to spot cavities between teeth and monitor bone health. This helps us catch issues before they become serious. ",
   },
   {
-    title: "Mouth Check ",
+    title:
+      "Teeth X-Ray / RVG (Radiovisiography) – Precise Tooth-Level Diagnosis  ",
     description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+      "RVG is a digital teeth X-ray that focuses on individual teeth and surrounding tissues. It is highly effective in identifying tooth decay, root infections, and other localized dental concerns with minimal radiation exposure.",
   },
   {
-    title: "X-rays (Only if Needed)",
+    title:
+      "Panoramic Dental Imaging (OPG) – Complete View of Your Oral Health ",
     description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
+      "An OPG scan provides a full view of your teeth, jawbones, and surrounding structures in a single image. It is ideal for overall dental evaluation, wisdom tooth assessment, and planning orthodontic treatments.",
   },
   {
-    title: " Deep Cleaning ",
+    title: "CBCT (Cone Beam Computed Tomography) – Advanced 3D Dental Imaging ",
     description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
-  },
-  {
-    title: "Next Steps & Advice ",
-    description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
+      "For more complex cases, CBCT offers detailed 3D images of your teeth, jaw, and facial structure. This technology is essential for dental implants, bone analysis, and precise treatment planning, ensuring the best possible outcomes.",
   },
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: " Why does Denza Dental recommend dental X-rays?  ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "At Denza Dental, dental X-rays are recommended to detect problems that are not visible during a routine check-up. These include hidden cavities, infections, and bone loss, helping us provide accurate and early treatment. ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "How long does a dental X-ray take at Denza Dental?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "A dental X-ray at Denza Dental usually takes only a few minutes. With advanced digital technology, results are available almost instantly, allowing our dentists to quickly explain your diagnosis and next steps.",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "Does Denza Dental take X-rays at every visit?",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "No, Denza Dental only recommends X-rays when necessary. The decision depends on your oral health condition,symptoms, and dental history to ensure safe and minimal radiation exposure. ",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "What happens during a dental X-ray at Denza Dental? ",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "During a dental X-ray at Denza Dental, you’ll be comfortably positioned while a small sensor or imaging device captures detailed images of your teeth. The process is quick, simple, and completely painless. ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: ". Can Denza Dental use X-rays to detect gum problems? ",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "Yes, Denza Dental uses dental X-rays to identify signs of gum disease, such as bone loss around teeth. This helps in early diagnosis and effective treatment planning. ",
   },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
-  },
+ 
 ];
 
-const  DentalXRay  = () => {
+const DentalXRay = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -111,41 +111,28 @@ const  DentalXRay  = () => {
     AOS.refresh();
   }, []);
 
-
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="Dental X-Ray" />
 
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
-            <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
-            </p>
+            <h2> Why Choose Denza Dental for Best Dental X-Rays in Pune?</h2>
           </div>
 
           <div className="why_choose_cards">
             {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
+              <div
+                key={index}
+                className="why_choose_card"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>
@@ -156,18 +143,23 @@ const  DentalXRay  = () => {
 
       <div className="third_section">
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
+          <h2> Types of Dental X-Rays Available at Denza Dental </h2>
+          <p style={{ color: "var(--text)" }}>
+            At Denza Dental, we offer advanced and reliable dental X-ray
+            services in Pune to help diagnose problems early and plan the right
+            treatment for you.
           </p>
         </div>
 
         <div className="service_cards">
           {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
+            <div
+              key={index}
+              className="service_card"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              {/* <p className="service_card_index">{index + 1}.</p> */}
               <h3>{service.title}</h3>
               <p>{service.description}</p>
             </div>
@@ -175,8 +167,8 @@ const  DentalXRay  = () => {
         </div>
       </div>
 
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
+      {/* <div className="book_appoint">
+        <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
             <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
             <p>
@@ -220,7 +212,7 @@ const  DentalXRay  = () => {
             <img src={apointment} alt="Dental Appointment " />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="faq_section1">
         <div className="faq_header">
@@ -258,7 +250,6 @@ const  DentalXRay  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -279,7 +270,11 @@ const  DentalXRay  = () => {
             >
               {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
                 <SwiperSlide key={index}>
-                  <div className="gallery_card" data-aos="fade-up" data-aos-delay={index * 100}>
+                  <div
+                    className="gallery_card"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
                     <img src={src} alt={`Clinic slide ${index + 1}`} />
                   </div>
                 </SwiperSlide>
@@ -292,4 +287,4 @@ const  DentalXRay  = () => {
   );
 };
 
-export default  DentalXRay ;
+export default DentalXRay;

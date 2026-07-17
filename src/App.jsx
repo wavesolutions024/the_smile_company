@@ -16,6 +16,7 @@ import OrthodonticTreatments from "./pages/services/orthodontic treatments/Ortho
 import FullMouthRihabilitation from "./pages/services/full mouth rihabilitation/FullMouthRihabilitation";
 import DentureTreatment from "./pages/services/denture treatment/DentureTreatment";
 import PediatricDentistry from "./pages/services/pediatric dentistry/PediatricDentistry";
+import DentalLasers from "./pages/services/dental lasers/DentalLasers";
 import DentalCheckUps from "./pages/sub services/dental check ups/DentalCheckUps";
 import DentalXRay from "./pages/sub services/dental x-ray/DentalXRay";
 import TeethCleaning from "./pages/sub services/teeth cleaning/TeethCleaning";
@@ -41,7 +42,6 @@ import ImplantSupported from "./pages/sub services/implant supported/ImplantSupp
 import Blogs from "./pages/blogs/Blogs";
 import Cbct from "./pages/technology/cbct/Cbct";
 import IntraOralScanning from "./pages/technology/intra oral scanning/IntraOralScanning";
-import DentalLasers from "./pages/technology/dental lasers/DentalLasers";
 import GbtCleaning from "./pages/technology/gbt cleaning/GbtCleaning";
 import GbtMachine from "./pages/technology/gbt machine/GbtMachine";
 import DentalLoupes from "./pages/technology/dental loupes/DentalLoupes";

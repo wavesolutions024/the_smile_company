@@ -99,14 +99,14 @@ const Footer = () => {
             <div className="footer__col">
               <h3>Our Location</h3>
               <a
-                href="https://maps.google.com/?q=Dr.+Samidha+Patil+Dentist+in+Kharadi"
+                href="https://maps.app.goo.gl/L2FxZP5U5wL3WA9t9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="map_box"
               >
                 <iframe
                   title="Google Map"
-                  src="https://www.google.com/maps?q=Dr.+Samidha+Patil+Dentist+in+Kharadi&output=embed"
+                  src="https://maps.app.goo.gl/L2FxZP5U5wL3WA9t9"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

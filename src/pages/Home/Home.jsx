@@ -12,6 +12,14 @@ import icon3 from "../../assets/about_section/doctor.png";
 import doctorImg from "../../assets/about_page/woman_dr.jpg";
 import { Link } from "react-router-dom";
 import { IoArrowForwardOutline } from "react-icons/io5";
+import {
+  FaLaptopMedical,
+  FaUserMd,
+  FaSmileBeam,
+  FaShieldAlt,
+  FaHandsHelping,
+  FaStar,
+} from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import img1 from "../../assets/before_after/img1.jpg";
 import img2 from "../../assets/before_after/img2.jpg";
@@ -44,10 +52,10 @@ const Home = () => {
   const handleSliderMove = (e, index) => {
     e.stopPropagation();
     if (!sliderRefs.current[index]) return;
-    
+
     const rect = sliderRefs.current[index].getBoundingClientRect();
     let x;
-    
+
     // Handle both mouse and touch events
     if (e.clientX !== undefined) {
       x = e.clientX - rect.left;
@@ -56,13 +64,13 @@ const Home = () => {
     } else {
       return;
     }
-    
+
     const percent = (x / rect.width) * 100;
 
     if (percent >= 0 && percent <= 100) {
-      setSliderPositions(prev => ({
+      setSliderPositions((prev) => ({
         ...prev,
-        [index]: percent
+        [index]: percent,
       }));
     }
   };
@@ -132,6 +140,33 @@ const Home = () => {
   ];
 
   const clinicImages = [img4, img4, img4, img4, img4, img4, img4, img4];
+
+  const featureCards = [
+    {
+      title: "Advanced Technology",
+      icon: <FaLaptopMedical />,
+    },
+    {
+      title: "Expert Dentists",
+      icon: <FaUserMd />,
+    },
+    {
+      title: "Painless Treatment",
+      icon: <FaSmileBeam />,
+    },
+    {
+      title: "High Hygiene Standards",
+      icon: <FaShieldAlt />,
+    },
+    {
+      title: "Personalized Care",
+      icon: <FaHandsHelping />,
+    },
+    {
+      title: "Trusted by Patients",
+      icon: <FaStar />,
+    },
+  ];
 
   const { ref, inView } = useInView({
     triggerOnce: false,
@@ -270,11 +305,11 @@ const Home = () => {
       </div> */}
 
       {/* meet our doctors */}
-      {/* <section className="top_dentists">
+      <section className="top_dentists">
         <div className="container">
-          <div className="top_dentists_wrapper"> */}
+          <div className="top_dentists_wrapper">
             {/* Left Images */}
-            {/* <div className="dentists_images">
+            <div className="dentists_images">
               <div className="img_box">
                 <img src={img4} alt="Doctor" />
               </div>
@@ -282,10 +317,10 @@ const Home = () => {
               <div className="img_box">
                 <img src={img4} alt="Doctor" />
               </div>
-            </div> */}
+            </div>
 
             {/* Right Content */}
-            {/* <div className="dentists_content">
+            <div className="dentists_content">
               <h2>
                 Top rated dentists <br /> in India
               </h2>
@@ -305,15 +340,11 @@ const Home = () => {
                 relationships, which is the core value at AO Dentistry.
               </p>
 
-              <Button
-                text="About Us"
-                path="/about"
-                style={{ width: "100%" }}
-              />
-            </div> */}
-          {/* </div>
+              <Button text="About Us" path="/about" style={{ width: "100%" }} />
+            </div>
+          </div>
         </div>
-      </section> */}
+      </section>
 
       {/* blog and news */}
 
@@ -386,11 +417,37 @@ const Home = () => {
 
       {/* appointment page */}
       <Appointment data-aos="fade-up" data-aos-delay="500" />
+      {/* fetures */}
+      <div
+        className="feature_cards_parent parent"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div className="feature_cards_cont cont">
+          <div className="section_header">
+            <h1>Exceptional dental care with every visit</h1>
+            <p>
+              Our promise: modern treatments, expert teams, and comfort-centered
+              care for every patient.
+            </p>
+          </div>
+
+          <div className="feature_cards">
+            {featureCards.map((item, index) => (
+              <div className="feature_card" key={index}>
+                <div className="icon">{item.icon}</div>
+                <span>{item.title}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       <div
         class="parent before_after_gallery_parent"
         data-aos="fade-up"
         data-aos-delay="600 "
+        style={{ background: "var(--background)" }}
       >
         <div class="cont before_after_gallery_cont">
           <div className="results-section">
@@ -422,25 +479,40 @@ const Home = () => {
               }}
             >
               {data.map((item, index) => {
-                const position = sliderPositions[index] !== undefined ? sliderPositions[index] : 50;
+                const position =
+                  sliderPositions[index] !== undefined
+                    ? sliderPositions[index]
+                    : 50;
                 return (
                   <SwiperSlide key={index}>
                     <div className="card">
-                      <div 
+                      <div
                         className="image-wrapper"
-                        ref={(el) => sliderRefs.current[index] = el}
-                        onMouseMove={(e) => e.buttons === 1 && handleSliderMove(e, index)}
+                        ref={(el) => (sliderRefs.current[index] = el)}
+                        onMouseMove={(e) =>
+                          e.buttons === 1 && handleSliderMove(e, index)
+                        }
                         onMouseDown={(e) => handleSliderMove(e, index)}
                         onTouchMove={(e) => handleSliderMove(e, index)}
                         onTouchStart={(e) => handleSliderMove(e, index)}
                       >
                         <img src={item} alt="after" className="after-image" />
-                        
-                        <div className="before-wrapper" style={{ width: `${100 - position}%` }}>
-                          <img src={item} alt="before" className="before-image" />
+
+                        <div
+                          className="before-wrapper"
+                          style={{ width: `${100 - position}%` }}
+                        >
+                          <img
+                            src={item}
+                            alt="before"
+                            className="before-image"
+                          />
                         </div>
-                        
-                        <div className="slider-line" style={{ left: `${position}%` }}>
+
+                        <div
+                          className="slider-line"
+                          style={{ left: `${position}%` }}
+                        >
                           <div className="slider-icon">
                             <span>◀</span>
                             <span>▶</span>

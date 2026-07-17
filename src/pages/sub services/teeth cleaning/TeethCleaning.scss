@@ -407,9 +407,17 @@
   }
 }
 
-
-
-
+.teeth_cleaning_parent {
+  padding: 100px 0px;
+  .teeth_cleaning_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--unit) * 2);
+    text-align: center;
+  }
+}
 
 .book_appoint_card h3 {
   margin: 0;
@@ -611,7 +619,7 @@
     grid-template-columns: 1fr;
   }
 
-  .service_card{
+  .service_card {
     padding: 1rem;
     min-height: auto;
   }
@@ -663,9 +671,8 @@
   }
 }
 
-
-@media(max-width: 550px) {
-   h2 {
+@media (max-width: 550px) {
+  h2 {
     font-size: 22px !important;
   }
-  }
+}

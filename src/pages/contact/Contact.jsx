@@ -42,7 +42,6 @@ const Contact = () => {
                 <div className="card_content">
                   <h4>Timing</h4>
                   <p>9:00 AM - 9:00 PM (All Days)</p>
-                
                 </div>
               </div>
 
@@ -52,8 +51,10 @@ const Contact = () => {
                 </div>
                 <div className="card_content">
                   <h4>Office Address:</h4>
-                  <p>Denza Dental, Kharadi, Pune </p>
-                  
+                  <p>
+                    Office No. 111, Zen Square, Opp. Eon Free Zone Road, Phase
+                    2, Kharadi, Pune, Maharashtra 411014{" "}
+                  </p>
                 </div>
               </div>
             </div>
