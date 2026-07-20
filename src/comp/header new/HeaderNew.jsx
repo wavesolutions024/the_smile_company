@@ -33,6 +33,26 @@ const HeaderNew = () => {
               label: "TEETH CLEANING    ",
               to: "/teeth-cleaning",
             },
+            {
+              label: "ROOT CANAL TREATMENT     ",
+              to: "/root-canal-treatment",
+            },
+            {
+              label: "ROOT CANAL RE-TREATMENT      ",
+              to: "/root-canal-retreatment ",
+            },
+            {
+              label: "TOOTH EXTRACTION",
+              to: "/tooth-extraction ",
+            },
+            {
+              label: " WISDOM TOOTH EXTRACTION",
+              to: "/wisdom-tooth-extraction",
+            },
+            {
+              label: "MINOR ORAL SURGERIES ",
+              to: "/minor-oral-surgeries",
+            },
           ],
         },
         { label: "RESTORATIVE DENTISTRY", to: "/restorative-dentistry" },

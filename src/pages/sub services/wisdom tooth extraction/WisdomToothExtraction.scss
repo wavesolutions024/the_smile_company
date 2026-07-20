@@ -112,6 +112,100 @@
   }
 }
 
+// paragraph
+.wisdom_tooth_extract_parent {
+  padding: 100px 0px;
+  .wisdom_tooth_extract_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--unit) * 1.5);
+    text-align: center;
+  }
+}
+
+// wisdom tooth extraction
+.wisdom_tooth_extraction_1_parent {
+  padding: 100px 0px;
+
+  .wisdom_tooth_extraction_1_cont {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--unit) * 2.5);
+    align-items: center;
+    justify-content: center;
+
+    .wisdom_tooth_extraction_1_left_right {
+      display: flex;
+      gap: calc(var(--unit) * 1.5);
+
+      .wisdom_tooth_extraction_1_left {
+        width: 50%;
+        display: flex;
+        gap: calc(var(--unit));
+        flex-direction: column;
+        padding: 0px 10px;
+      }
+      .wisdom_tooth_extraction_1_right {
+        width: 50%;
+        display: flex;
+        gap: calc(var(--unit));
+        flex-direction: column;
+        padding: 0px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .wisdom_tooth_extraction_1_parent {
+    padding: 50px 0px;
+
+    .wisdom_tooth_extraction_1_cont {
+      .wisdom_tooth_extraction_1_left_right {
+        flex-direction: column;
+
+        .wisdom_tooth_extraction_1_left {
+          width: 100%;
+        }
+        .wisdom_tooth_extraction_1_right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.wisdom_tooth_extract_aftercare_parent {
+  padding: 100px 0px;
+  background: var(--background);
+  .wisdom_tooth_extract_aftercare_cont {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--unit) * 2);
+    align-items: center;
+    justify-content: center;
+    .wisdom_tooth_extract_aftercare_three_point {
+      display: flex;
+      gap: calc(var(--unit) * 2);
+      flex-wrap: wrap;
+      padding: 0px 10px;
+
+      .wisdom_tooth_extract_aftercare_points {
+        display: flex;
+        gap: var(--unit);
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .wisdom_tooth_extract_aftercare_parent {
+    padding: 50px 0px;
+  }
+}
+
 /* Second Section - Why Choose Styling */
 .second_section {
   width: 100%;
@@ -407,10 +501,6 @@
   }
 }
 
-
-
-
-
 .book_appoint_card h3 {
   margin: 0;
   font-size: 2rem;
@@ -611,7 +701,7 @@
     grid-template-columns: 1fr;
   }
 
-  .service_card{
+  .service_card {
     padding: 1rem;
     min-height: auto;
   }
@@ -663,9 +753,8 @@
   }
 }
 
-
-@media(max-width: 550px) {
-   h2 {
+@media (max-width: 550px) {
+  h2 {
     font-size: 22px !important;
   }
-  }
+}

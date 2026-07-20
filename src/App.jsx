@@ -21,6 +21,7 @@ import DentalCheckUps from "./pages/sub services/dental check ups/DentalCheckUps
 import DentalXRay from "./pages/sub services/dental x-ray/DentalXRay";
 import TeethCleaning from "./pages/sub services/teeth cleaning/TeethCleaning";
 import RootCanalTreatment from "./pages/sub services/root canal treatment/RootCanalTreatment";
+import RootCanalReTreatment from "./pages/sub services/root canal re-treatment/RootCanalReTreatment";
 import ToothExtraction from "./pages/sub services/tooth extraction/ToothExtraction";
 import WisdomToothExtraction from "./pages/sub services/wisdom tooth extraction/WisdomToothExtraction";
 import MinorOralSurgeries from "./pages/sub services/minor oral surgeries/MinorOralSurgeries";
@@ -75,6 +76,7 @@ function AppLayout() {
         <Route element={<DentalXRay />} path="/dental-x-ray" />
         <Route element={<TeethCleaning />} path="/teeth-cleaning" />
         <Route element={<RootCanalTreatment />} path="/root-canal-treatment" />
+        <Route element={<RootCanalReTreatment />} path="/root-canal-retreatment" />
         <Route element={<ToothExtraction />} path="/tooth-extraction" />
         <Route element={<WisdomToothExtraction />} path="/wisdom-tooth-extraction" />
         <Route element={<MinorOralSurgeries />} path="/minor-oral-surgeries" />

@@ -9,31 +9,33 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const whyChooseData = [
   {
-    icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "Persistent Jaw Pain",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "Continuous pain or pressure at the back of the mouth may indicate an impacted or problematic wisdom tooth.",
   },
   {
-    icon: "🦷",
-    title: "Advanced Technology",
+    title: "Repeated Gum Infections ",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "Partially erupted wisdom teeth can trap food and bacteria, leading to frequent infections and swelling. ",
   },
   {
-    icon: "💰",
-    title: "Affordable Packages",
+    title: "Damage to Nearby Teeth",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "Impacted wisdom teeth may push against adjacent teeth, causing crowding, decay, or alignment issues.",
   },
   {
-    icon: "😊",
-    title: "Patient-Centric Approach",
+    title: "Cyst Formation",
     description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
+      "Fluid-filled sacs can develop around impacted teeth, potentially affecting the surrounding bone and tissues. ",
+  },
+  {
+    title: "Orthodontic Concerns",
+    description:
+      "Wisdom teeth can shift aligned teeth over time, affecting the results of braces or aligner treatments.",
   },
 ];
 
@@ -67,41 +69,38 @@ const services = [
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "Is it possible to remove an impacted wisdom tooth safely?  ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "Yes, impacted wisdom teeth can be safely removed using a minor surgical procedure performed by experienced dentists with proper anesthesia and care. ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question:
+      "How long does it take to heal after impacted wisdom tooth removal? ",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "Initial recovery usually takes 2–4 days, while complete healing of the area may take a few weeks depending on the complexity of the extraction.",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "What precautions should I follow after wisdom tooth removal?",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "Avoid smoking, using straws, eating hard foods, and touching the extraction site to prevent complications and ensure proper healing.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "When can I resume brushing after wisdom tooth extraction?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "You can brush your teeth the next day, but avoid the extraction area for the first 24 hours and continue gently afterward.  ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question:
+      "Are there any risks or complications after wisdom tooth extraction? ",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
-  },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "Mild swelling, discomfort, or slight bleeding is normal. Rarely, complications like infection or dry socket may occur if aftercare instructions are not followed. ",
   },
 ];
 
-const  WisdomToothExtraction  = () => {
+const WisdomToothExtraction = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -111,22 +110,41 @@ const  WisdomToothExtraction  = () => {
     AOS.refresh();
   }, []);
 
-
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
+      <PageTop title="Wisdom Tooth Extraction" />
+
+      <div className="wisdom_tooth_extract_parent parent">
+        <div className="wisdom_tooth_extract_cont cont">
+          <h2>
+            Impacted Wisdom Tooth Extraction in Kharadi, Pune – Denza Dental
+          </h2>
+
+          <div>
+            <p>
+              Experiencing pain or discomfort at the back of your jaw? It could
+              be due to impacted wisdom teeth. At Denza Dental, we provide safe
+              and effective impacted wisdom tooth extraction in Kharadi, Pune
+              using advanced techniques for a smooth and comfortable
+              experience.{" "}
+            </p>
+
+            <p>
+              Choosing the right dental clinic is important for successful
+              treatment and quick recovery. Our experienced team ensures precise
+              diagnosis, gentle removal, and proper aftercare guidance to help
+              you heal faster.{" "}
+            </p>
+
+            <p>
+              If you’re looking for reliable wisdom tooth extraction near you in
+              Kharadi, Denza Dental is here to provide expert care and
+              long-lasting relief.
+            </p>
           </div>
         </div>
       </div>
@@ -134,18 +152,18 @@ const  WisdomToothExtraction  = () => {
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
-            <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
-            </p>
+            <h2> Key Reasons for Wisdom Tooth Extraction </h2>
+            <p>When Wisdom Tooth Removal is Recommended</p>
           </div>
 
           <div className="why_choose_cards">
             {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
+              <div
+                key={index}
+                className="why_choose_card"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>
@@ -154,80 +172,115 @@ const  WisdomToothExtraction  = () => {
         </div>
       </div>
 
-      <div className="third_section">
-        <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
-        </div>
+      <div className="parent wisdom_tooth_extraction_1_parent">
+        <div className="cont wisdom_tooth_extraction_1_cont">
+          <h2>Types of Wisdom Tooth Extractions </h2>
 
-        <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+          <div className="wisdom_tooth_extraction_1_left_right">
+            <div className="wisdom_tooth_extraction_1_left">
+              <h3>Simple Wisdom Tooth Extraction (Fully Erupted Tooth) </h3>
+              <p>
+                This procedure is suitable for wisdom teeth that have fully come
+                out and are easily accessible. Recovery is usually quick, taking
+                around 2–3 days.{" "}
+              </p>
+
+              <ul>
+                <strong>Procedure Steps:</strong>
+                <li>The area is numbed using local anesthesia</li>
+                <li>The tooth is gently loosened using dental instruments</li>
+                <li>The tooth is carefully removed using forceps</li>
+              </ul>
             </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
-            </p>
-
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
-
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
-          </div>
-
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+            <div className="wisdom_tooth_extraction_1_right">
+              <h3>Surgical Wisdom Tooth Extraction (Impacted Tooth)</h3>
+              <p>
+                This method is used for impacted or partially erupted wisdom
+                teeth that are not easily visible. It is a more advanced
+                procedure performed with precision.
+              </p>
+              <ul>
+                <strong>Procedure Steps:</strong>
+                <li>Local anesthesia is given to ensure comfort</li>
+                <li>
+                  A small incision is made in the gum to access the tooth{" "}
+                </li>
+                <li>Any bone covering the tooth is carefully removed</li>
+                <li>
+                  The tooth may be divided into sections for easier removal
+                </li>
+                <li>The area is cleaned thoroughly to prevent infection</li>
+                <li>Dissolvable stitches may be placed to support healing </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+
+      <div className="wisdom_tooth_extract_aftercare_parent parent">
+        <div className="wisdom_tooth_extract_aftercare_cont cont">
+          <h2>Wisdom Tooth Extraction Aftercare & Recovery in </h2>
+
+          <div className="wisdom_tooth_extract_aftercare_three_point">
+            <div className="wisdom_tooth_extract_aftercare_points">
+              <ul>
+                <b>Recovery Phase (Day 2 to Day 4)</b>
+                <li>
+                  Begin rinsing with warm salt water to keep the area clean
+                </li>
+                <li>
+                  Maintain oral hygiene but avoid brushing directly on the
+                  extraction site
+                </li>
+                <li>
+                  Gradually include soft foods like khichdi, curd, or soft rice
+                </li>
+                <li>
+                  Mild swelling may peak around day 2–3 and then slowly reduce
+                </li>
+              </ul>
+            </div>
+            <div className="wisdom_tooth_extract_aftercare_points">
+              <ul>
+                <b>When to Contact Your Dentist </b>
+                <li>Bleeding continues even after applying pressure </li>
+                <li>Severe or worsening pain despite medication</li>
+                <li>
+                  Swelling increases instead of improving after a few days
+                </li>
+                <li>Signs of infection such as fever or discharge</li>
+                <li>Numbness that does not resolve over time</li>
+              </ul>
+            </div>
+            <div className="wisdom_tooth_extract_aftercare_points">
+              <ul>
+                <b>Immediate Care (First 24 Hours)</b>
+                <li>Keep gentle pressure on the gauze to control bleeding </li>
+                <li>
+                  Apply an ice pack on the cheek in intervals to reduce swelling
+                </li>
+                <li>
+                  Take prescribed medication on time for better pain control
+                </li>
+                <li>
+                  Stick to soft and cool foods; avoid straws, smoking, or
+                  spitting{" "}
+                </li>
+                <li>
+                  Rest well and keep your head slightly elevated while
+                  sleeping{" "}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
 
       <div className="faq_section1">
         <div className="faq_header">
           <h2>FAQs</h2>
-          <p>
-            Answers to the most common questions about our general dental care.
-          </p>
         </div>
 
         <div className="faq_list">
@@ -238,8 +291,6 @@ const  WisdomToothExtraction  = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>
@@ -258,7 +309,6 @@ const  WisdomToothExtraction  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -279,7 +329,11 @@ const  WisdomToothExtraction  = () => {
             >
               {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
                 <SwiperSlide key={index}>
-                  <div className="gallery_card" data-aos="fade-up" data-aos-delay={index * 100}>
+                  <div
+                    className="gallery_card"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
                     <img src={src} alt={`Clinic slide ${index + 1}`} />
                   </div>
                 </SwiperSlide>
@@ -292,4 +346,4 @@ const  WisdomToothExtraction  = () => {
   );
 };
 
-export default  WisdomToothExtraction ;
+export default WisdomToothExtraction;

@@ -9,99 +9,107 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const whyChooseData = [
   {
-    icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "Expertise in Complex Cases",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "We specialize in handling failed or complicated root canal cases, ensuring precise diagnosis and effective re-treatment solutions.",
   },
   {
-    icon: "🦷",
-    title: "Advanced Technology",
+    title: "Advanced Diagnostic Tools",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "Our clinic uses modern imaging and diagnostic technology to identify hidden infections or missed canals that may have caused the initial treatment to fail.",
   },
   {
-    icon: "💰",
-    title: "Affordable Packages",
+    title: "Microscopic Precision ",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "We follow highly detailed techniques to carefully clean and disinfect the previously treated tooth for better long-term success.",
   },
   {
-    icon: "😊",
-    title: "Patient-Centric Approach",
+    title: "Focus on Saving Natural Teeth ",
     description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
+      "Our primary goal is to preserve your natural tooth whenever possible, avoiding unnecessary extractions. ",
+  },
+  {
+    title: "Pain-Controlled Procedure ",
+    description:
+      "We use updated methods and anesthesia techniques to ensure your re-treatment is comfortable and stress-free. ",
+  },
+  {
+    title: "Customized Re-Treatment Plans ",
+    description:
+      "Each case is different, so we create personalized treatment strategies based on the condition of the tooth and previous treatment.  ",
+  },
+  {
+    title: "High Success Rate",
+    description:
+      "With improved techniques and careful planning, re-treatment can effectively eliminate infection and restore tooth function. ",
   },
 ];
 
 const services = [
   {
-    title: "Quick Discussion",
+    title: "Eliminates Persistent Infection",
     description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+      "Re-treatment helps remove any remaining bacteria or infection that was not fully cleared during the initial procedure.",
   },
   {
-    title: "Mouth Check ",
+    title: "Saves Your Natural Tooth ",
     description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+      "Instead of opting for extraction, re-treatment gives your natural tooth a second chance, helping maintain proper function and alignment. ",
   },
   {
-    title: "X-rays (Only if Needed)",
+    title: "Relieves Ongoing Pain or Discomfort ",
     description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
+      "It addresses recurring pain, swelling, or sensitivity, improving overall comfort and oral health. ",
   },
   {
-    title: " Deep Cleaning ",
+    title: "Prevents Further Dental Damage  ",
     description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
+      "Timely re-treatment stops the spread of infection to surrounding teeth and tissues. ",
   },
   {
-    title: "Next Steps & Advice ",
+    title: "Improves Long-Term Success  ",
     description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
+      "With updated techniques and careful cleaning, re-treatment increases the chances of long-lasting results.",
   },
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "When is root canal re-treatment necessary? ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "Re-treatment is recommended when a previously treated tooth develops infection again, or if pain and symptoms return after the initial root canal.",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question:
+      "Is root canal re-treatment more complicated than the first procedure?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "Yes, re-treatment can be more complex as it involves removing old filling material and carefully cleaning the canals again, but it is highly effective when done by experienced dentists.  ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "How long does a root canal re-treatment take? ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "The procedure may require 1 to 3 visits depending on the condition of the tooth and the extent of reinfection. ",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "Is root canal re-treatment painful?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "The procedure is usually not painful as local anesthesia is used. You may feel mild discomfort after treatment, which typically subsides within a few days.",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "What happens if I delay root canal re-treatment? ",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
-  },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "Delaying treatment can worsen the infection, lead to severe pain, and may eventually require tooth extraction if left untreated. ",
   },
 ];
 
-const  RootCanalReTreatment  = () => {
+const RootCanalReTreatment = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -111,41 +119,31 @@ const  RootCanalReTreatment  = () => {
     AOS.refresh();
   }, []);
 
-
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="Root Canal Re-Treatment" />
 
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
-            <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
-            </p>
+            <h2>
+              Why Choose Denza Dental for Root Canal Re-Treatment in Kharadi,
+              Pune?{" "}
+            </h2>
           </div>
 
           <div className="why_choose_cards">
             {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
+              <div
+                key={index}
+                className="why_choose_card"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>
@@ -156,17 +154,17 @@ const  RootCanalReTreatment  = () => {
 
       <div className="third_section">
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
+          <h2> Benefits of Root Canal Re- Treatment </h2>
         </div>
 
         <div className="service_cards">
           {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
+            <div
+              key={index}
+              className="service_card"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <p className="service_card_index">{index + 1}.</p>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
@@ -176,42 +174,66 @@ const  RootCanalReTreatment  = () => {
       </div>
 
       <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
+        <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
-            </p>
+            <h2>Symptoms and Causes of Root Canal Re-Treatment </h2>
+
+            <h3>Symptoms of Root Canal Re-Treatment</h3>
 
             <ol>
               <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
+                <strong>Recurring Tooth Pain :</strong> Pain that returns weeks
+                or months after a root canal may indicate that the infection has
+                not completely healed.
               </li>
               <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
+                <strong>Swelling Around the Tooth :</strong> Persistent or
+                recurring swelling in the gums near the treated tooth can signal
+                reinfection.
               </li>
               <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
+                <strong>Sensitivity While Biting :</strong> Discomfort or pain
+                when chewing or applying pressure may suggest underlying issues
+                with the previous treatment.
               </li>
               <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
+                <strong>Pimple or Abscess on Gums :</strong>A small bump or pus
+                discharge near the treated tooth is often a sign of infection.
               </li>
 
               <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
+                <strong>Tooth Discoloration :</strong>Darkening of a previously
+                treated tooth may indicate internal damage or incomplete
+                healing.
+              </li>
+            </ol>
+
+            <h3>Causes of Root Canal Re-Treatment </h3>
+
+            <ol>
+              <li>
+                <strong>Incomplete Cleaning of Canals :</strong> If some canals
+                were missed or not fully disinfected during the initial
+                procedure, bacteria can remain and cause reinfection.
+              </li>
+              <li>
+                <strong>Delayed or Improper Crown Placement :</strong>Failure to
+                place a protective crown on time can expose the tooth to further
+                damage or contamination.
+              </li>
+              <li>
+                <strong>New Decay or Infection :</strong> A treated tooth can
+                still develop new cavities, allowing bacteria to re-enter.
+              </li>
+              <li>
+                <strong>Cracks or Leakage in the Tooth :</strong>Small cracks or
+                gaps in the filling can let bacteria seep back into the tooth.
+              </li>
+
+              <li>
+                <strong>Complex Tooth Anatomy :</strong>Curved or narrow canals
+                may have been difficult to treat fully during the first
+                procedure.
               </li>
             </ol>
           </div>
@@ -258,7 +280,6 @@ const  RootCanalReTreatment  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -279,7 +300,11 @@ const  RootCanalReTreatment  = () => {
             >
               {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
                 <SwiperSlide key={index}>
-                  <div className="gallery_card" data-aos="fade-up" data-aos-delay={index * 100}>
+                  <div
+                    className="gallery_card"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
                     <img src={src} alt={`Clinic slide ${index + 1}`} />
                   </div>
                 </SwiperSlide>
@@ -292,4 +317,4 @@ const  RootCanalReTreatment  = () => {
   );
 };
 
-export default RootCanalReTreatment ;
+export default RootCanalReTreatment;

@@ -9,99 +9,126 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const whyChooseData = [
   {
-    icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "Experienced Dental Specialists ",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "Our team of skilled dentists has extensive experience in performing root canal treatments with precision, ensuring accurate diagnosis and successful outcomes. ",
   },
   {
-    icon: "🦷",
-    title: "Advanced Technology",
+    title: "Advanced Dental Technology ",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "We utilize modern equipment and updated techniques to improve treatment efficiency, enhance accuracy, and deliver high-quality results for every patient. ",
   },
   {
-    icon: "💰",
-    title: "Affordable Packages",
+    title: "Comfort-Focused Treatment",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "We prioritize your comfort by using gentle methods and effective pain management techniques, making the entire root canal procedure as stress-free as possible. ",
   },
   {
-    icon: "😊",
-    title: "Patient-Centric Approach",
+    title: "Customized Treatment Plans ",
     description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
+      "Every patient’s dental condition is unique, which is why we create personalized treatment plans tailored to your specific needs and oral health goals. ",
+  },
+  {
+    title: "Faster Healing and Recovery  ",
+    description:
+      "With the use of advanced procedures, we aim to reduce downtime and help you recover quickly so you can return to your daily activities without delay.  ",
+  },
+  {
+    title: "Strict Hygiene and Sterilization",
+    description:
+      "We follow high standards of cleanliness and sterilization protocols to maintain a safe and hygienic environment for all our patients.  ",
+  },
+  {
+    title: "Expert Care with Global Exposure ",
+    description:
+      "At Denza Dental, your treatment is handled by dentists with international exposure, ensuring advanced techniques and globally accepted standards of care. This results in precise, effective procedures focused on preserving your natural tooth and long-term oral health. With a blend of expertise and modern technology, you receive care that reflects true international quality.  ",
   },
 ];
 
 const services = [
   {
-    title: "Quick Discussion",
+    title: "Effective Pain Relief",
     description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+      "Root canal treatment removes the infected pulp, helping to eliminate the source of pain and providing long-lasting relief.  ",
   },
   {
-    title: "Mouth Check ",
+    title: "Preserves Your Natural Tooth",
     description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+      "Instead of extraction, RCT helps retain your original tooth, which is essential for maintaining proper alignment and bite. ",
   },
   {
-    title: "X-rays (Only if Needed)",
+    title: "Restores Normal Function ",
     description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
+      "After treatment, you can comfortably chew and eat without sensitivity or discomfort, improving your daily quality of life.",
   },
   {
-    title: " Deep Cleaning ",
+    title: "Stops Infection from Spreading ",
     description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
-  },
-  {
-    title: "Next Steps & Advice ",
-    description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
+      "By cleaning and sealing the infected area, root canal treatment prevents bacteria from spreading to nearby teeth and gums. ",
   },
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "How do I know if I really need a root canal treatment?",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "If you are experiencing continuous tooth pain, sensitivity that doesn’t go away, gum swelling, or a damaged tooth, a dental check-up with X-rays can confirm whether a root canal is required. ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "What is the cost of root canal treatment in Kharadi, Pune?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "The cost of root canal treatment at Denza Dental depends on the tooth involved and the severity of infection. Typically, it ranges based on complexity and whether a dental crown is recommended after the procedure.  ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "How many sittings are required for a root canal?  ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "Most root canal treatments can be completed in 1 to 3 visits, depending on the condition of the tooth and level of infection. ",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "Do I need a crown after a root canal treatment?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "In many cases, a dental crown is advised after RCT to protect the treated tooth, restore strength, and prevent future damage. ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "Can I eat normally after a root canal? ",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "Yes, once the treatment is completed and the tooth is restored, you can return to normal eating habits. It’s best to avoid hard foods until the final restoration is done. ",
   },
   {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
+    question: "Is root canal treatment safe?",
     answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "Yes, root canal treatment is a common and safe dental procedure performed to remove infection and preserve your natural tooth.",
+  },
+  {
+    question: "How long does a root canal-treated tooth last?",
+    answer:
+      "With proper care, good oral hygiene, and regular dental check-ups, a root canal-treated tooth can last for many years or even a lifetime. ",
+  },
+  {
+    question: "What should I expect after the procedure?",
+    answer:
+      "You may experience mild sensitivity for a few days after treatment, which usually subsides quickly. Your dentist may recommend medication if needed. ",
+  },
+  {
+    question: "Can a failed root canal be treated again?",
+    answer:
+      "Yes, if a root canal fails or infection returns, a retreatment procedure can be performed to save the tooth. ",
+  },
+  {
+    question: "How can I avoid needing a root canal in the future?",
+    answer:
+      "Maintaining good oral hygiene, regular dental visits, early cavity treatment, and avoiding excessive sugar intake can help prevent severe tooth decay and infection. ",
   },
 ];
 
-const  RootCanalTreatment  = () => {
+const RootCanalTreatment = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -111,22 +138,49 @@ const  RootCanalTreatment  = () => {
     AOS.refresh();
   }, []);
 
-
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
+      <PageTop title="Root Canal Treatment" />
+
+      <div className="book_appoint" style={{background:"white"}}>
+        <div className="book_appoint_container" data-aos="fade-up">
+          <div className="book_appoint_side red_background">
+            <img src={apointment} alt="Dental Appointment " />
+          </div>
+
+          <div className="book_appoint_text">
+            <h2>Best Root Canal Treatment in Kharadi, Pune – Denza Dental </h2>
+            <p>
+              Welcome to Denza Dental, your trusted destination for high-quality
+              and painless root canal treatment in Kharadi, Pune. Our clinic is
+              known for providing advanced and effective RCT procedures designed
+              to save infected or damaged teeth while ensuring maximum comfort.
+              If you are searching for the best root canal treatment near you in
+              Kharadi, our experienced dental team is here to deliver reliable
+              and long-lasting results.
+            </p>
+
+            <p>
+              At Denza Dental, we use modern technology and proven techniques to
+              perform root canal treatments with precision and care. Common
+              signs that may indicate the need for a root canal include
+              persistent tooth pain, sensitivity to hot or cold, swelling or
+              tenderness in the gums, deep decay, or discoloration of the tooth.
+              Early treatment can help prevent further complications and protect
+              your natural tooth.
+            </p>
+
+            <p>
+              We offer affordable and transparent pricing for root canal
+              treatment in Kharadi, Pune, with costs depending on the condition
+              of the tooth and complexity of the procedure. Our focus is always
+              on providing value-driven, high-quality dental care in a hygienic
+              and patient-friendly environment.
+            </p>
           </div>
         </div>
       </div>
@@ -134,18 +188,20 @@ const  RootCanalTreatment  = () => {
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
-            <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
-            </p>
+            <h2>
+              Why Choose Denza Dental for Root Canal Treatment in Kharadi,
+              Pune?{" "}
+            </h2>
           </div>
 
           <div className="why_choose_cards">
             {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
+              <div
+                key={index}
+                className="why_choose_card"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>
@@ -154,47 +210,23 @@ const  RootCanalTreatment  = () => {
         </div>
       </div>
 
-      <div className="third_section">
-        <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
-        </div>
-
-        <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
+      <div className="book_appoint" style={{background:"white"}}>
+        <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
-            </p>
+            <h2>Symptoms and Causes of Root Canal Treatment </h2>
+
+            <h3>Symptoms of Root Canal Treatment </h3>
 
             <ol>
               <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
+                <strong>Persistent Tooth Pain :</strong> Continuous or severe
+                toothache, especially while chewing or applying pressure, may
+                indicate an infected pulp.
               </li>
               <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
+                <strong>Sensitivity to Hot and Cold :</strong> Prolonged
+                sensitivity to hot or cold foods and drinks that lingers even
+                after the stimulus is removed.
               </li>
               <li>
                 <strong>Walk-in Visits :</strong> Need urgent care or nearby?
@@ -202,16 +234,37 @@ const  RootCanalTreatment  = () => {
                 quickly as possible.
               </li>
               <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
+                <strong>Swollen or Tender Gums :</strong>Pain, swelling, or
+                tenderness around the affected tooth can be a sign of infection.
               </li>
 
               <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
+                <strong>Tooth Discoloration:</strong>A tooth turning darker than
+                usual may indicate internal damage or nerve issues.
+              </li>
+            </ol>
+
+            <h3>Causes of Root Canal Problems </h3>
+
+            <ol>
+              <li>
+                <strong>Deep Tooth Decay :</strong>
+                Untreated cavities can extend into the inner layers of the
+                tooth, leading to infection.
+              </li>
+              <li>
+                <strong>Cracked or Broken Tooth :</strong> Structural damage
+                allows bacteria to enter the pulp, causing inflammation and
+                infection.
+              </li>
+              <li>
+                <strong>Dental Trauma or Injury :</strong>An impact or injury
+                can damage the tooth’s nerve, even without visible cracks.
+              </li>
+              <li>
+                <strong>Excessive Wear or Grinding :</strong>Habitual grinding
+                (bruxism) or wear over time can weaken the tooth and expose the
+                pulp.
               </li>
             </ol>
           </div>
@@ -219,6 +272,27 @@ const  RootCanalTreatment  = () => {
           <div className="book_appoint_side red_background">
             <img src={apointment} alt="Dental Appointment " />
           </div>
+        </div>
+      </div>
+
+      <div className="third_section">
+        <div className="third_header">
+          <h2>Benefits of Root Canal Treatment </h2>
+        </div>
+
+        <div className="service_cards">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="service_card"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              <p className="service_card_index">{index + 1}.</p>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -238,8 +312,7 @@ const  RootCanalTreatment  = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
+               
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>
@@ -258,7 +331,6 @@ const  RootCanalTreatment  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -279,7 +351,11 @@ const  RootCanalTreatment  = () => {
             >
               {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
                 <SwiperSlide key={index}>
-                  <div className="gallery_card" data-aos="fade-up" data-aos-delay={index * 100}>
+                  <div
+                    className="gallery_card"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
                     <img src={src} alt={`Clinic slide ${index + 1}`} />
                   </div>
                 </SwiperSlide>
@@ -292,4 +368,4 @@ const  RootCanalTreatment  = () => {
   );
 };
 
-export default RootCanalTreatment ;
+export default RootCanalTreatment;
