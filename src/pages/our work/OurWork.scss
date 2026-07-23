@@ -35,7 +35,7 @@
         .icon {
           width: 70px;
           height: 72px;
-          background-color: var(--accent);
+          background-color: var(--background);
           padding: 8px;
           border-radius: 8px;
 
@@ -282,7 +282,7 @@
   }
 }
 .transformation_cta {
-  background: #0e1f31;
+  background: var(--background);
   padding: 64px 20px;
   text-align: center;
   margin: 40px 0 80px;
@@ -330,7 +330,7 @@
 }
 
 .cta_primary {
-  background: var(--accent2);
+  background: var(--accent);
   color: white;
   border: 1px solid transparent;
 }
@@ -344,8 +344,8 @@
 
 .cta_secondary {
   background: transparent;
-  color: #f8fbff;
-  border: 1px solid white;
+  color: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .cta_secondary:hover {

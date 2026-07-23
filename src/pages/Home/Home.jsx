@@ -45,7 +45,9 @@ import { Pagination } from "swiper/modules";
 import Testimonials from "../../comp/testimonials/Testimonials";
 
 const Home = () => {
-  const [accordian, setAccordian] = useState(0);
+  // const [accordian, setLeftAccordion] = useState(0);
+  const [leftAccordion, setLeftAccordion] = useState(0);
+  const [rightAccordion, setRightAccordion] = useState(0);
   const [sliderPositions, setSliderPositions] = useState({});
   const sliderRefs = useRef({});
 
@@ -168,6 +170,41 @@ const Home = () => {
     },
   ];
 
+  const textTestimonials = [
+    {
+      id: 1,
+      name: "Sarah Jones",
+      title: "Marketing Director",
+      quote:
+        "This product has significantly improved our team’s productivity. Highly recommended!",
+      image: img4,
+    },
+    {
+      id: 2,
+      name: "David Smith",
+      title: "Project Manager",
+      quote:
+        "Exceptional service and support. The results have exceeded our expectations.",
+      image: img4,
+    },
+    {
+      id: 3,
+      name: "Emily White",
+      title: "Business Owner",
+      quote:
+        "A fantastic experience from start to finish. We couldn't be happier with the outcome.",
+      image: img4,
+    },
+    {
+      id: 4,
+      name: "Michael Brown",
+      title: "Operations Lead",
+      quote:
+        "Professional, friendly, and attentive throughout the whole process.",
+      image: img4,
+    },
+  ];
+
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.3,
@@ -204,14 +241,20 @@ const Home = () => {
               </div>
             </div>
             <div className="ab_right">
-              <h1>We Care About Your Dental Health</h1>
+              <h1>
+                Creating Beautiful Smiles Through Excellence, Innovation & Care
+              </h1>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using.
+                At Denza Dental Center, we believe every smile deserves
+                exceptional care. Guided by excellence, driven by innovation,
+                and delivered with compassion, we provide personalized dental
+                treatments tailored to every patient's needs. From preventive
+                care and cosmetic dentistry to advanced restorative procedures,
+                our experienced team is committed to helping you achieve a
+                healthy, confident smile in a comfortable and welcoming
+                environment.
               </p>
-              <Button />
+              <Button text="Book an Appointment" />
             </div>
           </div>
 
@@ -242,49 +285,50 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div
+      <div
         class="why_choose_parent bg-img-cover parent"
         data-aos="fade-up"
         data-aos-delay="200"
       >
         <div class="why_choose_cont cont">
-          <div class="wc_left">
-            <h1>Why Choose Dental Care</h1>
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
-            </p>
-            <div class="accordian">
-              {accordianContent?.map((item, index) => (
-                <div class="accordian_item">
-                  <div
-                    class="accordian_title"
-                    onClick={() => setAccordian(index)}
-                  >
-                    <h1> {item.title} </h1>
-                    <div class="count"> {index + 1} </div>
-                  </div>
-                  {accordian === index && (
+          <h1>Why Choose Dental Care</h1>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+          <div className="wc_left_right">
+            <div class="wc_left">
+              <div class="accordian">
+                {accordianContent?.map((item, index) => (
+                  <div class="accordian_item">
                     <div
-                      class={
-                        accordian === index
-                          ? "accordian_desc active"
-                          : "accordian_desc"
-                      }
+                      class="accordian_title"
+                      onClick={() => setLeftAccordion(index)}
                     >
-                      <div class="left">
-                        <h1> {item.title} </h1> <p>{item.description}</p>
-                      </div>
-                      <div class="rg_image">
-                        <img src={img4} alt="" />
-                      </div>
+                      <h1> {item.title} </h1>
+                      <div class="count"> {index + 1} </div>
                     </div>
-                  )}
-                </div>
-              ))}
+                    {leftAccordion === index && (
+                      <div
+                        class={
+                          leftAccordion === index
+                            ? "accordian_desc active"
+                            : "accordian_desc"
+                        }
+                      >
+                        <div class="left">
+                          <h1> {item.title} </h1> <p>{item.description}</p>
+                        </div>
+                        <div class="rg_image">
+                          <img src={img4} alt="" />
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-          <div class="wc_right">
+            {/* <div class="wc_right">
             <div class="top_rg">
               <div class="rg_tp_lg">
                 <div class="lg1 bg-img-contain">
@@ -300,9 +344,42 @@ const Home = () => {
                 <div class="inner bg-img-cover"></div>
               </div>
             </div>
+          </div> */}
+
+            <div class="wc_right">
+              <div class="accordian">
+                {accordianContent?.map((item, index) => (
+                  <div class="accordian_item">
+                    <div
+                      class="accordian_title"
+                      onClick={() => setRightAccordion(index)}
+                    >
+                      <h1> {item.title} </h1>
+                      <div class="count"> {index + 1} </div>
+                    </div>
+                    {rightAccordion === index && (
+                      <div
+                        class={
+                          rightAccordion === index
+                            ? "accordian_desc active"
+                            : "accordian_desc"
+                        }
+                      >
+                        <div class="left">
+                          <h1> {item.title} </h1> <p>{item.description}</p>
+                        </div>
+                        <div class="rg_image">
+                          <img src={img4} alt="" />
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* meet our doctors */}
       <section className="top_dentists">
@@ -410,9 +487,53 @@ const Home = () => {
         </div>
       </div>
 
-      {/* testimonials */}
+      {/* video testimonials */}
       <div data-aos="fade-up" data-aos-delay="400">
         <Testimonials />
+      </div>
+
+      {/* text testimonial */}
+      <div
+        className="text_testimonial_parent parent"
+        data-aos="fade-up"
+        data-aos-delay="450"
+      >
+        <div className="text_testimonial_cont cont">
+          <div className="section_header">
+            <h1>Testimonials</h1>
+            <p>What our clients say about us</p>
+          </div>
+
+          <div className="testimoneal_listing">
+            <Swiper
+              modules={[Pagination, Autoplay]}
+              spaceBetween={24}
+              slidesPerView={3}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 350000, disableOnInteraction: false }}
+              breakpoints={{
+                0: { slidesPerView: 1, spaceBetween: 16 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                1200: { slidesPerView: 3, spaceBetween: 24 },
+              }}
+            >
+              {textTestimonials.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <div className="testimonial_card">
+                    <div className="testimonial_avatar">
+                      <img src={item.image} alt={item.name} />
+                    </div>
+                    <div className="testimonial_body">
+                      <p className="testimonial_quote">{item.quote}</p>
+                      <h3>{item.name}</h3>
+                      <span>{item.title}</span>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
       </div>
 
       {/* appointment page */}

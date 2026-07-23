@@ -110,10 +110,11 @@ const HeaderNew = () => {
         { label: "Conscious Sedation (Laughing Gas)", to: "/laughing-gas" },
       ],
     },
-    { label: "ABOUT US", to: "/about" },
     { label: "OUR WORK", to: "/our-work" },
-    { label: "DENTAL TOURISM", to: "/dental-tourism" },
     { label: "BLOGS", to: "/blogs" },
+    { label: "ABOUT US", to: "/about" },
+
+    { label: "DENTAL TOURISM", to: "/dental-tourism" },
   ];
 
   useEffect(() => {
