@@ -40,7 +40,7 @@
   padding: 36px;
   border-radius: 14px;
   position: absolute;
-  top:80px;
+  top: 80px;
   left: 50%;
   transform: translate(-50%);
 
@@ -755,14 +755,47 @@
   }
 }
 
-
-.clinic_img_parent{
+.clinic_img_parent {
   width: 100%;
 
-  img{
+  img {
     width: 100%;
     height: auto;
     border-radius: 12px;
     object-fit: cover;
+  }
+}
+
+.book_cons_parent {
+  padding: 80px 0px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .book_cons_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--unit));
+    .box_box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: calc(var(--unit));
+
+      .name_mname{
+        color: white;
+        font-size: 48px;
+        font-weight: 700;
+      }
+
+      .name_mname_namme{
+        color: rgb(235, 233, 233);
+        font-size: 20px;
+      }
+    }
   }
 }

@@ -8,29 +8,35 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import clnic_img from "../../assets/dental_tourism_img.jpeg";
+import Button from "../../comp/button/Button";
+import serviceHero from "../../assets/service_hero.webp";
 
 const DentalTourism = () => {
   const services = [
     {
-      title: "Global Exposure",
+      title: "Internationally Experienced Dental Specialists",
       description:
-        "Trusted by international patients across multiple countries",
-    },
-    {
-      title: "Expert Clinicians",
-      description: "Internationally trained dental specialists",
+        "Our internationally trained dental specialists combine global expertise with advanced clinical techniques to deliver precise, world-class care tailored to every smile.",
     },
     {
       title: "Advanced Technology",
-      description: "3D imaging, digital dentistry, laser treatments ",
+      description:
+        "We use cutting-edge dental technology and modern equipment to provide accurate diagnoses, minimally invasive treatments, and faster recovery.",
     },
     {
-      title: "Cost Advantage",
-      description: "Save up to 60–80% vs global prices",
+      title: "Patient Comfort",
+      description:
+        "Your comfort comes first. Our gentle approach and welcoming environment ensure every visit is relaxing, pain-free, and stress-free.",
     },
     {
-      title: "Personalized Care",
-      description: "Tailored treatment plans for every patient ",
+      title: "Safe & Hygienic",
+      description:
+        "We follow strict international sterilization and infection control protocols, ensuring a clean, safe, and hygienic environment for every patient.",
+    },
+    {
+      title: "Transparent & Ethical Care",
+      description:
+        "We believe great dental care starts with trust. We explain every treatment clearly, answer your questions, and recommend only what's truly best for your smile.",
     },
   ];
 
@@ -396,6 +402,36 @@ const DentalTourism = () => {
               </div>
             );
           })}
+        </div>
+      </div>
+
+      <div
+        className="parent book_cons_parent"
+        style={{
+          backgroundImage: `linear-gradient(rgba(65, 65, 65, 0.8), rgba(44, 43, 43, 0.19)), url(${serviceHero})`,
+        }}
+      >
+        <div className="cont book_cons_cont">
+          <div className="box_box">
+            <div className="name_mname">Start Your Smile Journey Today </div>
+            <span className="name_mname_namme">Book your consultation with Denza Dental </span>
+
+            <div>
+              <div className="cta_buttons">
+                <Link to="/contact" className="cta_primary">
+                  Book a consultation
+                </Link>
+                <a
+                  href="https://wa.me/+917028131132"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cta_secondary"
+                >
+                  WhatsApp us
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

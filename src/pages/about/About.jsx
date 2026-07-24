@@ -93,7 +93,7 @@ const About = () => {
 
         <div className="cont dental_tourish_cont">
           <div className="hero_content">
-            <h1>Precision. Ethics. Comfort. Dentistry designed around you.</h1>
+            <h1>Precision. Ethics. Comfort.<br /> Dentistry designed around you.</h1>
             <p>Specialist-led dental care in Kharadi, Pune </p>
           </div>
         </div>
