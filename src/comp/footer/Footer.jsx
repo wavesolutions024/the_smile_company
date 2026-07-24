@@ -43,7 +43,8 @@ const Footer = () => {
           <div className="footer__brand">
             <img src={logo} alt="Logo" />
             <p style={{ color: "white" }}>
-            Denza Dental Center, creating beutiful smiles through excellence, innovation, and care.
+              Denza Dental Center, creating beautiful smiles through excellence,
+              innovation, and care.
             </p>
             <div className="social_media_main">
               <span className="social_media_icon">
@@ -65,34 +66,66 @@ const Footer = () => {
             <div className="footer__col">
               <h3>Our Services</h3>
               <ul>
-                <li><Link to="/general-dental">General Dental Services</Link></li>
-                <li><Link to="/restorative-dentistry">Restorative Dentistry</Link></li>
-                <li><Link to="/cosmetic-dentistry">Cosmetic Dentistry</Link></li>
-                <li><Link to="/orthodontic-treatments">Orthodontic Treatment</Link></li>
-                <li><Link to="/dental-check-ups">Dental Checkups</Link></li>
-                <li><Link to="/full-mouth-rehabilitation">Full mouth rehabilitation</Link></li>
-                <li><Link to="/pediatric-dentistry">Pediatric Dentistry</Link></li>
+                <li>
+                  <Link to="/general-dental">General Dental Services</Link>
+                </li>
+                <li>
+                  <Link to="/restorative-dentistry">Restorative Dentistry</Link>
+                </li>
+                <li>
+                  <Link to="/cosmetic-dentistry">Cosmetic Dentistry</Link>
+                </li>
+                <li>
+                  <Link to="/orthodontic-treatments">
+                    Orthodontic Treatment
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/dental-check-ups">Dental Checkups</Link>
+                </li>
+                <li>
+                  <Link to="/full-mouth-rehabilitation">
+                    Full mouth rehabilitation
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/pediatric-dentistry">Pediatric Dentistry</Link>
+                </li>
               </ul>
             </div>
 
             <div className="footer__col">
               <h3>Useful Links</h3>
               <ul>
-                <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-                <li><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
+                <li>
+                  <Link to="/privacy-policy">Privacy Policy</Link>
+                </li>
+                <li>
+                  <Link to="/terms-and-conditions">Terms & Conditions</Link>
+                </li>
               </ul>
             </div>
 
             <div className="footer__col">
               <h3>Quick Links</h3>
               <ul>
-                <li><Link to="/about">About Us</Link></li>
-               
-                <li><Link to="/our-work">Our Work</Link></li>
-                <li><Link to="/dental-tourism">Dental Tourism</Link></li>
-                <li><Link to="/blogs">Blogs</Link></li>
-               
-                <li><Link to="/contact-us">Contact Us</Link></li>
+                <li>
+                  <Link to="/about">About Us</Link>
+                </li>
+
+                <li>
+                  <Link to="/our-work">Our Work</Link>
+                </li>
+                <li>
+                  <Link to="/dental-tourism">Dental Tourism</Link>
+                </li>
+                <li>
+                  <Link to="/blogs">Blogs</Link>
+                </li>
+
+                <li>
+                  <Link to="/contact-us">Contact Us</Link>
+                </li>
               </ul>
             </div>
 

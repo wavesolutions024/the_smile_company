@@ -91,7 +91,6 @@ const DentalTourism = () => {
               Affordable, advanced, and globally trusted dental treatments in
               India for international patients
             </p>
-         
           </div>
         </div>
       </div>
@@ -102,7 +101,9 @@ const DentalTourism = () => {
             <img src={img} alt="About Us" />
           </div>
           <div className="right_denatl_tourism">
-            <h2>lorem ipsum</h2>
+            <h2>
+              International Standards. Indian Hospitality. Exceptional Smiles.
+            </h2>
             <p>
               Denza Dental Center is poised to become a distinguished name in
               the evolving landscape of dental tourism. With internationally

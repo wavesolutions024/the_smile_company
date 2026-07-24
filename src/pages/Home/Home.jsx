@@ -79,19 +79,29 @@ const Home = () => {
 
   const accordianContent = [
     {
-      title: "Expertise in Dental Industry",
+      title: "Internationally Experienced Dental Specialists",
       description:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.",
+        "Our team of highly qualified dentists brings international expertise and advanced clinical knowledge to every treatment. We stay updated with the latest global dental practices to ensure you receive world-class care with precision and excellence.",
     },
     {
-      title: "Expertise in Dental Industry",
+      title: "Advanced Technology",
       description:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.",
+        "We use state-of-the-art dental equipment and digital technology to deliver accurate diagnoses, minimally invasive procedures, and faster recovery. Our modern approach ensures safe, efficient, and comfortable treatments for every patient.",
     },
     {
-      title: "Expertise in Dental Industry",
+      title: "Patient Comfort",
       description:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.",
+        "Your comfort is at the heart of everything we do. From a welcoming environment to gentle treatment techniques, we strive to make every visit relaxing, pain-free, and stress-free for patients of all ages.",
+    },
+    {
+      title: "Safe & Hygienic",
+      description:
+        "We maintain the highest standards of sterilization and infection control, following strict international safety protocols. Every instrument and treatment area is thoroughly sanitized to ensure a clean and safe environment.",
+    },
+    {
+      title: "Transparent & Ethical Care",
+      description:
+        "We believe in honesty, integrity, and clear communication. You'll receive detailed treatment explanations, transparent pricing, and personalized care recommendations—without unnecessary procedures or hidden costs.",
     },
   ];
 
@@ -285,102 +295,6 @@ const Home = () => {
         </div>
       </div>
 
-      <div
-        class="why_choose_parent bg-img-cover parent"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <div class="why_choose_cont cont">
-          <h1>Why Choose Dental Care</h1>
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
-          </p>
-          <div className="wc_left_right">
-            <div class="wc_left">
-              <div class="accordian">
-                {accordianContent?.map((item, index) => (
-                  <div class="accordian_item">
-                    <div
-                      class="accordian_title"
-                      onClick={() => setLeftAccordion(index)}
-                    >
-                      <h1> {item.title} </h1>
-                      <div class="count"> {index + 1} </div>
-                    </div>
-                    {leftAccordion === index && (
-                      <div
-                        class={
-                          leftAccordion === index
-                            ? "accordian_desc active"
-                            : "accordian_desc"
-                        }
-                      >
-                        <div class="left">
-                          <h1> {item.title} </h1> <p>{item.description}</p>
-                        </div>
-                        <div class="rg_image">
-                          <img src={img4} alt="" />
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-            {/* <div class="wc_right">
-            <div class="top_rg">
-              <div class="rg_tp_lg">
-                <div class="lg1 bg-img-contain">
-                  <img src={img5} alt="" />
-                </div>
-                <div class="lg2 bg-img-cover"></div>
-              </div>
-              <div class="rp_tp_rg bg-img-cover"></div>
-            </div>
-            <div class="bottom_rg">
-              <div class="bt_lg bg-img-cover"></div>
-              <div class="bt_rg">
-                <div class="inner bg-img-cover"></div>
-              </div>
-            </div>
-          </div> */}
-
-            <div class="wc_right">
-              <div class="accordian">
-                {accordianContent?.map((item, index) => (
-                  <div class="accordian_item">
-                    <div
-                      class="accordian_title"
-                      onClick={() => setRightAccordion(index)}
-                    >
-                      <h1> {item.title} </h1>
-                      <div class="count"> {index + 1} </div>
-                    </div>
-                    {rightAccordion === index && (
-                      <div
-                        class={
-                          rightAccordion === index
-                            ? "accordian_desc active"
-                            : "accordian_desc"
-                        }
-                      >
-                        <div class="left">
-                          <h1> {item.title} </h1> <p>{item.description}</p>
-                        </div>
-                        <div class="rg_image">
-                          <img src={img4} alt="" />
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* meet our doctors */}
       <section className="top_dentists">
         <div className="container">
@@ -398,23 +312,30 @@ const Home = () => {
 
             {/* Right Content */}
             <div className="dentists_content">
-              <h2>
-                Top rated dentists <br /> in India
-              </h2>
+              <h2>Meet Our Expert Dentists</h2>
 
-              <p>
-                Dr. Onkar and Dr. Aneesha live by the motto “educate to treat”!
+              <p
+                style={{
+                  color: "var(--accent)",
+                  fontSize: "20px",
+                  fontWeight: "600",
+                }}
+              >
+                Trusted Dental Experts Dedicated to Your Smile
               </p>
 
               <p>
-                Dr. Onkar is an expert in Laser Dentistry and Micro Dentistry
-                Implants along with his better half Dr. Aneesha, who is a
-                Cosmetic Dentist herself.
-              </p>
-
-              <p>
-                They both believe that quality creates long-lasting
-                relationships, which is the core value at AO Dentistry.
+                At Denza Dental, exceptional care begins with experienced hands.
+                Dr. Hemant Thodsare and Dr. Devika K. Thodsare are committed to
+                providing personalized, ethical, and evidence-based dental care
+                for patients of all ages. With a patient-first approach and a
+                passion for clinical excellence, they combine advanced dental
+                techniques with compassionate care to deliver comfortable,
+                precise, and long-lasting treatment outcomes. Whether it's
+                preventive care, cosmetic smile enhancements, restorative
+                procedures, or comprehensive dental treatments, their focus is
+                on helping every patient achieve a healthy, confident smile in a
+                welcoming and stress-free environment.
               </p>
 
               <Button text="About Us" path="/about" style={{ width: "100%" }} />
@@ -492,6 +413,9 @@ const Home = () => {
         <Testimonials />
       </div>
 
+      {/* appointment page */}
+      <Appointment data-aos="fade-up" data-aos-delay="500" />
+
       {/* text testimonial */}
       <div
         className="text_testimonial_parent parent"
@@ -536,11 +460,10 @@ const Home = () => {
         </div>
       </div>
 
-      {/* appointment page */}
-      <Appointment data-aos="fade-up" data-aos-delay="500" />
       {/* fetures */}
       <div
         className="feature_cards_parent parent"
+        
         data-aos="fade-up"
         data-aos-delay="200"
       >
@@ -560,6 +483,51 @@ const Home = () => {
                 <span>{item.title}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+
+      {/* why choose us */}
+      <div
+        class="why_choose_parent bg-img-cover parent"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="why_choose_cont cont">
+          <h1>Why Choose Denza Dental Care</h1>
+          <p>Because every smile deserves exceptional care.</p>
+          <div className="wc_left_right">
+            <div class="wc_left">
+              <div class="accordian">
+                {accordianContent?.map((item, index) => (
+                  <div class="accordian_item">
+                    <div
+                      class="accordian_title"
+                      onClick={() => setLeftAccordion(index)}
+                    >
+                      <h1> {item.title} </h1>
+                      <div class="count"> {index + 1} </div>
+                    </div>
+                    {leftAccordion === index && (
+                      <div
+                        class={
+                          leftAccordion === index
+                            ? "accordian_desc active"
+                            : "accordian_desc"
+                        }
+                      >
+                        <div class="left">
+                          <h1> {item.title} </h1> <p>{item.description}</p>
+                        </div>
+                        <div class="rg_image">
+                          <img src={img4} alt="" />
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

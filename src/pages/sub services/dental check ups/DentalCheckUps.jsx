@@ -20,7 +20,7 @@ const whyChooseData = [
   {
     title: "Modern Technology & Equipment",
     description:
-      "We use advanced dental technology to ensure accurate diagnosis and effectivetreatment. From digital X-rays to modern diagnostic tools, our clinic is equipped to detect even the smallest dental concerns early. ",
+      "We use advanced dental technology to ensure accurate diagnosis and effective treatment. From digital X-rays to modern diagnostic tools, our clinic is equipped to detect even the smallest dental concerns early. ",
   },
   {
     title: " Budget-Friendly Dental Plans",

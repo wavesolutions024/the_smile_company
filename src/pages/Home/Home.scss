@@ -160,7 +160,7 @@
   width: 100%;
   height: auto;
   padding: 80px 0px;
-  background: var(--white);
+  background: var(--background);
 
   .feature_cards_cont {
     display: flex;
@@ -337,122 +337,16 @@
     .wc_left_right {
       display: flex;
       gap: calc(var(--unit));
+      align-items: center;
+      justify-content: center;
       .wc_left {
-        width: 50%;
+        width: 70%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         gap: calc(var(--unit) / 2);
         // padding: 50px 0px;
-
-        .accordian {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: calc(var(--unit) / 2);
-          margin-top: var(--unit);
-
-          .accordian_item {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: calc(var(--unit) / 2);
-
-            .accordian_title {
-              padding: 20px;
-              background-color: var(--accent);
-              width: 100%;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              border-radius: var(--unit);
-              cursor: pointer;
-
-              h1 {
-                color: white;
-                font-size: 20px;
-              }
-
-              .count {
-                font-size: 40px;
-                font-family: "Poppins", sans-serif;
-
-                color: #ffffff5d;
-              }
-            }
-
-            .accordian_desc {
-              padding: 20px;
-              border: 1px solid var(--accent2);
-              display: flex;
-              justify-content: space-between;
-              align-items: stretch;
-              gap: var(--unit);
-              border-radius: var(--unit);
-
-              &.active {
-                animation: wipingdesc 0.5s forwards linear;
-
-                @keyframes wipingdesc {
-                  0% {
-                    transform: translateY(40px);
-                  }
-
-                  100% {
-                    transform: translateY(0px);
-                  }
-                }
-              }
-
-              .left {
-                width: 70%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                gap: calc(var(--unit));
-
-                h1 {
-                  font-size: 16px;
-                }
-              }
-
-              .rg_image {
-                width: 30%;
-                height: auto;
-                // aspect-ratio: 1;
-                overflow: hidden;
-                border-radius: calc(var(--unit) / 2);
-
-                img {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .wc_right {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: calc(var(--unit) / 2);
-
-        h1 {
-          font-size: 40px;
-          font-weight: 800;
-          color: var(--accent);
-        }
 
         .accordian {
           width: 100%;
@@ -568,14 +462,7 @@
   }
 }
 
-
-
 // text testimonial
-
-
-
-
-
 
 .blog_parent {
   width: 100%;

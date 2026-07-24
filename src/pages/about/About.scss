@@ -1,5 +1,8 @@
 .about_dr_parent {
   padding: 150px 0px;
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
   .about_dr_cont {
     display: flex;
     display: grid;
