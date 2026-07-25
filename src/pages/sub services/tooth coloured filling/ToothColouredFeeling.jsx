@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const whyChooseData = [
   {
@@ -67,9 +68,9 @@ const services = [
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: " What are tooth-colored fillings?  ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      " Tooth-colored fillings at Denza Dental are made from composite resin that matches your natural tooth shade, providing a seamless and aesthetic restoration for cavities or minor damage.  ",
   },
   {
     question: "How Long Does a Check-up at Denza Dental Take?",
@@ -98,10 +99,10 @@ const faqs = [
   },
 ];
 
-const  ToothColouredFeeling  = () => {
+const ToothColouredFeeling = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -111,22 +112,42 @@ const  ToothColouredFeeling  = () => {
     AOS.refresh();
   }, []);
 
-
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
+      <PageTop title="Tooth Coloured Fillings" />
+
+      <div className="wisdom_tooth_extract_parent parent">
+        <div className="wisdom_tooth_extract_cont cont">
+          <h2>Why Choose Denza Dental for Tooth-Colored Fillings in Pune?</h2>
+
+          <div>
+            <p>
+              At Denza Dental, our experienced dentists provide tooth-colored
+              fillings with precision and care, ensuring natural-looking and
+              long-lasting results. Using advanced techniques and high-quality
+              materials, we restore your teeth in a way that blends seamlessly
+              with your natural smile.
+            </p>
+
+            <p>
+              We focus on personalized treatment for every patient, carefully
+              assessing your dental needs to deliver the best outcome. Known for
+              reliable and effective dental care in Pune, Denza Dental helps you
+              regain both function and confidence with comfortable, aesthetic
+              fillings.
+            </p>
+
+            <p>
+              Denza Dental prioritizes the use of high-quality dental materials
+              to ensure durability, safety, and long-lasting results. This
+              commitment enhances the effectiveness of treatments and supports
+              better oral health outcomes. It also reflects the clinic’s focus
+              on delivering reliable, world-class dental care.
+            </p>
           </div>
         </div>
       </div>
@@ -144,7 +165,12 @@ const  ToothColouredFeeling  = () => {
 
           <div className="why_choose_cards">
             {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
+              <div
+                key={index}
+                className="why_choose_card"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <div className="card_icon">{item.icon}</div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
@@ -166,7 +192,12 @@ const  ToothColouredFeeling  = () => {
 
         <div className="service_cards">
           {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
+            <div
+              key={index}
+              className="service_card"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <p className="service_card_index">{index + 1}.</p>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
@@ -176,7 +207,7 @@ const  ToothColouredFeeling  = () => {
       </div>
 
       <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
+        <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
             <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
             <p>
@@ -238,8 +269,7 @@ const  ToothColouredFeeling  = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
+               
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>
@@ -258,7 +288,6 @@ const  ToothColouredFeeling  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -279,7 +308,11 @@ const  ToothColouredFeeling  = () => {
             >
               {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
                 <SwiperSlide key={index}>
-                  <div className="gallery_card" data-aos="fade-up" data-aos-delay={index * 100}>
+                  <div
+                    className="gallery_card"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
                     <img src={src} alt={`Clinic slide ${index + 1}`} />
                   </div>
                 </SwiperSlide>
@@ -292,4 +325,4 @@ const  ToothColouredFeeling  = () => {
   );
 };
 
-export default  ToothColouredFeeling ;
+export default ToothColouredFeeling;

@@ -55,7 +55,17 @@ const HeaderNew = () => {
             },
           ],
         },
-        { label: "RESTORATIVE DENTISTRY", to: "/restorative-dentistry" },
+        {
+          label: "RESTORATIVE DENTISTRY",
+          to: "/restorative-dentistry",
+
+          children: [
+            {
+              label: "TOOTH COLORED FILLINGS  ",
+              to: "/tooth-coloured-feeling",
+            },
+          ],
+        },
         { label: "COSMETIC DENTISTRY", to: "/cosmetic-dentistry" },
         { label: "ORTHODONTIC TREATMENTS", to: "/orthodontic-treatments" },
         {
