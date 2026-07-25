@@ -13,95 +13,108 @@ import apointment from "../../../assets/aapointment.webp";
 const whyChooseData = [
   {
     icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "-Highly Experienced Dental Team ",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "At Denza Dental, our dentists bring years of hands-on experience in dental crown treatments, ensuring precise fitting and natural-looking results for every patient. ",
   },
   {
     icon: "🦷",
-    title: "Advanced Technology",
+    title: "-Premium Crown Materials",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "We use top-quality materials like porcelain and zirconia to create crowns that are strong, long-lasting, and blend perfectly with your natural teeth.",
   },
   {
     icon: "💰",
-    title: "Affordable Packages",
+    title: "-Modern Digital Dentistry ",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "With advanced CAD/CAM technology and digital scanning, we provide accurate, efficient treatments, including same-day crown solutions in many cases.",
   },
   {
     icon: "😊",
-    title: "Patient-Centric Approach",
+    title: "-Proven Patient Satisfaction",
     description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
+      "Denza Dental is trusted by many patients in Pune for consistent results and dependable dental care, especially for crown treatments.",
+  },
+  {
+    icon: "😊",
+    title: "-Ongoing Care & Support",
+    description:
+      "We guide you even after the procedure with proper aftercare and follow-ups to ensure your crown stays in excellent condition.",
+  },
+  {
+    icon: "😊",
+    title: "-Comfort-Focused Experience",
+    description:
+      "From consultation to treatment, we ensure a smooth and stress-free experience in a calm and patient-friendly environment.",
   },
 ];
 
 const services = [
   {
-    title: "Quick Discussion",
+    title: "Porcelain Crowns ",
     description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+      "Porcelain crowns are a great choice for front teeth as they closely match the natural color and appearance of your smile. They offer excellent aesthetics but may not be as strong as other materials.",
   },
   {
-    title: "Mouth Check ",
+    title: "Porcelain-Fused-to-Metal (PFM) Crowns",
     description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+      "PFM crowns combine the strength of metal with the natural look of porcelain. They are suitable for both front and back teeth, offering a balance of durability and appearance.",
   },
   {
-    title: "X-rays (Only if Needed)",
+    title: "Metal Crowns ",
     description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
+      "Metal crowns are extremely strong and long-lasting, making them ideal for back teeth where chewing pressure is high. However, they are less preferred for visible areas due to their metallic appearance. ",
   },
   {
-    title: " Deep Cleaning ",
+    title: "Zirconia Crowns ",
     description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
+      "Zirconia crowns are highly durable and provide a natural look. They are a popular choice for both front and back teeth due to their strength and aesthetics.",
   },
   {
-    title: "Next Steps & Advice ",
+    title: "E-Max Crowns ",
     description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
+      "E-Max crowns are known for their superior strength and lifelike translucency. They are especially suitable for front teeth where appearance is important. ",
+  },
+  {
+    title: "Composite Resin Crowns ",
+    description:
+      "These crowns are more affordable and are typically used as a temporary solution or for areas with less stress. They provide decent aesthetics but may wear down faster.",
+  },
+  {
+    title: "Stainless Steel Crowns",
+    description:
+      "Commonly used in pediatric dentistry, stainless steel crowns are durable, cost-effective, and ideal for protecting children’s teeth.",
   },
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: " How much do dental crowns cost at Denza Dental?  ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      " Dental crown costs at Denza Dental depend on the type of crown selected and the condition of your tooth. A detailed estimate is provided after a consultation and examination. ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: " Which type of dental crown is best for me? ",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "The best crown depends on your needs. At Denza Dental, zirconia and E-Max crowns are popular for their strength and natural look, while other options may be recommended based on the tooth’s location and function. ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: " How long do dental crowns last? ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      " With proper care and regular dental visits at Denza Dental, dental crowns can last anywhere from 10 to 15 years or even longer.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: " Is getting a dental crown painful?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      " At Denza Dental, dental crown procedures are performed under local anesthesia, making the process comfortable and minimally painful for patients. ",
   },
-  {
-    question: "Are X-rays at Denza Dental Safe?",
-    answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
-  },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
-  },
+  
 ];
 
-const  DentalCrowns  = () => {
+const DentalCrowns = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -120,7 +133,7 @@ const  DentalCrowns  = () => {
     <>
       <div className="parent general_dental_parent bg-img-cover">
         <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
+          Welcome to our Dental Treatment Services!
         </marquee>
         <div className="cont general_dental_cont">
           <div className="bts_grp">
@@ -134,11 +147,9 @@ const  DentalCrowns  = () => {
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+            <h2>Why Choose Denza Dental for Dental Crowns in Pune? </h2>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
+
             </p>
           </div>
 
@@ -156,11 +167,9 @@ const  DentalCrowns  = () => {
 
       <div className="third_section">
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
+          <h2>Types of Dental Crowns  </h2>
           <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
+
           </p>
         </div>
 
@@ -176,44 +185,27 @@ const  DentalCrowns  = () => {
       </div>
 
       <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
+        <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
+            <h2>Advantages of Dental Crowns</h2>
             <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
+              Dental crowns offer multiple benefits when it comes to restoring and
+              protecting damaged teeth. They act as a protective cover for
+              weakened teeth, preventing further damage and helping maintain
+              overall dental health. Crowns also restore normal chewing and biting
+              function, making everyday activities more comfortable.
             </p>
 
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
+            <p>
+              In addition, dental crowns are highly durable and designed to
+              withstand regular wear and tear. They are custom-made to match
+              your natural teeth, improving the overall appearance of your smile.
+              Crowns provide strength and stability to the tooth structure and
+              serve as a long-term solution with proper care. They are also
+              versatile and can be used in various treatments, including after root
+              canal procedures or dental implants.
+            </p>
 
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
           </div>
 
           <div className="book_appoint_side red_background">
@@ -258,7 +250,7 @@ const  DentalCrowns  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +284,4 @@ const  DentalCrowns  = () => {
   );
 };
 
-export default  DentalCrowns ;
+export default DentalCrowns;

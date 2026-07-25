@@ -64,6 +64,14 @@ const HeaderNew = () => {
               label: "TOOTH COLORED FILLINGS  ",
               to: "/tooth-coloured-feeling",
             },
+            {
+              label: "DENTAL CROWNS",
+              to: "/dental-crowns",
+            },
+            {
+              label: " CROWNS AND BRIDGES ",
+              to: "/crowns-bridges",
+            },
           ],
         },
         { label: "COSMETIC DENTISTRY", to: "/cosmetic-dentistry" },

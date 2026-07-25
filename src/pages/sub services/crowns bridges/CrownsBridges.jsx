@@ -13,95 +13,124 @@ import apointment from "../../../assets/aapointment.webp";
 const whyChooseData = [
   {
     icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "Expert Care with Global Exposure ",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "Our skilled dentists bring international exposure and extensive experience, ensuring precise and high-quality results in every crowns and bridges procedure. ",
   },
   {
     icon: "🦷",
-    title: "Advanced Technology",
+    title: "Advanced Digital Technology ",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "We use modern digital tools and advanced scanning technology to design and create accurate, well-fitting crowns and bridges with enhanced efficiency and comfort. ",
   },
   {
     icon: "💰",
-    title: "Affordable Packages",
+    title: "Use of High-Quality Materials ",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "We prioritize premium dental materials that ensure durability, strength, and a natural-looking finish that blends seamlessly with your teeth.",
+  },
+  {
+    icon: "😊",
+    title: "Personalized Treatment Plans",
+    description:
+      "Every crowns and bridges procedure is customized to suit your specific dental needs, ensuring optimal comfort, function, and long-term success. ",
+  },
+  {
+    icon: "😊",
+    title: "Comprehensive Dental Care",
+    description:
+      "From consultation to final placement and follow-ups, we provide complete care to ensure the best possible treatment outcomes.",
   },
   {
     icon: "😊",
     title: "Patient-Centric Approach",
     description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
+      "Your comfort is our priority. We guide you through every step with clear communication, helping you make confident and informed decisions.",
+  },
+  {
+    icon: "😊",
+    title: "Affordable and Transparent Pricing ",
+    description:
+      " We offer competitive pricing with clear cost breakdowns, making high-quality dental care accessible without compromising on standards.",
   },
 ];
 
 const services = [
   {
-    title: "Quick Discussion",
+    title: " Initial Consultation ",
     description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+      "We begin with a comprehensive dental evaluation, including X-rays and advanced digital scans, to assess your oral health. Our team discusses your concerns and explains suitable crown and bridge treatment options to help you make an informed decision.",
   },
   {
-    title: "Mouth Check ",
+    title: "  Personalized Treatment Planning ",
     description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+      "Using digital technology, we create a customized treatment plan tailored to your dental needs. This ensures precision, efficiency, and predictable results. ",
   },
   {
-    title: "X-rays (Only if Needed)",
+    title: "Tooth Preparation & Digital Impressions ",
     description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
+      "For crowns, the affected tooth is reshaped, while for bridges, adjacent teeth or implants are prepared. We then take accurate digital impressions using intra-oral scanning for a precise fit. ",
   },
   {
-    title: " Deep Cleaning ",
+    title: " Temporary Restoration (If Required) ",
     description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
+      "If needed, temporary crowns or bridges are placed to protect your teeth while your permanent restoration is being prepared.",
   },
   {
-    title: "Next Steps & Advice ",
+    title: "Advanced Fabrication  ",
     description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
+      "Your custom crown or bridge is designed using modern CAD/CAM technology, allowing for quick, precise, and high-quality restorations using premium materials.  ",
+  },
+  {
+    title: " Fitting & Adjustments ",
+    description:
+      " The final restoration is carefully placed and adjusted to ensure proper fit, bite alignment, and comfort. ",
+  },
+  {
+    title: "Final Placement & Care Guidance  ",
+    description:
+      " Once perfected, the crown or bridge is securely fixed in place. We also provide detailed aftercare instructions to maintain longevity and oral health.",
+  },
+  {
+    title: " Follow-Up Care ",
+    description:
+      "Regular follow-ups are scheduled to monitor your progress and ensure long-term success of your dental crowns or bridges.  ",
   },
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: " Will getting a crown or bridge hurt?",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "The procedure is carried out under anesthesia, so you won’t feel pain during treatment. Mild sensitivity afterward is normal and settles quickly..  ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "How durable are dental crowns and bridges? ",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      " They are designed to be long-lasting and can serve you well for years with good oral hygiene and routine dental check-ups.",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "Is it possible to eat normally after the treatment? ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "Yes, once your crown or bridge is placed, you can return to regular eating habits, with minor precautions initially. ",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "How are crowns different from bridges?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "Crowns are used to restore and protect a single damaged tooth, whereas bridges are used to replace one or more missing teeth. ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "What if my crown or bridge gets damaged later?",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "If needed, they can be repaired or replaced to restore proper function and appearance. ",
   },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
-  },
+  
 ];
 
-const  CrownsBridges  = () => {
+const CrownsBridges = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -131,14 +160,35 @@ const  CrownsBridges  = () => {
         </div>
       </div>
 
+      <div className="book_appoint">
+        <div className="book_appoint_container" data-aos="fade-up">
+          <div className="book_appoint_text">
+            <h2> What Are Dental Crowns?  </h2>
+            <p>
+              Dental crowns are custom-made caps designed to cover and protect damaged or
+              weakened teeth. At Denza Dental, each crown is carefully crafted to restore the
+              tooth’s shape, size, strength, and natural appearance, ensuring both function and
+              aesthetics. Using advanced techniques and high-quality materials, crowns
+              provide long-lasting protection while seamlessly blending with your natural teeth.
+              They are an effective solution for preserving tooth structure, improving bite
+              function, and enhancing overall smile confidence.
+            </p>
+          </div>
+
+          
+
+          <div className="book_appoint_side red_background">
+            <img src={apointment} alt="Dental Appointment " />
+          </div>
+        </div>
+      </div>
+
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+            <h2>Why Choose Denza Dental for Dental Crowns and Bridges in Pune? </h2>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
+              
             </p>
           </div>
 
@@ -156,11 +206,9 @@ const  CrownsBridges  = () => {
 
       <div className="third_section">
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
+          <h2>Treatment Process for Dental Crowns and Bridges </h2>
           <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
+           
           </p>
         </div>
 
@@ -175,52 +223,7 @@ const  CrownsBridges  = () => {
         </div>
       </div>
 
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
-            </p>
 
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
-
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
-          </div>
-
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
-          </div>
-        </div>
-      </div>
 
       <div className="faq_section1">
         <div className="faq_header">
@@ -258,7 +261,7 @@ const  CrownsBridges  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +295,4 @@ const  CrownsBridges  = () => {
   );
 };
 
-export default  CrownsBridges ;
+export default CrownsBridges;

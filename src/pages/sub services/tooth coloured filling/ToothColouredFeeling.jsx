@@ -40,30 +40,26 @@ const whyChooseData = [
 
 const services = [
   {
-    title: "Quick Discussion",
+    title: " Composite Resin Fillings",
     description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+      "These are the most commonly used tooth-colored fillings. They blend naturally with your teeth, making them ideal for visible areas like front teeth. They also bond directly to the tooth, providing good strength and support.",
   },
   {
-    title: "Mouth Check ",
+    title: "Ceramic Fillings",
     description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+      "Ceramic fillings are made from porcelain and offer excellent durability and stain resistance. They closely match the natural tooth color and are a great option for patients looking for long-lasting and aesthetic results.  ",
   },
   {
-    title: "X-rays (Only if Needed)",
+    title: "Glass Ionomer Fillings",
     description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
+      "These fillings release fluoride, which helps protect the tooth from further decay. They are usually recommended for areas that are not under heavy chewing pressure and are often used for children or near the gum line. ",
   },
   {
-    title: " Deep Cleaning ",
+    title: " Compomer Fillings ",
     description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
+      "A combination of composite resin and glass ionomer, compomer fillings provide both aesthetics and some fluoride release. They are a good option for moderate restorations where both strength and appearance matter.",
   },
-  {
-    title: "Next Steps & Advice ",
-    description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
-  },
+
 ];
 
 const faqs = [
@@ -73,30 +69,26 @@ const faqs = [
       " Tooth-colored fillings at Denza Dental are made from composite resin that matches your natural tooth shade, providing a seamless and aesthetic restoration for cavities or minor damage.  ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "How long does a tooth-colored filling procedure take?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      " At Denza Dental, a tooth-colored filling usually takes about 30 to 60 minutes, depending on the size of the cavity and the condition of the tooth.  ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "Are tooth-colored fillings better than metal fillings?",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      " Yes, tooth-colored fillings are preferred for their natural appearance, strong bonding to the tooth, and mercury-free composition, making them a safer and more aesthetic option.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "Can tooth-colored fillings break or wear out? ",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      " Like any dental restoration, tooth-colored fillings can wear over time. However, with proper care and regular check-ups at Denza Dental, they can last for many years.  ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: " Can I eat immediately after getting a tooth-colored filling?",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "You can usually eat soon after the procedure, but it’s best to avoid hard or sticky foods for a few hours to allow the filling to settle properly.",
   },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
-  },
+  
 ];
 
 const ToothColouredFeeling = () => {
@@ -152,6 +144,35 @@ const ToothColouredFeeling = () => {
         </div>
       </div>
 
+      <div className="book_appoint">
+        <div className="book_appoint_container" data-aos="fade-up">
+          <div className="book_appoint_text">
+            <h2> Reasons for Dental Fillings</h2>
+            <p>
+              Dental fillings are commonly used to treat tooth decay by restoring areas
+              affected by cavities. They are also effective in repairing chipped or cracked
+              teeth, helping to bring back the tooth’s strength and structure. By filling
+              damaged areas, they prevent further decay or infection and stop cavities
+              from spreading.
+            </p>
+
+            <p>
+              In addition, dental fillings improve the overall function of your teeth, making
+              chewing and biting comfortable again. They can also enhance the
+              appearance of discolored teeth by blending naturally with your tooth color.
+              Fillings help reduce tooth sensitivity by sealing exposed areas and
+              protecting the tooth from hot and cold temperatures.
+            </p>
+
+          </div>
+
+          <div className="book_appoint_side red_background">
+            <img src={apointment} alt="Dental Appointment " />
+          </div>
+        </div>
+      </div>
+
+      {/*
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
@@ -179,14 +200,14 @@ const ToothColouredFeeling = () => {
           </div>
         </div>
       </div>
+      */}
+
 
       <div className="third_section">
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
+          <h2> Types Of Tooth Fillings </h2>
           <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
+
           </p>
         </div>
 
@@ -209,42 +230,20 @@ const ToothColouredFeeling = () => {
       <div className="book_appoint">
         <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
+            <h2>Dental Filling Recovery and Aftercare – Denza Dental </h2>
             <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
+              Most patients at Denza Dental experience little to no discomfort after a dental filling and can return to their
+              daily routine right away. Any mild sensitivity usually settles within a few days as the tooth adjusts to the
+              new filling.
             </p>
 
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
+            <p>
+              To ensure the best results, it is important to avoid chewing on the treated tooth for the first 24 hours so the
+              filling can properly set. Maintaining good oral hygiene by brushing twice a day and flossing regularly helps
+              keep the filling and surrounding teeth healthy. Regular dental check-ups at Denza Dental are also
+              essential to monitor the condition of the filling and ensure long-term oral health.
+            </p>
 
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
           </div>
 
           <div className="book_appoint_side red_background">
@@ -252,6 +251,9 @@ const ToothColouredFeeling = () => {
           </div>
         </div>
       </div>
+
+
+
 
       <div className="faq_section1">
         <div className="faq_header">
@@ -269,7 +271,7 @@ const ToothColouredFeeling = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-               
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>
