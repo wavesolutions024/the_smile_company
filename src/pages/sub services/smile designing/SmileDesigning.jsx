@@ -9,99 +9,112 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
+
 
 const whyChooseData = [
   {
     icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "Precision-Driven Expertise",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "Our team combines clinical expertise with advanced smile designing techniques to deliver accurate, long-lasting results tailored to each patient. ",
   },
   {
     icon: "🦷",
-    title: "Advanced Technology",
+    title: "Customized Smile Solutions ",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "Every smile is unique, which is why we create personalized treatment plans that align with your facial features, dental structure, and aesthetic goals. ",
   },
   {
     icon: "💰",
-    title: "Affordable Packages",
+    title: "Advanced Digital Technology",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "We use modern tools like 3D imaging and digital scanning to ensure precise planning and predictable, high-quality outcomes.",
   },
   {
     icon: "😊",
-    title: "Patient-Centric Approach",
+    title: "Patient-Centric Experience ",
     description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
+      "From consultation to final results, we ensure a smooth, transparent, and comfortable journey, guiding you at every step of your smile transformation. ",
   },
 ];
 
 const services = [
   {
-    title: "Quick Discussion",
+    title: "Teeth Whitening ",
     description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+      "Professional whitening treatments help remove deep stains and discoloration, improving the brightness of your smile with safe and effective methods. ",
   },
   {
-    title: "Mouth Check ",
+    title: "Porcelain Veneers ",
     description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+      "Thin, custom-made shells are placed over the front surface of teeth to correct gaps, discoloration, and minor alignment issues, delivering a natural appearance.  ",
   },
   {
-    title: "X-rays (Only if Needed)",
+    title: "Dental Bonding",
     description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
+      "A tooth-colored resin is applied to repair chips, close small gaps, and improve the shape of teeth, offering a quick and minimally invasive solution.",
   },
   {
-    title: " Deep Cleaning ",
+    title: "Dental Implants ",
     description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
+      "Implants replace missing teeth by acting as artificial roots, providing strong support for crowns and restoring both function and appearance.",
   },
   {
-    title: "Next Steps & Advice ",
+    title: " Gum Contouring",
     description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
+      "This procedure reshapes uneven gum lines, enhancing the balance between teeth and gums for a more symmetrical smile.  ",
+  },
+  {
+    title: "Clear Aligners (Invisalign)  ",
+    description:
+      "Transparent aligners gradually straighten teeth without the need for metal braces, offering a comfortable and discreet orthodontic solution.  ",
+  },
+  {
+    title: "Facial Harmony  ",
+    description:
+      "Smile designing considers overall facial features such as the eyes, lips, and jawline to create a well-balanced and aesthetically pleasing result.  ",
+  },
+  {
+    title: " Smile Line Enhancement",
+    description:
+      "The alignment of upper teeth with the curve of the lower lip is refined to achieve a natural and attractive smile while speaking and smiling. ",
   },
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "What does smile designing include? ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "Smile designing involves a combination of cosmetic and restorative treatments aimed at improving the appearance, alignment, and overall balance of your smile. ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "Who is a good candidate for smile designing?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      " Anyone with concerns like stained, uneven, chipped, or misaligned teeth can benefit from a customized smile designing plan.",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "How long does a smile designing treatment take?  ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "The duration varies depending on the procedures involved, ranging from a single visit for minor enhancements to multiple visits for complete smile makeovers.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "Will smile designing look natural?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "Yes, treatments are carefully planned to match your facial features, ensuring results that look natural and enhance your overall appearance.  ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "Is there any downtime after smile designing procedures?",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "Most cosmetic treatments involve minimal to no downtime, allowing you to return to your daily routine quickly. ",
   },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
-  },
+
 ];
 
-const  SmileDesigning  = () => {
+const SmileDesigning = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,27 +131,16 @@ const  SmileDesigning  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="Smiling, Healthy Teeth" />
 
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+            <h2>Advanced Smile Designing Clinic in Pune</h2>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
+              At Denza Dental, we are dedicated to creating confident, natural-looking smiles through
+              advanced smile designing solutions. Our focus on precision, aesthetics, and patient
+              satisfaction has made us a trusted choice for smile transformations in Pune.
             </p>
           </div>
 
@@ -154,13 +156,41 @@ const  SmileDesigning  = () => {
         </div>
       </div>
 
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>Tips for Smile Design Treatment </h2>
+
+          <ul>
+            <li>
+              <b>Consult a Professional: </b>In all cases, careful consultation with the dentist is required to
+              agree upon the goals and design an individualized protocol.
+            </li>
+
+            <li>
+              <b>Follow Post-Treatment Care: </b> Obey your dentist’s instructions in aftercare, so that your
+              smile design results can be sustained.
+            </li>
+
+            <li>
+              <b>Maintain Oral Hygiene: </b>It is also extremely important to keep your healthy smile, so that,
+              through brushing and flossing plus checkups, it continues to stay that way.
+            </li>
+
+            <li>
+              <b>Avoid Staining Foods: </b>Do not drink coffee, tea, or tobacco to keep that of your smile
+              white. Features of Smile Designing
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+
       <div className="third_section">
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
+          <h2>Key Features of Smile Designing</h2>
           <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
+
           </p>
         </div>
 
@@ -176,7 +206,7 @@ const  SmileDesigning  = () => {
       </div>
 
       <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
+        <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
             <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
             <p>
@@ -258,7 +288,7 @@ const  SmileDesigning  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +322,4 @@ const  SmileDesigning  = () => {
   );
 };
 
-export default  SmileDesigning ;
+export default SmileDesigning;

@@ -9,6 +9,8 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
+
 
 const whyChooseData = [
   {
@@ -39,69 +41,66 @@ const whyChooseData = [
 
 const services = [
   {
-    title: "Quick Discussion",
+    title: "Comfortable Start",
     description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+      "We apply a numbing gel to ensure a pain-free and relaxed experience.",
   },
   {
-    title: "Mouth Check ",
+    title: "Gum Preparation",
     description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+      "Your gums are thoroughly cleaned to create a healthy base for treatment. ",
   },
   {
-    title: "X-rays (Only if Needed)",
+    title: "Laser Treatment ",
     description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
+      "Advanced laser technology gently removes dark pigmentation, revealing a natural pink tone. ",
   },
   {
-    title: " Deep Cleaning ",
+    title: "Aftercare Guidance",
     description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
+      "You receive simple instructions on diet, oral care, and healing for the best results.",
   },
-  {
-    title: "Next Steps & Advice ",
-    description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
-  },
+
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "How do you treat gum depigmentation?",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "At Denza Dental, we use advanced laser technology to gently remove dark pigmentation from the gums, revealing a healthy pink appearance—without cuts or stitches. ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: " Is gum depigmentation safe?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "Yes, gum depigmentation is a safe and commonly performed cosmetic procedure when done by experienced dental professionals using modern laser techniques. ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: " What is the cost of gum depigmentation in Kharadi, Pune?",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "The cost usually ranges between ₹5,000 to ₹15,000, depending on the extent of pigmentation and treatment required.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "Can gums return to their original color after treatment? ",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "Results are long-lasting, but slight repigmentation can occur over time in some cases, especially due to genetics or lifestyle habits like smoking. ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "Is gum pigmentation normal? ",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "Yes, dark gums are completely normal and often caused by melanin levels, genetics, or external factors like smoking. ",
   },
   {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
+    question: "Can gums be lightened naturally? ",
     answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "Natural methods have limited effect. Professional treatments like laser gum depigmentation provide the most effective and noticeable results. ",
   },
+
 ];
 
-const  GumDepizmentation  = () => {
+const GumDepizmentation = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,49 +117,112 @@ const  GumDepizmentation  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="smiling woman , healthy teeth " />
 
-      <div className="second_section">
-        <div className="second_section_container">
-          <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+      <div className="book_appoint">
+        <div className="book_appoint_container" data-aos="fade-up">
+          <div className="book_appoint_text">
+            <h2>What is Gum Depigmentation?</h2>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
+              Gum depigmentation eradicates dark spots from gums using laser technology. This
+              procedure lightens dark gums by targeting excess melanin deposits. The treatment
+              creates natural-looking pink gums in one visit. Our gum-bleaching techniques restore
+              confidence in your smile.
             </p>
+
           </div>
 
-          <div className="why_choose_cards">
-            {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
+          <div className="book_appoint_side red_background">
+            <img src={apointment} alt="Dental Appointment " />
           </div>
         </div>
       </div>
+
+      <div className="teeth_cleaning_parent parent">
+        <div className="teeth_cleaning_cont cont">
+          <h2>Best Dental Clinic for Gum Depigmentation in Kharadi, Pune | Denza Dental  </h2>
+
+          <p>
+            Looking for gum depigmentation near you in Kharadi, Pune? At Denza Dental, we
+            specialize in advanced laser gum depigmentation treatments that restore the natural
+            pink appearance of your gums.
+          </p>
+
+          <p>
+            Step into a modern, comfortable clinic designed to deliver high-quality dental care. Our
+            experienced team combines expertise with the latest technology to ensure safe,
+            effective, and long-lasting results.
+          </p>
+        </div>
+      </div>
+
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>Why Choose Denza Dental for Gum Depigmentation?</h2>
+
+          <ul>
+            <li>Advanced Laser Technology for precise and effective gum bleaching </li>
+            <li>Experienced Dental Team with years of expertise in cosmetic dentistry</li>
+            <li>Personalized Treatment Plans tailored to your unique smile goals</li>
+            <li>Transparent Pricing with no hidden costs</li>
+            <li>High Standards of Sterilization for complete safety </li>
+            <li>Digital Imaging Systems for accurate diagnosis and planning</li>
+            <li>Flexible Appointments to suit your schedule</li>
+            <li>Comfort-Focused Care in a relaxing, patient-friendly environment</li>
+          </ul>
+
+          <p>
+            At Denza Dental, every gum depigmentation treatment follows global standards,
+            ensuring optimal results with maximum comfort.
+          </p>
+
+          <p>
+            Your search for the best gum depigmentation in Kharadi, Pune ends here—experience
+            expert care and confident smiles at Denza Dental.
+          </p>
+        </div>
+      </div>
+
+      <div className="book_appoint parent" style={{ background: "white" }}>
+        <div className="book_appoint_container" data-aos="fade-up">
+          <div className="book_appoint_side red_background">
+            <img src={apointment} alt="Dental Appointment " />
+          </div>
+
+          <div className="book_appoint_text">
+            <h2>Who Can Get Gum Depigmentation at Denza Dental?</h2>
+            <p>
+              Gum depigmentation is ideal for people with healthy gums who want to improve dark or
+              uneven gum color.
+            </p>
+
+            <p>Common Causes of Dark Gums</p>
+
+            <ol>
+              <li>Genetics</li>
+              <li> Smoking or lifestyle habits </li>
+              <li>Certain medications </li>
+              <li>Hormonal changes </li>
+            </ol>
+
+            <p>Before Treatment, We Check:</p>
+
+            <ol>
+              <li>Gum health and thickness</li>
+              <li>Tooth and root position </li>
+              <li>Medical history</li>
+              <li>Healing capacity </li>
+            </ol>
+
+          </div>
+        </div>
+      </div>
+
 
       <div className="third_section">
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
+          <h2>Gum Depigmentation Procedure at Denza Dental, Kharadi </h2>
           <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
           </p>
         </div>
 
@@ -175,50 +237,46 @@ const  GumDepizmentation  = () => {
         </div>
       </div>
 
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
-            </p>
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>Laser vs Manual Gum Depigmentation – Which is Better? </h2>
 
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
+          <p>
+            Laser gum depigmentation is generally the preferred choice due to its precision 
+and comfort compared to manual methods.
+          </p>
+          <p>Benefits of Laser Gum Depigmentation</p>
 
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
-          </div>
+          <ul>
+            <li>
+              <b>Less Bleeding </b>– Minimally invasive technique 
+            </li>
 
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
-          </div>
+            <li>
+              <b>Faster Healing </b>– Quicker recovery time
+            </li>
+
+            <li>
+              <b>High Precision </b>– Targets pigmentation accurately
+            </li>
+
+            <li>
+              <b>Minimal Discomfort </b>– More comfortable procedure 
+            </li>
+
+            <li>
+              <b>Better Gum Contours </b>– Smoother, natural-looking results 
+            </li>
+
+            <li>
+              <b>Predictable Outcomes </b>– Consistent and reliable results
+            </li>
+
+            <li>
+              <b>Shorter Treatment Time </b>– Efficient and quick procedure
+            </li>
+          
+          </ul>
         </div>
       </div>
 
@@ -258,7 +316,7 @@ const  GumDepizmentation  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +350,4 @@ const  GumDepizmentation  = () => {
   );
 };
 
-export default  GumDepizmentation ;
+export default GumDepizmentation;

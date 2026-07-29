@@ -9,6 +9,8 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
+
 
 const whyChooseData = [
   {
@@ -39,69 +41,81 @@ const whyChooseData = [
 
 const services = [
   {
-    title: "Quick Discussion",
+    title: " Consultation & Smile Analysis",
     description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+      "Your journey begins with a detailed consultation where we understand your concerns and smile goals. Our dentists evaluate your teeth, explain the procedure, and create a personalized treatment plan that suits your needs and budget. ",
   },
   {
-    title: "Mouth Check ",
+    title: "Professional Cleaning ",
     description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+      "Before the procedure, your teeth are thoroughly cleaned to remove plaque and buildup, ensuring a clean surface for effective bonding.",
   },
   {
-    title: "X-rays (Only if Needed)",
+    title: "Tooth Preparation",
     description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
+      "A mild conditioning solution is applied to slightly roughen the tooth surface for better adhesion. Protective measures are taken to keep your gums safe and comfortable.",
   },
   {
-    title: " Deep Cleaning ",
+    title: " Application of Composite Resin",
     description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
+      "Tooth-colored composite material is applied in layers. Each layer is hardened using a special curing light to build the desired shape and structure.",
   },
   {
-    title: "Next Steps & Advice ",
+    title: " Shaping & Contouring ",
     description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
+      "Our dentists carefully sculpt and shape the bonded material to create natural-looking teeth that align perfectly with your bite. ",
   },
+  {
+    title: " Polishing & Final Adjustments ",
+    description:
+      "The bonded teeth are polished for a smooth, glossy finish. Final bite checks ensure comfort, function, and a flawless smile.",
+  },
+
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "How long does composite bonding last?",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "Composite bonding at Denza Dental typically lasts 5–7 years with proper care, good oral hygiene, and regular dental check-ups.",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "What is tooth bonding? ",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "Tooth bonding is a cosmetic dental procedure where a tooth-colored resin is applied and shaped to improve the appearance of teeth affected by chips, gaps, stains, or minor misalignment. ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "What is the cost of composite bonding in Kharadi, Pune?",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "The cost of composite bonding at Denza Dental usually ranges between ₹3,000 to ₹8,000 per tooth, depending on the complexity of the case and the number of teeth treated.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "Is composite bonding painful?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "No, composite bonding is a painless procedure. It is minimally invasive and usually does not require anesthesia unless used for restorative purposes.",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "How many teeth can be treated with composite bonding?",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "The number of teeth depends on your smile goals. Some patients choose bonding for a single tooth, while others opt for multiple teeth for a complete smile enhancement. ",
   },
   {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
+    question: "Who is an ideal candidate for composite bonding?",
     answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "Anyone with minor cosmetic concerns such as chipped teeth, small gaps, discoloration, or slightly uneven teeth can benefit from composite bonding.",
   },
+  {
+    question: "Can composite bonding be removed or reversed? ",
+    answer:
+      "Yes, composite bonding is generally reversible or adjustable since it involves minimal alteration of your natural teeth.",
+  },
+
 ];
 
-const  CompositeBonding  = () => {
+const CompositeBonding = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,49 +132,98 @@ const  CompositeBonding  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="Composite Bonding" />
 
-      <div className="second_section">
-        <div className="second_section_container">
-          <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2>What is Composite Bonding? </h2>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
+              Composite bonding is a simple and effective cosmetic dental treatment that
+              enhances the appearance of your teeth using a tooth-colored resin material. At
+              Denza Dental, this procedure is carefully performed to give you a natural and
+              aesthetically pleasing smile.
             </p>
-          </div>
 
-          <div className="why_choose_cards">
-            {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
+            <p>The resin is directly applied and bonded to your teeth to correct multiple
+              concerns, such as:
+            </p>
+
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Common Reasons for Braces{" "}
+            </p>
+
+            <ul style={{ paddingLeft: "20px" }}>
+              <li>Small chips or cracks in front teeth</li>
+              <li>Gaps between teeth</li>
+              <li>Stubborn stains or discoloration</li>
+              <li>Minor misalignment</li>
+              <li>Worn or uneven tooth edges </li>
+
+            </ul>
           </div>
         </div>
       </div>
+
+      <div className="parent braces_treat_parent">
+        <div className="cont braces_treat_cont">
+          <div className="braces_treat_right">
+            <h2>Key Features of Composite Bonding at Denza Dental  </h2>
+
+
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Typical Duration
+            </p>
+
+            <ul>
+              <li>
+                <b>Quick & Efficient Treatment </b>Composite bonding is a fast procedure that often gets completed in a single visit.
+                You can walk in with dental concerns and leave with a refreshed smile—no
+                downtime or recovery required.
+              </li>
+
+              <li>
+                <b>Minimally Invasive Approach </b>This treatment preserves your natural teeth, as little to no enamel removal is
+                needed. It’s a gentle solution that keeps future dental options open while
+                protecting your tooth structure.
+              </li>
+
+              <li>
+                <b>Highly Versatile Solution </b>Composite bonding can address multiple concerns in one go—from chips and
+                gaps to discoloration and uneven edges—making it a flexible cosmetic option.
+              </li>
+
+              <li>
+                <b>Natural-Looking Results </b>The composite resin is carefully shade-matched to blend seamlessly with your
+                natural teeth, ensuring a flawless and natural appearance.
+              </li>
+
+              <li>
+                <b>Customized Smile Enhancement </b>Each treatment is tailored to your unique smile goals, delivering results that
+                complement your facial features and overall look.
+              </li>
+
+            </ul>
+          </div>
+
+          <div className="braces_treat_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+        </div>
+      </div>
+
 
       <div className="third_section">
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
+          <h2>Composite Bonding Procedure at Denza Dental, Kharadi
+            Understanding the composite bonding process helps you feel
+            confident about your smile transformation. Here’s what your
+            journey at Denza Dental looks like:</h2>
           <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
+
           </p>
         </div>
 
@@ -172,53 +235,6 @@ const  CompositeBonding  = () => {
               <p>{service.description}</p>
             </div>
           ))}
-        </div>
-      </div>
-
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
-            </p>
-
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
-
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
-          </div>
-
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
-          </div>
         </div>
       </div>
 
@@ -258,7 +274,7 @@ const  CompositeBonding  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +308,4 @@ const  CompositeBonding  = () => {
   );
 };
 
-export default  CompositeBonding ;
+export default CompositeBonding;

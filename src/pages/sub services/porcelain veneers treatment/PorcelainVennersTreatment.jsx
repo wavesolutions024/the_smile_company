@@ -9,99 +9,109 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
+
 
 const whyChooseData = [
   {
     icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "Convenient Location in Kharadi",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "Convenient Location in Kharadi Our clinic is easily accessible in Kharadi, Pune, making it convenient for patients seeking high-quality porcelain veneers near them.",
   },
   {
     icon: "🦷",
-    title: "Advanced Technology",
+    title: "Experienced Dentists with Global Exposure",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "Our skilled team brings extensive experience along with international exposure, ensuring precise veneer placement and natural-looking results.",
   },
   {
     icon: "💰",
-    title: "Affordable Packages",
+    title: "Advanced Digital Technology",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "We use modern tools and techniques to design customized veneers that perfectly match your facial features and dental structure.",
   },
   {
     icon: "😊",
-    title: "Patient-Centric Approach",
+    title: "Personalized Smile Solutions",
     description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
+      "Each treatment is tailored to your unique needs and aesthetic goals, ensuring a smile that looks natural and balanced.",
+  },
+  {
+    icon: "😊",
+    title: "Comfort-Focused Care",
+    description:
+      "We prioritize a gentle, pain-free experience, making your veneer treatment smooth and stress-free. ",
+  },
+  {
+    icon: "😊",
+    title: "Trusted Results",
+    description:
+      "Denza Dental is known for delivering consistent, high-quality outcomes with a strong focus on patient satisfaction.",
   },
 ];
 
 const services = [
   {
-    title: "Quick Discussion",
+    title: " Consultation & Smile Assessment ",
     description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+      "Your journey begins with a detailed evaluation where we understand your concerns and discuss your smile goals to plan the ideal treatment. ",
   },
   {
-    title: "Mouth Check ",
+    title: " Tooth Preparation ",
     description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+      "A minimal amount of enamel is gently reshaped to create space for the veneers while preserving maximum natural tooth structure. ",
   },
   {
-    title: "X-rays (Only if Needed)",
+    title: " Digital Scanning & Design ",
     description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
+      " We use advanced digital scanning technology to capture precise impressions and design veneers that fit perfectly.",
   },
   {
-    title: " Deep Cleaning ",
+    title: "Custom Veneer Fabrication ",
     description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
+      "Your veneers are carefully crafted using high-quality porcelain to match the color, shape, and size of your natural teeth. ",
   },
   {
-    title: "Next Steps & Advice ",
+    title: "Veneer Placement",
     description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
+      " Once ready, the veneers are securely bonded to your teeth, instantly enhancing your smile.",
+  },
+  {
+    title: " Final Adjustments & Aftercare",
+    description:
+      "We fine-tune the fit and appearance for maximum comfort and provide guidance to help maintain your new smile long-term. ",
   },
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "Are porcelain veneers a good option for smile enhancement? ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "Yes, veneers are a popular cosmetic solution for improving the shape, color, and alignment of teeth, offering natural-looking and long-lasting results. ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "Can teeth get damaged under veneers?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "With proper placement and good oral hygiene, veneers protect the tooth surface. However, maintaining regular dental care is important to prevent decay. ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "Is the veneer procedure painful?",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "The procedure is minimally invasive and typically comfortable, with little to no discomfort during or after treatment. ",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "Are there any disadvantages of porcelain veneers?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "Are there any disadvantages of porcelain veneers? Veneers are a long-term solution and may require minor enamel reshaping. They also need proper care to maintain their appearance and durability over time. ",
   },
-  {
-    question: "Are X-rays at Denza Dental Safe?",
-    answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
-  },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
-  },
+
 ];
 
-const  PorcelainVennersTreatment  = () => {
+const PorcelainVennersTreatment = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,27 +128,16 @@ const  PorcelainVennersTreatment  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="machine or tools/equipments " />
 
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+            <h2>Why Choose Denza Dental for Porcelain Veneers in Kharadi, Pune?</h2>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
+              Denza Dental is a trusted destination for porcelain veneers, offering
+              advanced cosmetic solutions to enhance your smile with precision and
+              care.
             </p>
           </div>
 
@@ -154,13 +153,27 @@ const  PorcelainVennersTreatment  = () => {
         </div>
       </div>
 
+      <div className="teeth_cleaning_parent parent">
+        <div className="teeth_cleaning_cont cont">
+          <h2>What Are Porcelain Veneers? </h2>
+
+          <p>
+            Porcelain veneers are thin, custom-crafted shells made from high-quality ceramic
+            that are placed on the front surface of your teeth to enhance their appearance. At
+            Denza Dental, veneers are designed to correct concerns such as discoloration,
+            chips, gaps, and minor misalignment. They offer a durable, stain-resistant
+            solution that mimics the natural look of teeth, helping you achieve a brighter,
+            more even, and confident smile.
+          </p>
+
+        </div>
+      </div>
+
       <div className="third_section">
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
+          <h2>The Process of Getting Porcelain Veneers at Denza Dental  </h2>
           <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
+
           </p>
         </div>
 
@@ -175,52 +188,42 @@ const  PorcelainVennersTreatment  = () => {
         </div>
       </div>
 
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
-            </p>
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>Benefits of Porcelain Veneers </h2>
 
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
+          <ul>
+            <li>
+              <b>Natural-Looking Results </b>Porcelain veneers are designed to closely match the color, shape,
+              and translucency of natural teeth, creating a seamless and aesthetic
+              smile.
+            </li>
 
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
-          </div>
+            <li>
+              <b>Long-Lasting Durability </b>With proper care and maintenance, veneers offer a strong and
+              reliable solution that can last for many years.
+            </li>
 
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
-          </div>
+            <li>
+              <b>Stain-Resistant Surface </b>Porcelain material resists common stains from food and beverages,
+              helping your smile stay bright and fresh.
+            </li>
+
+            <li>
+              <b>Instant Smile Transformation </b>Veneers provide noticeable improvements in just a few visits,
+              enhancing the overall appearance of your smile quickly.
+            </li>
+
+            <li>
+              <b>Minimally Invasive Treatment</b>The procedure involves minimal tooth preparation, preserving most of
+              your natural tooth structure compared to more extensive treatments.
+            </li>
+
+          </ul>
         </div>
       </div>
+
+
 
       <div className="faq_section1">
         <div className="faq_header">
@@ -258,7 +261,7 @@ const  PorcelainVennersTreatment  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +295,4 @@ const  PorcelainVennersTreatment  = () => {
   );
 };
 
-export default  PorcelainVennersTreatment ;
+export default PorcelainVennersTreatment;

@@ -14,27 +14,27 @@ import PageTop from "../../../comp/page_top/PageTop";
 const whyChooseData = [
   {
     icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: " Initial Consultation",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "Your treatment begins with a comprehensive dental examination, including digital imaging to assess the extent of decay or damage. We discuss your concerns, review your dental history, and create a personalized treatment plan along with a clear cost estimate.",
   },
   {
     icon: "🦷",
-    title: "Advanced Technology",
+    title: " Tooth Preparation & Digital Scanning",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "The damaged portion of the tooth is carefully removed and the area is thoroughly cleaned. Using advanced intraoral 3D scanning, we capture precise digital impressions, ensuring accuracy and a perfect fit. Shade matching is also done to blend seamlessly with your natural teeth.",
   },
   {
     icon: "💰",
-    title: "Affordable Packages",
+    title: "Custom Design & Fabrication",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "With advanced CAD/CAM technology, your inlay or onlay is digitally designed and crafted from a high-quality ceramic block. This allows for precise, durable, and natural-looking restorations, often completed in a single visit without the need for temporary solutions.",
   },
   {
     icon: "😊",
-    title: "Patient-Centric Approach",
+    title: "Placement & Finishing",
     description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
+      "The custom restoration is placed and adjusted to ensure a comfortable and natural bite. Once finalized, it is securely bonded using high-strength dental cement and polished for a smooth finish. You will also receive guidance on maintaining your restoration for long-term results. ",
   },
 ];
 
@@ -68,41 +68,46 @@ const services = [
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "What are inlays and onlays in dentistry?  ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "Inlays and onlays are custom restorations used to repair teeth with moderate damage or decay. They offer a stronger and more precise alternative to traditional fillings while preserving natural tooth structure.  ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "When are inlays or onlays recommended?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "They are ideal when a tooth is too damaged for a filling but does not require a full crown, helping restore strength and function effectively. ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "How are inlays different from veneers?  ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "Inlays repair damage within the tooth surface, while veneers are thin coverings placed on the front of teeth mainly for cosmetic improvement.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "Are onlays a better option than crowns? ",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "Onlays are a more conservative choice as they cover only the damaged portion of the tooth, whereas crowns cover the entire tooth structure. ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "What materials are used for inlays and onlays? ",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "They are typically made from durable materials like ceramic or composite resin, chosen for strength and a natural tooth-like appearance. ",
   },
   {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
+    question: "What is the purpose of an onlay? ",
     answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "An onlay restores and protects a tooth with larger areas of damage, especially when the cusps (chewing surfaces) are involved.",
+  },
+  {
+    question: "How do inlays compare to traditional metal fillings?",
+    answer:
+      "Inlays provide a more precise fit, better durability, and a natural look compared to traditional metal fillings, making them a preferred modern solution. ",
   },
 ];
 
-const  InlaysOnlays  = () => {
+const InlaysOnlays = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -120,13 +125,42 @@ const  InlaysOnlays  = () => {
   return (
     <>
       <PageTop title="Inlays Onlays" />
+<<<<<<< HEAD
+=======
+
+      <div className="book_appoint">
+        <div className="book_appoint_container" data-aos="fade-up">
+          <div className="book_appoint_text">
+            <h2> What Are Inlays & Onlays?</h2>
+            <p>
+              Inlays and onlays are custom-made dental restorations used to repair
+              teeth affected by decay or damage while preserving as much natural
+              tooth structure as possible. Inlays fit within the grooves of the tooth,
+              whereas onlays extend over one or more cusps, providing additional
+              coverage and strength. They are a conservative and durable
+              alternative to full crowns, restoring both function and appearance
+              effectively.
+            </p>
+
+          </div>
+
+          <div className="book_appoint_side red_background">
+            <img src={apointment} alt="Dental Appointment " />
+          </div>
+        </div>
+      </div>
+>>>>>>> c0742e5 (Updated dental pages and header)
 
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+            <h2>  The Inlays & Onlays Procedure at Denza Dental  </h2>
             <p>
+<<<<<<< HEAD
               
+=======
+
+>>>>>>> c0742e5 (Updated dental pages and header)
             </p>
           </div>
 
@@ -138,74 +172,6 @@ const  InlaysOnlays  = () => {
                 <p>{item.description}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="third_section">
-        <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
-        </div>
-
-        <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
-            </p>
-
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
-
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
-          </div>
-
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
           </div>
         </div>
       </div>
@@ -246,7 +212,7 @@ const  InlaysOnlays  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -280,4 +246,4 @@ const  InlaysOnlays  = () => {
   );
 };
 
-export default  InlaysOnlays ;
+export default InlaysOnlays;

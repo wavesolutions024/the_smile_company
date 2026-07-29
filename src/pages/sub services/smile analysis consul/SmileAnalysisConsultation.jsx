@@ -9,99 +9,87 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const whyChooseData = [
   {
     icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "Skilled Dentists with Global Exposure ",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "Our experienced dentists bring advanced skills and international exposure, ensuring precise smile analysis and effective treatment planning focused on aesthetics and long-term outcomes. ",
   },
   {
     icon: "🦷",
-    title: "Advanced Technology",
+    title: "Modern Digital Smile Technology",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "We use advanced tools like 3D imaging and smile design software to evaluate your facial features and dental structure with high accuracy. ",
   },
   {
     icon: "💰",
-    title: "Affordable Packages",
+    title: "Personalized & Patient-First Approach ",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "We prioritize your comfort with customized treatment plans, transparent pricing, flexible scheduling, and continuous support throughout your smile journey. ",
   },
-  {
-    icon: "😊",
-    title: "Patient-Centric Approach",
-    description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
-  },
+
 ];
 
 const services = [
   {
-    title: "Quick Discussion",
+    title: "Personalized Treatment Planning",
     description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+      "It helps create a clear and structured roadmap by identifying specific areas that need attention, ensuring realistic expectations and targeted results. ",
   },
   {
-    title: "Mouth Check ",
+    title: "Cost-Efficient Approach",
     description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+      "By focusing only on necessary treatments, smile analysis avoids unnecessary procedures and helps prioritize care, making it more cost-effective in the long run. ",
   },
   {
-    title: "X-rays (Only if Needed)",
+    title: "Improved Results & Function",
     description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
+      "A detailed analysis addresses underlying dental concerns, enhancing not just appearance but also overall function and long-term stability. ",
   },
   {
-    title: " Deep Cleaning ",
+    title: "Early Detection & Prevention  ",
     description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
+      "It helps identify potential issues at an early stage, reducing future complications and supporting better oral health maintenance. ",
   },
-  {
-    title: "Next Steps & Advice ",
-    description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
-  },
+
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "What does a smile analysis involve?",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "A smile analysis evaluates the alignment of your teeth, gum line, lip shape, and facial proportions to design a smile that looks natural and balanced.",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "Why is a smile assessment important before treatment?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      " It helps identify aesthetic and functional concerns, allowing for a more precise and personalized treatment plan. ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "What factors define an ideal smile?  ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "An ideal smile depends on tooth proportion, symmetry, gum display, and how well it complements your facial features.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "What happens during a smile analysis consultation?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "The consultation includes a detailed examination, digital imaging, and discussion of suitable treatment options based on your goals. ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "What is the cost of a smile makeover in Pune? ",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "The cost varies depending on the treatments involved. At Denza Dental, a clear and customized estimate is provided after evaluation.",
   },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
-  },
+
 ];
 
-const  SmileAnalysisConsultation  = () => {
+const SmileAnalysisConsultation = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,27 +106,16 @@ const  SmileAnalysisConsultation  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="Smile Analysis Consultation" />
 
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+            <h2> Advanced Smile Analysis Clinic in Pune </h2>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
+              Choosing the right clinic for smile analysis is essential for achieving a balanced,
+              confident smile. At Denza Dental, we combine expertise, advanced technology, and a
+              patient-first approach for accurate results.
             </p>
           </div>
 
@@ -154,13 +131,34 @@ const  SmileAnalysisConsultation  = () => {
         </div>
       </div>
 
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2>What is Smile Analysis?   </h2>
+
+            <p>Smile analysis in orthodontics dentistry measures key aspects of your smile:</p>
+            <ul style={{ paddingLeft: "20px" }}>
+              <li>Teeth position and alignment</li>
+              <li>Gum line symmetry</li>
+              <li>Bite relationship </li>
+              <li>Facial proportions</li>
+              <li>Lip line and movement</li>
+              <li>Color and shape of teeth </li>
+              <li>Benefits of Smile Analysis </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div className="third_section">
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
+          <h2> Benefits of Smile Analysis   </h2>
           <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
+
           </p>
         </div>
 
@@ -175,52 +173,7 @@ const  SmileAnalysisConsultation  = () => {
         </div>
       </div>
 
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
-            </p>
 
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
-
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
-          </div>
-
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
-          </div>
-        </div>
-      </div>
 
       <div className="faq_section1">
         <div className="faq_header">
@@ -258,7 +211,7 @@ const  SmileAnalysisConsultation  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +245,4 @@ const  SmileAnalysisConsultation  = () => {
   );
 };
 
-export default  SmileAnalysisConsultation ;
+export default SmileAnalysisConsultation;

@@ -5,6 +5,7 @@
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../../assets/service_hero.webp");
   position: relative;
+
   marquee {
     font-size: 80px;
     font-weight: 600;
@@ -12,12 +13,14 @@
     position: absolute;
     bottom: 15%;
   }
+
   .general_dental_cont {
     position: absolute;
     bottom: 6%;
     width: 100%;
     left: -50%;
     right: -50%;
+
     .bts_grp {
       display: flex;
       gap: calc(var(--unit));
@@ -37,6 +40,7 @@
         border-radius: 4px;
         text-decoration: none;
         transition: var(--trans);
+
         &:hover {
           background: var(--accent2);
           transform: translateY(-5px);
@@ -58,10 +62,12 @@
 @media (max-width: 768px) {
   .general_dental_parent {
     height: 60vh;
+
     marquee {
       font-size: 26px;
       bottom: 17%;
     }
+
     .general_dental_cont {
       .bts_grp {
         gap: calc(var(--unit) / 2);
@@ -93,12 +99,15 @@
       font-size: 22px;
       font-weight: 600;
     }
+
     .general_dental_cont {
       .bts_grp {
         gap: calc(var(--unit) / 2.5);
+
         .service1_btn {
           padding: 9px;
         }
+
         .call_btn {
           background: var(--accent2);
 
@@ -611,7 +620,7 @@
     grid-template-columns: 1fr;
   }
 
-  .service_card{
+  .service_card {
     padding: 1rem;
     min-height: auto;
   }
@@ -665,7 +674,96 @@
 
 
 @media(max-width: 550px) {
-   h2 {
+  h2 {
     font-size: 22px !important;
   }
+}
+
+.crown_info {
+  width: 100%;
+  padding: 90px 0;
+  text-align: center;
+
+  .section_number {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4b7bec;
+    margin-bottom: 30px;
+
+    strong {
+      color: var(--black);
+      font-weight: 700;
+    }
   }
+
+  h2 {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    line-height: 1.3;
+  }
+
+  p {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  ul {
+    max-width: 900px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    li {
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      color: var(--text);
+      line-height: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .crown_info {
+    padding: 70px 0;
+
+    .section_number {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p,
+    ul li {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .crown_info {
+    padding: 50px 0;
+
+    .section_number {
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: 26px;
+    }
+
+    p,
+    ul li {
+      font-size: 15px;
+      line-height: 26px;
+    }
+  }
+}

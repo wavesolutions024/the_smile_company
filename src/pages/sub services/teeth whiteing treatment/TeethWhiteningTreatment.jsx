@@ -9,31 +9,39 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
+
 
 const whyChooseData = [
   {
     icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "Experienced Dental Team ",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "Our dentists are well-trained in cosmetic procedures and bring advanced expertise, including international exposure, to deliver high-quality whitening results.",
   },
   {
     icon: "🦷",
-    title: "Advanced Technology",
+    title: "Advanced Whitening Techniques",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "We use modern whitening systems, including light-activated and advanced techniques, to achieve faster, safer, and more noticeable results.",
   },
   {
     icon: "💰",
-    title: "Affordable Packages",
+    title: "Patient-First Approach",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "Your comfort is our priority. We ensure a smooth, stress-free experience with gentle procedures and attentive care throughout your treatment.",
   },
   {
     icon: "😊",
-    title: "Patient-Centric Approach",
+    title: "Customized Whitening Solutions",
     description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
+      "Each treatment is tailored based on your dental condition and goals, ensuring optimal and natural-looking results. ",
+  },
+  {
+    icon: "😊",
+    title: "Proven & Reliable Results ",
+    description:
+      "With a focus on quality care and patient satisfaction, Denza Dental is trusted for delivering consistent and effective teeth whitening outcomes.",
   },
 ];
 
@@ -67,41 +75,52 @@ const services = [
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "What is the cost of teeth whitening in Pune? ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      " The cost varies based on the method used and individual requirements. At Denza Dental, pricing is discussed transparently during your consultation.",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: " How long do teeth whitening results last? ",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "Results can last several months to a few years, depending on your lifestyle, diet, and oral hygiene habits.  ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: " Is teeth whitening a permanent solution? ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      " Teeth whitening is not permanent, but results can be maintained with proper care and occasional touch-ups.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: " Can yellow stains be effectively removed? ",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      " Yes, professional whitening treatments are designed to reduce or eliminate most surface stains and discoloration.",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: " How many sessions are needed for teeth whitening? ",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      " Many patients see visible results in a single session, though some may require additional treatments for optimal brightness.",
   },
   {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
+    question: "Is teeth whitening safe for everyone?  ",
     answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "Teeth whitening is generally safe, but suitability depends on your dental condition. A consultation helps determine the best approach.  ",
   },
+  {
+    question: "How can I maintain my whitening results? ",
+    answer:
+      "Maintaining good oral hygiene, limiting staining foods, and regular dental visits help keep your smile bright.  ",
+  },
+  {
+    question: "How do I book a teeth whitening appointment at Denza Dental?  ",
+    answer:
+      " You can schedule an appointment by contacting the clinic directly or visiting Denza Dental in Kharadi for a consultation.",
+  },
+  
 ];
 
-const  TeethWhiteningTreatment  = () => {
+const TeethWhiteningTreatment = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,15 +137,50 @@ const  TeethWhiteningTreatment  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
+      <PageTop title="receptionist and patient communication " />
+
+      <div className="book_appoint">
+        <div className="book_appoint_container" data-aos="fade-up">
+          <div className="book_appoint_text">
+            <h2> Best Teeth Whitening in Kharadi, Pune</h2>
+            <p>
+              At Denza Dental, we believe a brighter smile can boost your confidence and enhance
+              your overall appearance. Here’s why patients choose us for professional teeth whitening
+              in Kharadi, Pune:
+            </p>
+
+            <ol>
+              <li>
+                <strong>Experienced Dental Professionals</strong> Our team has extensive experience in cosmetic dentistry, ensuring safe, effective, and
+                high-quality teeth whitening treatments.
+              </li>
+              <li>
+                <strong>Advanced Whitening Technology</strong> We use modern whitening systems and advanced equipment to deliver noticeable,
+                long-lasting results with minimal sensitivity.
+              </li>
+              <li>
+                <strong>Personalized Whitening Solutions</strong> Every smile is different, so we customize each teeth whitening treatment based on your
+                dental condition and desired results.
+              </li>
+              <li>
+                <strong>Comfort-Focused Care </strong>Your comfort is our priority. We provide a relaxed environment and gentle procedures to
+                make your whitening experience smooth and stress-free.
+              </li>
+
+              <li>
+                <strong>Detailed Consultation</strong>We conduct thorough consultations to understand your concerns and recommend the
+                most suitable whitening options for optimal results.
+              </li>
+
+              <li>
+                <strong>Transparent & Affordable Pricing</strong>We offer clear pricing with no hidden costs, making professional teeth whitening
+                accessible without compromising on quality.
+              </li>
+            </ol>
+          </div>
+
+          <div className="book_appoint_side red_background">
+            <img src={apointment} alt="Dental Appointment " />
           </div>
         </div>
       </div>
@@ -134,11 +188,9 @@ const  TeethWhiteningTreatment  = () => {
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+            <h2>Why Choose Denza Dental for Teeth Whitening in Kharadi, Pune? </h2>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
+
             </p>
           </div>
 
@@ -154,70 +206,164 @@ const  TeethWhiteningTreatment  = () => {
         </div>
       </div>
 
-      <div className="third_section">
-        <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
-        </div>
-
-        <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
       <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
+        <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
+            <h2>Common Causes of Tooth Discoloration </h2>
             <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
+              Tooth discoloration can occur due to several everyday factors that affect the natural
+              brightness of your smile.
             </p>
 
             <ol>
               <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
+                <strong>Dietary Habits</strong> Frequent consumption of staining foods and beverages like coffee, tea, and colored
+                drinks can gradually dull the natural whiteness of teeth.
               </li>
               <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
+                <strong>Tobacco Use</strong> Smoking or chewing tobacco leads to stubborn stains that can deeply discolor the
+                enamel over time.
               </li>
               <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
+                <strong>Poor Oral Hygiene </strong> Inadequate brushing and flossing can cause plaque and tartar buildup, resulting in a
+                yellow or dull appearance.
               </li>
               <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
+                <strong>Aging </strong>As you age, the outer enamel layer wears down, exposing the underlying dentin, which
+                has a naturally yellow tone.
               </li>
 
               <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
+                <strong>Medications </strong>Certain medications can contribute to discoloration, especially when taken over long
+                periods or during tooth development.
+              </li>
+
+              <li>
+                <strong>Genetic Factors </strong>Natural tooth color can vary from person to person, with some individuals having
+                inherently darker or more yellow-toned teeth.
               </li>
             </ol>
           </div>
 
           <div className="book_appoint_side red_background">
             <img src={apointment} alt="Dental Appointment " />
+          </div>
+        </div>
+      </div>
+
+      <div className="book_appoint parent" style={{ background: "white" }}>
+        <div className="book_appoint_container" data-aos="fade-up">
+          <div className="book_appoint_side red_background">
+            <img src={apointment} alt="Dental Appointment " />
+          </div>
+
+          <div className="book_appoint_text">
+            <h2>When Should You Consider Teeth Whitening?  </h2>
+            <p>
+              Teeth whitening is an effective way to enhance your smile and
+              improve overall appearance in various situations.
+            </p>
+
+            <ol>
+              <li>
+                <strong>Before Special Occasions</strong>If you’re preparing for events like weddings, celebrations, or important
+                gatherings, teeth whitening can help you achieve a brighter, more
+                confident smile.
+              </li>
+
+              <li>
+                <strong>To Boost Confidence </strong>A whiter smile can enhance your self-esteem and make you feel more
+                confident in social and personal interactions.
+              </li>
+
+              <li>
+                <strong>For Stained or Dull Teeth </strong>If your teeth have lost their brightness due to food, beverages, or
+                lifestyle habits, whitening treatments can restore their natural shine.
+              </li>
+
+              <li>
+                <strong>For a Professional Appearance</strong>A clean, bright smile can create a strong first impression in
+                professional settings such as interviews or client interactions.
+              </li>
+            </ol>
+
+          </div>
+        </div>
+      </div>
+
+      <div className="book_appoint">
+        <div className="book_appoint_container" data-aos="fade-up">
+          <div className="book_appoint_text">
+            <h2>Teeth Whitening Aftercare & Recovery Tips</h2>
+            <p>
+              Proper aftercare helps maintain your whitening results and keeps your smile
+              brighter for longer.
+            </p>
+
+            <ol>
+              <li>
+                <strong>Avoid Staining Foods & Drinks </strong>For the first 24–48 hours, avoid coffee, tea, colored beverages, and strongly
+                pigmented foods that can cause stains.
+              </li>
+
+              <li>
+                <strong>Maintain Good Oral Hygiene </strong>Brush and floss regularly to prevent plaque buildup and preserve the brightness
+                of your teeth.
+              </li>
+
+              <li>
+                <strong>Use a Straw for Beverages</strong>When consuming colored drinks, using a straw can reduce direct contact with
+                your teeth and help maintain results.
+              </li>
+
+              <li>
+                <strong>Regular Dental Check-Ups </strong>Follow up with routine dental visits to monitor your results and ensure
+                long-lasting whitening effects.
+              </li>
+
+            </ol>
+          </div>
+
+          <div className="book_appoint_side red_background">
+            <img src={apointment} alt="Dental Appointment " />
+          </div>
+        </div>
+      </div>
+
+      <div className="book_appoint parent" style={{ background: "white" }}>
+        <div className="book_appoint_container" data-aos="fade-up">
+          <div className="book_appoint_side red_background">
+            <img src={apointment} alt="Dental Appointment " />
+          </div>
+
+          <div className="book_appoint_text">
+            <h2>Advanced Equipment Used for Teeth Whitening  </h2>
+            <p>
+              At Denza Dental, we use modern technology and high-quality materials to
+              deliver safe, effective, and long-lasting teeth whitening results.
+            </p>
+
+            <ol>
+              <li>
+                <strong>LED Light Activation Systems </strong>Advanced LED technology is used to enhance and speed up the whitening
+                process, helping achieve visible results in less time.
+              </li>
+
+              <li>
+                <strong>Laser Whitening Technology</strong>Laser-assisted whitening allows for precise and effective stain removal,
+                delivering faster and more noticeable improvements.
+              </li>
+
+              <li>
+                <strong>Custom-Fit Whitening TraysWe provide personalized trays designed to fit your teeth perfectly, ensuring even
+                  application and maximum comfort for at-home maintenance. </strong>
+              </li>
+
+              <li>
+                <strong>Professional-Grade Whitening Gels </strong>Our high-quality whitening gels are formulated to effectively brighten teeth while
+                minimizing sensitivity and protecting enamel.
+              </li>
+            </ol>
           </div>
         </div>
       </div>
@@ -258,7 +404,7 @@ const  TeethWhiteningTreatment  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +438,4 @@ const  TeethWhiteningTreatment  = () => {
   );
 };
 
-export default  TeethWhiteningTreatment ;
+export default TeethWhiteningTreatment;

@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const whyChooseData = [
   {
@@ -124,7 +125,7 @@ const faqs = [
     answer:
       "If needed, they can be repaired or replaced to restore proper function and appearance. ",
   },
-  
+
 ];
 
 const CrownsBridges = () => {
@@ -147,23 +148,15 @@ const CrownsBridges = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="Crowns Bridges" />
 
-      <div className="book_appoint">
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2> What Are Dental Crowns?  </h2>
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2>What Are Dental Crowns?  </h2>
             <p>
               Dental crowns are custom-made caps designed to cover and protect damaged or
               weakened teeth. At Denza Dental, each crown is carefully crafted to restore the
@@ -173,12 +166,29 @@ const CrownsBridges = () => {
               They are an effective solution for preserving tooth structure, improving bite
               function, and enhancing overall smile confidence.
             </p>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div className="parent braces_treat_parent">
+        <div className="cont braces_treat_cont">
+          <div className="braces_treat_right">
+            <h2>What Are Dental Bridges?  </h2>
+            <p>
+              Dental bridges are a reliable solution for replacing one or more missing teeth by filling
+              the gap with artificial teeth (pontics) anchored to adjacent natural teeth or dental
+              implants. At Denza Dental, bridges are custom-designed to blend seamlessly with your
+              natural teeth, restoring both function and aesthetics. They help improve chewing and
+              speaking ability, prevent surrounding teeth from shifting out of place, and maintain facial
+              structure, avoiding a sunken or aged appearance.
+            </p>
+
           </div>
 
-          
-
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+          <div className="braces_treat_left">
+            <img src={img1} alt="General Dental Service" />
           </div>
         </div>
       </div>
@@ -188,7 +198,7 @@ const CrownsBridges = () => {
           <div className="second_section_header">
             <h2>Why Choose Denza Dental for Dental Crowns and Bridges in Pune? </h2>
             <p>
-              
+
             </p>
           </div>
 
@@ -204,11 +214,12 @@ const CrownsBridges = () => {
         </div>
       </div>
 
+
       <div className="third_section">
         <div className="third_header">
           <h2>Treatment Process for Dental Crowns and Bridges </h2>
           <p>
-           
+
           </p>
         </div>
 
@@ -220,6 +231,52 @@ const CrownsBridges = () => {
               <p>{service.description}</p>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>Benefits of Dental Crowns and Bridges
+          </h2>
+
+          <ul>
+            <li>
+              <b>Restores Tooth Function: </b>Ensures proper chewing and speaking.
+            </li>
+
+            <li>
+              <b>Protects Vulnerable Teeth: </b>Prevents further damage.
+            </li>
+
+            <li>
+              <b>Improves Aesthetics: </b>Enhances your smile with a natural look.
+            </li>
+
+            <li>
+              <b>Durable and Long-Lasting: </b>Made from strong materials.
+            </li>
+
+            <li>
+              <b>Restores Tooth Shape and Size: </b>Corrects size and shape for improved functionality.
+            </li>
+
+            <li>
+              <b>Supports Large Fillings: </b>Ideal for large fillings with insufficient tooth structure.
+            </li>
+
+            <li>
+              <b>Fills Gaps from Missing Teeth: </b>Restores chewing and speaking abilities.
+            </li>
+
+            <li>
+              <b>Prevents Teeth Shifting: </b>Maintains proper alignment.
+            </li>
+
+            <li>
+              <b>Supports Facial Structure: </b>Prevents a sunken appearance from tooth loss.
+            </li>
+
+          </ul>
         </div>
       </div>
 

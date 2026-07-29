@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./HeaderNew.scss";
-import logo from "../../assets/header/denza_logo.png";
+import logo from "../../assets/header/logo7.png";
 import { RxCross2 } from "react-icons/rx";
 
 const HeaderNew = () => {
@@ -72,9 +72,47 @@ const HeaderNew = () => {
               label: " CROWNS AND BRIDGES ",
               to: "/crowns-bridges",
             },
+            {
+              label: " INLAYS AND ONLAYS ",
+              to: "/inlays-onlays",
+            },
           ],
         },
-        { label: "COSMETIC DENTISTRY", to: "/cosmetic-dentistry" },
+        {
+          label: "COSMETIC DENTISTRY",
+          to: "/cosmetic-dentistry",
+          children: [
+            {
+              label: "SMILE ANALYSIS AND CONSULTATION ",
+              to: "/smile-analysis-consultation",
+            },
+             {
+              label: " SMILE DESIGNING",
+              to: "/smile-designing",
+            },
+            {
+              label: " TEETH WHITENING TREATMENT",
+              to: "/teeth-whitening-treatment",
+            },
+            {
+              label: " PORCELAIN VENEERS TREATMENT ",
+              to: "/porcelain-veneers-treatment",
+            },
+            {
+              label: "  COMPOSITE VENEERS ",
+              to: "/composite-veneers",
+            },
+            {
+              label: "COMPOSITE BONDING  ",
+              to: "/composite-bonding",
+            },
+            {
+              label: " GUM DEPIGMENTATION  ",
+              to: "/gum-depizmentation",
+            },
+            
+          ],
+        },
         { label: "ORTHODONTIC TREATMENTS", to: "/orthodontic-treatments" },
         {
           label: "DENTAL IMPLANTS TREATMENT",
