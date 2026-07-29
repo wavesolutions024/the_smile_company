@@ -41,7 +41,7 @@ const whyChooseData = [
     icon: "😊",
     title: "Comfort & Convenience",
     description:
-      "Located in Kharadi, Pune, our clinic offers flexible appointment timings to suit your schedule and ensure a smooth treatment experience. ��Visit Denza Dental, Kharadi, Pune ��Call / WhatsApp: 7028131132 / 7028143959 ",
+      "Located in Kharadi, Pune, our clinic offers flexible appointment timings to suit your schedule and ensure a smooth treatment experience. ��Visit Denza Dental, Kharadi, Pune ��Call / WhatsApp:   +91 7028 131 132 / 7028143959 ",
   },
 ];
 

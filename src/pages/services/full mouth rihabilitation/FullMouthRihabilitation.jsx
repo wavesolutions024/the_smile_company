@@ -187,7 +187,7 @@ const FullMouthRihabilitation = () => {
             <Link to="/contact" className="service1_btn ">
               Book Consultant
             </Link>
-            <div className="service1_btn call_btn">Call +7028131132</div>
+            <div className="service1_btn call_btn">Call +91 7028 131 132</div>
             <div className="service1_btn">Get Directions</div>
           </div>
         </div>

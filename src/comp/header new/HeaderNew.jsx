@@ -355,7 +355,7 @@ const HeaderNew = () => {
             )}
           </div>
           <a href="tel:+917028131132 " className="phone_link">
-            +91 7028131132
+            +91 7028 131 132
           </a>
           <Link to="/contact" className="book_btn" onClick={closeAll}>
             Book Appointment

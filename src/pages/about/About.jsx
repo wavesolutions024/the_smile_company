@@ -93,7 +93,10 @@ const About = () => {
 
         <div className="cont dental_tourish_cont">
           <div className="hero_content">
-            <h1>Precision. Ethics. Comfort.<br /> Dentistry designed around you.</h1>
+            <h1>
+              Precision. Ethics. Comfort.
+              <br /> Dentistry designed around you.
+            </h1>
             <p>Specialist-led dental care in Kharadi, Pune </p>
           </div>
         </div>
@@ -279,6 +282,36 @@ const About = () => {
         </div>
       </div>
 
+      <div className="parent about_dr_parent">
+        <div className="cont about_dr_cont">
+          <div className="right-section">
+            <div className="image-frame">
+              <img src={afterImg} alt="Dr. Nashid" className="doctor-img" />
+            </div>
+          </div>
+
+          <div className="left-section">
+            <h1>
+              At Denza Dental, dentistry is approached with intention and
+              precision.
+            </h1>
+            <ul>
+              <li>Thorough diagnosis before treatment</li>
+              <li>Personalized and transparent treatment plans</li>
+              <li>Focus on patient comfort and clarity </li>
+              <li>Emphasis on long-term, reliable outcomes </li>
+            </ul>
+            <p>
+              <b>
+                We believe that quality dentistry is not rushed—it is carefully
+                designed.
+              </b>
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
       {/* doctors */}
 
       <div className="parent doctors_parents">
@@ -365,8 +398,7 @@ const About = () => {
 
           <p>
             Every detail—from consultation to completion—is designed to make
-            patients feel comfortable, informed, and confident in their
-            care.
+            patients feel comfortable, informed, and confident in their care.
           </p>
         </div>
       </div>
