@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const whyChooseData = [
   {
@@ -67,41 +68,42 @@ const services = [
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "Are ceramic braces better than metal braces? ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "Ceramic braces are more aesthetic as they blend with your teeth, while both options are equally effective for alignment.",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "Do ceramic braces take longer to work?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "In most cases, treatment time is similar to metal braces, depending on the complexity of your dental condition.",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "Are ceramic braces painful?",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "They may cause mild discomfort initially, but this usually settles within a few days as you adjust.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "Do ceramic braces stain or turn yellow?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "With proper oral hygiene and care, ceramic braces remain stain-free throughout treatment.",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "Do ceramic braces affect appearance negatively?",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "No, they are designed to be discreet and blend naturally with your teeth for a more aesthetic look. ",
   },
   {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
+    question: "Which braces are best for teeth alignment?",
     answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "The best option depends on your case—metal braces, ceramic braces, or aligners are recommended based on dental needs and goals. ",
   },
+  
 ];
 
-const  CeramicBraces  = () => {
+const CeramicBraces = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,41 +120,56 @@ const  CeramicBraces  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="Ceramic Braces" />
 
-      <div className="second_section">
-        <div className="second_section_container">
-          <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+      <div className="brace_treat_parent parent">
+        <div className="brace_treat_cont cont">
+          <h2>Ceramic Braces in Kharadi, Pune | Denza Dental</h2>
+          <div>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
+              Your search for ceramic braces near you in Kharadi, Pune ends at Denza Dental.
+            </p>
+
+            <p>
+              Ceramic braces offer a more aesthetic alternative to traditional metal braces. Designed
+              with tooth-colored or clear brackets, they blend naturally with your teeth while effectively
+              correcting alignment issues.
+            </p>
+
+
+            <p>
+              At Denza Dental, we provide advanced orthodontic care using high-quality ceramic
+              braces that straighten your teeth discreetly without compromising your confidence.
+              Visit Denza Dental, Kharadi, Pune Call / WhatsApp: 7028131132 / 7028143959
+              You can also reach us via email at denzadentalcenter@gmail.com for more details. Visit
+              our clinic – Get Directions.
             </p>
           </div>
+        </div>
+      </div>
 
-          <div className="why_choose_cards">
-            {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2>Why Choose Denza Dental for Ceramic Braces? </h2>
+            <ul style={{ paddingLeft: "20px" }}>
+              <li>Modern orthodontic equipment </li>
+              <li>Experienced orthodontic specialists </li>
+              <li>Personalized treatment planning </li>
+              <li>Transparent and clear pricing </li>
+              <li>Strict sterilization and hygiene standards</li>
+              <li>Advanced digital imaging systems </li>
+              <li>Flexible appointment scheduling </li>
+              <li>Comfortable and friendly clinic environment</li>
+              
+            </ul>
           </div>
         </div>
       </div>
+
 
       <div className="third_section">
         <div className="third_header">
@@ -175,8 +192,28 @@ const  CeramicBraces  = () => {
         </div>
       </div>
 
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>Precautions During Ceramic Braces Treatment</h2>
+
+          <ul>
+            <li>Avoid hard, sticky, and sugary foods to prevent damage and cavities </li>
+            <li>Brush and clean teeth carefully after every meal using orthodontic tools</li>
+            <li>Do not miss scheduled adjustment appointments for proper progress </li>
+          </ul>
+
+          <h2>Aftercare for Ceramic Braces</h2>
+
+          <ul>
+            <li>Brush teeth after meals regularly</li>
+             <li>Maintain strict oral hygiene </li>
+              <li>Attend all follow-up visits as advised by your dentist</li>
+          </ul>
+        </div>
+      </div>
+
       <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
+        <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
             <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
             <p>
@@ -258,7 +295,7 @@ const  CeramicBraces  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +329,4 @@ const  CeramicBraces  = () => {
   );
 };
 
-export default  CeramicBraces ;
+export default CeramicBraces;

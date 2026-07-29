@@ -125,8 +125,6 @@ const InlaysOnlays = () => {
   return (
     <>
       <PageTop title="Inlays Onlays" />
-<<<<<<< HEAD
-=======
 
       <div className="book_appoint">
         <div className="book_appoint_container" data-aos="fade-up">
@@ -149,18 +147,14 @@ const InlaysOnlays = () => {
           </div>
         </div>
       </div>
->>>>>>> c0742e5 (Updated dental pages and header)
+
 
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
             <h2>  The Inlays & Onlays Procedure at Denza Dental  </h2>
             <p>
-<<<<<<< HEAD
               
-=======
-
->>>>>>> c0742e5 (Updated dental pages and header)
             </p>
           </div>
 

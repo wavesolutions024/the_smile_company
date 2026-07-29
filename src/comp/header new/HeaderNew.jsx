@@ -86,7 +86,7 @@ const HeaderNew = () => {
               label: "SMILE ANALYSIS AND CONSULTATION ",
               to: "/smile-analysis-consultation",
             },
-             {
+            {
               label: " SMILE DESIGNING",
               to: "/smile-designing",
             },
@@ -110,19 +110,35 @@ const HeaderNew = () => {
               label: " GUM DEPIGMENTATION  ",
               to: "/gum-depizmentation",
             },
-            
+
           ],
         },
-        { label: "ORTHODONTIC TREATMENTS", to: "/orthodontic-treatments" },
+        {
+          label: "ORTHODONTIC TREATMENTS",
+          to: "/orthodontic-treatments",
+          children: [
+            {
+              label: "CLEAR ALIGNERS  ",
+              to: "/clear-aligners",
+            },
+            {
+              label: "CERAMIC BRACES  ",
+              to: "/ceramic-braces",
+            },
+          ],
+        },
         {
           label: "DENTAL IMPLANTS TREATMENT",
           to: "/dental-implants-treatment",
           children: [
             {
               label: "ALL-ON-4 AND ALL-ON-6 DENTAL IMPLANTS  ",
-              to: "/dental-crowns",
+              to: "/all-on-four",
             },
-            { label: " IMPLANT SUPPORTED OVERDENTURE ", to: "/crowns-bridges" },
+            {
+              label: " IMPLANT SUPPORTED OVERDENTURE ",
+              to: "/implant-supported"
+            },
           ],
         },
         {

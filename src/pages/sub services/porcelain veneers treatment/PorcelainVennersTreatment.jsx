@@ -128,7 +128,7 @@ const PorcelainVennersTreatment = () => {
 
   return (
     <>
-      <PageTop title="machine or tools/equipments " />
+      <PageTop title="Porcelain Veneers Treatment "/>
 
       <div className="second_section">
         <div className="second_section_container">

@@ -9,31 +9,39 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
+
 
 const whyChooseData = [
   {
     icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "Precision-Driven Expertise ",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "Our experienced dentists specialize in clear aligner treatments, ensuring accurate and effective tooth alignment with predictable results. ",
   },
   {
     icon: "🦷",
-    title: "Advanced Technology",
+    title: "Personalized Smile Plans",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "Every smile is unique. We design customized aligner plans based on your dental structure and alignment needs for the best outcomes.",
   },
   {
     icon: "💰",
-    title: "Affordable Packages",
+    title: "Advanced Digital Technology ",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "We use modern 3D scanning and digital imaging to create precise, comfortable, and highly effective clear aligner treatments.",
   },
   {
     icon: "😊",
-    title: "Patient-Centric Approach",
+    title: "Patient-Centered Approach",
     description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
+      "From consultation to completion, we guide you through every step of your aligner journey with complete transparency and care. ",
+  },
+  {
+    icon: "😊",
+    title: "Comfort & Convenience",
+    description:
+      "Located in Kharadi, Pune, our clinic offers flexible appointment timings to suit your schedule and ensure a smooth treatment experience. ��Visit Denza Dental, Kharadi, Pune ��Call / WhatsApp: 7028131132 / 7028143959 ",
   },
 ];
 
@@ -67,41 +75,42 @@ const services = [
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: " Do clear aligners really work?",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "Yes, clear aligners are highly effective for correcting mild to moderate crowding, gaps, and bite issues with predictable results.",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "Are clear aligners painful? ",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "They are not painful, but you may feel mild pressure for a few days as teeth begin to shift. ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "Are clear aligners better than braces?  ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "They are more aesthetic and comfortable, but braces may be better for complex orthodontic cases.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: " Do clear aligners give permanent results?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "Yes, results are long-lasting if you wear retainers as advised after treatment. ",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "Can we eat with clear aligners? ",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "No, aligners should be removed while eating or drinking anything except water.",
   },
   {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
+    question: " Can teeth be aligned naturally without treatment?",
     answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "Natural methods cannot significantly move teeth; orthodontic treatments like aligners are required for real correction.",
   },
+  
 ];
 
-const  ClearAligners  = () => {
+const ClearAligners = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,15 +127,30 @@ const  ClearAligners  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
+      <PageTop title="Clear Aligners" />
+
+      <div className="brace_treat_parent parent">
+        <div className="brace_treat_cont cont">
+          <h2>Clear Aligners Treatment in Kharadi, Pune | Denza Dental</h2>
+          <div>
+            <p>
+              Clear aligners offer a modern and discreet way to straighten your teeth without
+              the need for traditional braces. These transparent, custom-made trays gradually
+              move your teeth into proper alignment while remaining virtually invisible.
+            </p>
+
+            <p>
+              Unlike metal braces, clear aligners are smooth, removable, and
+              comfortable—allowing you to maintain your confidence in social and professional
+              settings. Made from high-quality medical-grade material, they are designed to fit
+              your teeth precisely and work efficiently in the background.
+            </p>
+
+            <p>
+              At Denza Dental, Kharadi, we provide advanced clear aligner solutions tailored to
+              your smile goals, helping you achieve a straighter, more confident smile without
+              compromising your lifestyle.
+            </p>
           </div>
         </div>
       </div>
@@ -134,11 +158,11 @@ const  ClearAligners  = () => {
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+            <h2>Best Dental Clinic for Affordable Clear Aligners in Kharadi, Pune | Denza Dental</h2>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
+              What makes Denza Dental a preferred choice for clear aligner
+              treatment in Kharadi? We combine expertise, technology, and
+              personalized care to deliver confident, well-aligned smiles.
             </p>
           </div>
 
@@ -154,73 +178,75 @@ const  ClearAligners  = () => {
         </div>
       </div>
 
-      <div className="third_section">
-        <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
-        </div>
-
-        <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2>About Invisible Aligners (Clear Aligners)</h2>
             <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
+              Clear aligners are a modern advancement in orthodontic treatment designed to straighten teeth using
+              custom-made, transparent plastic trays that fit comfortably over your teeth.
             </p>
 
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
+            <p>
+              Unlike traditional braces, invisible aligners are smooth, removable, and virtually unnoticeable, offering
+              greater comfort and convenience throughout treatment. At Denza Dental, Kharadi, we provide advanced
+              clear aligner solutions that are ideal for teenagers and working professionals who want a discreet way to
+              achieve a well-aligned smile.
+            </p>
 
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
-          </div>
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Common Reasons for Braces{" "}
+            </p>
 
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
           </div>
         </div>
       </div>
+
+      <div className="parent braces_treat_parent">
+        <div className="cont braces_treat_cont">
+          <div className="braces_treat_right">
+            <h2>Benefits of Invisible Aligners at Denza Dental </h2>
+            <p>
+              Clear aligners offer a modern and convenient way to straighten teeth with multiple advantages:
+            </p>
+
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Typical Duration
+            </p>
+
+            <ul>
+              <li>
+                <b>Virtually Invisible </b>– Discreet treatment that doesn’t affect your appearance 
+              </li>
+
+              <li>
+                <b>Removable Convenience </b>– Eat, drink, brush, and floss with ease  
+              </li>
+
+              <li>
+                <b>Comfortable Design </b>– No wires or brackets, ensuring a smooth experience 
+              </li>
+
+              <li>
+                <b>Predictable Results </b>– Digital planning ensures controlled and accurate tooth movement 
+              </li>
+
+              <li>
+                <b>Efficient Treatment </b>– In many cases, faster results compared to traditional braces  
+              </li>
+              
+            </ul>
+          </div>
+
+          <div className="braces_treat_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+        </div>
+      </div>
+
 
       <div className="faq_section1">
         <div className="faq_header">
@@ -258,7 +284,7 @@ const  ClearAligners  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +318,4 @@ const  ClearAligners  = () => {
   );
 };
 
-export default  ClearAligners ;
+export default ClearAligners;

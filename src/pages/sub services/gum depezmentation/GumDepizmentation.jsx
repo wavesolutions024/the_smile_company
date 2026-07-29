@@ -117,7 +117,7 @@ const GumDepizmentation = () => {
 
   return (
     <>
-      <PageTop title="smiling woman , healthy teeth " />
+      <PageTop title=" Gum Depigmentation " />
 
       <div className="book_appoint">
         <div className="book_appoint_container" data-aos="fade-up">

@@ -131,7 +131,7 @@ const SmileDesigning = () => {
 
   return (
     <>
-      <PageTop title="Smiling, Healthy Teeth" />
+      <PageTop title="Smile Designing" />
 
       <div className="second_section">
         <div className="second_section_container">

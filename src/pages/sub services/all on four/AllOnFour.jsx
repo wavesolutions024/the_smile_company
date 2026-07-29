@@ -9,6 +9,8 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
+
 
 const whyChooseData = [
   {
@@ -98,10 +100,10 @@ const faqs = [
   },
 ];
 
-const  AllOnFour  = () => {
+const AllOnFour = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,18 +120,64 @@ const  AllOnFour  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
+      <PageTop title="All-on-4 & All-on-6 Dental Implants" />
+
+      <div className="brace_treat_parent parent">
+        <div className="brace_treat_cont cont">
+          <h2>All-on-4 & All-on-6 Dental Implants in Kharadi, Pune | Denza Dental</h2>
+          <div>
+            <p>
+              Missing teeth can affect your confidence, eating ability, and speech. At Denza Dental, Kharadi,
+              we offer advanced full-mouth restoration solutions with All-on-4 and All-on-6 dental implants
+              in Pune.
+            </p>
+
+            <p>
+              These modern implant techniques are designed to replace a full arch of missing teeth using only
+              4 or 6 implants, providing a fixed, stable, and natural-looking smile.
+            </p>
+
+            <p>
+              Many patients have regained their confidence and improved their quality of life through our
+              All-on-4 and All-on-6 implant treatments.
+            </p>
           </div>
         </div>
       </div>
+
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2>What Are All-on-4 and All-on-6 Dental Implants?</h2>
+
+            <p>
+              All-on-4 and All-on-6 dental implants are advanced full-mouth restoration solutions
+              designed to replace multiple missing teeth using a minimal number of implants.
+            </p>
+
+            <p>
+              <strong>All-on-4 Dental Implants</strong>In this technique, 4 strategically placed implants are used to support a full arch of teeth.
+              This reduces the need for multiple implants while restoring complete function and
+              aesthetics.
+            </p>
+
+            <p>
+              <strong>All-on-6 Dental Implants</strong>Similar to All-on-4, this method uses 6 implants instead of 4, providing extra support
+              and stability. It is often recommended for patients with lower bone density or higher bite
+              force requirements.
+            </p>
+
+            <p>
+              These implants are fixed and do not need to be removed like traditional dentures. They
+              function like natural teeth, allowing you to eat, speak, and smile with confidence.
+            </p>
+          </div>
+        </div>
+      </div>
+
 
       <div className="second_section">
         <div className="second_section_container">
@@ -176,7 +224,7 @@ const  AllOnFour  = () => {
       </div>
 
       <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
+        <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
             <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
             <p>
@@ -258,7 +306,7 @@ const  AllOnFour  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +340,4 @@ const  AllOnFour  = () => {
   );
 };
 
-export default  AllOnFour ;
+export default AllOnFour;
