@@ -157,7 +157,7 @@ const CeramicBraces = () => {
             <p>
               At Denza Dental, we provide advanced orthodontic care using high-quality ceramic
               braces that straighten your teeth discreetly without compromising your confidence.
-              Visit Denza Dental, Kharadi, Pune Call / WhatsApp: 7028131132 / 7028143959
+              Visit Denza Dental, Kharadi, Pune Call / WhatsApp:   +91 7028 131 132 / 7028 143 959
               You can also reach us via email at denzadentalcenter@gmail.com for more details. Visit
               our clinic – Get Directions.
             </p>

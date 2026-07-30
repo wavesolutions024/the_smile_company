@@ -69,7 +69,7 @@ const About = () => {
     },
     {
       id: 2,
-      name: "Dr. Devika M. Kalaskar",
+      name: "Dr. Devika Kalaskar- Thodsare",
       title: "Co-founder | Endodontist & Esthetic Dentist",
       description:
         "Dr. Devika is a skilled and patient-focused endodontist and esthetic dentist, known for her precision and calm, reassuring approach to care. She specializes in minimally invasive dentistry, root canal treatments, and aesthetic smile enhancement procedures.\nShe completed her BDS from Sinhgad Dental College, Pune, and her MDS in Conservative Dentistry & Endodontics from Government Dental College, one of India’s premier institutions.\nA former Assistant Professor, she combines academic excellence with strong clinical expertise.\nShe also brings valuable international clinical experience from Kuwait, along with active participation in conferences, workshops, and research, with multiple publications in national and international journals.\She is a member of the Indian Association of Conservative Dentistry and Endodontics (IACDE) and has received several academic recognitions. ",
@@ -93,7 +93,10 @@ const About = () => {
 
         <div className="cont dental_tourish_cont">
           <div className="hero_content">
-            <h1>Precision. Ethics. Comfort.<br /> Dentistry designed around you.</h1>
+            <h1>
+              Precision. Ethics. Comfort.
+              <br /> Dentistry designed around you.
+            </h1>
             <p>Specialist-led dental care in Kharadi, Pune </p>
           </div>
         </div>
@@ -279,6 +282,36 @@ const About = () => {
         </div>
       </div>
 
+      <div className="parent about_dr_parent">
+        <div className="cont about_dr_cont">
+          <div className="right-section">
+            <div className="image-frame">
+              <img src={afterImg} alt="Dr. Nashid" className="doctor-img" />
+            </div>
+          </div>
+
+          <div className="left-section">
+            <h1>
+              At Denza Dental, dentistry is approached with intention and
+              precision.
+            </h1>
+            <ul>
+              <li>Thorough diagnosis before treatment</li>
+              <li>Personalized and transparent treatment plans</li>
+              <li>Focus on patient comfort and clarity </li>
+              <li>Emphasis on long-term, reliable outcomes </li>
+            </ul>
+            <p>
+              <b>
+                We believe that quality dentistry is not rushed—it is carefully
+                designed.
+              </b>
+            </p>
+           
+          </div>
+        </div>
+      </div>
+
       {/* doctors */}
 
       <div className="parent doctors_parents">
@@ -320,7 +353,7 @@ const About = () => {
       <div className="parent  doctors_parents_lady">
         <div className="cont doctors_cont_lady">
           <div className="right_doctors_parents">
-            <h2>Dr. Devika M. Kalaskar</h2>
+            <h2>Dr. Devika Kalaskar- Thodsare</h2>
             <span className="doctor_name_title">
               Co-founder | Endodontist & Esthetic Dentist
             </span>
@@ -365,8 +398,7 @@ const About = () => {
 
           <p>
             Every detail—from consultation to completion—is designed to make
-            patients feel comfortable, informed, and confident in their
-            care.
+            patients feel comfortable, informed, and confident in their care.
           </p>
         </div>
       </div>

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const PageTop = ({
   title = "Dental Check Up Services",
-  phone = "+91 7028131132",
+  phone = " +91 7028 131 132",
   contactPath = "/contact",
   mapUrl = "https://maps.app.goo.gl/L2FxZP5U5wL3WA9t9",
   consultantLabel = "Book Consultant",

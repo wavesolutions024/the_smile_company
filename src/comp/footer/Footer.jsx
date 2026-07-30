@@ -6,7 +6,8 @@ import { CiLinkedin } from "react-icons/ci";
 import { FiYoutube } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoIosCall } from "react-icons/io";
-import logo from "../../assets/header/denza_logo-removebg-preview.png";
+import { BsTwitterX } from "react-icons/bs";
+import logo from "../../assets/header/logo6.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -47,18 +48,34 @@ const Footer = () => {
               innovation, and care.
             </p>
             <div className="social_media_main">
-              <span className="social_media_icon">
+              <a
+                href="https://www.facebook.com/profile.php?id=61575538874507"
+                target="_blank"
+                className="social_media_icon"
+              >
                 <BsFacebook />
-              </span>
-              <span className="social_media_icon">
+              </a>
+              <a
+                href="https://www.instagram.com/denzadentalcenter/?hl=en"
+                target="_blank"
+                className="social_media_icon"
+              >
                 <FaInstagram />
-              </span>
-              <span className="social_media_icon">
+              </a>
+              <a
+                href=" https://www.linkedin.com/company/112810199/admin/dashboard/"
+                target="_blank"
+                className="social_media_icon"
+              >
                 <CiLinkedin />
-              </span>
-              <span className="social_media_icon">
+              </a>
+              <a
+                href="https://www.youtube.com/@DenzaDentalCenter"
+                target="_blank"
+                className="social_media_icon"
+              >
                 <FiYoutube />
-              </span>
+              </a>
             </div>
           </div>
 
@@ -139,7 +156,7 @@ const Footer = () => {
               >
                 <iframe
                   title="Google Map"
-                  src="https://maps.app.goo.gl/L2FxZP5U5wL3WA9t9"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.498781097344!2d73.94635159678954!3d18.551538700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3c57152c109%3A0x3138dba7abdcf460!2sEon%20Free%20Zone!5e0!3m2!1sen!2sin!4v1785338108202!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -155,5 +172,7 @@ const Footer = () => {
     </>
   );
 };
+
+
 
 export default Footer;

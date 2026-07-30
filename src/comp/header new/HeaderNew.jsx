@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./HeaderNew.scss";
-import logo from "../../assets/header/logo7.png";
+import logo from "../../assets/header/logo6.png";
 import { RxCross2 } from "react-icons/rx";
 
 const HeaderNew = () => {
@@ -93,6 +93,10 @@ const HeaderNew = () => {
             {
               label: " TEETH WHITENING TREATMENT",
               to: "/teeth-whitening-treatment",
+            },
+            {
+              label: "TOOTH RESHAPING",
+              to: "/tooth-reshaping",
             },
             {
               label: " PORCELAIN VENEERS TREATMENT ",
@@ -191,7 +195,7 @@ const HeaderNew = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const shouldShow = location.pathname !== "/" || window.scrollY > 80;
+      const shouldShow =  window.scrollY > 80;
       setVisible(shouldShow);
       if (window.scrollY <= 80 && location.pathname === "/") {
         setMobileOpen(false);
@@ -237,8 +241,8 @@ const HeaderNew = () => {
               }}
             >
               {child.label} <span className="caret">▸</span>
-            </Link>
-            {activeSubmenu === submenuKey && (
+
+              {activeSubmenu === submenuKey && (
               <div className="submenu open">
                 <div className="submenu_panel">
                   {child.children.map((grandChild) => (
@@ -253,6 +257,8 @@ const HeaderNew = () => {
                 </div>
               </div>
             )}
+            </Link>
+            
           </div>
         );
       }
@@ -355,7 +361,7 @@ const HeaderNew = () => {
             )}
           </div>
           <a href="tel:+917028131132 " className="phone_link">
-            +91 7028131132
+            +91 7028 131 132
           </a>
           <Link to="/contact" className="book_btn" onClick={closeAll}>
             Book Appointment
