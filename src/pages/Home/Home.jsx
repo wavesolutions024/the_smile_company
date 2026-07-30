@@ -178,6 +178,30 @@ const Home = () => {
       title: "Trusted by Patients",
       icon: <FaStar />,
     },
+    {
+      title: "World-Class Dentistry",
+      icon: <FaLaptopMedical />,
+    },
+    {
+      title: "International Expertise",
+      icon: <FaUserMd />,
+    },
+    {
+      title: "Global Sterilization Standards",
+      icon: <FaShieldAlt />,
+    },
+    {
+      title: "Comfort-First Care",
+      icon: <FaSmileBeam />,
+    },
+    {
+      title: "Safe & Gentle Procedures",
+      icon: <FaShieldAlt />,
+    },
+    {
+      title: "Excellence in Every Smile",
+      icon: <FaStar />,
+    },
   ];
 
   const textTestimonials = [
