@@ -3,12 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./ZirconiaCrowns.scss";
+import "./LingualBraces.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const whyChooseData = [
   {
@@ -65,6 +66,44 @@ const services = [
   },
 ];
 
+const servicess = [
+  {
+    title: "Consultation ",
+    points: [
+      "Consultation",
+      "Photos and impressions if required",
+      "Discussion of smile concerns ",
+      "Explanation of treatment, timeline, and cost",
+    ],
+  },
+  {
+    title: "Treatment Planning ",
+    points: [
+      "Customized treatment plan",
+      "Expected results overview ",
+      "Timeline and appointment scheduling",
+    ],
+  },
+  {
+    title: "Braces Placement ",
+    points: [
+      "Teeth cleaning and preparation",
+      "Precise placement of lingual brackets (behind teeth) ",
+      "Instructions for care and maintenance",
+    ],
+  },
+  {
+    title: "Follow-Ups & Adjustments ",
+    points: [
+      "Regular check-ups ",
+      "Progress monitoring ",
+      "Necessary adjustments for alignment ",
+      "Continuous support throughout treatment ",
+    ],
+  },
+];
+
+
 const faqs = [
   {
     question: "Do Dental Check-ups at Denza Dental Hurt? ",
@@ -98,10 +137,10 @@ const faqs = [
   },
 ];
 
-const  ZirconiaCrowns  = () => {
+const LingualBraces = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,16 +157,115 @@ const  ZirconiaCrowns  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
+      <PageTop title="Lingual Braces" />
+
+      <div className="brace_treat_parent parent">
+        <div className="brace_treat_cont cont">
+          <h2>Lingual Braces in Kharadi, Pune | Denza Dental</h2>
+          <div>
+            <p>
+              Want a perfectly aligned smile without anyone noticing your braces? Lingual braces are
+              the ideal solution.
+            </p>
+
+            <p>
+              At Denza Dental, Kharadi, we offer advanced lingual braces treatment that works
+              discreetly by placing brackets on the inner (back) surface of your teeth—making them
+              completely invisible from the outside.
+            </p>
+
+            <p>
+              Lingual braces are perfect for patients who want effective teeth straightening without
+              compromising their appearance in social or professional settings.
+            </p>
+
+            <p>
+              With our expertise and precision-driven approach, we have helped many patients
+              achieve confident smiles using this hidden orthodontic solution.
+            </p>
           </div>
+        </div>
+      </div>
+
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2>Best Dental Clinic for Lingual Braces in Kharadi, Pune | Denza Dental</h2>
+            <p>
+              Choosing the right dental clinic is the most important step when considering lingual braces
+              treatment in Kharadi, Pune. At Denza Dental, we ensure advanced orthodontic care in a
+              comfortable and patient-friendly environment.
+            </p>
+
+            <p>
+              We understand that braces are a big decision, and our team is here to guide you with the right
+              solutions to help you achieve a confident, perfectly aligned smile—without visible braces.
+            </p>
+
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Why Choose Denza Dental for Lingual Braces?{" "}
+            </p>
+
+            <ul style={{ paddingLeft: "20px" }}>
+              <li>Experienced orthodontic specialists</li>
+              <li>Personalized treatment planning</li>
+              <li>Advanced orthodontic techniques </li>
+              <li>Comfortable and relaxing clinic environment</li>
+              <li>Clear communication and patient guidance </li>
+            </ul>
+
+            <p>
+              Our expertise in lingual braces ensures precise, discreet, and effective results tailored to your
+              smile goals.
+            </p>
+
+            <p>
+              Visit Denza Dental, Kharadi, Pune
+            </p>
+            <p> Call / WhatsApp: 7028131132 / 7028143959</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>Features of Lingual Braces at Denza Dental </h2>
+
+          <ul>
+            <li>Completely hidden behind the teeth </li>
+            <li>Custom-made brackets for a perfect fit</li>
+            <li>Works like traditional braces with effective results </li>
+            <li>No visible wires or brackets while smiling</li>
+            <li>Continuous progress without affecting appearance</li>
+            <li>Ideal for professionals and image-conscious individuals</li>
+            <li>Precise and efficient tooth movement</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="third_section" style={{ background: "var(--white)" }}>
+        <div className="third_header">
+          <h2 style={{ textAlign: "center", color: "var(--accent)" }}>
+            Lingual Braces Procedure at Denza Dental, Kharadi (Pune) 
+          </h2>
+        </div>
+
+        <div className="service_cards">
+          {servicess.map((service, index) => (
+            <div key={index} className="service_card" style={{ background: "var(--background)" }}>
+              <h3>{service.title}</h3>
+              <ul className="service_points" >
+                {service.points.map((point, i) => (
+                  <li style={{ color: "var(--text)" }} key={i}>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -176,7 +314,7 @@ const  ZirconiaCrowns  = () => {
       </div>
 
       <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
+        <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
             <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
             <p>
@@ -258,7 +396,7 @@ const  ZirconiaCrowns  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +430,4 @@ const  ZirconiaCrowns  = () => {
   );
 };
 
-export default  ZirconiaCrowns ;
+export default LingualBraces;

@@ -3,12 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./ZirconiaCrowns.scss";
+import "./GumCountouring.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const whyChooseData = [
   {
@@ -39,69 +40,64 @@ const whyChooseData = [
 
 const services = [
   {
-    title: "Quick Discussion",
+    title: "Consultation & Evaluation",
     description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+      "We begin with a detailed examination of your gums and teeth. Digital scans or X-rays may be used to assess your gum structure. Based on your needs, we create a personalized treatment plan and clearly explain the procedure and costs. ",
   },
   {
-    title: "Mouth Check ",
+    title: "Comfortable & Precise Treatment ",
     description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+      "Your comfort is our priority. The treatment area is numbed before starting. We use advanced laser technology to gently reshape your gum line with high precision, minimal bleeding, and quicker healing compared to traditional methods.",
   },
   {
-    title: "X-rays (Only if Needed)",
+    title: "Recovery & Aftercare ",
     description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
-  },
-  {
-    title: " Deep Cleaning ",
-    description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
-  },
-  {
-    title: "Next Steps & Advice ",
-    description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
+      "After the procedure, you’ll receive easy-to-follow aftercare instructions. If needed, medications are prescribed to support healing. We also schedule follow-up visits to monitor your recovery and ensure optimal results.",
   },
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "Can a gummy smile be corrected? ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "Yes, a gummy smile can be effectively treated with laser gum contouring at Denza Dental. The procedure removes excess gum tissue to reveal more of your natural teeth and create a balanced smile.",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "How long does gum contouring last?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "Gum contouring results are usually permanent, as the reshaped gum tissue does not grow back in most cases.",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "What is the cost of gummy smile correction in Kharadi, Pune? ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "The cost typically ranges between ₹5,000 to ₹20,000, depending on the extent of treatment and complexity of your case.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "Are gummy smiles considered unattractive?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "Beauty is subjective, but many people choose gum contouring to achieve a more balanced and proportionate smile that enhances facial aesthetics.",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "Can a gummy smile be fixed naturally?",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "Natural methods have limited impact. Effective correction usually requires professional dental treatments like gum contouring or orthodontics.",
   },
   {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
+    question: "Is gum contouring painful? ",
     answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "No, the procedure is generally painless as local anesthesia is used. You may feel slight discomfort after the treatment, which subsides quickly.",
+  },
+  {
+    question: "Is gum contouring safe? ",
+    answer:
+      "Yes, gum contouring is a safe and commonly performed procedure when done by experienced dental professionals using modern techniques like lasers.",
   },
 ];
 
-const  ZirconiaCrowns  = () => {
+const GumCountouring = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,49 +114,81 @@ const  ZirconiaCrowns  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
+      <PageTop title="Gum Contouring" />
+
+      <div className="brace_treat_parent parent">
+        <div className="brace_treat_cont cont">
+          <h2>Braces Treatment in Kharadi, Pune | Denza Dental </h2>
+          <div>
+            <p>
+              Looking for gum contouring near you in Kharadi, Pune? At Denza Dental, we
+              offer advanced and precise gum contouring treatments to enhance your smile
+              right in your neighborhood.
+            </p>
+
+            <p>
+              <strong>Transform Your Smile with Expert Care</strong>Uneven or excess gum tissue can affect the way your smile looks. At Denza
+              Dental, we help reshape your gum line to create a more balanced, attractive
+              appearance. Our experienced dental team focuses on delivering natural-looking
+              results that complement your teeth and facial features.
+            </p>
+
+            <p>
+              <strong>Trusted Gum Contouring Clinic in Kharadi</strong>Conveniently located in Kharadi, we welcome patients from across Pune and
+              beyond who are looking for safe, effective, and affordable smile enhancement
+              treatments.
+            </p>
+
+            <p>
+              Your search for the best gum contouring in Kharadi, Pune ends here at Denza
+              Dental—where precision meets personalized care.
+            </p>
           </div>
         </div>
       </div>
 
-      <div className="second_section">
-        <div className="second_section_container">
-          <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
-            <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
-            </p>
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
           </div>
+          <div className="general_right">
+            <h2>What is Gum Contouring?</h2>
+            <p>
+              Gum contouring is a cosmetic dental procedure that reshapes your gum line to improve
+              the overall appearance of your smile. At Denza Dental, we design your gum line to
+              create a balanced and harmonious look that complements your teeth.
+            </p>
 
-          <div className="why_choose_cards">
-            {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              What Can Gum Contouring Fix?{" "}
+            </p>
+
+            <ul style={{ paddingLeft: "20px" }}>
+              <li>
+                Excess gum display (commonly known as a “gummy smile”)
+              </li>
+              <li>
+                Uneven or irregular gum lines
+              </li>
+              <li>
+                Gums that appear too high or too low on teeth
+              </li>
+              <li>
+                Thick or bulky gum tissue affecting smile aesthetics
+              </li>
+
+            </ul>
           </div>
         </div>
       </div>
 
       <div className="third_section">
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
+          <h2>Gum Contouring Procedure at Denza Dental, Kharadi</h2>
           <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
+            Understanding the gum contouring process helps you feel confident about your
+            treatment. Here’s what your journey at Denza Dental looks like:
           </p>
         </div>
 
@@ -175,49 +203,75 @@ const  ZirconiaCrowns  = () => {
         </div>
       </div>
 
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>How long does it take for recovery?</h2>
+
+          <ul>
+            <li>Gum contouring treatment recovery may take around 7-10 days. </li>
+            <li>During this time: </li>
+            <li>Eat soft, cool foods</li>
+            <li>Avoid spicy or acidic items</li>
+            <li>Maintain oral hygiene </li>
+            <li>Take prescribed medications </li>
+            <li>Follow dentist instructions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="parent braces_treat_parent">
+        <div className="cont braces_treat_cont">
+          <div className="braces_treat_right">
+            <h2>Benefits & Risks of Gum Contouring at Denza Dental</h2>
+            
+
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Benefits of Gum Contouring 
             </p>
 
-            <ol>
+            <ul>
               <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
+                <b>Balanced Smile </b>– Improves gum proportions and tooth visibility 
               </li>
               <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
+                <b>Boosts Confidence </b>– Helps you smile and interact more freely 
               </li>
               <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
+                <b>Better Oral Hygiene </b>– Easier cleaning and maintenance 
               </li>
               <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
+                <b>Long-Lasting Results </b>– Permanent improvement in most cases
+              </li>
+              <li>
+                <b>Quick Recovery </b>– Resume routine in 1–2 days
+              </li>
+            </ul>
+
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Risks of Gum Contouring 
+            </p>
+
+            <ul>
+              <li>
+                <b>Temporary Sensitivity </b>– Mild reaction to hot/cold foods 
               </li>
 
               <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
+                <b>Swelling </b>– Usually settles within a few days 
               </li>
-            </ol>
+
+              <li>
+                <b>Low Risk of Infection </b>– Managed with proper care 
+              </li>
+
+              <li>
+                <b>Short-Term Adjustment </b>– Minor changes in eating/speaking during healing
+              </li>
+            </ul>
           </div>
 
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+          <div className="braces_treat_left">
+            <img src={img1} alt="General Dental Service" />
           </div>
         </div>
       </div>
@@ -258,7 +312,7 @@ const  ZirconiaCrowns  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +346,4 @@ const  ZirconiaCrowns  = () => {
   );
 };
 
-export default  ZirconiaCrowns ;
+export default GumCountouring;

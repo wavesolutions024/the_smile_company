@@ -51,6 +51,11 @@ import DentalTourism from "./pages/dental tourism/DentalTourism";
 import OurWork from "./pages/our work/OurWork";
 import DentalImplantsTreatment from "./pages/services/dental implants treatment/DentalImplantsTreatment";
 import ToothReshaping from "./pages/sub services/tooth reshaping/ToothReshaping";
+import GumCountouring from "./pages/sub services/gum contouring/GumCountouring";
+import MetalBraces from "./pages/sub services/metal braces/MetalBraces";
+import LingualBraces from "./pages/sub services/lingual braces/LingualBraces";
+
+
 
 function AppLayout() {
   const location = useLocation();
@@ -88,13 +93,16 @@ function AppLayout() {
         <Route element={<SmileAnalysisConsultation />} path="/smile-analysis-consultation" />
         <Route element={<SmileDesigning />} path="/smile-designing" />
         <Route element={<TeethWhiteningTreatment />} path="/teeth-whitening-treatment" />
-        <Route element={<ToothReshaping />} path="/tooth-reshaping" />
         <Route element={<PorcelainVennersTreatment />} path="/porcelain-veneers-treatment" />
+        <Route element={<ToothReshaping />} path="/tooth-reshaping" />
         <Route element={<CompositeVeeners />} path="/composite-veneers" />
         <Route element={<CompositeBonding />} path="/composite-bonding" />
+        <Route element={<GumCountouring />} path="/gum-countouring" />
         <Route element={<GumDepizmentation />} path="/gum-depizmentation" />
         <Route element={<ClearAligners />} path="/clear-aligners" />
         <Route element={<CeramicBraces />} path="/ceramic-braces" />
+        <Route element={<MetalBraces />} path="/metal-braces" />
+        <Route element={<LingualBraces />} path="/lingual-braces" />
         <Route element={<AllOnFour />} path="/all-on-four" />
         <Route element={<ImplantSupported />} path="/implant-supported" />
         <Route element={<Female />} path="/female-dr" />

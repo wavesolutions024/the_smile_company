@@ -9,32 +9,29 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
+
 
 const whyChooseData = [
   {
     icon: "👨‍⚕️",
-    title: "Experienced Team",
+    title: "Tooth Contouring",
     description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+      "Contouring involves gently reshaping the enamel to smooth uneven edges and correct minor imperfections. This quick and painless procedure helps create a more balanced and refined appearance.",
   },
   {
     icon: "🦷",
-    title: "Advanced Technology",
+    title: "Dental Bonding",
     description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+      "Bonding uses a tooth-colored composite resin to reshape and restore teeth. The material is carefully sculpted and hardened using a special light, making it ideal for repairing chips, closing small gaps, and improving tooth shape.",
   },
   {
     icon: "💰",
-    title: "Affordable Packages",
+    title: "Porcelain Veneers",
     description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+      "Veneers are thin, custom-made shells placed over the front surface of teeth to correct more noticeable imperfections. They provide a durable, natural-looking solution for enhancing overall smile aesthetics.",
   },
-  {
-    icon: "😊",
-    title: "Patient-Centric Approach",
-    description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
-  },
+
 ];
 
 const services = [
@@ -67,41 +64,51 @@ const services = [
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "What is teeth reshaping and who can benefit from it? ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "-Teeth reshaping is a cosmetic procedure that improves the shape, edges, and overall appearance of teeth. It is ideal for individuals with minor imperfections like uneven edges or small chips.",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "What treatment options are included in teeth reshaping? ",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "-Depending on your needs, treatments may include contouring, dental bonding, or veneers to achieve the desired smile enhancement.",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "Is teeth reshaping a painful procedure? ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "-The procedure is usually painless as it involves minimal enamel adjustment, and most patients do not require anesthesia.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "How long do the results of teeth reshaping last? ",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "-Results can last for many years with proper care, good oral hygiene, and regular dental check-ups.",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "Can teeth be reshaped without dental treatment?",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "- Natural reshaping at home is not recommended. Professional dental procedures ensure safe and effective results.",
   },
   {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
+    question: "Is teeth reshaping safe? ",
     answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "-Yes, when performed by experienced dentists, it is a safe and conservative procedure with minimal risks.",
+  },
+  {
+    question: "What is the cost of teeth reshaping in Pune? ",
+    answer:
+      "- The cost depends on the type of treatment and complexity. A personalized estimate is provided during consultation at Denza Dental.",
+  },
+  {
+    question: "Are there any side effects of teeth reshaping? ",
+    answer:
+      "-Side effects are minimal, but some patients may experience temporary sensitivity, which usually resolves quickly.",
   },
 ];
 
-const  ToothReshaping  = () => {
+const ToothReshaping = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,15 +125,63 @@ const  ToothReshaping  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
+      <PageTop title="Tooth Reshaping" />
+
+      <div className="brace_treat_parent parent">
+        <div className="brace_treat_cont cont">
+          <h2>Braces Treatment in Kharadi, Pune | Denza Dental </h2>
+          <div>
+            <p>
+              Teeth reshaping is an effective solution for enhancing your smile by correcting
+              minor imperfections such as uneven edges, small chips, or slightly irregular
+              teeth. At Denza Dental in Kharadi, Pune, we offer advanced teeth reshaping
+              treatments designed to refine your smile with minimal intervention. Our
+              experienced dentists use modern techniques and technology to deliver precise,
+              personalized care for natural-looking results. From tooth contouring to bonding
+              and veneers, we provide a range of solutions to help you achieve a more
+              balanced, confident smile.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div className="parent braces_treat_parent">
+        <div className="cont braces_treat_cont">
+          <div className="braces_treat_right">
+            <h2>Reasons for Teeth Reshaping</h2>
+
+            <ul>
+
+              <li>
+                <b>Correcting Uneven Edges </b>Teeth reshaping helps smooth out rough or jagged edges, creating a more
+                uniform and polished smile.
+              </li>
+
+              <li>
+                <b>Repairing Minor Damage </b>It is an effective solution for fixing small chips or cracks, improving both
+                appearance and tooth integrity.
+              </li>
+
+              <li>
+                <b>Improving Alignment Appearance </b>Reshaping can address slight overlaps or irregular positioning, enhancing
+                overall smile aesthetics.
+              </li>
+
+              <li>
+                <b>Adjusting Tooth Length </b>The procedure can subtly shorten or reshape teeth to create better proportion
+                and balance.
+              </li>
+
+              <li>
+                <b>Enhancing Tooth Shape </b>It refines irregular tooth shapes, resulting in a more symmetrical and visually
+                appealing smile.
+              </li>
+            </ul>
+          </div>
+
+          <div className="braces_treat_left">
+            <img src={img1} alt="General Dental Service" />
           </div>
         </div>
       </div>
@@ -134,11 +189,10 @@ const  ToothReshaping  = () => {
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+            <h2>Types of Teeth Reshaping Procedures</h2>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
+              At Denza Dental, we offer a range of teeth reshaping treatments to address
+              different cosmetic concerns and enhance your smile.
             </p>
           </div>
 
@@ -154,70 +208,68 @@ const  ToothReshaping  = () => {
         </div>
       </div>
 
-      <div className="third_section">
-        <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
-        </div>
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2>Teeth Reshaping Aftercare & Recovery</h2>
 
-        <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Common Reasons for Braces{" "}
+            </p>
+
+            <ul style={{ paddingLeft: "20px" }}>
+              <li>
+                <b>Quick Recovery </b>Teeth reshaping is a minimally invasive procedure, and most patients can
+                resume normal activities immediately. Any slight sensitivity usually settles within
+                a few days.
+              </li>
+
+              <li>
+                <b>Maintain Oral Hygiene </b>Regular brushing and flossing are essential to keep your teeth clean and
+                maintain the results of the reshaping treatment.
+              </li>
+
+              <li>
+                <b>Avoid Hard & Sticky Foods </b>Limiting hard, crunchy, or sticky foods helps protect the reshaped edges and
+                prevents unnecessary wear or damage.
+              </li>
+
+              <li>
+                <b>Regular Dental Check-Ups </b>Routine dental visits allow us to monitor your oral health and ensure your
+                reshaped teeth remain in optimal condition.
+              </li>
+
+              <li>
+                <b>Long-Lasting Results </b>Following proper aftercare helps preserve the appearance and function of your
+                teeth, keeping your smile looking refined and natural over time.
+              </li>
+
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
+      <div className="parent braces_treat_parent">
+        <div className="cont braces_treat_cont">
+          <div className="braces_treat_right">
+            <h2>Before and After Teeth Reshaping </h2>
+
             <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
+              Experience the visible difference that teeth reshaping can make. At Denza
+              Dental, our before and after results showcase how minor corrections can create
+              a more balanced and aesthetically pleasing smile. These transformations
+              highlight the precision and care involved in enhancing tooth shape, edges, and
+              symmetry. If you’re considering teeth reshaping in Kharadi, Pune, our results
+              offer a clear idea of how this simple procedure can significantly improve your
+              smile and overall appearance.
             </p>
-
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
-
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
           </div>
 
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+          <div className="braces_treat_left">
+            <img src={img1} alt="General Dental Service" />
           </div>
         </div>
       </div>
@@ -258,7 +310,7 @@ const  ToothReshaping  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +344,4 @@ const  ToothReshaping  = () => {
   );
 };
 
-export default  ToothReshaping ;
+export default ToothReshaping;

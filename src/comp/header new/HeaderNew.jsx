@@ -95,12 +95,12 @@ const HeaderNew = () => {
               to: "/teeth-whitening-treatment",
             },
             {
-              label: "TOOTH RESHAPING",
-              to: "/tooth-reshaping",
-            },
-            {
               label: " PORCELAIN VENEERS TREATMENT ",
               to: "/porcelain-veneers-treatment",
+            },
+            {
+              label: "TOOTH RESHAPING",
+              to: "/tooth-reshaping",
             },
             {
               label: "  COMPOSITE VENEERS ",
@@ -109,6 +109,10 @@ const HeaderNew = () => {
             {
               label: "COMPOSITE BONDING  ",
               to: "/composite-bonding",
+            },
+            {
+              label: "GUM CONTOURING ",
+              to: "/gum-countouring",
             },
             {
               label: " GUM DEPIGMENTATION  ",
@@ -128,6 +132,14 @@ const HeaderNew = () => {
             {
               label: "CERAMIC BRACES  ",
               to: "/ceramic-braces",
+            },
+            {
+              label: "METAL BRACES ",
+              to: "/metal-braces",
+            },
+            {
+              label: "LINGUAL BRACES ",
+              to: "/lingual-braces",
             },
           ],
         },
@@ -195,7 +207,7 @@ const HeaderNew = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const shouldShow =  window.scrollY > 80;
+      const shouldShow = window.scrollY > 80;
       setVisible(shouldShow);
       if (window.scrollY <= 80 && location.pathname === "/") {
         setMobileOpen(false);
@@ -243,22 +255,22 @@ const HeaderNew = () => {
               {child.label} <span className="caret">▸</span>
 
               {activeSubmenu === submenuKey && (
-              <div className="submenu open">
-                <div className="submenu_panel">
-                  {child.children.map((grandChild) => (
-                    <Link
-                      key={grandChild.label}
-                      to={grandChild.to}
-                      onClick={closeAll}
-                    >
-                      {grandChild.label}
-                    </Link>
-                  ))}
+                <div className="submenu open">
+                  <div className="submenu_panel">
+                    {child.children.map((grandChild) => (
+                      <Link
+                        key={grandChild.label}
+                        to={grandChild.to}
+                        onClick={closeAll}
+                      >
+                        {grandChild.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
             </Link>
-            
+
           </div>
         );
       }

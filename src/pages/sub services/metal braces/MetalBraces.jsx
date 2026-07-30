@@ -3,105 +3,93 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./ZirconiaCrowns.scss";
+import "./MetalBraces.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
-const whyChooseData = [
+
+const servicess = [
   {
-    icon: "👨‍⚕️",
-    title: "Experienced Team",
-    description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
+    title: "Initial Consultation ",
+    points: [
+      "Detailed dental check-up",
+      "Medical history review ",
+      "Digital X-rays and scans",
+      "3D impressions of teeth ",
+      "Discussion of treatment goals and timeline ",
+      "Cost and payment options explained ",
+    ],
   },
   {
-    icon: "🦷",
-    title: "Advanced Technology",
-    description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
+    title: "Pre-Treatment Phase ",
+    points: [
+      "Professional teeth cleaning",
+      "Treatment of existing dental issues",
+      "Smile photos for records ",
+      "Space and bite analysis",
+      "Final treatment planning",
+    ],
   },
   {
-    icon: "💰",
-    title: "Affordable Packages",
-    description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
+    title: "Braces Installation",
+    points: [
+      "Tooth surface preparation",
+      "Accurate bracket placement",
+      "Archwire fitting and adjustments",
+      "Elastic band placement ",
+      "Guidance on care and maintenance",
+    ],
   },
   {
-    icon: "😊",
-    title: "Patient-Centric Approach",
-    description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
+    title: "Regular Adjustments ",
+    points: [
+      "Monthly follow-up visits ",
+      "Progress tracking ",
+      "Wire tightening and adjustments",
+      "Alignment refinements ",
+      "Oral hygiene checks ",
+      "Elastic band replacement",
+    ],
   },
 ];
 
-const services = [
-  {
-    title: "Quick Discussion",
-    description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
-  },
-  {
-    title: "Mouth Check ",
-    description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
-  },
-  {
-    title: "X-rays (Only if Needed)",
-    description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
-  },
-  {
-    title: " Deep Cleaning ",
-    description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
-  },
-  {
-    title: "Next Steps & Advice ",
-    description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
-  },
-];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "Are metal braces better?",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "Metal braces are highly effective, especially for complex alignment cases, offering precise and reliable results. ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "How painful are metal braces? ",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "You may feel mild discomfort or pressure after placement and adjustments, but it usually subsides within a few days.",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "Which braces are the most affordable?",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "Metal braces are generally the most cost-effective option among all types of orthodontic treatments.",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "What are the risks of metal braces?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "Minor risks include temporary discomfort, mouth irritation, and difficulty in cleaning, which can be managed with proper care.",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "Do braces change face shape? ",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
-  },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "Yes, braces can improve facial balance and profile by correcting teeth alignment and jaw positioning. ",
   },
 ];
 
-const  ZirconiaCrowns  = () => {
+const MetalBraces = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,107 +106,120 @@ const  ZirconiaCrowns  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="Metal Braces" />
 
-      <div className="second_section">
-        <div className="second_section_container">
-          <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+      <div className="brace_treat_parent parent">
+        <div className="brace_treat_cont cont">
+          <h2>Metal Braces in Kharadi, Pune | Denza Dental </h2>
+          <div>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
+              Transform your smile with metal braces treatment in Kharadi, Pune at Denza
+              Dental. Our experienced orthodontists provide precise teeth alignment using
+              traditional metal braces combined with modern dental technology, ensuring
+              effective and long-lasting results.
+            </p>
+
+            <p>
+              <strong>Best Dental Clinic for Metal Braces in Kharadi, Pune</strong>
+            </p>
+
+            <p>
+              <strong>Denza Dental is trusted for metal braces treatment because we offer: </strong>
+            </p>
+
+            <ul>
+              <li>Advanced orthodontic equipment</li>
+              <li>Experienced orthodontic specialists </li>
+              <li>Personalized treatment planning </li>
+              <li>Transparent and clear pricing </li>
+              <li>Strict sterilization and hygiene standards </li>
+              <li>Digital X-rays and imaging systems</li>
+              <li>Flexible appointment scheduling </li>
+              <li>Comfortable and patient-friendly environment</li>
+            </ul>
+            <p>
+              We focus on delivering reliable orthodontic care that combines precision,
+              comfort, and consistent results.
+            </p>
+            <p>
+              You can also reach us via email at denzadentalcenter@gmail.com for more details. Visit
+              our clinic – Get Directions.
             </p>
           </div>
+        </div>
+      </div>
 
-          <div className="why_choose_cards">
-            {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2>Features of Metal Braces at Denza Dental</h2>
+
+            <ul style={{ paddingLeft: "20px" }}>
+              <li>High-quality stainless steel brackets</li>
+              <li>Advanced heat-activated archwires </li>
+              <li>Consistent and controlled pressure for alignment</li>
+              <li>Strong grip for complex tooth movements</li>
+              <li>Highly durable and long-lasting </li>
+              <li>Faster results in many cases </li>
+              <li>Better control over tooth positioning</li>
+              <li>Cost-effective orthodontic option</li>
+              <li>Proven and reliable treatment method </li>
+              <li>Suitable for children, teens, and adults</li>
+              <li>Customizable colored elastic bands </li>
+              <li>Ideal for severe misalignment cases</li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <div className="third_section">
+      <div className="third_section" style={{ background: "var(--white)" }}>
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
+          <h2 style={{ textAlign: "center", color: "var(--accent)" }}>
+            Metal Braces Procedure at Denza Dental, Kharadi (Pune)
+          </h2>
         </div>
 
         <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
+          {servicess.map((service, index) => (
+            <div key={index} className="service_card" style={{ background: "var(--background)" }}>
               <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <ul className="service_points" >
+                {service.points.map((point, i) => (
+                  <li style={{ color: "var(--text)" }} key={i}>
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
-            </p>
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>Precautions During Metal Braces Treatment </h2>
 
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
+          <ul>
+            <li>Maintain excellent oral hygiene daily </li>
+            <li>Avoid hard, sticky, and chewy foods</li>
+            <li>Clean braces using special orthodontic brushes</li>
+            <li>Wear a mouthguard during sports </li>
+            <li>Attend all scheduled adjustment visits </li>
+            <li>Follow your orthodontist’s instructions carefully </li>
+          </ul>
 
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
-          </div>
+          <h2>Aftercare for Metal Braces</h2>
 
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
-          </div>
+          <ul>
+            <li>Wear retainers as advised</li>
+            <li>Continue regular dental check-ups</li>
+            <li>Maintain proper oral hygiene </li>
+            <li>Follow recommended cleaning routines </li>
+            <li>Report any discomfort or issues promptly</li>
+          </ul>
         </div>
       </div>
 
@@ -226,7 +227,7 @@ const  ZirconiaCrowns  = () => {
         <div className="faq_header">
           <h2>FAQs</h2>
           <p>
-            Answers to the most common questions about our general dental care.
+            Metal Braces at Denza Dental, Kharadi (Pune)
           </p>
         </div>
 
@@ -258,7 +259,7 @@ const  ZirconiaCrowns  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +293,4 @@ const  ZirconiaCrowns  = () => {
   );
 };
 
-export default  ZirconiaCrowns ;
+export default MetalBraces;
