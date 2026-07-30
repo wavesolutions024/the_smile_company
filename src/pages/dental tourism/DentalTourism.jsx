@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import clnic_img from "../../assets/dental_tourism_img.jpeg";
 import Button from "../../comp/button/Button";
-import serviceHero from "../../assets/service_hero.webp";
+import serviceHero from "../../assets/service_hero.png";
 
 const DentalTourism = () => {
   const services = [
