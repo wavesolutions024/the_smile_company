@@ -95,6 +95,10 @@ const HeaderNew = () => {
               to: "/teeth-whitening-treatment",
             },
             {
+              label: "TOOTH RESHAPING",
+              to: "/tooth-reshaping",
+            },
+            {
               label: " PORCELAIN VENEERS TREATMENT ",
               to: "/porcelain-veneers-treatment",
             },
