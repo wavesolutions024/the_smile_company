@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./HeaderNew.scss";
-import logo from "../../assets/header/logo6.png";
+import logo from "../../assets/header/new_logo.png";
 import { RxCross2 } from "react-icons/rx";
 
 const HeaderNew = () => {
@@ -348,7 +348,7 @@ const HeaderNew = () => {
     >
       <div className="header_inner cont">
         <Link to="/" onClick={closeAll} className="logo_link">
-          <img src={logo} alt="AO Dentistry" />
+          <img src={logo} alt="Denza Dental" />
         </Link>
 
         <div className="main_nav">
