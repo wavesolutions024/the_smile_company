@@ -468,7 +468,7 @@ const Home = () => {
       >
         <div className="feature_cards_cont cont">
           <div className="section_header">
-            <h1>Exceptional dental care with every visit</h1>
+            <h1>Exceptional Dental Care With Every Visit</h1>
             <p>
               Our promise: modern treatments, expert teams, and comfort-centered
               care for every patient.
