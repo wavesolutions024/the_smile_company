@@ -7,7 +7,7 @@ import { FiYoutube } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoIosCall } from "react-icons/io";
 import { BsTwitterX } from "react-icons/bs";
-import logo from "../../assets/header/logo6.png";
+import logo from "../../assets/header/new_logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

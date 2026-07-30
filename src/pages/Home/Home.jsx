@@ -279,7 +279,7 @@ const Home = () => {
                 Creating Beautiful Smiles Through Excellence, Innovation & Care
               </h1>
               <p>
-                At Denza Dental Center, we believe every smile deserves
+                At <b>Denza Dental Center</b>, we believe every smile deserves
                 exceptional care. Guided by excellence, driven by innovation,
                 and delivered with compassion, we provide personalized dental
                 treatments tailored to every patient's needs. From preventive
@@ -349,17 +349,19 @@ const Home = () => {
               </p>
 
               <p>
-                At Denza Dental, exceptional care begins with experienced hands.
-                Dr. Hemant Thodsare and Dr. Devika Kalaskar- Thodsare are
-                committed to providing personalized, ethical, and evidence-based
-                dental care for patients of all ages. With a patient-first
-                approach and a passion for clinical excellence, they combine
-                advanced dental techniques with compassionate care to deliver
-                comfortable, precise, and long-lasting treatment outcomes.
-                Whether it's preventive care, cosmetic smile enhancements,
-                restorative procedures, or comprehensive dental treatments,
-                their focus is on helping every patient achieve a healthy,
-                confident smile in a welcoming and stress-free environment.
+                At <b style={{color:"var(--bg_color)"}}>Denza Dental</b>, exceptional care begins with experienced
+                hands.
+                <b style={{color:"var(--bg_color)"}}>Dr. Hemant Thodsare</b> and{" "}
+                <b style={{color:"var(--bg_color)"}}>Dr. Devika Kalaskar- Thodsare</b> are committed to providing
+                personalized, ethical, and evidence-based dental care for
+                patients of all ages. With a patient-first approach and a
+                passion for clinical excellence, they combine advanced dental
+                techniques with compassionate care to deliver comfortable,
+                precise, and long-lasting treatment outcomes. Whether it's
+                preventive care, cosmetic smile enhancements, restorative
+                procedures, or comprehensive dental treatments, their focus is
+                on helping every patient achieve a healthy, confident smile in a
+                welcoming and stress-free environment.
               </p>
 
               <Button text="About Us" path="/about" style={{ width: "100%" }} />
