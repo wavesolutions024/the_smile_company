@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./HeaderNew.scss";
-import logo from "../../assets/header/logo7.png";
+import logo from "../../assets/header/logo6.png";
 import { RxCross2 } from "react-icons/rx";
 
 const HeaderNew = () => {
@@ -191,7 +191,7 @@ const HeaderNew = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const shouldShow = location.pathname !== "/" || window.scrollY > 80;
+      const shouldShow =  window.scrollY > 80;
       setVisible(shouldShow);
       if (window.scrollY <= 80 && location.pathname === "/") {
         setMobileOpen(false);
@@ -237,8 +237,8 @@ const HeaderNew = () => {
               }}
             >
               {child.label} <span className="caret">▸</span>
-            </Link>
-            {activeSubmenu === submenuKey && (
+
+              {activeSubmenu === submenuKey && (
               <div className="submenu open">
                 <div className="submenu_panel">
                   {child.children.map((grandChild) => (
@@ -253,6 +253,8 @@ const HeaderNew = () => {
                 </div>
               </div>
             )}
+            </Link>
+            
           </div>
         );
       }

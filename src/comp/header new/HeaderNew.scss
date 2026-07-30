@@ -20,7 +20,6 @@
     }
 
     .header_inner {
-  
       .main_nav {
         display: flex;
       }
@@ -110,6 +109,17 @@
             background-color: var(--accent);
             width: 350px;
             padding: 10px;
+
+            .submenu_item {
+              width: 100%;
+              .submenu_toggle {
+                position: relative;
+                text-align: left;
+                justify-content: flex-start;
+                width: 100%;
+           
+              }
+            }
           }
 
           .submenu {
@@ -223,7 +233,7 @@
       padding-bottom: 10px;
       border-bottom: 1px solid gray;
 
-      a{
+      a {
         font-size: 12px;
       }
 
@@ -232,17 +242,15 @@
         flex-direction: column;
         gap: var(--unit);
 
-      
-
         .submenu_panel {
           display: flex;
           flex-direction: column;
           gap: calc(var(--unit) / 2);
-              margin-top: 10px;
+          margin-top: 10px;
 
-            a{
-          font-size: 10px;
-        }
+          a {
+            font-size: 10px;
+          }
         }
       }
 
@@ -280,9 +288,8 @@
 @media only screen and (max-width: 480px) {
   .header_new {
     .header_inner {
-          .logo_link{
-
-        img{
+      .logo_link {
+        img {
           width: 110px;
         }
       }
