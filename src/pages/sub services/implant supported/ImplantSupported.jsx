@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const whyChooseData = [
   {
@@ -37,71 +38,84 @@ const whyChooseData = [
   },
 ];
 
-const services = [
+const servicess = [
   {
-    title: "Quick Discussion",
-    description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+    title: " Initial Consultation & Planning",
+    points: [
+      "Detailed oral examination",
+      "X-rays and CBCT scans for bone assessment",
+      "Treatment planning based on bone strength ",
+      "Bone grafting recommended if required for support ",
+    ],
   },
   {
-    title: "Mouth Check ",
-    description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+    title: "Implant Placement (Surgery Day) ",
+    points: [
+      "Ensuring complete patient comfort ",
+      "Titanium implants placed into the jawbone ",
+      "Sutures used to close the gums ",
+      "Temporary teeth may be provided during healing ",
+       "Healing period allows implants to integrate with bone",
+    ],
   },
   {
-    title: "X-rays (Only if Needed)",
-    description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
+    title: "Fabrication of New Teeth",
+    points: [
+      "Placement of attachment caps on healed implants",
+      "Digital impressions taken for precise fit",
+      "Custom overdentures designed for comfort and aesthetics",
+      "Bite and alignment adjustments performed ",
+    ],
   },
   {
-    title: " Deep Cleaning ",
-    description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
+    title: "Final Placement & Function ",
+    points: [
+      "Overdentures securely attached to implants",
+      "Improved ability to chew and speak confidently ",
+      "Stable fit with no slipping or movement",
+      "Easy adaptation to daily routine",
+    ],
   },
   {
-    title: "Next Steps & Advice ",
-    description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
+    title: "Long-Term Results & Maintenance",
+    points: [
+      "Restores facial structure and prevents sunken appearance ",
+      "Regular check-ups ensure long-term success",
+      "Simple oral hygiene routine for maintenance ",
+      "Durable and long-lasting solution with proper care ",
+    ],
   },
+  
+  
 ];
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "Can you sleep with an implant overdenture? ",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      " Yes, many patients can wear them while sleeping, but your dentist may advise removing them at night for cleaning in some cases. ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "How long do overdenture implants last?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "With proper care and regular check-ups, implant-supported overdentures can last 10–20+ years or even longer.  ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "Can you eat normally with implant-supported dentures? ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      " Yes, they provide strong stability, allowing you to eat most foods comfortably compared to traditional dentures. ",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "Who is a good candidate for overdentures?",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
-  },
-  {
-    question: "Are X-rays at Denza Dental Safe?",
-    answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
-  },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "Patients with multiple missing teeth, loose dentures, or reduced jawbone support are usually good candidates for implant-supported overdentures. ",
   },
 ];
 
-const  ImplantSupported  = () => {
+const ImplantSupported = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -118,106 +132,182 @@ const  ImplantSupported  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
+      <PageTop title="Implant-Supported Overdenture" />
+
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2>Implant-Supported Overdenture in Kharadi, Pune | Denza Dental</h2>
+            <p>
+              Missing teeth? At Denza Dental, Kharadi, we offer advanced implant-supported
+              overdenture treatment in Pune to restore your smile, comfort, and confidence.
+            </p>
+
+            <p>
+              Our clinic provides stable and natural-looking overdentures that are supported by dental
+              implants, giving you a secure and long-lasting alternative to traditional removable
+              dentures.
+            </p>
+
+            <p>
+              Patients choose implant-supported overdentures for improved comfort, better chewing
+              ability, and a confident smile without the worry of slipping dentures.
+            </p>
+
+            <p>
+              No more discomfort, movement issues, or embarrassment—just a stable and functional
+              smile.
+            </p>
+
           </div>
         </div>
       </div>
 
-      <div className="second_section">
-        <div className="second_section_container">
-          <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>What is Implant-Supported Overdenture? </h2>
+
+          <p>
+            Implant-supported overdentures are modern “snap-on” dentures that securely attach to
+            dental implants placed in the jawbone.
+          </p>
+
+          <p>
+            <strong>Unlike traditional removable dentures, they:</strong>
+          </p>
+          <ul>
+            <li>
+              Stay firmly in place while eating and speaking
+            </li>
+            <li>
+              Do not slip or move during daily activities
+            </li>
+
+            <li>
+              Provide a natural-looking and stable smile
+            </li>
+            <li>
+              Improve chewing comfort, even with tougher foods
+            </li>
+          </ul>
+          <p>They are a reliable and comfortable solution for replacing multiple missing teeth.</p>
+        </div>
+      </div>
+
+      <div className="parent braces_treat_parent">
+        <div className="cont braces_treat_cont">
+          <div className="braces_treat_right">
+            <h2>When Do You Need an Implant-Supported Overdenture? </h2>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
+              You may need implant-supported overdentures if you experience:
+            </p>
+
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Typical Duration
+            </p>
+
+            <p>
+              Most braces treatments take around 18 to 24 months, though this
+              can differ based on the case.{" "}
+            </p>
+
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Factors That Affect Treatment Time
+            </p>
+
+            <ul>
+              <li>Multiple missing teeth or most teeth missing in one or both jaws</li>
+              <li>Loose or unstable dentures that slip while eating or speaking </li>
+              <li>Difficulty eating certain foods like apples, nuts, or meat</li>
+              <li>Facial changes such as a sunken or aged appearance</li>
+              <li>Speech issues caused by poor denture fit </li>
+              <li>Frequent gum irritation or soreness from dentures </li>
+              <li>Overdependence on denture adhesives </li>
+              <li>Avoiding social situations due to denture discomfort or embarrassment </li>
+              <li>Discomfort wearing removable dentures daily or at night</li>
+            </ul>
+            <p>
+              Implant-supported overdentures provide better stability, comfort, and confidence
+              compared to traditional removable dentures.
             </p>
           </div>
 
-          <div className="why_choose_cards">
-            {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
+          <div className="braces_treat_left">
+            <img src={img1} alt="General Dental Service" />
           </div>
         </div>
       </div>
 
-      <div className="third_section">
+      <div className="third_section" style={{ background: "var(--white)" }}>
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
+          <h2 style={{ textAlign: "center", color: "var(--accent)" }}>
+            Why Choose Denza Dental for Full Mouth Rehabilitation in Pune?
+          </h2>
         </div>
 
         <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
+          {servicess.map((service, index) => (
+            <div key={index} className="service_card" style={{ background: "var(--background)" }}>
               <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <ul className="service_points" >
+                {service.points.map((point, i) => (
+                  <li style={{ color: "var(--text)" }} key={i}>
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
+
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2>Benefits of Implant-Supported Overdenture at Denza Dental, Kharadi (Pune)</h2>
             <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
+              At Denza Dental, we are committed to delivering long-lasting and comfortable solutions
+              for missing teeth with implant-supported overdentures.
             </p>
 
-            <ol>
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Common Reasons for Braces{" "}
+            </p>
+
+            <ul style={{ paddingLeft: "20px" }}>
               <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
+                <b>Precision-Driven Expertise</b> Our team has extensive experience in implant dentistry, ensuring accurate planning
+                and long-term stable results using advanced techniques.
               </li>
 
               <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
+                <b>Personalized Treatment Plans </b>Every patient receives a customized plan based on their bone structure, oral health,
+                and smile goals for the best possible outcome.
               </li>
-            </ol>
-          </div>
 
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+              <li>
+                <b>Advanced Technology </b>We use 3D CBCT imaging and digital scanning for precise implant placement and
+                highly accurate denture fit.
+              </li>
+
+              <li>
+                <b>Patient-Centered Care </b>We guide you through every step of the process with clear communication, ensuring a
+                comfortable and stress-free experience.
+              </li>
+
+              <li>
+                <b>Improved Quality of Life</b> Implant-supported overdentures restore chewing ability, speech clarity, and facial
+                aesthetics—helping patients regain confidence in daily life.
+              </li>
+
+            </ul>
           </div>
         </div>
       </div>
@@ -258,7 +348,7 @@ const  ImplantSupported  = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -292,4 +382,4 @@ const  ImplantSupported  = () => {
   );
 };
 
-export default  ImplantSupported ;
+export default ImplantSupported;

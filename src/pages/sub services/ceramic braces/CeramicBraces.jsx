@@ -38,32 +38,49 @@ const whyChooseData = [
   },
 ];
 
-const services = [
+const servicess = [
   {
-    title: "Quick Discussion",
-    description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
+    title: "Aesthetic Appeal ",
+    points: [
+      "Tooth-colored brackets blend with natural teeth",
+      "Less visible during treatment ",
+      "Helps maintain smile confidence",
+      
+    ],
   },
   {
-    title: "Mouth Check ",
-    description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
+    title: " Durability",
+    points: [
+      "Strong ceramic material",
+      "Suitable for daily wear ",
+      "Maintains shape and performance ",
+    ],
   },
   {
-    title: "X-rays (Only if Needed)",
-    description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
+    title: "Effective Results  ",
+    points: [
+      "Precise tooth alignment ",
+      "Comparable results to metal braces",
+      "Controlled and steady tooth movement",
+    ],
   },
   {
-    title: " Deep Cleaning ",
-    description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
+    title: " Comfort ",
+    points: [
+      "Smooth, polished brackets ",
+      "Reduced irritation to cheeks and gums ",
+      "Comfortable wearing experience",
+    ],
   },
   {
-    title: "Next Steps & Advice ",
-    description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
+    title: "Stain Resistance  ",
+    points: [
+      "High-quality ceramic material ",
+      "Easy maintenance with proper care ",
+      "Maintains appearance throughout treatment",
+    ],
   },
+  
 ];
 
 const faqs = [
@@ -97,7 +114,7 @@ const faqs = [
     answer:
       "The best option depends on your case—metal braces, ceramic braces, or aligners are recommended based on dental needs and goals. ",
   },
-  
+
 ];
 
 const CeramicBraces = () => {
@@ -164,29 +181,30 @@ const CeramicBraces = () => {
               <li>Advanced digital imaging systems </li>
               <li>Flexible appointment scheduling </li>
               <li>Comfortable and friendly clinic environment</li>
-              
+
             </ul>
           </div>
         </div>
       </div>
 
-
-      <div className="third_section">
+      <div className="third_section" style={{ background: "var(--white)" }}>
         <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
+          <h2 style={{ textAlign: "center", color: "var(--accent)" }}>
+            Benefits of Ceramic Braces at Denza Dental
+          </h2>
         </div>
 
         <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
+          {servicess.map((service, index) => (
+            <div key={index} className="service_card" style={{ background: "var(--background)" }}>
               <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <ul className="service_points" >
+                {service.points.map((point, i) => (
+                  <li style={{ color: "var(--text)" }} key={i}>
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -206,8 +224,8 @@ const CeramicBraces = () => {
 
           <ul>
             <li>Brush teeth after meals regularly</li>
-             <li>Maintain strict oral hygiene </li>
-              <li>Attend all follow-up visits as advised by your dentist</li>
+            <li>Maintain strict oral hygiene </li>
+            <li>Attend all follow-up visits as advised by your dentist</li>
           </ul>
         </div>
       </div>

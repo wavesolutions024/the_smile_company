@@ -69,35 +69,21 @@ const services = [
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "Which is better, All-on-4 or All-on-6 dental implants?",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      " It depends on your bone condition and oral health. All-on-4 is suitable for most patients, while All-on-6 offers extra support for patients with lower bone density. ",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "Are All-on-6 dental implants worth it?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "Yes, they provide better stability, durability, and support, especially for patients needing full-mouth rehabilitation with reduced bone density.  ",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "Can you eat with All-on-4 dental implants?",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "Yes, once healing is complete, you can eat most foods comfortably, just like with natural teeth. ",
   },
-  {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
-    answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
-  },
-  {
-    question: "Are X-rays at Denza Dental Safe?",
-    answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
-  },
-  {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
-    answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
-  },
+  
 ];
 
 const AllOnFour = () => {
@@ -178,97 +164,59 @@ const AllOnFour = () => {
         </div>
       </div>
 
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>Why Choose Denza Dental for All-on-4 & All-on-6 Dental Implants in Pune? </h2>
 
-      <div className="second_section">
-        <div className="second_section_container">
-          <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
-            <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
-            </p>
-          </div>
-
-          <div className="why_choose_cards">
-            {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="third_section">
-        <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
           <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
+            Choosing the right clinic for All-on-4 or All-on-6 dental implants in Pune is the most
+            important step for successful treatment and long-term results. At Denza Dental,
+            Kharadi, we ensure advanced care in a comfortable and patient-friendly environment.
+          </p>
+
+          <p>
+            We understand that full-mouth implant treatment is a major decision, and our team is
+            here to guide you toward a confident, natural-looking smile.
+          </p>
+
+          <h2>Why Us?</h2>
+          <p>
+            <strong>Experienced Dentists with Global Exposure </strong>Our dental team has extensive experience in handling complex implant cases and has
+            gained global exposure through advanced training and international clinical practices,
+            ensuring world-class treatment standards in Pune.
+          </p>
+
+          <p>
+            <strong>Advanced Technology </strong>We use modern tools like 3D imaging and computer-guided implant placement for
+            accurate, safe, and predictable results.
+          </p>
+
+          <p>
+            <strong>Comfort-Focused Experience</strong>Our clinic is designed to provide a relaxing experience throughout your treatment:
+          </p>
+
+          <ul>
+            <li>Comfortable treatment setup</li>
+            <li> Patient relaxation-focused environment</li>
+            <li>Entertainment options during procedures</li>
+          </ul>
+
+          <h2>Patient-Centric Approach</h2>
+
+          <ul>
+            <li>Friendly and transparent communication</li>
+            <li>Clear explanation of every step </li>
+            <li>Focus on comfort and trust</li>
+          </ul>
+          <p>
+            <strong>Advanced Treatment Techniques</strong>We follow modern global protocols to ensure safe, efficient, and long-lasting implant
+            outcomes
           </p>
         </div>
-
-        <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
-        </div>
       </div>
 
-      <div className="book_appoint">
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
-            </p>
 
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
-
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
-          </div>
-
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
-          </div>
-        </div>
-      </div>
+      
 
       <div className="faq_section1">
         <div className="faq_header">
