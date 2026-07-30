@@ -69,7 +69,7 @@ const About = () => {
     },
     {
       id: 2,
-      name: "Dr. Devika M. Kalaskar",
+      name: "Dr. Devika Kalaskar- Thodsare",
       title: "Co-founder | Endodontist & Esthetic Dentist",
       description:
         "Dr. Devika is a skilled and patient-focused endodontist and esthetic dentist, known for her precision and calm, reassuring approach to care. She specializes in minimally invasive dentistry, root canal treatments, and aesthetic smile enhancement procedures.\nShe completed her BDS from Sinhgad Dental College, Pune, and her MDS in Conservative Dentistry & Endodontics from Government Dental College, one of India’s premier institutions.\nA former Assistant Professor, she combines academic excellence with strong clinical expertise.\nShe also brings valuable international clinical experience from Kuwait, along with active participation in conferences, workshops, and research, with multiple publications in national and international journals.\She is a member of the Indian Association of Conservative Dentistry and Endodontics (IACDE) and has received several academic recognitions. ",
@@ -353,7 +353,7 @@ const About = () => {
       <div className="parent  doctors_parents_lady">
         <div className="cont doctors_cont_lady">
           <div className="right_doctors_parents">
-            <h2>Dr. Devika M. Kalaskar</h2>
+            <h2>Dr. Devika Kalaskar- Thodsare</h2>
             <span className="doctor_name_title">
               Co-founder | Endodontist & Esthetic Dentist
             </span>

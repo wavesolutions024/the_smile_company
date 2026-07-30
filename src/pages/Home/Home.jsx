@@ -326,16 +326,16 @@ const Home = () => {
 
               <p>
                 At Denza Dental, exceptional care begins with experienced hands.
-                Dr. Hemant Thodsare and Dr. Devika K. Thodsare are committed to
-                providing personalized, ethical, and evidence-based dental care
-                for patients of all ages. With a patient-first approach and a
-                passion for clinical excellence, they combine advanced dental
-                techniques with compassionate care to deliver comfortable,
-                precise, and long-lasting treatment outcomes. Whether it's
-                preventive care, cosmetic smile enhancements, restorative
-                procedures, or comprehensive dental treatments, their focus is
-                on helping every patient achieve a healthy, confident smile in a
-                welcoming and stress-free environment.
+                Dr. Hemant Thodsare and Dr. Devika Kalaskar- Thodsare are
+                committed to providing personalized, ethical, and evidence-based
+                dental care for patients of all ages. With a patient-first
+                approach and a passion for clinical excellence, they combine
+                advanced dental techniques with compassionate care to deliver
+                comfortable, precise, and long-lasting treatment outcomes.
+                Whether it's preventive care, cosmetic smile enhancements,
+                restorative procedures, or comprehensive dental treatments,
+                their focus is on helping every patient achieve a healthy,
+                confident smile in a welcoming and stress-free environment.
               </p>
 
               <Button text="About Us" path="/about" style={{ width: "100%" }} />
@@ -463,7 +463,6 @@ const Home = () => {
       {/* fetures */}
       <div
         className="feature_cards_parent parent"
-        
         data-aos="fade-up"
         data-aos-delay="200"
       >
