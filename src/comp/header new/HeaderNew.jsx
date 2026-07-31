@@ -49,7 +49,7 @@ const HeaderNew = () => {
               label: "DENTAL CROWNS",
               to: "/dental-crowns",
               // 3rd level nav — now rendered correctly by the recursive renderer below
-              children: [{ label: "ZIRCONIA CROWNS", to: "/zerconia-crowns" }],
+              children: [{ label: "ZIRCONIA CROWNS", to: "/zirconia-crowns" }],
             },
             { label: " CROWNS AND BRIDGES ", to: "/crowns-bridges" },
             { label: " INLAYS AND ONLAYS ", to: "/inlays-onlays" },
@@ -119,23 +119,10 @@ const HeaderNew = () => {
         {
           label: "CBCT 3D IMAGING",
           to: "/cbct",
-          children: [
-            { label: "DENTAL CROWNS", to: "/dental-crowns" },
-            { label: "CROWNS AND BRIDGES", to: "/crowns-bridges" },
-            { label: "INLAYS AND ONLAYS", to: "/inlays-onlays" },
-          ],
         },
         {
           label: "3D Intra Oral Scanning",
           to: "/intra-oral-scanning",
-          children: [
-            {
-              label: "DENTAL CROWNS",
-              to: "/dental-crowns",
-            },
-            { label: "CROWNS AND BRIDGES", to: "/crowns-bridges" },
-            { label: "INLAYS AND ONLAYS", to: "/inlays-onlays" },
-          ],
         },
         { label: "Dental Lasers", to: "/dental-lasers" },
         { label: "GBT Cleaning", to: "/gbt-cleaning" },

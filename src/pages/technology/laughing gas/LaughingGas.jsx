@@ -125,6 +125,21 @@ const LaughingGas = () => {
         </div>
       </div>
 
+      <div className="parent second_parent_gbt" style={{ background: "var(--background)" }}>
+        <div className="cont second_cont_gbt">
+          <h2>Why Choose Denza Dental Center for Laughing Gas?</h2>
+
+          <div className="text_gbt">
+            <p>
+              At Denza Dental Center, we prioritize your comfort at every step. Our team
+              carefully administers laughing gas to help you feel calm, relaxed, and completely
+              at ease throughout your treatment, ensuring a safe, smooth, and stress-free
+              experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* faq */}
 
       <div className="faq_section" style={{ background: "white" }}>

@@ -163,6 +163,58 @@ const AllOnFour = () => {
           </div>
         </div>
       </div>
+      
+       <div className="side_side_parent parent">
+        <div className="side_side_cont cont">
+          <div className="left_side_side">
+            <h3>Benefits of All-on-4 & All-on-6 Dental Implants</h3>
+
+            <p>These advanced full-mouth implant solutions offer several life-changing benefits:</p>
+
+            <h3>Immediate Results </h3>
+            <ul>
+              <li>Same-day temporary teeth in many cases </li>
+              <li>Faster healing compared to traditional dentures</li>
+            </ul>
+
+            <h3>Bone Preservation</h3>
+            <ul>
+              <li>Stimulates jawbone and prevents bone loss after tooth loss</li>
+              <li>Maintains natural facial structure</li>
+            </ul>
+
+            <h3>Restored Functionality  </h3>
+            <ul>
+              <li>Fixed teeth with no slipping or movement </li>
+              <li>Ability to eat, speak, and smile confidently </li>
+            </ul>
+          </div>
+
+          <div className="right_side_side">
+            <h3>Long-Lasting Solution </h3>
+            <ul>
+              <li>Can last 15–20+ years with proper care </li>
+              <li>Highly durable and stable</li>
+            </ul>
+
+            <h3>Improved Facial Aesthetics</h3>
+            <ul>
+              <li>Custom-designed teeth for a natural-looking smile</li>
+              <li>Enhances overall facial appearance</li>
+            </ul>
+
+            <h3>Implants vs Traditional Dentures</h3>
+            <ul>
+              <li>Fixed and permanent (no removal required)</li>
+              <li>No adhesives needed</li>
+              <li>Eat almost all types of food comfortably</li>
+              <li>Restores near-natural chewing efficiency (~90–100%)</li>
+              <li>More stable and natural compared to dentures (~50% chewing ability)</li>
+              <li>Lower long-term maintenance and replacement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
       <div className="after_care_parent parent">
         <div className="after_care_cont cont">
