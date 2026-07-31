@@ -24,6 +24,13 @@ const HeaderNew = () => {
             {
               label: "DENTAL CHECK-UPS  ",
               to: "/dental-check-ups",
+
+              children: [
+                {
+                  label: "Routine Dental Check-Up",
+                  to: "/routine-dental-check-up",
+                },
+              ],
             },
             {
               label: "DENTAL X-RAY   ",
@@ -118,7 +125,6 @@ const HeaderNew = () => {
               label: " GUM DEPIGMENTATION  ",
               to: "/gum-depizmentation",
             },
-
           ],
         },
         {
@@ -153,7 +159,7 @@ const HeaderNew = () => {
             },
             {
               label: " IMPLANT SUPPORTED OVERDENTURE ",
-              to: "/implant-supported"
+              to: "/implant-supported",
             },
           ],
         },
@@ -253,7 +259,6 @@ const HeaderNew = () => {
               }}
             >
               {child.label} <span className="caret">▸</span>
-
               {activeSubmenu === submenuKey && (
                 <div className="submenu open">
                   <div className="submenu_panel">
@@ -270,7 +275,6 @@ const HeaderNew = () => {
                 </div>
               )}
             </Link>
-
           </div>
         );
       }
