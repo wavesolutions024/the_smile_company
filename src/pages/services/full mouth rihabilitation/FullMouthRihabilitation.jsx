@@ -179,7 +179,7 @@ const FullMouthRihabilitation = () => {
 
   return (
     <>
-      <PageTop title="Full Mouth Rihabilitation " />
+      <PageTop title="Full Mouth Rehabilitation Services" />
  
       <div className="parent second_parent">
         <div className="cont second_cont">

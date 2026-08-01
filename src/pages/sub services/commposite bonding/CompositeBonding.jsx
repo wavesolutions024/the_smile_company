@@ -132,7 +132,7 @@ const CompositeBonding = () => {
 
   return (
     <>
-      <PageTop title="Composite Bonding" />
+      <PageTop title="Composite Bonding Services" />
 
       <div className="parent second_parent">
         <div className="cont second_cont">

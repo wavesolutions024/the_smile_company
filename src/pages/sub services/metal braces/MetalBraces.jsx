@@ -106,7 +106,7 @@ const MetalBraces = () => {
 
   return (
     <>
-      <PageTop title="Metal Braces" />
+      <PageTop title="Metal Braces Services" />
 
       <div className="brace_treat_parent parent">
         <div className="brace_treat_cont cont">

@@ -131,7 +131,7 @@ const SmileDesigning = () => {
 
   return (
     <>
-      <PageTop title="Smile Designing" />
+      <PageTop title="Smile Designing Services" />
 
       <div className="second_section">
         <div className="second_section_container">

@@ -106,7 +106,7 @@ const SmileAnalysisConsultation = () => {
 
   return (
     <>
-      <PageTop title="Smile Analysis Consultation" />
+      <PageTop title="Smile Analysis Consultation Services" />
 
       <div className="second_section">
         <div className="second_section_container">

@@ -124,7 +124,7 @@ const InlaysOnlays = () => {
 
   return (
     <>
-      <PageTop title="Inlays Onlays" />
+      <PageTop title="Inlays Onlays Services" />
 
       <div className="book_appoint">
         <div className="book_appoint_container" data-aos="fade-up">

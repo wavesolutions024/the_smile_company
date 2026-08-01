@@ -106,7 +106,7 @@ const AllOnFour = () => {
 
   return (
     <>
-      <PageTop title="All-on-4 & All-on-6 Dental Implants" />
+      <PageTop title="All-on-4 & All-on-6 Dental Implants Services" />
 
       <div className="brace_treat_parent parent">
         <div className="brace_treat_cont cont">

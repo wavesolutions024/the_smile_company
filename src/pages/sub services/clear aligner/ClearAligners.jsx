@@ -127,7 +127,7 @@ const ClearAligners = () => {
 
   return (
     <>
-      <PageTop title="Clear Aligners" />
+      <PageTop title="Clear Aligners Services" />
 
       <div className="brace_treat_parent parent">
         <div className="brace_treat_cont cont">

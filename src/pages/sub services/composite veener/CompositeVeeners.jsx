@@ -116,7 +116,7 @@ const CompositeVeeners = () => {
 
   return (
     <>
-      <PageTop title=" Composite Veneers" />
+      <PageTop title=" Composite Veneers Services" />
 
       <div className="book_appoint parent" style={{ background: "white" }}>
         <div className="book_appoint_container" data-aos="fade-up">
