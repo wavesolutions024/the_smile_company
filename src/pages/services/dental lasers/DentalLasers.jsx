@@ -47,29 +47,29 @@ const services = [
 
 const services1 = [
   {
-    title: " Initial Consultation  ",
+    title: "Precision-Driven Care ",
     description:
-      "We assess your dental condition and recommend suitable laser treatment options. We also explain the procedure and discuss cost-related queries.  ",
+      " Our diode laser technology enables highly precise treatments, targeting specific areas with minimal impact on surrounding tissues for accurate and effective results. ",
   },
   {
-    title: "Preparation",
+    title: " Comfort-Focused Experience  ",
     description:
-      "The treatment area is prepared, and local anesthesia may be used if required to ensure a comfortable, pain-free experience.  ",
+      "Experience dental procedures with minimal discomfort, as diode lasers work gently and efficiently—often reducing the need for anesthesia. ",
   },
   {
-    title: "Laser Treatment  ",
+    title: "Rapid Recovery Time ",
     description:
-      "Advanced dental lasers are used to perform precise soft or hard tissue procedures with minimal discomfort and faster healing. ",
+      "Enjoy quicker healing times with advanced laser treatments, with many patients noticing significant improvement within just 24 hours. ",
   },
   {
-    title: "Post-Treatment Care  ",
+    title: " Comprehensive Treatment Range ",
     description:
-      "After the procedure, we provide clear aftercare instructions to ensure smooth healing and the best results. ",
+      "From gum reshaping to treating cold sores, diode laser technology addresses a wide range of dental concerns—offering comprehensive care in one place. ",
   },
   {
-    title: "Follow-Up Visits ",
+    title: " Cleaner, Safer Procedures ",
     description:
-      "Regular follow-ups are scheduled to monitor healing and ensure successful outcomes, with ongoing support from our dental team.  ",
+      "Diode laser treatments often result in little to no bleeding during and after procedures, enhancing comfort and reducing post-treatment complications. ",
   },
 ];
 
@@ -163,64 +163,24 @@ const RestorativeDentistry = () => {
       </div>
       */}
 
-      <div className="three_section_parent parent">
-        <div className="cont three_section_cont">
-          <h2>Advanced Precision with Enhanced Comfort</h2>
+      <div className="third_section">
+        <div className="third_header">
+          <h2>
+            Dental Laser Treatment Procedure – Denza Dental, Kharadi (Pune)
+          </h2>
+        </div>
 
-          <div className="three_points">
-            <div className="laser_types">
-              <h3>Precision-Driven Care</h3>
-              <ul>
-                <li>
-                  Our diode laser technology enables highly precise treatments, targeting specific
-                  areas with minimal impact on surrounding tissues for accurate and effective
-                  results.
-                </li>
-              </ul>
+        <div className="service_cards">
+          {services1.map((service, index) => (
+            <div key={index} className="service_card">
+              <p className="service_card_index">{index + 1}.</p>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
             </div>
-
-            <div className="laser_types">
-              <h3> Comfort-Focused Experience </h3>
-              <ul>
-                <li>
-                  Experience dental procedures with minimal discomfort, as diode lasers work
-                  gently and efficiently—often reducing the need for anesthesia.
-                </li>
-              </ul>
-            </div>
-
-            <div className="laser_types">
-              <h3>Rapid Recovery Time</h3>
-              <ul>
-                <li>
-                  Enjoy quicker healing times with advanced laser treatments, with many patients
-                  noticing significant improvement within just 24 hours.
-                </li>
-              </ul>
-            </div>
-
-            <div className="laser_types">
-              <h3>Comprehensive Treatment Range </h3>
-              <ul>
-                <li>
-                  From gum reshaping to treating cold sores, diode laser technology addresses a
-                  wide range of dental concerns—offering comprehensive care in one place.
-                </li>
-              </ul>
-            </div>
-
-            <div className="laser_types">
-              <h3>Cleaner, Safer Procedures</h3>
-              <ul>
-                <li>
-                  Diode laser treatments often result in little to no bleeding during and after
-                  procedures, enhancing comfort and reducing post-treatment complications.
-                </li>
-              </ul>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
+
 
       {/*
 
