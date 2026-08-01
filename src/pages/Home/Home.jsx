@@ -155,6 +155,18 @@ const Home = () => {
 
   const featureCards = [
     {
+      title: "Smile Makeover Center",
+      icon: <FaSmileBeam />,
+    },
+    {
+      title: "Specialist Implant Center",
+      icon: <FaUserMd />,
+    },
+    {
+      title: "Painless Root Canal Center",
+      icon: <FaHandsHelping />,
+    },
+    {
       title: "Advanced Technology",
       icon: <FaLaptopMedical />,
     },
@@ -162,10 +174,10 @@ const Home = () => {
       title: "Expert Dentists",
       icon: <FaUserMd />,
     },
-    {
-      title: "Painless Treatment",
-      icon: <FaSmileBeam />,
-    },
+    // {
+    //   title: "Painless Treatment",
+    //   icon: <FaSmileBeam />,
+    // },
     {
       title: "High Hygiene Standards",
       icon: <FaShieldAlt />,
@@ -349,19 +361,25 @@ const Home = () => {
               </p>
 
               <p>
-                At <b style={{color:"var(--bg_color)"}}>Denza Dental</b>, exceptional care begins with experienced
-                hands.
-                <b style={{color:"var(--bg_color)"}}>Dr. Hemant Thodsare</b> and{" "}
-                <b style={{color:"var(--bg_color)"}}>Dr. Devika Kalaskar- Thodsare</b> are committed to providing
-                personalized, ethical, and evidence-based dental care for
-                patients of all ages. With a patient-first approach and a
-                passion for clinical excellence, they combine advanced dental
-                techniques with compassionate care to deliver comfortable,
-                precise, and long-lasting treatment outcomes. Whether it's
-                preventive care, cosmetic smile enhancements, restorative
-                procedures, or comprehensive dental treatments, their focus is
-                on helping every patient achieve a healthy, confident smile in a
-                welcoming and stress-free environment.
+                At <b style={{ color: "var(--bg_color)" }}>Denza Dental</b>,
+                exceptional care begins with experienced hands.
+                <b style={{ color: "var(--bg_color)" }}>
+                  Dr. Hemant Thodsare
+                </b>{" "}
+                and{" "}
+                <b style={{ color: "var(--bg_color)" }}>
+                  Dr. Devika Kalaskar- Thodsare
+                </b>{" "}
+                are committed to providing personalized, ethical, and
+                evidence-based dental care for patients of all ages. With a
+                patient-first approach and a passion for clinical excellence,
+                they combine advanced dental techniques with compassionate care
+                to deliver comfortable, precise, and long-lasting treatment
+                outcomes. Whether it's preventive care, cosmetic smile
+                enhancements, restorative procedures, or comprehensive dental
+                treatments, their focus is on helping every patient achieve a
+                healthy, confident smile in a welcoming and stress-free
+                environment.
               </p>
 
               <Button text="About Us" path="/about" style={{ width: "100%" }} />
@@ -387,14 +405,17 @@ const Home = () => {
           <div className="blog_cards">
             <div className="card">
               <div className="image bg-img-cover">
-                <p className="date">17 may 2025</p>
+                <p className="date">25 July 2026</p>
               </div>
               <h1 className="blog_heading">
-                The Art of Managing Business and Patient Care
+                Smile Designing at Denza Dental: Your Path to a Confident,
+                Natural-Looking Smile
               </h1>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content.
+                Your smile is often the first thing people notice about you. If
+                you've ever felt self-conscious about gaps, discoloration,
+                chipped teeth, or an uneven smile line, smile designing could be
+                the solution you've been looking for.
               </p>
               <Link to="/blog-details" className="arrow">
                 <IoArrowForwardOutline />
@@ -402,14 +423,17 @@ const Home = () => {
             </div>
             <div className="card">
               <div className="image bg-img-cover">
-                <p className="date">17 may 2025</p>
+                <p className="date">01 August 2026</p>
               </div>
               <h1 className="blog_heading">
-                The Art of Managing Business and Patient Care
+                Full Mouth Rehabilitation at Denza Dental: Rebuilding Function,
+                Health, and Confidence
               </h1>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content.
+                When multiple teeth are damaged, missing, or affected by
+                long-term wear, a single procedure often isn't enough to restore
+                your oral health. That's where full mouth rehabilitation comes
+                in.
               </p>
               <Link to="/blog-details" className="arrow">
                 <IoArrowForwardOutline />
@@ -417,14 +441,17 @@ const Home = () => {
             </div>
             <div className="card">
               <div className="image bg-img-cover">
-                <p className="date">17 may 2025</p>
+                <p className="date">07 August 2026</p>
               </div>
               <h1 className="blog_heading">
-                The Art of Managing Business and Patient Care
+                Painless Root Canals Using Conscious Sedation at Denza Dental
               </h1>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content.{" "}
+                For many people, the phrase "root canal" brings up images of
+                pain and anxiety — but modern dentistry has changed that reality
+                completely. At Denza Dental, we offer painless root canal
+                treatment using conscious sedation, allowing even the most
+                anxious patients to undergo treatment comfortably.
               </p>
               <Link to="/blog-details" className="arrow">
                 <IoArrowForwardOutline />

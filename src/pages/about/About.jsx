@@ -49,7 +49,7 @@ const About = () => {
           rehabilitation. With over{" "}
           <strong>15 years of clinical expertise</strong>, he is known for
           delivering precise, functionally sound, and aesthetically refined
-          outcomes. \n\nHe holds an MDS in Prosthodontics and Implantology and
+          outcomes. He holds an MDS in Prosthodontics and Implantology and
           brings advanced expertise in Crown & Bridge and comprehensive
           restorative dentistry. He also has valuable international clinical
           experience as a licensed dentist under the Ministry of Health, Kuwait.
@@ -72,7 +72,7 @@ const About = () => {
       name: "Dr. Devika Kalaskar- Thodsare",
       title: "Co-founder | Endodontist & Esthetic Dentist",
       description:
-        "Dr. Devika is a skilled and patient-focused endodontist and esthetic dentist, known for her precision and calm, reassuring approach to care. She specializes in minimally invasive dentistry, root canal treatments, and aesthetic smile enhancement procedures.\nShe completed her BDS from Sinhgad Dental College, Pune, and her MDS in Conservative Dentistry & Endodontics from Government Dental College, one of India’s premier institutions.\nA former Assistant Professor, she combines academic excellence with strong clinical expertise.\nShe also brings valuable international clinical experience from Kuwait, along with active participation in conferences, workshops, and research, with multiple publications in national and international journals.\She is a member of the Indian Association of Conservative Dentistry and Endodontics (IACDE) and has received several academic recognitions. ",
+        "Dr. Devika is a skilled and patient-focused endodontist and esthetic dentist, known for her precision and calm, reassuring approach to care. She specializes in minimally invasive dentistry, root canal treatments, and aesthetic smile enhancement procedures. She completed her BDS from Sinhgad Dental College, Pune, and her MDS in Conservative Dentistry & Endodontics from Government Dental College, one of India’s premier institutions. A former Assistant Professor, she combines academic excellence with strong clinical expertise. She also brings valuable international clinical experience from Kuwait, along with active participation in conferences, workshops, and research, with multiple publications in national and international journals. She is a member of the Indian Association of Conservative Dentistry and Endodontics (IACDE) and has received several academic recognitions. ",
       image: img,
       expertise: [
         "10+ Years Experience",
@@ -113,11 +113,11 @@ const About = () => {
           <div className="left-section">
             <h1>About Denza Dental</h1>
             <p>
-              Denza Dental is a premium dental clinic located in Kharadi, Pune,
-              offering a refined approach to modern dentistry. Built on the
-              principles of precision, ethics, and patient comfort, our clinic
-              is designed to deliver a seamless and stress-free dental
-              experience.
+              <b style={{ color: "var(--accent)" }}>Denza Dental</b> is a
+              premium dental clinic located in Kharadi, Pune, offering a refined
+              approach to modern dentistry. Built on the principles of
+              precision, ethics, and patient comfort, our clinic is designed to
+              deliver a seamless and stress-free dental experience.
             </p>
             <p>
               We combine clinical expertise with a calm and thoughtfully
@@ -141,6 +141,146 @@ const About = () => {
             </div> */}
             <div className="bottom-row">
               <Button />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* doctors */}
+
+      <div className="parent doctors_parents">
+        <div className="cont doctors_cont">
+          <div className="left_doctors_parents">
+            <img src={img} />
+          </div>
+          <div className="right_doctors_parents">
+            <h2>Dr. Hemant Suresh Thodsare</h2>
+            <span className="doctor_name_title">
+              Co-founder | Prosthodontist & Implantologist
+            </span>
+            <p>
+              <b style={{ color: "var(--accent)" }}>Dr. Hemant</b> is an
+              <b style={{ color: "var(--accent)" }}>
+                
+                Internationally Experienced Prosthodontist
+              </b>
+              and
+              <b style={{ color: "var(--accent)" }}> "Cosmetic Specialist"</b>,
+              specializing in minimally invasive cosmetic dentistry, smile
+              makeovers, dental implants, and complex full mouth rehabilitation.
+              With over{" "}
+              <strong style={{ color: "var(--accent)" }}>
+                15 years of clinical expertise
+              </strong>
+              , he is known for delivering precise, functionally sound, and
+              aesthetically refined outcomes. He holds an MDS in{" "}
+              <b style={{ color: "var(--accent)" }}>"Prosthodontics"</b> and{" "}
+              <b style={{ color: "var(--accent)" }}>"Implantology" </b>
+              and brings advanced expertise in Crown & Bridge and comprehensive
+              restorative dentistry. He also has valuable{" "}
+              <b style={{ color: "var(--accent)" }}>
+                International Clinical Experience
+              </b>{" "}
+              as a licensed dentist under the Ministry of Health,
+              <b style={{ color: "var(--accent)" }}>Kuwait</b>.
+            </p>
+            <ul>
+              <li>15+ Years Experience</li>
+              <li>MDS – Prosthodontics, Crown & Bridge and Implantology</li>
+              <li>Cosmetic Dentistry & Smile Makeover Specialist</li>
+              <li>Full Mouth Rehabilitation Expert</li>
+              <li>Ex-Assistant Professor</li>
+              <li>Licensed Dentist – Ministry of Health, Kuwait</li>
+              <li>Member of Indian Prosthodontic Society</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="parent  doctors_parents_lady">
+        <div className="cont doctors_cont_lady">
+          <div className="right_doctors_parents">
+            <h2>Dr. Devika Kalaskar - Thodsare</h2>
+            <span className="doctor_name_title">
+              Co-founder | Endodontist & Esthetic Dentist
+            </span>
+            <p>
+              <b style={{ color: "var(--accent)" }}>Dr. Devika</b> is an <b style={{ color: "var(--accent)" }}>Internatioionally Experienced Endodontist </b> and
+              <b style={{ color: "var(--accent)" }}> Esthetic Dentist</b> , known for her precision and calm, reassuring
+              approach to care. She specializes in minimally invasive dentistry,
+              root canal treatments, and aesthetic smile enhancement procedures.
+              She completed her BDS from Sinhgad Dental College, Pune, and her
+              MDS in{" "}
+              <b style={{ color: "var(--accent)" }}>Conservative Dentistry</b>{" "}
+              and <b style={{ color: "var(--accent)" }}>Endodontics</b> from
+              Government Dental College, one of India’s premier institutions. A
+              former Assistant Professor, she combines academic excellence with
+              strong clinical expertise. She also brings valuable{" "}
+              <b style={{ color: "var(--accent)" }}>
+                International Clinical Experience
+              </b>{" "}
+              from <b style={{ color: "var(--accent)" }}>Kuwait</b>, along with
+              active participation in conferences, workshops, and research, with
+              multiple publications in national and international journals. She
+              is a member of the Indian Association of Conservative Dentistry
+              and Endodontics (IACDE) and has received several academic
+              recognitions.
+            </p>
+            <ul>
+              <li>
+                International Experience – Licensed Endodontist with Ministry of
+                Health, Kuwait
+              </li>
+              <li>10+ Years Experience</li>
+              <li>MDS – Conservative Dentistry & Endodontics</li>
+              <li>Ex-Assistant Professor</li>
+
+              <li>Member of IACDE </li>
+            </ul>
+          </div>
+
+          <div className="left_doctors_parents">
+            <img src={img} />
+          </div>
+        </div>
+      </div>
+
+      {/* trust strip */}
+      <div className="trust_strip_parent parent">
+        <div className="trust_strip_cont cont">
+          <div className="trust_strip_item">
+            <div className="trust_icon">
+              <FaClock />
+            </div>
+            <div>
+              <h3>10+ Years Experience</h3>
+            </div>
+          </div>
+
+          <div className="trust_strip_item">
+            <div className="trust_icon">
+              <FaUserGraduate />
+            </div>
+            <div>
+              <h3>MDS Specialists</h3>
+            </div>
+          </div>
+
+          <div className="trust_strip_item">
+            <div className="trust_icon">
+              <FaGlobe />
+            </div>
+            <div>
+              <h3>Global Exposure</h3>
+            </div>
+          </div>
+
+          <div className="trust_strip_item">
+            <div className="trust_icon">
+              <FaLaptopMedical />
+            </div>
+            <div>
+              <h3>Advanced Technology</h3>
             </div>
           </div>
         </div>
@@ -241,47 +381,6 @@ const About = () => {
         </div>
       </div> */}
 
-      {/* trust strip */}
-      <div className="trust_strip_parent parent">
-        <div className="trust_strip_cont cont">
-          <div className="trust_strip_item">
-            <div className="trust_icon">
-              <FaClock />
-            </div>
-            <div>
-              <h3>10+ Years Experience</h3>
-            </div>
-          </div>
-
-          <div className="trust_strip_item">
-            <div className="trust_icon">
-              <FaUserGraduate />
-            </div>
-            <div>
-              <h3>MDS Specialists</h3>
-            </div>
-          </div>
-
-          <div className="trust_strip_item">
-            <div className="trust_icon">
-              <FaGlobe />
-            </div>
-            <div>
-              <h3>Global Exposure</h3>
-            </div>
-          </div>
-
-          <div className="trust_strip_item">
-            <div className="trust_icon">
-              <FaLaptopMedical />
-            </div>
-            <div>
-              <h3>Advanced Technology</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="parent about_dr_parent">
         <div className="cont about_dr_cont">
           <div className="right-section">
@@ -307,87 +406,6 @@ const About = () => {
                 designed.
               </b>
             </p>
-           
-          </div>
-        </div>
-      </div>
-
-      {/* doctors */}
-
-      <div className="parent doctors_parents">
-        <div className="cont doctors_cont">
-          <div className="left_doctors_parents">
-            <img src={img} />
-          </div>
-          <div className="right_doctors_parents">
-            <h2>Dr. Hemant Suresh Thodsare</h2>
-            <span className="doctor_name_title">
-              Co-founder | Prosthodontist & Implantologist
-            </span>
-            <p>
-              Dr. Hemant is an internationally experienced Prosthodontist and
-              Cosmetic specialist, specializing in minimally invasive cosmetic
-              dentistry, smile makeovers, dental implants, and complex full
-              mouth rehabilitation. With over{" "}
-              <strong>15 years of clinical expertise</strong>, he is known for
-              delivering precise, functionally sound, and aesthetically refined
-              outcomes. \n\nHe holds an MDS in Prosthodontics and Implantology
-              and brings advanced expertise in Crown & Bridge and comprehensive
-              restorative dentistry. He also has valuable international clinical
-              experience as a licensed dentist under the Ministry of Health,
-              Kuwait.
-            </p>
-            <ul>
-              <li>15+ Years Experience</li>
-              <li>MDS – Prosthodontics, Crown & Bridge and Implantology</li>
-              <li>Cosmetic Dentistry & Smile Makeover Specialist</li>
-              <li>Full Mouth Rehabilitation Expert</li>
-              <li>Ex-Assistant Professor</li>
-              <li>Licensed Dentist – Ministry of Health, Kuwait</li>
-              <li>Member of Indian Prosthodontic Society</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className="parent  doctors_parents_lady">
-        <div className="cont doctors_cont_lady">
-          <div className="right_doctors_parents">
-            <h2>Dr. Devika Kalaskar- Thodsare</h2>
-            <span className="doctor_name_title">
-              Co-founder | Endodontist & Esthetic Dentist
-            </span>
-            <p>
-              Dr. Devika is a skilled and patient-focused endodontist and
-              esthetic dentist, known for her precision and calm, reassuring
-              approach to care. She specializes in minimally invasive dentistry,
-              root canal treatments, and aesthetic smile enhancement
-              procedures.\nShe completed her BDS from Sinhgad Dental College,
-              Pune, and her MDS in Conservative Dentistry & Endodontics from
-              Government Dental College, one of India’s premier institutions.\nA
-              former Assistant Professor, she combines academic excellence with
-              strong clinical expertise.\nShe also brings valuable international
-              clinical experience from Kuwait, along with active participation
-              in conferences, workshops, and research, with multiple
-              publications in national and international journals.\She is a
-              member of the Indian Association of Conservative Dentistry and
-              Endodontics (IACDE) and has received several academic
-              recognitions.
-            </p>
-            <ul>
-              <li>10+ Years Experience</li>
-              <li>MDS – Conservative Dentistry & Endodontics</li>
-              <li>Ex-Assistant Professor</li>
-              <li>
-                International Experience – Licensed Endodontist with Ministry of
-                Health, Kuwait
-              </li>
-              <li>Member of IACDE </li>
-            </ul>
-          </div>
-
-          <div className="left_doctors_parents">
-            <img src={img} />
           </div>
         </div>
       </div>
