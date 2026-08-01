@@ -122,34 +122,37 @@ const ZirconiaCrowns = () => {
     <>
       <PageTop title="Zirconia crowns " />
 
-      <div className="after_care_parent parent">
-        <div className="after_care_cont cont">
-          <h2>Advantages of Zirconia Dental Crowns </h2>
+      <div className="brace_treat_parent parent">
+        <div className="brace_treat_cont cont">
+          <h2>Advantages of Zirconia Dental Crowns</h2>
+          <div>
+            <p>
+              Zirconia crowns resemble your teeth in most instances. Though they cannot be bleached or whitened
+              after fitting, the crowns don’t lose their original color due to staining.
+            </p>
 
-          <p>
-            Zirconia crowns resemble your teeth in most instances. Though they cannot be bleached or whitened
-            after fitting, the crowns don’t lose their original color due to staining.
-          </p>
+            <ul>
+              <li>Durability</li>
+              <li>Strength</li>
+              <li>Comfort</li>
+              <li>Color</li>
+              <li>Biocompatibility</li>
+              <li>Aesthetic </li>
+            </ul>
 
-          <ul>
-            <li>Durability</li>
-            <li>Strength</li>
-            <li>Comfort</li>
-            <li>Color</li>
-            <li>Biocompatibility</li>
-            <li>Aesthetic</li>
-          </ul>
+            <p>
+              The ceramic crown can cause additional wear and tear in the teeth surrounding it. However, we know how
+              to minimize this impact and ensure that all your teeth will be healthy and strong. The Zirconia tooth cap
+              cost in Pune is affordable (and depends on the patient’s dental condition).
+            </p>
 
-          <p>
-            The ceramic crown can cause additional wear and tear in the teeth surrounding it. However, we know how
-            to minimize this impact and ensure that all your teeth will be healthy and strong. The Zirconia tooth cap
-            cost in Pune is affordable (and depends on the patient’s dental condition).
-          </p>
-          <p>
-            Call us to book an appointment and get Zirconia dental crowns fitted in a single visit. 
-          </p>
+            <p>
+              Call us to book an appointment and get Zirconia dental crowns fitted in a single visit.
+            </p>
+          </div>
         </div>
       </div>
+
 
       <div className="parent gallery_parent">
         <div className="cont gallery_cont">
