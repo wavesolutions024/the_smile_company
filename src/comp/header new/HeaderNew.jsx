@@ -197,10 +197,11 @@ const HeaderNew = () => {
         <div key={key} className="submenu_item">
           <Link
             type="button"
+            to={item.to}
             className="submenu_toggle"
-            onClick={(event) => {
-              event.preventDefault();
-              event.stopPropagation();
+            onMouseEnter={(event) => {
+              // event.preventDefault();
+              // event.stopPropagation();
               toggleAt(depth, key);
             }}
           >
