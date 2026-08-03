@@ -63,7 +63,10 @@ const Contact = () => {
               <div className="phone_icon">
                 <FiPhone />
               </div>
-              <strong>7028131132 / 7028143959</strong>
+              <a href="tel:+917028131132 " style
+              ={{ textDecoration: "none", color: "var(--background" }}>
+                +91 7028 131 132
+              </a>
             </div>
           </div>
 
