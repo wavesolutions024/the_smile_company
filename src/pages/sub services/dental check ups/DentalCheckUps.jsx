@@ -175,18 +175,12 @@ const DentalCheckUps = () => {
       <div className="book_appoint">
         <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
-            </p>
-
+            <h2> How to Book Your Dental Check-up at Denza Dental </h2>
             <ol>
               <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
+                <strong> Book Online :</strong> Schedule your appointment https://www.denzadental.com/
+                through our website. Pick a date and time that suits you, and
+                we’ll confirm your booking quickly.
               </li>
               <li>
                 <strong>Call Us Directly :</strong> Prefer to speak with
