@@ -63,7 +63,7 @@ const Contact = () => {
               <div className="phone_icon">
                 <FiPhone />
               </div>
-              <strong>7028131132 / 7028143959</strong>
+              <strong>+91 7028 131 132 / +91 7028 143 959</strong>
             </div>
           </div>
 

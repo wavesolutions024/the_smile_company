@@ -62,6 +62,7 @@ const services = [
   },
 ];
 
+
 const faqs = [
   {
     question: "Do Dental Check-ups at Denza Dental Hurt? ",
@@ -172,43 +173,41 @@ const DentalCheckUps = () => {
         </div>
       </div>
 
+
       <div className="book_appoint">
         <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
+            <h2> How to Book Your Dental Check-up at Denza Dental </h2>
             <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
+              Now this section includes description on left and – book an appointment type
+              image such as receptionist in clinical attire and patient booking an appointment in
+              right.
             </p>
 
             <ol>
               <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
+                <strong>Book Online </strong>Schedule your appointment www.denzadental.com through our website. Pick a date and time that
+                suits you, and we’ll confirm your booking quickly.
               </li>
 
               <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
+                <strong>Call Us Directly </strong>Prefer to speak with someone? Give us a call and our team will help you find the
+                best available time for your visit.
+              </li>
+
+              <li>
+                <strong>Walk-in Visits </strong>Need urgent care or nearby? You’re welcome to walk in. We do our best to
+                accommodate you as quickly as possible.
+              </li>
+
+              <li>
+                <strong>Visit Our Clinic </strong>Denza Dental is conveniently located in Pune, making it easy for you to access
+                quality dental care. Our clinic is Open all 7 days  , 9:00 AM – 9:00 PM.
+              </li>
+
+              <li>
+                <strong>Get in Touch </strong>Have questions or need help booking? Reach out to us via call, WhatsApp, or
+                email—we’re here to assist you every step of the way.
               </li>
             </ol>
           </div>

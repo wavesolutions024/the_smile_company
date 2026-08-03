@@ -9,39 +9,29 @@ import gallery1 from "../../../assets/about_page/after1.webp";
 
 const services = [
   {
-    title: "Cutting-Edge Technology ",
+    title: " Precision-Driven Care",
     description:
-      "We use advanced dental laser systems for highly precise, safe, and efficient treatments with minimal discomfort. ",
+      "Our diode laser technology enables highly precise treatments, targeting specific areas with minimal impact on surrounding tissues for accurate and effective results.",
   },
   {
-    title: "Expert Dental Team",
+    title: " Comfort-Focused Experience",
     description:
-      "Our experienced professionals are trained in modern laser dentistry techniques, ensuring accurate and high-quality outcomes. ",
+      "Experience dental procedures with minimal discomfort, as diode lasers work gently and efficiently—often reducing the need for anesthesia.",
   },
   {
-    title: "Global Exposure & Clinical Expertise ",
+    title: " Rapid Recovery Time",
     description:
-      "Our dentists bring global exposure through international training, advanced workshops, and modern clinical practices, ensuring world-class standards in laser dental care. ",
+      "Enjoy quicker healing times with advanced laser treatments, with many patients noticing significant improvement within just 24 hours.",
   },
   {
-    title: "Comfortable & Minimally Invasive Treatment ",
+    title: "Comprehensive Treatment Range ",
     description:
-      "Laser dentistry reduces pain, bleeding, and recovery time, making treatments more comfortable for patients. ",
+      "From gum reshaping to treating cold sores, diode laser technology addresses a wide range of dental concerns—offering comprehensive care in one place.",
   },
   {
-    title: "Personalized Treatment Plans",
+    title: " Cleaner, Safer Procedures ",
     description:
-      "Each patient receives customized care based on their dental condition and treatment goals. ",
-  },
-  {
-    title: "State-of-the-Art Facility",
-    description:
-      "Our clinic is equipped with modern technology and a patient-friendly environment for safe and effective care. ",
-  },
-  {
-    title: "Affordable & Transparent Care ",
-    description:
-      "We offer competitive pricing and flexible payment options, ensuring high-quality laser dentistry is accessible to all patients. ",
+      "Diode laser treatments often result in little to no bleeding during and after procedures, enhancing comfort and reducing post-treatment complications.",
   },
 ];
 
@@ -134,13 +124,11 @@ const RestorativeDentistry = () => {
             <img src={img1} alt="General Dental Service" />
           </div>
           <div className="general_right">
-            <h2>General Dental Services</h2>
+            <h2>Precision That You Can Feel</h2>
             <p>
-              Just like you visit your family doctor for check-ups to stay
-              healthy, similarly, general dental services are for regular care
-              of your teeth. These general dental services help you catch
-              problems when they are small. They also allow problems to be
-              treated before they become more severe.
+              At Denza Denntal, our advanced laser treatments transform the
+              patient experience—offering refined care, enhanced accuracy, and a more
+              comfortable approach to modern dentistry.
             </p>
           </div>
         </div>
@@ -148,7 +136,7 @@ const RestorativeDentistry = () => {
 
       <div className="third_section">
         <div className="third_header">
-          <h2>Why Choose Denza Dental for Laser Dentistry in Pune?</h2>
+          <h2> Advanced Precision with Enhanced Comfort</h2>
         </div>
 
         <div className="service_cards">
@@ -161,6 +149,8 @@ const RestorativeDentistry = () => {
           ))}
         </div>
       </div>
+
+      {/*}
 
       <div className="three_section_parent parent">
         <div className="cont three_section_cont">
@@ -334,7 +324,8 @@ const RestorativeDentistry = () => {
         </div>
       </div>
 
-      <div className="faq_section" style={{background:"white"}}>
+
+      <div className="faq_section" style={{ background: "white" }}>
         <div className="faq_header">
           <h2>FAQs</h2>
           <p>
@@ -363,6 +354,7 @@ const RestorativeDentistry = () => {
           })}
         </div>
       </div>
+      */}
 
       <div className="parent gallery_parent">
         <div className="cont gallery_cont">
@@ -386,7 +378,7 @@ const RestorativeDentistry = () => {
                 1200: { slidesPerView: 4, spaceBetween: 24 },
               }}
             >
-              {[gallery1, gallery1, gallery1, gallery1,gallery1].map((src, index) => (
+              {[gallery1, gallery1, gallery1, gallery1, gallery1].map((src, index) => (
                 <SwiperSlide key={index}>
                   <div className="gallery_card">
                     <img src={src} alt={`Clinic slide ${index + 1}`} />

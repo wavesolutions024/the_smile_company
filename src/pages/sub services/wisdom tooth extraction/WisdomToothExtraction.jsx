@@ -224,52 +224,31 @@ const WisdomToothExtraction = () => {
           <div className="wisdom_tooth_extract_aftercare_three_point">
             <div className="wisdom_tooth_extract_aftercare_points">
               <ul>
-                <b>Recovery Phase (Day 2 to Day 4)</b>
-                <li>
-                  Begin rinsing with warm salt water to keep the area clean
-                </li>
-                <li>
-                  Maintain oral hygiene but avoid brushing directly on the
-                  extraction site
-                </li>
-                <li>
-                  Gradually include soft foods like khichdi, curd, or soft rice
-                </li>
-                <li>
-                  Mild swelling may peak around day 2–3 and then slowly reduce
-                </li>
+                <b>Immediate Care (First 24 Hours) </b>
+                <li>Keep gentle pressure on the gauze to control bleeding</li>
+                <li>Apply an ice pack on the cheek in intervals to reduce swelling </li>
+                <li>Take prescribed medication on time for better pain control </li>
+                <li>Stick to soft and cool foods; avoid straws, smoking, or spitting </li>
+                <li>Rest well and keep your head slightly elevated while sleeping </li>
               </ul>
             </div>
             <div className="wisdom_tooth_extract_aftercare_points">
               <ul>
-                <b>When to Contact Your Dentist </b>
+                <b>Recovery Phase (Day 2 to Day 4)</b>
+                <li>Begin rinsing with warm salt water to keep the area clean</li>
+                <li>Maintain oral hygiene but avoid brushing directly on the extraction site </li>
+                <li>Gradually include soft foods like khichdi, curd, or soft rice </li>
+                <li>Mild swelling may peak around day 2–3 and then slowly reduce</li>
+              </ul>
+            </div>
+            <div className="wisdom_tooth_extract_aftercare_points">
+              <ul>
+                <b>When to Contact Your Dentist</b>
                 <li>Bleeding continues even after applying pressure </li>
-                <li>Severe or worsening pain despite medication</li>
-                <li>
-                  Swelling increases instead of improving after a few days
-                </li>
+                <li>Severe or worsening pain despite medication </li>
+                <li>Swelling increases instead of improving after a few days</li>
                 <li>Signs of infection such as fever or discharge</li>
                 <li>Numbness that does not resolve over time</li>
-              </ul>
-            </div>
-            <div className="wisdom_tooth_extract_aftercare_points">
-              <ul>
-                <b>Immediate Care (First 24 Hours)</b>
-                <li>Keep gentle pressure on the gauze to control bleeding </li>
-                <li>
-                  Apply an ice pack on the cheek in intervals to reduce swelling
-                </li>
-                <li>
-                  Take prescribed medication on time for better pain control
-                </li>
-                <li>
-                  Stick to soft and cool foods; avoid straws, smoking, or
-                  spitting{" "}
-                </li>
-                <li>
-                  Rest well and keep your head slightly elevated while
-                  sleeping{" "}
-                </li>
               </ul>
             </div>
           </div>

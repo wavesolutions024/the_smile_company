@@ -176,26 +176,31 @@ const HeaderNew = () => {
         {
           label: "CBCT 3D IMAGING",
           to: "/cbct",
-          children: [
-            { label: "DENTAL CROWNS", to: "/dental-crowns" },
-            { label: "CROWNS AND BRIDGES", to: "/crowns-bridges" },
-            { label: "INLAYS AND ONLAYS", to: "/inlays-onlays" },
-          ],
         },
         {
           label: "3D Intra Oral Scanning",
           to: "/intra-oral-scanning",
-          children: [
-            { label: "DENTAL CROWNS", to: "/dental-crowns" },
-            { label: "CROWNS AND BRIDGES", to: "/crowns-bridges" },
-            { label: "INLAYS AND ONLAYS", to: "/inlays-onlays" },
-          ],
         },
-        { label: "Dental Lasers", to: "/dental-lasers" },
-        { label: "GBT Cleaning", to: "/gbt-cleaning" },
-        { label: "GBT Machine", to: "/gbt-machine" },
-        { label: "Dental Loupes", to: "/dental-loupes" },
-        { label: "Conscious Sedation (Laughing Gas)", to: "/laughing-gas" },
+        {
+          label: "Dental Lasers",
+          to: "/dental-lasers"
+        },
+        {
+          label: "GBT Cleaning",
+          to: "/gbt-cleaning"
+        },
+        {
+          label: "GBT Machine",
+          to: "/gbt-machine"
+        },
+        {
+          label: "Dental Loupes",
+          to: "/dental-loupes"
+        },
+        {
+          label: "Conscious Sedation (Laughing Gas)",
+          to: "/laughing-gas"
+        },
       ],
     },
     { label: "OUR WORK", to: "/our-work" },

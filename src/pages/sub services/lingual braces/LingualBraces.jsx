@@ -11,60 +11,6 @@ import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
 
-const whyChooseData = [
-  {
-    icon: "👨‍⚕️",
-    title: "Experienced Team",
-    description:
-      "AO Dentistry boasts a team of skilled and experienced dentists who specialize in various fields of dentistry. From general dental check-ups in Pune to more complex treatments, you can be sure you're in good hands.",
-  },
-  {
-    icon: "🦷",
-    title: "Advanced Technology",
-    description:
-      "The clinic is equipped with the latest dental technologies to ensure that every dental check-up is thorough and accurate. Digital X-rays, intraoral cameras, and advanced diagnostic tools help in identifying even the smallest issues during the dental examination.",
-  },
-  {
-    icon: "💰",
-    title: "Affordable Packages",
-    description:
-      "AO Dentistry offers a range of affordable packages for dental check-ups in Pune. The clinic understands that dental care should be accessible to everyone and provides flexible payment options to make it easier for patients.",
-  },
-  {
-    icon: "😊",
-    title: "Patient-Centric Approach",
-    description:
-      "What truly sets AO Dentistry apart is its patient-centric approach. Every patient receives personalized care based on their specific needs. Our dentists take the time to understand your concerns, explain procedures, and ensure you're comfortable throughout.",
-  },
-];
-
-const services = [
-  {
-    title: "Quick Discussion",
-    description:
-      "The dentist talks with you about any pain, concerns, or changes you’ve noticed. This helps focus on what matters most to you. ",
-  },
-  {
-    title: "Mouth Check ",
-    description:
-      "Your teeth, gums, and overall oral health are carefully checked to spot cavities, gum issues, or other problems early. ",
-  },
-  {
-    title: "X-rays (Only if Needed)",
-    description:
-      "If required, X-rays are taken to see what’s happening beneath the surface, like hidden decay or jaw issues.",
-  },
-  {
-    title: " Deep Cleaning ",
-    description:
-      "Plaque and tartar are removed, and your teeth are polished to make them feel clean and smooth.",
-  },
-  {
-    title: "Next Steps & Advice ",
-    description:
-      "You’ll get clear guidance on your dental health, tips to improve your routine, and recommendations if any treatment is needed. ",
-  },
-];
 
 const servicess = [
   {
@@ -106,34 +52,39 @@ const servicess = [
 
 const faqs = [
   {
-    question: "Do Dental Check-ups at Denza Dental Hurt? ",
+    question: "Do lingual braces take longer?",
     answer:
-      "No, dental check-ups at Denza Dental are gentle and comfortable. You may feel slight sensitivity during cleaning, but the process is quick and handled with care. ",
+      "No, treatment time is usually similar to other types of braces, depending on the case.",
   },
   {
-    question: "How Long Does a Check-up at Denza Dental Take?",
+    question: "Are lingual braces better than normal braces?",
     answer:
-      "A routine dental check-up at Denza Dental usually takes about 30 to 45 minutes, depending on your oral health and any additional care required. ",
+      "They offer the same effectiveness as traditional braces but are completely hidden, making them ideal for aesthetic concerns.",
   },
   {
-    question: "Can I Eat Before Visiting Denza Dental? ",
+    question: "What are lingual braces? ",
     answer:
-      "Yes, you can eat before your appointment at Denza Dental. However, brushing your teeth beforehand is recommended for a smoother examination.",
+      "Lingual braces are orthodontic braces placed on the inner (back) side of the teeth, making them invisible from the front. ",
   },
   {
-    question: "Do I Need a Check-up at Denza Dental If I Have No Pain?",
+    question: "Are lingual braces more expensive? ",
     answer:
-      "Absolutely. At Denza Dental, we emphasize preventive care since many dental issues develop without pain. Regular visits help catch problems early. ",
+      "Yes, they are generally costlier due to their custom design and specialized placement technique.",
   },
   {
-    question: "Are X-rays at Denza Dental Safe?",
+    question: "Which type of braces works faster? ",
     answer:
-      "Yes, Denza Dental uses modern digital X-ray technology with minimal radiation, ensuring safe and accurate diagnosis when needed.",
+      "Treatment speed depends on the case, but metal braces are often slightly faster for complex corrections. ",
   },
   {
-    question: "How Often Should I Visit Denza Dental for Cleaning?",
+    question: "Is there an age limit for lingual braces?",
     answer:
-      "Denza Dental recommends professional teeth cleaning every 6 months, though it may vary based on your individual dental needs.",
+      "There is no strict age limit; they are suitable for both teens and adults with healthy teeth and gums.",
+  },
+  {
+    question: "How painful are lingual braces?",
+    answer:
+      "You may feel mild discomfort initially and slight tongue irritation, which improves as you adjust.",
   },
 ];
 
@@ -269,97 +220,30 @@ const LingualBraces = () => {
         </div>
       </div>
 
-      <div className="second_section">
-        <div className="second_section_container">
-          <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
-            <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
-            </p>
+      <div className="side_side_parent parent">
+        <div className="side_side_cont cont">
+          <div className="left_side_side">
+            <h3>Precautions During Lingual Braces Treatment</h3>
+            <ul>
+             <li>Avoid hard, sticky, and sugary foods</li>
+             <li>Clean behind teeth carefully after every meal</li>
+             <li>Use special orthodontic brushes and tools</li>
+             <li>Do not miss adjustment appointments </li>
+            </ul>
           </div>
 
-          <div className="why_choose_cards">
-            {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="third_section">
-        <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
-        </div>
-
-        <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="book_appoint">
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
-            </p>
-
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
-
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
-          </div>
-
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+          <div className="right_side_side">
+            <h3>Aftercare for Lingual Braces</h3>
+            <ul>
+              <li>Brush teeth after meals </li>
+              <li>Maintain proper oral hygiene </li>
+              <li>Attend regular follow-up visits </li>
+            </ul>
           </div>
         </div>
       </div>
 
+      
       <div className="faq_section1">
         <div className="faq_header">
           <h2>FAQs</h2>

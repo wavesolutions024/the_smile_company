@@ -9,6 +9,8 @@ import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
+import PageTop from "../../../comp/page_top/PageTop";
+
 
 const whyChooseData = [
   {
@@ -118,18 +120,7 @@ const  ZirconiaCrowns  = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="Zirconia Crowns Services" />
 
       <div className="second_section">
         <div className="second_section_container">

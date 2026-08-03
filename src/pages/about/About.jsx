@@ -249,7 +249,7 @@ const About = () => {
               <FaClock />
             </div>
             <div>
-              <h3>10+ Years Experience</h3>
+              <h3>15+ Years Experience</h3>
             </div>
           </div>
 

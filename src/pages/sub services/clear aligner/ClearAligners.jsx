@@ -104,7 +104,7 @@ const faqs = [
     answer:
       "Natural methods cannot significantly move teeth; orthodontic treatments like aligners are required for real correction.",
   },
-  
+
 ];
 
 const ClearAligners = () => {
@@ -219,30 +219,78 @@ const ClearAligners = () => {
 
             <ul>
               <li>
-                <b>Virtually Invisible </b>– Discreet treatment that doesn’t affect your appearance 
+                <b>Virtually Invisible </b>– Discreet treatment that doesn’t affect your appearance
               </li>
 
               <li>
-                <b>Removable Convenience </b>– Eat, drink, brush, and floss with ease  
+                <b>Removable Convenience </b>– Eat, drink, brush, and floss with ease
               </li>
 
               <li>
-                <b>Comfortable Design </b>– No wires or brackets, ensuring a smooth experience 
+                <b>Comfortable Design </b>– No wires or brackets, ensuring a smooth experience
               </li>
 
               <li>
-                <b>Predictable Results </b>– Digital planning ensures controlled and accurate tooth movement 
+                <b>Predictable Results </b>– Digital planning ensures controlled and accurate tooth movement
               </li>
 
               <li>
-                <b>Efficient Treatment </b>– In many cases, faster results compared to traditional braces  
+                <b>Efficient Treatment </b>– In many cases, faster results compared to traditional braces
               </li>
-              
+
             </ul>
           </div>
 
           <div className="braces_treat_left">
             <img src={img1} alt="General Dental Service" />
+          </div>
+        </div>
+      </div>
+
+      <div className="side_side_parent parent">
+        <div className="side_side_cont cont">
+          <div className="left_side_side">
+            <h3 >Before and After Clear Aligners</h3>
+
+            <p>
+              <strong>Before:</strong> Crooked teeth, gaps, or bite misalignment affecting smile and function.
+            </p>
+
+            <p>
+              <strong>After: </strong>Straight, well-aligned smile with improved aesthetics and confidence.
+            </p>
+            <h3>Timeline</h3>
+            <ul>
+              <li>Adjustment: 1–2 weeks</li>
+              <li>Mild discomfort: 3–5 days </li>
+              <li>Total treatment: 6–18 months</li>
+            </ul>
+
+            <h3>What to Expect </h3>
+            <ul>
+              <li>Mild pressure during tooth movement </li>
+              <li>Temporary speech changes </li>
+              <li>Gradual smile improvement</li>
+            </ul>
+          </div>
+
+          <div className="right_side_side">
+            <h3>During Clear Aligner Treatment</h3>
+            <ul>
+             <li>Remove aligners while eating</li>
+             <li>Avoid hot drinks with aligners on</li>
+             <li>Stay well hydrated</li>
+             <li>Prefer soft foods in initial days </li>
+            </ul>
+
+            <h3>Care Instructions</h3>
+            <ul>
+              <li>Wear aligners 20–22 hours daily</li>
+              <li>Brush teeth after every meal </li>
+              <li>Clean aligners regularly </li>
+              <li>Attend scheduled follow-ups </li>
+              <li>Maintain good oral hygiene throughout treatment</li>
+            </ul>
           </div>
         </div>
       </div>

@@ -14,39 +14,45 @@ import PageTop from "../../../comp/page_top/PageTop";
 const whyChooseData = [
   {
     icon: "👨‍⚕️",
-    title: "-Highly Experienced Dental Team ",
+    title: "Highly Experienced Dental Team ",
     description:
       "At Denza Dental, our dentists bring years of hands-on experience in dental crown treatments, ensuring precise fitting and natural-looking results for every patient. ",
   },
   {
     icon: "🦷",
-    title: "-Premium Crown Materials",
+    title: "Premium Crown Materials",
     description:
       "We use top-quality materials like porcelain and zirconia to create crowns that are strong, long-lasting, and blend perfectly with your natural teeth.",
   },
   {
     icon: "💰",
-    title: "-Modern Digital Dentistry ",
+    title: "Modern Digital Dentistry ",
     description:
       "With advanced CAD/CAM technology and digital scanning, we provide accurate, efficient treatments, including same-day crown solutions in many cases.",
   },
   {
     icon: "😊",
-    title: "-Proven Patient Satisfaction",
+    title: "Proven Patient Satisfaction",
     description:
       "Denza Dental is trusted by many patients in Pune for consistent results and dependable dental care, especially for crown treatments.",
   },
   {
     icon: "😊",
-    title: "-Ongoing Care & Support",
+    title: "Ongoing Care & Support",
     description:
       "We guide you even after the procedure with proper aftercare and follow-ups to ensure your crown stays in excellent condition.",
   },
   {
     icon: "😊",
-    title: "-Comfort-Focused Experience",
+    title: "Comfort-Focused Experience",
     description:
       "From consultation to treatment, we ensure a smooth and stress-free experience in a calm and patient-friendly environment.",
+  },
+  {
+    icon: "😊",
+    title: "Expert Care with Global Exposure",
+    description:
+      "At Denza Dental, your treatment is handled by dentists with international exposure, ensuring advanced techniques and globally accepted standards of care. This results in precise, effective procedures focused on preserving your natural tooth and long-term oral health. With a blend of expertise and modern technology, you receive care that reflects true international quality.",
   },
 ];
 
@@ -240,8 +246,7 @@ const DentalCrowns = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
+                
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

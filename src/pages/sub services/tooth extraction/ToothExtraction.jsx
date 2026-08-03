@@ -222,6 +222,62 @@ const ToothExtraction = () => {
         </div>
       </div>
 
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+          <div className="general_right">
+            <h2> Aftercare and Recovery of Tooth Extraction</h2>
+            <h3>Healing Time After Tooth Extraction</h3>
+            <p>
+              Initial recovery usually takes 2–3 days, with reduced pain and swelling.
+              Complete healing of the extraction site typically occurs within 1–3 weeks,
+              depending on the case.
+            </p>
+
+            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+              Aftercare Tips for Tooth Extraction{" "}
+            </p>
+
+            <ul style={{ paddingLeft: "20px" }}>
+              <li>
+                <b>Control Bleeding </b>Mild bleeding is normal after extraction. Bite gently on the gauze provided to
+                help stop it.
+
+              </li>
+              <li>
+                <b>Reduce Swelling </b>Apply an ice pack on the outside of your cheek in intervals to minimize swelling.
+              </li>
+
+              <li>
+                <b>Manage Discomfort </b>Take prescribed medications as advised by your dentist to control pain
+                effectively.
+              </li>
+
+              <li>
+                <b>Maintain Oral Hygiene </b>Avoid brushing near the extraction site for the first 24 hours. After that, clean
+                gently using a soft-bristled toothbrush.
+              </li>
+
+              <li>
+                <b>Salt Water Rinse </b>Start rinsing with warm salt water after 24 hours to keep the area clean and
+                promote healing.
+              </li>
+
+              <li>
+                <b>Follow a Soft Diet </b>Eat soft foods and avoid hot, spicy, or hard items that may irritate the area.
+              </li>
+
+              <li>
+                <b>Stay Hydrated & Rest Well </b>Drink plenty of fluids and avoid strenuous activities for at least 24 hours to
+                support recovery.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div className="faq_section1">
         <div className="faq_header">
           <h2>FAQs</h2>

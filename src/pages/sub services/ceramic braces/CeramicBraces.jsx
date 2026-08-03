@@ -210,23 +210,25 @@ const CeramicBraces = () => {
         </div>
       </div>
 
-      <div className="after_care_parent parent">
-        <div className="after_care_cont cont">
-          <h2>Precautions During Ceramic Braces Treatment</h2>
+      <div className="side_side_parent parent">
+        <div className="side_side_cont cont">
+          <div className="left_side_side">
+            <h3>Precautions During Ceramic Braces Treatment</h3>
+            <ul>
+             <li>Avoid hard, sticky, and sugary foods to prevent damage and cavities</li>
+             <li>Brush and clean teeth carefully after every meal using orthodontic tools </li>
+             <li>Do not miss scheduled adjustment appointments for proper progress</li>
+            </ul>
+          </div>
 
-          <ul>
-            <li>Avoid hard, sticky, and sugary foods to prevent damage and cavities </li>
-            <li>Brush and clean teeth carefully after every meal using orthodontic tools</li>
-            <li>Do not miss scheduled adjustment appointments for proper progress </li>
-          </ul>
-
-          <h2>Aftercare for Ceramic Braces</h2>
-
-          <ul>
-            <li>Brush teeth after meals regularly</li>
-            <li>Maintain strict oral hygiene </li>
-            <li>Attend all follow-up visits as advised by your dentist</li>
-          </ul>
+          <div className="right_side_side">
+            <h3>Aftercare for Ceramic Braces</h3>
+            <ul>
+              <li>Brush teeth after meals regularly</li>
+              <li>Maintain strict oral hygiene </li>
+              <li>Attend all follow-up visits as advised by your dentist</li>
+            </ul>
+          </div>
         </div>
       </div>
 

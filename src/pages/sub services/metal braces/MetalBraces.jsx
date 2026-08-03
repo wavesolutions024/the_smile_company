@@ -198,28 +198,30 @@ const MetalBraces = () => {
         </div>
       </div>
 
-      <div className="after_care_parent parent">
-        <div className="after_care_cont cont">
-          <h2>Precautions During Metal Braces Treatment </h2>
+      <div className="side_side_parent parent">
+        <div className="side_side_cont cont">
+          <div className="left_side_side">
+            <h3>Precautions During Metal Braces Treatment</h3>
+            <ul>
+              <li>Maintain excellent oral hygiene daily</li>
+              <li>Avoid hard, sticky, and chewy foods </li>
+              <li>Clean braces using special orthodontic brushes</li>
+              <li>Wear a mouthguard during sports</li>
+              <li>Attend all scheduled adjustment visits</li>
+              <li>Follow your orthodontist’s instructions carefully</li>
+            </ul>
+          </div>
 
-          <ul>
-            <li>Maintain excellent oral hygiene daily </li>
-            <li>Avoid hard, sticky, and chewy foods</li>
-            <li>Clean braces using special orthodontic brushes</li>
-            <li>Wear a mouthguard during sports </li>
-            <li>Attend all scheduled adjustment visits </li>
-            <li>Follow your orthodontist’s instructions carefully </li>
-          </ul>
-
-          <h2>Aftercare for Metal Braces</h2>
-
-          <ul>
-            <li>Wear retainers as advised</li>
-            <li>Continue regular dental check-ups</li>
-            <li>Maintain proper oral hygiene </li>
-            <li>Follow recommended cleaning routines </li>
-            <li>Report any discomfort or issues promptly</li>
-          </ul>
+          <div className="right_side_side">
+            <h3>Aftercare for Metal Braces </h3>
+            <ul>
+              <li>Wear retainers as advised </li>
+              <li>Continue regular dental check-ups</li>
+              <li>Maintain proper oral hygiene </li>
+              <li>Follow recommended cleaning routines </li>
+              <li>Report any discomfort or issues promptly</li>
+            </ul>
+          </div>
         </div>
       </div>
 
