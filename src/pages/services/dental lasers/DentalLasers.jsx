@@ -116,7 +116,7 @@ const RestorativeDentistry = () => {
 
   return (
     <>
-      <PageTop title="Dental Lasers Services" />
+      <PageTop title="Dental Lasers Services"/>
 
       <div className="parent second_parent">
         <div className="cont second_cont">
