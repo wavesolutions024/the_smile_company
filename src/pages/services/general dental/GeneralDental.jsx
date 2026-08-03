@@ -113,7 +113,7 @@ const GeneralDental = () => {
       <div className="third_section">
         <div className="third_header">
           <h2 style={{ color: "var(--accent)" }}>
-            General Dental Services that AO Dentistry Offers in Pune
+            General Dental Services that Denza Dental Provides in Pune
           </h2>
         </div>
 
