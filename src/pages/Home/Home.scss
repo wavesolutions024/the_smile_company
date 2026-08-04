@@ -1,9 +1,7 @@
 .about_section_parent {
   width: 100%;
   height: auto;
-  background:
-    linear-gradient(to top, var(--white), transparent),
-    url("../../assets/about_section/bg4.webp");
+
 
   h1 {
     font-size: 50px;
@@ -318,7 +316,6 @@
 .why_choose_parent {
   width: 100%;
   height: auto;
-  background-image: url("../../assets/about_section/bg4.webp");
   padding: 80px 0px;
 
   .why_choose_cont {

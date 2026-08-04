@@ -125,7 +125,7 @@ const ToothReshaping = () => {
 
   return (
     <>
-      <PageTop title="Tooth Reshaping" />
+      <PageTop title="Tooth Reshaping Services" />
 
       <div className="brace_treat_parent parent">
         <div className="brace_treat_cont cont">

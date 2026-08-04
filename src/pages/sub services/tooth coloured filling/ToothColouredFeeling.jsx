@@ -110,7 +110,7 @@ const ToothColouredFeeling = () => {
 
   return (
     <>
-      <PageTop title="Tooth Coloured Fillings" />
+      <PageTop title="Tooth Coloured Fillings Services" />
 
       <div className="wisdom_tooth_extract_parent parent">
         <div className="wisdom_tooth_extract_cont cont">

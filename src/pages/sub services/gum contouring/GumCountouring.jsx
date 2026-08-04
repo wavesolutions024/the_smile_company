@@ -114,7 +114,7 @@ const GumCountouring = () => {
 
   return (
     <>
-      <PageTop title="Gum Contouring" />
+      <PageTop title="Gum Contouring Services" />
 
       <div className="brace_treat_parent parent">
         <div className="brace_treat_cont cont">

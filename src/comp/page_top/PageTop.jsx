@@ -18,7 +18,7 @@ const PageTop = ({
   return (
     <div className="parent general_dental_parent bg-img-cover">
       <marquee behavior="scroll" direction="left" scrollamount="20">
-        Welcome to our {title} Service!
+        Welcome to our {title} 
       </marquee>
       <div className="cont general_dental_cont">
         <div className="bts_grp">

@@ -108,7 +108,7 @@ const LingualBraces = () => {
 
   return (
     <>
-      <PageTop title="Lingual Braces" />
+      <PageTop title="Lingual Braces Services" />
 
       <div className="brace_treat_parent parent">
         <div className="brace_treat_cont cont">

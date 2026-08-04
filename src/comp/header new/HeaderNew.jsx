@@ -8,8 +8,9 @@ const HeaderNew = () => {
   const location = useLocation();
   const [visible, setVisible] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
-  const [activeSubmenu, setActiveSubmenu] = useState(null);
+  // activePath[depth] = key of the open item at that depth.
+  // Replaces activeDropdown/activeSubmenu so nesting isn't capped at 2 levels.
+  const [activePath, setActivePath] = useState([]);
 
   const navItems = [
     {
@@ -19,46 +20,26 @@ const HeaderNew = () => {
         {
           label: "GENERAL DENTAL SERVICES",
           to: "/general-dental",
-
           children: [
-            {
-              label: "DENTAL CHECK-UPS  ",
-              to: "/dental-check-ups",
-            },
-            {
-              label: "DENTAL X-RAY   ",
-              to: "/dental-x-ray",
-            },
-            {
-              label: "TEETH CLEANING    ",
-              to: "/teeth-cleaning",
-            },
-            {
-              label: "ROOT CANAL TREATMENT     ",
-              to: "/root-canal-treatment",
-            },
+            { label: "DENTAL CHECK-UPS  ", to: "/dental-check-ups" },
+            { label: "DENTAL X-RAY   ", to: "/dental-x-ray" },
+            { label: "TEETH CLEANING    ", to: "/teeth-cleaning" },
+            { label: "ROOT CANAL TREATMENT     ", to: "/root-canal-treatment" },
             {
               label: "ROOT CANAL RE-TREATMENT      ",
               to: "/root-canal-retreatment ",
             },
-            {
-              label: "TOOTH EXTRACTION",
-              to: "/tooth-extraction ",
-            },
+            { label: "TOOTH EXTRACTION", to: "/tooth-extraction " },
             {
               label: " WISDOM TOOTH EXTRACTION",
               to: "/wisdom-tooth-extraction",
             },
-            {
-              label: "MINOR ORAL SURGERIES ",
-              to: "/minor-oral-surgeries",
-            },
+            { label: "MINOR ORAL SURGERIES ", to: "/minor-oral-surgeries" },
           ],
         },
         {
           label: "RESTORATIVE DENTISTRY",
           to: "/restorative-dentistry",
-
           children: [
             {
               label: "TOOTH COLORED FILLINGS  ",
@@ -67,15 +48,11 @@ const HeaderNew = () => {
             {
               label: "DENTAL CROWNS",
               to: "/dental-crowns",
+              // 3rd level nav — now rendered correctly by the recursive renderer below
+              children: [{ label: "ZIRCONIA CROWNS", to: "/zirconia-crowns" }],
             },
-            {
-              label: " CROWNS AND BRIDGES ",
-              to: "/crowns-bridges",
-            },
-            {
-              label: " INLAYS AND ONLAYS ",
-              to: "/inlays-onlays",
-            },
+            { label: " CROWNS AND BRIDGES ", to: "/crowns-bridges" },
+            { label: " INLAYS AND ONLAYS ", to: "/inlays-onlays" },
           ],
         },
         {
@@ -86,10 +63,7 @@ const HeaderNew = () => {
               label: "SMILE ANALYSIS AND CONSULTATION ",
               to: "/smile-analysis-consultation",
             },
-            {
-              label: " SMILE DESIGNING",
-              to: "/smile-designing",
-            },
+            { label: " SMILE DESIGNING", to: "/smile-designing" },
             {
               label: " TEETH WHITENING TREATMENT",
               to: "/teeth-whitening-treatment",
@@ -98,49 +72,21 @@ const HeaderNew = () => {
               label: " PORCELAIN VENEERS TREATMENT ",
               to: "/porcelain-veneers-treatment",
             },
-            {
-              label: "TOOTH RESHAPING",
-              to: "/tooth-reshaping",
-            },
-            {
-              label: "  COMPOSITE VENEERS ",
-              to: "/composite-veneers",
-            },
-            {
-              label: "COMPOSITE BONDING  ",
-              to: "/composite-bonding",
-            },
-            {
-              label: "GUM CONTOURING ",
-              to: "/gum-countouring",
-            },
-            {
-              label: " GUM DEPIGMENTATION  ",
-              to: "/gum-depizmentation",
-            },
-
+            { label: "TOOTH RESHAPING", to: "/tooth-reshaping" },
+            { label: "  COMPOSITE VENEERS ", to: "/composite-veneers" },
+            { label: "COMPOSITE BONDING  ", to: "/composite-bonding" },
+            { label: "GUM CONTOURING ", to: "/gum-countouring" },
+            { label: " GUM DEPIGMENTATION  ", to: "/gum-depizmentation" },
           ],
         },
         {
           label: "ORTHODONTIC TREATMENTS",
           to: "/orthodontic-treatments",
           children: [
-            {
-              label: "CLEAR ALIGNERS  ",
-              to: "/clear-aligners",
-            },
-            {
-              label: "CERAMIC BRACES  ",
-              to: "/ceramic-braces",
-            },
-            {
-              label: "METAL BRACES ",
-              to: "/metal-braces",
-            },
-            {
-              label: "LINGUAL BRACES ",
-              to: "/lingual-braces",
-            },
+            { label: "CLEAR ALIGNERS  ", to: "/clear-aligners" },
+            { label: "CERAMIC BRACES  ", to: "/ceramic-braces" },
+            { label: "METAL BRACES ", to: "/metal-braces" },
+            { label: "LINGUAL BRACES ", to: "/lingual-braces" },
           ],
         },
         {
@@ -153,7 +99,7 @@ const HeaderNew = () => {
             },
             {
               label: " IMPLANT SUPPORTED OVERDENTURE ",
-              to: "/implant-supported"
+              to: "/implant-supported",
             },
           ],
         },
@@ -163,10 +109,7 @@ const HeaderNew = () => {
         },
         { label: "DENTURE TREATMENT", to: "/denture-treatment" },
         { label: "PEDIATRIC DENTISTRY", to: "/pediatric-dentistry" },
-        {
-          label: " DENTAL LASERS",
-          to: "/dental-lasers",
-        },
+        { label: " DENTAL LASERS", to: "/dental-lasers" },
       ],
     },
     {
@@ -206,7 +149,6 @@ const HeaderNew = () => {
     { label: "OUR WORK", to: "/our-work" },
     { label: "BLOGS", to: "/blogs" },
     { label: "ABOUT US", to: "/about" },
-
     { label: "DENTAL TOURISM", to: "/dental-tourism" },
   ];
 
@@ -224,73 +166,77 @@ const HeaderNew = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location.pathname]);
 
-  const toggleDropdown = (menu) => {
-    setActiveDropdown((prev) => (prev === menu ? null : menu));
-    setActiveSubmenu(null);
-  };
-
-  const toggleSubmenu = (submenu) => {
-    setActiveSubmenu((prev) => (prev === submenu ? null : submenu));
-  };
-
   const closeAll = () => {
     setMobileOpen(false);
-    setActiveDropdown(null);
-    setActiveSubmenu(null);
+    setActivePath([]);
   };
 
-  const renderChildren = (children) =>
-    children.map((child) => {
+  // Is the item with this key open at this depth?
+  // Since we only render a level's items while its parent is already open,
+  // activePath's prefix is guaranteed to match — no extra bookkeeping needed.
+  const isOpenAt = (depth, key) => activePath[depth] === key;
+
+  // Open/close the item at `depth`. Opening truncates any deeper stale path
+  // and replaces it with the new branch; re-clicking the same item closes it.
+  const toggleAt = (depth, key) => {
+    console.log(depth,key)
+    setActivePath((prev) =>
+      prev[depth] === key
+        ? prev.slice(0, depth)
+        : [...prev.slice(0, depth), key],
+    );
+  };
+ 
+  
+
+  // Recursively renders any depth of nested children as submenu panels.
+  // depth 0 = top-level nav items (handled by renderTopLevel below),
+  // depth >= 1 = everything inside a dropdown, however deeply nested.
+  const renderSubmenu = (items, depth) =>
+    items.map((item) => {
       const hasChildren =
-        Array.isArray(child.children) && child.children.length > 0;
-      const submenuKey = child.id || child.label;
+        Array.isArray(item.children) && item.children.length > 0;
+      const key = item.id || item.label;
 
-      if (hasChildren) {
+      if (!hasChildren) {
         return (
-          <div key={submenuKey} className="submenu_item">
-            <Link
-              type="button"
-              className="submenu_toggle"
-              onClick={(event) => {
-                event.preventDefault();
-                event.stopPropagation();
-                toggleSubmenu(submenuKey);
-              }}
-            >
-              {child.label} <span className="caret">▸</span>
-
-              {activeSubmenu === submenuKey && (
-                <div className="submenu open">
-                  <div className="submenu_panel">
-                    {child.children.map((grandChild) => (
-                      <Link
-                        key={grandChild.label}
-                        to={grandChild.to}
-                        onClick={closeAll}
-                      >
-                        {grandChild.label}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </Link>
-
-          </div>
+          <Link key={key} to={item.to} onClick={closeAll}>
+            {item.label}
+          </Link>
         );
       }
 
+      const open = isOpenAt(depth, key);
+
       return (
-        <Link key={child.label} to={child.to} onClick={closeAll}>
-          {child.label}
-        </Link>
+        <div key={key} className="submenu_item">
+          <Link
+            type="button"
+            to={item.to}
+            className="submenu_toggle"
+            onMouseEnter={(event) => {
+              // event.preventDefault();
+              // event.stopPropagation();
+              toggleAt(depth, key);
+            }}
+          >
+            {item.label} <span className="caret">▸</span>
+            {open && (
+              <div className="submenu open">
+                <div className="submenu_panel">
+                  {renderSubmenu(item.children, depth + 1)}
+                </div>
+              </div>
+            )}
+          </Link>
+        </div>
       );
     });
 
-  const renderNavItem = (item, isMobile = false) => {
+  const renderTopLevel = (item, isMobile = false) => {
     const hasChildren =
       Array.isArray(item.children) && item.children.length > 0;
-    const isOpen = activeDropdown === item.id;
+    const isOpen = isOpenAt(0, item.id);
 
     if (!hasChildren) {
       return (
@@ -308,7 +254,7 @@ const HeaderNew = () => {
     if (isMobile) {
       return (
         <div key={item.id} className="nav_item dropdown">
-          <Link type="button" onClick={() => toggleDropdown(item.id)}>
+          <Link type="button" onClick={() => toggleAt(0, item.id)}>
             {item.label} <span className="caret">▾</span>
           </Link>
           {isOpen && (
@@ -320,7 +266,7 @@ const HeaderNew = () => {
               }
             >
               <div className="dropdown_column">
-                {renderChildren(item.children)}
+                {renderSubmenu(item.children, 1)}
               </div>
             </div>
           )}
@@ -335,13 +281,15 @@ const HeaderNew = () => {
       >
         <Link
           type="button"
-          onMouseEnter={() => toggleDropdown(item.id)}
-          onClick={() => toggleDropdown(item.id)}
+          onMouseEnter={() => toggleAt(0, item.id)}
+          onClick={() => toggleAt(0, item.id)}
         >
           {item.label} <span className="caret">▾</span>
         </Link>
         <div className="dropdown_panel" onMouseLeave={closeAll}>
-          <div className="dropdown_column">{renderChildren(item.children)}</div>
+          <div className="dropdown_column">
+            {renderSubmenu(item.children, 1)}
+          </div>
         </div>
       </div>
     );
@@ -357,7 +305,7 @@ const HeaderNew = () => {
         </Link>
 
         <div className="main_nav">
-          {navItems.map((item) => renderNavItem(item))}
+          {navItems.map((item) => renderTopLevel(item))}
         </div>
 
         <div className="header_actions">
@@ -388,7 +336,7 @@ const HeaderNew = () => {
 
       {mobileOpen && (
         <div className="mobile_header">
-          {navItems.map((item) => renderNavItem(item, true))}
+          {navItems.map((item) => renderTopLevel(item, true))}
         </div>
       )}
     </header>

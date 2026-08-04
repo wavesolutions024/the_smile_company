@@ -7,6 +7,7 @@ import "./RestorativeDentistry.scss";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import { Link } from "react-router-dom";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const services = [
   {
@@ -62,7 +63,7 @@ const faqs = [
     answer:
       " Many insurance plans partially cover restorative treatments like fillings, crowns, and bridges. At Denza Dental, we can help you understand your coverage based on your policy. ",
   },
- 
+
 ];
 
 const RestorativeDentistry = () => {
@@ -74,28 +75,7 @@ const RestorativeDentistry = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our Restorative Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <Link to="/contact" className="service1_btn ">
-              Book Consultant
-            </Link>
-            <a href="tel:+9865213025" className="service1_btn call_btnn">
-              Call +9865213025
-            </a>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=1991+Tattoo+Studio+Pune"
-              target="_blank"
-              className="service1_btn"
-            >
-              Get Directions
-            </a>
-          </div>
-        </div>
-      </div>
+      <PageTop title="Restorative Dentistry Services" />
 
       <div className="parent second_parent">
         <div className="cont second_cont">
@@ -178,7 +158,7 @@ const RestorativeDentistry = () => {
         </div>
       </div>
 
-      <div className="faq_section" style={{ backgroundColor: "white", margin:"0px" }}>
+      <div className="faq_section" style={{ backgroundColor: "white", margin: "0px" }}>
         <div className="faq_header">
           <h2>FAQs</h2>
           <p>
@@ -212,7 +192,7 @@ const RestorativeDentistry = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-           
+
           </div>
           <div className="gallery_slider">
             <Swiper

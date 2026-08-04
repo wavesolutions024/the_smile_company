@@ -7,7 +7,7 @@ import { FiYoutube } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoIosCall } from "react-icons/io";
 import { BsTwitterX } from "react-icons/bs";
-import logo from "../../assets/header/logo6.png";
+import logo from "../../assets/header/new_logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -112,13 +112,28 @@ const Footer = () => {
             </div>
 
             <div className="footer__col">
-              <h3>Useful Links</h3>
+              <h3>Our Technology</h3>
               <ul>
                 <li>
-                  <Link to="/privacy-policy">Privacy Policy</Link>
+                  <Link to="/cbct">CBCT</Link>
                 </li>
                 <li>
-                  <Link to="/terms-and-conditions">Terms & Conditions</Link>
+                  <Link to="/intra-oral-scanning">Intra-Oral Scanning</Link>
+                </li>
+                <li>
+                  <Link to="/gbt-cleaning">Gbt Cleaning</Link>
+                </li>
+                <li>
+                  <Link to="/dental-lasers">Dental Lasers</Link>
+                </li>
+                 <li>
+                  <Link to="/gbt-machine">Gbt Machine</Link>
+                </li>
+                <li>
+                  <Link to="/dental-loupes">Dental Loupes</Link>
+                </li>
+                <li>
+                  <Link to="/laughing-gas">Laughing Gas</Link>
                 </li>
               </ul>
             </div>

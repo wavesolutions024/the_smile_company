@@ -106,7 +106,7 @@ const SmileAnalysisConsultation = () => {
 
   return (
     <>
-      <PageTop title="Smile Analysis Consultation" />
+      <PageTop title="Smile Analysis Consultation Services" />
 
       <div className="second_section">
         <div className="second_section_container">
@@ -191,8 +191,7 @@ const SmileAnalysisConsultation = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
+                
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

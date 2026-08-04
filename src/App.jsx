@@ -54,6 +54,7 @@ import ToothReshaping from "./pages/sub services/tooth reshaping/ToothReshaping"
 import GumCountouring from "./pages/sub services/gum contouring/GumCountouring";
 import MetalBraces from "./pages/sub services/metal braces/MetalBraces";
 import LingualBraces from "./pages/sub services/lingual braces/LingualBraces";
+import ZirconiaCrowns from "./pages/sub services/zirconia crowns/ZirconiaCrowns";
 
 
 
@@ -88,6 +89,7 @@ function AppLayout() {
         <Route element={<MinorOralSurgeries />} path="/minor-oral-surgeries" />
         <Route element={<ToothColouredFeeling />} path="/tooth-coloured-feeling" />
         <Route element={<DentalCrowns />} path="/dental-crowns" />
+        <Route element={<ZirconiaCrowns />} path="/zirconia-crowns" />
         <Route element={<CrownsBridges />} path="/crowns-bridges" />
         <Route element={<InlaysOnlays />} path="/inlays-onlays" />
         <Route element={<SmileAnalysisConsultation />} path="/smile-analysis-consultation" />

@@ -7,6 +7,7 @@ import "./GeneralDental.scss";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import { Link } from "react-router-dom";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const services = [
   {
@@ -89,28 +90,7 @@ const GeneralDental = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <Link to="/contact" className="service1_btn ">
-              Book Consultant
-            </Link>
-            <a href="tel:+9865213025" className="service1_btn call_btnn">
-              Call +9865213025
-            </a>
-            <a
-              href="https://maps.app.goo.gl/NEKmVtDq2akRhGeD6"
-              target="_blank"
-              className="service1_btn"
-            >
-              Get Directions
-            </a>
-          </div>
-        </div>
-      </div>
+      <PageTop title="General Dental Services" />
 
       <div className="parent second_parent">
         <div className="cont second_cont">
@@ -133,7 +113,7 @@ const GeneralDental = () => {
       <div className="third_section">
         <div className="third_header">
           <h2 style={{ color: "var(--accent)" }}>
-            General Dental Services that AO Dentistry Offers in Pune
+            General Dental Services that Denza Dental Provides in Pune
           </h2>
         </div>
 

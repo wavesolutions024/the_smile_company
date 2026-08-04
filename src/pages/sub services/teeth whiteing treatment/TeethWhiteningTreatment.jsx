@@ -137,7 +137,7 @@ const TeethWhiteningTreatment = () => {
 
   return (
     <>
-      <PageTop title="Teeth Whitening Treatment" />
+      <PageTop title="Teeth Whitening Treatment Services" />
 
       <div className="book_appoint">
         <div className="book_appoint_container" data-aos="fade-up">

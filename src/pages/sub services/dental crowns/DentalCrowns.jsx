@@ -138,7 +138,7 @@ const DentalCrowns = () => {
 
   return (
     <>
-      <PageTop title="Dental Crowns" />
+      <PageTop title="Dental Crowns Services" />
 
       <div className="second_section">
         <div className="second_section_container">

@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "./DentalLasers.scss";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const services = [
   {
@@ -37,29 +38,29 @@ const services = [
 
 const services1 = [
   {
-    title: " Initial Consultation  ",
+    title: "Precision-Driven Care ",
     description:
-      "We assess your dental condition and recommend suitable laser treatment options. We also explain the procedure and discuss cost-related queries.  ",
+      " Our diode laser technology enables highly precise treatments, targeting specific areas with minimal impact on surrounding tissues for accurate and effective results. ",
   },
   {
-    title: "Preparation",
+    title: " Comfort-Focused Experience  ",
     description:
-      "The treatment area is prepared, and local anesthesia may be used if required to ensure a comfortable, pain-free experience.  ",
+      "Experience dental procedures with minimal discomfort, as diode lasers work gently and efficiently—often reducing the need for anesthesia. ",
   },
   {
-    title: "Laser Treatment  ",
+    title: "Rapid Recovery Time ",
     description:
-      "Advanced dental lasers are used to perform precise soft or hard tissue procedures with minimal discomfort and faster healing. ",
+      "Enjoy quicker healing times with advanced laser treatments, with many patients noticing significant improvement within just 24 hours. ",
   },
   {
-    title: "Post-Treatment Care  ",
+    title: " Comprehensive Treatment Range ",
     description:
-      "After the procedure, we provide clear aftercare instructions to ensure smooth healing and the best results. ",
+      "From gum reshaping to treating cold sores, diode laser technology addresses a wide range of dental concerns—offering comprehensive care in one place. ",
   },
   {
-    title: "Follow-Up Visits ",
+    title: " Cleaner, Safer Procedures ",
     description:
-      "Regular follow-ups are scheduled to monitor healing and ensure successful outcomes, with ongoing support from our dental team.  ",
+      "Diode laser treatments often result in little to no bleeding during and after procedures, enhancing comfort and reducing post-treatment complications. ",
   },
 ];
 
@@ -105,18 +106,7 @@ const RestorativeDentistry = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our Dental Laser Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="Dental Lasers Services"/>
 
       <div className="parent second_parent">
         <div className="cont second_cont">
@@ -134,6 +124,8 @@ const RestorativeDentistry = () => {
         </div>
       </div>
 
+      {/*
+
       <div className="third_section">
         <div className="third_header">
           <h2> Advanced Precision with Enhanced Comfort</h2>
@@ -149,6 +141,7 @@ const RestorativeDentistry = () => {
           ))}
         </div>
       </div>
+      */}
 
       {/*}
 
@@ -156,44 +149,20 @@ const RestorativeDentistry = () => {
         <div className="cont three_section_cont">
           <h2>Types of Dental Lasers – Denza Dental, Kharadi (Pune) </h2>
 
-          <div className="three_points">
-            <div className="laser_types">
-              <h3>Diode Lasers </h3>
-              <ul>
-                <li>
-                  Used for soft tissue procedures like gum reshaping and
-                  infection treatment
-                </li>
-                <li>
-                  Highly precise with minimal discomfort and faster healing
-                </li>
-              </ul>
+        <div className="service_cards">
+          {services1.map((service, index) => (
+            <div key={index} className="service_card">
+              <p className="service_card_index">{index + 1}.</p>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
             </div>
-
-            <div className="laser_types">
-              <h3>Nd:YAG Lasers </h3>
-              <ul>
-                <li>Suitable for deeper gum and periodontal procedures</li>
-                <li>Helps reduce bleeding and improves treatment efficiency</li>
-              </ul>
-            </div>
-
-            <div className="laser_types">
-              <h3>Er:YAG Lasers </h3>
-              <ul>
-                <li>
-                  Used for hard tissue procedures like cavity removal and tooth
-                  preparation
-                </li>
-                <li>
-                  Offers high precision with minimal impact on surrounding tooth
-                  structure
-                </li>
-              </ul>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
+
+
+      {/*
+
 
       <div className="third_section">
         <div className="third_header">
@@ -323,7 +292,6 @@ const RestorativeDentistry = () => {
           </div>
         </div>
       </div>
-
 
       <div className="faq_section" style={{ background: "white" }}>
         <div className="faq_header">

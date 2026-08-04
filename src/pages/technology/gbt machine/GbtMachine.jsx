@@ -6,6 +6,9 @@ import "swiper/css/navigation";
 import "./GbtMachine.scss";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import img4 from "../../../assets/about_section/img5.webp";
+import patientImg from "../../../assets/about_page/left1.png";
+import PageTop from "../../../comp/page_top/PageTop";
+
 
 const GbtMachine = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -75,18 +78,7 @@ const GbtMachine = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our General Dental Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
+      <PageTop title="GBT Machine Technology" />
 
       <div className="parent second_parent_gbt">
         <div className="cont second_cont_gbt">
@@ -237,6 +229,48 @@ const GbtMachine = () => {
           </div>
         </div>
       </div>
+
+      <div className="patient_parent parent">
+        <div className="patient_cont cont">
+
+          <div className="patient_heading">
+            <h2>Why Denza Dental Center Uses the EMS Airflow GBT Technology</h2>
+          </div>
+
+          <div className="patient_wrapper">
+
+            <div className="patient_left">
+              <img src={patientImg} alt="Patient and Doctor Discussion" />
+            </div>
+
+            <div className="patient_right">
+              <p>
+                At Denza Dental Center, we chose the EMS Airflow GBT system to
+                transform the dental cleaning experience into something far more
+                comfortable and effective. Many patients tend to delay care due to
+                discomfort, and this technology helps remove that barrier completely.
+              </p>
+
+              <p>
+                Our team is specially trained in Guided Biofilm Therapy protocols,
+                ensuring every treatment is precise, consistent, and gentle. This
+                allows us to deliver a deeper clean while keeping the experience
+                smooth and stress-free.
+              </p>
+
+              <p>
+                The result is a noticeable difference—patients feel more relaxed,
+                more confident, and more willing to maintain regular visits. Over
+                time, this leads to better oral health and a more positive
+                relationship with dental care.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
 
       {/* faq */}
 

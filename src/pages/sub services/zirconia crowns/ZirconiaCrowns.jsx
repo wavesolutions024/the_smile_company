@@ -100,10 +100,10 @@ const faqs = [
   },
 ];
 
-const  ZirconiaCrowns  = () => {
+const ZirconiaCrowns = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
@@ -122,134 +122,43 @@ const  ZirconiaCrowns  = () => {
     <>
       <PageTop title="Zirconia Crowns Services" />
 
-      <div className="second_section">
-        <div className="second_section_container">
-          <div className="second_section_header">
-            <h2> What Happens During a Dental Check-up? </h2>
+      <div className="brace_treat_parent parent">
+        <div className="brace_treat_cont cont">
+          <h2>Advantages of Zirconia Dental Crowns</h2>
+          <div>
             <p>
-              Choosing AO Dentistry for your dental check-up in Pune means
-              trusting an experienced team that is dedicated to providing the
-              best care possible. AO Dentistry stands out for several reasons:
-            </p>
-          </div>
-
-          <div className="why_choose_cards">
-            {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="third_section">
-        <div className="third_header">
-          <h2> What Happens During a Dental Check-up? </h2>
-          <p>
-            We offer a wide range of general dental services to meet all your
-            oral health needs. Our team of experienced dentists is dedicated to
-            providing you with the best possible care.
-          </p>
-        </div>
-
-        <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="book_appoint">
-          <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
-            <h2>How to Book Your Dental Check-up at AO Dentistry</h2>
-            <p>
-              Booking your dental check-up at AO Dentistry is quick and easy. We
-              offer several options to accommodate your schedule and
-              preferences:
+              Zirconia crowns resemble your teeth in most instances. Though they cannot be bleached or whitened
+              after fitting, the crowns don’t lose their original color due to staining.
             </p>
 
-            <ol>
-              <li>
-                <strong>Online Booking:</strong> Schedule your appointment
-                <span> www.denza.com</span> through our website. Pick a date and
-                time that suits you, and we’ll confirm your booking quickly.
-              </li>
-              <li>
-                <strong>Call Us Directly :</strong> Prefer to speak with
-                someone? Give us a call and our team will help you find the best
-                available time for your visit.
-              </li>
-              <li>
-                <strong>Walk-in Visits :</strong> Need urgent care or nearby?
-                You’re welcome to walk in. We do our best to accommodate you as
-                quickly as possible.
-              </li>
-              <li>
-                <strong>Visit Our Clinic :</strong>Denza Dental is conveniently
-                located in Pune, making it easy for you to access quality dental
-                care. Our clinic is Open all <strong>7 days</strong> ,
-                <strong> 9:00 AM – 9:00 PM</strong>.
-              </li>
+            <ul>
+              <li>Durability</li>
+              <li>Strength</li>
+              <li>Comfort</li>
+              <li>Color</li>
+              <li>Biocompatibility</li>
+              <li>Aesthetic </li>
+            </ul>
 
-              <li>
-                <strong>Get in Touch :</strong>Have questions or need help
-                booking? Reach out to us via call, WhatsApp, or email—we’re here
-                to assist you every step of the way.
-              </li>
-            </ol>
-          </div>
+            <p>
+              The ceramic crown can cause additional wear and tear in the teeth surrounding it. However, we know how
+              to minimize this impact and ensure that all your teeth will be healthy and strong. The Zirconia tooth cap
+              cost in Pune is affordable (and depends on the patient’s dental condition).
+            </p>
 
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+            <p>
+              Call us to book an appointment and get Zirconia dental crowns fitted in a single visit.
+            </p>
           </div>
         </div>
       </div>
 
-      <div className="faq_section1">
-        <div className="faq_header">
-          <h2>FAQs</h2>
-          <p>
-            Answers to the most common questions about our general dental care.
-          </p>
-        </div>
-
-        <div className="faq_list">
-          {faqs.map((item, index) => {
-            const isOpen = openFaq === index;
-            return (
-              <div
-                key={index}
-                className={`faq_item ${isOpen ? "open" : ""}`}
-                onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
-              >
-                <button className="faq_question" type="button">
-                  <span>{item.question}</span>
-                  <span className="faq_toggle">{isOpen ? "▲" : "▼"}</span>
-                </button>
-                <div className="faq_answer">
-                  <p>{item.answer}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
 
       <div className="parent gallery_parent">
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -283,4 +192,4 @@ const  ZirconiaCrowns  = () => {
   );
 };
 
-export default  ZirconiaCrowns ;
+export default ZirconiaCrowns;

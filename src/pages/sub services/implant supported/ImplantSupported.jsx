@@ -132,7 +132,7 @@ const ImplantSupported = () => {
 
   return (
     <>
-      <PageTop title="Implant-Supported Overdenture" />
+      <PageTop title="Implant-Supported Overdenture Services" />
 
       <div className="parent second_parent">
         <div className="cont second_cont">

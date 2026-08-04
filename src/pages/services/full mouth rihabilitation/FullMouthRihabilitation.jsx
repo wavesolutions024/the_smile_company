@@ -7,6 +7,7 @@ import "./FullMouthRihabilitation.scss";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import { Link } from "react-router-dom";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const services = [
   {
@@ -178,21 +179,8 @@ const FullMouthRihabilitation = () => {
 
   return (
     <>
-      <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our Full Mouth Rehabilitation Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <Link to="/contact" className="service1_btn ">
-              Book Consultant
-            </Link>
-            <div className="service1_btn call_btn">Call +91 7028 131 132</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div>
-
+      <PageTop title="Full Mouth Rehabilitation Services" />
+ 
       <div className="parent second_parent">
         <div className="cont second_cont">
           <div className="general_left">
