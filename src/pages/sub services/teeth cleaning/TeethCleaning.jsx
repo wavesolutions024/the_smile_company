@@ -81,7 +81,7 @@ const TeethCleaning = () => {
 
   return (
     <>
-      <PageTop title="Teeth Cleaning" />
+      <PageTop title="Teeth Cleaning Services" />
 
       <div className="second_section">
         <div className="second_section_container">
