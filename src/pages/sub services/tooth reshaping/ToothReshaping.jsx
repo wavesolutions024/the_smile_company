@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay, Thumbs } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/thumbs";
 import "./ToothReshaping.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
+import before1 from "../../../assets/about_page/before1.webp";
+import beforeAfter1 from "../../../assets/before_after/img1.jpg";
+import beforeAfter2 from "../../../assets/before_after/img2.jpg";
+import beforeAfter3 from "../../../assets/before_after/img3.jpg";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
 
@@ -62,6 +67,8 @@ const services = [
   },
 ];
 
+const bracesSlides = [before1, gallery1, beforeAfter1, beforeAfter2, beforeAfter3];
+
 const faqs = [
   {
     question: "What is teeth reshaping and who can benefit from it? ",
@@ -107,6 +114,8 @@ const faqs = [
 
 const ToothReshaping = () => {
   const [openFaq, setOpenFaq] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper2, setThumbsSwiper2] = useState(null);
 
   useEffect(() => {
     AOS.init({
@@ -181,7 +190,47 @@ const ToothReshaping = () => {
           </div>
 
           <div className="braces_treat_left">
-            <img src={img1} alt="General Dental Service" />
+            <div className="braces_gallery">
+              <Swiper
+                modules={[Navigation, Autoplay, Thumbs]}
+                spaceBetween={16}
+                slidesPerView={1}
+                navigation={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                loop={true}
+                thumbs={{ swiper: thumbsSwiper }}
+                className="main-braces-swiper"
+              >
+                {bracesSlides.map((src, index) => (
+                  <SwiperSlide key={index}>
+                    <div className="braces_slide_card" data-aos="fade-up" data-aos-delay={index * 100}>
+                      <img src={src} alt={`Teeth reshaping slide ${index + 1}`} />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+
+              <Swiper
+                onSwiper={setThumbsSwiper}
+                modules={[Thumbs]}
+                spaceBetween={12}
+                slidesPerView={4}
+                watchSlidesProgress={true}
+                slideToClickedSlide={true}
+                className="braces_thumbs_swiper"
+              >
+                {bracesSlides.map((src, index) => (
+                  <SwiperSlide key={index} className="thumb-slide">
+                    <div className="thumb_card">
+                      <img src={src} alt={`Thumbnail ${index + 1}`} />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
           </div>
         </div>
       </div>
@@ -256,7 +305,6 @@ const ToothReshaping = () => {
         <div className="cont braces_treat_cont">
           <div className="braces_treat_right">
             <h2>Before and After Teeth Reshaping </h2>
-
             <p>
               Experience the visible difference that teeth reshaping can make. At Denza
               Dental, our before and after results showcase how minor corrections can create
@@ -269,7 +317,52 @@ const ToothReshaping = () => {
           </div>
 
           <div className="braces_treat_left">
-            <img src={img1} alt="General Dental Service" />
+            <div className="braces_gallery braces_gallery_large">
+              <Swiper
+                modules={[Navigation, Autoplay, Thumbs]}
+                spaceBetween={16}
+                slidesPerView={1}
+                navigation={true}
+                autoplay={{
+                  delay: 2500000,
+                  disableOnInteraction: false,
+                }}
+                loop={true}
+                thumbs={{ swiper: thumbsSwiper2 }}
+                className="main-braces-swiper"
+              >
+                {bracesSlides.map((src, index) => (
+                  <SwiperSlide key={index}>
+                    <div className="braces_slide_card" data-aos="fade-up" data-aos-delay={index * 100}>
+                      <img src={src} alt={`Before and after slide ${index + 1}`} />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+
+              <Swiper
+                onSwiper={setThumbsSwiper2}
+                modules={[Thumbs]}
+                spaceBetween={12}
+                slidesPerView={5}
+                watchSlidesProgress={true}
+                slideToClickedSlide={true}
+                breakpoints={{
+                  0: { slidesPerView: 2 },
+                  600: { slidesPerView: 4 },
+                  900: { slidesPerView: 5 },
+                }}
+                className="braces_thumbs_swiper"
+              >
+                {bracesSlides.map((src, index) => (
+                  <SwiperSlide key={index} className="thumb-slide">
+                    <div className="thumb_card">
+                      <img src={src} alt={`Thumbnail ${index + 1}`} />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
           </div>
         </div>
       </div>
@@ -277,9 +370,7 @@ const ToothReshaping = () => {
       <div className="faq_section1">
         <div className="faq_header">
           <h2>FAQs</h2>
-          <p>
-            Answers to the most common questions about our general dental care.
-          </p>
+          
         </div>
 
         <div className="faq_list">

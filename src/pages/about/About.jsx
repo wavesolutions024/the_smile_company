@@ -20,6 +20,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import img from "../../assets/about_page/woman_dr.jpg";
+import male_dr from "../../assets/about_page/dr_image_man (2).jpg";
 
 const About = () => {
   const containerRef = useRef(null);
@@ -56,7 +57,7 @@ const About = () => {
           "
         </>
       ),
-      image: img,
+      image: male_dr,
       expertise: [
         "15+ Years Experience",
         "MDS – Prosthodontics, Crown & Bridge and Implantology",
@@ -151,7 +152,7 @@ const About = () => {
       <div className="parent doctors_parents">
         <div className="cont doctors_cont">
           <div className="left_doctors_parents">
-            <img src={img} />
+            <img src={male_dr} />
           </div>
           <div className="right_doctors_parents">
             <h2>Dr. Hemant Suresh Thodsare</h2>

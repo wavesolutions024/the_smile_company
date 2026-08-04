@@ -11,7 +11,6 @@ import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
 
-
 const whyChooseData = [
   {
     icon: "👨‍⚕️",
@@ -108,7 +107,6 @@ const faqs = [
     answer:
       "Most cosmetic treatments involve minimal to no downtime, allowing you to return to your daily routine quickly. ",
   },
-
 ];
 
 const SmileDesigning = () => {
@@ -124,7 +122,6 @@ const SmileDesigning = () => {
     AOS.refresh();
   }, []);
 
-
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
@@ -138,15 +135,21 @@ const SmileDesigning = () => {
           <div className="second_section_header">
             <h2>Advanced Smile Designing Clinic in Pune</h2>
             <p>
-              At Denza Dental, we are dedicated to creating confident, natural-looking smiles through
-              advanced smile designing solutions. Our focus on precision, aesthetics, and patient
-              satisfaction has made us a trusted choice for smile transformations in Pune.
+              At Denza Dental, we are dedicated to creating confident,
+              natural-looking smiles through advanced smile designing solutions.
+              Our focus on precision, aesthetics, and patient satisfaction has
+              made us a trusted choice for smile transformations in Pune.
             </p>
           </div>
 
           <div className="why_choose_cards">
             {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
+              <div
+                key={index}
+                className="why_choose_card"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <div className="card_icon">{item.icon}</div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
@@ -162,41 +165,45 @@ const SmileDesigning = () => {
 
           <ul>
             <li>
-              <b>Consult a Professional: </b>In all cases, careful consultation with the dentist is required to
-              agree upon the goals and design an individualized protocol.
+              <b>Consult a Professional: </b>In all cases, careful consultation
+              with the dentist is required to agree upon the goals and design an
+              individualized protocol.
             </li>
 
             <li>
-              <b>Follow Post-Treatment Care: </b> Obey your dentist’s instructions in aftercare, so that your
-              smile design results can be sustained.
+              <b>Follow Post-Treatment Care: </b> Obey your dentist’s
+              instructions in aftercare, so that your smile design results can
+              be sustained.
             </li>
 
             <li>
-              <b>Maintain Oral Hygiene: </b>It is also extremely important to keep your healthy smile, so that,
-              through brushing and flossing plus checkups, it continues to stay that way.
+              <b>Maintain Oral Hygiene: </b>It is also extremely important to
+              keep your healthy smile, so that, through brushing and flossing
+              plus checkups, it continues to stay that way.
             </li>
 
             <li>
-              <b>Avoid Staining Foods: </b>Do not drink coffee, tea, or tobacco to keep that of your smile
-              white. Features of Smile Designing
+              <b>Avoid Staining Foods: </b>Do not drink coffee, tea, or tobacco
+              to keep that of your smile white. Features of Smile Designing
             </li>
-
           </ul>
         </div>
       </div>
 
-
       <div className="third_section">
         <div className="third_header">
           <h2>Key Features of Smile Designing</h2>
-          <p>
-
-          </p>
+          <p></p>
         </div>
 
         <div className="service_cards">
           {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
+            <div
+              key={index}
+              className="service_card"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <p className="service_card_index">{index + 1}.</p>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
@@ -242,7 +249,6 @@ const SmileDesigning = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -263,7 +269,11 @@ const SmileDesigning = () => {
             >
               {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
                 <SwiperSlide key={index}>
-                  <div className="gallery_card" data-aos="fade-up" data-aos-delay={index * 100}>
+                  <div
+                    className="gallery_card"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
                     <img src={src} alt={`Clinic slide ${index + 1}`} />
                   </div>
                 </SwiperSlide>
