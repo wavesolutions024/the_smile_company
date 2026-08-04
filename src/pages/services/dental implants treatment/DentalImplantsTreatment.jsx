@@ -159,15 +159,21 @@ const DentalImplantsTreatment = () => {
         </div>
       </div>
 
-      <div className="third_section">
-        <div className="service_cards">
-          {services.map((service, index) => (
-            <div key={index} className="service_card">
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
+      <div className="third_section parent">
+        <div className="cont">
+          <h2 style={{ marginBottom: "2rem" }}>
+            Why Choose Denza Dental for the Best Dental Implant Procedure In
+            Kharadi
+          </h2>
+          <div className="service_cards">
+            {services.map((service, index) => (
+              <div key={index} className="service_card">
+                <p className="service_card_index">{index + 1}.</p>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
