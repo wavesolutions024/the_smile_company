@@ -101,7 +101,7 @@ const PediatricDentistry = () => {
               Common Pediatric Dental Issues & Prevention – Denza Dental,
               Kharadi (Pune)
             </h2>
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Neonatal Teeth
               <li>
                 Teeth present at birth may irritate the tongue or affect
@@ -113,7 +113,7 @@ const PediatricDentistry = () => {
               </li>
             </ul>
 
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Nursing Bottle Caries
               <li>Decay caused by prolonged exposure to sugary bottles.</li>
               <li>
@@ -122,7 +122,7 @@ const PediatricDentistry = () => {
               </li>
             </ul>
 
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Decayed Teeth (Cavities)
               <li>Caused by plaque and sugar buildup. </li>
               <li>
@@ -131,7 +131,7 @@ const PediatricDentistry = () => {
               </li>
             </ul>
 
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Pain & Sensitivity
               <li>Due to cavities, enamel wear, or gum issues. </li>
               <li>
@@ -139,13 +139,13 @@ const PediatricDentistry = () => {
               </li>
             </ul>
 
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Gum Boils (Abscesses)
               <li>Infection-related pus formation from untreated decay. </li>
               <li>Prevention: Maintain hygiene and seek prompt dental care.</li>
             </ul>
 
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Tooth Extraction
               <li>Required in severe decay or damage cases. </li>
               <li>
@@ -154,7 +154,7 @@ const PediatricDentistry = () => {
               </li>
             </ul>
 
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Space Issues (Space Maintainers Needed)
               <li>
                 Occurs when baby teeth fall out early, affecting alignment.{" "}

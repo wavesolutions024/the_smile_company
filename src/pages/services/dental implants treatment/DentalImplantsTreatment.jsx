@@ -179,30 +179,30 @@ const DentalImplantsTreatment = () => {
 
       <div className="brace_treat_parent parent">
         <div className="brace_treat_cont cont">
-          <strong>Visit Denza Dental – Kharadi, Pune</strong>
+          <h2>Visit Denza Dental – Kharadi, Pune</h2>
           <div>
             <p>Our clinic is located at:</p>
-            <p>
+            <p >
               Office No. 111, Zen Square, Opp. EON Free Zone Road, Phase 2, Kharadi, Pune,
               Maharashtra 411014
             </p>
 
-            <p>
+            <p >
               We offer advanced dental implants and complete dental care in Pune, ensuring
               high-quality treatment with modern technology and expert care.
             </p>
 
-            <p>
+            <p >
               If you are searching for dental implants near me or want to know more about dental
               implant cost in Pune, Denza Dental is here to help you restore your confident smile.
             </p>
 
-            <p>Clinic Timings</p>
-            <p>
+            <p >Clinic Timings</p>
+            <p >
               Monday to Sunday: 9:00 AM – 9:00 PM
             </p>
-            <p>Book Your Appointment </p>
-            <p>Call / WhatsApp: +917028 131 132 / +917028 143 959</p>
+            <p  >Book Your Appointment </p>
+            <p >Call / WhatsApp: +91 7028 131 132 / +91 7028 143 959</p>
           </div>
         </div>
       </div>
@@ -348,17 +348,17 @@ const DentalImplantsTreatment = () => {
         </div>
       </div>
 
-      <div className="parent dental_implants_benefits">
-        <div className="cont dental_implants_benefits_cont">
-          <div className="dental_implants_benefits_left">
-            <div className="image"></div>
+      <div className="parent second_parent">
+        <div className="cont second_cont">
+          <div className="general_left">
+            <img src={img1} alt="General Dental Service" />
           </div>
-          <div className="dental_implants_benefits_right">
+          <div className="general_right">
             <h2>
               Benefits of Dental Implant Treatment at Denza Dental, Kharadi
               (Pune)
             </h2>
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               <li>
                 <strong>Natural Appearance </strong> - Looks and feels like real
                 teeth

@@ -124,8 +124,6 @@ const RestorativeDentistry = () => {
         </div>
       </div>
 
-      {/*
-
       <div className="third_section">
         <div className="third_header">
           <h2> Advanced Precision with Enhanced Comfort</h2>
@@ -141,7 +139,6 @@ const RestorativeDentistry = () => {
           ))}
         </div>
       </div>
-      */}
 
       {/*}
 

@@ -206,7 +206,7 @@ const GbtCleaning = () => {
             </p>
 
             <h3>What You Can Expect : </h3>
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               <li>
                 <p>
                   {" "}

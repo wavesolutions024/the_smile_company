@@ -180,7 +180,7 @@ const FullMouthRihabilitation = () => {
   return (
     <>
       <PageTop title="Full Mouth Rehabilitation Services" />
- 
+
       <div className="parent second_parent">
         <div className="cont second_cont">
           <div className="general_left">
@@ -199,7 +199,7 @@ const FullMouthRihabilitation = () => {
               patient’s unique needs.
             </p>
             <h4>What Full Mouth Rehabilitation Includes </h4>
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Restorative Treatments
               <li>Crowns, bridges, and fillings to repair damaged teeth </li>
               <li>
@@ -207,7 +207,7 @@ const FullMouthRihabilitation = () => {
               </li>
             </ul>
 
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Cosmetic Enhancements
               <li>
                 Veneers, teeth whitening, and bonding to improve smile
@@ -216,13 +216,13 @@ const FullMouthRihabilitation = () => {
               <li>Smile design for a natural and balanced look</li>
             </ul>
 
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Functional Improvements
               <li>Bite correction and alignment</li>
               <li>Jaw function improvement and stability </li>
             </ul>
 
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Gum & Periodontal Care
               <li>Treatment of gum disease</li>
               <li> Maintenance of overall oral health</li>
@@ -312,6 +312,47 @@ const FullMouthRihabilitation = () => {
         </div>
       </div>
 
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>Who is a Candidate for Full Mouth Rehabilitation in Pune?</h2>
+
+          <p>You may be a suitable candidate if you have:</p>
+
+          <ul>
+            <li>
+              <b>Severely damaged teeth</b> – Extensive decay, wear, or fractures affecting multiple
+              teeth
+            </li>
+            <li>
+              <b>Multiple missing teeth</b> – Gaps impacting smile and chewing function
+            </li>
+
+            <li>
+              <b>Bite alignment issues</b> – Overbite, underbite, crossbite, or jaw discomfort
+            </li>
+            <li>
+              <b>Gum disease</b> – Receding gums, loose teeth, or bone loss
+            </li>
+
+            <li>
+              <b>Aesthetic concerns</b> – Discolored, uneven, or poorly shaped teeth affecting
+              confidence
+            </li>
+
+            <li>
+              <b>Functional problems</b> – Difficulty in chewing, speaking, or maintaining oral
+              hygiene
+            </li>
+
+            <li>
+              <b>Overall poor oral health</b> – Needing comprehensive restorative and cosmetic
+              treatment
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
       <div
         className="parent second_parent"
         style={{ background: "var(--background)" }}
@@ -387,7 +428,7 @@ const FullMouthRihabilitation = () => {
       <div className="third_section" style={{ background: "var(--white)" }}>
         <div className="third_header">
           <h2 style={{ textAlign: "center", color: "var(--accent)" }}>
-            Why Choose Denza Dental for Full Mouth Rehabilitation in Pune?
+            Treatment Process for Full Mouth Dental Rehabilitation at Denza Dental, Kharadi (Pune)
           </h2>
         </div>
 
@@ -441,7 +482,7 @@ const FullMouthRihabilitation = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2 style={{ color: "var(--accent)" }}>Clinic Gallery</h2>
-            
+
           </div>
           <div className="gallery_slider">
             <Swiper

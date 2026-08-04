@@ -111,19 +111,19 @@ const RestorativeDentistry = () => {
           </div>
           <div className="general_right">
             <h2>Types of Dentures Offered at Denza Dental, Kharadi (Pune)</h2>
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Complete Dentures
               <li>Replace all missing teeth in an upper or lower arch </li>
               <li>Removable and designed for full-mouth restoration</li>
             </ul>
 
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Partial Dentures
               <li>Used when some natural teeth are still present</li>
               <li>Fill gaps and help maintain remaining teeth alignment</li>
             </ul>
 
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Immediate Dentures
               <li>Placed immediately after tooth extraction </li>
               <li>
@@ -132,7 +132,7 @@ const RestorativeDentistry = () => {
               </li>
             </ul>
 
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               Implant-Supported Dentures
               <li>Attached to dental implants for better stability</li>
               <li>
@@ -154,58 +154,39 @@ const RestorativeDentistry = () => {
               Benefits of Dentures for Missing Teeth at Denza Dental, Kharadi
               (Pune)
             </h2>
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               <li>
                 <b>Restored Function:</b> Improves chewing ability and speech
                 clarity
               </li>
-            </ul>
-
-            <ul>
               <li>
                 <b>Natural Appearance :</b>
                 Restores a confident and aesthetic smile
               </li>
-            </ul>
-
-            <ul>
               <li>
                 <b>Facial Support:</b> Maintains facial structure and prevents a
                 sunken look
               </li>
-            </ul>
-
-            <ul>
               <li>
                 <b>Better Oral Health:</b> Helps prevent shifting of remaining
                 teeth and supports gum health
               </li>
-            </ul>
-            <ul>
               <li>
                 <b>Cost-Effective Solution:</b> More affordable compared to
                 dental implants
               </li>
-            </ul>
-            <ul>
               <li>
                 <b>Custom Fit Options:</b> Designed to suit individual comfort
                 and needs
               </li>
-            </ul>
-            <ul>
               <li>
                 <b>Easy Maintenance :</b> Removable and simple to clean for
                 better hygiene
               </li>
-            </ul>
-            <ul>
               <li>
                 <b>Improved Oral Hygiene :</b> Helps reduce risk of infection
                 and supports overall oral health
               </li>
-            </ul>
-            <ul>
               <li>
                 <b>Quick Results :</b>Immediate improvement with options like
                 temporary dentures
