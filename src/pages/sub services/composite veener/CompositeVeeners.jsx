@@ -278,8 +278,7 @@ const CompositeVeeners = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
+                
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

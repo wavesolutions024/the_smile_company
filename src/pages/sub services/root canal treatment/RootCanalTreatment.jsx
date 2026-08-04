@@ -144,7 +144,7 @@ const RootCanalTreatment = () => {
 
   return (
     <>
-      <PageTop title="Root Canal Treatment" />
+      <PageTop title="Root Canal Treatment Services" />
 
       <div className="book_appoint" style={{background:"white"}}>
         <div className="book_appoint_container" data-aos="fade-up">

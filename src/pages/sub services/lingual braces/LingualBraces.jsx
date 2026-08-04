@@ -176,7 +176,7 @@ const LingualBraces = () => {
             <p>
               Visit Denza Dental, Kharadi, Pune
             </p>
-            <p> Call / WhatsApp: 7028131132 / 7028143959</p>
+            <p> Call / WhatsApp: +91 7028 131 132 / +91 7028 143 959</p>
           </div>
         </div>
       </div>
@@ -260,8 +260,7 @@ const LingualBraces = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
+                
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

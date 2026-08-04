@@ -139,7 +139,7 @@ const ToothExtraction = () => {
 
   return (
     <>
-      <PageTop title="Tooth Extraction" />
+      <PageTop title="Tooth Extraction Services" />
 
       <div className="second_section">
         <div className="second_section_container">

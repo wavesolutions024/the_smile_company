@@ -96,31 +96,41 @@ const CosmeticDentistry = () => {
             <img src={img1} alt="General Dental Service" />
           </div>
           <div className="general_right">
-            <h2>Cosmetic Dentistry</h2>
+            <h2>Best Cosmetic Dental Clinic in Kharadi. Pune</h2>
             <p>
-              Cosmetic dentistry focuses on improving the appearance of your
-              teeth based on your facial features and dental structure for
-              balanced, natural results.
-            </p>
-            <p>
-              <b>Customized Smile Makeovers</b> : We design personalized smile
-              makeovers by combining treatments to suit your unique needs and
-              aesthetic goals.
+              A beautiful smile enhances confidence and leaves a lasting
+              impression. At Denza Dental, we offer advanced cosmetic
+              dentistry solutions to help you achieve a naturally attractive
+              smile.
             </p>
 
-            <p>
-              <b>Treatments Offered </b> : Our services include veneers,
-              bonding, crowns, tooth-colored fillings, gum contouring, and full
-              mouth rehabilitation.
-            </p>
+            <ul style={{ paddingLeft: "20px" }}>
+              <li>
+                <b>What Is Cosmetic Dentistry? </b>Cosmetic dentistry focuses on improving the appearance of your
+                teeth based on your facial features and dental structure for
+                balanced, natural results.
+              </li>
+
+              <li>
+                <b>Customized Smile Makeovers </b>We design personalized smile makeovers by combining
+                treatments to suit your unique needs and aesthetic goals.
+              </li>
+
+              <li>
+                <b>Treatments Offered </b>Our services include veneers, bonding, crowns, tooth-colored
+                fillings, gum contouring, and full mouth rehabilitation.
+              </li>
+
+            </ul>
           </div>
         </div>
       </div>
 
+
       <div className="parent thir_parent">
         <div className="cont thir_cont">
           <div className="thir_right">
-            <h2>Our Cosmetic Dental Treatments </h2>
+            <h2>Our Cosmetic Dental Treatments</h2>
             <p>
               At Denza Dental, we offer a wide range of cosmetic dentistry
               treatments designed to enhance your smile and improve overall oral

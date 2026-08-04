@@ -127,7 +127,7 @@ const MetalBraces = () => {
               <strong>Denza Dental is trusted for metal braces treatment because we offer: </strong>
             </p>
 
-            <ul>
+            <ul style={{ paddingLeft: "20px" }}>
               <li>Advanced orthodontic equipment</li>
               <li>Experienced orthodontic specialists </li>
               <li>Personalized treatment planning </li>
@@ -241,8 +241,7 @@ const MetalBraces = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
+                
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

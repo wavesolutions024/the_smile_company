@@ -45,7 +45,7 @@ const servicess = [
       "Tooth-colored brackets blend with natural teeth",
       "Less visible during treatment ",
       "Helps maintain smile confidence",
-      
+
     ],
   },
   {
@@ -80,7 +80,7 @@ const servicess = [
       "Maintains appearance throughout treatment",
     ],
   },
-  
+
 ];
 
 const faqs = [
@@ -158,9 +158,11 @@ const CeramicBraces = () => {
               At Denza Dental, we provide advanced orthodontic care using high-quality ceramic
               braces that straighten your teeth discreetly without compromising your confidence.
               Visit Denza Dental, Kharadi, Pune Call / WhatsApp:   +91 7028 131 132 / 7028 143 959
-              You can also reach us via email at denzadentalcenter@gmail.com for more details. Visit
-              our clinic – Get Directions.
             </p>
+            <p>
+              You can also reach us via email at denzadentalcenter@gmail.com for more details.
+            </p>
+            <p>Visit our clinic – Get Directions.</p>
           </div>
         </div>
       </div>
@@ -200,7 +202,7 @@ const CeramicBraces = () => {
               <h3>{service.title}</h3>
               <ul className="service_points" >
                 {service.points.map((point, i) => (
-                  <li style={{ color: "var(--text)" }} key={i}>
+                  <li style={{ color: "var(--text)",  }} key={i}>
                     {point}
                   </li>
                 ))}
@@ -215,9 +217,9 @@ const CeramicBraces = () => {
           <div className="left_side_side">
             <h3>Precautions During Ceramic Braces Treatment</h3>
             <ul>
-             <li>Avoid hard, sticky, and sugary foods to prevent damage and cavities</li>
-             <li>Brush and clean teeth carefully after every meal using orthodontic tools </li>
-             <li>Do not miss scheduled adjustment appointments for proper progress</li>
+              <li>Avoid hard, sticky, and sugary foods to prevent damage and cavities</li>
+              <li>Brush and clean teeth carefully after every meal using orthodontic tools </li>
+              <li>Do not miss scheduled adjustment appointments for proper progress</li>
             </ul>
           </div>
 
@@ -232,27 +234,7 @@ const CeramicBraces = () => {
         </div>
       </div>
 
-      <div className="side_side_parent parent">
-        <div className="side_side_cont cont">
-          <div className="left_side_side">
-            <h3>Precautions During Ceramic Braces Treatment</h3>
-            <ul>
-              <li>Avoid hard, sticky, and sugary foods to prevent damage and cavities</li>
-              <li>Brush and clean teeth carefully after every meal using orthodontic tools</li>
-              <li>Do not miss scheduled adjustment appointments for proper progress</li>
-            </ul>
-          </div>
-
-          <div className="right_side_side">
-            <h3>Aftercare for Ceramic Braces</h3>
-            <ul>
-              <li>Brush teeth after meals regularly</li>
-              <li>Maintain strict oral hygiene</li>
-              <li>Attend all follow-up visits as advised by your dentist</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      
 
 
       <div className="faq_section1">
@@ -271,8 +253,7 @@ const CeramicBraces = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

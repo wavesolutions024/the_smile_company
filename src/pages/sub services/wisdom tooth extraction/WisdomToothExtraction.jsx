@@ -116,7 +116,7 @@ const WisdomToothExtraction = () => {
 
   return (
     <>
-      <PageTop title="Wisdom Tooth Extraction" />
+      <PageTop title="Wisdom Tooth Extraction Services" />
 
       <div className="wisdom_tooth_extract_parent parent">
         <div className="wisdom_tooth_extract_cont cont">

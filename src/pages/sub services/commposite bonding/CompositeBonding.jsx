@@ -218,12 +218,11 @@ const CompositeBonding = () => {
 
       <div className="third_section">
         <div className="third_header">
-          <h2>Composite Bonding Procedure at Denza Dental, Kharadi
+          <h2>Composite Bonding Procedure at Denza Dental, Kharadi</h2>
+          <p>
             Understanding the composite bonding process helps you feel
             confident about your smile transformation. Here’s what your
-            journey at Denza Dental looks like:</h2>
-          <p>
-
+            journey at Denza Dental looks like:
           </p>
         </div>
 
@@ -254,8 +253,7 @@ const CompositeBonding = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

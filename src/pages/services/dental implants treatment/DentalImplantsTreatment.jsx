@@ -171,6 +171,36 @@ const DentalImplantsTreatment = () => {
         </div>
       </div>
 
+      <div className="brace_treat_parent parent">
+        <div className="brace_treat_cont cont">
+          <strong>Visit Denza Dental – Kharadi, Pune</strong>
+          <div>
+            <p>Our clinic is located at:</p>
+            <p>
+              Office No. 111, Zen Square, Opp. EON Free Zone Road, Phase 2, Kharadi, Pune, 
+Maharashtra 411014
+            </p>
+
+            <p>
+             We offer advanced dental implants and complete dental care in Pune, ensuring 
+high-quality treatment with modern technology and expert care.
+            </p>
+
+            <p>
+              If you are searching for dental implants near me or want to know more about dental 
+implant cost in Pune, Denza Dental is here to help you restore your confident smile. 
+            </p>
+
+            <p>Clinic Timings</p>
+            <p>
+              Monday to Sunday: 9:00 AM – 9:00 PM 
+            </p>
+            <p>Book Your Appointment </p>
+            <p>Call / WhatsApp: +917028 131 132 / +917028 143 959</p>
+          </div>
+        </div>
+      </div>
+
       <div className="dental_implannts_parents parent">
         <div className="dental_implannts_cont cont">
           <h2>What Are Dental Implants?</h2>

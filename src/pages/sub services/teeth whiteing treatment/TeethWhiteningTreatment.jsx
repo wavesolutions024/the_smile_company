@@ -43,6 +43,12 @@ const whyChooseData = [
     description:
       "With a focus on quality care and patient satisfaction, Denza Dental is trusted for delivering consistent and effective teeth whitening outcomes.",
   },
+  {
+    icon: "😊",
+    title: "Expert Care with Global Exposure",
+    description:
+      "At Denza Dental, your treatment is handled by dentists with international exposure, ensuring advanced techniques and globally accepted standards of care. This results in precise, effective procedures focused on preserving your natural tooth and long-term oral health. With a blend of expertise and modern technology, you receive care that reflects true international quality.",
+  },
 ];
 
 const services = [
@@ -384,8 +390,7 @@ const TeethWhiteningTreatment = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
+                
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

@@ -128,7 +128,7 @@ const DentalCheckUps = () => {
         </div>
       </div> */}
 
-      <PageTop title="Dental Check Up" />
+      <PageTop title="Dental Check Up Services" />
 
       <div className="second_section">
         <div className="second_section_container">

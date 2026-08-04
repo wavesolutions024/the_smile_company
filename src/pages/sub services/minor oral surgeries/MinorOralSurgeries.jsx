@@ -91,7 +91,7 @@ const MinorOralSurgeries = () => {
 
   return (
     <>
-      <PageTop title="Minor Oral Surgeries" />
+      <PageTop title="Minor Oral Surgeries Services" />
 
       <div className="wisdom_tooth_extract_parent parent">
         <div className="wisdom_tooth_extract_cont cont">

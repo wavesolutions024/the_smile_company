@@ -125,7 +125,7 @@ const RootCanalReTreatment = () => {
 
   return (
     <>
-      <PageTop title="Root Canal Re-Treatment" />
+      <PageTop title="Root Canal Re-Treatment Services" />
 
       <div className="second_section">
         <div className="second_section_container">
@@ -260,8 +260,7 @@ const RootCanalReTreatment = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
+                
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

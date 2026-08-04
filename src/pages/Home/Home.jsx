@@ -214,6 +214,10 @@ const Home = () => {
       title: "Excellence in Every Smile",
       icon: <FaStar />,
     },
+    {
+      title: "Child-Friendly Dental Care",
+      icon: <FaSmileBeam />,
+    },
   ];
 
   const textTestimonials = [

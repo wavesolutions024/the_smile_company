@@ -117,7 +117,7 @@ const DentalXRay = () => {
 
   return (
     <>
-      <PageTop title="Dental X-Ray" />
+      <PageTop title="Dental X-Ray Services" />
 
       <div className="second_section">
         <div className="second_section_container">

@@ -41,7 +41,7 @@ const whyChooseData = [
     icon: "😊",
     title: "Comfort & Convenience",
     description:
-      "Located in Kharadi, Pune, our clinic offers flexible appointment timings to suit your schedule and ensure a smooth treatment experience. ��Visit Denza Dental, Kharadi, Pune ��Call / WhatsApp:   +91 7028 131 132 / 7028143959 ",
+      "Located in Kharadi, Pune, our clinic offers flexible appointment timings to suit your schedule and ensure a smooth treatment experience. Visit Denza Dental, Kharadi, Pune Call / WhatsApp:   +91 7028 131 132 / 7028143959 ",
   },
 ];
 
@@ -197,10 +197,7 @@ const ClearAligners = () => {
               achieve a well-aligned smile.
             </p>
 
-            <p style={{ fontWeight: "bold", color: "var(--accent" }}>
-              Common Reasons for Braces{" "}
-            </p>
-
+            
           </div>
         </div>
       </div>
@@ -247,54 +244,66 @@ const ClearAligners = () => {
         </div>
       </div>
 
-      <div className="side_side_parent parent">
-        <div className="side_side_cont cont">
-          <div className="left_side_side">
-            <h3 >Before and After Clear Aligners</h3>
+      <div className="parent dental_implants_procedures_parent">
+        <div className="cont dental_implants_procedures_cont">
+          <h2>Before and After Clear Aligners</h2>
+          <p>
+            <strong>Before: </strong>Crooked teeth, gaps, or bite misalignment affecting smile and function. 
+          </p>
 
-            <p>
-              <strong>Before:</strong> Crooked teeth, gaps, or bite misalignment affecting smile and function.
-            </p>
+          <p>
+            <strong>After:</strong>Straight, well-aligned smile with improved aesthetics and confidence. 
+          </p>
 
-            <p>
-              <strong>After: </strong>Straight, well-aligned smile with improved aesthetics and confidence.
-            </p>
-            <h3>Timeline</h3>
-            <ul>
-              <li>Adjustment: 1–2 weeks</li>
-              <li>Mild discomfort: 3–5 days </li>
-              <li>Total treatment: 6–18 months</li>
-            </ul>
+          <div className="dental_implants_cards_main1">
+            <div className="dental_implants_cards_wrap">
+              <h3>Timeline</h3>
+              <ul>
+                <li>Adjustment: 1–2 weeks </li>
+                <li>
+                  Mild discomfort: 3–5 days
+                </li>
+                <li>Total treatment: 6–18 months </li>
+              </ul>
+            </div>
 
-            <h3>What to Expect </h3>
-            <ul>
-              <li>Mild pressure during tooth movement </li>
-              <li>Temporary speech changes </li>
-              <li>Gradual smile improvement</li>
-            </ul>
-          </div>
+            <div className="dental_implants_cards_wrap">
+              <h3>What to Expect</h3>
+              <ul>
+                <li>
+                  Mild pressure during tooth movement
+                </li>
+                <li>Temporary speech changes</li>
+                <li>Gradual smile improvement </li>
+              </ul>
+            </div>
 
-          <div className="right_side_side">
-            <h3>During Clear Aligner Treatment</h3>
-            <ul>
-             <li>Remove aligners while eating</li>
-             <li>Avoid hot drinks with aligners on</li>
-             <li>Stay well hydrated</li>
-             <li>Prefer soft foods in initial days </li>
-            </ul>
+            <div className="dental_implants_cards_wrap">
+              <h3>During Clear Aligner Treatment</h3>
+              <ul>
+                <li>
+                 Remove aligners while eating 
+                </li>
+                <li>Avoid hot drinks with aligners on </li>
+                <li>Stay well hydrated </li>
+                <li>Prefer soft foods in initial days</li>
+              </ul>
+            </div>
 
-            <h3>Care Instructions</h3>
-            <ul>
-              <li>Wear aligners 20–22 hours daily</li>
-              <li>Brush teeth after every meal </li>
-              <li>Clean aligners regularly </li>
-              <li>Attend scheduled follow-ups </li>
-              <li>Maintain good oral hygiene throughout treatment</li>
-            </ul>
+            <div className="dental_implants_cards_wrap">
+              <h3>Care Instructions</h3>
+              <ul>
+                <li>Wear aligners 20–22 hours daily</li>
+                <li>Brush teeth after every meal</li>
+                <li>Clean aligners regularly </li>
+                <li>Attend scheduled follow-ups </li>
+                <li>Maintain good oral hygiene throughout treatment</li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>
-
 
       <div className="faq_section1">
         <div className="faq_header">
@@ -312,8 +321,7 @@ const ClearAligners = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
+                
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>
