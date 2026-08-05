@@ -52,8 +52,8 @@ const Contact = () => {
                 <div className="card_content">
                   <h4>Office Address:</h4>
                   <p>
-                    Office No. 111, Zen Square, Opp. Eon Free Zone Road, Phase
-                    2, Kharadi, Pune, Maharashtra 411014{" "}
+                    Denza Dental Center,
+                    Office no 111, First floor, Zen Square, Opp Marvel Enigma, Kharadi, Pune- 411014{" "}
                   </p>
                 </div>
               </div>

@@ -109,7 +109,7 @@ const HeaderNew = () => {
         },
         { label: "DENTURE TREATMENT", to: "/denture-treatment" },
         { label: "PEDIATRIC DENTISTRY", to: "/pediatric-dentistry" },
-        { label: " DENTAL LASERS", to: "/dental-lasers" },
+        { label: " DENTAL LASERS", to: "/dental-lasers-services" },
       ],
     },
     {

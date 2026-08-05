@@ -195,16 +195,7 @@ const GbtCleaning = () => {
               dentistry ensures that every patient receives care that is modern,
               effective, and tailored to their needs.
             </p>
-            <p>
-              The “guided” aspect comes from its structured protocol. Eight
-              scientifically proven steps are followed in a precise
-              sequence—starting with making biofilm visible, then removing it
-              systematically, and finishing with protective treatments like
-              fluoride. This evidence-based approach ensures consistency,
-              thoroughness, and a significantly more advanced cleaning
-              experience.
-            </p>
-
+            
             <h3>What You Can Expect : </h3>
             <ul style={{ paddingLeft: "20px" }}>
               <li>

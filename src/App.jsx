@@ -55,6 +55,7 @@ import GumCountouring from "./pages/sub services/gum contouring/GumCountouring";
 import MetalBraces from "./pages/sub services/metal braces/MetalBraces";
 import LingualBraces from "./pages/sub services/lingual braces/LingualBraces";
 import ZirconiaCrowns from "./pages/sub services/zirconia crowns/ZirconiaCrowns";
+import DentalLasersServices from "./pages/sub services/dental lasers services/DentalLasersServices";
 
 
 
@@ -112,6 +113,7 @@ function AppLayout() {
         <Route element={<Blogs />} path="/blogs" />
         <Route element={<DentalTourism />} path="/dental-tourism" />
         <Route element={<OurWork />} path="/our-work" />
+        <Route element={<DentalLasersServices />} path="/dental-lasers-services" />
         {/* technology  */}
         <Route element={<Cbct />} path="/cbct" />
         <Route element={<IntraOralScanning />} path="/intra-oral-scanning" />

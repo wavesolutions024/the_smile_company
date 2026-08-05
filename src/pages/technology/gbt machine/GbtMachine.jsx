@@ -230,7 +230,7 @@ const GbtMachine = () => {
         </div>
       </div>
 
-      <div className="patient_parent parent">
+      {/* <div className="patient_parent parent">
         <div className="patient_cont cont">
 
           <div className="patient_heading">
@@ -269,7 +269,7 @@ const GbtMachine = () => {
           </div>
 
         </div>
-      </div>
+      </div> */}
 
 
       {/* faq */}

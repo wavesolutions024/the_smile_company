@@ -171,7 +171,7 @@ const Footer = () => {
               >
                 <iframe
                   title="Google Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.498781097344!2d73.94635159678954!3d18.551538700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3c57152c109%3A0x3138dba7abdcf460!2sEon%20Free%20Zone!5e0!3m2!1sen!2sin!4v1785338108202!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.501209670591!2d73.95412277496366!3d18.55142908254814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3c4047c069d%3A0x56298114ed1f664b!2sDivine%20Dental%20%26%20Implant%20Clinic!5e0!3m2!1sen!2sin!4v1785918504132!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
