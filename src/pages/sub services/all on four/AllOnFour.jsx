@@ -228,9 +228,9 @@ const AllOnFour = () => {
                 </li>
                 <li>No adhesives needed </li>
                 <li>Eat almost all types of food comfortably</li>
-                <li>Restores near-natural chewing efficiency (~90–100%) </li>
+                {/* <li>Restores near-natural chewing efficiency (~90–100%) </li>
                 <li>More stable and natural compared to dentures (~50% chewing ability)</li>
-                <li>Lower long-term maintenance and replacement </li>
+                <li>Lower long-term maintenance and replacement </li> */}
               </ul>
             </div>
           </div>

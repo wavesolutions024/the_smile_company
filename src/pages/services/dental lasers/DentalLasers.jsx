@@ -10,92 +10,114 @@ import PageTop from "../../../comp/page_top/PageTop";
 
 const services = [
   {
-    title: " Precision-Driven Care",
+    title: "Initial Consultation ",
     description:
-      "Our diode laser technology enables highly precise treatments, targeting specific areas with minimal impact on surrounding tissues for accurate and effective results.",
+      "We assess your dental condition and recommend suitable laser treatment options. We also explain the procedure and discuss cost-related queries. ",
   },
   {
-    title: " Comfort-Focused Experience",
+    title: "Preparation ",
     description:
-      "Experience dental procedures with minimal discomfort, as diode lasers work gently and efficiently—often reducing the need for anesthesia.",
+      "The treatment area is prepared, and local anesthesia may be used if required to ensure a comfortable, pain-free experience. ",
   },
   {
-    title: " Rapid Recovery Time",
+    title: " Laser Treatment  ",
     description:
-      "Enjoy quicker healing times with advanced laser treatments, with many patients noticing significant improvement within just 24 hours.",
+      "Advanced dental lasers are used to perform precise soft or hard tissue procedures with minimal discomfort and faster healing. ",
   },
   {
-    title: "Comprehensive Treatment Range ",
+    title: "Post-Treatment Care",
     description:
-      "From gum reshaping to treating cold sores, diode laser technology addresses a wide range of dental concerns—offering comprehensive care in one place.",
+      "After the procedure, we provide clear aftercare instructions to ensure smooth healing and the best results.",
   },
   {
-    title: " Cleaner, Safer Procedures ",
+    title: " Follow-Up Visits  ",
     description:
-      "Diode laser treatments often result in little to no bleeding during and after procedures, enhancing comfort and reducing post-treatment complications.",
+      "Regular follow-ups are scheduled to monitor healing and ensure successful outcomes, with ongoing support from our dental team. ",
   },
 ];
 
-const services1 = [
+
+
+const whyChooseData = [
   {
-    title: "Precision-Driven Care ",
+
+    title: "Cutting-Edge Technology",
     description:
-      " Our diode laser technology enables highly precise treatments, targeting specific areas with minimal impact on surrounding tissues for accurate and effective results. ",
+      "We use advanced dental laser systems for highly precise, safe, and efficient treatments with minimal discomfort. ",
   },
   {
-    title: " Comfort-Focused Experience  ",
+
+    title: "Expert Dental Team ",
     description:
-      "Experience dental procedures with minimal discomfort, as diode lasers work gently and efficiently—often reducing the need for anesthesia. ",
+      "Our experienced professionals are trained in modern laser dentistry techniques, ensuring accurate and high-quality outcomes.",
   },
   {
-    title: "Rapid Recovery Time ",
+
+    title: "Global Exposure & Clinical Expertise",
     description:
-      "Enjoy quicker healing times with advanced laser treatments, with many patients noticing significant improvement within just 24 hours. ",
+      "Our dentists bring global exposure through international training, advanced workshops, and modern clinical practices, ensuring world-class standards in laser dental care.",
   },
   {
-    title: " Comprehensive Treatment Range ",
+
+    title: "Comfortable & Minimally Invasive Treatment ",
     description:
-      "From gum reshaping to treating cold sores, diode laser technology addresses a wide range of dental concerns—offering comprehensive care in one place. ",
+      "Laser dentistry reduces pain, bleeding, and recovery time, making treatments more comfortable for patients.",
   },
   {
-    title: " Cleaner, Safer Procedures ",
+
+    title: "Personalized Treatment Plans",
     description:
-      "Diode laser treatments often result in little to no bleeding during and after procedures, enhancing comfort and reducing post-treatment complications. ",
+      "Each patient receives customized care based on their dental condition and treatment goals.",
+  },
+  {
+
+    title: "State-of-the-Art Facility ",
+    description:
+      "Our clinic is equipped with modern technology and a patient-friendly environment for safe and effective care. ",
+  },
+  {
+
+    title: "Affordable & Transparent Care",
+    description:
+      "We offer competitive pricing and flexible payment options, ensuring high-quality laser dentistry is accessible to all patients. ",
   },
 ];
 
 const faqs = [
   {
-    question: "Is laser treatment good for teeth?  ",
+    question: "Is laser treatment good for teeth?",
     answer:
       "Yes, laser dentistry is safe, precise, and minimally invasive. It reduces pain, bleeding, and recovery time compared to traditional methods. ",
   },
   {
     question: "What is the disadvantage of dental laser?",
     answer:
-      "Laser treatment may not be suitable for all dental cases, especially very complex or deep structural issues that still require conventional methods. ",
+      "Laser treatment may not be suitable for all dental cases, especially very complex or deep structural issues that still require conventional methods.",
   },
   {
-    question: "How long does laser dental treatment last? ",
+    question: "How long does laser dental treatment last?",
     answer:
       "Results are long-lasting, especially when proper oral hygiene and regular dental check-ups are maintained. ",
   },
   {
-    question: "What conditions can laser dentistry treat? ",
+    question: "What conditions can laser dentistry treat?",
     answer:
-      "Laser dentistry can treat gum disease, cavity removal, gum reshaping, infection control, teeth whitening, and minor surgical procedures.  ",
+      "Laser dentistry can treat gum disease, cavity removal, gum reshaping, infection control, teeth whitening, and minor surgical procedures. ",
   },
   {
-    question: "How long is the recovery time after laser dental procedure?",
+    question: "How long is the recovery time after laser dental procedure? ",
     answer:
       "Recovery is usually quick—most patients resume normal activities within 24–48 hours. ",
   },
   {
     question: "What types of laser treatments do you offer at Denza Dental?",
     answer:
-      "We offer laser gum treatments, periodontal therapy, soft tissue surgeries, cavity management, teeth whitening, and minor oral procedures using advanced dental lasers. ",
+      "We offer laser gum treatments, periodontal therapy, soft tissue surgeries, cavity management, teeth whitening, and minor oral procedurusing advanced dental lasers.",
   },
+  
 ];
+
+
 
 const RestorativeDentistry = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -106,27 +128,72 @@ const RestorativeDentistry = () => {
 
   return (
     <>
-      <PageTop title="Dental Lasers Services"/>
+      <PageTop title="Dental Lasers Services" />
 
-      <div className="parent second_parent">
-        <div className="cont second_cont">
-          <div className="general_left">
-            <img src={img1} alt="General Dental Service" />
+      <div className="second_section">
+        <div className="second_section_container">
+          <div className="second_section_header">
+            <h2>Why Choose Denza Dental for Laser Dentistry in Pune?</h2>
+
           </div>
-          <div className="general_right">
-            <h2>Precision That You Can Feel</h2>
-            <p>
-              At Denza Denntal, our advanced laser treatments transform the
-              patient experience—offering refined care, enhanced accuracy, and a more
-              comfortable approach to modern dentistry.
-            </p>
+
+          <div className="why_choose_cards">
+            {whyChooseData.map((item, index) => (
+              <div key={index} className="why_choose_card"  >
+                {/* <div className="card_icon">{item.icon}</div> */}
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
           </div>
+        </div>
+      </div>
+
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>Types of Dental Lasers – Denza Dental, Kharadi (Pune)</h2>
+
+          <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+            Diode Lasers{" "}
+          </p>
+          <ul>
+            <li>
+              Used for soft tissue procedures like gum reshaping and infection treatment
+            </li>
+            <li>
+              Highly precise with minimal discomfort and faster healing
+            </li>
+          </ul>
+
+          <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+            Nd:YAG Lasers{" "}
+          </p>
+          <ul>
+            <li>
+              Suitable for deeper gum and periodontal procedures
+            </li>
+            <li>
+              Helps reduce bleeding and improves treatment efficiency
+            </li>
+          </ul>
+
+          <p style={{ fontWeight: "bold", color: "var(--accent" }}>
+            Er:YAG Lasers {" "}
+          </p>
+          <ul>
+            <li>
+              Used for hard tissue procedures like cavity removal and tooth preparation
+            </li>
+            <li>
+              Offers high precision with minimal impact on surrounding tooth structure
+            </li>
+          </ul>
         </div>
       </div>
 
       <div className="third_section">
         <div className="third_header">
-          <h2> Advanced Precision with Enhanced Comfort</h2>
+          <h2>Dental Laser Treatment Procedure – Denza Dental, Kharadi (Pune) </h2>
         </div>
 
         <div className="service_cards">
@@ -140,99 +207,37 @@ const RestorativeDentistry = () => {
         </div>
       </div>
 
-      {/*}
-
-      <div className="three_section_parent parent">
-        <div className="cont three_section_cont">
-          <h2>Types of Dental Lasers – Denza Dental, Kharadi (Pune) </h2>
-
-        <div className="service_cards">
-          {services1.map((service, index) => (
-            <div key={index} className="service_card">
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-
-      {/*
-
-
-      <div className="third_section">
-        <div className="third_header">
-          <h2>
-            Dental Laser Treatment Procedure – Denza Dental, Kharadi (Pune)
-          </h2>
-        </div>
-
-        <div className="service_cards">
-          {services1.map((service, index) => (
-            <div key={index} className="service_card">
-              <p className="service_card_index">{index + 1}.</p>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
       <div className="parent second_parent">
         <div className="cont second_cont">
           <div className="general_left">
-            <img src={img1} alt="Full Mouth Rehabilitation" />
+            <img src={img1} alt="General Dental Service" />
           </div>
           <div className="general_right">
-            <h2>
-              Uses & Benefits of Dental Lasers – Denza Dental, Kharadi, Pune
-            </h2>
-            <ul>
-              <b> Minimally Invasive Treatment </b>
-              <li>
-                Reduces the need for drills and stitches, making procedures more
-                comfortable.
-              </li>
-            </ul>
+            <h2>Uses & Benefits of Dental Lasers – Denza Dental, Kharadi, Pune </h2>
 
-            <ul>
-              <b> Less Pain & Discomfort</b>
+            <ul style={{ paddingLeft: "20px" }}>
               <li>
-                Patients usually experience minimal pain during and after laser
-                procedures.
+                <b>Minimally Invasive Treatment </b>Reduces the need for drills and stitches, making procedures more comfortable.
               </li>
-            </ul>
 
-            <ul>
-              <b>Reduced Bleeding </b>
               <li>
-                Laser technology seals blood vessels during treatment, resulting
-                in less bleeding.
+                <b>Less Pain & Discomfort </b>Patients usually experience minimal pain during and after laser procedures.
               </li>
-            </ul>
 
-            <ul>
-              <b>Faster Healing </b>
               <li>
-                Promotes quicker recovery compared to traditional dental
-                methods.{" "}
+                <b>Reduced Bleeding </b>Laser technology seals blood vessels during treatment, resulting in less bleeding.
               </li>
-            </ul>
 
-            <ul>
-              High Precision
               <li>
-                Targets only affected areas while preserving healthy surrounding
-                tissue.
+                <b>Faster Healing </b>Promotes quicker recovery compared to traditional dental methods.
               </li>
-            </ul>
 
-            <ul>
-              Better Treatment Outcomes
               <li>
-                Improves accuracy, efficiency, and overall success of various
-                dental procedures.
+                <b>High Precision </b>Targets only affected areas while preserving healthy surrounding tissue.
+              </li>
+
+              <li>
+                <b>Better Treatment Outcomes </b>Improves accuracy, efficiency, and overall success of various dental procedures.
               </li>
             </ul>
           </div>
@@ -241,56 +246,42 @@ const RestorativeDentistry = () => {
 
       <div className="equipment_parent parent">
         <div className="equipment_cont cont">
-          <h2>
-            Equipment Used in Dental Laser Treatment – Denza Dental, Kharadi
-            (Pune)
-          </h2>
+          <h2>Equipment Used in Dental Laser Treatment – Denza Dental, Kharadi (Pune) </h2>
           <div className="equipment_list">
             <ul>
               <li>
-                <b>High-Powered Dental Laser Units :</b> Advanced laser systems
-                used for both soft and hard tissue procedures, ensuring
-                precision and minimal discomfort.
+                <b>High-Powered Dental Laser Units </b>Advanced laser systems used for both soft and hard tissue procedures,
+                ensuring precision and minimal discomfort.
               </li>
             </ul>
 
             <ul>
               <li>
-                <b>Precision Handpieces :</b>Ergonomically designed tools that
-                allow accurate laser application for effective treatment
-                outcomes.
+                <b>Precision Handpieces </b>Ergonomically designed tools that allow accurate laser application for
+                effective treatment outcomes.
               </li>
             </ul>
 
             <ul>
               <li>
-                <b>Digital Imaging Systems :</b> Modern imaging technology used
-                for accurate diagnosis, treatment planning, and monitoring of
-                procedures.
+                <b>Digital Imaging Systems </b>Modern imaging technology used for accurate diagnosis, treatment
+                planning, and monitoring of procedures.
               </li>
             </ul>
 
             <ul>
               <li>
-                <b>Comfortable Dental Chairs :</b>Patient-friendly chairs
-                designed to ensure maximum comfort during laser dental
-                procedures.
+                <b>Comfortable Dental Chairs </b>Patient-friendly chairs designed to ensure maximum comfort during laser
+                dental procedures.
+
               </li>
             </ul>
 
-            <ul>
-              <li>
-                <b>Dentistry for Children with Special Needs :</b>Specialized
-                care for children with physical, developmental, or behavioral
-                challenges in a calm and supportive environment, ensuring
-                stress-free treatment.
-              </li>
-            </ul>
           </div>
         </div>
       </div>
 
-      <div className="faq_section" style={{ background: "white" }}>
+      <div className="faq_section">
         <div className="faq_header">
           <h2>FAQs</h2>
           <p>
@@ -319,7 +310,7 @@ const RestorativeDentistry = () => {
           })}
         </div>
       </div>
-      */}
+
 
       <div className="parent gallery_parent">
         <div className="cont gallery_cont">

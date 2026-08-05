@@ -220,6 +220,7 @@ const MetalBraces = () => {
               <li>Maintain proper oral hygiene </li>
               <li>Follow recommended cleaning routines </li>
               <li>Report any discomfort or issues promptly</li>
+              <li>Avoid hard, sticky, and sugary foods</li>
             </ul>
           </div>
         </div>

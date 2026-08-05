@@ -238,6 +238,7 @@ const LingualBraces = () => {
               <li>Brush teeth after meals </li>
               <li>Maintain proper oral hygiene </li>
               <li>Attend regular follow-up visits </li>
+              <li>Use an antimicrobial mouthwash regularly</li>
             </ul>
           </div>
         </div>
