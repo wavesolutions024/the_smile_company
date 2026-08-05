@@ -136,7 +136,7 @@ const DentalImplantsTreatment = () => {
             <img src={img1} alt="General Dental Service" />
           </div>
           <div className="general_right">
-            <h2>Best Dental Implants in Kharadi, Pune | Denza Dental </h2>
+            <h2>Best Dental Implants in Kharadi, Pune, Denza Dental </h2>
             <p>
               Dental implants are a reliable and long-lasting solution for
               replacing missing teeth and restoring a natural-looking smile. If
@@ -202,7 +202,7 @@ const DentalImplantsTreatment = () => {
               Monday to Sunday: 9:00 AM – 9:00 PM
             </p>
             <p  >Book Your Appointment </p>
-            <p >Call / WhatsApp: +91 7028 131 132 / +91 7028 143 959</p>
+            <p >Call / WhatsApp: +91 7028 131 132</p>
           </div>
         </div>
       </div>
