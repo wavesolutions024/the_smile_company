@@ -7,6 +7,7 @@ import "./GbtCleaning.scss";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import img4 from "../../../assets/about_section/img5.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Link } from "react-router-dom";
 
 const GbtCleaning = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -173,7 +174,9 @@ const GbtCleaning = () => {
               ))}
             </div>
             <div className="bottom-row">
-              <div className="btn">Appointment</div>
+              <Link to="/contact" className="btn">
+                Appointment
+              </Link>
             </div>
           </div>
         </div>
@@ -195,7 +198,7 @@ const GbtCleaning = () => {
               dentistry ensures that every patient receives care that is modern,
               effective, and tailored to their needs.
             </p>
-            
+
             <h3>What You Can Expect : </h3>
             <ul style={{ paddingLeft: "20px" }}>
               <li>

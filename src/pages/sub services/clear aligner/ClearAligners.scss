@@ -146,14 +146,17 @@
 }
 
 .why_choose_cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: calc(var(--unit) * 2);
 }
 
 .why_choose_card {
   background: #ffffff;
   padding: 20px 15px;
+  width: 270px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: left;
@@ -301,16 +304,17 @@
 }
 
 .service_cards {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.5rem;
-  max-width: 1240px;
-  margin: 0 auto;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: calc(var(--unit) * 2);
 }
 
 .service_card {
   padding: 2rem;
   border-radius: 28px;
+  width: 270px;
   background: var(--background);
   min-height: 300px;
   display: flex;

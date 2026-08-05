@@ -535,8 +535,10 @@
         }
 
         h1 {
-          font-size: calc(var(-unit) + 5px);
+          font-size: calc(var(--unit) * 1.4);
           text-align: left;
+          font-weight: 600;
+          
         }
 
         P {

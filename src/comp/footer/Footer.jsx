@@ -15,7 +15,7 @@ const Footer = () => {
     <>
       <div className="whatsapp_icon">
         <a
-          href="https://wa.me/1234567890"
+          href="https://wa.me/7028131132"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -27,7 +27,7 @@ const Footer = () => {
 
       <div className="call_icon">
         <a
-          href="https://wa.me/1234567890"
+          href="tel:7028131132"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -156,7 +156,7 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <Link to="/contact-us">Contact Us</Link>
+                  <Link to="/contact">Contact Us</Link>
                 </li>
               </ul>
             </div>

@@ -114,18 +114,7 @@ const DentalCheckUps = () => {
 
   return (
     <>
-      {/* <div className="parent general_dental_parent bg-img-cover">
-        <marquee behavior="scroll" direction="left" scrollamount="20">
-          Welcome to our Dental Check Up Services!
-        </marquee>
-        <div className="cont general_dental_cont">
-          <div className="bts_grp">
-            <div className="service1_btn ">Book Consultant</div>
-            <div className="service1_btn call_btn">Call +9865213025</div>
-            <div className="service1_btn">Get Directions</div>
-          </div>
-        </div>
-      </div> */}
+     
 
       <PageTop title="Dental Check Up Services" />
 
