@@ -209,22 +209,27 @@
 }
 
 .service_cardss {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
-  max-width: 1240px;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: calc(var(--unit) * 2);
 }
 
-.service_card {
+.service_cardssss {
   padding: 2rem;
   border-radius: 28px;
+  width: 270px;
   background: var(--background);
   min-height: 300px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+
+  h3 {
+    color: black;
+  }
 }
 
 .service_card_index {

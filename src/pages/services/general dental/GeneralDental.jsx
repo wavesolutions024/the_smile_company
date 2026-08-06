@@ -119,7 +119,7 @@ const GeneralDental = () => {
 
         <div className="service_cardss">
           {services.map((service, index) => (
-            <div key={index} className="service_card">
+            <div key={index} className="service_cardssss">
               <p className="service_card_index">{index + 1}.</p>
               <h3>{service.title}</h3>
               <p>{service.description}</p>

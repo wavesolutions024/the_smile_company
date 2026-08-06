@@ -8,7 +8,7 @@ import gallery1 from "../../../assets/about_page/after1.webp";
 import img4 from "../../../assets/about_section/img5.webp";
 import patientImg from "../../../assets/about_page/left1.png";
 import PageTop from "../../../comp/page_top/PageTop";
-
+import { Link } from "react-router-dom";
 
 const GbtMachine = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -171,7 +171,9 @@ const GbtMachine = () => {
               ))}
             </div>
             <div className="bottom-row">
-              <div className="btn">Appointment</div>
+              <Link to="/contact" className="btn">
+                Appointment
+              </Link>
             </div>
           </div>
         </div>
@@ -270,7 +272,6 @@ const GbtMachine = () => {
 
         </div>
       </div> */}
-
 
       {/* faq */}
 
