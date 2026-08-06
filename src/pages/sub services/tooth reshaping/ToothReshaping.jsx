@@ -190,6 +190,10 @@ const ToothReshaping = () => {
           </div>
 
           <div className="braces_treat_left">
+            <img src={img1} alt="General Dental Service" />
+          </div>
+
+          {/* <div className="braces_treat_left">
             <div className="braces_gallery">
               <Swiper
                 modules={[Navigation, Autoplay, Thumbs]}
@@ -231,7 +235,7 @@ const ToothReshaping = () => {
                 ))}
               </Swiper>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -370,7 +374,7 @@ const ToothReshaping = () => {
       <div className="faq_section1">
         <div className="faq_header">
           <h2>FAQs</h2>
-          
+
         </div>
 
         <div className="faq_list">
@@ -381,7 +385,7 @@ const ToothReshaping = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

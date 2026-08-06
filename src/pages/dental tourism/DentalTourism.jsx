@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import clnic_img from "../../assets/dental_tourism_img.jpeg";
+import clnic_img from "../../assets/dental_tourism_img1.jpeg";
 import Button from "../../comp/button/Button";
 import serviceHero from "../../assets/service_hero.png";
 

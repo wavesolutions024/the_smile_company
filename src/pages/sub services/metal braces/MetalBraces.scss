@@ -5,6 +5,7 @@
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../../assets/service_hero.png");
   position: relative;
+
   marquee {
     font-size: 80px;
     font-weight: 600;
@@ -12,12 +13,14 @@
     position: absolute;
     bottom: 15%;
   }
+
   .general_dental_cont {
     position: absolute;
     bottom: 6%;
     width: 100%;
     left: -50%;
     right: -50%;
+
     .bts_grp {
       display: flex;
       gap: calc(var(--unit));
@@ -37,6 +40,7 @@
         border-radius: 4px;
         text-decoration: none;
         transition: var(--trans);
+
         &:hover {
           background: var(--accent2);
           transform: translateY(-5px);
@@ -58,10 +62,12 @@
 @media (max-width: 768px) {
   .general_dental_parent {
     height: 60vh;
+
     marquee {
       font-size: 26px;
       bottom: 17%;
     }
+
     .general_dental_cont {
       .bts_grp {
         gap: calc(var(--unit) / 2);
@@ -93,12 +99,15 @@
       font-size: 22px;
       font-weight: 600;
     }
+
     .general_dental_cont {
       .bts_grp {
         gap: calc(var(--unit) / 2.5);
+
         .service1_btn {
           padding: 9px;
         }
+
         .call_btn {
           background: var(--accent2);
 
@@ -611,7 +620,7 @@
     grid-template-columns: 1fr;
   }
 
-  .service_card{
+  .service_card {
     padding: 1rem;
     min-height: auto;
   }
@@ -665,7 +674,8 @@
 
 
 @media(max-width: 550px) {
-   h2 {
+  h2 {
     font-size: 22px !important;
   }
-  }
+}
+

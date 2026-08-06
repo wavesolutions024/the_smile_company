@@ -226,6 +226,31 @@ const MetalBraces = () => {
         </div>
       </div>
 
+      <div className="after_care_parent parent">
+        <div className="after_care_cont cont">
+          <h2>After Care of Braces Treatment </h2>
+
+          <ul>
+            <li>
+              <b> Retainer Use</b> – Wear as prescribed to prevent teeth
+              shifting
+            </li>
+            <li>
+              <b> Continued Oral Hygiene</b> – Maintain excellent brushing and
+              flossing.
+            </li>
+
+            <li>
+              <b>Regular Check-ups</b> – Follow-up visits to ensure teeth stay
+              in place.
+            </li>
+            <li>
+              <b>Monitor Changes</b> – Contact us if issues arise.
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <div className="faq_section1">
         <div className="faq_header">
           <h2>FAQs</h2>
@@ -242,7 +267,7 @@ const MetalBraces = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>
