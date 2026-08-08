@@ -181,12 +181,12 @@ const FullMouthRihabilitation = () => {
     <>
       <PageTop title="Full Mouth Rehabilitation Services" />
 
-      <div className="parent second_parent">
-        <div className="cont second_cont">
-          <div className="general_left">
+      <div className="parent second_parent11">
+        <div className="cont second_cont11">
+          <div className="general_left11">
             <img src={img1} alt="Full Mouth Rehabilitation" />
           </div>
-          <div className="general_right">
+          <div className="general_right11">
             <h2>
               Best Full Mouth Rehabilitation in Kharadi, Pune | Denza
               Dental{" "}
