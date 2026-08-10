@@ -219,8 +219,11 @@ const CompositeVeeners = () => {
             </ol>
           </div>
 
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+          <div className="book_appoint_side red_background" 
+          
+          
+          >
+            <img src={apointment} style={{width:"100%", height: "450px", objectFit: "cover"}} alt="Dental Appointment " />
           </div>
         </div>
       </div>

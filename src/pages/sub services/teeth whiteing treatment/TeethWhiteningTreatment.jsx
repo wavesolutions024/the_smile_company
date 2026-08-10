@@ -11,7 +11,6 @@ import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
 
-
 const whyChooseData = [
   {
     icon: "👨‍⚕️",
@@ -120,7 +119,6 @@ const faqs = [
     answer:
       " You can schedule an appointment by contacting the clinic directly or visiting Denza Dental in Kharadi for a consultation.",
   },
-  
 ];
 
 const TeethWhiteningTreatment = () => {
@@ -136,7 +134,6 @@ const TeethWhiteningTreatment = () => {
     AOS.refresh();
   }, []);
 
-
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
@@ -145,48 +142,59 @@ const TeethWhiteningTreatment = () => {
     <>
       <PageTop title="Teeth Whitening Treatment Services" />
 
-      <div className="book_appoint">
+      <div className="book_appoint" style={{background:"white"}}>
         <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
             <h2> Best Teeth Whitening in Kharadi, Pune</h2>
             <p>
-              At Denza Dental, we believe a brighter smile can boost your confidence and enhance
-              your overall appearance. Here’s why patients choose us for professional teeth whitening
-              in Kharadi, Pune:
+              At Denza Dental, we believe a brighter smile can boost your
+              confidence and enhance your overall appearance. Here’s why
+              patients choose us for professional teeth whitening in Kharadi,
+              Pune:
             </p>
 
             <ol>
               <li>
-                <strong>Experienced Dental Professionals</strong> Our team has extensive experience in cosmetic dentistry, ensuring safe, effective, and
-                high-quality teeth whitening treatments.
+                <strong>Experienced Dental Professionals</strong> Our team has
+                extensive experience in cosmetic dentistry, ensuring safe,
+                effective, and high-quality teeth whitening treatments.
               </li>
               <li>
-                <strong>Advanced Whitening Technology</strong> We use modern whitening systems and advanced equipment to deliver noticeable,
+                <strong>Advanced Whitening Technology</strong> We use modern
+                whitening systems and advanced equipment to deliver noticeable,
                 long-lasting results with minimal sensitivity.
               </li>
               <li>
-                <strong>Personalized Whitening Solutions</strong> Every smile is different, so we customize each teeth whitening treatment based on your
-                dental condition and desired results.
+                <strong>Personalized Whitening Solutions</strong> Every smile is
+                different, so we customize each teeth whitening treatment based
+                on your dental condition and desired results.
               </li>
               <li>
-                <strong>Comfort-Focused Care </strong>Your comfort is our priority. We provide a relaxed environment and gentle procedures to
-                make your whitening experience smooth and stress-free.
-              </li>
-
-              <li>
-                <strong>Detailed Consultation</strong>We conduct thorough consultations to understand your concerns and recommend the
-                most suitable whitening options for optimal results.
+                <strong>Comfort-Focused Care </strong>Your comfort is our
+                priority. We provide a relaxed environment and gentle procedures
+                to make your whitening experience smooth and stress-free.
               </li>
 
               <li>
-                <strong>Transparent & Affordable Pricing</strong>We offer clear pricing with no hidden costs, making professional teeth whitening
-                accessible without compromising on quality.
+                <strong>Detailed Consultation</strong>We conduct thorough
+                consultations to understand your concerns and recommend the most
+                suitable whitening options for optimal results.
+              </li>
+
+              <li>
+                <strong>Transparent & Affordable Pricing</strong>We offer clear
+                pricing with no hidden costs, making professional teeth
+                whitening accessible without compromising on quality.
               </li>
             </ol>
           </div>
 
           <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+            <img
+              src={apointment}
+              alt="Dental Appointment"
+              style={{ objectFit: "cover" }}
+            />
           </div>
         </div>
       </div>
@@ -194,16 +202,21 @@ const TeethWhiteningTreatment = () => {
       <div className="second_section">
         <div className="second_section_container">
           <div className="second_section_header">
-            <h2>Why Choose Denza Dental for Teeth Whitening in Kharadi, Pune? </h2>
-            <p>
-
-            </p>
+            <h2>
+              Why Choose Denza Dental for Teeth Whitening in Kharadi, Pune?{" "}
+            </h2>
+            <p></p>
           </div>
 
           <div className="why_choose_cards">
             {whyChooseData.map((item, index) => (
-              <div key={index} className="why_choose_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="card_icon">{item.icon}</div>
+              <div
+                key={index}
+                className="why_choose_card"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
+                {/* <div className="card_icon">{item.icon}</div> */}
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>
@@ -217,42 +230,51 @@ const TeethWhiteningTreatment = () => {
           <div className="book_appoint_text">
             <h2>Common Causes of Tooth Discoloration </h2>
             <p>
-              Tooth discoloration can occur due to several everyday factors that affect the natural
-              brightness of your smile.
+              Tooth discoloration can occur due to several everyday factors that
+              affect the natural brightness of your smile.
             </p>
 
             <ol>
               <li>
-                <strong>Dietary Habits</strong> Frequent consumption of staining foods and beverages like coffee, tea, and colored
-                drinks can gradually dull the natural whiteness of teeth.
+                <strong>Dietary Habits</strong> Frequent consumption of staining
+                foods and beverages like coffee, tea, and colored drinks can
+                gradually dull the natural whiteness of teeth.
               </li>
               <li>
-                <strong>Tobacco Use</strong> Smoking or chewing tobacco leads to stubborn stains that can deeply discolor the
-                enamel over time.
+                <strong>Tobacco Use</strong> Smoking or chewing tobacco leads to
+                stubborn stains that can deeply discolor the enamel over time.
               </li>
               <li>
-                <strong>Poor Oral Hygiene </strong> Inadequate brushing and flossing can cause plaque and tartar buildup, resulting in a
+                <strong>Poor Oral Hygiene </strong> Inadequate brushing and
+                flossing can cause plaque and tartar buildup, resulting in a
                 yellow or dull appearance.
               </li>
               <li>
-                <strong>Aging </strong>As you age, the outer enamel layer wears down, exposing the underlying dentin, which
-                has a naturally yellow tone.
+                <strong>Aging </strong>As you age, the outer enamel layer wears
+                down, exposing the underlying dentin, which has a naturally
+                yellow tone.
               </li>
 
               <li>
-                <strong>Medications </strong>Certain medications can contribute to discoloration, especially when taken over long
-                periods or during tooth development.
+                <strong>Medications </strong>Certain medications can contribute
+                to discoloration, especially when taken over long periods or
+                during tooth development.
               </li>
 
               <li>
-                <strong>Genetic Factors </strong>Natural tooth color can vary from person to person, with some individuals having
-                inherently darker or more yellow-toned teeth.
+                <strong>Genetic Factors </strong>Natural tooth color can vary
+                from person to person, with some individuals having inherently
+                darker or more yellow-toned teeth.
               </li>
             </ol>
           </div>
 
           <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+            <img
+              src={apointment}
+              alt="Dental Appointment "
+              style={{ objectFit: "cover" }}
+            />
           </div>
         </div>
       </div>
@@ -264,7 +286,7 @@ const TeethWhiteningTreatment = () => {
           </div>
 
           <div className="book_appoint_text">
-            <h2>When Should You Consider Teeth Whitening?  </h2>
+            <h2>When Should You Consider Teeth Whitening? </h2>
             <p>
               Teeth whitening is an effective way to enhance your smile and
               improve overall appearance in various situations.
@@ -272,27 +294,30 @@ const TeethWhiteningTreatment = () => {
 
             <ol>
               <li>
-                <strong>Before Special Occasions</strong>If you’re preparing for events like weddings, celebrations, or important
-                gatherings, teeth whitening can help you achieve a brighter, more
-                confident smile.
+                <strong>Before Special Occasions</strong>If you’re preparing for
+                events like weddings, celebrations, or important gatherings,
+                teeth whitening can help you achieve a brighter, more confident
+                smile.
               </li>
 
               <li>
-                <strong>To Boost Confidence </strong>A whiter smile can enhance your self-esteem and make you feel more
-                confident in social and personal interactions.
+                <strong>To Boost Confidence </strong>A whiter smile can enhance
+                your self-esteem and make you feel more confident in social and
+                personal interactions.
               </li>
 
               <li>
-                <strong>For Stained or Dull Teeth </strong>If your teeth have lost their brightness due to food, beverages, or
-                lifestyle habits, whitening treatments can restore their natural shine.
+                <strong>For Stained or Dull Teeth </strong>If your teeth have
+                lost their brightness due to food, beverages, or lifestyle
+                habits, whitening treatments can restore their natural shine.
               </li>
 
               <li>
-                <strong>For a Professional Appearance</strong>A clean, bright smile can create a strong first impression in
-                professional settings such as interviews or client interactions.
+                <strong>For a Professional Appearance</strong>A clean, bright
+                smile can create a strong first impression in professional
+                settings such as interviews or client interactions.
               </li>
             </ol>
-
           </div>
         </div>
       </div>
@@ -302,36 +327,43 @@ const TeethWhiteningTreatment = () => {
           <div className="book_appoint_text">
             <h2>Teeth Whitening Aftercare & Recovery Tips</h2>
             <p>
-              Proper aftercare helps maintain your whitening results and keeps your smile
-              brighter for longer.
+              Proper aftercare helps maintain your whitening results and keeps
+              your smile brighter for longer.
             </p>
 
             <ol>
               <li>
-                <strong>Avoid Staining Foods & Drinks </strong>For the first 24–48 hours, avoid coffee, tea, colored beverages, and strongly
+                <strong>Avoid Staining Foods & Drinks </strong>For the first
+                24–48 hours, avoid coffee, tea, colored beverages, and strongly
                 pigmented foods that can cause stains.
               </li>
 
               <li>
-                <strong>Maintain Good Oral Hygiene </strong>Brush and floss regularly to prevent plaque buildup and preserve the brightness
+                <strong>Maintain Good Oral Hygiene </strong>Brush and floss
+                regularly to prevent plaque buildup and preserve the brightness
                 of your teeth.
               </li>
 
               <li>
-                <strong>Use a Straw for Beverages</strong>When consuming colored drinks, using a straw can reduce direct contact with
-                your teeth and help maintain results.
+                <strong>Use a Straw for Beverages</strong>When consuming colored
+                drinks, using a straw can reduce direct contact with your teeth
+                and help maintain results.
               </li>
 
               <li>
-                <strong>Regular Dental Check-Ups </strong>Follow up with routine dental visits to monitor your results and ensure
-                long-lasting whitening effects.
+                <strong>Regular Dental Check-Ups </strong>Follow up with routine
+                dental visits to monitor your results and ensure long-lasting
+                whitening effects.
               </li>
-
             </ol>
           </div>
 
           <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+            <img
+              src={apointment}
+              alt="Dental Appointment "
+              style={{ objectFit: "cover" }}
+            />
           </div>
         </div>
       </div>
@@ -343,31 +375,39 @@ const TeethWhiteningTreatment = () => {
           </div>
 
           <div className="book_appoint_text">
-            <h2>Advanced Equipment Used for Teeth Whitening  </h2>
+            <h2>Advanced Equipment Used for Teeth Whitening </h2>
             <p>
-              At Denza Dental, we use modern technology and high-quality materials to
-              deliver safe, effective, and long-lasting teeth whitening results.
+              At Denza Dental, we use modern technology and high-quality
+              materials to deliver safe, effective, and long-lasting teeth
+              whitening results.
             </p>
 
             <ol>
               <li>
-                <strong>LED Light Activation Systems </strong>Advanced LED technology is used to enhance and speed up the whitening
+                <strong>LED Light Activation Systems </strong>Advanced LED
+                technology is used to enhance and speed up the whitening
                 process, helping achieve visible results in less time.
               </li>
 
               <li>
-                <strong>Laser Whitening Technology</strong>Laser-assisted whitening allows for precise and effective stain removal,
+                <strong>Laser Whitening Technology</strong>Laser-assisted
+                whitening allows for precise and effective stain removal,
                 delivering faster and more noticeable improvements.
               </li>
 
               <li>
-                <strong>Custom-Fit Whitening TraysWe provide personalized trays designed to fit your teeth perfectly, ensuring even
-                  application and maximum comfort for at-home maintenance. </strong>
+                <strong>
+                  Custom-Fit Whitening TraysWe provide personalized trays
+                  designed to fit your teeth perfectly, ensuring even
+                  application and maximum comfort for at-home maintenance.{" "}
+                </strong>
               </li>
 
               <li>
-                <strong>Professional-Grade Whitening Gels </strong>Our high-quality whitening gels are formulated to effectively brighten teeth while
-                minimizing sensitivity and protecting enamel.
+                <strong>Professional-Grade Whitening Gels </strong>Our
+                high-quality whitening gels are formulated to effectively
+                brighten teeth while minimizing sensitivity and protecting
+                enamel.
               </li>
             </ol>
           </div>
@@ -390,7 +430,6 @@ const TeethWhiteningTreatment = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>
@@ -409,7 +448,6 @@ const TeethWhiteningTreatment = () => {
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -430,7 +468,11 @@ const TeethWhiteningTreatment = () => {
             >
               {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
                 <SwiperSlide key={index}>
-                  <div className="gallery_card" data-aos="fade-up" data-aos-delay={index * 100}>
+                  <div
+                    className="gallery_card"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
                     <img src={src} alt={`Clinic slide ${index + 1}`} />
                   </div>
                 </SwiperSlide>
