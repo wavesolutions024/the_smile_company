@@ -133,7 +133,7 @@ const GumDepizmentation = () => {
           </div>
 
           <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+            <img src={apointment} alt="Dental Appointment " style={{objectFit:"cover"}} />
           </div>
         </div>
       </div>

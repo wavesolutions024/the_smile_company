@@ -26,6 +26,7 @@
 
 .gbtcleaning_parent {
   padding: 150px 0px;
+
   .gbtcleaning_cont {
     display: flex;
     display: grid;
@@ -106,3 +107,41 @@
     }
   }
 }
+
+// ==========================================
+// TABLET RESPONSIVE
+// ==========================================
+
+@media (max-width: 991px) {
+  .gbtcleaning_parent {
+    padding: 100px 0px;
+
+    .gbtcleaning_cont {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+
+      .left-section {
+        h1 {
+          font-size: 34px;
+        }
+
+        .skills-grid {
+          p {
+            font-size: 15px;
+            line-height: 1.6;
+          }
+        }
+      }
+
+      .right-section {
+        .image-frame {
+          .doctor-img {
+            min-height: 380px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

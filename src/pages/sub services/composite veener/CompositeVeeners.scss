@@ -406,14 +406,10 @@
 
   img {
     width: 100%;
-    aspect-ratio: 1;
+    height: 450px;
     border-radius: 12px;
   }
 }
-
-
-
-
 
 .book_appoint_card h3 {
   margin: 0;
@@ -615,7 +611,7 @@
     grid-template-columns: 1fr;
   }
 
-  .service_card{
+  .service_card {
     padding: 1rem;
     min-height: auto;
   }
@@ -667,9 +663,8 @@
   }
 }
 
-
-@media(max-width: 550px) {
-   h2 {
+@media (max-width: 550px) {
+  h2 {
     font-size: 22px !important;
   }
-  }
+}
