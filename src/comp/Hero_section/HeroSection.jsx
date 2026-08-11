@@ -10,7 +10,7 @@ const HeroSection = () => {
         <div class="video_overlay"></div>
         <div className="video_cont cont">
           <p className="video-label">Denza Dentistry</p>
-          <h1 className="video-heading">Redefining Excellence in Dentistry</h1>
+          <h1 className="video-heading">International Smile Makeover and Implant Centre</h1>
          
         </div>
         <video width="100%" autoPlay loop muted playsInline>
