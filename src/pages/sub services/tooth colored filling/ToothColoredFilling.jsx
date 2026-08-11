@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./ToothColouredFeeling.scss";
+import "./ToothColoredFilling.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import img1 from "../../../assets/general_service/img.webp";
@@ -91,7 +91,7 @@ const faqs = [
   
 ];
 
-const ToothColouredFeeling = () => {
+const ToothColoredFilling = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
   useEffect(() => {
@@ -110,7 +110,7 @@ const ToothColouredFeeling = () => {
 
   return (
     <>
-      <PageTop title="Tooth Coloured Fillings Services" />
+      <PageTop title="Tooth Colored Fillings Services" />
 
       <div className="wisdom_tooth_extract_parent parent">
         <div className="wisdom_tooth_extract_cont cont">
@@ -327,4 +327,4 @@ const ToothColouredFeeling = () => {
   );
 };
 
-export default ToothColouredFeeling;
+export default ToothColoredFilling;

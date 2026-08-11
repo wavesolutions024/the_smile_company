@@ -25,7 +25,7 @@ import RootCanalReTreatment from "./pages/sub services/root canal re-treatment/R
 import ToothExtraction from "./pages/sub services/tooth extraction/ToothExtraction";
 import WisdomToothExtraction from "./pages/sub services/wisdom tooth extraction/WisdomToothExtraction";
 import MinorOralSurgeries from "./pages/sub services/minor oral surgeries/MinorOralSurgeries";
-import ToothColouredFeeling from "./pages/sub services/tooth coloured filling/ToothColouredFeeling";
+import ToothColoredFilling from "./pages/sub services/tooth colored filling/ToothColoredFilling";
 import DentalCrowns from "./pages/sub services/dental crowns/DentalCrowns";
 import CrownsBridges from "./pages/sub services/crowns bridges/CrownsBridges";
 import InlaysOnlays from "./pages/sub services/inlays and onlays/InlaysOnlays";
@@ -88,7 +88,7 @@ function AppLayout() {
         <Route element={<ToothExtraction />} path="/tooth-extraction" />
         <Route element={<WisdomToothExtraction />} path="/wisdom-tooth-extraction" />
         <Route element={<MinorOralSurgeries />} path="/minor-oral-surgeries" />
-        <Route element={<ToothColouredFeeling />} path="/tooth-coloured-feeling" />
+        <Route element={<ToothColoredFilling />} path="/tooth-colored-filling" />
         <Route element={<DentalCrowns />} path="/dental-crowns" />
         <Route element={<ZirconiaCrowns />} path="/zirconia-crowns" />
         <Route element={<CrownsBridges />} path="/crowns-bridges" />

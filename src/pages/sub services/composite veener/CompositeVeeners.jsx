@@ -121,7 +121,7 @@ const CompositeVeeners = () => {
       <div className="book_appoint parent" style={{ background: "white" }}>
         <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+            <img src={apointment} alt="Dental Appointment "/>
           </div>
 
           <div className="book_appoint_text">

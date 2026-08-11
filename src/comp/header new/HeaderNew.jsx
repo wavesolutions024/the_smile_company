@@ -43,7 +43,7 @@ const HeaderNew = () => {
           children: [
             {
               label: "TOOTH COLORED FILLINGS  ",
-              to: "/tooth-coloured-feeling",
+              to: "/tooth-colored-filling",
             },
             {
               label: "DENTAL CROWNS",
