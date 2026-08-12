@@ -19,7 +19,7 @@ const HeaderNew = () => {
       children: [
         {
           label: "GENERAL DENTAL SERVICES",
-          to: "/general-dental",
+          to: "/general-dental-services",
           children: [
             { label: "DENTAL CHECK-UPS  ", to: "/dental-check-ups" },
             { label: "DENTAL X-RAY   ", to: "/dental-x-ray" },
@@ -95,11 +95,11 @@ const HeaderNew = () => {
           children: [
             {
               label: "ALL-ON-4 AND ALL-ON-6 DENTAL IMPLANTS  ",
-              to: "/all-on-four",
+              to: "/all-on-four-and-all-on-six-dental-implants",
             },
             {
               label: " IMPLANT SUPPORTED OVERDENTURE ",
-              to: "/implant-supported",
+              to: "/implant-supported-overdenture",
             },
           ],
         },
@@ -118,7 +118,7 @@ const HeaderNew = () => {
       children: [
         {
           label: "CBCT 3D IMAGING",
-          to: "/cbct",
+          to: "/cbct-3d-machine",
         },
         {
           label: "3D Intra Oral Scanning",
@@ -148,7 +148,7 @@ const HeaderNew = () => {
     },
     { label: "OUR WORK", to: "/our-work" },
     { label: "BLOGS", to: "/blogs" },
-    { label: "ABOUT US", to: "/about" },
+    { label: "ABOUT US", to: "/about-us" },
     { label: "DENTAL TOURISM", to: "/dental-tourism" },
   ];
 

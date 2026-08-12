@@ -21,6 +21,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import img from "../../assets/about_page/woman_dr.jpg";
 import male_dr from "../../assets/about_page/dr_image_man (2).jpg";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const containerRef = useRef(null);
@@ -87,6 +88,116 @@ const About = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          About Denza Dental Center | MDS Specialist Dentists in Kharadi, Pune
+        </title>
+
+        <meta
+          name="description"
+          content="Meet the MDS specialist dentists behind Denza Dental Center in Kharadi, Pune. Learn about Dr. Hemant Thodsare and Dr. Devika Kalaskar-Thodsare, their expertise, experience and patient-focused approach."
+        />
+
+        <meta
+          name="keywords"
+          content="
+          Denza Dental Center,
+          Denza Dental,
+          Denza Dentistry,
+          About Denza Dental Center,
+          Denza Dental Center Kharadi,
+          Denza Dental Center Pune,
+          dental clinic in Kharadi Pune,
+          specialist dentist Kharadi,
+          MDS dentist Kharadi Pune,
+          MDS dental specialists Pune,
+          specialist-led dental clinic Pune,
+          Dr Hemant Thodsare,
+          Dr Hemant Suresh Thodsare,
+          Dr Hemant Thodsare dentist,
+          Dr Hemant Thodsare Kharadi,
+          Dr Hemant Thodsare prosthodontist,
+          Dr Hemant Thodsare implantologist,
+          prosthodontist Kharadi Pune,
+          implantologist Kharadi Pune,
+          dental implant specialist Kharadi,
+          cosmetic dentist Kharadi Pune,
+          smile makeover specialist Pune,
+          full mouth rehabilitation specialist Pune,
+          Dr Devika Kalaskar Thodsare,
+          Dr Devika Kalaskar-Thodsare,
+          Dr Devika Thodsare dentist,
+          Dr Devika Thodsare Kharadi,
+          Dr Devika Kalaskar endodontist,
+          endodontist Kharadi Pune,
+          root canal specialist Kharadi,
+          esthetic dentist Pune,
+          conservative dentist Pune,
+          root canal dentist Kharadi,
+          MDS endodontist Pune,
+          international dental experience Pune,
+          international experienced dentist Pune,
+          dental specialists in Kharadi,
+          dental specialists in Pune
+        "
+        />
+
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+
+        <meta name="author" content="Denza Dental Center" />
+
+        <meta name="language" content="English" />
+
+        <link rel="canonical" href="https://denzadental.com/about" />
+
+        {/* =========================
+          LOCAL / GEO SEO
+      ========================== */}
+
+        <meta name="geo.region" content="IN-MH" />
+
+        <meta name="geo.placename" content="Kharadi, Pune, Maharashtra" />
+
+        <meta name="geo.position" content="18.5515;73.9430" />
+
+        <meta name="ICBM" content="18.5515, 73.9430" />
+
+        {/* =========================
+          OPEN GRAPH
+      ========================== */}
+
+        <meta property="og:type" content="website" />
+
+        <meta property="og:site_name" content="Denza Dental Center" />
+
+        <meta
+          property="og:title"
+          content="About Denza Dental Center | MDS Specialist Dentists in Kharadi, Pune"
+        />
+
+        <meta
+          property="og:description"
+          content="Meet Dr. Hemant Thodsare and Dr. Devika Kalaskar-Thodsare, MDS specialist dentists at Denza Dental Center in Kharadi, Pune, and learn about their expertise and patient-focused approach."
+        />
+
+        <meta property="og:url" content="https://denzadental.com/about" />
+
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+
+        <meta
+          property="og:image:alt"
+          content="Denza Dental Center - MDS Specialist Dentists in Kharadi, Pune"
+        />
+
+        <meta property="og:locale" content="en_IN" />
+      </Helmet>
+
       {/* <PageTop title="About Us" /> */}
 
       <div className="parent dental_tourish_parent">
@@ -162,7 +273,6 @@ const About = () => {
             <p>
               <b style={{ color: "var(--accent)" }}>Dr. Hemant</b> is an
               <b style={{ color: "var(--accent)" }}>
-                
                 Internationally Experienced Prosthodontist
               </b>
               and
@@ -206,12 +316,17 @@ const About = () => {
               Co-founder | Endodontist & Esthetic Dentist
             </span>
             <p>
-              <b style={{ color: "var(--accent)" }}>Dr. Devika</b> is an <b style={{ color: "var(--accent)" }}>Internatioionally Experienced Endodontist </b> and
-              <b style={{ color: "var(--accent)" }}> Esthetic Dentist</b> , known for her precision and calm, reassuring
-              approach to care. She specializes in minimally invasive dentistry,
-              root canal treatments, and aesthetic smile enhancement procedures.
-              She completed her BDS from Sinhgad Dental College, Pune, and her
-              MDS in{" "}
+              <b style={{ color: "var(--accent)" }}>Dr. Devika</b> is an{" "}
+              <b style={{ color: "var(--accent)" }}>
+                Internatioionally Experienced Endodontist{" "}
+              </b>{" "}
+              and
+              <b style={{ color: "var(--accent)" }}> Esthetic Dentist</b> ,
+              known for her precision and calm, reassuring approach to care. She
+              specializes in minimally invasive dentistry, root canal
+              treatments, and aesthetic smile enhancement procedures. She
+              completed her BDS from Sinhgad Dental College, Pune, and her MDS
+              in{" "}
               <b style={{ color: "var(--accent)" }}>Conservative Dentistry</b>{" "}
               and <b style={{ color: "var(--accent)" }}>Endodontics</b> from
               Government Dental College, one of India’s premier institutions. A

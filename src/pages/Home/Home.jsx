@@ -43,6 +43,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
 import Testimonials from "../../comp/testimonials/Testimonials";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   // const [accordian, setLeftAccordion] = useState(0);
@@ -272,6 +273,53 @@ const Home = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Denza Dental Center | Dental Implants & Smile Makeover in Kharadi,
+          Pune
+        </title>
+
+        <meta
+          name="description"
+          content="Denza Dental Center is a multispecialty dental clinic in Kharadi, Pune offering dental implants, smile makeovers, root canal treatment, full mouth rehabilitation, cosmetic dentistry, orthodontics, pediatric dentistry and advanced dental care."
+        />
+
+        <meta
+          name="keywords"
+          content="Denza Dental Center, Denza Dental, Denza Dentistry, Denza Dental Center Kharadi, Denza Dental Center Pune, dental clinic in Kharadi Pune, dentist in Kharadi Pune, best dental clinic in Kharadi, dentist near Marvel Enigma Kharadi, dental clinic near Marvel Enigma, multispecialty dental clinic Kharadi, dental implants Kharadi Pune, dental implant centre Kharadi, dental implants Pune, smile makeover Kharadi Pune, smile makeover Pune, smile designing Kharadi, cosmetic dentistry Kharadi Pune, cosmetic dentist Kharadi, root canal treatment Kharadi Pune, root canal dentist Kharadi, full mouth rehabilitation Kharadi, full mouth rehabilitation Pune, restorative dentistry Kharadi, restorative dentistry Pune, orthodontist Kharadi Pune, orthodontic treatment Kharadi, pediatric dentist Kharadi Pune, pediatric dentistry Punei, dental checkup Kharadi, preventive dentistry Kharadi, teeth cleaning Kharadi Pune, GBT cleaning Pune, dental laser treatment Kharadi, CBCT dental scan Pune, intraoral scanning Pune, digital dentistry Kharadi, advanced dental clinic Pune, sedation dentistry Pune, international smile makeover centre Pune, international dental centre Pune, dental care Kharadi Pune, "
+        />
+
+        <link rel="canonical" href="https://denzadental.com/" />
+
+        <meta property="og:type" content="website" />
+
+        <meta property="og:site_name" content="Denza Dental Center" />
+
+        <meta
+          property="og:title"
+          content="Denza Dental Center | Dental Implants & Smile Makeover in Kharadi, Pune"
+        />
+
+        <meta
+          property="og:description"
+          content="Comprehensive dental care in Kharadi, Pune including dental implants, smile makeovers, root canal treatment, full mouth rehabilitation, cosmetic dentistry, orthodontics, pediatric dentistry and advanced dental technology."
+        />
+
+        <meta property="og:url" content="https://denzadental.com/" />
+
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+
+        <meta
+          property="og:image:alt"
+          content="Denza Dental Center - Dental Clinic in Kharadi, Pune"
+        />
+
+        <meta property="og:locale" content="en_IN" />
+      </Helmet>
+
       <HeroSection />
 
       <div
@@ -386,7 +434,11 @@ const Home = () => {
                 environment.
               </p>
 
-              <Button text="About Us" path="/about" style={{ width: "100%" }} />
+              <Button
+                text="About Us"
+                path="/about-us"
+                style={{ width: "100%" }}
+              />
             </div>
           </div>
         </div>

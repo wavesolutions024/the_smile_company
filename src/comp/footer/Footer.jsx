@@ -142,7 +142,7 @@ const Footer = () => {
               <h3>Quick Links</h3>
               <ul>
                 <li>
-                  <Link to="/about">About Us</Link>
+                  <Link to="/about-us">About Us</Link>
                 </li>
 
                 <li>
