@@ -70,7 +70,7 @@ function AppLayout() {
       <Routes>
         <Route element={<Home />} path="/" />
         <Route element={<About />} path="/about-us" />
-        <Route element={<Contact />} path="/contact" />
+        <Route element={<Contact />} path="/contact-us" />
         <Route element={<GeneralDental />} path="/general-dental-services" />
         <Route element={<RestorativeDentistry />} path="/restorative-dentistry" />
         <Route element={<CosmeticDentistry />} path="/cosmetic-dentistry" />

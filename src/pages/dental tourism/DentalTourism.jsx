@@ -418,7 +418,7 @@ const DentalTourism = () => {
 
             <div>
               <div className="cta_buttons">
-                <Link to="/contact" className="cta_primary">
+                <Link to="/contact-us" className="cta_primary">
                   Book a consultation
                 </Link>
                 <a

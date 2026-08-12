@@ -277,7 +277,7 @@ const OurWork = () => {
         <div className="transformation_cta_inner">
           <h2>Your transformation starts here</h2>
           <div className="cta_buttons">
-            <Link to="/contact" className="cta_primary">
+            <Link to="/contact-us" className="cta_primary">
               Book a consultation
             </Link>
             <a

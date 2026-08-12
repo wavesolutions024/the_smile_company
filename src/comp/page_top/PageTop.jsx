@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const PageTop = ({
   title = "Dental Check Up Services",
   phone = " +91 7028 131 132",
-  contactPath = "/contact",
+  contactPath = "/contact-us",
   mapUrl = "https://maps.app.goo.gl/L2FxZP5U5wL3WA9t9",
   consultantLabel = "Book Consultant",
   callLabel = "Call",
