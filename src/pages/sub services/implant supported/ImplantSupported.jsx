@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -55,7 +56,7 @@ const servicess = [
       "Titanium implants placed into the jawbone ",
       "Sutures used to close the gums ",
       "Temporary teeth may be provided during healing ",
-       "Healing period allows implants to integrate with bone",
+      "Healing period allows implants to integrate with bone",
     ],
   },
   {
@@ -85,8 +86,8 @@ const servicess = [
       "Durable and long-lasting solution with proper care ",
     ],
   },
-  
-  
+
+
 ];
 
 const faqs = [
@@ -132,6 +133,117 @@ const ImplantSupported = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Implant-Supported Overdentures in Kharadi,
+          Pune | Denza Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Implant-supported overdentures in 
+Kharadi, Pune at Denza Dental Center. Learn 
+about implant-retained dentures, treatment steps, 
+benefits, suitability, maintenance and FAQs."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/implant-supported"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+implant supported overdenture Kharadi, 
+implant supported overdenture Pune, 
+implant supported dentures Kharadi, 
+implant supported dentures Pune, 
+implant retained dentures Pune, 
+implant retained dentures Kharadi, 
+implant overdenture Pune, 
+implant overdenture Kharadi, 
+overdenture treatment Pune, 
+overdenture treatment Kharadi, 
+implant dentures Pune, 
+implant dentures Kharadi, 
+snap on dentures Pune, 
+snap on dentures Kharadi, 
+fixed dentures vs removable dentures, 
+implant supported denture cost Pune, 
+overdenture cost Pune, 
+overdenture cost Kharadi, 
+dental implants for dentures Pune, 
+dentures supported by implants Pune, 
+dentures supported by implants Kharadi, 
+loose dentures treatment Pune, 
+unstable dentures treatment Pune, 
+missing teeth dentures Pune, 
+full mouth dentures Pune, 
+implant retained overdenture Pune, 
+implant supported prosthesis Pune, 
+implant supported full dentures Pune, 
+denture stabilization Pune, 
+dental implant overdenture dentist Pune, 
+dental implant overdenture clinic Kharadi, 
+dental implants Kharadi, 
+dental implants Pune, 
+dental implants near me Kharadi, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Implant-Supported Overdentures in 
+Kharadi, Pune | Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Learn about implant-supported 
+overdentures in Kharadi, Pune, including 
+treatment steps, benefits, suitability, maintenance 
+and frequently asked questions."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/implant-support
+ed"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Implant-supported overdenture 
+treatment at Denza Dental Center in Kharadi 
+Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Implant-Supported Overdenture Services" />
 
       <div className="parent second_parent">
@@ -328,7 +440,7 @@ const ImplantSupported = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

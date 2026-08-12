@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -125,6 +126,117 @@ const RootCanalReTreatment = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Root Canal Re-Treatment in Kharadi, Pune |
+          Denza Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Root canal re-treatment in Kharadi, 
+Pune at Denza Dental Center for previously 
+treated teeth with recurring pain, infection or other 
+complications. Learn about symptoms, causes 
+and treatment."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/root-canal-retreatm
+ent"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+root canal retreatment Kharadi, 
+root canal re-treatment Kharadi, 
+root canal retreatment Pune, 
+root canal re-treatment Pune, 
+RCT retreatment Kharadi, 
+RCT retreatment Pune, 
+failed root canal treatment Kharadi, 
+failed root canal treatment Pune, 
+failed RCT Kharadi, 
+failed RCT Pune, 
+repeat root canal treatment Kharadi, 
+repeat root canal treatment Pune, 
+second root canal treatment Kharadi, 
+second root canal treatment Pune, 
+root canal specialist Kharadi, 
+root canal dentist Kharadi, 
+endodontic treatment Kharadi, 
+endodontic dentist Pune, 
+infected root canal tooth Kharadi, 
+reinfected root canal Pune, 
+recurring tooth pain after root canal, 
+pain after root canal treatment Kharadi, 
+swelling after root canal treatment, 
+root canal infection treatment Kharadi, 
+root canal retreatment cost Pune, 
+root canal retreatment cost Kharadi, 
+root canal retreatment price Pune, 
+root canal treatment failed what next, 
+failed root canal treatment options, 
+root canal retreatment near me, 
+root canal specialist near Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Root Canal Re-Treatment in 
+Kharadi, Pune | Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Root canal re-treatment at Denza 
+Dental Center in Kharadi, Pune for previously 
+treated teeth with recurring pain, infection or other 
+complications."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/root-canal-retre
+atment"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Root canal re-treatment at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Root Canal Re-Treatment Services" />
 
       <div className="second_section">
@@ -260,7 +372,7 @@ const RootCanalReTreatment = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

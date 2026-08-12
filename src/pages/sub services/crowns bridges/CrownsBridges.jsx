@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -148,6 +149,120 @@ const CrownsBridges = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Dental Crowns & Bridges in Kharadi, Pune |
+          Denza Dental
+        </title>
+        <meta
+          name="description"
+          content="Get dental crowns and bridges in 
+Kharadi, Pune at Denza Dental Center. Restore 
+damaged teeth, replace missing teeth and 
+improve function with customized restorative 
+dental solutions."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/crowns-bridges"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+dental crowns Kharadi, 
+dental crowns Pune, 
+dental bridges Kharadi, 
+dental bridges Pune, 
+crowns and bridges Kharadi, 
+crowns and bridges Pune, 
+dental crown dentist Kharadi, 
+dental bridge dentist Kharadi, 
+dental crown clinic Kharadi, 
+dental bridge clinic Kharadi, 
+tooth crown Kharadi, 
+tooth crown Pune, 
+dental cap Kharadi, 
+dental cap Pune, 
+tooth cap Kharadi, 
+tooth cap Pune, 
+dental crown treatment Kharadi, 
+dental bridge treatment Pune, 
+dental crowns near Kharadi, 
+dental bridges near Kharadi, 
+dental crowns near me Kharadi, 
+dental bridge near me Kharadi, 
+dental crown cost Kharadi, 
+dental crown cost Pune, 
+dental bridge cost Kharadi, 
+dental bridge cost Pune, 
+dental crown price Pune, 
+dental bridge price Pune, 
+crown after root canal Kharadi, 
+dental crowns after root canal Pune, 
+missing tooth bridge Kharadi, 
+replacement tooth bridge Pune, 
+zirconia crowns Kharadi, 
+ceramic crowns Pune, 
+restorative dentistry Kharadi, 
+restorative dentist Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Dental Crowns & Bridges in 
+Kharadi, Pune | Denza Dental"
+        />
+        <meta
+          property="og:description"
+          content="Dental crowns and bridges in 
+Kharadi, Pune at Denza Dental Center for 
+restoring damaged teeth and replacing missing 
+teeth."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/crowns-bridges"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Dental crowns and bridges at 
+Denza Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Crowns Bridges Services" />
 
       <div className="parent second_parent">
@@ -298,7 +413,7 @@ const CrownsBridges = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

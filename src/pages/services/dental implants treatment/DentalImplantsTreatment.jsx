@@ -7,6 +7,7 @@ import "./DentalImplantsTreatment.scss";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const services = [
   {
@@ -128,6 +129,121 @@ const DentalImplantsTreatment = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Dental Implants in Kharadi, Pune | Denza
+          Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Get dental implant treatment in 
+Kharadi, Pune at Denza Dental Center. Learn 
+about dental implants, implant procedures, 
+treatment options, cost, benefits, aftercare and 
+FAQs."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/dental-implants-tre
+atment"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+dental implants Kharadi, 
+dental implants Pune, 
+dental implant treatment Kharadi, 
+dental implant treatment Pune, 
+dental implant dentist Kharadi, 
+dental implant dentist Pune, 
+dental implant clinic Kharadi, 
+dental implant clinic Pune, 
+dental implants near me, 
+dental implants near Kharadi, 
+tooth implant Kharadi, 
+tooth implant Pune, 
+tooth replacement Kharadi, 
+tooth replacement Pune, 
+missing teeth treatment Kharadi, 
+missing teeth treatment Pune, 
+dental implant cost Kharadi, 
+dental implant cost Pune, 
+dental implant price Pune, 
+dental implant procedure Kharadi, 
+dental implant surgery Pune, 
+single tooth implant Kharadi, 
+single tooth implant Pune, 
+multiple dental implants Pune, 
+implant supported bridge Pune, 
+implant supported dentures Pune, 
+full arch dental implants Pune, 
+All on 4 implants Pune, 
+All on 6 implants Pune, 
+immediate load implants Pune, 
+mini dental implants Pune, 
+implant dentistry Kharadi, 
+implant dentistry Pune, 
+dental implants for missing teeth Pune, 
+dental implants for adults Pune, 
+dental implant consultation Pune, 
+CBCT dental implants Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Dental Implants in Kharadi, Pune | 
+Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Dental implant treatment in 
+Kharadi, Pune at Denza Dental Center. Explore 
+implant options, treatment procedures, benefits, 
+cost considerations, aftercare and FAQs."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/dental-implants
+treatment"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Dental implant treatment at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Dental Implants Services" />
 
       <div className="parent second_parent">

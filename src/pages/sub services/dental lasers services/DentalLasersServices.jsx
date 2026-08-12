@@ -8,6 +8,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import img4 from "../../../assets/about_section/img5.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 
 const DentalLasersServices = () => {
@@ -129,6 +130,113 @@ const DentalLasersServices = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Dental Laser Treatment in Kharadi, Pune |
+          Denza Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Explore dental laser treatment in 
+Kharadi, Pune at Denza Dental Center. Laser 
+dentistry for selected soft and hard tissue 
+procedures with precision-focused, minimally 
+invasive care."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/dental-lasers-servic
+es"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+dental laser treatment Kharadi, 
+dental laser treatment Pune, 
+dental lasers Kharadi, 
+dental laser dentist Kharadi, 
+laser dentistry Kharadi, 
+laser dentistry Pune, 
+dental laser clinic Kharadi, 
+laser dental treatment Pune, 
+dental laser services Kharadi, 
+dental laser services Pune, 
+laser dentist near Kharadi, 
+dental laser treatment near me, 
+laser gum treatment Kharadi, 
+laser gum treatment Pune, 
+laser periodontal treatment Kharadi, 
+laser periodontal treatment Pune, 
+soft tissue dental laser Kharadi, 
+hard tissue dental laser Pune, 
+diode laser dentistry Kharadi, 
+Nd:YAG dental laser Pune, 
+Er:YAG dental laser Pune, 
+laser gum treatment Pune, 
+laser cavity treatment Pune, 
+minimally invasive dentistry Kharadi, 
+advanced dental technology Pune, 
+dental laser procedure Kharadi, 
+dental laser treatment cost Pune, 
+dental laser treatment price Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Dental Laser Treatment in Kharadi, 
+Pune | Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Dental laser treatment at Denza 
+Dental Center in Kharadi, Pune for selected soft 
+and hard tissue procedures, with 
+precision-focused and minimally invasive dental 
+care."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/dental-lasers-se
+rvices"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Dental laser treatment at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Dental Lasers Services" />
 
       {/* <div className="parent second_parent">

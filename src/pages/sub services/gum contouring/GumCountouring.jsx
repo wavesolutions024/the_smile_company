@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -114,6 +115,114 @@ const GumCountouring = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Gum Contouring in Kharadi, Pune | Gummy
+          Smile Correction
+        </title>
+        <meta
+          name="description"
+          content="Get gum contouring and gummy 
+smile correction in Kharadi, Pune at Denza Dental 
+Center. Learn about gum reshaping, treatment, 
+recovery, benefits and risks."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/gum-contouring"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+gum contouring Kharadi, 
+gum contouring Pune, 
+gum reshaping Kharadi, 
+gum reshaping Pune, 
+gummy smile correction Kharadi, 
+gummy smile correction Pune, 
+gummy smile treatment Kharadi, 
+gummy smile treatment Pune, 
+gummy smile dentist Kharadi, 
+gummy smile dentist Pune, 
+gum contouring dentist Kharadi, 
+gum contouring clinic Kharadi, 
+gum contouring near Kharadi, 
+gum contouring near me, 
+gum reshaping treatment Pune, 
+excess gum tissue treatment Kharadi, 
+uneven gum line treatment Pune, 
+gum line reshaping Kharadi, 
+laser gum contouring Kharadi, 
+laser gum reshaping Pune, 
+laser gummy smile correction Kharadi, 
+gummy smile treatment cost Kharadi, 
+gummy smile correction cost Pune, 
+gum contouring cost Pune, 
+gum contouring price Kharadi, 
+cosmetic gum treatment Pune, 
+cosmetic dentistry Kharadi, 
+smile makeover Kharadi, 
+smile correction Pune, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Gum Contouring in Kharadi, Pune | 
+Gummy Smile Correction"
+        />
+        <meta
+          property="og:description"
+          content="Gum contouring and gummy smile 
+correction at Denza Dental Center in Kharadi, 
+Pune. Learn about gum reshaping, treatment, 
+recovery, benefits and risks."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/gum-contouring
+"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Gum contouring and gummy smile 
+correction at Denza Dental Center in Kharadi, 
+Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Gum Contouring Services" />
 
       <div className="brace_treat_parent parent">
@@ -223,21 +332,21 @@ const GumCountouring = () => {
         <div className="cont braces_treat_cont">
           <div className="braces_treat_right">
             <h2>Benefits & Risks of Gum Contouring at Denza Dental</h2>
-            
+
 
             <p style={{ fontWeight: "bold", color: "var(--accent" }}>
-              Benefits of Gum Contouring 
+              Benefits of Gum Contouring
             </p>
 
             <ul>
               <li>
-                <b>Balanced Smile </b>– Improves gum proportions and tooth visibility 
+                <b>Balanced Smile </b>– Improves gum proportions and tooth visibility
               </li>
               <li>
-                <b>Boosts Confidence </b>– Helps you smile and interact more freely 
+                <b>Boosts Confidence </b>– Helps you smile and interact more freely
               </li>
               <li>
-                <b>Better Oral Hygiene </b>– Easier cleaning and maintenance 
+                <b>Better Oral Hygiene </b>– Easier cleaning and maintenance
               </li>
               <li>
                 <b>Long-Lasting Results </b>– Permanent improvement in most cases
@@ -248,20 +357,20 @@ const GumCountouring = () => {
             </ul>
 
             <p style={{ fontWeight: "bold", color: "var(--accent" }}>
-              Risks of Gum Contouring 
+              Risks of Gum Contouring
             </p>
 
             <ul>
               <li>
-                <b>Temporary Sensitivity </b>– Mild reaction to hot/cold foods 
+                <b>Temporary Sensitivity </b>– Mild reaction to hot/cold foods
               </li>
 
               <li>
-                <b>Swelling </b>– Usually settles within a few days 
+                <b>Swelling </b>– Usually settles within a few days
               </li>
 
               <li>
-                <b>Low Risk of Infection </b>– Managed with proper care 
+                <b>Low Risk of Infection </b>– Managed with proper care
               </li>
 
               <li>
@@ -292,7 +401,7 @@ const GumCountouring = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

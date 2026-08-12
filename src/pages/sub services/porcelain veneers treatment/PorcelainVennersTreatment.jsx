@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 
 const whyChooseData = [
@@ -128,7 +129,114 @@ const PorcelainVennersTreatment = () => {
 
   return (
     <>
-      <PageTop title="Porcelain Veneers Treatment Services"/>
+      <Helmet>
+        <title>
+          Porcelain Veneers in Kharadi, Pune | Denza
+          Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Explore porcelain veneers in 
+Kharadi, Pune at Denza Dental Center. Learn 
+about veneer treatment, candidacy, tooth 
+preparation, digital design, benefits and 
+aftercare."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/porcelain-veneers-t
+reatment"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+porcelain veneers Kharadi, 
+porcelain veneers Pune, 
+porcelain veneers in Kharadi Pune, 
+porcelain veneers treatment Kharadi, 
+porcelain veneers treatment Pune, 
+dental veneers Kharadi, 
+dental veneers Pune, 
+porcelain dental veneers Pune, 
+veneers dentist Kharadi, 
+veneers dentist Pune, 
+veneers treatment Kharadi, 
+veneers treatment Pune, 
+cosmetic dentist Kharadi, 
+cosmetic dentist Pune, 
+cosmetic dentistry Kharadi, 
+cosmetic dentistry Pune, 
+smile makeover Kharadi, 
+smile makeover Pune, 
+smile enhancement Kharadi, 
+smile enhancement Pune, 
+porcelain veneers cost Pune, 
+porcelain veneers price Pune, 
+porcelain veneers near Kharadi, 
+porcelain veneers near me Kharadi, 
+chipped teeth veneers Pune, 
+stained teeth veneers Pune, 
+dental gaps veneers Pune, 
+veneers for discolored teeth Pune, 
+porcelain veneers vs composite veneers, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Porcelain Veneers in Kharadi, Pune 
+| Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Porcelain veneers treatment at 
+Denza Dental Center in Kharadi, Pune. Learn 
+about veneer treatment, candidacy, preparation, 
+digital design, placement and aftercare."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/porcelain-venee
+rs-treatment"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Porcelain veneers treatment at 
+Denza Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
+      <PageTop title="Porcelain Veneers Treatment Services" />
 
       <div className="second_section">
         <div className="second_section_container">
@@ -241,7 +349,7 @@ const PorcelainVennersTreatment = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

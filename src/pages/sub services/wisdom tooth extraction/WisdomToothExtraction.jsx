@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -116,6 +117,111 @@ const WisdomToothExtraction = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Wisdom Tooth Extraction in Kharadi, Pune |
+          Denza Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Wisdom tooth extraction in Kharadi, 
+Pune at Denza Dental Center. We provide 
+evaluation and simple or surgical removal of 
+impacted and partially erupted wisdom teeth with 
+personalized aftercare."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/wisdom-tooth-extra
+ction"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+wisdom tooth extraction Kharadi, 
+wisdom tooth extraction Pune, 
+wisdom tooth removal Kharadi, 
+wisdom tooth removal Pune, 
+impacted wisdom tooth extraction Kharadi, 
+impacted wisdom tooth removal Pune, 
+impacted tooth extraction Kharadi, 
+impacted wisdom tooth dentist Kharadi, 
+wisdom tooth dentist Kharadi, 
+wisdom tooth specialist Pune, 
+wisdom tooth surgery Kharadi, 
+surgical wisdom tooth extraction Pune, 
+surgical wisdom tooth removal Kharadi, 
+wisdom tooth extraction near Kharadi, 
+wisdom tooth extraction near me Kharadi, 
+wisdom tooth pain Kharadi, 
+impacted wisdom tooth pain Pune, 
+wisdom tooth infection Kharadi, 
+swollen gums wisdom tooth Pune, 
+wisdom tooth removal cost Kharadi, 
+wisdom tooth extraction cost Pune, 
+wisdom tooth surgery cost Kharadi, 
+wisdom tooth recovery Pune, 
+wisdom tooth aftercare Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Wisdom Tooth Extraction in 
+Kharadi, Pune | Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Wisdom tooth extraction in Kharadi, 
+Pune, including surgical removal of impacted or 
+partially erupted wisdom teeth at Denza Dental 
+Center."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/wisdom-tooth-e
+xtraction"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Wisdom tooth extraction at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
+      
       <PageTop title="Wisdom Tooth Extraction Services" />
 
       <div className="wisdom_tooth_extract_parent parent">
@@ -255,7 +361,7 @@ const WisdomToothExtraction = () => {
         </div>
       </div>
 
-     
+
 
       <div className="faq_section1">
         <div className="faq_header">

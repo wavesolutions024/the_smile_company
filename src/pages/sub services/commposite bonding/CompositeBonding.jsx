@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 
 const whyChooseData = [
@@ -132,6 +133,114 @@ const CompositeBonding = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Composite Bonding in Kharadi, Pune |
+          Denza Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Get composite bonding in Kharadi, 
+Pune at Denza Dental Center for minor chips, 
+small gaps, discoloration and uneven tooth edges. 
+Learn about the procedure, benefits, suitability 
+and aftercare."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/composite-bonding
+"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+composite bonding Kharadi, 
+composite bonding Pune, 
+dental bonding Kharadi, 
+dental bonding Pune, 
+tooth bonding Kharadi, 
+tooth bonding Pune, 
+composite dental bonding Kharadi, 
+composite dental bonding Pune, 
+composite bonding dentist Kharadi, 
+composite bonding dentist Pune, 
+composite bonding near Kharadi, 
+composite bonding near me Kharadi, 
+teeth bonding Kharadi, 
+teeth bonding Pune, 
+cosmetic dental bonding Kharadi, 
+cosmetic bonding Pune, 
+composite bonding cost Kharadi, 
+composite bonding price Pune, 
+composite bonding before and after Pune, 
+chipped tooth bonding Kharadi, 
+chipped teeth treatment Pune, 
+gap closure bonding Kharadi, 
+teeth gap bonding Pune, 
+tooth reshaping bonding Kharadi, 
+tooth-colored bonding Pune, 
+smile enhancement Kharadi, 
+cosmetic dentistry Kharadi, 
+cosmetic dentist Pune, 
+composite bonding vs veneers, 
+composite bonding vs composite veneers, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Composite Bonding in Kharadi, 
+Pune | Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Composite bonding at Denza 
+Dental Center in Kharadi, Pune for selected 
+cosmetic concerns including minor chips, small 
+gaps, discoloration and uneven tooth edges."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/composite-bond
+ing"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Composite bonding treatment at 
+Denza Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Composite Bonding Services" />
 
       <div className="parent second_parent">

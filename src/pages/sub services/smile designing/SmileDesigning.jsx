@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -128,6 +129,117 @@ const SmileDesigning = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Smile Designing in Kharadi, Pune | Digital
+          Smile Design
+        </title>
+        <meta
+          name="description"
+          content="Smile designing in Kharadi, Pune at 
+Denza Dental Center. Personalized smile design 
+planning using digital technology and treatments 
+such as veneers, bonding, whitening, gum 
+contouring, crowns and orthodontics where 
+appropriate."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/smile-designing"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+smile designing Kharadi, 
+smile designing Pune, 
+smile design Kharadi, 
+smile design Pune, 
+digital smile design Kharadi, 
+digital smile design Pune, 
+digital smile designing Kharadi, 
+digital smile designing Pune, 
+smile makeover Kharadi, 
+smile makeover Pune, 
+smile makeover dentist Kharadi, 
+smile makeover clinic Pune, 
+smile design consultation Kharadi, 
+smile design consultation Pune, 
+smile designing dentist Kharadi, 
+cosmetic dentist Kharadi Pune, 
+cosmetic dentistry Kharadi, 
+cosmetic dentistry Pune, 
+smile transformation Kharadi, 
+smile transformation Pune, 
+personalized smile design Pune, 
+aesthetic smile design Kharadi, 
+smile design treatment Pune, 
+smile makeover treatment Kharadi, 
+veneers smile makeover Pune, 
+dental bonding smile makeover Pune, 
+teeth whitening smile makeover Pune, 
+gum contouring smile design Pune, 
+clear aligners smile design Pune, 
+cosmetic dental treatment Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Smile Designing in Kharadi, Pune | 
+Digital Smile Design"
+        />
+        <meta
+          property="og:description"
+          content="Personalized smile designing and 
+digital smile design planning at Denza Dental 
+Center in Kharadi, Pune, with treatment options 
+selected according to individual dental and 
+aesthetic needs."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/smile-designing
+"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Smile designing and digital smile 
+design at Denza Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Smile Designing Services" />
 
       <div className="second_section">
@@ -212,7 +324,7 @@ const SmileDesigning = () => {
         </div>
       </div>
 
-      
+
 
       <div className="faq_section1">
         <div className="faq_header">

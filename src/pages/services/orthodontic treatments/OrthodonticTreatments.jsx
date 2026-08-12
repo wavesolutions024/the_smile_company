@@ -8,6 +8,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import metalBrace from "../../../assets/about_page/woman_dr.jpg";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const services = [
   {
@@ -79,6 +80,126 @@ const OrthodonticTreatments = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Orthodontic Treatment in Kharadi, Pune |
+          Braces & Clear Aligners
+        </title>
+        <meta
+          name="description"
+          content="Orthodontic treatment in Kharadi, 
+Pune at Denza Dental Center. Explore metal, 
+ceramic and lingual braces and clear aligners for 
+teeth alignment, bite correction and personalized 
+orthodontic care."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/orthodontic-treatme
+nts"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+orthodontic treatment Kharadi, 
+orthodontic treatment Pune, 
+orthodontist Kharadi, 
+orthodontist Pune, 
+braces treatment Kharadi, 
+braces treatment Pune, 
+braces dentist Kharadi, 
+braces clinic Kharadi, 
+braces near Kharadi, 
+braces near me Kharadi, 
+teeth straightening Kharadi, 
+teeth straightening Pune, 
+dental braces Kharadi, 
+dental braces Pune, 
+metal braces Kharadi, 
+metal braces Pune, 
+ceramic braces Kharadi, 
+ceramic braces Pune, 
+lingual braces Kharadi, 
+lingual braces Pune, 
+clear aligners Kharadi, 
+clear aligners Pune, 
+Invisalign Kharadi, 
+Invisalign Pune, 
+invisible braces Kharadi, 
+invisible braces Pune, 
+crowded teeth treatment Kharadi, 
+crooked teeth treatment Pune, 
+teeth gap treatment Kharadi, 
+overbite treatment Pune, 
+underbite treatment Kharadi, 
+crossbite treatment Pune, 
+open bite treatment Kharadi, 
+orthodontic consultation Kharadi, 
+orthodontic consultation Pune, 
+braces cost Kharadi, 
+braces cost Pune, 
+clear aligners cost Pune, 
+orthodontic treatment cost Kharadi, 
+retainer after braces Pune, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Orthodontic Treatment in Kharadi, 
+Pune | Braces & Clear Aligners"
+        />
+        <meta
+          property="og:description"
+          content="Orthodontic treatment at Denza 
+Dental Center in Kharadi, Pune, including metal, 
+ceramic and lingual braces and clear aligners for 
+teeth alignment and bite correction."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/orthodontic-trea
+tments"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Orthodontic treatment and braces 
+at Denza Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Orthodontic Treatments Services" />
 
       <div className="brace_treat_parent parent">
@@ -344,7 +465,7 @@ const OrthodonticTreatments = () => {
         </div>
       </div>
 
-        <div className="after_care_parent parent">
+      <div className="after_care_parent parent">
         <div className="after_care_cont cont">
           <h2>After Care of Braces Treatment </h2>
 
@@ -370,7 +491,7 @@ const OrthodonticTreatments = () => {
       </div>
 
 
- <div className="braces_type_parent parent">
+      <div className="braces_type_parent parent">
         <div className="braces_type_cont cont">
           <h2>Types of Braces Available at Denza Dental</h2>
           <p>
@@ -419,7 +540,7 @@ const OrthodonticTreatments = () => {
       </div>
 
 
- <div className="parent second_parent">
+      <div className="parent second_parent">
         <div className="cont second_cont">
           <div className="general_left">
             <img src={img1} alt="General Dental Service" />
@@ -478,11 +599,11 @@ const OrthodonticTreatments = () => {
           })}
         </div>
       </div>
-    
 
-     
 
-     
+
+
+
 
       <div className="parent gallery_parent" style={{ background: "var(--white)" }}>
         <div className="cont gallery_cont">

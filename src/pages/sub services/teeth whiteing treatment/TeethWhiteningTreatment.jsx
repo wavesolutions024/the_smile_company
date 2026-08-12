@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -140,9 +141,117 @@ const TeethWhiteningTreatment = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Teeth Whitening in Kharadi, Pune |
+          Professional Teeth Whitening
+        </title>
+        <meta
+          name="description"
+          content="Professional teeth whitening in 
+Kharadi, Pune at Denza Dental Center. Learn 
+about whitening options, tooth stains, safety, 
+sensitivity, aftercare and maintaining brighter 
+teeth."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/teeth-whitening-tre
+atment"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+teeth whitening Kharadi, 
+teeth whitening Pune, 
+professional teeth whitening Kharadi, 
+professional teeth whitening Pune, 
+teeth whitening dentist Kharadi, 
+teeth whitening clinic Kharadi, 
+teeth whitening treatment Kharadi, 
+teeth whitening treatment Pune, 
+dental whitening Kharadi, 
+professional tooth whitening Pune, 
+tooth whitening Kharadi, 
+tooth whitening Pune, 
+teeth whitening near Kharadi, 
+teeth whitening near me Kharadi, 
+teeth whitening cost Kharadi, 
+teeth whitening cost Pune, 
+teeth whitening price Pune, 
+laser teeth whitening Pune, 
+LED teeth whitening Pune, 
+professional stain removal teeth Pune, 
+yellow teeth treatment Kharadi, 
+yellow teeth whitening Pune, 
+teeth stain removal Kharadi, 
+teeth discoloration treatment Pune, 
+coffee stains teeth treatment Pune, 
+tea stains teeth treatment Kharadi, 
+cosmetic dentist Kharadi, 
+cosmetic dentistry Kharadi Pune, 
+smile enhancement Kharadi, 
+smile makeover Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Teeth Whitening in Kharadi, Pune | 
+Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Professional teeth whitening at 
+Denza Dental Center in Kharadi, Pune. Learn 
+about tooth discoloration, whitening options, 
+safety, sensitivity and aftercare."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/teeth-whitening
+treatment"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Professional teeth whitening at 
+Denza Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Teeth Whitening Treatment Services" />
 
-      <div className="book_appoint" style={{background:"white"}}>
+      <div className="book_appoint" style={{ background: "white" }}>
         <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
             <h2> Best Teeth Whitening in Kharadi, Pune</h2>

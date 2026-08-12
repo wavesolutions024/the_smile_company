@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -124,6 +125,108 @@ const InlaysOnlays = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Inlays & Onlays in Kharadi, Pune | Denza
+          Dental
+        </title>
+        <meta
+          name="description"
+          content="Get dental inlays and onlays in 
+Kharadi, Pune at Denza Dental Center. Learn how 
+inlays and onlays restore damaged teeth, 
+preserve tooth structure and compare with fillings 
+and crowns."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/inlays-onlays"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+inlays and onlays Kharadi, 
+inlays and onlays Pune, 
+dental inlays Kharadi, 
+dental onlays Kharadi, 
+dental inlays Pune, 
+dental onlays Pune, 
+inlay treatment Kharadi, 
+onlay treatment Kharadi, 
+inlay dentist Kharadi, 
+onlay dentist Kharadi, 
+inlays and onlays dentist Pune, 
+inlays and onlays near Kharadi, 
+dental inlay cost Pune, 
+dental onlay cost Pune, 
+inlay treatment cost Kharadi, 
+onlay treatment cost Kharadi, 
+inlays vs onlays, 
+inlays vs crowns, 
+onlays vs crowns, 
+dental inlays for damaged teeth, 
+dental onlays for damaged teeth, 
+tooth colored inlays Pune, 
+tooth colored onlays Pune, 
+indirect dental restorations Kharadi, 
+restorative dentistry Kharadi, 
+conservative dentistry Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Inlays & Onlays in Kharadi, Pune | 
+Denza Dental"
+        />
+        <meta
+          property="og:description"
+          content="Dental inlays and onlays in 
+Kharadi, Pune for restoring damaged teeth while 
+preserving healthy tooth structure when clinically 
+appropriate."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/inlays-onlays"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Dental inlays and onlays at Denza 
+Dental Center in Kharadi Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Inlays Onlays Services" />
 
       <div className="book_appoint">
@@ -154,7 +257,7 @@ const InlaysOnlays = () => {
           <div className="second_section_header">
             <h2>  The Inlays & Onlays Procedure at Denza Dental  </h2>
             <p>
-              
+
             </p>
           </div>
 
@@ -186,7 +289,7 @@ const InlaysOnlays = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

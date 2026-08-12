@@ -8,6 +8,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import { Link } from "react-router-dom";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const services = [
   {
@@ -179,6 +180,117 @@ const FullMouthRihabilitation = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Full Mouth Rehabilitation in Kharadi, Pune |
+          Denza Dental
+        </title>
+        <meta
+          name="description"
+          content="Full mouth rehabilitation in Kharadi, 
+Pune at Denza Dental Center. Comprehensive 
+treatment planning for damaged, worn or missing 
+teeth using restorative, implant, periodontal, 
+orthodontic and cosmetic care where 
+appropriate."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/full-mouth-rehabilit
+ation"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+full mouth rehabilitation Kharadi, 
+full mouth rehabilitation Pune, 
+full mouth restoration Kharadi, 
+full mouth restoration Pune, 
+full mouth reconstruction Kharadi, 
+full mouth reconstruction Pune, 
+full mouth dental rehabilitation Kharadi, 
+full mouth dental rehabilitation Pune, 
+full mouth treatment Kharadi, 
+comprehensive dental treatment Pune, 
+comprehensive dental rehabilitation 
+Kharadi, 
+full mouth rehabilitation dentist Kharadi, 
+full mouth rehabilitation clinic Pune, 
+full mouth rehabilitation cost Pune, 
+full mouth rehabilitation cost Kharadi, 
+full mouth reconstruction cost Pune, 
+full mouth restoration cost Kharadi, 
+dental rehabilitation for worn teeth, 
+dental rehabilitation for missing teeth, 
+dental rehabilitation for damaged teeth, 
+multiple missing teeth treatment Kharadi, 
+severely damaged teeth treatment Pune, 
+bite rehabilitation Kharadi, 
+full mouth implant rehabilitation Pune, 
+restorative dentistry Kharadi, 
+cosmetic restorative dentistry Pune, 
+smile rehabilitation Kharadi, 
+full mouth rehabilitation near Kharadi, 
+full mouth rehabilitation near me, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Full Mouth Rehabilitation in 
+Kharadi, Pune | Denza Dental"
+        />
+        <meta
+          property="og:description"
+          content="Comprehensive full mouth 
+rehabilitation at Denza Dental Center in Kharadi, 
+Pune for damaged, worn, missing or functionally 
+compromised teeth."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/full-mouth-reha
+bilitation"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Full mouth rehabilitation at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Full Mouth Rehabilitation Services" />
 
       <div className="parent second_parent11">

@@ -8,6 +8,7 @@ import gallery1 from "../../../assets/about_page/after1.webp";
 import img4 from "../../../assets/about_section/img5.webp";
 import PageTop from "../../../comp/page_top/PageTop";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const GbtCleaning = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -92,6 +93,111 @@ const GbtCleaning = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          GBT Cleaning in Kharadi, Pune | Guided
+          Biofilm Therapy
+        </title>
+        <meta
+          name="description"
+          content="Experience Guided Biofilm Therapy 
+(GBT) in Kharadi, Pune at Denza Dental Center. 
+GBT uses a structured protocol to identify and 
+remove biofilm, stains and dental deposits with 
+personalized preventive care."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/gbt-cleaning"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+GBT cleaning Kharadi, 
+GBT cleaning Pune, 
+Guided Biofilm Therapy Kharadi, 
+Guided Biofilm Therapy Pune, 
+GBT dental cleaning Kharadi, 
+GBT dental cleaning Pune, 
+GBT teeth cleaning Kharadi, 
+GBT teeth cleaning Pune, 
+EMS GBT Kharadi, 
+EMS Guided Biofilm Therapy Pune, 
+EMS Airflow cleaning Kharadi, 
+EMS Airflow dental cleaning Pune, 
+biofilm removal Kharadi, 
+biofilm removal Pune, 
+dental biofilm cleaning, 
+professional teeth cleaning Kharadi, 
+professional dental cleaning Pune, 
+advanced teeth cleaning Kharadi, 
+advanced dental cleaning Pune, 
+stain removal teeth Kharadi, 
+dental stain removal Pune, 
+gum cleaning Kharadi, 
+preventive dental cleaning Pune, 
+teeth cleaning for braces Kharadi, 
+teeth cleaning for implants Pune, 
+sensitive teeth cleaning Kharadi, 
+painless teeth cleaning Pune, 
+dental hygiene Kharadi, 
+dental hygiene Pune, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="GBT Cleaning in Kharadi, Pune | 
+Guided Biofilm Therapy"
+        />
+        <meta
+          property="og:description"
+          content="Guided Biofilm Therapy at Denza 
+Dental Center in Kharadi, Pune for structured 
+biofilm removal, stain management and 
+personalized preventive dental care."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/gbt-cleaning"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Guided Biofilm Therapy at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="GBT Cleaning Technology" />
 
       <div className="parent second_parent_gbt">

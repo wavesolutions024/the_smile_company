@@ -8,6 +8,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import img4 from "../../../assets/about_section/img5.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const Cbct = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -48,6 +49,116 @@ const Cbct = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          CBCT Scan in Kharadi, Pune | 3D Dental
+          Imaging | Denza Dental
+        </title>
+        <meta
+          name="description"
+          content="Get a CBCT scan in Kharadi, Pune 
+at Denza Dental Center. Advanced 3D dental 
+imaging provides detailed views of teeth, jaws and 
+surrounding structures for diagnosis and 
+treatment planning."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/cbct"
+        />
+        <meta
+          name="keywords"
+          content=" 
+CBCT scan Kharadi, 
+CBCT scan Pune, 
+CBCT Kharadi, 
+CBCT Pune, 
+dental CBCT Kharadi, 
+dental CBCT Pune, 
+CBCT 3D imaging Kharadi, 
+CBCT 3D imaging Pune, 
+3D dental imaging Kharadi, 
+3D dental imaging Pune, 
+cone beam CT Kharadi, 
+cone beam CT Pune, 
+cone beam computed tomography Kharadi, 
+dental CT scan Kharadi, 
+dental CT scan Pune, 
+3D teeth scan Kharadi, 
+3D jaw scan Pune, 
+dental imaging Kharadi, 
+dental imaging Pune, 
+advanced dental imaging Kharadi, 
+CBCT scan near Kharadi, 
+CBCT scan near me, 
+dental CBCT near Kharadi, 
+CBCT for dental implants Pune, 
+CBCT for root canal treatment Pune, 
+CBCT for wisdom teeth Kharadi, 
+CBCT for impacted teeth Pune, 
+CBCT for orthodontic treatment Pune, 
+CBCT for oral surgery Pune, 
+CBCT treatment planning Kharadi, 
+dental diagnostic imaging Pune, 
+CBCT scan cost Pune, 
+CBCT scan price Kharadi, 
+3D dental scan Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="CBCT Scan in Kharadi, Pune | 3D 
+Dental Imaging | Denza Dental"
+        />
+        <meta
+          property="og:description"
+          content="CBCT scan and 3D dental imaging 
+at Denza Dental Center in Kharadi, Pune for 
+detailed imaging of teeth, jaws and surrounding 
+structures to support dental diagnosis and 
+treatment planning."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/cbct"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="CBCT 3D dental imaging at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="CBCT 3D IMAGING Technology" />
 
       <div className="parent second_parent">

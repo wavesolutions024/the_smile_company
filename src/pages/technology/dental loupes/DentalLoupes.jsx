@@ -7,6 +7,7 @@ import "./DentalLoupes.scss";
 import img1 from "../../../assets/general_service/img.webp";
 import img4 from "../../../assets/about_section/img5.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const DentalLoupes = () => {
   const services = [
@@ -41,6 +42,102 @@ const DentalLoupes = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Dental Loupes in Kharadi, Pune | Precision
+          Dental Technology
+        </title>
+        <meta
+          name="description"
+          content="Discover advanced dental loupes at 
+Denza Dental Center in Kharadi, Pune. Dental 
+magnification enhances visual clarity and 
+precision for accurate, minimally invasive dental 
+procedures."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/dental-loupes"
+        />
+        <meta
+          name="keywords"
+          content=" 
+dental loupes Kharadi, 
+dental loupes Pune, 
+dental magnification loupes Kharadi, 
+dental magnification loupes Pune, 
+dentist loupes Kharadi, 
+dentist loupes Pune, 
+dental surgical loupes Pune, 
+dental magnification technology Kharadi, 
+dental magnification technology Pune, 
+precision dentistry Kharadi, 
+precision dentistry Pune, 
+advanced dental technology Kharadi, 
+advanced dental technology Pune, 
+magnification dentistry Kharadi, 
+magnification dentistry Pune, 
+minimally invasive dentistry Kharadi, 
+minimally invasive dentistry Pune, 
+precise dental treatment Kharadi, 
+accurate dental treatment Pune, 
+dental technology Kharadi, 
+dental technology Pune, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Dental Loupes in Kharadi, Pune | 
+Precision Dental Technology"
+        />
+        <meta
+          property="og:description"
+          content="Explore advanced dental loupes at 
+Denza Dental Center in Kharadi, Pune for 
+enhanced visual clarity, treatment precision and 
+minimally invasive dental care."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/dental-loupes"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Dental loupes technology at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Dental Loupes Technology" />
 
       <div className="parent second_parent">
@@ -96,7 +193,7 @@ const DentalLoupes = () => {
         </div>
       </div>
 
-      <div className="parent second_parent_gbt" style={{background:"var(--background)"}}>
+      <div className="parent second_parent_gbt" style={{ background: "var(--background)" }}>
         <div className="cont second_cont_gbt">
           <h2>How Dental Loupes Work ?</h2>
 

@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -137,6 +138,114 @@ const CeramicBraces = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Ceramic Braces in Kharadi, Pune |
+          Tooth-Colored Braces
+        </title>
+        <meta
+          name="description"
+          content="Get ceramic braces in Kharadi, 
+Pune at Denza Dental Center. Learn about 
+tooth-colored braces, benefits, treatment duration, 
+care, ceramic vs metal braces and suitability."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/ceramic-braces"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+ceramic braces Kharadi, 
+ceramic braces Pune, 
+ceramic braces treatment Kharadi, 
+ceramic braces treatment Pune, 
+ceramic braces dentist Kharadi, 
+ceramic braces clinic Kharadi, 
+ceramic braces near Kharadi, 
+ceramic braces near me Kharadi, 
+tooth colored braces Kharadi, 
+tooth colored braces Pune, 
+tooth coloured braces Kharadi, 
+tooth coloured braces Pune, 
+clear ceramic braces Kharadi, 
+clear ceramic braces Pune, 
+aesthetic braces Kharadi, 
+aesthetic braces Pune, 
+cosmetic braces Kharadi, 
+ceramic dental braces Pune, 
+ceramic orthodontic braces Kharadi, 
+ceramic braces cost Kharadi, 
+ceramic braces cost Pune, 
+ceramic braces price Pune, 
+ceramic vs metal braces Pune, 
+ceramic braces vs metal braces Kharadi, 
+ceramic braces duration Pune, 
+ceramic braces painful Pune, 
+ceramic braces stain Kharadi, 
+braces for adults Kharadi, 
+discreet braces Pune, 
+orthodontist Kharadi Pune, 
+orthodontic treatment Kharadi, 
+braces treatment Kharadi, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Ceramic Braces in Kharadi, Pune | 
+Tooth-Colored Braces"
+        />
+        <meta
+          property="og:description"
+          content="Ceramic braces at Denza Dental 
+Center in Kharadi, Pune. Learn about 
+tooth-colored braces, benefits, treatment duration, 
+care and ceramic vs metal braces."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/ceramic-braces
+"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Ceramic braces treatment at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Ceramic Braces Services" />
 
       <div className="brace_treat_parent parent">
@@ -202,7 +311,7 @@ const CeramicBraces = () => {
               <h3>{service.title}</h3>
               <ul className="service_points" >
                 {service.points.map((point, i) => (
-                  <li style={{ color: "var(--text)",  }} key={i}>
+                  <li style={{ color: "var(--text)", }} key={i}>
                     {point}
                   </li>
                 ))}
@@ -234,7 +343,7 @@ const CeramicBraces = () => {
         </div>
       </div>
 
-      
+
 
 
       <div className="faq_section1">

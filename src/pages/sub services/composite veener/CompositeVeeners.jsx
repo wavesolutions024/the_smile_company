@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -93,7 +94,7 @@ const faqs = [
     answer:
       "In most cases, composite veneers are minimally invasive and can be adjusted or removed if needed, as very little natural tooth structure is altered.",
   },
-  
+
 ];
 
 const CompositeVeeners = () => {
@@ -116,12 +117,118 @@ const CompositeVeeners = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Composite Veneers in Kharadi, Pune |
+          Denza Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Get composite veneers in Kharadi, 
+Pune at Denza Dental Center. Learn about 
+composite veneers, candidates, treatment steps, 
+benefits, maintenance and cosmetic smile 
+solutions."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/composite-veneers
+"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+composite veneers Kharadi, 
+composite veneers Pune, 
+composite veneer dentist Kharadi, 
+composite veneer dentist Pune, 
+composite veneers near Kharadi, 
+composite veneers near me Kharadi, 
+composite dental veneers Kharadi, 
+composite teeth veneers Pune, 
+composite resin veneers Kharadi, 
+composite bonding veneers Pune, 
+dental composite veneers Pune, 
+composite veneers treatment Kharadi, 
+composite veneers cost Kharadi, 
+composite veneers price Pune, 
+composite veneers before and after Pune, 
+cosmetic veneers Kharadi, 
+cosmetic dentistry Kharadi, 
+smile makeover Kharadi, 
+smile makeover Pune, 
+chipped teeth treatment Kharadi, 
+gap teeth treatment Pune, 
+uneven teeth treatment Kharadi, 
+tooth shape correction Pune, 
+composite bonding Kharadi, 
+dental bonding Pune, 
+tooth-colored composite Kharadi, 
+veneers dentist Kharadi, 
+veneers dentist Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Composite Veneers in Kharadi, 
+Pune | Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Composite veneers at Denza 
+Dental Center in Kharadi, Pune for selected 
+cosmetic concerns including minor chips, gaps, 
+discoloration and irregular tooth shape."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/composite-vene
+ers"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Composite veneers treatment at 
+Denza Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title=" Composite Veneers Services" />
 
       <div className="book_appoint parent" style={{ background: "white" }}>
         <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment "/>
+            <img src={apointment} alt="Dental Appointment " />
           </div>
 
           <div className="book_appoint_text">
@@ -219,11 +326,11 @@ const CompositeVeeners = () => {
             </ol>
           </div>
 
-          <div className="book_appoint_side red_background" 
-          
-          
+          <div className="book_appoint_side red_background"
+
+
           >
-            <img src={apointment} style={{width:"100%", height: "450px", objectFit: "cover"}} alt="Dental Appointment " />
+            <img src={apointment} style={{ width: "100%", height: "450px", objectFit: "cover" }} alt="Dental Appointment " />
           </div>
         </div>
       </div>
@@ -248,7 +355,7 @@ const CompositeVeeners = () => {
         </div>
       </div>
 
-       <div className="after_care_parent parent">
+      <div className="after_care_parent parent">
         <div className="after_care_cont cont">
           <h2>Benefits of Getting Composite Veneers treatment </h2>
 
@@ -260,7 +367,7 @@ const CompositeVeeners = () => {
             <li>Easily repairable if something goes wrong </li>
             <li>More affordable composite veneers price compared to porcelain options </li>
             <li>Reversible procedure preserving natural tooth structure</li>
-            
+
           </ul>
         </div>
       </div>
@@ -281,7 +388,7 @@ const CompositeVeeners = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

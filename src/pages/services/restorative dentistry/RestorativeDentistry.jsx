@@ -8,6 +8,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import { Link } from "react-router-dom";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const services = [
   {
@@ -75,6 +76,110 @@ const RestorativeDentistry = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Restorative Dentistry in Kharadi, Pune |
+          Denza Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Restorative dentistry in Kharadi, 
+Pune at Denza Dental Center. Repair damaged 
+teeth and replace missing teeth with fillings, 
+crowns, bridges, implants, inlays and onlays."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/restorative-dentistr
+y"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+restorative dentistry Kharadi, 
+restorative dentistry Pune, 
+restorative dentist Kharadi, 
+restorative dentist Pune, 
+restorative dental treatment Kharadi, 
+restorative dental treatment Pune, 
+restorative dentistry near me, 
+restorative dentist near Kharadi, 
+tooth restoration Kharadi, 
+dental restoration Pune, 
+damaged tooth treatment Kharadi, 
+broken tooth treatment Pune, 
+missing tooth replacement Kharadi, 
+missing teeth treatment Pune, 
+tooth colored fillings Kharadi, 
+composite fillings Pune, 
+dental fillings Kharadi, 
+dental crowns Kharadi, 
+dental crowns Pune, 
+dental bridges Kharadi, 
+dental bridges Pune, 
+dental implants Kharadi, 
+dental implants Pune, 
+inlays and onlays Kharadi, 
+inlays and onlays Pune, 
+tooth restoration dentist Kharadi, 
+full tooth restoration Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Restorative Dentistry in Kharadi, 
+Pune | Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Restorative dental care in Kharadi, 
+Pune for damaged or missing teeth, including 
+fillings, crowns, bridges, implants, inlays and 
+onlays."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/restorative-denti
+stry"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Restorative dentistry at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Restorative Dentistry Services" />
 
       <div className="parent second_parent">

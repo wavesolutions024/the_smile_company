@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -106,6 +107,118 @@ const SmileAnalysisConsultation = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Smile Analysis in Kharadi, Pune | Digital
+          Smile Assessment
+        </title>
+        <meta
+          name="description"
+          content="Get a personalized smile analysis 
+in Kharadi, Pune at Denza Dental Center. Assess 
+tooth alignment, gum symmetry, facial 
+proportions, bite, lip line, tooth shape and color for 
+personalized treatment planning."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/smile-analysis"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+smile analysis Kharadi, 
+smile analysis Pune, 
+smile assessment Kharadi, 
+smile assessment Pune, 
+digital smile analysis Kharadi, 
+digital smile analysis Pune, 
+digital smile assessment Kharadi, 
+digital smile assessment Pune, 
+smile design consultation Kharadi, 
+smile design consultation Pune, 
+smile evaluation Kharadi, 
+smile evaluation Pune, 
+smile analysis dentist Kharadi, 
+smile analysis clinic Kharadi, 
+smile analysis near Kharadi, 
+smile analysis near me Kharadi, 
+smile makeover consultation Pune, 
+smile makeover consultation Kharadi, 
+digital smile design Pune, 
+digital smile design Kharadi, 
+smile design dentist Pune, 
+cosmetic dentistry consultation Kharadi, 
+cosmetic dentist Kharadi Pune, 
+personalized smile design Pune, 
+smile planning Pune, 
+smile assessment before veneers, 
+smile assessment before orthodontic 
+treatment, 
+smile design consultation before veneers, 
+facial smile analysis Pune, 
+gum line analysis Pune, 
+tooth alignment assessment Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Smile Analysis in Kharadi, Pune | 
+Digital Smile Assessment"
+        />
+        <meta
+          property="og:description"
+          content="Personalized smile analysis and 
+digital smile assessment at Denza Dental Center 
+in Kharadi, Pune, evaluating tooth alignment, gum 
+symmetry, facial proportions, bite, lip line, shape 
+and color."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/smile-analysis"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Smile analysis and digital smile 
+assessment at Denza Dental Center in Kharadi, 
+Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Smile Analysis Consultation Services" />
 
       <div className="second_section">
@@ -148,7 +261,7 @@ const SmileAnalysisConsultation = () => {
               <li>Lip line and movement</li>
               <li>Color and shape of teeth </li>
               <li>Benefits of Smile Analysis </li>
-              
+
             </ul>
           </div>
         </div>
@@ -191,7 +304,7 @@ const SmileAnalysisConsultation = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

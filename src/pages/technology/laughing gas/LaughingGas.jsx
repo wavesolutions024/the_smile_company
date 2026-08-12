@@ -7,6 +7,7 @@ import "./LaughingGas.scss";
 import img1 from "../../../assets/general_service/img.webp";
 import img4 from "../../../assets/about_section/img5.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const LaughingGas = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -81,6 +82,101 @@ const LaughingGas = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Laughing Gas in Kharadi, Pune |
+          Comfortable Dental Treatment
+        </title>
+        <meta
+          name="description"
+          content="Discover laughing gas sedation at 
+Denza Dental Center in Kharadi, Pune. Nitrous 
+oxide can help eligible patients feel calmer and 
+more comfortable during dental treatment under 
+professional supervision."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/laughing-gas"
+        />
+        <meta
+          name="keywords"
+          content=" 
+laughing gas dentist Kharadi, 
+laughing gas dentist Pune, 
+laughing gas dentistry Kharadi, 
+laughing gas dentistry Pune, 
+nitrous oxide sedation Kharadi, 
+nitrous oxide sedation Pune, 
+dental sedation Kharadi, 
+dental sedation Pune, 
+nitrous oxide dentist Kharadi, 
+nitrous oxide dentist Pune, 
+comfortable dental treatment Kharadi, 
+comfortable dental treatment Pune, 
+anxiety friendly dentist Kharadi, 
+dental anxiety treatment Pune, 
+sedation dentistry Kharadi, 
+sedation dentistry Pune, 
+painless dental treatment Kharadi, 
+dental treatment for anxious patients Pune, 
+advanced dental technology Kharadi, 
+advanced dental technology Pune, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Laughing Gas in Kharadi, Pune | 
+Comfortable Dental Treatment"
+        />
+        <meta
+          property="og:description"
+          content="Explore laughing gas sedation at 
+Denza Dental Center in Kharadi, Pune, helping 
+eligible patients feel calmer and more comfortable 
+during dental treatment."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/laughing-gas"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Laughing gas sedation technology 
+at Denza Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Conscious Sedation (Laughing Gas) Technology" />
 
       <div className="parent second_parent">

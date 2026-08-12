@@ -7,6 +7,7 @@ import "./CosmeticDentistry.scss";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const services = [
   {
@@ -88,6 +89,117 @@ const CosmeticDentistry = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Cosmetic Dentistry in Kharadi, Pune | Denza
+          Dental
+        </title>
+        <meta
+          name="description"
+          content="Cosmetic dentistry in Kharadi, 
+Pune at Denza Dental Center. Explore veneers, 
+teeth whitening, dental bonding, cosmetic 
+recontouring and personalized smile makeover 
+options."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/cosmetic-dentistry"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+cosmetic dentistry Kharadi, 
+cosmetic dentistry Pune, 
+cosmetic dentist Kharadi, 
+cosmetic dentist Pune, 
+cosmetic dental clinic Kharadi, 
+cosmetic dental clinic Pune, 
+cosmetic dental treatment Kharadi, 
+cosmetic dental treatment Pune, 
+aesthetic dentistry Kharadi, 
+aesthetic dentistry Pune, 
+smile makeover Kharadi, 
+smile makeover Pune, 
+smile design Kharadi, 
+smile design Pune, 
+smile enhancement Kharadi, 
+teeth whitening Kharadi, 
+teeth whitening Pune, 
+dental veneers Kharadi, 
+dental veneers Pune, 
+porcelain veneers Kharadi, 
+porcelain veneers Pune, 
+dental bonding Kharadi, 
+dental bonding Pune, 
+tooth bonding Kharadi, 
+cosmetic tooth reshaping Pune, 
+gum contouring Kharadi, 
+cosmetic recontouring Pune, 
+cosmetic dental treatment near Kharadi, 
+cosmetic dentist near me Kharadi, 
+smile makeover dentist Pune, 
+aesthetic dental treatment Pune, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Cosmetic Dentistry in Kharadi, 
+Pune | Denza Dental"
+        />
+        <meta
+          property="og:description"
+          content="Explore cosmetic dentistry 
+treatments at Denza Dental Center in Kharadi, 
+Pune, including veneers, teeth whitening, dental 
+bonding, cosmetic recontouring and smile 
+enhancement."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/cosmetic-dentis
+try"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Cosmetic dentistry at Denza Dental 
+Center in Kharadi Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Cosmetic Dentistry Services" />
 
       <div className="parent second_parent">

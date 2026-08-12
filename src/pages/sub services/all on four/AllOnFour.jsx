@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 
 const whyChooseData = [
@@ -106,6 +107,122 @@ const AllOnFour = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          All-on-4 & All-on-6 Dental Implants in
+          Kharadi, Pune | Denza Dental Center
+        </title>
+        <meta
+          name="description"
+          content="All-on-4 and All-on-6 dental 
+implants in Kharadi, Pune at Denza Dental 
+Center. Explore full-arch implant treatment, 
+procedure, benefits, suitability, cost considerations 
+and FAQs."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/all-on-four"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+All on 4 dental implants Kharadi, 
+All on 4 dental implants Pune, 
+All on 4 implants Kharadi, 
+All on 4 implants Pune, 
+All on 6 dental implants Kharadi, 
+All on 6 dental implants Pune, 
+All on 6 implants Kharadi, 
+All on 6 implants Pune, 
+All on four dental implants Pune, 
+All on six dental implants Pune, 
+full mouth dental implants Pune, 
+full arch dental implants Pune, 
+full arch implants Kharadi, 
+full mouth implant treatment Pune, 
+full mouth dental restoration Pune, 
+full arch tooth replacement Pune, 
+dental implants for full mouth Pune, 
+dental implants for missing teeth Pune, 
+fixed teeth implants Pune, 
+fixed full arch teeth Pune, 
+implant supported full arch Pune, 
+implant supported teeth Pune, 
+full mouth rehabilitation implants Pune, 
+All on 4 cost Pune, 
+All on 6 cost Pune, 
+All on 4 dental implant cost Kharadi, 
+All on 6 dental implant cost Kharadi, 
+All on 4 dentist Pune, 
+All on 6 dentist Pune, 
+All on 4 dental implant clinic Pune, 
+All on 6 dental implant clinic Pune, 
+full mouth implants Kharadi, 
+full arch implants Kharadi, 
+dental implants near me Kharadi, 
+full mouth dental implants near me, 
+All on 4 vs All on 6, 
+All on 4 or All on 6, 
+All on 4 treatment Pune, 
+All on 6 treatment Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="All-on-4 & All-on-6 Dental Implants 
+in Kharadi, Pune | Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Explore All-on-4 and All-on-6 
+full-arch dental implant treatment at Denza Dental 
+Center in Kharadi, Pune, including treatment 
+options, procedure, benefits and FAQs."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/all-on-four"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="All-on-4 and All-on-6 dental implant 
+treatment at Denza Dental Center in Kharadi 
+Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="All-on-4 & All-on-6 Dental Implants Services" />
 
       <div className="brace_treat_parent parent">
@@ -186,7 +303,7 @@ const AllOnFour = () => {
               <h3>Bone Preservation</h3>
               <ul>
                 <li>
-                  Stimulates jawbone and prevents bone loss after tooth loss 
+                  Stimulates jawbone and prevents bone loss after tooth loss
                 </li>
                 <li>Maintains natural facial structure</li>
               </ul>
@@ -224,7 +341,7 @@ const AllOnFour = () => {
               <h3>Implants vs Traditional Dentures</h3>
               <ul>
                 <li>
-                 Fixed and permanent (no removal required)
+                  Fixed and permanent (no removal required)
                 </li>
                 <li>No adhesives needed </li>
                 <li>Eat almost all types of food comfortably</li>

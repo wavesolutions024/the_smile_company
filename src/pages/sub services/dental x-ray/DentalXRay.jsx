@@ -12,6 +12,7 @@ import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
 import { Helmet } from "react-helmet";
 
+
 const whyChooseData = [
   {
     title: "State-of-the-Art Digital Technology",
@@ -123,13 +124,6 @@ const DentalXRay = () => {
           Dental X-Ray in Kharadi, Pune | Digital
           X-Ray, OPG & CBCT
         </title>
-        <meta
-          name="description"
-          content="Get digital dental X-rays at Denza 
-Dental Center in Kharadi, Pune, including RVG, 
-bitewing X-rays, OPG and CBCT imaging for 
-accurate diagnosis and treatment planning."
-        />
 
         <link
           rel="canonical"
@@ -177,6 +171,13 @@ Denza Dental Pune
           name="geo.placename"
           content="Kharadi, Pune, Maharashtra, India"
         />
+        <meta
+          name="description"
+          content="Get digital dental X-rays at Denza 
+Dental Center in Kharadi, Pune, including RVG, 
+bitewing X-rays, OPG and CBCT imaging for 
+accurate diagnosis and treatment planning."
+        />
 
         <meta
           property="og:type"
@@ -215,8 +216,8 @@ at Denza Dental Center in Kharadi, Pune"
           property="og:locale"
           content="en_IN"
         />
-
       </Helmet>
+
       <PageTop title="Dental X-Ray Services" />
 
       <div className="second_section">
