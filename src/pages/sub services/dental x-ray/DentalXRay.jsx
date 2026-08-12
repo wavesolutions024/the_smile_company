@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -95,7 +96,7 @@ const faqs = [
     answer:
       "Yes, Denza Dental uses dental X-rays to identify signs of gum disease, such as bone loss around teeth. This helps in early diagnosis and effective treatment planning. ",
   },
- 
+
 ];
 
 const DentalXRay = () => {
@@ -117,6 +118,105 @@ const DentalXRay = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Dental X-Ray in Kharadi, Pune | Digital
+          X-Ray, OPG & CBCT
+        </title>
+        <meta
+          name="description"
+          content="Get digital dental X-rays at Denza 
+Dental Center in Kharadi, Pune, including RVG, 
+bitewing X-rays, OPG and CBCT imaging for 
+accurate diagnosis and treatment planning."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/dental-x-ray"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+dental X-ray Kharadi, 
+dental X-ray Pune, 
+dental x ray near Kharadi, 
+digital dental X-ray Kharadi, 
+digital dental X-ray Pune, 
+dental imaging Kharadi, 
+dental imaging Pune, 
+dental radiology Kharadi, 
+dental radiology Pune, 
+RVG X-ray Kharadi, 
+RVG dental X-ray Pune, 
+bitewing X-ray Kharadi, 
+bitewing X-ray Pune, 
+OPG X-ray Kharadi, 
+OPG dental X-ray Pune, 
+panoramic dental X-ray Kharadi, 
+CBCT dental scan Kharadi, 
+CBCT Pune, 
+CBCT dental imaging Pune, 
+3D dental scan Kharadi, 
+dental X-ray clinic Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Dental X-Ray in Kharadi, Pune | 
+Digital X-Ray, OPG & CBCT"
+        />
+        <meta
+          property="og:description"
+          content="Denza Dental Center provides 
+digital dental X-rays, RVG, bitewing X-rays, OPG 
+and CBCT imaging in Kharadi, Pune for accurate 
+diagnosis and treatment planning."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/dental-x-ray"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Dental X-Ray and imaging services 
+at Denza Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+
+      </Helmet>
       <PageTop title="Dental X-Ray Services" />
 
       <div className="second_section">
@@ -230,7 +330,7 @@ const DentalXRay = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

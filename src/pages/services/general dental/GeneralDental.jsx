@@ -8,6 +8,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import { Link } from "react-router-dom";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const services = [
   {
@@ -90,6 +91,130 @@ const GeneralDental = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          General Dental Services in Kharadi, Pune | Denza Dental Center
+        </title>
+
+        <meta
+          name="description"
+          content="Denza Dental Center offers general dental services in Kharadi, Pune, including dental checkups, digital X-rays, teeth cleaning, root canal treatment, extractions, wisdom tooth removal and minor oral surgery."
+        />
+
+        <meta
+          name="keywords"
+          content="
+          Denza Dental Center,
+          Denza Dental,
+          Denza Dentistry,
+          general dental services Pune,
+          general dentistry Pune,
+          general dentist Pune,
+          general dental services Kharadi,
+          general dentist Kharadi,
+          dental clinic Kharadi Pune,
+          dentist Kharadi Pune,
+          dental checkup Kharadi,
+          dental checkup Pune,
+          routine dental checkup Pune,
+          preventive dentistry Kharadi,
+          preventive dentistry Pune,
+          dental X ray Kharadi,
+          digital dental X ray Pune,
+          digital dental X-ray Kharadi,
+          teeth cleaning Kharadi,
+          teeth cleaning Pune,
+          professional teeth cleaning Pune,
+          dental cleaning Kharadi,
+          root canal treatment Kharadi,
+          root canal treatment Pune,
+          RCT Kharadi,
+          root canal dentist Kharadi,
+          root canal retreatment Pune,
+          root canal retreatment Kharadi,
+          tooth extraction Kharadi,
+          tooth extraction Pune,
+          wisdom tooth extraction Kharadi,
+          wisdom tooth removal Pune,
+          wisdom teeth dentist Kharadi,
+          minor oral surgery Kharadi,
+          minor oral surgery Pune,
+          oral surgery Kharadi,
+          family dentist Kharadi,
+          dental care Kharadi Pune,
+          dentist near Marvel Enigma Kharadi,
+          dental clinic near Marvel Enigma Kharadi,
+          dentist near me Kharadi
+        "
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/general-dental"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          name="geo.position"
+          content="18.5515;73.9430"
+        />
+
+        <meta
+          name="ICBM"
+          content="18.5515, 73.9430"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+
+        <meta
+          property="og:title"
+          content="General Dental Services in Kharadi, Pune | Denza Dental Center"
+        />
+
+        <meta
+          property="og:description"
+          content="Explore general and preventive dental care at Denza Dental Center in Kharadi, Pune, including checkups, digital X-rays, teeth cleaning, root canal treatment, extractions and minor oral surgery."
+        />
+
+        <meta
+          property="og:url"
+          content="https://denzadental.com/general-dental"
+        />
+
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+
+        <meta
+          property="og:image:alt"
+          content="General dental services at Denza Dental Center in Kharadi, Pune"
+        />
+
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+
+      </Helmet>
+      
       <PageTop title="General Dental Services" />
 
       <div className="parent second_parent">

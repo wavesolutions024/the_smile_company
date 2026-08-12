@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -114,7 +115,101 @@ const DentalCheckUps = () => {
 
   return (
     <>
-     
+      <Helmet>
+        <title>
+          Dental Check-Up in Kharadi, Pune | Denza Dental Center
+        </title>
+
+        <meta
+          name="description"
+          content="Book a dental check-up at Denza Dental Center in Kharadi, Pune. Get a thorough examination of your teeth and gums, X-rays when needed, professional cleaning and personalized oral health advice."
+        />
+        <link
+          rel="canonical"
+          href="https://denzadental.com/dental-check-ups"
+        />
+
+        <meta
+          name="keywords"
+          content="
+          dental check-up Kharadi,
+          dental checkup Kharadi,
+          dental check-up Pune,
+          dental checkup Pune,
+          dentist for dental checkup Kharadi,
+          dental examination Kharadi,
+          dental examination Pune,
+          routine dental checkup Kharadi,
+          routine dental checkup Pune,
+          preventive dentistry Kharadi,
+          preventive dentistry Pune,
+          oral health checkup Kharadi,
+          teeth checkup Kharadi,
+          gum checkup Kharadi,
+          dental cleaning Kharadi,
+          professional teeth cleaning Pune,
+          dental X-ray Kharadi,
+          dentist Kharadi Pune,
+          dental clinic Kharadi Pune,
+          dental clinic near Marvel Enigma Kharadi,
+          Denza Dental Center,
+          Denza Dental,
+          Denza Dental Kharadi,
+          Denza Dental Pune
+        "
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+
+        <meta
+          property="og:title"
+          content="Dental Check-Up in Kharadi, Pune | Denza Dental Center"
+        />
+
+        <meta
+          property="og:description"
+          content="Book a dental check-up at Denza Dental Center in Kharadi, Pune. Get dental examination, X-rays when needed, professional cleaning and personalized oral health guidance."
+        />
+
+        <meta
+          property="og:url"
+          content="https://denzadental.com/dental-check-ups"
+        />
+
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+
+        <meta
+          property="og:image:alt"
+          content="Dental check-up at Denza Dental Center in Kharadi, Pune"
+        />
+
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
+
 
       <PageTop title="Dental Check Up Services" />
 

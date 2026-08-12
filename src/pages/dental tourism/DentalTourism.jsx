@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import clnic_img from "../../assets/dental_tourism_img1.jpeg";
 import Button from "../../comp/button/Button";
 import serviceHero from "../../assets/service_hero.png";
+import { Helmet } from "react-helmet";
 
 const DentalTourism = () => {
   const services = [
@@ -84,6 +85,131 @@ const DentalTourism = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Dental Tourism in Pune, India | Denza Dental Center
+        </title>
+
+        <meta
+          name="description"
+          content="Explore dental tourism at Denza Dental Center in Kharadi, Pune, India. Specialist-led dental care, dental implants, smile makeovers, root canal treatment, full mouth rehabilitation and advanced dental technology for patients seeking treatment in India."
+        />
+
+        <meta
+          name="keywords"
+          content="
+          dental tourism India,
+          dental tourism Pune,
+          dental tourism in Pune,
+          dental tourism clinic Pune,
+          dental tourism Kharadi,
+          dental treatment in India,
+          dental treatment Pune India,
+          international dental clinic Pune,
+          international dentist Pune,
+          international dental care Pune,
+          international patients dental treatment India,
+          dentist for international patients Pune,
+          dental clinic for international patients Pune,
+          dental implants India,
+          dental implants Pune,
+          dental implants Kharadi Pune,
+          smile makeover India,
+          smile makeover Pune,
+          smile makeover Kharadi,
+          cosmetic dentistry India,
+          cosmetic dentistry Pune,
+          root canal treatment Pune,
+          root canal treatment India,
+          full mouth rehabilitation Pune,
+          full mouth rehabilitation India,
+          prosthodontist Pune,
+          implantologist Pune,
+          endodontist Pune,
+          specialist dentist Pune,
+          MDS dentist Pune,
+          MDS dental specialists Pune,
+          Denza Dental Center,
+          Denza Dental,
+          Denza Dentistry,
+          Denza Dental Center Pune,
+          Denza Dental Center Kharadi,
+          Denza Dental Kharadi,
+          dental clinic Kharadi Pune,
+          dentist Kharadi Pune,
+          dental clinic near Marvel Enigma Kharadi,
+          advanced dental clinic Pune,
+          advanced dental technology Pune
+        "
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/dental-tourism"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          name="geo.position"
+          content="18.5515;73.9430"
+        />
+
+        <meta
+          name="ICBM"
+          content="18.5515, 73.9430"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+
+        <meta
+          property="og:title"
+          content="Dental Tourism in Pune, India | Denza Dental Center"
+        />
+
+        <meta
+          property="og:description"
+          content="Specialist-led dental care in Kharadi, Pune, India for patients seeking dental treatment in India, including dental implants, smile makeovers, root canal treatment and full mouth rehabilitation."
+        />
+
+        <meta
+          property="og:url"
+          content="https://denzadental.com/dental-tourism"
+        />
+
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+
+        <meta
+          property="og:image:alt"
+          content="Denza Dental Center - Dental Tourism in Pune, India"
+        />
+
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
+
+
       <div className="parent dental_tourish_parent">
         <div className="overlay"></div>
 

@@ -3,10 +3,118 @@ import { FiClock, FiMail, FiPhone } from "react-icons/fi";
 import PageTop from "../../comp/page_top/PageTop";
 import "./Contact.scss";
 import Button from "../../comp/button/Button";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <>
+      <Helmet>
+        <title>
+          Contact Denza Dental Center | Dentist in Kharadi, Pune
+        </title>
+
+        <meta
+          name="description"
+          content="Contact Denza Dental Center in Kharadi, Pune to book a dental consultation. Find our clinic address, phone number, timings and appointment information."
+        />
+
+        <meta
+          name="keywords"
+          content="
+          Denza Dental Center,
+          Denza Dental,
+          Denza Dentistry,
+          Contact Denza Dental Center,
+          Denza Dental contact,
+          Denza Dental phone number,
+          Denza Dental address,
+          Denza Dental Kharadi,
+          Denza Dental Pune,
+          dental clinic Kharadi Pune,
+          dentist Kharadi Pune,
+          dentist near Kharadi Pune,
+          dental clinic near Marvel Enigma Kharadi,
+          dentist near Marvel Enigma Kharadi,
+          dental appointment Kharadi,
+          dental consultation Kharadi,
+          dentist appointment Pune,
+          dental consultation Pune,
+          dental clinic Pune,
+          specialist dentist Kharadi,
+          MDS dentist Kharadi Pune,
+          dental clinic near me Kharadi
+        "
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/contact"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          name="geo.position"
+          content="18.5515;73.9430"
+        />
+
+        <meta
+          name="ICBM"
+          content="18.5515, 73.9430"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+
+        <meta
+          property="og:title"
+          content="Contact Denza Dental Center | Dentist in Kharadi, Pune"
+        />
+
+        <meta
+          property="og:description"
+          content="Contact Denza Dental Center in Kharadi, Pune to book a dental consultation. Find our clinic address, phone number, timings and appointment information."
+        />
+
+        <meta
+          property="og:url"
+          content="https://denzadental.com/contact"
+        />
+
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+
+        <meta
+          property="og:image:alt"
+          content="Denza Dental Center in Kharadi, Pune"
+        />
+
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+
+
+
+
+      </Helmet>
       <div className="parent dental_tourish_parent">
         <div className="overlay"></div>
 
