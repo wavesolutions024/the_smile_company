@@ -69,9 +69,9 @@ function AppLayout() {
       {!hideHeaderFooter && <HeaderNew />}
       <Routes>
         <Route element={<Home />} path="/" />
-        <Route element={<About />} path="/about" />
+        <Route element={<About />} path="/about-us" />
         <Route element={<Contact />} path="/contact" />
-        <Route element={<GeneralDental />} path="/general-dental" />
+        <Route element={<GeneralDental />} path="/general-dental-services" />
         <Route element={<RestorativeDentistry />} path="/restorative-dentistry" />
         <Route element={<CosmeticDentistry />} path="/cosmetic-dentistry" />
         <Route element={<OrthodonticTreatments />} path="/orthodontic-treatments" />
@@ -106,8 +106,8 @@ function AppLayout() {
         <Route element={<CeramicBraces />} path="/ceramic-braces" />
         <Route element={<MetalBraces />} path="/metal-braces" />
         <Route element={<LingualBraces />} path="/lingual-braces" />
-        <Route element={<AllOnFour />} path="/all-on-four" />
-        <Route element={<ImplantSupported />} path="/implant-supported" />
+        <Route element={<AllOnFour />} path="/all-on-four-and-all-on-six-dental-implants" />
+        <Route element={<ImplantSupported />} path="/implant-supported-overdenture" />
         <Route element={<Female />} path="/female-dr" />
         <Route element={<BlogDetails />} path="/blog-details" />
         <Route element={<Blogs />} path="/blogs" />
@@ -115,7 +115,7 @@ function AppLayout() {
         <Route element={<OurWork />} path="/our-work" />
         <Route element={<DentalLasersServices />} path="/dental-lasers-services" />
         {/* technology  */}
-        <Route element={<Cbct />} path="/cbct" />
+        <Route element={<Cbct />} path="/cbct-3d-machine" />
         <Route element={<IntraOralScanning />} path="/intra-oral-scanning" />
         <Route element={<DentalLasers />} path="/dental-lasers" />
         <Route element={<GbtCleaning />} path="/gbt-cleaning" />

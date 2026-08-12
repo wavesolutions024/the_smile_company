@@ -51,7 +51,7 @@ const Header = () => {
               <Link to="/" onClick={() => setHeader(false)}>
                 Home
               </Link>
-              <Link to="/about" onClick={() => setHeader(false)}>
+              <Link to="/about-us" onClick={() => setHeader(false)}>
                 About Us
               </Link>
               <Link to="/general-dental" onClick={() => setHeader(false)}>
