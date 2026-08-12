@@ -394,6 +394,7 @@ const OurWork = () => {
 
         {/* befor footer */}
 
+<<<<<<< HEAD
         <div className="transformation_cta">
           <div className="transformation_cta_inner">
             <h2>Your transformation starts here</h2>
@@ -410,6 +411,23 @@ const OurWork = () => {
                 WhatsApp us
               </a>
             </div>
+=======
+      <div className="transformation_cta">
+        <div className="transformation_cta_inner">
+          <h2>Your transformation starts here</h2>
+          <div className="cta_buttons">
+            <Link to="/contact-us" className="cta_primary">
+              Book a consultation
+            </Link>
+            <a
+              href="https://wa.me/7028131132"
+              target="_blank"
+              rel="noreferrer"
+              className="cta_secondary"
+            >
+              WhatsApp us
+            </a>
+>>>>>>> 03dce062ceef644194c7b2324b83170cc6b4524e
           </div>
         </div>
       </div>

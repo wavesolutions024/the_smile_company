@@ -174,7 +174,7 @@ const GbtCleaning = () => {
               ))}
             </div>
             <div className="bottom-row">
-              <Link to="/contact" className="btn">
+              <Link to="/contact-us" className="btn">
                 Appointment
               </Link>
             </div>

@@ -271,6 +271,84 @@ const Home = () => {
     AOS.refresh();
   }, []);
 
+ const schema = {
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "@id": "https://www.denzadental.com/#dentist",
+
+  name: "Denza Dental Center",
+
+  description:
+    "Denza Dental Center is a multispecialty dental clinic in Kharadi, Pune offering dental implants, smile makeovers, root canal treatment, full mouth rehabilitation, cosmetic dentistry, orthodontics, pediatric dentistry and advanced dental care.",
+
+  url: "https://www.denzadental.com/",
+  telephone: "+91-7028131132",
+
+  address: {
+    "@type": "PostalAddress",
+    streetAddress:
+      "Office No. 111, First Floor, Zen Square, Opp. Marvel Enigma, Kharadi",
+    addressLocality: "Pune",
+    addressRegion: "Maharashtra",
+    postalCode: "411014",
+    addressCountry: "IN",
+  },
+
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
+    opens: "09:00",
+    closes: "21:00",
+  },
+
+  sameAs: [
+    "https://www.facebook.com/people/Denza-Dental-Center/61575538874507/",
+    "https://www.instagram.com/denzadentalcenter/",
+    "https://www.youtube.com/@DenzaDentalCenter",
+  ],
+
+  image: "https://www.denzadental.com/og-image.jpg",
+
+  logo: {
+    "@type": "ImageObject",
+    url: "https://www.denzadental.com/og-image.jpg",
+  },
+
+  hasMap: "https://maps.app.goo.gl/MgrEKEfafiLS9KiN9",
+
+  employee: [
+    {
+      "@type": "Person",
+      name: "Dr. Hemant Suresh Thodsare",
+      jobTitle: "Co-founder, Prosthodontist & Implantologist",
+      worksFor: {
+        "@id": "https://www.denzadental.com/#dentist",
+      },
+    },
+    {
+      "@type": "Person",
+      name: "Dr. Devika Kalaskar-Thodsare",
+      jobTitle: "Co-founder, Endodontist & Esthetic Dentist",
+      worksFor: {
+        "@id": "https://www.denzadental.com/#dentist",
+      },
+    },
+  ],
+
+  areaServed: {
+    "@type": "City",
+    name: "Pune",
+  },
+};
+
   return (
     <>
       <Helmet>
@@ -289,7 +367,9 @@ const Home = () => {
           content="Denza Dental Center, Denza Dental, Denza Dentistry, Denza Dental Center Kharadi, Denza Dental Center Pune, dental clinic in Kharadi Pune, dentist in Kharadi Pune, best dental clinic in Kharadi, dentist near Marvel Enigma Kharadi, dental clinic near Marvel Enigma, multispecialty dental clinic Kharadi, dental implants Kharadi Pune, dental implant centre Kharadi, dental implants Pune, smile makeover Kharadi Pune, smile makeover Pune, smile designing Kharadi, cosmetic dentistry Kharadi Pune, cosmetic dentist Kharadi, root canal treatment Kharadi Pune, root canal dentist Kharadi, full mouth rehabilitation Kharadi, full mouth rehabilitation Pune, restorative dentistry Kharadi, restorative dentistry Pune, orthodontist Kharadi Pune, orthodontic treatment Kharadi, pediatric dentist Kharadi Pune, pediatric dentistry Punei, dental checkup Kharadi, preventive dentistry Kharadi, teeth cleaning Kharadi Pune, GBT cleaning Pune, dental laser treatment Kharadi, CBCT dental scan Pune, intraoral scanning Pune, digital dentistry Kharadi, advanced dental clinic Pune, sedation dentistry Pune, international smile makeover centre Pune, international dental centre Pune, dental care Kharadi Pune, "
         />
 
-        <link rel="canonical" href="https://denzadental.com/" />
+        <script type="application/ld+json">{JSON.stringify(schema)}</script>
+
+        <link rel="canonical" href="https://www.denzadental.com/" />
 
         <meta property="og:type" content="website" />
 
@@ -305,11 +385,11 @@ const Home = () => {
           content="Comprehensive dental care in Kharadi, Pune including dental implants, smile makeovers, root canal treatment, full mouth rehabilitation, cosmetic dentistry, orthodontics, pediatric dentistry and advanced dental technology."
         />
 
-        <meta property="og:url" content="https://denzadental.com/" />
+        <meta property="og:url" content="https://www.denzadental.com/" />
 
         <meta
           property="og:image"
-          content="https://denzadental.com/og-image.jpg"
+          content="https://www.denzadental.com/og-image.jpg"
         />
 
         <meta
