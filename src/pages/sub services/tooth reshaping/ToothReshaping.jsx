@@ -15,6 +15,7 @@ import beforeAfter2 from "../../../assets/before_after/img2.jpg";
 import beforeAfter3 from "../../../assets/before_after/img3.jpg";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 
 const whyChooseData = [
@@ -134,6 +135,116 @@ const ToothReshaping = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Tooth Reshaping in Kharadi, Pune | Denza
+          Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Explore tooth reshaping and 
+cosmetic tooth contouring in Kharadi, Pune at 
+Denza Dental Center. Learn about tooth 
+contouring, bonding, veneers, benefits, aftercare 
+and treatment suitability."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/tooth-reshaping"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+tooth reshaping Kharadi, 
+tooth reshaping Pune, 
+teeth reshaping Kharadi, 
+teeth reshaping Pune, 
+tooth contouring Kharadi, 
+tooth contouring Pune, 
+dental contouring Kharadi, 
+dental contouring Pune, 
+cosmetic tooth contouring Kharadi, 
+cosmetic tooth contouring Pune, 
+tooth reshaping dentist Kharadi, 
+tooth reshaping dentist Pune, 
+tooth reshaping clinic Kharadi, 
+teeth contouring Kharadi, 
+teeth contouring Pune, 
+cosmetic dentistry Kharadi, 
+cosmetic dentistry Pune, 
+cosmetic dentist Kharadi, 
+cosmetic dentist Pune, 
+uneven teeth treatment Kharadi, 
+uneven teeth treatment Pune, 
+uneven tooth edges Kharadi, 
+chipped tooth cosmetic treatment Pune, 
+minor chipped teeth treatment Kharadi, 
+tooth shape correction Pune, 
+tooth length correction Pune, 
+smile enhancement Kharadi, 
+smile enhancement Pune, 
+tooth reshaping cost Pune, 
+tooth reshaping price Pune, 
+tooth contouring cost Pune, 
+dental bonding Kharadi, 
+porcelain veneers Kharadi, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Tooth Reshaping in Kharadi, Pune | 
+Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Tooth reshaping and cosmetic tooth 
+contouring at Denza Dental Center in Kharadi, 
+Pune. Learn about treatment options, tooth 
+contouring, bonding, veneers and aftercare."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/tooth-reshaping
+"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Tooth reshaping treatment at 
+Denza Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Tooth Reshaping Services" />
 
       <div className="brace_treat_parent parent">

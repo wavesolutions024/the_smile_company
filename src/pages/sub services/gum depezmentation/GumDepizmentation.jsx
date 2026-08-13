@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 
 const whyChooseData = [
@@ -117,6 +118,115 @@ const GumDepizmentation = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Gum Depigmentation in Kharadi, Pune |
+          Laser Gum Treatment
+        </title>
+        <meta
+          name="description"
+          content="Gum depigmentation in Kharadi, 
+Pune at Denza Dental Center. Laser gum 
+pigmentation treatment to reduce dark or uneven 
+gum pigmentation and improve smile aesthetics."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/gum-depizmentatio
+n"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+gum depigmentation Kharadi, 
+gum depigmentation Pune, 
+gum pigmentation treatment Kharadi, 
+gum pigmentation treatment Pune, 
+dark gums treatment Kharadi, 
+dark gums treatment Pune, 
+dark gum treatment Kharadi, 
+dark gums dentist Pune, 
+gum bleaching Kharadi, 
+gum bleaching Pune, 
+laser gum depigmentation Kharadi, 
+laser gum depigmentation Pune, 
+laser gum pigmentation treatment Kharadi, 
+laser gum treatment Pune, 
+gum lightening Kharadi, 
+gum lightening Pune, 
+gum depigmentation dentist Kharadi, 
+gum depigmentation clinic Kharadi, 
+gum depigmentation near Kharadi, 
+gum depigmentation near me, 
+gum bleaching treatment Kharadi, 
+melanin gum pigmentation treatment, 
+pigmented gums treatment Pune, 
+uneven gum pigmentation Kharadi, 
+cosmetic gum treatment Pune, 
+cosmetic dentistry Kharadi, 
+gum depigmentation cost Kharadi, 
+gum depigmentation cost Pune, 
+gum depigmentation price Kharadi, 
+laser dentistry Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Gum Depigmentation in Kharadi, 
+Pune | Laser Gum Treatment"
+        />
+        <meta
+          property="og:description"
+          content="Laser gum depigmentation in 
+Kharadi, Pune at Denza Dental Center for 
+reducing dark or uneven gum pigmentation and 
+improving smile aesthetics."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/gum-depizment
+ation"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Laser gum depigmentation at 
+Denza Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title=" Gum Depigmentation Services" />
 
       <div className="book_appoint">
@@ -133,7 +243,7 @@ const GumDepizmentation = () => {
           </div>
 
           <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " style={{objectFit:"cover"}} />
+            <img src={apointment} alt="Dental Appointment " style={{ objectFit: "cover" }} />
           </div>
         </div>
       </div>
@@ -242,14 +352,14 @@ const GumDepizmentation = () => {
           <h2>Laser vs Manual Gum Depigmentation – Which is Better? </h2>
 
           <p>
-            Laser gum depigmentation is generally the preferred choice due to its precision 
-and comfort compared to manual methods.
+            Laser gum depigmentation is generally the preferred choice due to its precision
+            and comfort compared to manual methods.
           </p>
           <p>Benefits of Laser Gum Depigmentation</p>
 
           <ul>
             <li>
-              <b>Less Bleeding </b>– Minimally invasive technique 
+              <b>Less Bleeding </b>– Minimally invasive technique
             </li>
 
             <li>
@@ -261,11 +371,11 @@ and comfort compared to manual methods.
             </li>
 
             <li>
-              <b>Minimal Discomfort </b>– More comfortable procedure 
+              <b>Minimal Discomfort </b>– More comfortable procedure
             </li>
 
             <li>
-              <b>Better Gum Contours </b>– Smoother, natural-looking results 
+              <b>Better Gum Contours </b>– Smoother, natural-looking results
             </li>
 
             <li>
@@ -275,7 +385,7 @@ and comfort compared to manual methods.
             <li>
               <b>Shorter Treatment Time </b>– Efficient and quick procedure
             </li>
-          
+
           </ul>
         </div>
       </div>
@@ -296,7 +406,7 @@ and comfort compared to manual methods.
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

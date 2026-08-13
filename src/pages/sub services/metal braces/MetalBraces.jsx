@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 
 const servicess = [
@@ -106,6 +107,115 @@ const MetalBraces = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Metal Braces in Kharadi, Pune | Denza
+          Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Get metal braces treatment in 
+Kharadi, Pune at Denza Dental Center. Learn 
+about traditional metal braces, treatment steps, 
+benefits, care, duration and orthodontic options."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/metal-braces"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+metal braces Kharadi, 
+metal braces Pune, 
+metal braces treatment Kharadi, 
+metal braces treatment Pune, 
+traditional braces Kharadi, 
+traditional braces Pune, 
+traditional metal braces Kharadi, 
+traditional metal braces Pune, 
+braces treatment Kharadi, 
+braces treatment Pune, 
+orthodontic treatment Kharadi, 
+orthodontic treatment Pune, 
+orthodontist Kharadi, 
+orthodontist Pune, 
+metal braces dentist Kharadi, 
+metal braces clinic Kharadi, 
+braces dentist Kharadi, 
+braces clinic Kharadi, 
+metal braces near Kharadi, 
+metal braces near me Kharadi, 
+affordable metal braces Kharadi, 
+metal braces cost Kharadi, 
+metal braces cost Pune, 
+metal braces price Pune, 
+braces cost Kharadi, 
+braces for crowded teeth Kharadi, 
+braces for crooked teeth Pune, 
+braces for gaps between teeth Pune, 
+braces for bite problems Kharadi, 
+braces for adults Kharadi, 
+braces for teenagers Pune, 
+braces for children Kharadi, 
+stainless steel braces Pune, 
+orthodontic braces Kharadi, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Metal Braces in Kharadi, Pune | 
+Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Metal braces treatment at Denza 
+Dental Center in Kharadi, Pune. Learn about 
+traditional braces, treatment steps, benefits, care 
+and orthodontic treatment options."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/metal-braces"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Metal braces treatment at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Metal Braces Services" />
 
       <div className="brace_treat_parent parent">

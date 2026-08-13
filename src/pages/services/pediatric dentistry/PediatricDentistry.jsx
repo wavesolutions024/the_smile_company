@@ -7,6 +7,7 @@ import "./PediatricDentistry.scss";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const services = [
   {
@@ -89,6 +90,117 @@ const PediatricDentistry = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Pediatric Dentistry in Kharadi, Pune | Denza
+          Dental
+        </title>
+        <meta
+          name="description"
+          content="Pediatric dentistry in Kharadi, Pune 
+at Denza Dental Center for children's dental 
+checkups, cavity prevention and treatment, dental 
+emergencies, oral hygiene guidance and 
+preventive care."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/pediatric-dentistry"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+pediatric dentist Kharadi, 
+pediatric dentistry Kharadi, 
+pediatric dentist Pune, 
+pediatric dentistry Pune, 
+kids dentist Kharadi, 
+kids dentist Pune, 
+children's dentist Kharadi, 
+children's dentist Pune, 
+child dental clinic Kharadi, 
+child dental clinic Pune, 
+pediatric dental care Kharadi, 
+pediatric dental treatment Pune, 
+pediatric dental clinic Kharadi, 
+pediatric dental clinic Pune, 
+children's dental checkup Kharadi, 
+kids dental checkup Pune, 
+children's teeth cleaning Kharadi, 
+child cavity treatment Pune, 
+kids cavity treatment Kharadi, 
+baby teeth dentist Kharadi, 
+baby teeth treatment Pune, 
+nursing bottle caries Kharadi, 
+dental emergency for children Pune, 
+pediatric dental emergency Kharadi, 
+children's mouthguards Pune, 
+pediatric orthodontics Kharadi, 
+special needs dentistry Kharadi, 
+special needs dentist Pune, 
+children's oral hygiene Kharadi, 
+first dental visit Pune, 
+dentist for children near Kharadi, 
+pediatric dentist near me Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Pediatric Dentistry in Kharadi, Pune 
+| Denza Dental"
+        />
+        <meta
+          property="og:description"
+          content="Children's dental care at Denza 
+Dental Center in Kharadi, Pune, including 
+preventive care, cavity management, dental 
+emergencies and oral hygiene guidance."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/pediatric-dentist
+ry"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Pediatric dentistry at Denza Dental 
+Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Pediatric Dentistry Services" />
 
       <div className="parent second_parent11">

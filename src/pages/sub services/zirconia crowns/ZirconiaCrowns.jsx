@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 
 const whyChooseData = [
@@ -120,6 +121,111 @@ const ZirconiaCrowns = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Zirconia Crowns in Kharadi, Pune | Zirconia
+          Tooth Caps
+        </title>
+        <meta
+          name="description"
+          content="Get zirconia dental crowns in 
+Kharadi, Pune at Denza Dental Center. Learn 
+about zirconia crowns, benefits, durability, 
+appearance, suitability and zirconia tooth cap 
+cost."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/zirconia-crowns"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+zirconia crowns Kharadi, 
+zirconia crowns Pune, 
+zirconia dental crowns Kharadi, 
+zirconia dental crowns Pune, 
+zirconia tooth cap Kharadi, 
+zirconia tooth cap Pune, 
+zirconia dental cap Kharadi, 
+zirconia dental cap Pune, 
+zirconia crown dentist Kharadi, 
+zirconia crown clinic Kharadi, 
+zirconia crown treatment Pune, 
+zirconia crown near Kharadi, 
+zirconia crown near me Kharadi, 
+zirconia crown cost Kharadi, 
+zirconia crown cost Pune, 
+zirconia tooth cap cost Pune, 
+zirconia crown price Kharadi, 
+zirconia crown price Pune, 
+best zirconia crowns Kharadi, 
+aesthetic dental crowns Pune, 
+tooth colored crowns Kharadi, 
+ceramic dental crowns Pune, 
+dental crowns after root canal Kharadi, 
+dental crown replacement Pune, 
+dental crowns Kharadi Pune, 
+restorative dentist Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Zirconia Crowns in Kharadi, Pune | 
+Zirconia Tooth Caps"
+        />
+        <meta
+          property="og:description"
+          content="Zirconia dental crowns in Kharadi, 
+Pune at Denza Dental Center. Explore zirconia 
+crown benefits, durability, appearance, suitability 
+and cost."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/zirconia-crowns
+"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Zirconia dental crowns at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Zirconia Crowns Services" />
 
       <div className="after_care_parent parent">

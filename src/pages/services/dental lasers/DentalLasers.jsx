@@ -7,6 +7,7 @@ import "./DentalLasers.scss";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const services = [
   {
@@ -46,6 +47,102 @@ const RestorativeDentistry = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Dental Laser Technology in Kharadi, Pune |
+          Denza Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Explore advanced dental laser 
+technology at Denza Dental Center in Kharadi, 
+Pune. Our diode laser supports precise, minimally 
+invasive dental procedures with a focus on 
+comfort and efficient care."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/dental-lasers"
+        />
+        <meta
+          name="keywords"
+          content=" 
+dental laser technology Kharadi, 
+dental laser Kharadi, 
+dental laser Pune, 
+dental laser treatment Kharadi, 
+laser dentistry Kharadi, 
+laser dentistry Pune, 
+diode laser dentistry Kharadi, 
+diode dental laser Pune, 
+dental lasers near Kharadi, 
+laser dental treatment Pune, 
+laser gum treatment Kharadi, 
+laser gum treatment Pune, 
+laser gum reshaping Kharadi, 
+soft tissue laser dentistry Pune, 
+dental laser clinic Kharadi, 
+advanced dental technology Kharadi, 
+advanced dental technology Pune, 
+minimally invasive dentistry Kharadi, 
+modern dental technology Pune, 
+dental laser dentist Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Dental Laser Technology in 
+Kharadi, Pune | Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Advanced dental laser technology 
+at Denza Dental Center in Kharadi, Pune. Diode 
+laser dentistry supports precise, minimally 
+invasive dental procedures with a focus on patient 
+comfort."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/dental-lasers"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Dental laser technology at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Dental Lasers Technology" />
 
       <div className="parent second_parent">

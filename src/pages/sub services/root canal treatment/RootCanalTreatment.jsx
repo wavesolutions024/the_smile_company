@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -144,9 +145,115 @@ const RootCanalTreatment = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Root Canal Treatment in Kharadi, Pune |
+          Denza Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Get root canal treatment in Kharadi, 
+Pune at Denza Dental Center. Learn about RCT 
+symptoms, causes, treatment benefits, recovery, 
+costs and when a dental crown may be needed."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/root-canal-treatment"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+root canal treatment Kharadi, 
+root canal treatment Pune, 
+root canal dentist Kharadi, 
+root canal dentist Pune, 
+RCT Kharadi, 
+RCT treatment Pune, 
+root canal therapy Kharadi, 
+root canal clinic Kharadi, 
+root canal specialist Kharadi, 
+root canal treatment near Kharadi, 
+root canal treatment near me Kharadi, 
+painless root canal Kharadi, 
+comfortable root canal treatment Pune, 
+infected tooth treatment Kharadi, 
+tooth infection treatment Pune, 
+tooth pain dentist Kharadi, 
+tooth nerve infection treatment Pune, 
+dental pulp infection Kharadi, 
+root canal cost Kharadi, 
+root canal cost Pune, 
+root canal treatment price Kharadi, 
+root canal crown Pune, 
+crown after root canal Kharadi, 
+root canal retreatment Kharadi, 
+failed root canal treatment Pune, 
+endodontic treatment Kharadi, 
+endodontic dentist Pune, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Root Canal Treatment in Kharadi, 
+Pune | Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Root canal treatment at Denza 
+Dental Center in Kharadi, Pune for infected or 
+damaged teeth. Learn about symptoms, causes, 
+treatment, recovery and crowns after RCT."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/root-canal-treat
+ment"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Root canal treatment at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+
+      </Helmet>
       <PageTop title="Root Canal Treatment Services" />
 
-      <div className="book_appoint" style={{background:"white"}}>
+      <div className="book_appoint" style={{ background: "white" }}>
         <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_side red_background">
             <img src={apointment} alt="Dental Appointment " />
@@ -210,7 +317,7 @@ const RootCanalTreatment = () => {
         </div>
       </div>
 
-      <div className="book_appoint" style={{background:"white"}}>
+      <div className="book_appoint" style={{ background: "white" }}>
         <div className="book_appoint_container" data-aos="fade-up">
           <div className="book_appoint_text">
             <h2>Symptoms and Causes of Root Canal Treatment </h2>
@@ -312,7 +419,7 @@ const RootCanalTreatment = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-               
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

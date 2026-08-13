@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 
 const servicess = [
@@ -108,6 +109,112 @@ const LingualBraces = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Lingual Braces in Kharadi, Pune | Denza
+          Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Get lingual braces treatment in 
+Kharadi, Pune at Denza Dental Center. Learn 
+about hidden braces, treatment procedure, 
+benefits, care, duration and orthodontic options."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/lingual-braces"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+lingual braces Kharadi, 
+lingual braces Pune, 
+lingual braces treatment Kharadi, 
+lingual braces treatment Pune, 
+hidden braces Kharadi, 
+hidden braces Pune, 
+invisible braces Kharadi, 
+invisible braces Pune, 
+behind the teeth braces Pune, 
+behind teeth braces Kharadi, 
+lingual orthodontics Pune, 
+lingual orthodontic treatment Kharadi, 
+discreet braces Pune, 
+discreet orthodontic treatment Kharadi, 
+braces treatment Kharadi, 
+braces treatment Pune, 
+orthodontic treatment Kharadi, 
+orthodontic treatment Pune, 
+orthodontist Kharadi, 
+orthodontist Pune, 
+lingual braces dentist Kharadi, 
+lingual braces clinic Kharadi, 
+lingual braces near Kharadi, 
+lingual braces near me Kharadi, 
+lingual braces cost Kharadi, 
+lingual braces cost Pune, 
+lingual braces price Pune, 
+hidden braces cost Pune, 
+braces for adults Kharadi, 
+discreet braces for adults Pune, 
+braces behind teeth Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Lingual Braces in Kharadi, Pune | 
+Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Lingual braces treatment at Denza 
+Dental Center in Kharadi, Pune. Learn about 
+hidden braces, treatment procedure, benefits, 
+care and orthodontic treatment options."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/lingual-braces"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Lingual braces treatment at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Lingual Braces Services" />
 
       <div className="brace_treat_parent parent">
@@ -200,7 +307,7 @@ const LingualBraces = () => {
       <div className="third_section" style={{ background: "var(--white)" }}>
         <div className="third_header">
           <h2 style={{ textAlign: "center", color: "var(--accent)" }}>
-            Lingual Braces Procedure at Denza Dental, Kharadi (Pune) 
+            Lingual Braces Procedure at Denza Dental, Kharadi (Pune)
           </h2>
         </div>
 
@@ -225,10 +332,10 @@ const LingualBraces = () => {
           <div className="left_side_side">
             <h3>Precautions During Lingual Braces Treatment</h3>
             <ul>
-             <li>Avoid hard, sticky, and sugary foods</li>
-             <li>Clean behind teeth carefully after every meal</li>
-             <li>Use special orthodontic brushes and tools</li>
-             <li>Do not miss adjustment appointments </li>
+              <li>Avoid hard, sticky, and sugary foods</li>
+              <li>Clean behind teeth carefully after every meal</li>
+              <li>Use special orthodontic brushes and tools</li>
+              <li>Do not miss adjustment appointments </li>
             </ul>
           </div>
 
@@ -244,7 +351,7 @@ const LingualBraces = () => {
         </div>
       </div>
 
-      
+
       <div className="faq_section1">
         <div className="faq_header">
           <h2>FAQs</h2>
@@ -261,7 +368,7 @@ const LingualBraces = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

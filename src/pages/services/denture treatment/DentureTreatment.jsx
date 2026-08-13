@@ -7,6 +7,7 @@ import "./DentureTreatment.scss";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const services = [
   {
@@ -83,6 +84,116 @@ const RestorativeDentistry = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Denture Treatment in Kharadi, Pune | Denza
+          Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Get denture treatment in Kharadi, 
+Pune at Denza Dental Center. Explore complete, 
+partial, immediate and implant-supported 
+dentures for replacing missing teeth with 
+personalized fitting and care."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/denture-treatment"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+denture treatment Kharadi, 
+dentures Kharadi, 
+dentures Pune, 
+denture treatment Pune, 
+denture dentist Kharadi, 
+denture clinic Kharadi, 
+dentures near Kharadi, 
+dentures near me Kharadi, 
+complete dentures Kharadi, 
+complete dentures Pune, 
+full dentures Kharadi, 
+partial dentures Kharadi, 
+partial dentures Pune, 
+removable dentures Kharadi, 
+immediate dentures Kharadi, 
+immediate dentures Pune, 
+implant supported dentures Kharadi, 
+implant supported dentures Pune, 
+fixed dentures Pune, 
+teeth replacement dentures Kharadi, 
+missing teeth replacement Pune, 
+artificial teeth Kharadi, 
+denture replacement Kharadi, 
+denture repair Pune, 
+denture fitting Kharadi, 
+denture cost Kharadi, 
+denture cost Pune, 
+dentures price Kharadi, 
+affordable dentures Pune, 
+prosthodontic treatment Kharadi, 
+prosthodontist Kharadi Pune, 
+tooth replacement Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Denture Treatment in Kharadi, 
+Pune | Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Complete, partial, immediate and 
+implant-supported denture treatment at Denza 
+Dental Center in Kharadi, Pune."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/denture-treatme
+nt"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Denture treatment at Denza Dental 
+Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Denture Treatment Services" />
 
 

@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 
 const whyChooseData = [
@@ -127,6 +128,117 @@ const ClearAligners = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Clear Aligners in Kharadi, Pune | Invisible
+          Teeth Straightening
+        </title>
+        <meta
+          name="description"
+          content="Get clear aligner treatment in 
+Kharadi, Pune at Denza Dental Center. Explore 
+invisible teeth straightening, treatment duration, 
+benefits, eligibility, care and aligners vs braces."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/clear-aligners"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+clear aligners Kharadi, 
+clear aligners Pune, 
+clear aligner treatment Kharadi, 
+clear aligner treatment Pune, 
+clear aligners dentist Kharadi, 
+clear aligners clinic Kharadi, 
+clear aligners near Kharadi, 
+clear aligners near me Kharadi, 
+invisible aligners Kharadi, 
+invisible aligners Pune, 
+invisible braces Kharadi, 
+invisible braces Pune, 
+transparent braces Kharadi, 
+transparent braces Pune, 
+teeth straightening Kharadi, 
+teeth straightening Pune, 
+clear braces Kharadi, 
+clear braces Pune, 
+aligner treatment Kharadi, 
+aligner treatment Pune, 
+orthodontic aligners Kharadi, 
+orthodontic aligners Pune, 
+clear aligners for adults Pune, 
+clear aligners for teenagers Pune, 
+crooked teeth aligners Kharadi, 
+teeth gap aligners Pune, 
+crowded teeth aligners Kharadi, 
+clear aligners cost Kharadi, 
+clear aligners cost Pune, 
+clear aligner price Pune, 
+invisible braces cost Pune, 
+aligners vs braces Pune, 
+clear aligner treatment duration, 
+clear aligner consultation Kharadi, 
+orthodontist Kharadi Pune, 
+orthodontic treatment Kharadi, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Clear Aligners in Kharadi, Pune | 
+Invisible Teeth Straightening"
+        />
+        <meta
+          property="og:description"
+          content="Clear aligner treatment at Denza 
+Dental Center in Kharadi, Pune for discreet teeth 
+straightening. Learn about benefits, treatment 
+duration, eligibility and aligner care."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/clear-aligners"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Clear aligner treatment at Denza 
+Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Clear Aligners Services" />
 
       <div className="brace_treat_parent parent">
@@ -197,7 +309,7 @@ const ClearAligners = () => {
               achieve a well-aligned smile.
             </p>
 
-            
+
           </div>
         </div>
       </div>
@@ -248,11 +360,11 @@ const ClearAligners = () => {
         <div className="cont dental_implants_procedures_cont">
           <h2>Before and After Clear Aligners</h2>
           <p>
-            <strong>Before: </strong>Crooked teeth, gaps, or bite misalignment affecting smile and function. 
+            <strong>Before: </strong>Crooked teeth, gaps, or bite misalignment affecting smile and function.
           </p>
 
           <p>
-            <strong>After:</strong>Straight, well-aligned smile with improved aesthetics and confidence. 
+            <strong>After:</strong>Straight, well-aligned smile with improved aesthetics and confidence.
           </p>
 
           <div className="dental_implants_cards_main1">
@@ -282,7 +394,7 @@ const ClearAligners = () => {
               <h3>During Clear Aligner Treatment</h3>
               <ul>
                 <li>
-                 Remove aligners while eating 
+                  Remove aligners while eating
                 </li>
                 <li>Avoid hot drinks with aligners on </li>
                 <li>Stay well hydrated </li>
@@ -321,7 +433,7 @@ const ClearAligners = () => {
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-                
+
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

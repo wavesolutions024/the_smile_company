@@ -8,6 +8,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import img4 from "../../../assets/about_section/img5.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 
 const IntraOralScanning = () => {
@@ -39,7 +40,112 @@ const IntraOralScanning = () => {
 
   return (
     <>
-      <PageTop title=" 3D intra oral scanning Technology"/>
+      <Helmet>
+        <title>
+          Intraoral Scanning in Kharadi, Pune | Digital
+          Dental Scanning
+        </title>
+        <meta
+          name="description"
+          content="Get digital intraoral scanning in 
+Kharadi, Pune at Denza Dental Center. 3D digital 
+impressions support accurate diagnosis, 
+treatment planning and dental restorations."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/intra-oral-scanning"
+        />
+        <meta
+          name="keywords"
+          content=" 
+intraoral scanning Kharadi, 
+intraoral scanning Pune, 
+intra oral scanning Kharadi, 
+intra oral scanning Pune, 
+intraoral scanner Kharadi, 
+intraoral scanner Pune, 
+digital dental scanning Kharadi, 
+digital dental scanning Pune, 
+digital dental impressions Kharadi, 
+digital dental impressions Pune, 
+3D intraoral scanning Kharadi, 
+3D intraoral scanning Pune, 
+digital impressions dentist Kharadi, 
+digital impressions dentist Pune, 
+intraoral scan near Kharadi, 
+intraoral scanning near me, 
+dental 3D scanning Kharadi, 
+dental 3D scanning Pune, 
+digital dentistry Kharadi, 
+digital dentistry Pune, 
+digital smile design Kharadi, 
+digital smile design Pune, 
+digital impressions for crowns Pune, 
+digital impressions for aligners Pune, 
+digital impressions for implants Pune, 
+intraoral scanning for orthodontics Pune, 
+intraoral scanning for restorative dentistry 
+Kharadi, 
+advanced dental technology Pune, 
+dental technology Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Intraoral Scanning in Kharadi, Pune 
+| Digital Dental Scanning"
+        />
+        <meta
+          property="og:description"
+          content="Digital intraoral scanning at Denza 
+Dental Center in Kharadi, Pune for accurate 3D 
+dental impressions, treatment planning and 
+restorative dental workflows."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/intra-oral-scanni
+ng"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Intraoral scanning at Denza Dental 
+Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
+      <PageTop title=" 3D intra oral scanning Technology" />
 
       <div className="parent second_parent">
         <div className="cont second_cont">

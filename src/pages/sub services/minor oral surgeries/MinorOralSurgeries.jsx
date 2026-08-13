@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -91,6 +92,108 @@ const MinorOralSurgeries = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Minor Oral Surgery in Kharadi, Pune | Denza
+          Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Minor oral surgery in Kharadi, Pune 
+at Denza Dental Center, including tooth 
+extraction, wisdom tooth removal, apicoectomy 
+and selected oral surgical procedures with 
+personalized treatment planning and aftercare."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/minor-oral-surgerie
+s"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+minor oral surgery Kharadi, 
+minor oral surgery Pune, 
+minor oral surgeries Kharadi, 
+minor oral surgery dentist Kharadi, 
+minor oral surgery clinic Pune, 
+oral surgery Kharadi, 
+oral surgery Pune, 
+dental surgery Kharadi, 
+minor dental surgery Pune, 
+oral surgical procedures Kharadi, 
+tooth extraction Kharadi, 
+wisdom tooth removal Kharadi, 
+impacted wisdom tooth surgery Pune, 
+apicoectomy Kharadi, 
+root end surgery Pune, 
+gum surgery Kharadi, 
+oral cyst removal Pune, 
+dental abscess treatment Kharadi, 
+surgical tooth extraction Pune, 
+dental surgery near Kharadi, 
+oral surgeon near Kharadi, 
+oral surgery near me Kharadi, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Minor Oral Surgery in Kharadi, 
+Pune | Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Minor oral surgery in Kharadi, Pune 
+including tooth extraction, wisdom tooth removal, 
+apicoectomy and selected oral surgical 
+procedures at Denza Dental Center."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/minor-oral-surg
+eries"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Minor oral surgery at Denza Dental 
+Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Minor Oral Surgeries Services" />
 
       <div className="wisdom_tooth_extract_parent parent">

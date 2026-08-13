@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -88,7 +89,7 @@ const faqs = [
     answer:
       "You can usually eat soon after the procedure, but it’s best to avoid hard or sticky foods for a few hours to allow the filling to settle properly.",
   },
-  
+
 ];
 
 const ToothColoredFilling = () => {
@@ -110,6 +111,110 @@ const ToothColoredFilling = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Tooth-Coloured Fillings in Kharadi, Pune |
+          Denza Dental
+        </title>
+        <meta
+          name="description"
+          content="Get tooth-coloured dental fillings in 
+Kharadi, Pune at Denza Dental Center. Restore 
+cavities and minor tooth damage with 
+natural-looking filling materials designed to blend 
+with your teeth."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/tooth-coloured-fillin
+g"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+tooth coloured fillings Kharadi, 
+tooth colored fillings Kharadi, 
+tooth coloured fillings Pune, 
+tooth colored fillings Pune, 
+dental fillings Kharadi, 
+dental fillings Pune, 
+tooth filling Kharadi, 
+tooth filling Pune, 
+composite fillings Kharadi, 
+composite fillings Pune, 
+white dental fillings Kharadi, 
+white fillings Pune, 
+cavity filling Kharadi, 
+cavity filling Pune, 
+cavity treatment Kharadi, 
+dental cavity treatment Pune, 
+tooth decay treatment Kharadi, 
+tooth decay treatment Pune, 
+aesthetic dental fillings Kharadi, 
+tooth restoration Kharadi, 
+dental restoration Pune, 
+dental filling dentist Kharadi, 
+dental filling clinic Kharadi, 
+dental fillings near me Kharadi, 
+tooth filling near Kharadi, 
+composite resin filling Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Tooth-Coloured Fillings in Kharadi, 
+Pune | Denza Dental"
+        />
+        <meta
+          property="og:description"
+          content="Tooth-coloured dental fillings at 
+Denza Dental Center in Kharadi, Pune for cavities 
+and minor tooth damage, using natural-looking 
+restorative materials."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/tooth-coloured-f
+illing"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Tooth-coloured dental fillings at 
+Denza Dental Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Tooth Colored Fillings Services" />
 
       <div className="wisdom_tooth_extract_parent parent">

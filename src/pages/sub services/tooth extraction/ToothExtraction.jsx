@@ -10,6 +10,7 @@ import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
+import { Helmet } from "react-helmet";
 
 const whyChooseData = [
   {
@@ -139,6 +140,113 @@ const ToothExtraction = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Tooth Extraction in Kharadi, Pune | Denza
+          Dental Center
+        </title>
+        <meta
+          name="description"
+          content="Get tooth extraction in Kharadi, 
+Pune at Denza Dental Center. We provide simple 
+and surgical tooth extraction, including wisdom 
+tooth removal, with personalized treatment 
+planning and aftercare."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/tooth-extraction"
+        />
+
+        <meta
+          name="keywords"
+          content=" 
+tooth extraction Kharadi, 
+tooth extraction Pune, 
+tooth removal Kharadi, 
+tooth removal Pune, 
+dental extraction Kharadi, 
+dental extraction Pune, 
+tooth extraction dentist Kharadi, 
+tooth extraction clinic Kharadi, 
+tooth extraction near Kharadi, 
+tooth extraction near me Kharadi, 
+tooth removal dentist Pune, 
+simple tooth extraction Kharadi, 
+surgical tooth extraction Kharadi, 
+surgical tooth extraction Pune, 
+wisdom tooth removal Kharadi, 
+wisdom tooth extraction Kharadi, 
+wisdom tooth removal Pune, 
+impacted wisdom tooth removal Kharadi, 
+impacted tooth extraction Pune, 
+broken tooth extraction Kharadi, 
+damaged tooth removal Pune, 
+decayed tooth extraction Kharadi, 
+dental extraction cost Kharadi, 
+tooth extraction cost Pune, 
+tooth removal cost Kharadi, 
+surgical extraction cost Pune, 
+tooth extraction recovery Kharadi, 
+tooth extraction aftercare Pune, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="Tooth Extraction in Kharadi, Pune | 
+Denza Dental Center"
+        />
+        <meta
+          property="og:description"
+          content="Simple and surgical tooth extraction 
+in Kharadi, Pune at Denza Dental Center, 
+including wisdom tooth removal and personalized 
+post-extraction care."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/tooth-extraction
+"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="Tooth extraction at Denza Dental 
+Center in Kharadi, Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="Tooth Extraction Services" />
 
       <div className="second_section">

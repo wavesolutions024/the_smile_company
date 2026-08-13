@@ -9,6 +9,7 @@ import img4 from "../../../assets/about_section/img5.webp";
 import patientImg from "../../../assets/about_page/left1.png";
 import PageTop from "../../../comp/page_top/PageTop";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const GbtMachine = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -78,6 +79,113 @@ const GbtMachine = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          GBT Machine in Kharadi, Pune | EMS Airflow
+          Technology
+        </title>
+        <meta
+          name="description"
+          content="Discover EMS Airflow GBT 
+technology at Denza Dental Center in Kharadi, 
+Pune. Guided Biofilm Therapy uses air, warm 
+water and fine powder for professional biofilm and 
+stain removal with a comfort-focused approach."
+        />
+
+        <link
+          rel="canonical"
+          href="https://denzadental.com/gbt-machine"
+        />
+        <meta
+          name="keywords"
+          content=" 
+GBT machine Kharadi, 
+GBT machine Pune, 
+GBT cleaning machine Kharadi, 
+GBT cleaning machine Pune, 
+Guided Biofilm Therapy machine Kharadi, 
+Guided Biofilm Therapy machine Pune, 
+EMS Airflow Kharadi, 
+EMS Airflow Pune, 
+EMS Airflow GBT Kharadi, 
+EMS Airflow GBT Pune, 
+EMS GBT technology Kharadi, 
+EMS GBT technology Pune, 
+GBT dental technology Kharadi, 
+GBT dental technology Pune, 
+advanced dental cleaning technology 
+Kharadi, 
+advanced dental cleaning Pune, 
+biofilm removal technology Kharadi, 
+dental biofilm removal Pune, 
+stain removal dental technology Kharadi, 
+professional teeth cleaning technology 
+Pune, 
+comfortable dental cleaning Kharadi, 
+painless dental cleaning Pune, 
+dental hygiene technology Kharadi, 
+dental hygiene technology Pune, 
+GBT for braces Kharadi, 
+GBT for dental implants Pune, 
+GBT for crowns Kharadi, 
+GBT for veneers Pune, 
+dentist Kharadi Pune, 
+dental clinic Kharadi Pune, 
+Denza Dental Center, 
+Denza Dental, 
+Denza Dental Kharadi, 
+Denza Dental Pune 
+"
+        />
+        <meta
+          name="geo.region"
+          content="IN-MH"
+        />
+        <meta
+          name="geo.placename"
+          content="Kharadi, Pune, Maharashtra, India"
+        />
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:site_name"
+          content="Denza Dental Center"
+        />
+        <meta
+          property="og:title"
+          content="GBT Machine in Kharadi, Pune | 
+EMS Airflow Technology"
+        />
+        <meta
+          property="og:description"
+          content="Explore EMS Airflow Guided 
+Biofilm Therapy technology at Denza Dental 
+Center in Kharadi, Pune for biofilm management, 
+stain removal and comfortable professional dental 
+cleaning."
+        />
+        <meta
+          property="og:url"
+          content="https://denzadental.com/gbt-machine"
+        />
+        <meta
+          property="og:image"
+          content="https://denzadental.com/og-image.jpg"
+        />
+        <meta
+          property="og:image:alt"
+          content="EMS Airflow GBT machine 
+technology at Denza Dental Center in Kharadi, 
+Pune"
+        />
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+      </Helmet>
       <PageTop title="GBT Machine Technology" />
 
       <div className="parent second_parent_gbt">
