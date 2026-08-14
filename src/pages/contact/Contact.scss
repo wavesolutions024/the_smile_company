@@ -59,7 +59,7 @@
 }
 
 .card_icon--pink {
-  background: var(--accent)
+  background: var(--accent);
 }
 
 .card_icon--purple {
@@ -72,7 +72,7 @@
   margin-bottom: 8px;
 }
 
-.card_content{
+.card_content {
   font-size: 0.95rem;
   margin: 4px 0;
 }
@@ -103,7 +103,6 @@
   font-size: 1.1rem;
 }
 
-
 .contact_right {
   display: flex;
   justify-content: flex-end;
@@ -125,7 +124,6 @@
 }
 
 .ask_card {
- 
   font-size: 1rem;
   margin-bottom: 22px;
   line-height: 1.7;
@@ -161,9 +159,41 @@
   min-height: 100px;
 }
 
+.btn_contact {
+  width: fit-content;
+  height: auto;
+  padding: 5px 10px 5px 5px;
+  border-radius: 25px;
+  background-color: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--unit) / 2);
+  cursor: pointer;
+  text-decoration: none;
 
+  span {
+    height: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent2);
+    border-radius: 50%;
+    height: 40px;
+    // background-color: red;
 
+    img {
+      height: 80%;
+      filter: hue-rotate(427deg);
+    }
+  }
 
+  p {
+    color: var(--white);
+    font-size: 16px;
+  }
+}
 
 @media (max-width: 1024px) {
   .contact_page_cont {
@@ -179,8 +209,7 @@
 }
 
 @media (max-width: 640px) {
-
-  .contact_page_parent{
+  .contact_page_parent {
     padding: 80px 0px;
   }
   .contact_left .title_block h1 {

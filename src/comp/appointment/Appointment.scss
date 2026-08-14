@@ -105,6 +105,10 @@
       font-family: inherit;
       transition: all 0.3s ease;
 
+      &.date_input {
+        padding: 14px;
+      }
+
       &::placeholder {
         color: rgba(255, 255, 255, 0.7);
       }
@@ -247,24 +251,19 @@
   }
 }
 
-
-@media(max-width:550px){
-  .appointment_section{
+@media (max-width: 550px) {
+  .appointment_section {
     padding: 50px 0px 0px 0px;
-    
-    .appointment_container{
-      
-      .appointment_form_wrapper{
 
-        .appointment_title{
+    .appointment_container {
+      .appointment_form_wrapper {
+        .appointment_title {
           font-size: 30px;
           max-width: 100%;
         }
       }
 
-      .appointment_image_box{
-
-
+      .appointment_image_box {
       }
     }
   }

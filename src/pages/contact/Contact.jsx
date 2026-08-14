@@ -1,17 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiClock, FiMail, FiPhone } from "react-icons/fi";
 import PageTop from "../../comp/page_top/PageTop";
 import "./Contact.scss";
 import Button from "../../comp/button/Button";
 import { Helmet } from "react-helmet";
+import teeth from "../../assets/header/tooth.png";
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  function Submit(e) {
+    e.preventDefault();
+
+    setIsSubmitting(true); // Set submitting state to true
+
+    const formEle = document.querySelector("form");
+    const formDatab = new FormData(formEle);
+    const getDate = new Date();
+
+    const date = getDate.toDateString();
+
+    formDatab.append("Date", date);
+    formDatab.append("type", "Contact");
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbwaXC7KqjOPZ3a9mYEQS0oDzXnFyJZaCSHp9pGs_GiJZlxk_gQOLnZdmhuvgoaEolMl/exec",
+      {
+        method: "POST",
+        body: formDatab,
+      },
+    )
+      .then((res) => res.text())
+      .then((data) => {
+        setIsSubmitting(false); // Reset submitting state
+        alert("Form submitted successfully!");
+        formEle.reset(); // Reset the form
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        setIsSubmitting(false); // Reset submitting state even on error
+        alert("Something went wrong. Please try again.");
+      });
+  }
+
   return (
     <>
       <Helmet>
-        <title>
-          Contact Denza Dental Center | Dentist in Kharadi, Pune
-        </title>
+        <title>Contact Denza Dental Center | Dentist in Kharadi, Pune</title>
 
         <meta
           name="description"
@@ -46,40 +81,22 @@ const Contact = () => {
         "
         />
 
-        <link
-          rel="canonical"
-          href="https://denzadental.com/contact"
-        />
+        <link rel="canonical" href="https://denzadental.com/contact" />
 
-        <meta
-          name="geo.region"
-          content="IN-MH"
-        />
+        <meta name="geo.region" content="IN-MH" />
 
         <meta
           name="geo.placename"
           content="Kharadi, Pune, Maharashtra, India"
         />
 
-        <meta
-          name="geo.position"
-          content="18.5515;73.9430"
-        />
+        <meta name="geo.position" content="18.5515;73.9430" />
 
-        <meta
-          name="ICBM"
-          content="18.5515, 73.9430"
-        />
+        <meta name="ICBM" content="18.5515, 73.9430" />
 
-        <meta
-          property="og:type"
-          content="website"
-        />
+        <meta property="og:type" content="website" />
 
-        <meta
-          property="og:site_name"
-          content="Denza Dental Center"
-        />
+        <meta property="og:site_name" content="Denza Dental Center" />
 
         <meta
           property="og:title"
@@ -91,10 +108,7 @@ const Contact = () => {
           content="Contact Denza Dental Center in Kharadi, Pune to book a dental consultation. Find our clinic address, phone number, timings and appointment information."
         />
 
-        <meta
-          property="og:url"
-          content="https://denzadental.com/contact"
-        />
+        <meta property="og:url" content="https://denzadental.com/contact" />
 
         <meta
           property="og:image"
@@ -106,14 +120,7 @@ const Contact = () => {
           content="Denza Dental Center in Kharadi, Pune"
         />
 
-        <meta
-          property="og:locale"
-          content="en_IN"
-        />
-
-
-
-
+        <meta property="og:locale" content="en_IN" />
       </Helmet>
       <div className="parent dental_tourish_parent">
         <div className="overlay"></div>
@@ -160,8 +167,8 @@ const Contact = () => {
                 <div className="card_content">
                   <h4>Office Address:</h4>
                   <p>
-                    Denza Dental Center,
-                    Office no 111, First floor, Zen Square, Opp Marvel Enigma, Kharadi, Pune- 411014{" "}
+                    Denza Dental Center, Office no 111, First floor, Zen Square,
+                    Opp Marvel Enigma, Kharadi, Pune- 411014{" "}
                   </p>
                 </div>
               </div>
@@ -183,24 +190,55 @@ const Contact = () => {
                 the form below.
               </p>
 
-              <form
-                className="contact_form"
-                onSubmit={(e) => e.preventDefault()}
-              >
+              <form className="contact_form" onSubmit={Submit}>
                 <div className="row_two">
-                  <input type="text" placeholder="First Name" required />
-                  <input type="text" placeholder="Last Name" required />
+                  <input
+                    type="text"
+                    name="FName"
+                    placeholder="First Name"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="LName"
+                    placeholder="Last Name"
+                    required
+                  />
                 </div>
 
                 <div className="row_two">
-                  <input type="tel" placeholder="Phone Number" required />
-                  <input type="email" placeholder="Your Email" required />
+                  <input
+                    type="tel"
+                    name="Phone"
+                    placeholder="Phone Number"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Your Email"
+                    required
+                  />
                 </div>
 
-                <textarea placeholder="Message" rows="4" required />
+                <textarea
+                  name="Message"
+                  placeholder="Message"
+                  rows="4"
+                  required
+                />
 
                 <div className="form_footer">
-                  <Button text="Submit Now" />
+                  <button
+                    disabled={isSubmitting}
+                    type="submit"
+                    className="btn_contact"
+                  >
+                    <span>
+                      <img src={teeth} alt="" />
+                    </span>
+                    <p>{isSubmitting ? "Submitting..." : "Submit Now"}</p>
+                  </button>
                 </div>
               </form>
             </div>
