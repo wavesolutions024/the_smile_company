@@ -13,6 +13,11 @@ import serviceHero from "../../assets/service_hero.png";
 import { Helmet } from "react-helmet";
 
 const DentalTourism = () => {
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+
+
   const services = [
     {
       title: "Internationally Experienced Dental Specialists",
@@ -83,12 +88,44 @@ const DentalTourism = () => {
     { label: "Laser Dentistry", image: img4 },
   ];
 
+  function Submit(e) {
+    e.preventDefault();
+
+    setIsSubmitting(true); // Set submitting state to true
+
+    const formEle = document.querySelector("form");
+    const formDatab = new FormData(formEle);
+    const getDate = new Date();
+
+    const date = getDate.toDateString();
+
+    formDatab.append("Date", date);
+    formDatab.append("type", "DentalTourism");
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbyR-drlnKnz_7saPjdbKKL430xYpDcrTohd_jKzUjtoiUE8wWywUG4a-dQrqgEbvSDL/exec",
+      {
+        method: "POST",
+        body: formDatab,
+      },
+    )
+      .then((res) => res.text())
+      .then((data) => {
+        setIsSubmitting(false); // Reset submitting state
+        alert("Form submitted successfully!");
+        formEle.reset(); // Reset the form
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        setIsSubmitting(false); // Reset submitting state even on error
+        alert("Something went wrong. Please try again.");
+      });
+  }
+
   return (
     <>
       <Helmet>
-        <title>
-          Dental Tourism in Pune, India | Denza Dental Center
-        </title>
+        <title>Dental Tourism in Pune, India | Denza Dental Center</title>
 
         <meta
           name="description"
@@ -143,40 +180,22 @@ const DentalTourism = () => {
         "
         />
 
-        <link
-          rel="canonical"
-          href="https://denzadental.com/dental-tourism"
-        />
+        <link rel="canonical" href="https://denzadental.com/dental-tourism" />
 
-        <meta
-          name="geo.region"
-          content="IN-MH"
-        />
+        <meta name="geo.region" content="IN-MH" />
 
         <meta
           name="geo.placename"
           content="Kharadi, Pune, Maharashtra, India"
         />
 
-        <meta
-          name="geo.position"
-          content="18.5515;73.9430"
-        />
+        <meta name="geo.position" content="18.5515;73.9430" />
 
-        <meta
-          name="ICBM"
-          content="18.5515, 73.9430"
-        />
+        <meta name="ICBM" content="18.5515, 73.9430" />
 
-        <meta
-          property="og:type"
-          content="website"
-        />
+        <meta property="og:type" content="website" />
 
-        <meta
-          property="og:site_name"
-          content="Denza Dental Center"
-        />
+        <meta property="og:site_name" content="Denza Dental Center" />
 
         <meta
           property="og:title"
@@ -203,12 +222,8 @@ const DentalTourism = () => {
           content="Denza Dental Center - Dental Tourism in Pune, India"
         />
 
-        <meta
-          property="og:locale"
-          content="en_IN"
-        />
+        <meta property="og:locale" content="en_IN" />
       </Helmet>
-
 
       <div className="parent dental_tourish_parent">
         <div className="overlay"></div>
@@ -270,7 +285,7 @@ const DentalTourism = () => {
               </p>
             </div>
 
-            <form className="treatment_form">
+            <form className="treatment_form" onSubmit={Submit}>
               <div className="form_section">
                 <div className="section_header">
                   <div className="section_number">1</div>
@@ -282,11 +297,11 @@ const DentalTourism = () => {
                 <div className="section_fields two_col">
                   <label className="field">
                     <span>Full Name</span>
-                    <input type="text" placeholder="Enter your full name" />
+                    <input type="text" name="fullName" placeholder="Enter your full name" />
                   </label>
-                  <label className="field">
+                  <label className="field" >
                     <span>Country</span>
-                    <select>
+                    <select name="country" required>
                       <option>Select your country</option>
                       <option>India</option>
                       <option>United States</option>
@@ -296,11 +311,11 @@ const DentalTourism = () => {
                   </label>
                   <label className="field">
                     <span>Phone / WhatsApp Number</span>
-                    <input type="tel" placeholder="Enter your number" />
+                    <input type="tel" name="phone" placeholder="Enter your number" required />
                   </label>
                   <label className="field">
                     <span>Email Address</span>
-                    <input type="email" placeholder="Enter your email" />
+                    <input type="email" name="email" placeholder="Enter your email" />
                   </label>
                 </div>
               </div>
@@ -318,7 +333,7 @@ const DentalTourism = () => {
                 <div className="section_fields two_col">
                   <label className="field">
                     <span>Dental Concern</span>
-                    <select>
+                    <select name="dentalConcern">
                       <option>Select Dental Concern</option>
                       <option>Dental Implants</option>
                       <option>Full Mouth Rehabilitation</option>
@@ -329,12 +344,7 @@ const DentalTourism = () => {
                   </label>
                   <label className="field">
                     <span>Brief Description</span>
-                    <textarea placeholder="Describe your dental issue"></textarea>
-                  </label>
-                  <label className="field full_width file_upload">
-                    <span>Upload Reports / Photos</span>
-                    <small>Click to upload or drag and drop your files.</small>
-                    <input type="file" />
+                    <textarea name="description" placeholder="Describe your dental issue"></textarea>
                   </label>
                 </div>
               </div>
@@ -350,7 +360,7 @@ const DentalTourism = () => {
                 <div className="section_fields two_col">
                   <label className="field">
                     <span>Preferred Travel Timeline</span>
-                    <select>
+                    <select name="timeline">
                       <option>Select timeline</option>
                       <option>Within 7 days</option>
                       <option>Within 2 weeks</option>
@@ -359,7 +369,7 @@ const DentalTourism = () => {
                   </label>
                   <label className="field">
                     <span>Duration of Stay</span>
-                    <input type="text" placeholder="e.g. 7 days, 10 days" />
+                    <input type="text" name="stayDuration" placeholder="e.g. 7 days, 10 days" />
                   </label>
                 </div>
               </div>
@@ -374,20 +384,20 @@ const DentalTourism = () => {
                 </div>
                 <div className="contact_options">
                   <label className="radio_card">
-                    <input type="radio" name="contact" defaultChecked />{" "}
+                    <input type="checkbox" value="WhatsApp" name="contact" defaultChecked />
                     WhatsApp
                   </label>
                   <label className="radio_card">
-                    <input type="radio" name="contact" /> Call
+                    <input type="checkbox" value="Call" name="contact" /> Call
                   </label>
                   <label className="radio_card">
-                    <input type="radio" name="contact" /> Email
+                    <input type="checkbox" value="Email" name="contact" /> Email
                   </label>
                 </div>
               </div>
 
               <div className="form_footer">
-                <button type="button" className="form_submit">
+                <button type="submit" className="form_submit">
                   ✈️ Get My Treatment Plan &amp; Cost Estimate
                 </button>
                 <p className="privacy_note">
@@ -540,7 +550,9 @@ const DentalTourism = () => {
         <div className="cont book_cons_cont">
           <div className="box_box">
             <div className="name_mname">Start Your Smile Journey Today </div>
-            <span className="name_mname_namme">Book your consultation with Denza Dental </span>
+            <span className="name_mname_namme">
+              Book your consultation with Denza Dental{" "}
+            </span>
 
             <div>
               <div className="cta_buttons">

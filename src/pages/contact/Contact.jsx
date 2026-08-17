@@ -24,7 +24,7 @@ const Contact = () => {
     formDatab.append("type", "Contact");
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbwaXC7KqjOPZ3a9mYEQS0oDzXnFyJZaCSHp9pGs_GiJZlxk_gQOLnZdmhuvgoaEolMl/exec",
+      "https://script.google.com/macros/s/AKfycbyR-drlnKnz_7saPjdbKKL430xYpDcrTohd_jKzUjtoiUE8wWywUG4a-dQrqgEbvSDL/exec",
       {
         method: "POST",
         body: formDatab,
