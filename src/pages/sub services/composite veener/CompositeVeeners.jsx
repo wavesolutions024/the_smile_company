@@ -65,7 +65,6 @@ const services = [
     description:
       "Your bite is checked and adjusted to ensure comfort, proper function, and a perfectly balanced smile. ",
   },
-
 ];
 
 const faqs = [
@@ -85,7 +84,8 @@ const faqs = [
       "Composite veneers are a cosmetic treatment where a tooth-colored resin is applied and sculpted directly onto your teeth to enhance their shape, color, and overall appearance. ",
   },
   {
-    question: "Can I eat normally after getting composite veneers at Denza Dental?",
+    question:
+      "Can I eat normally after getting composite veneers at Denza Dental?",
     answer:
       "Yes, you can eat normally after the procedure. However, avoiding very hard or sticky foods helps maintain your veneers for a longer time.",
   },
@@ -94,7 +94,6 @@ const faqs = [
     answer:
       "In most cases, composite veneers are minimally invasive and can be adjusted or removed if needed, as very little natural tooth structure is altered.",
   },
-
 ];
 
 const CompositeVeeners = () => {
@@ -110,7 +109,6 @@ const CompositeVeeners = () => {
     AOS.refresh();
   }, []);
 
-
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
@@ -118,10 +116,7 @@ const CompositeVeeners = () => {
   return (
     <>
       <Helmet>
-        <title>
-          Composite Veneers in Kharadi, Pune |
-          Denza Dental Center
-        </title>
+        <title>Composite Veneers in Kharadi, Pune | Denza Dental Center</title>
         <meta
           name="description"
           content="Get composite veneers in Kharadi, 
@@ -175,23 +170,14 @@ Denza Dental Pune
 "
         />
 
-        <meta
-          name="geo.region"
-          content="IN-MH"
-        />
+        <meta name="geo.region" content="IN-MH" />
         <meta
           name="geo.placename"
           content="Kharadi, Pune, Maharashtra, India"
         />
 
-        <meta
-          property="og:type"
-          content="website"
-        />
-        <meta
-          property="og:site_name"
-          content="Denza Dental Center"
-        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Denza Dental Center" />
         <meta
           property="og:title"
           content="Composite Veneers in Kharadi, 
@@ -218,99 +204,102 @@ ers"
           content="Composite veneers treatment at 
 Denza Dental Center in Kharadi, Pune"
         />
-        <meta
-          property="og:locale"
-          content="en_IN"
-        />
+        <meta property="og:locale" content="en_IN" />
       </Helmet>
       <PageTop title=" Composite Veneers Services" />
 
-      <div className="book_appoint parent" style={{ background: "white" }}>
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_side red_background">
+      <div className="rootcanal_parent parent" style={{ background: "white" }}>
+        <div className="rootcanal_cont cont" data-aos="fade-up">
+          <div className="rootcanal_left">
             <img src={apointment} alt="Dental Appointment " />
           </div>
 
-          <div className="book_appoint_text">
-            <h2>Why Choose Denza Dental for Composite Veneers in Kharadi, Pune?  </h2>
-            <p>
-
-            </p>
+          <div className="rootcanal_right">
+            <h2>
+              Why Choose Denza Dental for Composite Veneers in Kharadi,
+              Pune?{" "}
+            </h2>
+            <p></p>
 
             <ol>
               <li>
-                <strong>Expert Team</strong>Our dentists have extensive experience in creating and fitting precision dental
-                crowns and bridges.
+                <strong>Expert Team</strong>Our dentists have extensive
+                experience in creating and fitting precision dental crowns and
+                bridges.
               </li>
 
               <li>
-                <strong>Advanced Technology</strong>We use 3D scanning and CEREC CAD/CAM to produce high-quality restorations
-                in-house in as little as 45 minutes.
+                <strong>Advanced Technology</strong>We use 3D scanning and CEREC
+                CAD/CAM to produce high-quality restorations in-house in as
+                little as 45 minutes.
               </li>
 
               <li>
-                <strong>High-Quality Materials </strong>We utilize premium materials to ensure your dental work is durable and blends
+                <strong>High-Quality Materials </strong>We utilize premium
+                materials to ensure your dental work is durable and blends
                 naturally with your teeth.
               </li>
 
               <li>
-                <strong>Customized Solutions</strong>Each procedure is tailored to your specific needs to guarantee optimal comfort
-                and function.
+                <strong>Customized Solutions</strong>Each procedure is tailored
+                to your specific needs to guarantee optimal comfort and
+                function.
               </li>
 
               <li>
-                <strong>Comprehensive Care</strong>We provide thorough support from your initial consultation through to your
-                post-treatment follow-ups.
+                <strong>Comprehensive Care</strong>We provide thorough support
+                from your initial consultation through to your post-treatment
+                follow-ups.
               </li>
 
               <li>
-                <strong>Patient-Centered Approach </strong>We prioritize your comfort and provide clear information so you can make
-                informed health decisions.
+                <strong>Patient-Centered Approach </strong>We prioritize your
+                comfort and provide clear information so you can make informed
+                health decisions.
               </li>
 
               <li>
-                <strong>Affordable Options </strong>Competitive pricing and flexible payment plans make our top-tier dental care
-                accessible to all.
+                <strong>Affordable Options </strong>Competitive pricing and
+                flexible payment plans make our top-tier dental care accessible
+                to all.
               </li>
 
               <li>
-                <strong>Positive Reputation</strong>Denza Dental is recognized for exceptional service and successful results for
-                every patient.
+                <strong>Positive Reputation</strong>Denza Dental is recognized
+                for exceptional service and successful results for every
+                patient.
               </li>
             </ol>
-
           </div>
         </div>
       </div>
 
       <div className="teeth_cleaning_parent parent">
         <div className="teeth_cleaning_cont cont">
-          <h2>What Are Composite Veneers?  </h2>
+          <h2>What Are Composite Veneers? </h2>
 
           <p>
-            We enhance your smile by applying a slim coating of dental composite to your
-            teeth. This modern method protects your natural enamel while fixing shape,
-            color, and alignment issues. Unlike porcelain options, composite veneers need
-            less tooth reduction.
+            We enhance your smile by applying a slim coating of dental composite
+            to your teeth. This modern method protects your natural enamel while
+            fixing shape, color, and alignment issues. Unlike porcelain options,
+            composite veneers need less tooth reduction.
           </p>
 
           <p>
-            Our dental professionals apply the composite material in precise layers. Each
-            layer undergoes light curing to ensure optimal hardening and durability. The
-            material bonds microscopically with your tooth structure, creating a strong
-            mechanical and chemical adhesion.
+            Our dental professionals apply the composite material in precise
+            layers. Each layer undergoes light curing to ensure optimal
+            hardening and durability. The material bonds microscopically with
+            your tooth structure, creating a strong mechanical and chemical
+            adhesion.
           </p>
-
         </div>
       </div>
 
-      <div className="book_appoint">
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
+      <div className="dental_checkup_sec parent">
+        <div className="dental_checkup_sec_cont cont" data-aos="fade-up">
+          <div className="dental_checkup_sec_left">
             <h2>Who Is a Candidate for Composite Veneers? </h2>
-            <p>
-
-            </p>
+            <p></p>
 
             <ol>
               <li>Discolored teeth that do not respond to whitening</li>
@@ -326,27 +315,26 @@ Denza Dental Center in Kharadi, Pune"
             </ol>
           </div>
 
-          <div className="book_appoint_side red_background"
-
-
-          >
-            <img src={apointment} style={{ width: "100%", height: "450px", objectFit: "cover" }} alt="Dental Appointment " />
+          <div className="dental_checkup_sec_right">
+            <img src={apointment} alt="Dental Appointment " />
           </div>
         </div>
       </div>
 
-
       <div className="third_section">
         <div className="third_header">
           <h2>The Process of Getting Composite Veneers at Denza Dental</h2>
-          <p>
-
-          </p>
+          <p></p>
         </div>
 
         <div className="service_cards">
           {services.map((service, index) => (
-            <div key={index} className="service_card" data-aos="fade-up" data-aos-delay={index * 100}>
+            <div
+              key={index}
+              className="service_card"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <p className="service_card_index">{index + 1}.</p>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
@@ -361,13 +349,18 @@ Denza Dental Center in Kharadi, Pune"
 
           <ul>
             <li>Immediate improvement in smile appearance </li>
-            <li>Minimally invasive procedure with little to no tooth reduction </li>
+            <li>
+              Minimally invasive procedure with little to no tooth
+              reduction{" "}
+            </li>
             <li>Natural-looking results that blend seamlessly </li>
             <li>Quick treatment time compared to traditional veneers </li>
             <li>Easily repairable if something goes wrong </li>
-            <li>More affordable composite veneers price compared to porcelain options </li>
+            <li>
+              More affordable composite veneers price compared to porcelain
+              options{" "}
+            </li>
             <li>Reversible procedure preserving natural tooth structure</li>
-
           </ul>
         </div>
       </div>
@@ -388,7 +381,6 @@ Denza Dental Center in Kharadi, Pune"
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>
@@ -407,7 +399,6 @@ Denza Dental Center in Kharadi, Pune"
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2>Clinic Gallery</h2>
-
           </div>
           <div className="gallery_slider">
             <Swiper
@@ -428,7 +419,11 @@ Denza Dental Center in Kharadi, Pune"
             >
               {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
                 <SwiperSlide key={index}>
-                  <div className="gallery_card" data-aos="fade-up" data-aos-delay={index * 100}>
+                  <div
+                    className="gallery_card"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
                     <img src={src} alt={`Clinic slide ${index + 1}`} />
                   </div>
                 </SwiperSlide>

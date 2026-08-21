@@ -121,9 +121,9 @@ const TeethCleaning = () => {
         </div>
       </div>
 
-      <div className="book_appoint">
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
+      <div className="dental_checkup_sec parent">
+        <div className="dental_checkup_sec_cont cont" data-aos="fade-up">
+          <div className="dental_checkup_sec_left">
             <h2>Why Teeth Cleaning is Essential for Your Oral Health </h2>
             <p>
               Teeth cleaning, also known as dental cleaning, is important for
@@ -156,16 +156,16 @@ const TeethCleaning = () => {
             </ol>
           </div>
 
-          <div className="book_appoint_side red_background">
+          <div className="dental_checkup_sec_right">
             <img src={apointment} alt="Dental Appointment " />
           </div>
         </div>
       </div>
 
-      <div className="book_appoint parent" style={{ background: "white" }}>
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_side red_background">
-            <img src={apointment} alt="Dental Appointment " />
+      <div className="dental_checkup_sec parent" style={{ background: "white" }}>
+        <div className="dental_checkup_sec_cont cont" data-aos="fade-up">
+          <div className="dental_checkup_sec_left ">
+            <img src={apointment} alt="Dental Appointmen " style={{borderRadius:"var(--unit)"}} />
           </div>
 
           <div className="book_appoint_text">

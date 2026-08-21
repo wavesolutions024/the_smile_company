@@ -181,10 +181,7 @@ const FullMouthRihabilitation = () => {
   return (
     <>
       <Helmet>
-        <title>
-          Full Mouth Rehabilitation in Kharadi, Pune |
-          Denza Dental
-        </title>
+        <title>Full Mouth Rehabilitation in Kharadi, Pune | Denza Dental</title>
         <meta
           name="description"
           content="Full mouth rehabilitation in Kharadi, 
@@ -243,23 +240,14 @@ Denza Dental Pune
 "
         />
 
-        <meta
-          name="geo.region"
-          content="IN-MH"
-        />
+        <meta name="geo.region" content="IN-MH" />
         <meta
           name="geo.placename"
           content="Kharadi, Pune, Maharashtra, India"
         />
 
-        <meta
-          property="og:type"
-          content="website"
-        />
-        <meta
-          property="og:site_name"
-          content="Denza Dental Center"
-        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Denza Dental Center" />
         <meta
           property="og:title"
           content="Full Mouth Rehabilitation in 
@@ -286,10 +274,7 @@ bilitation"
           content="Full mouth rehabilitation at Denza 
 Dental Center in Kharadi, Pune"
         />
-        <meta
-          property="og:locale"
-          content="en_IN"
-        />
+        <meta property="og:locale" content="en_IN" />
       </Helmet>
       <PageTop title="Full Mouth Rehabilitation Services" />
 
@@ -432,38 +417,39 @@ Dental Center in Kharadi, Pune"
 
           <ul>
             <li>
-              <b>Severely damaged teeth</b> – Extensive decay, wear, or fractures affecting multiple
-              teeth
+              <b>Severely damaged teeth</b> – Extensive decay, wear, or
+              fractures affecting multiple teeth
             </li>
             <li>
-              <b>Multiple missing teeth</b> – Gaps impacting smile and chewing function
+              <b>Multiple missing teeth</b> – Gaps impacting smile and chewing
+              function
             </li>
 
             <li>
-              <b>Bite alignment issues</b> – Overbite, underbite, crossbite, or jaw discomfort
+              <b>Bite alignment issues</b> – Overbite, underbite, crossbite, or
+              jaw discomfort
             </li>
             <li>
               <b>Gum disease</b> – Receding gums, loose teeth, or bone loss
             </li>
 
             <li>
-              <b>Aesthetic concerns</b> – Discolored, uneven, or poorly shaped teeth affecting
-              confidence
+              <b>Aesthetic concerns</b> – Discolored, uneven, or poorly shaped
+              teeth affecting confidence
             </li>
 
             <li>
-              <b>Functional problems</b> – Difficulty in chewing, speaking, or maintaining oral
-              hygiene
+              <b>Functional problems</b> – Difficulty in chewing, speaking, or
+              maintaining oral hygiene
             </li>
 
             <li>
-              <b>Overall poor oral health</b> – Needing comprehensive restorative and cosmetic
-              treatment
+              <b>Overall poor oral health</b> – Needing comprehensive
+              restorative and cosmetic treatment
             </li>
           </ul>
         </div>
       </div>
-
 
       <div
         className="parent second_parent"
@@ -540,15 +526,20 @@ Dental Center in Kharadi, Pune"
       <div className="third_section" style={{ background: "var(--white)" }}>
         <div className="third_header">
           <h2 style={{ textAlign: "center", color: "var(--accent)" }}>
-            Treatment Process for Full Mouth Dental Rehabilitation at Denza Dental, Kharadi (Pune)
+            Treatment Process for Full Mouth Dental Rehabilitation at Denza
+            Dental, Kharadi (Pune)
           </h2>
         </div>
 
         <div className="service_cards">
           {servicess.map((service, index) => (
-            <div key={index} className="service_card" style={{ background: "var(--background)" }}>
+            <div
+              key={index}
+              className="service_card"
+              style={{ background: "var(--background)" }}
+            >
               <h3>{service.title}</h3>
-              <ul className="service_points" >
+              <ul className="service_points">
                 {service.points.map((point, i) => (
                   <li style={{ color: "var(--text)" }} key={i}>
                     {point}
@@ -590,11 +581,13 @@ Dental Center in Kharadi, Pune"
         </div>
       </div>
 
-      <div className="parent gallery_parent" style={{ background: "var(--white)" }}>
+      <div
+        className="parent gallery_parent"
+        style={{ background: "var(--white)" }}
+      >
         <div className="cont gallery_cont">
           <div className="gallery_header">
             <h2 style={{ color: "var(--accent)" }}>Clinic Gallery</h2>
-
           </div>
           <div className="gallery_slider">
             <Swiper

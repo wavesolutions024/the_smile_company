@@ -147,8 +147,7 @@ const RootCanalTreatment = () => {
     <>
       <Helmet>
         <title>
-          Root Canal Treatment in Kharadi, Pune |
-          Denza Dental Center
+          Root Canal Treatment in Kharadi, Pune | Denza Dental Center
         </title>
         <meta
           name="description"
@@ -202,23 +201,14 @@ Denza Dental Pune
 "
         />
 
-        <meta
-          name="geo.region"
-          content="IN-MH"
-        />
+        <meta name="geo.region" content="IN-MH" />
         <meta
           name="geo.placename"
           content="Kharadi, Pune, Maharashtra, India"
         />
 
-        <meta
-          property="og:type"
-          content="website"
-        />
-        <meta
-          property="og:site_name"
-          content="Denza Dental Center"
-        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Denza Dental Center" />
         <meta
           property="og:title"
           content="Root Canal Treatment in Kharadi, 
@@ -245,21 +235,17 @@ ment"
           content="Root canal treatment at Denza 
 Dental Center in Kharadi, Pune"
         />
-        <meta
-          property="og:locale"
-          content="en_IN"
-        />
-
+        <meta property="og:locale" content="en_IN" />
       </Helmet>
       <PageTop title="Root Canal Treatment Services" />
 
-      <div className="book_appoint" style={{ background: "white" }}>
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_side red_background">
+      <div className="rootcanal_parent parent" style={{ background: "white" }}>
+        <div className="rootcanal_cont cont" data-aos="fade-up">
+          <div className="rootcanal_left">
             <img src={apointment} alt="Dental Appointment " />
           </div>
 
-          <div className="book_appoint_text">
+          <div className="rootcanal_right">
             <h2>Best Root Canal Treatment in Kharadi, Pune – Denza Dental </h2>
             <p>
               Welcome to Denza Dental, your trusted destination for high-quality
@@ -317,9 +303,12 @@ Dental Center in Kharadi, Pune"
         </div>
       </div>
 
-      <div className="book_appoint" style={{ background: "white" }}>
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
+      <div
+        className="dental_checkup_sec parent"
+        style={{ background: "white" }}
+      >
+        <div className="dental_checkup_sec_cont cont" data-aos="fade-up">
+          <div className="dental_checkup_sec_left">
             <h2>Symptoms and Causes of Root Canal Treatment </h2>
 
             <h3>Symptoms of Root Canal Treatment </h3>
@@ -376,7 +365,7 @@ Dental Center in Kharadi, Pune"
             </ol>
           </div>
 
-          <div className="book_appoint_side red_background">
+          <div className="dental_checkup_sec_right">
             <img src={apointment} alt="Dental Appointment " />
           </div>
         </div>
@@ -419,7 +408,6 @@ Dental Center in Kharadi, Pune"
                 key={index}
                 className={`faq_item ${isOpen ? "open" : ""}`}
                 onClick={() => toggleFaq(index)}
-
               >
                 <button className="faq_question" type="button">
                   <span>{item.question}</span>

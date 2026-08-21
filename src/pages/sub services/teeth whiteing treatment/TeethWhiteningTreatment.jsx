@@ -251,9 +251,9 @@ Denza Dental Center in Kharadi, Pune"
       </Helmet>
       <PageTop title="Teeth Whitening Treatment Services" />
 
-      <div className="book_appoint" style={{ background: "white" }}>
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
+      <div className="dental_checkup_sec parent" style={{ background: "white" }}>
+        <div className="dental_checkup_sec_cont cont" data-aos="fade-up">
+          <div className="dental_checkup_sec_left">
             <h2> Best Teeth Whitening in Kharadi, Pune</h2>
             <p>
               At Denza Dental, we believe a brighter smile can boost your
@@ -298,7 +298,7 @@ Denza Dental Center in Kharadi, Pune"
             </ol>
           </div>
 
-          <div className="book_appoint_side red_background">
+          <div className="dental_checkup_sec_right">
             <img
               src={apointment}
               alt="Dental Appointment"
@@ -334,9 +334,9 @@ Denza Dental Center in Kharadi, Pune"
         </div>
       </div>
 
-      <div className="book_appoint">
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
+      <div className="dental_checkup_sec parent">
+        <div className="dental_checkup_sec_cont cont" data-aos="fade-up">
+          <div className="dental_checkup_sec_left">
             <h2>Common Causes of Tooth Discoloration </h2>
             <p>
               Tooth discoloration can occur due to several everyday factors that
@@ -378,7 +378,7 @@ Denza Dental Center in Kharadi, Pune"
             </ol>
           </div>
 
-          <div className="book_appoint_side red_background">
+          <div className="dental_checkup_sec_right">
             <img
               src={apointment}
               alt="Dental Appointment "
@@ -388,13 +388,13 @@ Denza Dental Center in Kharadi, Pune"
         </div>
       </div>
 
-      <div className="book_appoint parent" style={{ background: "white" }}>
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_side red_background">
+      <div className="rootcanal_parent parent" style={{ background: "white" }}>
+        <div className="rootcanal_cont cont" data-aos="fade-up">
+          <div className="rootcanal_left">
             <img src={apointment} alt="Dental Appointment " />
           </div>
 
-          <div className="book_appoint_text">
+          <div className="rootcanal_right">
             <h2>When Should You Consider Teeth Whitening? </h2>
             <p>
               Teeth whitening is an effective way to enhance your smile and
@@ -477,13 +477,13 @@ Denza Dental Center in Kharadi, Pune"
         </div>
       </div>
 
-      <div className="book_appoint parent" style={{ background: "white" }}>
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_side red_background">
+      <div className="rootcanal_parent parent" style={{ background: "white" }}>
+        <div className="rootcanal_cont cont" data-aos="fade-up">
+          <div className="rootcanal_left">
             <img src={apointment} alt="Dental Appointment " />
           </div>
 
-          <div className="book_appoint_text">
+          <div className="rootcanal_right">
             <h2>Advanced Equipment Used for Teeth Whitening </h2>
             <p>
               At Denza Dental, we use modern technology and high-quality

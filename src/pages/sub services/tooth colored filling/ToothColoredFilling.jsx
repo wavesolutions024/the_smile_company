@@ -249,9 +249,9 @@ Denza Dental Center in Kharadi, Pune"
         </div>
       </div>
 
-      <div className="book_appoint">
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
+      <div className="dental_checkup_sec parent">
+        <div className="dental_checkup_sec_cont cont" data-aos="fade-up">
+          <div className="dental_checkup_sec_left">
             <h2> Reasons for Dental Fillings</h2>
             <p>
               Dental fillings are commonly used to treat tooth decay by restoring areas
@@ -271,7 +271,7 @@ Denza Dental Center in Kharadi, Pune"
 
           </div>
 
-          <div className="book_appoint_side red_background">
+          <div className="dental_checkup_sec_right">
             <img src={apointment} alt="Dental Appointment " />
           </div>
         </div>

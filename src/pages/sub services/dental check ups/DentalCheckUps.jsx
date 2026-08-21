@@ -256,9 +256,9 @@ const DentalCheckUps = () => {
         </div>
       </div>
 
-      <div className="book_appoint">
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
+      <div className="dental_checkup_sec parent">
+        <div className="dental_checkup_sec_cont cont" data-aos="fade-up">
+          <div className="dental_checkup_sec_left">
             <h2> How to Book Your Dental Check-up at Denza Dental </h2>
             <p>
               Now this section includes description on left and – book an
@@ -306,7 +306,7 @@ const DentalCheckUps = () => {
             </ol>
           </div>
 
-          <div className="book_appoint_side red_background">
+          <div className="dental_checkup_sec_right">
             <img src={apointment} alt="Dental Appointment " />
           </div>
         </div>

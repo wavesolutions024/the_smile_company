@@ -229,9 +229,9 @@ Dental Center in Kharadi Pune"
       </Helmet>
       <PageTop title="Inlays Onlays Services" />
 
-      <div className="book_appoint">
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
+      <div className="dental_checkup_sec parent">
+        <div className="dental_checkup_sec_cont cont" data-aos="fade-up">
+          <div className="dental_checkup_sec_left">
             <h2> What Are Inlays & Onlays?</h2>
             <p>
               Inlays and onlays are custom-made dental restorations used to repair
@@ -245,7 +245,7 @@ Dental Center in Kharadi Pune"
 
           </div>
 
-          <div className="book_appoint_side red_background">
+          <div className="dental_checkup_sec_right">
             <img src={apointment} alt="Dental Appointment " />
           </div>
         </div>

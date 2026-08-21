@@ -282,7 +282,7 @@
   padding: 4rem 0 2rem;
   background: var(--accent2);
   color: rgba(255, 255, 255, 0.821);
-  background:red
+  background: red;
 }
 
 .third_header {
@@ -345,76 +345,60 @@
   line-height: 1.9;
 }
 
-.book_appoint {
-  padding: 4rem 1rem 2rem;
+.dental_checkup_sec {
+  padding: 150px 10px;
   background: var(--background);
-}
+  .dental_checkup_sec_cont {
+    display: flex;
+    gap: calc(var(--unit) * 2);
+    align-items: center;
+    justify-content: center;
 
-.book_appoint_container {
-  max-width: 1240px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.45fr 1fr;
-  gap: 2rem;
-  align-items: center;
-}
+    .dental_checkup_sec_left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: var(--unit);
 
-.book_appoint_text h2 {
-  font-size: 2.6rem;
-  color: #111827;
-  margin-bottom: 1rem;
-  line-height: 1.1;
-}
+      ol {
+        display: flex;
+        flex-direction: column;
+        gap: var(--unit);
+      }
+    }
 
-.book_appoint_text p {
-  color: #475569;
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
-}
+    .dental_checkup_sec_right {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-.book_appoint_text ol {
-  padding-left: 1.4rem;
-  margin: 0;
-  color: #334155;
-  line-height: 1.8;
-}
-
-.book_appoint_text li {
-  margin-bottom: 1rem;
-}
-
-.book_appoint_text strong {
-  color: #0f172a;
-}
-
-.book_appoint_text span {
-  color: #b91c1c;
-}
-
-.book_appoint_note {
-  margin-top: 1rem;
-  font-size: 0.98rem;
-}
-
-.book_appoint_side {
-  width: 100%;
-  height: 100%;
-  border-radius: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-
-  img {
-    width: 100%;
-    aspect-ratio: 1;
-    border-radius: 12px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: var(--unit);
+      }
+    }
   }
 }
 
+@media (max-width: 1200px) {
+  .dental_checkup_sec {
+    padding: 80px 20px;
+    background: var(--background);
+    .dental_checkup_sec_cont {
+      flex-direction: column-reverse;
 
+      .dental_checkup_sec_left {
+        width: 100%;
+      }
 
-
+      .dental_checkup_sec_right {
+        width: 100%;
+      }
+    }
+  }
+}
 
 .book_appoint_card h3 {
   margin: 0;
@@ -616,7 +600,7 @@
     grid-template-columns: 1fr;
   }
 
-  .service_card{
+  .service_card {
     padding: 1rem;
     min-height: auto;
   }
@@ -668,9 +652,8 @@
   }
 }
 
-
-@media(max-width: 550px) {
-   h2 {
+@media (max-width: 550px) {
+  h2 {
     font-size: 22px !important;
   }
-  }
+}

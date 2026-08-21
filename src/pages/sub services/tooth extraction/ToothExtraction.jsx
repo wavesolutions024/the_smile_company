@@ -280,9 +280,9 @@ Center in Kharadi, Pune"
         </div>
       </div>
 
-      <div className="book_appoint" style={{ background: "white" }}>
-        <div className="book_appoint_container" data-aos="fade-up">
-          <div className="book_appoint_text">
+      <div className="dental_checkup_sec parent" style={{ background: "white" }}>
+        <div className="dental_checkup_sec_cont cont" data-aos="fade-up">
+          <div className="dental_checkup_sec_left">
             <h2>Types of Tooth Extraction </h2>
 
             <ol>
@@ -303,7 +303,7 @@ Center in Kharadi, Pune"
             </ol>
           </div>
 
-          <div className="book_appoint_side red_background">
+          <div className="dental_checkup_sec_right">
             <img src={apointment} alt="Dental Appointment " />
           </div>
         </div>

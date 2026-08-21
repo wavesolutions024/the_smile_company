@@ -111,19 +111,19 @@ const Home = () => {
   const counter = [
     {
       title: "Happy Patients",
-      count: 450,
+      count: 15,
       suffix: "K",
       icon: icon1,
     },
     {
-      title: "Specialists",
-      count: 200,
-      suffix: "K",
+      title: "Dental Specialists",
+      count: 15,
+      suffix: "",
       icon: icon2,
     },
     {
       title: "Winning Awards",
-      count: 150,
+      count: 10,
       icon: icon3,
     },
   ];
@@ -271,83 +271,99 @@ const Home = () => {
     AOS.refresh();
   }, []);
 
- const schema = {
-  "@context": "https://schema.org",
-  "@type": "Dentist",
-  "@id": "https://www.denzadental.com/#dentist",
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "@id": "https://www.denzadental.com/#dentist",
 
-  name: "Denza Dental Center",
+    name: "Denza Dental Center",
 
-  description:
-    "Denza Dental Center is a multispecialty dental clinic in Kharadi, Pune offering dental implants, smile makeovers, root canal treatment, full mouth rehabilitation, cosmetic dentistry, orthodontics, pediatric dentistry and advanced dental care.",
+    description:
+      "Denza Dental Center is a multispecialty dental clinic in Kharadi, Pune offering dental implants, smile makeovers, root canal treatment, full mouth rehabilitation, cosmetic dentistry, orthodontics, pediatric dentistry and advanced dental care.",
 
-  url: "https://www.denzadental.com/",
-  telephone: "+91-7028131132",
+    url: "https://www.denzadental.com/",
+    telephone: "+91-7028131132",
 
-  address: {
-    "@type": "PostalAddress",
-    streetAddress:
-      "Office No. 111, First Floor, Zen Square, Opp. Marvel Enigma, Kharadi",
-    addressLocality: "Pune",
-    addressRegion: "Maharashtra",
-    postalCode: "411014",
-    addressCountry: "IN",
-  },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress:
+        "Office No. 111, First Floor, Zen Square, Opp. Marvel Enigma, Kharadi",
+      addressLocality: "Pune",
+      addressRegion: "Maharashtra",
+      postalCode: "411014",
+      addressCountry: "IN",
+    },
 
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday",
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "09:00",
+      closes: "21:00",
+    },
+
+    sameAs: [
+      "https://www.facebook.com/people/Denza-Dental-Center/61575538874507/",
+      "https://www.instagram.com/denzadentalcenter/",
+      "https://www.youtube.com/@DenzaDentalCenter",
     ],
-    opens: "09:00",
-    closes: "21:00",
-  },
 
-  sameAs: [
-    "https://www.facebook.com/people/Denza-Dental-Center/61575538874507/",
-    "https://www.instagram.com/denzadentalcenter/",
-    "https://www.youtube.com/@DenzaDentalCenter",
-  ],
+    image: "https://www.denzadental.com/og-image.jpg",
 
-  image: "https://www.denzadental.com/og-image.jpg",
-
-  logo: {
-    "@type": "ImageObject",
-    url: "https://www.denzadental.com/og-image.jpg",
-  },
-
-  hasMap: "https://maps.app.goo.gl/MgrEKEfafiLS9KiN9",
-
-  employee: [
-    {
-      "@type": "Person",
-      name: "Dr. Hemant Suresh Thodsare",
-      jobTitle: "Co-founder, Prosthodontist & Implantologist",
-      worksFor: {
-        "@id": "https://www.denzadental.com/#dentist",
-      },
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.denzadental.com/og-image.jpg",
     },
-    {
-      "@type": "Person",
-      name: "Dr. Devika Kalaskar-Thodsare",
-      jobTitle: "Co-founder, Endodontist & Esthetic Dentist",
-      worksFor: {
-        "@id": "https://www.denzadental.com/#dentist",
-      },
-    },
-  ],
 
-  areaServed: {
-    "@type": "City",
-    name: "Pune",
-  },
-};
+    hasMap: "https://maps.app.goo.gl/MgrEKEfafiLS9KiN9",
+
+    employee: [
+      {
+        "@type": "Person",
+        name: "Dr. Hemant Suresh Thodsare",
+        jobTitle: "Co-founder, Prosthodontist & Implantologist",
+        worksFor: {
+          "@id": "https://www.denzadental.com/#dentist",
+        },
+      },
+      {
+        "@type": "Person",
+        name: "Dr. Devika Kalaskar-Thodsare",
+        jobTitle: "Co-founder, Endodontist & Esthetic Dentist",
+        worksFor: {
+          "@id": "https://www.denzadental.com/#dentist",
+        },
+      },
+    ],
+
+    areaServed: {
+      "@type": "City",
+      name: "Pune",
+    },
+  };
+
+  const moveSlider = (index, direction) => {
+    setSliderPositions((prev) => {
+      const current = prev[index] ?? 50;
+
+      const newPosition =
+        direction === "left"
+          ? Math.max(current - 10, 0)
+          : Math.min(current + 10, 100);
+
+      return {
+        ...prev,
+        [index]: newPosition,
+      };
+    });
+  };
 
   return (
     <>
@@ -756,50 +772,76 @@ const Home = () => {
               }}
             >
               {data.map((item, index) => {
-                const position =
-                  sliderPositions[index] !== undefined
-                    ? sliderPositions[index]
-                    : 50;
-                return (
-                  <SwiperSlide key={index}>
-                    <div className="card">
-                      <div
-                        className="image-wrapper"
-                        ref={(el) => (sliderRefs.current[index] = el)}
-                        onMouseMove={(e) =>
-                          e.buttons === 1 && handleSliderMove(e, index)
-                        }
-                        onMouseDown={(e) => handleSliderMove(e, index)}
-                        onTouchMove={(e) => handleSliderMove(e, index)}
-                        onTouchStart={(e) => handleSliderMove(e, index)}
-                      >
-                        <img src={item} alt="after" className="after-image" />
+  const position =
+    sliderPositions[index] !== undefined
+      ? sliderPositions[index]
+      : 50;
 
-                        <div
-                          className="before-wrapper"
-                          style={{ width: `${100 - position}%` }}
-                        >
-                          <img
-                            src={item}
-                            alt="before"
-                            className="before-image"
-                          />
-                        </div>
+  return (
+    <SwiperSlide key={index}>
+      <div className="card">
+        <div
+          className="image-wrapper"
+          ref={(el) => (sliderRefs.current[index] = el)}
+          onMouseMove={(e) =>
+            e.buttons === 1 && handleSliderMove(e, index)
+          }
+          onMouseDown={(e) => handleSliderMove(e, index)}
+          onTouchMove={(e) => handleSliderMove(e, index)}
+          onTouchStart={(e) => handleSliderMove(e, index)}
+        >
+          <img
+            src={item}
+            alt="after"
+            className="after-image"
+          />
 
-                        <div
-                          className="slider-line"
-                          style={{ left: `${position}%` }}
-                        >
-                          <div className="slider-icon">
-                            <span>◀</span>
-                            <span>▶</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                );
-              })}
+          <div
+            className="before-wrapper"
+            style={{
+              width: `${100 - position}%`,
+            }}
+          >
+            <img
+              src={item}
+              alt="before"
+              className="before-image"
+            />
+          </div>
+
+          <div
+            className="slider-line"
+            style={{
+              left: `${position}%`,
+            }}
+          >
+            <div className="slider-icon">
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  moveSlider(index, "left");
+                }}
+              >
+                ◀
+              </button>
+
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  moveSlider(index, "right");
+                }}
+              >
+                ▶
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </SwiperSlide>
+  );
+})}
             </Swiper>
           </div>
         </div>
