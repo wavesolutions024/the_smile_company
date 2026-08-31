@@ -130,19 +130,19 @@ const OurWork = () => {
   const counter = [
     {
       title: "Happy Patients",
-      count: 450,
+      count: 15,
       suffix: "K",
       icon: icon1,
     },
     {
-      title: "Specialists",
-      count: 200,
-      suffix: "K",
+      title: "Dental Specialists",
+      count: 15,
+      suffix: "",
       icon: icon2,
     },
     {
       title: "Winning Awards",
-      count: 150,
+      count: 10,
       icon: icon3,
     },
   ];
@@ -398,7 +398,7 @@ const OurWork = () => {
           <div className="transformation_cta_inner">
             <h2>Your transformation starts here</h2>
             <div className="cta_buttons">
-              <Link to="/contact" className="cta_primary">
+              <Link to="/contact-us" className="cta_primary">
                 Book a consultation
               </Link>
               <a
