@@ -86,8 +86,12 @@
         position: absolute;
         right: 15px;
         font-size: 18px;
-        pointer-events: none;
+        // pointer-events: none;
         opacity: 0.6;
+
+        &.date_iconn {
+          cursor: pointer;
+        }
         & svg {
           fill: #dbd9d9;
         }
@@ -106,18 +110,24 @@
       transition: all 0.3s ease;
 
       &.date_input {
-        padding: 14px;
+        appearance: none;
+        -webkit-appearance: none;
+
+        &::-webkit-calendar-picker-indicator {
+          display: none;
+          -webkit-appearance: none;
+        }
       }
 
       &::placeholder {
         color: rgba(255, 255, 255, 0.7);
       }
 
-      &::-webkit-calendar-picker-indicator {
-        filter: invert(1);
-        opacity: 0.6;
-        cursor: pointer;
-      }
+      // &::-webkit-calendar-picker-indicator {
+      //   filter: invert(1);
+      //   opacity: 0.6;
+      //   cursor: pointer;
+      // }
 
       &.form_select {
         appearance: none;

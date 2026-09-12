@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Appointment.scss";
 import { IoArrowForward } from "react-icons/io5";
 import dr_appoint from "../../assets/appointment/doctors.webp";
 import { FaUser, FaEnvelope, FaCalendarAlt } from "react-icons/fa";
+import { BsFillCalendarDateFill } from "react-icons/bs";
 
 const Appointment = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-
+  const dateInputRef = useRef(null);
   const doctors = [
     "Dr. Hemant Suresh Thodsare",
     "Dr. Devika Kalaskar- Thodsare",
@@ -89,13 +90,29 @@ const Appointment = () => {
 
               <div className="form_group">
                 <input
-                  placeholder="Date"
+                  id="appointment-date"
+                  ref={dateInputRef}
                   name="Date"
                   type="date"
                   required
                   className="form_input date_input"
                 />
-                
+
+                <label
+                  htmlFor="appointment-date"
+                  className="form_icon date_iconn"
+                  onClick={() => {
+                    if (dateInputRef.current) {
+                      if (dateInputRef.current.showPicker) {
+                        dateInputRef.current.showPicker();
+                      } else {
+                        dateInputRef.current.focus();
+                      }
+                    }
+                  }}
+                >
+                  <BsFillCalendarDateFill />
+                </label>
               </div>
             </div>
 
@@ -121,7 +138,7 @@ const Appointment = () => {
                   required
                   className="form_input form_select"
                 >
-                  <option value="">Doctor Name</option>
+                  <option value="">Doctor's Name</option>
                   {doctors.map((doc, index) => (
                     <option key={index} value={doc}>
                       {doc}
@@ -130,7 +147,11 @@ const Appointment = () => {
                 </select>
               </div>
 
-              <button disabled={isSubmitting} type="submit" className="appointment_btn">
+              <button
+                disabled={isSubmitting}
+                type="submit"
+                className="appointment_btn"
+              >
                 <span>{isSubmitting ? "Submitting..." : "Appointment"}</span>
                 <IoArrowForward className="btn_arrow" />
               </button>
