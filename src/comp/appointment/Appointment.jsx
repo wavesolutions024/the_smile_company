@@ -45,7 +45,7 @@ const Appointment = () => {
       .then((data) => {
         setIsSubmitting(false); // Reset submitting state
         alert("Form submitted successfully!");
-        formEle.reset(); // Reset the form
+        formEle.reset(); // Reset the formx 
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -96,7 +96,9 @@ const Appointment = () => {
                   type="date"
                   required
                   className="form_input date_input"
+                  placeholder="dd-mm-yyyy"
                 />
+
 
                 <label
                   htmlFor="appointment-date"
