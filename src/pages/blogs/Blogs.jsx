@@ -22,9 +22,7 @@ const Blogs = () => {
   return (
     <>
       <Helmet>
-        <title>
-          Dental Blog & Expert Insights | Denza Dental Center Pune
-        </title>
+        <title>Dental Blog & Expert Insights | Denza Dental Center Pune</title>
 
         <meta
           name="description"
@@ -74,40 +72,22 @@ const Blogs = () => {
         "
         />
 
-        <link
-          rel="canonical"
-          href="https://denzadental.com/blogs"
-        />
+        <link rel="canonical" href="https://denzadental.com/blogs" />
 
-        <meta
-          name="geo.region"
-          content="IN-MH"
-        />
+        <meta name="geo.region" content="IN-MH" />
 
         <meta
           name="geo.placename"
           content="Kharadi, Pune, Maharashtra, India"
         />
 
-        <meta
-          name="geo.position"
-          content="18.5515;73.9430"
-        />
+        <meta name="geo.position" content="18.5515;73.9430" />
 
-        <meta
-          name="ICBM"
-          content="18.5515, 73.9430"
-        />
+        <meta name="ICBM" content="18.5515, 73.9430" />
 
-        <meta
-          property="og:type"
-          content="website"
-        />
+        <meta property="og:type" content="website" />
 
-        <meta
-          property="og:site_name"
-          content="Denza Dental Center"
-        />
+        <meta property="og:site_name" content="Denza Dental Center" />
 
         <meta
           property="og:title"
@@ -119,10 +99,7 @@ const Blogs = () => {
           content="Explore dental health articles and expert insights from Denza Dental Center in Kharadi, Pune, covering smile designing, cosmetic dentistry, dental implants, root canal treatment, oral health and modern dental care."
         />
 
-        <meta
-          property="og:url"
-          content="https://denzadental.com/blogs"
-        />
+        <meta property="og:url" content="https://denzadental.com/blogs" />
 
         <meta
           property="og:image"
@@ -134,10 +111,7 @@ const Blogs = () => {
           content="Denza Dental Center dental blog and expert insights"
         />
 
-        <meta
-          property="og:locale"
-          content="en_IN"
-        />
+        <meta property="og:locale" content="en_IN" />
       </Helmet>
 
       <PageTop title="Blogs" />
@@ -156,18 +130,17 @@ const Blogs = () => {
           <div className="blog_cards">
             {blogs.map((blog) => (
               <div className="card" key={blog.id}>
-              <div
-                className="image bg-img-cover"
-                style={{ backgroundImage: `url(${blog.image})` }}
-              >
-                <p className="date">{blog.date}</p>
-              </div>
-              <h1 className="blog_heading">{blog.title}</h1>
-              <p>{blog.excerpt}</p>
-              <Link to={`/blog-details/${blog.id}`} className="arrow">
-                <IoArrowForwardOutline />
-              </Link>
-              </div>
+                <div
+                  className="image bg-img-cover"
+                  style={{ backgroundImage: `url(${blog.image})` }}
+                >
+                  <p className="date">{blog.date}</p>
+                </div>
+                <h1 className="blog_heading">{`Read ${blog.title}`}</h1>
+                <p>{blog.excerpt}</p>
+                <Link to={`/blog-details/${blog.id}`} className="arrow">
+                  <IoArrowForwardOutline />
+                </Link>              </div>
             ))}
           </div>
         </div>

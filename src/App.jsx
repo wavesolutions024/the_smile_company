@@ -109,7 +109,7 @@ function AppLayout() {
         <Route element={<AllOnFour />} path="/all-on-four-and-all-on-six-dental-implants" />
         <Route element={<ImplantSupported />} path="/implant-supported-overdenture" />
         <Route element={<Female />} path="/female-dr" />
-        <Route element={<BlogDetails />} path="/blog-details" />
+        <Route element={<BlogDetails />} path="/blog-details/:blogId" />
         <Route element={<Blogs />} path="/blogs" />
         <Route element={<DentalTourism />} path="/dental-tourism" />
         <Route element={<OurWork />} path="/our-work" />
