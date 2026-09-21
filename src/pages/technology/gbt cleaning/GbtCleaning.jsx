@@ -198,7 +198,7 @@ Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="GBT Cleaning Technology" />
+      <PageTop title="Redefining Dental Cleaning With Guided Biofilm Therapy  " />
 
       <div className="parent second_parent_gbt">
         <div className="cont second_cont_gbt">

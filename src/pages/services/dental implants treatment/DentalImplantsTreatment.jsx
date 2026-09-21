@@ -244,7 +244,7 @@ Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Dental Implants Services" />
+      <PageTop title="Redefining Excellence in Advanced Dental Implantology" />
 
       <div className="parent second_parent">
         <div className="cont second_cont">

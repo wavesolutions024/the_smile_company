@@ -7,6 +7,7 @@ import Button from "../../comp/button/Button";
 import { Link } from "react-router-dom";
 import { IoArrowForwardOutline } from "react-icons/io5";
 import { Helmet } from "react-helmet";
+import blogs from "../../data/blogs";
 
 const Blogs = () => {
   useEffect(() => {
@@ -153,52 +154,21 @@ const Blogs = () => {
           </div>
 
           <div className="blog_cards">
-            <div className="card">
-              <div className="image bg-img-cover">
-                <p className="date">25 July 2026</p>
+            {blogs.map((blog) => (
+              <div className="card" key={blog.id}>
+              <div
+                className="image bg-img-cover"
+                style={{ backgroundImage: `url(${blog.image})` }}
+              >
+                <p className="date">{blog.date}</p>
               </div>
-              <h1 className="blog_heading">
-                Smile Designing at Denza Dental: Your Path to a Confident,
-                Natural-Looking Smile
-              </h1>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content.
-              </p>
-              <Link to="/blog-details" className="arrow">
+              <h1 className="blog_heading">{blog.title}</h1>
+              <p>{blog.excerpt}</p>
+              <Link to={`/blog-details/${blog.id}`} className="arrow">
                 <IoArrowForwardOutline />
               </Link>
-            </div>
-            <div className="card">
-              <div className="image bg-img-cover">
-                <p className="date">01 August 2026</p>
               </div>
-              <h1 className="blog_heading">
-                The Art of Managing Business and Patient Care
-              </h1>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content.
-              </p>
-              <Link to="/blog-details" className="arrow">
-                <IoArrowForwardOutline />
-              </Link>
-            </div>
-            <div className="card">
-              <div className="image bg-img-cover">
-                <p className="date">07 August 2026</p>
-              </div>
-              <h1 className="blog_heading">
-                The Art of Managing Business and Patient Care
-              </h1>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content.{" "}
-              </p>
-              <Link to="/blog-details" className="arrow">
-                <IoArrowForwardOutline />
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
       </div>

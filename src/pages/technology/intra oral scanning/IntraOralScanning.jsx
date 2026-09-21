@@ -145,7 +145,7 @@ Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title=" 3D intra oral scanning Technology" />
+      <PageTop title="Redefining Dental Precision With Advanced Intra-Oral Scanning   " />
 
       <div className="parent second_parent">
         <div className="cont second_cont">

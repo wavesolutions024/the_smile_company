@@ -7,6 +7,7 @@ import "./DentalLasers.scss";
 import img1 from "../../../assets/general_service/img.webp";
 import gallery1 from "../../../assets/about_page/after1.webp";
 import img4 from "../../../assets/about_section/img5.webp";
+import PageTop from "../../../comp/page_top/PageTop";
 
 const DentalLasers = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -47,6 +48,11 @@ const DentalLasers = () => {
 
   return (
     <>
+
+
+<PageTop title="The Future of Precision Dentistry With Advanced Dental Lasers     " />
+
+
       <div className="parent general_dental_parent bg-img-cover">
         <marquee behavior="scroll" direction="left" scrollamount="20">
           Welcome to our General Dental Services!

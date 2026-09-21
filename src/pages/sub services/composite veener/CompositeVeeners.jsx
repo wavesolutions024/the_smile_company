@@ -206,7 +206,7 @@ Denza Dental Center in Kharadi, Pune"
         />
         <meta property="og:locale" content="en_IN" />
       </Helmet>
-      <PageTop title=" Composite Veneers Services" />
+      <PageTop title=" Beautiful Smile Transformations With Composite Veneer   " />
 
       <div className="rootcanal_parent parent" style={{ background: "white" }}>
         <div className="rootcanal_cont cont" data-aos="fade-up">

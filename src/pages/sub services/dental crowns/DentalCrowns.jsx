@@ -237,7 +237,7 @@ Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Dental Crowns Services" />
+      <PageTop title="Natural-Looking Dental Crowns for Strength & Confidence " />
 
       <div className="second_section">
         <div className="second_section_container">

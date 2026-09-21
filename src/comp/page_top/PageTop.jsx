@@ -10,15 +10,15 @@ const PageTop = ({
   title = "Dental Check Up Services",
   phone = " +91 7028 131 132",
   contactPath = "/contact-us",
-  mapUrl = "https://maps.app.goo.gl/L2FxZP5U5wL3WA9t9",
-  consultantLabel = "Book Consultant",
+  mapUrl = "https://maps.app.goo.gl/qpDHtLS9RFBgUtvS7",
+  consultantLabel = "Book Your Consultation",
   callLabel = "Call",
   directionLabel = "Get Directions",
 }) => {
   return (
     <div className="parent general_dental_parent bg-img-cover">
       <marquee behavior="scroll" direction="left" scrollamount="20">
-        Welcome to our {title} 
+       {title} 
       </marquee>
       <div className="cont general_dental_cont">
         <div className="bts_grp">

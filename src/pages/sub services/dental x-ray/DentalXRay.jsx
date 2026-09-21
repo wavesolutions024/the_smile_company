@@ -218,7 +218,7 @@ at Denza Dental Center in Kharadi, Pune"
         />
       </Helmet>
 
-      <PageTop title="Dental X-Ray Services" />
+      <PageTop title="Advanced Dental X-Ray & Digital Imaging " />
 
       <div className="second_section">
         <div className="second_section_container">

@@ -7,7 +7,9 @@ import { BsFillCalendarDateFill } from "react-icons/bs";
 
 const Appointment = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [appointmentDate, setAppointmentDate] = useState("");
   const dateInputRef = useRef(null);
+  const datePickerRef = useRef(null);
   const doctors = [
     "Dr. Hemant Suresh Thodsare",
     "Dr. Devika Kalaskar- Thodsare",
@@ -27,11 +29,6 @@ const Appointment = () => {
 
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
-    const getDate = new Date();
-
-    const date = getDate.toDateString();
-
-    formDatab.append("Date", date);
     formDatab.append("type", "Appointment");
 
     fetch(
@@ -46,6 +43,7 @@ const Appointment = () => {
         setIsSubmitting(false); // Reset submitting state
         alert("Form submitted successfully!");
         formEle.reset(); // Reset the formx 
+        setAppointmentDate("");
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -93,10 +91,36 @@ const Appointment = () => {
                   id="appointment-date"
                   ref={dateInputRef}
                   name="Date"
-                  type="date"
+                  type="text"
+                  inputMode="numeric"
                   required
                   className="form_input date_input"
                   placeholder="dd-mm-yyyy"
+                  value={appointmentDate}
+                  onChange={(event) => {
+                    const digits = event.target.value.replace(/\D/g, "").slice(0, 8);
+                    const formattedDate = digits.replace(
+                      /^(\d{2})(\d{0,2})(\d{0,4})$/,
+                      (_, day, month, year) =>
+                        [day, month, year].filter(Boolean).join("-"),
+                    );
+                    setAppointmentDate(formattedDate);
+                  }}
+                  pattern="\d{2}-\d{2}-\d{4}"
+                  title="Enter a date in dd-mm-yyyy format"
+                />
+                <input
+                  ref={datePickerRef}
+                  type="date"
+                  tabIndex="-1"
+                  aria-hidden="true"
+                  className="form_input date_picker_input"
+                  onChange={(event) => {
+                    const [year, month, day] = event.target.value.split("-");
+                    if (year && month && day) {
+                      setAppointmentDate(`${day}-${month}-${year}`);
+                    }
+                  }}
                 />
 
 
@@ -105,11 +129,10 @@ const Appointment = () => {
                   className="form_icon date_iconn"
                   onClick={() => {
                     if (dateInputRef.current) {
-                      if (dateInputRef.current.showPicker) {
-                        dateInputRef.current.showPicker();
-                      } else {
-                        dateInputRef.current.focus();
-                      }
+                      dateInputRef.current.focus();
+                    }
+                    if (datePickerRef.current?.showPicker) {
+                      datePickerRef.current.showPicker();
                     }
                   }}
                 >

@@ -44,6 +44,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import Testimonials from "../../comp/testimonials/Testimonials";
 import { Helmet } from "react-helmet";
+import blogs from "../../data/blogs";
 
 const Home = () => {
   // const [accordian, setLeftAccordion] = useState(0);
@@ -365,6 +366,10 @@ const Home = () => {
     });
   };
 
+
+
+  
+
   return (
     <>
       <Helmet>
@@ -551,64 +556,25 @@ const Home = () => {
         <div className="blog_cont cont">
           <div className="top_bar">
             <h1>Blog And News</h1>
-            <Button text="Read More" path="/blog" />
+            <Button text="Read More" path="/blogs" />
           </div>
 
           <div className="blog_cards">
-            <div className="card">
-              <div className="image bg-img-cover">
-                <p className="date">25 July 2026</p>
+            {blogs.map((blog) => (
+              <div className="card" key={blog.id}>
+              <div
+                className="image bg-img-cover"
+                style={{ backgroundImage: `url(${blog.image})` }}
+              >
+                <p className="date">{blog.date}</p>
               </div>
-              <h1 className="blog_heading">
-                Smile Designing at Denza Dental: Your Path to a Confident,
-                Natural-Looking Smile
-              </h1>
-              <p>
-                Your smile is often the first thing people notice about you. If
-                you've ever felt self-conscious about gaps, discoloration,
-                chipped teeth, or an uneven smile line, smile designing could be
-                the solution you've been looking for.
-              </p>
-              <Link to="/blog-details" className="arrow">
+              <h1 className="blog_heading">{blog.title}</h1>
+              <p>{blog.excerpt}</p>
+              <Link to={`/blog-details/${blog.id}`} className="arrow">
                 <IoArrowForwardOutline />
               </Link>
-            </div>
-            <div className="card">
-              <div className="image bg-img-cover">
-                <p className="date">01 August 2026</p>
               </div>
-              <h1 className="blog_heading">
-                Full Mouth Rehabilitation at Denza Dental: Rebuilding Function,
-                Health, and Confidence
-              </h1>
-              <p>
-                When multiple teeth are damaged, missing, or affected by
-                long-term wear, a single procedure often isn't enough to restore
-                your oral health. That's where full mouth rehabilitation comes
-                in.
-              </p>
-              <Link to="/blog-details" className="arrow">
-                <IoArrowForwardOutline />
-              </Link>
-            </div>
-            <div className="card">
-              <div className="image bg-img-cover">
-                <p className="date">07 August 2026</p>
-              </div>
-              <h1 className="blog_heading">
-                Painless Root Canals Using Conscious Sedation at Denza Dental
-              </h1>
-              <p>
-                For many people, the phrase "root canal" brings up images of
-                pain and anxiety — but modern dentistry has changed that reality
-                completely. At Denza Dental, we offer painless root canal
-                treatment using conscious sedation, allowing even the most
-                anxious patients to undergo treatment comfortably.
-              </p>
-              <Link to="/blog-details" className="arrow">
-                <IoArrowForwardOutline />
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
       </div>

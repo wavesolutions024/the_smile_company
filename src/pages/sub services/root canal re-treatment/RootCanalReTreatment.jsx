@@ -237,7 +237,7 @@ Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Root Canal Re-Treatment Services" />
+      <PageTop title="Specialized Root Canal Retreatment for Lasting Results" />
 
       <div className="second_section">
         <div className="second_section_container">

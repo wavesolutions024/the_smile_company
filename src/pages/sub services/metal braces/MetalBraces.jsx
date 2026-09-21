@@ -216,7 +216,7 @@ Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Metal Braces Services" />
+      <PageTop title="Crafting Straighter Smiles With Modern Metal Braces " />
 
       <div className="brace_treat_parent parent">
         <div className="brace_treat_cont cont">

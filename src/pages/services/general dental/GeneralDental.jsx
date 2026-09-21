@@ -215,7 +215,7 @@ const GeneralDental = () => {
 
       </Helmet>
       
-      <PageTop title="General Dental Services" />
+      <PageTop title="Comprehensive General Dental Care  " />
 
       <div className="parent second_parent">
         <div className="cont second_cont">

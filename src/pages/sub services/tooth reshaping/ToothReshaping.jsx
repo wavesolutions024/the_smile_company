@@ -245,7 +245,7 @@ Denza Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Tooth Reshaping Services" />
+      <PageTop title="The Art of Smile Refinement Through Tooth Reshaping" />
 
       <div className="brace_treat_parent parent">
         <div className="brace_treat_cont cont">

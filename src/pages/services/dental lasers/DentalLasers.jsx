@@ -143,7 +143,7 @@ Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Dental Lasers Technology" />
+      <PageTop title="Precision Meets Comfort With Advanced Dental Lasers  " />
 
       <div className="parent second_parent">
         <div className="cont second_cont">

@@ -200,7 +200,7 @@ at Denza Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Orthodontic Treatments Services" />
+      <PageTop title="Creating Confident Smiles With Advanced Orthodontic Treatments " />
 
       <div className="brace_treat_parent parent">
         <div className="brace_treat_cont cont">

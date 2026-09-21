@@ -276,7 +276,7 @@ Dental Center in Kharadi, Pune"
         />
         <meta property="og:locale" content="en_IN" />
       </Helmet>
-      <PageTop title="Full Mouth Rehabilitation Services" />
+      <PageTop title="A Complete Approach to Smile & Oral Rehabilitation " />
 
       <div className="parent second_parent11">
         <div className="cont second_cont11">

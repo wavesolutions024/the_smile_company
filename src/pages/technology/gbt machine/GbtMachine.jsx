@@ -186,7 +186,7 @@ Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="GBT Machine Technology" />
+      <PageTop title="The Technology Behind Next-Generation Dental Cleaning" />
 
       <div className="parent second_parent_gbt">
         <div className="cont second_cont_gbt">

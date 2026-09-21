@@ -227,7 +227,7 @@ Denza Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title=" Gum Depigmentation Services" />
+      <PageTop title=" Precision Gum Depigmentation for a More Aesthetic Smile" />
 
       <div className="book_appoint">
         <div className="book_appoint_container" data-aos="fade-up">

@@ -227,7 +227,7 @@ Dental Center in Kharadi Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Inlays Onlays Services" />
+      <PageTop title=" Dental Inlays & Onlays With Precision, Excellence & Care " />
 
       <div className="dental_checkup_sec parent">
         <div className="dental_checkup_sec_cont cont" data-aos="fade-up">

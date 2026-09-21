@@ -138,7 +138,7 @@ Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Dental Loupes Technology" />
+      <PageTop title="Greater Visibility. Greater Precision. Better Dental Care.  " />
 
       <div className="parent second_parent">
         <div className="cont second_cont">

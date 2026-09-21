@@ -247,7 +247,7 @@ Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Tooth Extraction Services" />
+      <PageTop title="Advanced Tooth Extraction With a Patient-First Approach  " />
 
       <div className="second_section">
         <div className="second_section_container">

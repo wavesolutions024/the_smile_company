@@ -211,7 +211,7 @@ const DentalCheckUps = () => {
       </Helmet>
 
 
-      <PageTop title="Dental Check Up Services" />
+      <PageTop title=" Comprehensive Dental Check-Ups & Preventive Care " />
 
       <div className="second_section">
         <div className="second_section_container">

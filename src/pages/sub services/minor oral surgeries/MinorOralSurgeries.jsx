@@ -194,7 +194,7 @@ Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Minor Oral Surgeries Services" />
+      <PageTop title=" Advanced Care for Minor Oral Surgeries" />
 
       <div className="wisdom_tooth_extract_parent parent">
         <div className="wisdom_tooth_extract_cont cont">

@@ -237,7 +237,7 @@ Dental Center in Kharadi, Pune"
         />
         <meta property="og:locale" content="en_IN" />
       </Helmet>
-      <PageTop title="Root Canal Treatment Services" />
+      <PageTop title="Precise Root Canal Treatment for Lasting Results" />
 
       <div className="rootcanal_parent parent" style={{ background: "white" }}>
         <div className="rootcanal_cont cont" data-aos="fade-up">

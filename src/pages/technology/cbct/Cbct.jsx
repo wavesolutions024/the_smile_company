@@ -159,7 +159,7 @@ Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="CBCT 3D IMAGING Technology" />
+      <PageTop title="Advanced CBCT & 3D Dental Imaging at Denza Dental Center" />
 
       <div className="parent second_parent">
         <div className="cont second_cont">

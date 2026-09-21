@@ -236,7 +236,7 @@ Denza Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Porcelain Veneers Treatment Services" />
+      <PageTop title=" Naturally Beautiful Smiles, Designed With Porcelain Veneers " />
 
       <div className="second_section">
         <div className="second_section_container">

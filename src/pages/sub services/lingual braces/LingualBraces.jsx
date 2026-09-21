@@ -215,7 +215,7 @@ Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Lingual Braces Services" />
+      <PageTop title="A More Discreet Way to Straighten Your Smile With Lingual Braces" />
 
       <div className="brace_treat_parent parent">
         <div className="brace_treat_cont cont">

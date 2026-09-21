@@ -249,7 +249,7 @@ Denza Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Teeth Whitening Treatment Services" />
+      <PageTop title="Bringing New Brightness to Your Smile With Teeth Whitening" />
 
       <div className="dental_checkup_sec parent" style={{ background: "white" }}>
         <div className="dental_checkup_sec_cont cont" data-aos="fade-up">

@@ -241,7 +241,7 @@ Denza Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Composite Bonding Services" />
+      <PageTop title="Refining Your Smile With Advanced Composite Bonding " />
 
       <div className="parent second_parent">
         <div className="cont second_cont">

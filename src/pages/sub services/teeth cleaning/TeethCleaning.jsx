@@ -81,7 +81,7 @@ const TeethCleaning = () => {
 
   return (
     <>
-      <PageTop title="Teeth Cleaning Services" />
+      <PageTop title="Professional Dental Cleaning for Lasting Oral Health" />
 
       <div className="second_section">
         <div className="second_section_container">

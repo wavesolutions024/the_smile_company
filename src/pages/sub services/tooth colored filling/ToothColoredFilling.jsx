@@ -215,7 +215,7 @@ Denza Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Tooth Colored Fillings Services" />
+      <PageTop title="Aesthetic Tooth-Colored Fillings With Precision & Care " />
 
       <div className="wisdom_tooth_extract_parent parent">
         <div className="wisdom_tooth_extract_cont cont">

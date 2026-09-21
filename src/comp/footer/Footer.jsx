@@ -26,11 +26,7 @@ const Footer = () => {
       </div>
 
       <div className="call_icon">
-        <a
-          href="tel:7028131132"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="tel:7028131132" target="_blank" rel="noopener noreferrer">
           <div className="call_box">
             <IoIosCall />
           </div>
@@ -126,7 +122,7 @@ const Footer = () => {
                 <li>
                   <Link to="/dental-lasers">Dental Lasers</Link>
                 </li>
-                 <li>
+                <li>
                   <Link to="/gbt-machine">Gbt Machine</Link>
                 </li>
                 <li>
@@ -164,20 +160,20 @@ const Footer = () => {
             <div className="footer__col">
               <h3>Our Location</h3>
               <a
-                href="https://maps.app.goo.gl/L2FxZP5U5wL3WA9t9"
+                href="https://maps.app.goo.gl/qpDHtLS9RFBgUtvS7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="map_box"
               >
                 <iframe
-                  title="Google Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.501209670591!2d73.95412277496366!3d18.55142908254814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3c4047c069d%3A0x56298114ed1f664b!2sDivine%20Dental%20%26%20Implant%20Clinic!5e0!3m2!1sen!2sin!4v1785918504132!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                  title="Denza Dental Center Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.502851664418!2d73.95420337465283!3d18.55135496823428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c36e0d96946d%3A0x68c3e7ee41744da0!2sDenza%20Dental%20Center!5e0!3m2!1sen!2sin!4v1789800998622!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
-                  allowFullScreen=""
+                  allowFullScreen
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+                  referrerPolicy="strict-origin-when-cross-origin"
                 ></iframe>
               </a>
             </div>
@@ -188,6 +184,13 @@ const Footer = () => {
   );
 };
 
-
-
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.502851664418!2d73.95420337465283!3d18.55135496823428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c36e0d96946d%3A0x68c3e7ee41744da0!2sDenza%20Dental%20Center!5e0!3m2!1sen!2sin!4v1789800998622!5m2!1sen!2sin"
+  width="600"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="strict-origin-when-cross-origin"
+></iframe>;
 export default Footer;

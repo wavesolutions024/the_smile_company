@@ -119,6 +119,14 @@
         }
       }
 
+      &.date_picker_input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+        pointer-events: none;
+      }
+
       &::placeholder {
         color: rgba(255, 255, 255, 0.7);
       }

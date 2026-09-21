@@ -201,7 +201,7 @@ Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Pediatric Dentistry Services" />
+      <PageTop title="Making Dental Care Comfortable for Kids" />
 
       <div className="parent second_parent11">
         <div className="cont second_cont11">

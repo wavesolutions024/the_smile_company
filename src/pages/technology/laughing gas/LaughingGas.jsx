@@ -177,7 +177,7 @@ at Denza Dental Center in Kharadi, Pune"
           content="en_IN"
         />
       </Helmet>
-      <PageTop title="Conscious Sedation (Laughing Gas) Technology" />
+      <PageTop title="Gentle, Relaxed Dental Care With Laughing Gas  " />
 
       <div className="parent second_parent">
         <div className="cont second_cont">
