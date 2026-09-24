@@ -126,23 +126,23 @@ const HeaderNew = () => {
         },
         {
           label: "Dental Lasers",
-          to: "/dental-lasers"
+          to: "/dental-lasers",
         },
         {
           label: "GBT Cleaning",
-          to: "/gbt-cleaning"
+          to: "/gbt-cleaning",
         },
         {
           label: "GBT Machine",
-          to: "/gbt-machine"
+          to: "/gbt-machine",
         },
         {
           label: "Dental Loupes",
-          to: "/dental-loupes"
+          to: "/dental-loupes",
         },
         {
           label: "Conscious Sedation (Laughing Gas)",
-          to: "/laughing-gas"
+          to: "/laughing-gas",
         },
       ],
     },
@@ -155,7 +155,10 @@ const HeaderNew = () => {
   useEffect(() => {
     const handleScroll = () => {
       const shouldShow = window.scrollY > 80;
-      setVisible(shouldShow);
+      if (shouldShow || location.pathname !== "/blog-details/:blogId") {
+        setVisible(true);
+      }
+
       if (window.scrollY <= 80 && location.pathname === "/") {
         setMobileOpen(false);
       }
@@ -179,15 +182,13 @@ const HeaderNew = () => {
   // Open/close the item at `depth`. Opening truncates any deeper stale path
   // and replaces it with the new branch; re-clicking the same item closes it.
   const toggleAt = (depth, key) => {
-    console.log(depth,key)
+    console.log(depth, key);
     setActivePath((prev) =>
       prev[depth] === key
         ? prev.slice(0, depth)
         : [...prev.slice(0, depth), key],
     );
   };
- 
-  
 
   // Recursively renders any depth of nested children as submenu panels.
   // depth 0 = top-level nav items (handled by renderTopLevel below),
