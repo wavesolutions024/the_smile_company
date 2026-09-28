@@ -417,11 +417,7 @@ const Home = () => {
           content="Denza Dental Center - Dental Clinic in Kharadi, Pune"
         />
 
-        <meta
-    property="og:site_name"
-    content="Denza Dental Center"
-  />
-
+  
         <meta property="og:locale" content="en_IN" />
       </Helmet>
 
