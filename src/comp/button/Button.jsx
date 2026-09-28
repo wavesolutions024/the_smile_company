@@ -9,7 +9,7 @@ const Button = ({text,path}) => {
         <span>
             <img src={teeth} alt=""/>
         </span>
-        <p> {text || "Contact Us"}</p>
+        <p className='btn_text'> {text || "Contact Us"}</p>
       </Link>
     </>
   )
