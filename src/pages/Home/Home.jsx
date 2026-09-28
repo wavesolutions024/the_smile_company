@@ -374,8 +374,7 @@ const Home = () => {
     <>
       <Helmet>
         <title>
-          Denza Dental Center | Dental Implants & Smile Makeover in Kharadi,
-          Pune
+          DENZA DENTAL CENTER | BEST SMILE MAKEOVER AND IMPLANT CENTER OF KHARADI PUNE
         </title>
 
         <meta
@@ -398,7 +397,7 @@ const Home = () => {
 
         <meta
           property="og:title"
-          content="Denza Dental Center | Dental Implants & Smile Makeover in Kharadi, Pune"
+          content="DENZA DENTAL CENTER | BEST SMILE MAKEOVER AND IMPLANT CENTER OF KHARADI PUNE"
         />
 
         <meta
@@ -417,6 +416,11 @@ const Home = () => {
           property="og:image:alt"
           content="Denza Dental Center - Dental Clinic in Kharadi, Pune"
         />
+
+        <meta
+    property="og:site_name"
+    content="Denza Dental Center"
+  />
 
         <meta property="og:locale" content="en_IN" />
       </Helmet>
