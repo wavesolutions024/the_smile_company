@@ -151,7 +151,7 @@ const About = () => {
 
         <meta name="language" content="English" />
 
-        <link rel="canonical" href="https://denzadental.com/about" />
+        <link rel="canonical" href="https://denzadental.com/about-us" />
 
         {/* =========================
           LOCAL / GEO SEO
@@ -183,7 +183,7 @@ const About = () => {
           content="Meet Dr. Hemant Thodsare and Dr. Devika Kalaskar-Thodsare, MDS specialist dentists at Denza Dental Center in Kharadi, Pune, and learn about their expertise and patient-focused approach."
         />
 
-        <meta property="og:url" content="https://denzadental.com/about" />
+        <meta property="og:url" content="https://denzadental.com/about-us" />
 
         <meta
           property="og:image"

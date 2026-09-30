@@ -81,7 +81,7 @@ const Contact = () => {
         "
         />
 
-        <link rel="canonical" href="https://denzadental.com/contact" />
+        <link rel="canonical" href="https://denzadental.com/contact-us" />
 
         <meta name="geo.region" content="IN-MH" />
 
@@ -108,7 +108,7 @@ const Contact = () => {
           content="Contact Denza Dental Center in Kharadi, Pune to book a dental consultation. Find our clinic address, phone number, timings and appointment information."
         />
 
-        <meta property="og:url" content="https://denzadental.com/contact" />
+        <meta property="og:url" content="https://denzadental.com/contact-us" />
 
         <meta
           property="og:image"
