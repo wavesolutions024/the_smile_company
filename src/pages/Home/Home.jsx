@@ -374,7 +374,7 @@ const Home = () => {
     <>
       <Helmet>
         <title>
-          DENZA DENTAL CENTER | BEST SMILE MAKEOVER AND IMPLANT CENTER OF KHARADI PUNE
+          Denza Dental Center | Best Smile Makeover And Implant Center Of Kharadi Pune
         </title>
 
         <meta

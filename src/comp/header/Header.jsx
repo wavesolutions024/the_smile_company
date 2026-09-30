@@ -14,7 +14,7 @@ const Header = () => {
       <div class="header_parent parent">
         <div class="header_cont cont">
           <Link onClick={() => setHeader(false)} to="/" class="header_left">
-            <img src={logo} alt="" />
+            <img src={logo} alt="Denza Dental Center" />
           </Link>
           <div class="header_right">
             <div class="header_btn">

@@ -302,7 +302,7 @@ const HeaderNew = () => {
     >
       <div className="header_inner cont">
         <Link to="/" onClick={closeAll} className="logo_link">
-          <img src={logo} alt="Denza Dental" />
+          <img src={logo} alt="Denza Dental Center" />
         </Link>
 
         <div className="main_nav">
