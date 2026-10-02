@@ -5,9 +5,11 @@ import "./Contact.scss";
 import Button from "../../comp/button/Button";
 import { Helmet } from "react-helmet";
 import teeth from "../../assets/header/tooth.png";
+import img4 from "../../assets/about_section/img5.webp";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [leftAccordion, setLeftAccordion] = useState(0);
 
   function Submit(e) {
     e.preventDefault();
@@ -42,6 +44,34 @@ const Contact = () => {
         alert("Something went wrong. Please try again.");
       });
   }
+
+  const accordianContent = [
+    {
+      title: "How do I book an appointment at Denza Dental? ",
+      description:
+        "You can book an appointment at Denza Dental, the Best Dental Clinic in Kharadi, by calling +91 7028 131 132, using the Book Appointment button on our website, or filling out the enquiry form on this page.  ",
+    },
+    {
+      title: "Where is Denza Dental located in Kharadi? ",
+      description:
+        "Denza Dental Center is located at Office No. 111, First Floor, Zen Square, Opp Marvel Enigma, Kharadi, Pune - 411014 — easily accessible from all parts of Kharadi and Pune.  ",
+    },
+    {
+      title: "What are Denza Dental's clinic timings? ",
+      description:
+        "Denza Dental is open from 9:00 AM to 9:00 PM, all days of the week, making it convenient to book an appointment with the Best Dentist in Kharadi at a time that suits you. ",
+    },
+    {
+      title: "Do I need an appointment, or can I walk in?",
+      description:
+        "We recommend booking an appointment in advance by calling +91 7028 131 132 or using our online form, so our specialists can give you their full attention without a long wait. ",
+    },
+    {
+      title: "Is Denza Dental easy to find near Zen Square, Kharadi?",
+      description:
+        "Yes. Denza Dental Center is located at Zen Square, opposite Marvel Enigma in Kharadi, Pune — a wellknown landmark that makes the clinic simple to locate for both local and first-time patients. ",
+    },
+  ];
 
   return (
     <>
@@ -142,10 +172,15 @@ const Contact = () => {
             <div className="title_block">
               <h1>Contact Information</h1>
               <p>
-                Book your consultation at Denza Dental for advanced,
-                personalized dental treatments. From smile makeovers to full
-                mouth rehabilitation, our specialists provide complete care
-                tailored to your needs.
+                Book Your Appointment with the Best Dental Clinic in Kharadi,
+                Pune — trusted by patients for smile makeovers, dental implants,
+                and complete family dental care.{" "}
+              </p>
+              <p>
+                {/* Book your consultation at Denza Dental for advanced,
+                personalized dental treatments.  */}
+                From smile makeovers to full mouth rehabilitation, our
+                specialists provide complete care tailored to your needs.
               </p>
             </div>
 
@@ -241,6 +276,47 @@ const Contact = () => {
                   </button>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* faq */}
+
+      <div class="why_choose_parent bg-img-cover parent">
+        <div class="why_choose_cont cont">
+          <h1>Frequently Asked Questions </h1>
+          <div className="wc_left_right">
+            <div class="wc_left">
+              <div class="accordian">
+                {accordianContent?.map((item, index) => (
+                  <div class="accordian_item">
+                    <div
+                      class="accordian_title"
+                      onClick={() => setLeftAccordion(index)}
+                    >
+                      <h1> {item.title} </h1>
+                      <div class="count"> {index + 1} </div>
+                    </div>
+                    {leftAccordion === index && (
+                      <div
+                        class={
+                          leftAccordion === index
+                            ? "accordian_desc active"
+                            : "accordian_desc"
+                        }
+                      >
+                        <div class="left">
+                          <h1> {item.title} </h1> <p>{item.description}</p>
+                        </div>
+                        <div class="rg_image">
+                          <img src={img4} alt="" />
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -194,8 +194,8 @@
 
 .service_card {
   padding: 2rem;
-  width: 270px;
-  border-radius: 28px;
+  width: 350px;
+  border-radius: var(--unit);
   background: var(--background);
   min-height: 300px;
   display: flex;

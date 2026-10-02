@@ -786,16 +786,32 @@
       justify-content: center;
       gap: calc(var(--unit));
 
-      .name_mname{
+      .name_mname {
         color: white;
         font-size: 48px;
         font-weight: 700;
       }
 
-      .name_mname_namme{
+      .name_mname_namme {
         color: rgb(235, 233, 233);
         font-size: 20px;
       }
     }
   }
 }
+
+.dental_tourish_quote_parent {
+  padding: 10px 0px 80px 0px;
+  .dental_tourish_quote_cont {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+  }
+} 

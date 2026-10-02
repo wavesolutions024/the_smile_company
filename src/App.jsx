@@ -56,6 +56,7 @@ import MetalBraces from "./pages/sub services/metal braces/MetalBraces";
 import LingualBraces from "./pages/sub services/lingual braces/LingualBraces";
 import ZirconiaCrowns from "./pages/sub services/zirconia crowns/ZirconiaCrowns";
 import DentalLasersServices from "./pages/sub services/dental lasers services/DentalLasersServices";
+import AfterFooter from "./comp/after_footer/AfterFooter";
 
 
 
@@ -124,6 +125,7 @@ function AppLayout() {
         <Route element={<LaughingGas />} path="/laughing-gas" />
       </Routes>
       {!hideHeaderFooter && <Footer />}
+      {!hideHeaderFooter && <AfterFooter />}
     </>
   );
 }

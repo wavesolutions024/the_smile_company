@@ -13,10 +13,7 @@ import serviceHero from "../../assets/service_hero.png";
 import { Helmet } from "react-helmet";
 
 const DentalTourism = () => {
-
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-
 
   const services = [
     {
@@ -70,6 +67,28 @@ const DentalTourism = () => {
     {
       question: "Is follow-up possible after I return home?",
       answer: "Yes, we offer virtual consultations and follow-up care.",
+    },
+    {
+      question: "Why choose Denza Dental for dental tourism in Pune?",
+      answer:
+        "Denza Dental combines internationally experienced specialists, advanced technology, and transparent pricing to offer overseas patients a seamless dental tourism experience — recognized as the Best Dental Clinic in Kharadi, Pune. ",
+    },
+    {
+      question:
+        "Is Denza Dental the best dental clinic in Kharadi for international patients? ",
+      answer:
+        "Yes. With doctors who have practiced under the Ministry of Health, Kuwait, and a dedicated dental tourism patient journey, Denza Dental is a trusted choice for international patients visiting Kharadi, Pune.  ",
+    },
+    {
+      question:
+        "What makes Denza Dental a Best Dental Implant Center in Kharadi? ",
+      answer:
+        "Denza Dental's Prosthodontics and Implantology specialization, combined with advanced technology like CBCT and Intra-Oral Scanning, makes it a leading Best Dental Implant Center in Kharadi for both local and international patients. ",
+    },
+    {
+      question: "Is Denza Dental a Best International Smile Makeover Center? ",
+      answer:
+        "Yes. Denza Dental's cosmetic and full mouth rehabilitation expertise, paired with global clinical standards, positions it as a Best International Smile Makeover Center for patients seeking a complete smile transformation in Pune. ",
     },
   ];
 
@@ -266,7 +285,26 @@ const DentalTourism = () => {
               dentistry will be made accessible at a significantly lower
               investment compared to many international markets.{" "}
             </p>
+
+            <p>
+              This is why Denza Dental Center is fast becoming known as the Best
+              International Smile Makeover Center in Pune — combining Kharadi's
+              most experienced dental specialists with a seamless, end-to-end
+              dental tourism experience for patients travelling from
+              abroad.{" "}
+            </p>
           </div>
+        </div>
+      </div>
+
+      <div className="parent dental_tourish_quote_parent">
+        <div className="cont dental_tourish_quote_cont">
+          <h3>"Recognized as the Best Dental Clinic in Kharadi, Pune"</h3>
+          <p>
+            International Smile Makeovers and Dental Implants — trusted by
+            patients travelling from across the globe for world-class,
+            affordable dental care.
+          </p>
         </div>
       </div>
 
@@ -297,9 +335,13 @@ const DentalTourism = () => {
                 <div className="section_fields two_col">
                   <label className="field">
                     <span>Full Name</span>
-                    <input type="text" name="fullName" placeholder="Enter your full name" />
+                    <input
+                      type="text"
+                      name="fullName"
+                      placeholder="Enter your full name"
+                    />
                   </label>
-                  <label className="field" >
+                  <label className="field">
                     <span>Country</span>
                     <select name="country" required>
                       <option>Select your country</option>
@@ -311,11 +353,20 @@ const DentalTourism = () => {
                   </label>
                   <label className="field">
                     <span>Phone / WhatsApp Number</span>
-                    <input type="tel" name="phone" placeholder="Enter your number" required />
+                    <input
+                      type="tel"
+                      name="phone"
+                      placeholder="Enter your number"
+                      required
+                    />
                   </label>
                   <label className="field">
                     <span>Email Address</span>
-                    <input type="email" name="email" placeholder="Enter your email" />
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Enter your email"
+                    />
                   </label>
                 </div>
               </div>
@@ -344,7 +395,10 @@ const DentalTourism = () => {
                   </label>
                   <label className="field">
                     <span>Brief Description</span>
-                    <textarea name="description" placeholder="Describe your dental issue"></textarea>
+                    <textarea
+                      name="description"
+                      placeholder="Describe your dental issue"
+                    ></textarea>
                   </label>
                 </div>
               </div>
@@ -369,7 +423,11 @@ const DentalTourism = () => {
                   </label>
                   <label className="field">
                     <span>Duration of Stay</span>
-                    <input type="text" name="stayDuration" placeholder="e.g. 7 days, 10 days" />
+                    <input
+                      type="text"
+                      name="stayDuration"
+                      placeholder="e.g. 7 days, 10 days"
+                    />
                   </label>
                 </div>
               </div>
@@ -384,7 +442,12 @@ const DentalTourism = () => {
                 </div>
                 <div className="contact_options">
                   <label className="radio_card">
-                    <input type="checkbox" value="WhatsApp" name="contact" defaultChecked />
+                    <input
+                      type="checkbox"
+                      value="WhatsApp"
+                      name="contact"
+                      defaultChecked
+                    />
                     WhatsApp
                   </label>
                   <label className="radio_card">
@@ -422,6 +485,19 @@ const DentalTourism = () => {
               <p>{service.description}</p>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="parent dental_tourish_quote_parent">
+        <div className="cont dental_tourish_quote_cont">
+          <h3>"Kharadi's Most Trusted Clinic for International Patients"</h3>
+          <p>
+            <b>Denza Dental</b> is recognized as the <b>Best Dental Clinic</b>{" "}
+            in Kharadi for international patients — offering the comfort of a{" "}
+            <b>Best Dental Implant Center</b> in Kharadi alongside dedicated
+            travel support, so overseas patients can plan treatment with total
+            confidence.
+          </p>
         </div>
       </div>
 
@@ -513,7 +589,7 @@ const DentalTourism = () => {
 
       <div className="faq_section" style={{ background: "white" }}>
         <div className="faq_header">
-          <h2>FAQs</h2>
+          <h2>Frequently Asked Questions</h2>
           <p>
             Answers to the most common questions about our general dental care.
           </p>
@@ -573,10 +649,7 @@ const DentalTourism = () => {
         </div>
       </div>
 
-      <div
-        className="parent clinic_images_parent"
-        style={{ background: "var(--background)" }}
-      >
+      <div className="parent clinic_images_parent">
         <Swiper
           modules={[Autoplay]}
           slidesPerView={4.5}

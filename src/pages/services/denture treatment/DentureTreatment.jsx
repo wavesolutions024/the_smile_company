@@ -13,7 +13,7 @@ const services = [
   {
     title: "Expert Team ",
     description:
-      "ur skilled dental professionals specialize in denture treatments, ensuring accurate fit, comfort, and reliable results. ",
+      "Our skilled dental professionals specialize in denture treatments, ensuring accurate fit, comfort, and reliable results. ",
   },
   {
     title: "Personalized Care ",

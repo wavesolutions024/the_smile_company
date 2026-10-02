@@ -155,9 +155,9 @@
 
 .why_choose_card {
   background: #ffffff;
-  width: 270px;
+  width: 400px;
   padding: 20px 15px;
-  border-radius: 12px;
+  border-radius: var(--unit);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition:
@@ -313,8 +313,8 @@
 
 .service_card {
   padding: 2rem;
-  border-radius: 28px;
-  width: 270px;
+  border-radius: var(--unit);
+  width: 350px;
   background: var(--background);
   min-height: 300px;
   display: flex;
