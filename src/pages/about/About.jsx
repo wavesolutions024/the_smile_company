@@ -3,6 +3,8 @@ import PageTop from "../../comp/page_top/PageTop";
 import beforeImg from "../../assets/about_page/before1.webp";
 import afterImg from "../../assets/about_page/after1.webp";
 import "./About.scss";
+import img4 from "../../assets/about_section/img5.webp";
+
 import {
   FaArrowRight,
   FaClock,
@@ -38,51 +40,42 @@ const About = () => {
     }
   };
 
-  const doctors = [
+    const [leftAccordion, setLeftAccordion] = useState(0);
+  
+
+
+
+
+   const accordianContent = [
     {
-      id: 1,
-      name: " Dr. Hemant Suresh Thodsare ",
-      title: "Co-founder | Prosthodontist & Implantologist",
-      description: (
-        <>
-          "Dr. Hemant is an internationally experienced Prosthodontist and
-          Cosmetic specialist, specializing in minimally invasive cosmetic
-          dentistry, smile makeovers, dental implants, and complex full mouth
-          rehabilitation. With over{" "}
-          <strong>15 years of clinical expertise</strong>, he is known for
-          delivering precise, functionally sound, and aesthetically refined
-          outcomes. He holds an MDS in Prosthodontics and Implantology and
-          brings advanced expertise in Crown & Bridge and comprehensive
-          restorative dentistry. He also has valuable international clinical
-          experience as a licensed dentist under the Ministry of Health, Kuwait.
-          "
-        </>
-      ),
-      image: male_dr,
-      expertise: [
-        "15+ Years Experience",
-        "MDS – Prosthodontics, Crown & Bridge and Implantology",
-        "Cosmetic Dentistry & Smile Makeover Specialist",
-        "Full Mouth Rehabilitation Expert",
-        "Ex-Assistant Professor",
-        "Licensed Dentist – Ministry of Health, Kuwait",
-        "Member of Indian Prosthodontic Society",
-      ],
+      title: "Is Denza Dental the best dental clinic in Kharadi?",
+      description:
+        "Denza Dental is a specialist-led, premium dental clinic in Kharadi, Pune, co-founded by Dr. Hemant Suresh Thodsare and Dr. Devika Kalaskar-Thodsare, recognized for its precision, ethics, and patient-first approach to dentistry. ",
     },
     {
-      id: 2,
-      name: "Dr. Devika Kalaskar- Thodsare",
-      title: "Co-founder | Endodontist & Esthetic Dentist",
+      title: "Who are the dentists at Denza Dental?",
       description:
-        "Dr. Devika is a skilled and patient-focused endodontist and esthetic dentist, known for her precision and calm, reassuring approach to care. She specializes in minimally invasive dentistry, root canal treatments, and aesthetic smile enhancement procedures. She completed her BDS from Sinhgad Dental College, Pune, and her MDS in Conservative Dentistry & Endodontics from Government Dental College, one of India’s premier institutions. A former Assistant Professor, she combines academic excellence with strong clinical expertise. She also brings valuable international clinical experience from Kuwait, along with active participation in conferences, workshops, and research, with multiple publications in national and international journals. She is a member of the Indian Association of Conservative Dentistry and Endodontics (IACDE) and has received several academic recognitions. ",
-      image: img,
-      expertise: [
-        "10+ Years Experience",
-        "MDS – Conservative Dentistry & Endodontics ",
-        "Ex-Assistant Professor ",
-        " International Experience – Licensed Endodontist with Ministry of Health, Kuwait ",
-        "Member of IACDE ",
-      ],
+        "Denza Dental is led by Dr. Hemant Thodsare (Prosthodontist & Implantologist, 15+ years' experience) and Dr. Devika Kalaskar-Thodsare (Endodontist & Esthetic Dentist, 10+ years' experience) — both MDS specialists with international clinical experience under the Ministry of Health, Kuwait. ",
+    },
+    {
+      title: "What international experience do Denza Dental's doctors have?",
+      description:
+        "Both co-founders practiced as licensed dentists under the Ministry of Health, Kuwait, bringing global clinical standards and advanced protocols to their practice in Kharadi, Pune.",
+    },
+    {
+      title: "Is Denza Dental a good choice for dental implants in Kharadi?",
+      description:
+        "Yes. Dr. Hemant Thodsare's specialization in Prosthodontics and Implantology makes Denza Dental a trusted Best Dental Implant Center in Kharadi for complex implant and full mouth rehabilitation cases.",
+    },
+    {
+      title: "Does Denza Dental offer painless root canal treatment?",
+      description:
+        "Yes. Dr. Devika Kalaskar-Thodsare, an MDS in Conservative Dentistry and Endodontics, specializes in minimally invasive, precise root canal treatments performed with patient comfort as a priority. ",
+    },
+    {
+      title: "What makes Denza Dental different from other clinics in Kharadi?",
+      description:
+        "Denza Dental combines specialist-led, MDS-qualified doctors, international clinical exposure, transparent treatment planning, and a calm, refined environment — setting it apart as a leading choice among patients searching for the best dentist in Kharadi. ",
     },
   ];
 
@@ -138,7 +131,8 @@ const About = () => {
           international dental experience Pune,
           international experienced dentist Pune,
           dental specialists in Kharadi,
-          dental specialists in Pune
+          dental specialists in Pune,
+          Kharadi's Preferred Clinic for Smile Transformations,
         "
         />
 
@@ -281,7 +275,13 @@ const About = () => {
           <div className="left_doctors_parents bg-img-cover">
             {/* <div src={male_dr} alt="Dr. Hemant Suresh Thodsare" /> */}
             <p className="doctor_name_title_img">
-              "Dr. Hemant is trusted as one of the Best Dentists in Kharadi for dental implants and smile makeovers, and leads Denza Dental's reputation as a Best Dental Implant Center in Kharadi." 
+              "
+              <span style={{ fontWeight: "800", color: "var(--accent)" }}>
+                Dr. Hemant
+              </span>{" "}
+              is trusted as one of the Best Dentists in Kharadi for dental
+              implants and smile makeovers, and leads Denza Dental's reputation
+              as a Best Dental Implant Center in Kharadi."
             </p>
           </div>
           <div className="right_doctors_parents">
@@ -423,8 +423,16 @@ const About = () => {
             </ul>
           </div>
 
-          <div className="left_doctors_parents">
-            <img src={img} />
+          <div className="left_doctors_parents bg-img-cover">
+            <p className="doctor_name_title_img">
+              "
+              <span style={{ fontWeight: "800", color: "var(--accent)" }}>
+                Dr. Devika
+              </span>{" "}
+              is recognized as one of the Best Cosmetic Dentists in Kharadi for
+              painless root canals and smile enhancement, reinforcing Denza
+              Dental's position as a Best Smile Makeover Clinic in Kharadi."
+            </p>
           </div>
         </div>
         {/* trust strip */}
@@ -609,6 +617,7 @@ const About = () => {
       <div className="parent before_after_parent">
         <div className="cont before_after_cont">
           <h2>Real People. Real Results.</h2>
+          <p></p>
           <div
             className="beforeAfter"
             ref={containerRef}
@@ -630,6 +639,50 @@ const About = () => {
 
             <div className="label after">AFTER</div>
             <div className="label before">BEFORE</div>
+          </div>
+        </div>
+      </div>
+
+      {/* faq */}
+
+      <div
+        class="why_choose_parent bg-img-cover parent"
+      
+      >
+        <div class="why_choose_cont cont">
+          <h1>Frequently Asked Questions </h1>
+          <div className="wc_left_right">
+            <div class="wc_left">
+              <div class="accordian">
+                {accordianContent?.map((item, index) => (
+                  <div class="accordian_item">
+                    <div
+                      class="accordian_title"
+                      onClick={() => setLeftAccordion(index)}
+                    >
+                      <h1> {item.title} </h1>
+                      <div class="count"> {index + 1} </div>
+                    </div>
+                    {leftAccordion === index && (
+                      <div
+                        class={
+                          leftAccordion === index
+                            ? "accordian_desc active"
+                            : "accordian_desc"
+                        }
+                      >
+                        <div class="left">
+                          <h1> {item.title} </h1> <p>{item.description}</p>
+                        </div>
+                        <div class="rg_image">
+                          <img src={img4} alt="" />
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
