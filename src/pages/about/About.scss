@@ -152,7 +152,7 @@
 }
 
 .founder_note_parent {
-  background: var(--background);
+  // background: var(--background);
   padding: 150px 0px;
   .founder_note_cont {
     display: flex;
@@ -499,7 +499,7 @@
 .trust_strip_parent {
   width: 100%;
   padding: 40px 0;
-  background: rgba(255, 255, 255, 0.9);
+  // background: rgba(255, 255, 255, 0.9);
 }
 
 .trust_strip_cont {
@@ -582,6 +582,12 @@
         height: 100%;
         border-radius: var(--unit);
       }
+
+      .doctor_name_title_img {
+        font-size: 18px;
+        font-weight: 900;
+        color: red;
+      }
     }
 
     .right_doctors_parents {
@@ -591,9 +597,15 @@
       justify-content: center;
       gap: calc(var(--unit));
 
+      h2 {
+        font-size: 32px;
+        font-weight: 800;
+        color: var(--accent);
+      }
+
       .doctor_name_title {
         font-size: 18px;
-        font-size: 900;
+        font-weight: 900;
         color: var(--accent);
       }
     }
@@ -610,11 +622,27 @@
 
     .left_doctors_parents {
       width: 50%;
+      position: relative;
+      background: url("../../assets/about_page/dr_image_man\ \(2\).jpg");
+      padding: 10px 20px;
+      border-radius: var(--unit);
 
-      img {
-        width: 100%;
-        height: 100%;
-        border-radius: var(--unit);
+      .doctor_name_title_img {
+        font-size: 15px;
+        color: var(--black);
+        font-weight: 300;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 10px 20px ;
+        line-height: 20px;
+
+        background: rgba(130, 129, 129, 0.688);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        border-radius: 16px;
       }
     }
 

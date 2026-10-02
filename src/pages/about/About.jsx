@@ -210,6 +210,10 @@ const About = () => {
               <br /> Dentistry designed around you.
             </h1>
             <p>Specialist-led dental care in Kharadi, Pune </p>
+            <p>
+              Recognized as the Best Dental Clinic in Kharadi for
+              specialist-led, ethics-first dentistry.
+            </p>
           </div>
         </div>
       </div>
@@ -261,12 +265,35 @@ const About = () => {
       {/* doctors */}
 
       <div className="parent doctors_parents">
+        <h1
+          style={{
+            textAlign: "center",
+            marginBottom: "50px",
+            color: "var(--accent)",
+            fontSize: "40px",
+            fontWeight: "900",
+          }}
+        >
+          Meet Our Specialists
+        </h1>
+
         <div className="cont doctors_cont">
-          <div className="left_doctors_parents">
-            <img src={male_dr} />
+          <div className="left_doctors_parents bg-img-cover">
+            {/* <div src={male_dr} alt="Dr. Hemant Suresh Thodsare" /> */}
+            <p className="doctor_name_title_img">
+              "Dr. Hemant is trusted as one of the Best Dentists in Kharadi for dental implants and smile makeovers, and leads Denza Dental's reputation as a Best Dental Implant Center in Kharadi." 
+            </p>
           </div>
           <div className="right_doctors_parents">
-            <h2>Dr. Hemant Suresh Thodsare</h2>
+            <h2
+              style={{
+                color: "var(--accent)",
+                fontSize: "32px",
+                fontWeight: "600",
+              }}
+            >
+              Dr. Hemant Suresh Thodsare
+            </h2>
             <span className="doctor_name_title">
               Co-founder | Prosthodontist & Implantologist
             </span>
@@ -295,7 +322,7 @@ const About = () => {
               as a licensed dentist under the Ministry of Health,
               <b style={{ color: "var(--accent)" }}>Kuwait</b>.
             </p>
-            <ul>
+            <ul style={{ paddingLeft: "18px" }}>
               <li>15+ Years Experience</li>
               <li>MDS – Prosthodontics, Crown & Bridge and Implantology</li>
               <li>Cosmetic Dentistry & Smile Makeover Specialist</li>
@@ -304,6 +331,47 @@ const About = () => {
               <li>Licensed Dentist – Ministry of Health, Kuwait</li>
               <li>Member of Indian Prosthodontic Society</li>
             </ul>
+          </div>
+        </div>
+
+        {/* trust strip */}
+        <div className="trust_strip_parent parent">
+          <div className="trust_strip_cont cont">
+            <div className="trust_strip_item">
+              <div className="trust_icon">
+                <FaClock />
+              </div>
+              <div>
+                <h3>15+ Years Experience</h3>
+              </div>
+            </div>
+
+            <div className="trust_strip_item">
+              <div className="trust_icon">
+                <FaUserGraduate />
+              </div>
+              <div>
+                <h3>MDS Specialists</h3>
+              </div>
+            </div>
+
+            <div className="trust_strip_item">
+              <div className="trust_icon">
+                <FaGlobe />
+              </div>
+              <div>
+                <h3>Global Exposure</h3>
+              </div>
+            </div>
+
+            <div className="trust_strip_item">
+              <div className="trust_icon">
+                <FaLaptopMedical />
+              </div>
+              <div>
+                <h3>Advanced Technology</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -342,7 +410,7 @@ const About = () => {
               and Endodontics (IACDE) and has received several academic
               recognitions.
             </p>
-            <ul>
+            <ul style={{ paddingLeft: "18px" }}>
               <li>
                 International Experience – Licensed Endodontist with Ministry of
                 Health, Kuwait
@@ -359,44 +427,43 @@ const About = () => {
             <img src={img} />
           </div>
         </div>
-      </div>
+        {/* trust strip */}
+        <div className="trust_strip_parent parent">
+          <div className="trust_strip_cont cont">
+            <div className="trust_strip_item">
+              <div className="trust_icon">
+                <FaClock />
+              </div>
+              <div>
+                <h3>10+ Years Experience</h3>
+              </div>
+            </div>
 
-      {/* trust strip */}
-      <div className="trust_strip_parent parent">
-        <div className="trust_strip_cont cont">
-          <div className="trust_strip_item">
-            <div className="trust_icon">
-              <FaClock />
+            <div className="trust_strip_item">
+              <div className="trust_icon">
+                <FaUserGraduate />
+              </div>
+              <div>
+                <h3>MDS Specialists</h3>
+              </div>
             </div>
-            <div>
-              <h3>10+ Years Experience</h3>
-            </div>
-          </div>
 
-          <div className="trust_strip_item">
-            <div className="trust_icon">
-              <FaUserGraduate />
+            <div className="trust_strip_item">
+              <div className="trust_icon">
+                <FaGlobe />
+              </div>
+              <div>
+                <h3>Global Exposure</h3>
+              </div>
             </div>
-            <div>
-              <h3>MDS Specialists</h3>
-            </div>
-          </div>
 
-          <div className="trust_strip_item">
-            <div className="trust_icon">
-              <FaGlobe />
-            </div>
-            <div>
-              <h3>Global Exposure</h3>
-            </div>
-          </div>
-
-          <div className="trust_strip_item">
-            <div className="trust_icon">
-              <FaLaptopMedical />
-            </div>
-            <div>
-              <h3>Advanced Technology</h3>
+            <div className="trust_strip_item">
+              <div className="trust_icon">
+                <FaLaptopMedical />
+              </div>
+              <div>
+                <h3>Advanced Technology</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -496,47 +563,6 @@ const About = () => {
           </div>
         </div>
       </div> */}
-
-      {/* trust strip */}
-      <div className="trust_strip_parent parent">
-        <div className="trust_strip_cont cont">
-          <div className="trust_strip_item">
-            <div className="trust_icon">
-              <FaClock />
-            </div>
-            <div>
-              <h3>15+ Years Experience</h3>
-            </div>
-          </div>
-
-          <div className="trust_strip_item">
-            <div className="trust_icon">
-              <FaUserGraduate />
-            </div>
-            <div>
-              <h3>MDS Specialists</h3>
-            </div>
-          </div>
-
-          <div className="trust_strip_item">
-            <div className="trust_icon">
-              <FaGlobe />
-            </div>
-            <div>
-              <h3>Global Exposure</h3>
-            </div>
-          </div>
-
-          <div className="trust_strip_item">
-            <div className="trust_icon">
-              <FaLaptopMedical />
-            </div>
-            <div>
-              <h3>Advanced Technology</h3>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div className="parent about_dr_parent">
         <div className="cont about_dr_cont">
