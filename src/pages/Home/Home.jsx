@@ -45,7 +45,8 @@ import { Pagination } from "swiper/modules";
 import Testimonials from "../../comp/testimonials/Testimonials";
 import { Helmet } from "react-helmet";
 import blogs from "../../data/blogs";
-
+import { FaQuoteLeft } from "react-icons/fa6";
+import { FaQuoteRight } from "react-icons/fa6";
 const Home = () => {
   // const [accordian, setLeftAccordion] = useState(0);
   const [leftAccordion, setLeftAccordion] = useState(0);
@@ -81,29 +82,44 @@ const Home = () => {
 
   const accordianContent = [
     {
-      title: "Internationally Experienced Dental Specialists",
+      title: "Which is the best dental clinic in Kharadi?",
       description:
-        "Our team of highly qualified dentists brings international expertise and advanced clinical knowledge to every treatment. We stay updated with the latest global dental practices to ensure you receive world-class care with precision and excellence.",
+        "Denza Dental Center is a specialist-led International Smile Makeover and Implant Centre in Kharadi, Pune, led by Dr. Hemant Thodsare and Dr. Devika Kalaskar-Thodsare, recognized for combining international clinical expertise with personalized, ethical, and evidence-based dental care.",
     },
     {
-      title: "Advanced Technology",
+      title: "What services does Denza Dental offer?",
       description:
-        "We use state-of-the-art dental equipment and digital technology to deliver accurate diagnoses, minimally invasive procedures, and faster recovery. Our modern approach ensures safe, efficient, and comfortable treatments for every patient.",
+        "Denza Dental offers General Dental Services, Restorative Dentistry, Cosmetic Dentistry, Orthodontic Treatment, Dental Checkups, Full Mouth Rehabilitation, and Pediatric Dentistry — all under one roof in Kharadi.",
     },
     {
-      title: "Patient Comfort",
+      title: "Is Denza Dental the best dental implant center in Kharadi?",
       description:
-        "Your comfort is at the heart of everything we do. From a welcoming environment to gentle treatment techniques, we strive to make every visit relaxing, pain-free, and stress-free for patients of all ages.",
+        "With advanced technology such as CBCT imaging, Intra-Oral Scanning, and Dental Lasers, Denza Dental Center is trusted as a leading dental implant center in Kharadi for precise, long-lasting implant solutions.",
     },
     {
-      title: "Safe & Hygienic",
+      title: "Does Denza Dental offer smile makeovers?",
       description:
-        "We maintain the highest standards of sterilization and infection control, following strict international safety protocols. Every instrument and treatment area is thoroughly sanitized to ensure a clean and safe environment.",
+        "Yes. As an International Smile Makeover Centre, Denza Dental specializes in complete smile transformations that combine cosmetic dentistry, restorative treatments, and digital smile planning for natural, confident results.",
     },
     {
-      title: "Transparent & Ethical Care",
+      title: "What makes Denza Dental different from other clinics in Kharadi?",
       description:
-        "We believe in honesty, integrity, and clear communication. You'll receive detailed treatment explanations, transparent pricing, and personalized care recommendations—without unnecessary procedures or hidden costs.",
+        "Denza Dental stands apart through internationally experienced specialists, advanced technology, transparent and ethical treatment planning, and a comfort-first approach — making it a preferred choice among patients searching for the best dentist in Kharadi.",
+    },
+    {
+      title: "Do you treat dental emergencies?",
+      description:
+        "Yes, Denza Dental Center welcomes urgent dental concerns and works to accommodate patients quickly for pain relief and emergency care.",
+    },
+      {
+      title: "Is Denza Dental a family-friendly clinic?",
+      description:
+        "Yes. From pediatric dentistry to full mouth rehabilitation, Denza Dental Center provides gentle, personalized care for patients of every age group in Kharadi and beyond.",
+    },
+     {
+      title: "Are cosmetic and smile makeover treatments safe at Denza Dental? ",
+      description:
+        "Absolutely. All cosmetic and smile makeover treatments follow global sterilization standards and are performed by experienced specialists using advanced, safe technology.",
     },
   ];
 
@@ -366,22 +382,18 @@ const Home = () => {
     });
   };
 
-
-
-  
-
   return (
     <>
       <Helmet>
         <title>
-          Denza Dental Center | Best Smile Makeover And Implant Center Of Kharadi Pune
+          Denza Dental Center | Best Smile Makeover And Implant Center Of
+          Kharadi Pune
         </title>
 
         <meta
           name="description"
           content="Denza Dental Center is a multispecialty dental clinic in Kharadi, Pune offering dental implants, smile makeovers, root canal treatment, full mouth rehabilitation, cosmetic dentistry, orthodontics, pediatric dentistry and advanced dental care."
         />
-
         <meta
           name="keywords"
           content="Denza Dental Center, Denza Dental, Denza Dentistry, Denza Dental Center Kharadi, Denza Dental Center Pune, dental clinic in Kharadi Pune, dentist in Kharadi Pune, best dental clinic in Kharadi, dentist near Marvel Enigma Kharadi, dental clinic near Marvel Enigma, multispecialty dental clinic Kharadi, dental implants Kharadi Pune, dental implant centre Kharadi, dental implants Pune, smile makeover Kharadi Pune, smile makeover Pune, smile designing Kharadi, cosmetic dentistry Kharadi Pune, cosmetic dentist Kharadi, root canal treatment Kharadi Pune, root canal dentist Kharadi, full mouth rehabilitation Kharadi, full mouth rehabilitation Pune, restorative dentistry Kharadi, restorative dentistry Pune, orthodontist Kharadi Pune, orthodontic treatment Kharadi, pediatric dentist Kharadi Pune, pediatric dentistry Punei, dental checkup Kharadi, preventive dentistry Kharadi, teeth cleaning Kharadi Pune, GBT cleaning Pune, dental laser treatment Kharadi, CBCT dental scan Pune, intraoral scanning Pune, digital dentistry Kharadi, advanced dental clinic Pune, sedation dentistry Pune, international smile makeover centre Pune, international dental centre Pune, dental care Kharadi Pune, "
@@ -417,7 +429,6 @@ const Home = () => {
           content="Denza Dental Center - Dental Clinic in Kharadi, Pune"
         />
 
-  
         <meta property="og:locale" content="en_IN" />
       </Helmet>
 
@@ -480,6 +491,20 @@ const Home = () => {
                 </div>
               ))}
             </div>
+          </div>
+          <div class="th_section">
+            <h2 className="abt_th_h">
+           <FaQuoteLeft /> Best Dental Clinic in Kharadi, Pune — International Smile Makeover &
+            Implant Centre <FaQuoteRight />
+          </h2>
+          <p>
+            Proudly located in Kharadi, Pune, Denza Dental Center is recognized
+            by patients as the Best Dental Clinic in Kharadi and the Best
+            International Smile Makeover Centre in the region — bringing
+            together internationally trained specialists, advanced implant
+            technology, and a comfort-first approach for every patient who walks
+            through our doors.
+          </p>
           </div>
         </div>
       </div>
@@ -562,17 +587,17 @@ const Home = () => {
           <div className="blog_cards">
             {blogs.map((blog) => (
               <div className="card" key={blog.id}>
-              <div
-                className="image bg-img-cover"
-                style={{ backgroundImage: `url(${blog.image})` }}
-              >
-                <p className="date">{blog.date}</p>
-              </div>
-              <h1 className="blog_heading">{blog.title}</h1>
-              <p>{blog.excerpt}</p>
-              <Link to={`/blog-details/${blog.id}`} className="arrow">
-                <IoArrowForwardOutline />
-              </Link>
+                <div
+                  className="image bg-img-cover"
+                  style={{ backgroundImage: `url(${blog.image})` }}
+                >
+                  <p className="date">{blog.date}</p>
+                </div>
+                <h1 className="blog_heading">{blog.title}</h1>
+                <p>{blog.excerpt}</p>
+                <Link to={`/blog-details/${blog.id}`} className="arrow">
+                  <IoArrowForwardOutline />
+                </Link>
               </div>
             ))}
           </div>
@@ -738,76 +763,72 @@ const Home = () => {
               }}
             >
               {data.map((item, index) => {
-  const position =
-    sliderPositions[index] !== undefined
-      ? sliderPositions[index]
-      : 50;
+                const position =
+                  sliderPositions[index] !== undefined
+                    ? sliderPositions[index]
+                    : 50;
 
-  return (
-    <SwiperSlide key={index}>
-      <div className="card">
-        <div
-          className="image-wrapper"
-          ref={(el) => (sliderRefs.current[index] = el)}
-          onMouseMove={(e) =>
-            e.buttons === 1 && handleSliderMove(e, index)
-          }
-          onMouseDown={(e) => handleSliderMove(e, index)}
-          onTouchMove={(e) => handleSliderMove(e, index)}
-          onTouchStart={(e) => handleSliderMove(e, index)}
-        >
-          <img
-            src={item}
-            alt="after"
-            className="after-image"
-          />
+                return (
+                  <SwiperSlide key={index}>
+                    <div className="card">
+                      <div
+                        className="image-wrapper"
+                        ref={(el) => (sliderRefs.current[index] = el)}
+                        onMouseMove={(e) =>
+                          e.buttons === 1 && handleSliderMove(e, index)
+                        }
+                        onMouseDown={(e) => handleSliderMove(e, index)}
+                        onTouchMove={(e) => handleSliderMove(e, index)}
+                        onTouchStart={(e) => handleSliderMove(e, index)}
+                      >
+                        <img src={item} alt="after" className="after-image" />
 
-          <div
-            className="before-wrapper"
-            style={{
-              width: `${100 - position}%`,
-            }}
-          >
-            <img
-              src={item}
-              alt="before"
-              className="before-image"
-            />
-          </div>
+                        <div
+                          className="before-wrapper"
+                          style={{
+                            width: `${100 - position}%`,
+                          }}
+                        >
+                          <img
+                            src={item}
+                            alt="before"
+                            className="before-image"
+                          />
+                        </div>
 
-          <div
-            className="slider-line"
-            style={{
-              left: `${position}%`,
-            }}
-          >
-            <div className="slider-icon">
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  moveSlider(index, "left");
-                }}
-              >
-                ◀
-              </button>
+                        <div
+                          className="slider-line"
+                          style={{
+                            left: `${position}%`,
+                          }}
+                        >
+                          <div className="slider-icon">
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                moveSlider(index, "left");
+                              }}
+                            >
+                              ◀
+                            </button>
 
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  moveSlider(index, "right");
-                }}
-              >
-                ▶
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </SwiperSlide>
-  );
-})}
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                moveSlider(index, "right");
+                              }}
+                            >
+                              ▶
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
             </Swiper>
           </div>
         </div>

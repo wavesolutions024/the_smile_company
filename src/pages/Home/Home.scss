@@ -18,6 +18,25 @@
     flex-direction: column;
     gap: calc(var(--unit) * 2);
 
+    .th_section{
+      width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: var(--unit);
+flex-direction: column;
+       .abt_th_h{
+      font-size: 16px;
+    }
+
+    p{
+      text-align: center;
+    }
+
+    }
+
+   
+
     .abt_top_sec {
       width: 100%;
       display: flex;
@@ -89,6 +108,9 @@
       gap: var(--unit);
       justify-content: center;
       align-items: center;
+      background-color: var(--accent);
+      padding: 20px 0px;
+      border-radius: 10px;
 
       .count_main {
         display: flex;
@@ -101,7 +123,7 @@
           width: 300px;
           padding: 20px;
           height: auto;
-          background-color: var(--accent);
+          background-color: var(--white);
           box-shadow: var(--shadow);
           border-radius: 14px;
           display: flex;
@@ -139,12 +161,12 @@
 
             h1 {
               font-size: 45px;
-              color: var(--white);
+              color: var(--accent);
             }
             .service_name {
               font-size: 20px;
               font-weight: 400;
-              color: var(--white);
+              color: var(--black);
             }
           }
         }
