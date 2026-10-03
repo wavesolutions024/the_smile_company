@@ -689,8 +689,7 @@ const Home = () => {
         data-aos-delay="200"
       >
         <div class="why_choose_cont cont">
-          <h1>Why Choose Denza Dental Care</h1>
-          <p>Because every smile deserves exceptional care.</p>
+          <h1>Frequently Asked Questions</h1>
           <div className="wc_left_right">
             <div class="wc_left">
               <div class="accordian">
