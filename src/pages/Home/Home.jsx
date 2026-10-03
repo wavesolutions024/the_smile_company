@@ -122,6 +122,38 @@ const Home = () => {
         "Absolutely. All cosmetic and smile makeover treatments follow global sterilization standards and are performed by experienced specialists using advanced, safe technology.",
     },
   ];
+    const whychooseaccordianContent = [
+    {
+      title: "Internationally Experienced Dental Specialists",
+      description:
+       "Our team of highly qualified dentists brings international expertise and advanced clinical knowledge to every treatment. We stay updated with the latest global dental practices to ensure you receive world-class care with precision and excellence."
+    },
+    {
+      title: "Advanced Technology",
+      description:
+        "We use state-of-the-art dental equipment and digital technology to deliver accurate diagnoses, minimally invasive procedures, and faster recovery. Our modern approach ensures safe, efficient, and comfortable treatments for every patient.",
+    },
+    {
+      title: "Patient Comfort",
+      description:
+        "Your comfort is at the heart of everything we do. From a welcoming environment to gentle treatment techniques, we strive to make every visit relaxing, pain-free, and stress-free for patients of all ages.",
+    },
+    {
+      title: "Safe & Hygienic",
+      description:
+        "We maintain the highest standards of sterilization and infection control, following strict international safety protocols. Every instrument and treatment area is thoroughly sanitized to ensure a clean and safe environment." ,
+    },
+    {
+      title: "Transparent & Ethical Care",
+      description:
+        "We believe in honesty, integrity, and clear communication. You'll receive detailed treatment explanations, transparent pricing, and personalized care recommendations—without unnecessary procedures or hidden costs.",
+    },
+ {
+      title: "Kharadi's Trusted Choice for Dental Implants & Smile Makeovers ",
+      description:
+        "Patients across Kharadi and Pune choose Denza Dental Center as their preferred International Smile Makeover and Implant Centre — recognized as the Best Dental Clinic in Kharadi for combining internationally trained specialists, transparent pricing, and advanced technology under one roof. ",
+    },
+  ];
 
   const data = [img1, img2, img3, img1, img2, img3, img1, img2, img3];
 
@@ -689,11 +721,12 @@ const Home = () => {
         data-aos-delay="200"
       >
         <div class="why_choose_cont cont">
-          <h1>Frequently Asked Questions</h1>
+          <h1>Why Choose Denza Dental Care </h1>
+          <p>Because every smile deserves exceptional care.</p>
           <div className="wc_left_right">
             <div class="wc_left">
               <div class="accordian">
-                {accordianContent?.map((item, index) => (
+                {whychooseaccordianContent?.map((item, index) => (
                   <div class="accordian_item">
                     <div
                       class="accordian_title"
@@ -829,6 +862,48 @@ const Home = () => {
                 );
               })}
             </Swiper>
+          </div>
+        </div>
+      </div>
+        <div
+        class="why_choose_parent bg-img-cover parent"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="why_choose_cont cont">
+          <h1>Frequently Asked Questions</h1>
+          <div className="wc_left_right">
+            <div class="wc_left">
+              <div class="accordian">
+                {accordianContent?.map((item, index) => (
+                  <div class="accordian_item">
+                    <div
+                      class="accordian_title"
+                      onClick={() => setLeftAccordion(index)}
+                    >
+                      <h1> {item.title} </h1>
+                      <div class="count"> {index + 1} </div>
+                    </div>
+                    {leftAccordion === index && (
+                      <div
+                        class={
+                          leftAccordion === index
+                            ? "accordian_desc active"
+                            : "accordian_desc"
+                        }
+                      >
+                        <div class="left">
+                          <h1> {item.title} </h1> <p>{item.description}</p>
+                        </div>
+                        <div class="rg_image">
+                          <img src={img4} alt="" />
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
