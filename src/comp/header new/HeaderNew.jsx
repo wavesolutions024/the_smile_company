@@ -108,7 +108,7 @@ const HeaderNew = () => {
           to: "/full-mouth-rehabilitation",
         },
         { label: "DENTURE TREATMENT", to: "/denture-treatment" },
-        { label: "PEDIATRIC DENTISTRY", to: "/pediatric-dentistry" },
+        { label: "KIDS DENTISTRY", to: "/pediatric-dentistry" },
         { label: " DENTAL LASERS", to: "/dental-lasers-services" },
       ],
     },

@@ -1,7 +1,8 @@
 import React, { useState, useRef } from "react";
 import "./Appointment.scss";
 import { IoArrowForward } from "react-icons/io5";
-import dr_appoint from "../../assets/appointment/doctors.webp";
+// import dr_appoint from "../../assets/appointment/doctors.webp";
+import dr_appoint from "../../assets/home/apointment_img.png";
 import { FaUser, FaEnvelope, FaCalendarAlt } from "react-icons/fa";
 import { BsFillCalendarDateFill } from "react-icons/bs";
 

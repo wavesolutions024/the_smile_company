@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet";
 
 const services = [
   {
-    title: "Specialized Pediatric Care ",
+    title: "Specialized Children’s Dental Care ",
     description:
       "We provide gentle and customized dental treatments designed specifically for children’s oral health needs.",
   },
@@ -70,7 +70,7 @@ const faqs = [
   },
   {
     question:
-      "Are pediatric dentists trained to handle children with special needs?",
+      "Are kids’ dentists trained to handle children with special needs?",
     answer:
       "Yes. Pediatric dentists are specially trained to manage children with physical, developmental, or behavioral needs using gentle and customized approaches. ",
   },
@@ -91,10 +91,7 @@ const PediatricDentistry = () => {
   return (
     <>
       <Helmet>
-        <title>
-          Pediatric Dentistry in Kharadi, Pune | Denza
-          Dental
-        </title>
+        <title>Pediatric Dentistry in Kharadi, Pune | Denza Dental</title>
         <meta
           name="description"
           content="Pediatric dentistry in Kharadi, Pune 
@@ -153,23 +150,14 @@ Denza Dental Pune
 "
         />
 
-        <meta
-          name="geo.region"
-          content="IN-MH"
-        />
+        <meta name="geo.region" content="IN-MH" />
         <meta
           name="geo.placename"
           content="Kharadi, Pune, Maharashtra, India"
         />
 
-        <meta
-          property="og:type"
-          content="website"
-        />
-        <meta
-          property="og:site_name"
-          content="Denza Dental Center"
-        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Denza Dental Center" />
         <meta
           property="og:title"
           content="Pediatric Dentistry in Kharadi, Pune 
@@ -196,10 +184,7 @@ ry"
           content="Pediatric dentistry at Denza Dental 
 Center in Kharadi, Pune"
         />
-        <meta
-          property="og:locale"
-          content="en_IN"
-        />
+        <meta property="og:locale" content="en_IN" />
       </Helmet>
       <PageTop title="Making Dental Care Comfortable for Kids" />
 
@@ -210,8 +195,8 @@ Center in Kharadi, Pune"
           </div>
           <div className="general_right11">
             <h2>
-              Common Pediatric Dental Issues & Prevention – Denza Dental,
-              Kharadi (Pune)
+              Common Kids’ Dental Issues & Prevention – Denza Dental, Kharadi
+              (Pune)
             </h2>
             <ul style={{ paddingLeft: "20px" }}>
               Neonatal Teeth
@@ -357,7 +342,7 @@ Center in Kharadi, Pune"
       <div className="third_section" style={{ background: "var(--white)" }}>
         <div className="third_header">
           <h2 style={{ textAlign: "center", color: "var(--accent)" }}>
-            Why Choose Denza Dental for Pediatric Dentistry in Pune?
+            Why Choose Denza Dental for Kids' Dentistry in Pune?
           </h2>
         </div>
 
@@ -378,11 +363,11 @@ Center in Kharadi, Pune"
 
       <div className="equipment_parent parent">
         <div className="equipment_cont cont">
-          <h2>Pediatric Services Offered at Denza Dental, Kharadi (Pune)</h2>
+          <h2>Kids’ Dental Services Offered at Denza Dental, Kharadi (Pune)</h2>
           <div className="equipment_list">
             <ul>
               <li>
-                <b>General Pediatric Dentistry :</b> We provide routine dental
+                <b>General Kids’ Dentistry :</b> We provide routine dental
                 exams, professional cleaning, and cavity management to support
                 overall oral health in children.
               </li>
@@ -390,7 +375,7 @@ Center in Kharadi, Pune"
 
             <ul>
               <li>
-                <b>Pediatric Orthodontics:</b> Early evaluation and treatment
+                <b>Kids’ Orthodontics:</b> Early evaluation and treatment
                 for alignment issues such as crooked teeth, crowding, and bite
                 problems using braces or aligners when needed.
               </li>
@@ -426,10 +411,7 @@ Center in Kharadi, Pune"
 
       <div className="faq_section" style={{ background: "var(--white)" }}>
         <div className="faq_header">
-          <h2>FAQs</h2>
-          <p>
-            Answers to the most common questions about our general dental care.
-          </p>
+          <h2>Frequently Asked Questions</h2>
         </div>
 
         <div className="faq_list">

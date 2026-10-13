@@ -203,7 +203,7 @@ const About = () => {
               Precision. Ethics. Comfort.
               <br /> Dentistry designed around you.
             </h1>
-            <p>Specialist-led dental care in Kharadi, Pune </p>
+            {/* <p>Specialist-led dental care in Kharadi, Pune </p> */}
             <p>
               Recognized as the Best Dental Clinic in Kharadi for
               specialist-led, ethics-first dentistry.

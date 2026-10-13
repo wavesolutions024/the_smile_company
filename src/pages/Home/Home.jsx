@@ -3,13 +3,30 @@ import "./Home.scss";
 import HeroSection from "../../comp/Hero_section/HeroSection";
 import Button from "../../comp/button/Button";
 import Appointment from "../../comp/appointment/Appointment";
-import abt_img from "../../assets/about_section/img5.webp";
+// import abt_img from "../../assets/about_section/img5.webp";  
+import abt_img from "../../assets/home/smile_img.webp";
 import img5 from "../../assets/about_section/img4.webp";
 import img4 from "../../assets/about_section/img5.webp";
+import sir_img from "../../assets/home/sir_img.jpg";
+import mam_img from "../../assets/home/mam_img.png";
 import icon1 from "../../assets/about_section/medical-symbol.png";
 import icon2 from "../../assets/about_section/medicine.png";
 import icon3 from "../../assets/about_section/doctor.png";
 import doctorImg from "../../assets/about_page/woman_dr.jpg";
+
+import slide_img1 from "../../assets/home/slider_img/slider_img1.jpg";
+import slide_img2 from "../../assets/home/slider_img/slider_img2.jpeg";
+import slide_img3 from "../../assets/home/slider_img/slider_img3.jpeg";
+import slide_img4 from "../../assets/home/slider_img/slider_img4.jpeg";
+import slide_img5 from "../../assets/home/slider_img/slider_img5.jpeg";
+import slide_img6 from "../../assets/home/slider_img/slider_img6.jpeg";
+import slide_img7 from "../../assets/home/slider_img/slider_img7.jpeg";
+import slide_img8 from "../../assets/home/slider_img/slider_img8.jpeg";
+import slide_img9 from "../../assets/home/slider_img/slider_img9.jpeg";
+
+
+
+
 import { Link } from "react-router-dom";
 import { IoArrowForwardOutline } from "react-icons/io5";
 import {
@@ -89,7 +106,7 @@ const Home = () => {
     {
       title: "What services does Denza Dental offer?",
       description:
-        "Denza Dental offers General Dental Services, Restorative Dentistry, Cosmetic Dentistry, Orthodontic Treatment, Dental Checkups, Full Mouth Rehabilitation, and Pediatric Dentistry — all under one roof in Kharadi.",
+        "Denza Dental offers General Dental Services, Restorative Dentistry, Cosmetic Dentistry, Orthodontic Treatment, Dental Checkups, Full Mouth Rehabilitation, and kids Dentistry — all under one roof in Kharadi.",
     },
     {
       title: "Is Denza Dental the best dental implant center in Kharadi?",
@@ -114,7 +131,7 @@ const Home = () => {
       {
       title: "Is Denza Dental a family-friendly clinic?",
       description:
-        "Yes. From pediatric dentistry to full mouth rehabilitation, Denza Dental Center provides gentle, personalized care for patients of every age group in Kharadi and beyond.",
+        "Yes. From kids dentistry to full mouth rehabilitation, Denza Dental Center provides gentle, personalized care for patients of every age group in Kharadi and beyond.",
     },
      {
       title: "Are cosmetic and smile makeover treatments safe at Denza Dental? ",
@@ -201,7 +218,7 @@ const Home = () => {
     },
   ];
 
-  const clinicImages = [img4, img4, img4, img4, img4, img4, img4, img4];
+  const clinicImages = [slide_img1, slide_img2, slide_img3, slide_img4, slide_img5, slide_img6, slide_img7, slide_img8, slide_img9];
 
   const featureCards = [
     {
@@ -328,7 +345,7 @@ const Home = () => {
     name: "Denza Dental Center",
 
     description:
-      "Denza Dental Center is a multispecialty dental clinic in Kharadi, Pune offering dental implants, smile makeovers, root canal treatment, full mouth rehabilitation, cosmetic dentistry, orthodontics, pediatric dentistry and advanced dental care.",
+      "Denza Dental Center is a multispecialty dental clinic in Kharadi, Pune offering dental implants, smile makeovers, root canal treatment, full mouth rehabilitation, cosmetic dentistry, orthodontics, kids dentistry and advanced dental care.",
 
     url: "https://www.denzadental.com/",
     telephone: "+91-7028131132",
@@ -424,11 +441,11 @@ const Home = () => {
 
         <meta
           name="description"
-          content="Denza Dental Center is a multispecialty dental clinic in Kharadi, Pune offering dental implants, smile makeovers, root canal treatment, full mouth rehabilitation, cosmetic dentistry, orthodontics, pediatric dentistry and advanced dental care."
+          content="Denza Dental Center is a multispecialty dental clinic in Kharadi, Pune offering dental implants, smile makeovers, root canal treatment, full mouth rehabilitation, cosmetic dentistry, orthodontics, kids dentistry and advanced dental care."
         />
         <meta
           name="keywords"
-          content="Denza Dental Center, Denza Dental, Denza Dentistry, Denza Dental Center Kharadi, Denza Dental Center Pune, dental clinic in Kharadi Pune, dentist in Kharadi Pune, best dental clinic in Kharadi, dentist near Marvel Enigma Kharadi, dental clinic near Marvel Enigma, multispecialty dental clinic Kharadi, dental implants Kharadi Pune, dental implant centre Kharadi, dental implants Pune, smile makeover Kharadi Pune, smile makeover Pune, smile designing Kharadi, cosmetic dentistry Kharadi Pune, cosmetic dentist Kharadi, root canal treatment Kharadi Pune, root canal dentist Kharadi, full mouth rehabilitation Kharadi, full mouth rehabilitation Pune, restorative dentistry Kharadi, restorative dentistry Pune, orthodontist Kharadi Pune, orthodontic treatment Kharadi, pediatric dentist Kharadi Pune, pediatric dentistry Punei, dental checkup Kharadi, preventive dentistry Kharadi, teeth cleaning Kharadi Pune, GBT cleaning Pune, dental laser treatment Kharadi, CBCT dental scan Pune, intraoral scanning Pune, digital dentistry Kharadi, advanced dental clinic Pune, sedation dentistry Pune, international smile makeover centre Pune, international dental centre Pune, dental care Kharadi Pune, "
+          content="Denza Dental Center, Denza Dental, Denza Dentistry, Denza Dental Center Kharadi, Denza Dental Center Pune, dental clinic in Kharadi Pune, dentist in Kharadi Pune, best dental clinic in Kharadi, dentist near Marvel Enigma Kharadi, dental clinic near Marvel Enigma, multispecialty dental clinic Kharadi, dental implants Kharadi Pune, dental implant centre Kharadi, dental implants Pune, smile makeover Kharadi Pune, smile makeover Pune, smile designing Kharadi, cosmetic dentistry Kharadi Pune, cosmetic dentist Kharadi, root canal treatment Kharadi Pune, root canal dentist Kharadi, full mouth rehabilitation Kharadi, full mouth rehabilitation Pune, restorative dentistry Kharadi, restorative dentistry Pune, orthodontist Kharadi Pune, orthodontic treatment Kharadi, kids dentist Kharadi Pune, kids dentistry Pune, dental checkup Kharadi, preventive dentistry Kharadi, teeth cleaning Kharadi Pune, GBT cleaning Pune, dental laser treatment Kharadi, CBCT dental scan Pune, intraoral scanning Pune, digital dentistry Kharadi, advanced dental clinic Pune, sedation dentistry Pune, international smile makeover centre Pune, international dental centre Pune, dental care Kharadi Pune, "
         />
 
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
@@ -446,7 +463,7 @@ const Home = () => {
 
         <meta
           property="og:description"
-          content="Comprehensive dental care in Kharadi, Pune including dental implants, smile makeovers, root canal treatment, full mouth rehabilitation, cosmetic dentistry, orthodontics, pediatric dentistry and advanced dental technology."
+          content="Comprehensive dental care in Kharadi, Pune including dental implants, smile makeovers, root canal treatment, full mouth rehabilitation, cosmetic dentistry, orthodontics, kids dentistry and advanced dental technology."
         />
 
         <meta property="og:url" content="https://www.denzadental.com/" />
@@ -548,11 +565,11 @@ const Home = () => {
             {/* Left Images */}
             <div className="dentists_images">
               <div className="img_box">
-                <img src={img4} alt="Doctor" />
+                <img src={sir_img} alt="Doctor" />
               </div>
 
               <div className="img_box">
-                <img src={img4} alt="Doctor" />
+                <img src={mam_img} alt="Doctor" />
               </div>
             </div>
 
@@ -895,9 +912,9 @@ const Home = () => {
                         <div class="left">
                           <h1> {item.title} </h1> <p>{item.description}</p>
                         </div>
-                        <div class="rg_image">
+                        {/* <div class="rg_image">
                           <img src={img4} alt="" />
-                        </div>
+                        </div> */}
                       </div>
                     )}
                   </div>
