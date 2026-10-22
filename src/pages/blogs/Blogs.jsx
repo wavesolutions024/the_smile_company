@@ -1,15 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Blogs.scss";
 import PageTop from "../../comp/page_top/PageTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Button from "../../comp/button/Button";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { IoArrowForwardOutline } from "react-icons/io5";
 import { Helmet } from "react-helmet";
 import blogs from "../../data/blogs";
+import axios from "axios";
 
 const Blogs = () => {
+  const [blogData, setBlogData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(0);
+  const [loader, setLoader] = useState(false);
+
+  const itemsPerPage = 6;
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -19,6 +26,88 @@ const Blogs = () => {
     });
     AOS.refresh();
   }, []);
+
+  const [searchParams] = useSearchParams();
+  const blogid = searchParams.get("id");
+
+  useEffect(() => {
+    if (blogid) {
+      console.log("Setting blogview state with id:", blogid);
+      setBlogView(blogid);
+    }
+  }, [blogid]);
+
+  const blogsData = async () => {
+    try {
+      setLoader(true);
+      const response = await axios.get(
+        `${import.meta.env.VITE_APP_URL}/posts?_embed`,
+        {
+          params: {
+            per_page: 100,
+          },
+        },
+      );
+
+      const data = response.data;
+
+
+      const blogPosts = data
+        .filter((post) => {
+          // Check if the post belongs to the 'Blog' category
+          return (
+            post._embedded &&
+            post._embedded["wp:term"] &&
+            post._embedded["wp:term"][0].some(
+              (category) => category.name === "Blog",
+            )
+          );
+        })
+        .map((post) => {
+          const featuredMedia = post._embedded["wp:featuredmedia"]?.[0] || {};
+          return {
+            id: post.id,
+            slug: post.slug,
+            title: post.title.rendered,
+            description: post.excerpt.rendered,
+            uploadDate: post.date,
+            imageUrl: featuredMedia.source_url || "",
+            imageId: featuredMedia.id || null,
+            category: "Blog",
+          };
+        });
+
+      setBlogData(blogPosts);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoader(false);
+    }
+  };
+
+  useEffect(() => {
+    blogsData();
+  }, []);
+
+  const startOffset = currentPage * itemsPerPage;
+  const paginatedBlogs = blogData.slice(
+    startOffset,
+    startOffset + itemsPerPage,
+  );
+
+  const handleNextPage = () => {
+    if (startOffset + itemsPerPage < blogData.length) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handlePreviousPage = () => {
+    if (currentPage > 0) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+
   return (
     <>
       <Helmet>
@@ -128,19 +217,26 @@ const Blogs = () => {
           </div>
 
           <div className="blog_cards">
-            {blogs.map((blog) => (
-              <div className="card" key={blog.id}>
+            {blogData.map((blog) => (
+              <div className="card" key={blog.slug}>
                 <div
                   className="image bg-img-cover"
-                  style={{ backgroundImage: `url(${blog.image})` }}
+                  style={{ backgroundImage: `url(${blog.imageUrl})` }}
                 >
-                  <p className="date">{blog.date}</p>
+                  {/* <p className="date">{blog.date}</p> */}
                 </div>
-                <h1 className="blog_heading">{`Read ${blog.title}`}</h1>
-                <p>{blog.excerpt}</p>
-                <Link to={`/blog-details/${blog.id}`} className="arrow">
+                <h1 className="blog_heading">{`Read ${blog.title.slice(0,50)}...`}</h1>
+                <p
+                dangerouslySetInnerHTML={{
+                  __html:blog.description.slice(0,200)
+
+                }}
+                />
+               
+                <Link to={`/blog-details/${blog.slug}`} className="arrow">
                   <IoArrowForwardOutline />
-                </Link>              </div>
+                </Link>{" "}
+              </div>
             ))}
           </div>
         </div>
