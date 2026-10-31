@@ -9,6 +9,15 @@ import gallery1 from "../../../assets/about_page/after1.webp";
 import img4 from "../../../assets/about_section/img5.webp";
 import PageTop from "../../../comp/page_top/PageTop";
 import { Helmet } from "react-helmet";
+import slide_img1 from "../../../assets/home/slider_img/slider_img1.jpg";
+import slide_img2 from "../../../assets/home/slider_img/slider_img2.jpeg";
+import slide_img3 from "../../../assets/home/slider_img/slider_img3.jpeg";
+import slide_img4 from "../../../assets/home/slider_img/slider_img4.jpeg";
+import slide_img5 from "../../../assets/home/slider_img/slider_img5.jpeg";
+import slide_img6 from "../../../assets/home/slider_img/slider_img6.jpeg";
+import slide_img7 from "../../../assets/home/slider_img/slider_img7.jpeg";
+import slide_img8 from "../../../assets/home/slider_img/slider_img8.jpeg";
+import slide_img9 from "../../../assets/home/slider_img/slider_img9.jpeg";
 
 const Cbct = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -44,15 +53,23 @@ const Cbct = () => {
         "Advanced imaging with minimal radiation exposure, ensuring both safety and comfort during the process.",
     },
   ];
-
-  const clinicImages = [img4, img4, img4, img4, img4, img4, img4, img4];
+  const clinicImages = [
+    slide_img1,
+    slide_img2,
+    slide_img3,
+    slide_img4,
+    slide_img5,
+    slide_img6,
+    slide_img7,
+    slide_img8,
+    slide_img9,
+  ];
 
   return (
     <>
       <Helmet>
         <title>
-          CBCT Scan in Kharadi, Pune | 3D Dental
-          Imaging | Denza Dental
+          CBCT Scan in Kharadi, Pune | 3D Dental Imaging | Denza Dental
         </title>
         <meta
           name="description"
@@ -63,10 +80,7 @@ surrounding structures for diagnosis and
 treatment planning."
         />
 
-        <link
-          rel="canonical"
-          href="https://denzadental.com/cbct"
-        />
+        <link rel="canonical" href="https://denzadental.com/cbct" />
         <meta
           name="keywords"
           content=" 
@@ -112,22 +126,13 @@ Denza Dental Kharadi,
 Denza Dental Pune 
 "
         />
-        <meta
-          name="geo.region"
-          content="IN-MH"
-        />
+        <meta name="geo.region" content="IN-MH" />
         <meta
           name="geo.placename"
           content="Kharadi, Pune, Maharashtra, India"
         />
-        <meta
-          property="og:type"
-          content="website"
-        />
-        <meta
-          property="og:site_name"
-          content="Denza Dental Center"
-        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Denza Dental Center" />
         <meta
           property="og:title"
           content="CBCT Scan in Kharadi, Pune | 3D 
@@ -141,10 +146,7 @@ detailed imaging of teeth, jaws and surrounding
 structures to support dental diagnosis and 
 treatment planning."
         />
-        <meta
-          property="og:url"
-          content="https://denzadental.com/cbct"
-        />
+        <meta property="og:url" content="https://denzadental.com/cbct" />
         <meta
           property="og:image"
           content="https://denzadental.com/og-image.jpg"
@@ -154,10 +156,7 @@ treatment planning."
           content="CBCT 3D dental imaging at Denza 
 Dental Center in Kharadi, Pune"
         />
-        <meta
-          property="og:locale"
-          content="en_IN"
-        />
+        <meta property="og:locale" content="en_IN" />
       </Helmet>
       <PageTop title="Advanced CBCT & 3D Dental Imaging at Denza Dental Center" />
 

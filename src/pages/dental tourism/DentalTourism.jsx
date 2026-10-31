@@ -11,6 +11,15 @@ import clnic_img from "../../assets/dental_tourism_img1.jpeg";
 import Button from "../../comp/button/Button";
 import serviceHero from "../../assets/service_hero.png";
 import { Helmet } from "react-helmet";
+import slide_img1 from "../../assets/home/slider_img/slider_img1.jpg";
+import slide_img2 from "../../assets/home/slider_img/slider_img2.jpeg";
+import slide_img3 from "../../assets/home/slider_img/slider_img3.jpeg";
+import slide_img4 from "../../assets/home/slider_img/slider_img4.jpeg";
+import slide_img5 from "../../assets/home/slider_img/slider_img5.jpeg";
+import slide_img6 from "../../assets/home/slider_img/slider_img6.jpeg";
+import slide_img7 from "../../assets/home/slider_img/slider_img7.jpeg";
+import slide_img8 from "../../assets/home/slider_img/slider_img8.jpeg";
+import slide_img9 from "../../assets/home/slider_img/slider_img9.jpeg";
 
 const DentalTourism = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -92,13 +101,15 @@ const DentalTourism = () => {
     },
   ];
 
+    const clinicImages = [slide_img1, slide_img2, slide_img3, slide_img4, slide_img5, slide_img6, slide_img7, slide_img8, slide_img9];
+  
+
   const [openFaq, setOpenFaq] = useState(null);
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
 
-  const clinicImages = [img4, img4, img4, img4, img4, img4, img4, img4];
 
   const specialtyCards = [
     { label: "Dental Implants", image: img4 },

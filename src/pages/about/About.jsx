@@ -40,13 +40,9 @@ const About = () => {
     }
   };
 
-    const [leftAccordion, setLeftAccordion] = useState(0);
-  
+  const [leftAccordion, setLeftAccordion] = useState(0);
 
-
-
-
-   const accordianContent = [
+  const accordianContent = [
     {
       title: "Is Denza Dental the best dental clinic in Kharadi?",
       description:
@@ -438,7 +434,10 @@ const About = () => {
         {/* trust strip */}
         <div className="trust_strip_parent parent">
           <div className="trust_strip_cont cont">
-            <div className="trust_strip_item">
+            <div
+              className="trust_strip_item"
+              style={{ background: "var(--white)" }}
+            >
               <div className="trust_icon">
                 <FaClock />
               </div>
@@ -447,7 +446,10 @@ const About = () => {
               </div>
             </div>
 
-            <div className="trust_strip_item">
+            <div
+              className="trust_strip_item"
+              style={{ background: "var(--white)" }}
+            >
               <div className="trust_icon">
                 <FaUserGraduate />
               </div>
@@ -456,7 +458,10 @@ const About = () => {
               </div>
             </div>
 
-            <div className="trust_strip_item">
+            <div
+              className="trust_strip_item"
+              style={{ background: "var(--white)" }}
+            >
               <div className="trust_icon">
                 <FaGlobe />
               </div>
@@ -465,7 +470,118 @@ const About = () => {
               </div>
             </div>
 
-            <div className="trust_strip_item">
+            <div
+              className="trust_strip_item"
+              style={{ background: "var(--white)" }}
+            >
+              <div className="trust_icon">
+                <FaLaptopMedical />
+              </div>
+              <div>
+                <h3>Advanced Technology</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 3rd doctor */}
+
+      <div className="parent  doctors_parents_lady_dr">
+        <div className="cont doctors_cont_lady_dr">
+          <div className="right_doctors_parents">
+            <h2>Dr. Lucy Bhola</h2>
+            <span className="doctor_name_title">
+              MDS – Periodontist and Oral Implantologist
+            </span>
+            <p>
+              <span style={{ fontWeight: "800", color: "var(--accent)" }}>
+                Dr. Lucy Bhola
+              </span>{" "} is a dental professional with over 9 years of
+              clinical experience, specializing in periodontics and periodontal
+              surgical procedures. She has extensive clinical experience in
+              scaling and root planing, crown lengthening, periodontal flap
+              surgeries, and mucogingival surgeries. She completed her BDS from
+              Awadh Dental College and Hospital, Jamshedpur, and her MDS in
+              Periodontics from Kalinga Institute of Dental Sciences, KIIT
+              University, Bhubaneswar. She has been an active member of the
+              Indian Society of Periodontology. To further enhance her clinical
+              expertise, she has attended workshops on lasers in periodontics,
+              basic implantology, and microsurgical soft-tissue augmentation
+              around natural teeth and dental implants. She has also contributed
+              to dental research, with eight publications in national and
+              international journals. Her professional approach focuses on
+              evidence-based periodontal care, gum health, and the management of
+              periodontal conditions to support long-term oral health.
+            </p>
+            {/* <ul style={{ paddingLeft: "18px" }}>
+              <li>
+                International Experience – Licensed Endodontist with Ministry of
+                Health, Kuwait
+              </li>
+              <li>10+ Years Experience</li>
+              <li>MDS – Conservative Dentistry & Endodontics</li>
+              <li>Ex-Assistant Professor</li>
+
+              <li>Member of IACDE </li>
+            </ul> */}
+          </div>
+
+          <div className="left_doctors_parents bg-img-cover">
+            {/* <p className="doctor_name_title_img">
+              "
+              <span style={{ fontWeight: "800", color: "var(--accent)" }}>
+                Dr. Devika
+              </span>{" "}
+              is recognized as one of the Best Cosmetic Dentists in Kharadi for
+              painless root canals and smile enhancement, reinforcing Denza
+              Dental's position as a Best Smile Makeover Clinic in Kharadi."
+            </p> */}
+          </div>
+        </div>
+        {/* trust strip */}
+        <div className="trust_strip_parent parent">
+          <div className="trust_strip_cont cont">
+            <div
+              className="trust_strip_item"
+              style={{ background: "var(--background)" }}
+            >
+              <div className="trust_icon">
+                <FaClock />
+              </div>
+              <div>
+                <h3>10+ Years Experience</h3>
+              </div>
+            </div>
+
+            <div
+              className="trust_strip_item"
+              style={{ background: "var(--background)" }}
+            >
+              <div className="trust_icon">
+                <FaUserGraduate />
+              </div>
+              <div>
+                <h3>MDS Specialists</h3>
+              </div>
+            </div>
+
+            <div
+              className="trust_strip_item"
+              style={{ background: "var(--background)" }}
+            >
+              <div className="trust_icon">
+                <FaGlobe />
+              </div>
+              <div>
+                <h3>Global Exposure</h3>
+              </div>
+            </div>
+
+            <div
+              className="trust_strip_item"
+              style={{ background: "var(--background)" }}
+            >
               <div className="trust_icon">
                 <FaLaptopMedical />
               </div>
@@ -645,10 +761,7 @@ const About = () => {
 
       {/* faq */}
 
-      <div
-        class="why_choose_parent bg-img-cover parent"
-      
-      >
+      <div class="why_choose_parent bg-img-cover parent">
         <div class="why_choose_cont cont">
           <h1>Frequently Asked Questions </h1>
           <div className="wc_left_right">
@@ -660,7 +773,7 @@ const About = () => {
                       class="accordian_title"
                       onClick={() => setLeftAccordion(index)}
                     >
-                      <h1> {item.title} </h1>
+                      <h1 className="why_chose"> {item.title} </h1>
                       <div class="count"> {index + 1} </div>
                     </div>
                     {leftAccordion === index && (

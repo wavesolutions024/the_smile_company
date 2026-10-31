@@ -11,6 +11,7 @@ const HeaderNew = () => {
   // activePath[depth] = key of the open item at that depth.
   // Replaces activeDropdown/activeSubmenu so nesting isn't capped at 2 levels.
   const [activePath, setActivePath] = useState([]);
+  const [activeHeader, setActiveHeader] = useState();
 
   const navItems = [
     {
@@ -152,12 +153,21 @@ const HeaderNew = () => {
     { label: "DENTAL TOURISM", to: "/dental-tourism" },
   ];
 
+ 
+
   useEffect(() => {
     const handleScroll = () => {
       const shouldShow = window.scrollY > 80;
-      if (shouldShow || location.pathname !== "/blog-details/:blogId") {
+      if (shouldShow  ) {
         setVisible(true);
+      }else if(location.pathname === "/blog-details/:blogId"){
+         setVisible(true);
+      }else{
+         setVisible(false);
+
       }
+      
+      
 
       if (window.scrollY <= 80 && location.pathname === "/") {
         setMobileOpen(false);

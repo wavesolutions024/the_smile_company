@@ -3,7 +3,7 @@ import "./Home.scss";
 import HeroSection from "../../comp/Hero_section/HeroSection";
 import Button from "../../comp/button/Button";
 import Appointment from "../../comp/appointment/Appointment";
-// import abt_img from "../../assets/about_section/img5.webp";  
+// import abt_img from "../../assets/about_section/img5.webp";
 import abt_img from "../../assets/home/smile_img.webp";
 import img5 from "../../assets/about_section/img4.webp";
 import img4 from "../../assets/about_section/img5.webp";
@@ -24,8 +24,12 @@ import slide_img7 from "../../assets/home/slider_img/slider_img7.jpeg";
 import slide_img8 from "../../assets/home/slider_img/slider_img8.jpeg";
 import slide_img9 from "../../assets/home/slider_img/slider_img9.jpeg";
 
-
-
+import adv_tech from "../../assets/why_choose_home/adv_tech.png";
+import inter_exp from "../../assets/why_choose_home/inter_exp.jpg";
+import kharadi_last from "../../assets/why_choose_home/kharadi_last_point.jpg";
+import patient_comfort from "../../assets/why_choose_home/patient_comfort.jpg";
+import safe_hygien from "../../assets/why_choose_home/safe_n_hygeine.png";
+import transperent from "../../assets/why_choose_home/transperent_n_ethical_care.jpg";
 
 import { Link } from "react-router-dom";
 import { IoArrowForwardOutline } from "react-icons/io5";
@@ -128,47 +132,54 @@ const Home = () => {
       description:
         "Yes, Denza Dental Center welcomes urgent dental concerns and works to accommodate patients quickly for pain relief and emergency care.",
     },
-      {
+    {
       title: "Is Denza Dental a family-friendly clinic?",
       description:
         "Yes. From kids dentistry to full mouth rehabilitation, Denza Dental Center provides gentle, personalized care for patients of every age group in Kharadi and beyond.",
     },
-     {
-      title: "Are cosmetic and smile makeover treatments safe at Denza Dental? ",
+    {
+      title:
+        "Are cosmetic and smile makeover treatments safe at Denza Dental? ",
       description:
         "Absolutely. All cosmetic and smile makeover treatments follow global sterilization standards and are performed by experienced specialists using advanced, safe technology.",
     },
   ];
-    const whychooseaccordianContent = [
+  const whychooseaccordianContent = [
     {
       title: "Internationally Experienced Dental Specialists",
       description:
-       "Our team of highly qualified dentists brings international expertise and advanced clinical knowledge to every treatment. We stay updated with the latest global dental practices to ensure you receive world-class care with precision and excellence."
+        "Our team of highly qualified dentists brings international expertise and advanced clinical knowledge to every treatment. We stay updated with the latest global dental practices to ensure you receive world-class care with precision and excellence.",
+        img:inter_exp
     },
     {
       title: "Advanced Technology",
       description:
         "We use state-of-the-art dental equipment and digital technology to deliver accurate diagnoses, minimally invasive procedures, and faster recovery. Our modern approach ensures safe, efficient, and comfortable treatments for every patient.",
+        img:adv_tech
     },
     {
       title: "Patient Comfort",
       description:
         "Your comfort is at the heart of everything we do. From a welcoming environment to gentle treatment techniques, we strive to make every visit relaxing, pain-free, and stress-free for patients of all ages.",
+        img:patient_comfort
     },
     {
       title: "Safe & Hygienic",
       description:
-        "We maintain the highest standards of sterilization and infection control, following strict international safety protocols. Every instrument and treatment area is thoroughly sanitized to ensure a clean and safe environment." ,
+        "We maintain the highest standards of sterilization and infection control, following strict international safety protocols. Every instrument and treatment area is thoroughly sanitized to ensure a clean and safe environment.",
+        img:safe_hygien
     },
     {
       title: "Transparent & Ethical Care",
       description:
         "We believe in honesty, integrity, and clear communication. You'll receive detailed treatment explanations, transparent pricing, and personalized care recommendations—without unnecessary procedures or hidden costs.",
+        img:transperent
     },
- {
+    {
       title: "Kharadi's Trusted Choice for Dental Implants & Smile Makeovers ",
       description:
         "Patients across Kharadi and Pune choose Denza Dental Center as their preferred International Smile Makeover and Implant Centre — recognized as the Best Dental Clinic in Kharadi for combining internationally trained specialists, transparent pricing, and advanced technology under one roof. ",
+        img:kharadi_last
     },
   ];
 
@@ -218,7 +229,17 @@ const Home = () => {
     },
   ];
 
-  const clinicImages = [slide_img1, slide_img2, slide_img3, slide_img4, slide_img5, slide_img6, slide_img7, slide_img8, slide_img9];
+  const clinicImages = [
+    slide_img1,
+    slide_img2,
+    slide_img3,
+    slide_img4,
+    slide_img5,
+    slide_img6,
+    slide_img7,
+    slide_img8,
+    slide_img9,
+  ];
 
   const featureCards = [
     {
@@ -543,17 +564,17 @@ const Home = () => {
           </div>
           <div class="th_section">
             <h2 className="abt_th_h">
-           <FaQuoteLeft /> Best Dental Clinic in Kharadi, Pune — International Smile Makeover &
-            Implant Centre <FaQuoteRight />
-          </h2>
-          <p>
-            Proudly located in Kharadi, Pune, Denza Dental Center is recognized
-            by patients as the Best Dental Clinic in Kharadi and the Best
-            International Smile Makeover Centre in the region — bringing
-            together internationally trained specialists, advanced implant
-            technology, and a comfort-first approach for every patient who walks
-            through our doors.
-          </p>
+              <FaQuoteLeft /> Best Dental Clinic in Kharadi, Pune —
+              International Smile Makeover & Implant Centre <FaQuoteRight />
+            </h2>
+            <p>
+              Proudly located in Kharadi, Pune, Denza Dental Center is
+              recognized by patients as the Best Dental Clinic in Kharadi and
+              the Best International Smile Makeover Centre in the region —
+              bringing together internationally trained specialists, advanced
+              implant technology, and a comfort-first approach for every patient
+              who walks through our doors.
+            </p>
           </div>
         </div>
       </div>
@@ -749,7 +770,7 @@ const Home = () => {
                       class="accordian_title"
                       onClick={() => setLeftAccordion(index)}
                     >
-                      <h1> {item.title} </h1>
+                      <h1 className="why_chose"> {item.title} </h1>
                       <div class="count"> {index + 1} </div>
                     </div>
                     {leftAccordion === index && (
@@ -761,10 +782,11 @@ const Home = () => {
                         }
                       >
                         <div class="left">
-                          <h1> {item.title} </h1> <p>{item.description}</p>
+                          <h1 className="why_chose"> {item.title} </h1>
+                          <p>{item.description}</p>
                         </div>
                         <div class="rg_image">
-                          <img src={img4} alt="" />
+                          <img src={item.img} alt="" />
                         </div>
                       </div>
                     )}
@@ -882,7 +904,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-        <div
+      <div
         class="why_choose_parent bg-img-cover parent"
         data-aos="fade-up"
         data-aos-delay="200"

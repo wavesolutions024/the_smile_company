@@ -112,72 +112,72 @@ const next = () => {
   scrollToIndex(newIndex);
 };
 
-  return (
-    <div className="testimonials_root">
-      <div className="testimonials_inner">
+  // return (
+  //   <div className="testimonials_root">
+  //     <div className="testimonials_inner">
 
        
-            <h2 className="section_title">What Our Patients Say</h2>
+  //           <h2 className="section_title">What Our Patients Say</h2>
        
-        <button className="nav left" onClick={prev} aria-label="Previous">
-          ‹
-        </button>
-        <div className="thumbs" ref={listRef}>
-          {videos.map((v, i) => (
-            <div
-              key={v.id}
-              className={`thumb ${i === current ? "active" : ""}`}
-              onClick={() => {
-                setCurrent(i);
-                openLightbox(v);
-              }}
-            >
-              <div className="thumb_img">
-                <video
-                  src={v.src}
-                  poster={v.poster}
-                  muted
-                  loop
-                  playsInline
-                  autoPlay
-                />
-                {/* <div className="play_overlay">▌▌</div> */}
-              </div>
-            </div>
-          ))}
-        </div>
-        <button className="nav right" onClick={next} aria-label="Next">
-          ›
-        </button>
-      </div>
+  //       <button className="nav left" onClick={prev} aria-label="Previous">
+  //         ‹
+  //       </button>
+  //       <div className="thumbs" ref={listRef}>
+  //         {videos.map((v, i) => (
+  //           <div
+  //             key={v.id}
+  //             className={`thumb ${i === current ? "active" : ""}`}
+  //             onClick={() => {
+  //               setCurrent(i);
+  //               openLightbox(v);
+  //             }}
+  //           >
+  //             <div className="thumb_img">
+  //               <video
+  //                 src={v.src}
+  //                 poster={v.poster}
+  //                 muted
+  //                 loop
+  //                 playsInline
+  //                 autoPlay
+  //               />
+  //               {/* <div className="play_overlay">▌▌</div> */}
+  //             </div>
+  //           </div>
+  //         ))}
+  //       </div>
+  //       <button className="nav right" onClick={next} aria-label="Next">
+  //         ›
+  //       </button>
+  //     </div>
 
-      {lightboxOpen && activeVideo && (
-        <div className="lightbox" onClick={closeLightbox}>
-          <div className="lightbox_inner" onClick={(e) => e.stopPropagation()}>
-            <button className="close_btn" onClick={closeLightbox} aria-label="Close">✕</button>
-            <video
-              key={activeVideo.id}
-              ref={videoRef}
-              src={activeVideo.src}
-              poster={activeVideo.poster}
-              muted
-              controls
-              playsInline
-              autoPlay
-              preload="auto"
-              onCanPlay={() => {
-                if (videoRef.current) {
-                  videoRef.current.muted = true;
-                  videoRef.current.play().catch(() => {});
-                }
-              }}
-            />
-            <h3 className="video_title">{activeVideo.title}</h3>
-          </div>
-        </div>
-      )}
-    </div>
-  );
+  //     {lightboxOpen && activeVideo && (
+  //       <div className="lightbox" onClick={closeLightbox}>
+  //         <div className="lightbox_inner" onClick={(e) => e.stopPropagation()}>
+  //           <button className="close_btn" onClick={closeLightbox} aria-label="Close">✕</button>
+  //           <video
+  //             key={activeVideo.id}
+  //             ref={videoRef}
+  //             src={activeVideo.src}
+  //             poster={activeVideo.poster}
+  //             muted
+  //             controls
+  //             playsInline
+  //             autoPlay
+  //             preload="auto"
+  //             onCanPlay={() => {
+  //               if (videoRef.current) {
+  //                 videoRef.current.muted = true;
+  //                 videoRef.current.play().catch(() => {});
+  //               }
+  //             }}
+  //           />
+  //           <h3 className="video_title">{activeVideo.title}</h3>
+  //         </div>
+  //       </div>
+  //     )}
+  //   </div>
+  // );
 };
 
 export default Testimonials;

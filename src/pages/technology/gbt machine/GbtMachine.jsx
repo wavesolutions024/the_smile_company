@@ -10,6 +10,7 @@ import patientImg from "../../../assets/about_page/left1.png";
 import PageTop from "../../../comp/page_top/PageTop";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import SliderImg from "../../../comp/slider_img/SliderImg";
 
 const GbtMachine = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -75,7 +76,6 @@ const GbtMachine = () => {
     },
   ];
 
-  const clinicImages = [img4, img4, img4, img4, img4, img4, img4, img4];
 
   return (
     <>
@@ -413,49 +413,7 @@ Pune"
         </div>
       </div>
 
-      <div className="parent clinic_images_parent">
-        <Swiper
-          modules={[Autoplay]}
-          slidesPerView={4.5}
-          spaceBetween={30}
-          loop={true}
-          speed={10000}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            320: {
-              slidesPerView: 1.2,
-              spaceBetween: 16,
-            },
-
-            576: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-
-            768: {
-              slidesPerView: 2.5,
-              spaceBetween: 24,
-            },
-
-            1200: {
-              slidesPerView: 4.5,
-              spaceBetween: 30,
-            },
-          }}
-          className="gallery_swiper"
-        >
-          {clinicImages.map((img, index) => (
-            <SwiperSlide key={index}>
-              <div className="gallery_card">
-                <img src={img} alt="" />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+    <SliderImg/>
     </>
   );
 };

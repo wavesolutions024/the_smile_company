@@ -8,7 +8,7 @@ const AfterFooter = () => {
         <div className="cont after_footer_cont">
           <p>
             Conveniently located at <span>Zen Square in Kharadi</span>,{" "}
-            <span>Denza Dental Center</span>
+            <span>Denza Dental Center</span>&nbsp;
             is easily accessible for patients across Kharadi, Wagholi, Viman
             Nagar, and greater Pune — making us a preferred choice for anyone
             searching for the <span>Best Dental Clinic in Kharadi</span>.

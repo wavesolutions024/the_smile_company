@@ -11,6 +11,7 @@ import gallery1 from "../../../assets/about_page/after1.webp";
 import apointment from "../../../assets/aapointment.webp";
 import PageTop from "../../../comp/page_top/PageTop";
 import { Helmet } from "react-helmet";
+import SliderImg from "../../../comp/slider_img/SliderImg";
 
 
 const servicess = [
@@ -392,40 +393,7 @@ Dental Center in Kharadi, Pune"
         </div>
       </div>
 
-      <div className="parent gallery_parent">
-        <div className="cont gallery_cont">
-          <div className="gallery_header">
-            <h2>Clinic Gallery</h2>
-
-          </div>
-          <div className="gallery_slider">
-            <Swiper
-              modules={[Navigation, Autoplay]}
-              spaceBetween={24}
-              slidesPerView={4}
-              navigation={true}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              breakpoints={{
-                0: { slidesPerView: 1, spaceBetween: 16 },
-                600: { slidesPerView: 2, spaceBetween: 18 },
-                900: { slidesPerView: 3, spaceBetween: 20 },
-                1200: { slidesPerView: 4, spaceBetween: 24 },
-              }}
-            >
-              {[gallery1, gallery1, gallery1, gallery1].map((src, index) => (
-                <SwiperSlide key={index}>
-                  <div className="gallery_card" data-aos="fade-up" data-aos-delay={index * 100}>
-                    <img src={src} alt={`Clinic slide ${index + 1}`} />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
-      </div>
+     <SliderImg />
     </>
   );
 };

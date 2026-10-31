@@ -500,7 +500,6 @@
 .trust_strip_parent {
   width: 100%;
   padding: 40px 0;
-  // background: rgba(255, 255, 255, 0.9);
 }
 
 .trust_strip_cont {
@@ -516,7 +515,9 @@
   gap: 18px;
   padding: 24px 26px;
   border-radius: 24px;
-  background: #ffffff;
+  // background: #ffffff;
+  background: var(--background);
+
   box-shadow: 0 24px 60px rgba(15, 45, 86, 0.08);
 }
 
@@ -569,7 +570,7 @@
 .doctors_parents_lady {
   flex-direction: column-reverse;
   background: var(--background);
-  padding: 100px 0px;
+  padding: 100px 0px 50px 0px;
 
   .doctors_cont_lady {
     display: flex;
@@ -591,8 +592,13 @@
 
     .left_doctors_parents {
       border-radius: var(--unit);
+      min-width: 0;
+      min-height: 560px;
       width: 50%;
-      background: url("../../assets/about_page/woman_dr.jpg");
+
+      background-position: top center !important;
+
+      background: url("../../assets/home/mam_img.png");
       display: flex;
       align-items: end;
       padding: 10px 20px;
@@ -622,7 +628,7 @@
 
 .doctors_parents {
   padding: 100px 0px 0px 0px;
-  background: var(--background);
+  // background: var(--background);
 
   .doctors_section_title {
     margin-bottom: 50px;
@@ -640,7 +646,8 @@
       flex: 1 1 0;
       min-width: 0;
       min-height: 560px;
-      background: url("../../assets/about_page/dr_image_man\ \(2\).jpg");
+      background-position: top center !important;
+      background: url("../../assets/home/sir_img.JPG");
       padding: 10px 20px;
       border-radius: var(--unit);
       display: flex;
@@ -698,9 +705,6 @@
 
       .right_doctors_parents {
         width: 100%;
-      
-
-        
       }
     }
   }
@@ -763,6 +767,64 @@
       .right_doctors_parents {
         width: 100%;
         display: flex;
+      }
+    }
+  }
+}
+
+// 3rd doctor
+.doctors_parents_lady_dr {
+  background: var(--white);
+  padding: 100px 0px 50px 0px;
+
+  .doctors_cont_lady_dr {
+    display: flex;
+    gap: 50px;
+    flex-direction: row-reverse;
+
+    .doctor_name_title_img {
+      font-size: 15px;
+      color: var(--black);
+      font-weight: 300;
+      padding: 10px 20px;
+      line-height: 20px;
+      background: rgba(192, 192, 192, 0.688);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+      border-radius: 16px;
+    }
+
+    .left_doctors_parents {
+      border-radius: var(--unit);
+      min-width: 0;
+      min-height: 560px;
+      width: 50%;
+      background-position: top center !important;
+      background: url("../../assets/home/mam_img.png");
+      display: flex;
+      align-items: end;
+      padding: 10px 20px;
+    }
+
+    .right_doctors_parents {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: calc(var(--unit));
+
+      h2 {
+        font-size: 32px;
+        font-weight: 800;
+        color: var(--accent);
+      }
+
+      .doctor_name_title {
+        font-size: 18px;
+        font-weight: 900;
+        color: var(--accent);
       }
     }
   }
