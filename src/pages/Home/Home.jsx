@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./Home.scss";
+
 import HeroSection from "../../comp/Hero_section/HeroSection";
 import Button from "../../comp/button/Button";
 import Appointment from "../../comp/appointment/Appointment";
