@@ -1,6 +1,7 @@
 import "./App.scss";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home/Home";
+
 import HeaderNew from "./comp/header new/HeaderNew";
 import About from "./pages/about/About";
 import Footer from "./comp/footer/Footer";
