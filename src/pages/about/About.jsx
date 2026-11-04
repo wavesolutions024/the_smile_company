@@ -4,7 +4,7 @@ import beforeImg from "../../assets/about_page/before1.webp";
 import afterImg from "../../assets/about_page/after1.webp";
 import "./About.scss";
 import img4 from "../../assets/about_section/img5.webp";
-
+import { TbMicroscope } from "react-icons/tb";
 import {
   FaArrowRight,
   FaClock,
@@ -497,22 +497,23 @@ const About = () => {
             <p>
               <span style={{ fontWeight: "800", color: "var(--accent)" }}>
                 Dr. Lucy Bhola
-              </span>{" "} is a dental professional with over 9 years of
-              clinical experience, specializing in periodontics and periodontal
-              surgical procedures. She has extensive clinical experience in
-              scaling and root planing, crown lengthening, periodontal flap
-              surgeries, and mucogingival surgeries. She completed her BDS from
-              Awadh Dental College and Hospital, Jamshedpur, and her MDS in
-              Periodontics from Kalinga Institute of Dental Sciences, KIIT
-              University, Bhubaneswar. She has been an active member of the
-              Indian Society of Periodontology. To further enhance her clinical
-              expertise, she has attended workshops on lasers in periodontics,
-              basic implantology, and microsurgical soft-tissue augmentation
-              around natural teeth and dental implants. She has also contributed
-              to dental research, with eight publications in national and
-              international journals. Her professional approach focuses on
-              evidence-based periodontal care, gum health, and the management of
-              periodontal conditions to support long-term oral health.
+              </span>{" "}
+              is a dental professional with over 9 years of clinical experience,
+              specializing in periodontics and periodontal surgical procedures.
+              She has extensive clinical experience in scaling and root planing,
+              crown lengthening, periodontal flap surgeries, and mucogingival
+              surgeries. She completed her BDS from Awadh Dental College and
+              Hospital, Jamshedpur, and her MDS in Periodontics from Kalinga
+              Institute of Dental Sciences, KIIT University, Bhubaneswar. She
+              has been an active member of the Indian Society of Periodontology.
+              To further enhance her clinical expertise, she has attended
+              workshops on lasers in periodontics, basic implantology, and
+              microsurgical soft-tissue augmentation around natural teeth and
+              dental implants. She has also contributed to dental research, with
+              eight publications in national and international journals. Her
+              professional approach focuses on evidence-based periodontal care,
+              gum health, and the management of periodontal conditions to
+              support long-term oral health.
             </p>
             {/* <ul style={{ paddingLeft: "18px" }}>
               <li>
@@ -550,7 +551,7 @@ const About = () => {
                 <FaClock />
               </div>
               <div>
-                <h3>10+ Years Experience</h3>
+                <h3>9+ Years Clinical Experience</h3>
               </div>
             </div>
 
@@ -562,7 +563,7 @@ const About = () => {
                 <FaUserGraduate />
               </div>
               <div>
-                <h3>MDS Specialists</h3>
+                <h3>MDS Periodontist</h3>
               </div>
             </div>
 
@@ -571,10 +572,10 @@ const About = () => {
               style={{ background: "var(--background)" }}
             >
               <div className="trust_icon">
-                <FaGlobe />
+                <TbMicroscope />
               </div>
               <div>
-                <h3>Global Exposure</h3>
+                <h3>Advanced Periodontal Care</h3>
               </div>
             </div>
 
@@ -586,7 +587,7 @@ const About = () => {
                 <FaLaptopMedical />
               </div>
               <div>
-                <h3>Advanced Technology</h3>
+                <h3>8 Research Publications</h3>
               </div>
             </div>
           </div>

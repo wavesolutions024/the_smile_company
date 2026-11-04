@@ -24,6 +24,12 @@ import slide_img7 from "../../assets/home/slider_img/slider_img7.jpeg";
 import slide_img8 from "../../assets/home/slider_img/slider_img8.jpeg";
 import slide_img9 from "../../assets/home/slider_img/slider_img9.jpeg";
 
+// revuiews
+import review1 from "../../assets/googel_reviews/review1.png";
+import review2 from "../../assets/googel_reviews/review2.png";
+import review3 from "../../assets/googel_reviews/review3.png";
+import review4 from "../../assets/googel_reviews/review4.png";
+
 import adv_tech from "../../assets/why_choose_home/adv_tech.png";
 import inter_exp from "../../assets/why_choose_home/inter_exp.jpg";
 import kharadi_last from "../../assets/why_choose_home/kharadi_last_point.jpg";
@@ -149,37 +155,37 @@ const Home = () => {
       title: "Internationally Experienced Dental Specialists",
       description:
         "Our team of highly qualified dentists brings international expertise and advanced clinical knowledge to every treatment. We stay updated with the latest global dental practices to ensure you receive world-class care with precision and excellence.",
-        img:inter_exp
+      img: inter_exp,
     },
     {
       title: "Advanced Technology",
       description:
         "We use state-of-the-art dental equipment and digital technology to deliver accurate diagnoses, minimally invasive procedures, and faster recovery. Our modern approach ensures safe, efficient, and comfortable treatments for every patient.",
-        img:adv_tech
+      img: adv_tech,
     },
     {
       title: "Patient Comfort",
       description:
         "Your comfort is at the heart of everything we do. From a welcoming environment to gentle treatment techniques, we strive to make every visit relaxing, pain-free, and stress-free for patients of all ages.",
-        img:patient_comfort
+      img: patient_comfort,
     },
     {
       title: "Safe & Hygienic",
       description:
         "We maintain the highest standards of sterilization and infection control, following strict international safety protocols. Every instrument and treatment area is thoroughly sanitized to ensure a clean and safe environment.",
-        img:safe_hygien
+      img: safe_hygien,
     },
     {
       title: "Transparent & Ethical Care",
       description:
         "We believe in honesty, integrity, and clear communication. You'll receive detailed treatment explanations, transparent pricing, and personalized care recommendations—without unnecessary procedures or hidden costs.",
-        img:transperent
+      img: transperent,
     },
     {
       title: "Kharadi's Trusted Choice for Dental Implants & Smile Makeovers ",
       description:
         "Patients across Kharadi and Pune choose Denza Dental Center as their preferred International Smile Makeover and Implant Centre — recognized as the Best Dental Clinic in Kharadi for combining internationally trained specialists, transparent pricing, and advanced technology under one roof. ",
-        img:kharadi_last
+      img: kharadi_last,
     },
   ];
 
@@ -310,37 +316,14 @@ const Home = () => {
 
   const textTestimonials = [
     {
-      id: 1,
-      name: "Sarah Jones",
-      title: "Marketing Director",
-      quote:
-        "This product has significantly improved our team’s productivity. Highly recommended!",
-      image: img4,
+      img1: review1,
+      img2: review2,
     },
     {
-      id: 2,
-      name: "David Smith",
-      title: "Project Manager",
-      quote:
-        "Exceptional service and support. The results have exceeded our expectations.",
-      image: img4,
+      img1: review3,
+      img2: review4,
     },
-    {
-      id: 3,
-      name: "Emily White",
-      title: "Business Owner",
-      quote:
-        "A fantastic experience from start to finish. We couldn't be happier with the outcome.",
-      image: img4,
-    },
-    {
-      id: 4,
-      name: "Michael Brown",
-      title: "Operations Lead",
-      quote:
-        "Professional, friendly, and attentive throughout the whole process.",
-      image: img4,
-    },
+    
   ];
 
   const { ref, inView } = useInView({
@@ -698,25 +681,20 @@ const Home = () => {
             <Swiper
               modules={[Pagination, Autoplay]}
               spaceBetween={24}
-              slidesPerView={3}
+              slidesPerView={1}
               pagination={{ clickable: true }}
-              autoplay={{ delay: 350000, disableOnInteraction: false }}
-              breakpoints={{
-                0: { slidesPerView: 1, spaceBetween: 16 },
-                768: { slidesPerView: 2, spaceBetween: 20 },
-                1200: { slidesPerView: 3, spaceBetween: 24 },
-              }}
+              autoplay={{ delay: 3500, disableOnInteraction: false }}
+              centeredSlides={true}
             >
               {textTestimonials.map((item) => (
                 <SwiperSlide key={item.id}>
                   <div className="testimonial_card">
-                    <div className="testimonial_avatar">
-                      <img src={item.image} alt={item.name} />
+                    <div className="testimonial_boxes1">
+                      <img src={item.img1} alt="testimonial" />
                     </div>
-                    <div className="testimonial_body">
-                      <p className="testimonial_quote">{item.quote}</p>
-                      <h3>{item.name}</h3>
-                      <span>{item.title}</span>
+
+                    <div className="testimonial_boxes2">
+                      <img src={item.img2} alt="testimonial" />
                     </div>
                   </div>
                 </SwiperSlide>
